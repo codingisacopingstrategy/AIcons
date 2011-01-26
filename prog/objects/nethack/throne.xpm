@@ -1,0 +1,30 @@
+/* XPM */
+static char * throne_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 8 1",
+/* colors */
+" 	s None	c None",
+".	c yellow",
+"X	c orange",
+"o	c red",
+"O	c blue",
+"+	c black",
+"@	c wheat",
+"#	c tan",
+/* pixels */
+"                ",
+"     .....      ",
+"    .XXXoo.     ",
+"    .XXOoo.     ",
+"    .XOOOo.     ",
+"    .XXOoo.     ",
+"    .XXOoo.  ++ ",
+"     .Xoo.+++++ ",
+"  XX@.Xoo.@XX+++",
+" ...o.....X...++",
+" . .@oooXX@.+.++",
+"   .........+++ ",
+"   .+#+++#+.++  ",
+"  .+ +++++++.   ",
+"                ",
+"                "};

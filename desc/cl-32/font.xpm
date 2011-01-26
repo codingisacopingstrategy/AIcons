@@ -1,0 +1,43 @@
+/* XPM */
+static char *font[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c firebrick",
+"a c red",
+"b c tomato",
+"c c white",
+/* pixels */
+"cccccccccccccccccccccccccccccccc",
+"cccccccccccccccccccccccccccccccc",
+"cccccccccccccccccccbbbcccccbbccc",
+"ccccccccccccccccbbbaaaaaccbaabcc",
+"ccccccccccccccbbaaa```aaacbaaabc",
+"cccccccccccccbaaa``ccc`aaaaaaa`c",
+"ccccccccccccbaaa`ccccccbaaaaa`cc",
+"cccccccccccbaaa`cccccccbaaaaa`cc",
+"ccccccccccbaaa`cccccccccbaaa`ccc",
+"cccccccccbaaa`cccccccccbaaaa`ccc",
+"ccccccccbaaa`ccccccccccbaaa`cccc",
+"cccccccbaaaa`cccccccccbaaaa`cccc",
+"ccccccbaaaa`ccccccccccbaaaa`cccc",
+"ccccccbaaa`ccccccccccbaaaa`ccccc",
+"cccccbaaaa`ccccccccccbaaaa`ccccc",
+"ccccbaaaa`ccccccccccbaaaa`cccccc",
+"ccccbaaaa`cccccccccbaaaaa`cccccc",
+"cccbaaaaa`ccccccccbaaaaaa`cccccc",
+"cccbaaaa`ccccccccbaaaaaa`ccccccc",
+"ccbaaaaa`cccccccba`aaaaa`ccccccc",
+"ccbaaaaa`ccccccba`cbaaaa`ccccccc",
+"ccbaaaa`ccccccba`cbaaaa`cccccbbc",
+"cbaaaaa`cccccba`ccbaaaa`ccccba`c",
+"cbaaaaa`ccccba`ccbaaaa`ccccba`cc",
+"cbaaaaa`cccba`cccbaaaa`cccba`ccc",
+"cbaaaaa`ccba`ccccbaaaa`cbba`cccc",
+"cbaaaaaabba`ccccbaaaaaabaa`ccccc",
+"cbaaaaaaaa`cccccbaaaaaaa``cccccc",
+"ccaaaaaa``ccccccbaaaaa``cccccccc",
+"ccc`````ccccccccc`````cccccccccc",
+"cccccccccccccccccccccccccccccccc",
+"cccccccccccccccccccccccccccccccc"
+};

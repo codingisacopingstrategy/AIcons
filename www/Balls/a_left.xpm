@@ -1,0 +1,35 @@
+/* XPM */
+static char * a_left_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 9 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c grey",
+"o	c black",
+"O	c dark slate grey",
+"+	c gainsboro",
+"@	c sea green",
+"#	c green",
+"$	c lime green",
+/* pixels */
+"                    ",
+"       ......       ",
+"     X......o.O     ",
+"    ..X.......O.    ",
+"   X.O.XXO...OOOo   ",
+"  ...XX++X..@@#O.o  ",
+"  .O..X++@@@$$#OoO  ",
+" OO..X@@@$$$$$#.OOo ",
+" .O.@@$$$$$$$$#oOoo ",
+" OO##$$$$$$$$$#.oOo ",
+" .o.O###$$$$$$#Oooo ",
+" o.o.oO.##$$$$#OoOo ",
+" .o.O.OO.o###$#o.oo ",
+"  oOoOo.OOOOO##ooo  ",
+"  oOo.oOo.ooOo.ooo  ",
+"   OooOo.ooOo.ooo   ",
+"    oOooooOoOoOo    ",
+"     ooooooOoOo     ",
+"       oOoooo       ",
+"                    "};

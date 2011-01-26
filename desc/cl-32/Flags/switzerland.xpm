@@ -1,0 +1,42 @@
+/* XPM */
+static char *switzerland_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"................................",
+"................................",
+"................................",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+".........XXXXXXXXXXXX...........",
+".........XXXXXXXXXXXX...........",
+".........XXXXXXXXXXXX...........",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+".............XXXX...............",
+"................................",
+"................................",
+"................................",
+"................................",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

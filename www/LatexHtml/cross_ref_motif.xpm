@@ -1,0 +1,22 @@
+/* XPM */
+static char * cross_ref_motif_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"13 13 3 1",
+/* colors */
+".	c gainsboro",
+"X	c dark slate grey",
+" 	c None",
+/* pixels */
+"............X",
+"...........XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+"..         XX",
+".XXXXXXXXXXXX",
+"XXXXXXXXXXXXX"};

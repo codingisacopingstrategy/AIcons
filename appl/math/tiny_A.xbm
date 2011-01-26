@@ -1,0 +1,4 @@
+#define tiny_a_width 7
+#define tiny_a_height 6
+static unsigned char tiny_a_bits[] = {
+ 0x1e,0x36,0x3c,0x36,0x73,0x7e};

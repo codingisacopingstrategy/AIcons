@@ -1,0 +1,4 @@
+-loop 20
+-dispose 2
+-delay 60   new/new.xpm
+-delay 40   new/new_small.xpm

@@ -1,0 +1,43 @@
+/* XPM */
+static char *mouse_stand_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c magenta",
+"o c white",
+/* pixels */
+"oooooooo    oo  ooooooooo   oooo",
+"ooooooo ....   o Xoooooo ..o ooo",
+"o oooo .....X. o            oooo",
+"o oooo ..   .. ooo .XXXXXX ooooo",
+"oo oo ..   . ..   .XXX.XXX ooooo",
+"oo oo ..  ...X..X.XX.XXXX oooooo",
+"ooo o .. ......X.X XXXX.X oooooo",
+"ooo o .. ..X..X.X XX.XXX ooooooo",
+"ooo oo .. .....X    X.X oooooooo",
+"ooo oo .X...X.XX.XX.   ooooooooo",
+"oo oooo .....  .X.XXXXX oooooooo",
+"o oooooo      o XX     ooooooooo",
+"o ooooooooooooo X oooooooooooooo",
+" ooooooooooo    X   oooooooooooo",
+" oooooooooo .XXXXXXX  oooooooooo",
+" ooooooooo     XXXXXXX    oooooo",
+" oooooooo XX..X.XXXXXXX .X ooooo",
+" ooooooo ..X.       XXXX  X oooo",
+" oooooo X.X.XX.XXXXX X.X . ooooo",
+"  oooooo         X X XXX  oooooo",
+"o oooooooo   ... . X XXX ooooooo",
+"o  ooooooo ....X. X XXX oooooooo",
+"oo  ooooooo .XXXXXXXXXX oooooooo",
+"ooo  ooooooo .XXXXXXXX ooooooooo",
+"oooo   ooooo   .XXXX   ooooooooo",
+"oooooo       o   .XXX   oooooooo",
+"ooooooooooooooooo .XXX  oooooooo",
+"oooooooooooooooo .XXX  ooooooooo",
+"ooooooooooooooo ..XX          oo",
+"oooooooooooooo .XXXXXXXXXXX    o",
+"ooooooooooooo ...XXXXXXXXXXXX  o",
+"oooooooooooo                 ooo"
+};

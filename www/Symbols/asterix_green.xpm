@@ -1,0 +1,25 @@
+/* XPM */
+static char * asterix_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c green",
+"X	c sea green",
+/* pixels */
+"         ...        ",
+"        ....X       ",
+"        ....X       ",
+"   ...  ...XX       ",
+"  ....X  ..X  ...   ",
+"  ....X  .X  ....X  ",
+"  ...... .X .....X  ",
+"   XX...........XX  ",
+"     XX......XXXX   ",
+"       ..X..        ",
+"      ..X ...       ",
+"    ....X .....     ",
+"   ....X   ....X    ",
+"   ....X   ....X    ",
+"   ...XX   ...XX    ",
+"    XXX     XXX     "};

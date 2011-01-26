@@ -1,0 +1,24 @@
+/* XPM */
+static char * g_blue_on_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"12 12 6 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c black",
+"o	c dodger blue",
+"O	c sky blue",
+"+	c white",
+/* pixels */
+"  .XXXX.    ",
+" XXooooXX   ",
+".XO+ooooX.  ",
+"Xo+OoooooX  ",
+"XooooooooX  ",
+"XooooooOoX. ",
+"XoooooOOoX. ",
+".XoooOOoX.. ",
+" XXooooXX...",
+"  .XXXX.... ",
+"     ...... ",
+"        .   "};

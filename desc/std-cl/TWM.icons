@@ -1,0 +1,143 @@
+# --- std-cl ---
+# Twm icons using the icon images in this directory.
+# This file can be included ing a m4 source file for the appropriate
+# twm rc file generation. Ctwm rc file usally are automatically
+# m4 pre-processed. Other twm variants may have to be pre-processed
+# separately, especiall before "f.restart" menu function is executed.
+#[
+#   changequotes([,])
+#   PixmapDirectory "......path_to_aicons.../desc"
+#   include(...path_to_aicons.../desc/std-cl/TWM.icons)
+#]
+undefine([ICON])
+ifelse( TWM_TYPE, ctwm,
+  [ define( ICON, "xpm:std-cl/$1.xpm" )
+],[ define( ICON, "std-cl/$1.xpm" )
+])
+
+# NOTE: that the "std" bitmap icons are generally loaded BEFORE these
+# icons so that these can override them with color versions if available
+# otherwise retain the older bitmap version.
+
+UnknownIcon   ICON(unknown)    # use this icon if none is set
+Icons {
+  # --- General Applications ---
+  "Acroread"           ICON(document)
+  "Colormap v3.0"      ICON(pixmap)
+  "crossfire"          ICON(wizard)
+  "Fig"                ICON(fig)
+  "gFTP"               ICON(ftp)
+# "Ghostview"          ICON(ghost)
+# "Ghostscript"        ICON(ghost)
+  "Gimp"               ICON(art)
+  "GQView"             ICON(art)
+  "Firefox"            ICON(firefox)
+  "Firefox-bin"        ICON(firefox)
+  "IglooFTP"           ICON(ftp)
+  "konqueror"          ICON(folder)
+  "kpm"                ICON(terminal_view)
+  "MGdiff"             ICON(eye)
+  "MOTD"               ICON(info)
+  "Mozilla"            ICON(mozilla)
+  "Mozilla-bin"        ICON(mozilla)
+  "Nautilus"           ICON(folder)
+  "nethack"            ICON(wizard)
+  "Notifier"           ICON(printout)
+  "Pixmap"             ICON(pixmap)
+  "Povray"             ICON(povray)
+  "Sharity"            ICON(sharity)            # sharity CIFS mount tool
+  "Speedcrunch"        ICON(calculator)
+  "SysMgrMain"         ICON(server)             # sun admin tool
+  "TkCVS"              ICON(cvs)
+  "Tomboy"             ICON(postit)
+  "unison"             ICON(unison)
+  "VMware Workstation" ICON(vmware)
+  "Vmware"             ICON(vmware)
+  "vmware-console"     ICON(vmware)
+  "XCalc"              ICON(calculator)
+  "XConsole"           ICON(terminal_console)   # console output
+  "XIgc"               ICON(go)
+  "Xloadl"             ICON(triangle2)
+  "XMgt"               ICON(go)
+  "XMcd"               ICON(triangle)
+  "XMagkeys"           ICON(key)
+  "XWsh"               ICON(sgi)
+  "Xman"               ICON(manual2)
+  "YaST"               ICON(patch)
+  "Wine"               ICON(wine)
+
+  # --- Editors (including special xterm windows) ---
+  "Less"               ICON(document)
+  "News"               ICON(news)
+  "MailEd"             ICON(scroll)
+  "Axe"                ICON(scroll)
+  "Emacs"              ICON(scroll)
+  "XVed"               ICON(scroll)
+  "Xedit"              ICON(scroll)
+  "Xed"                ICON(scroll)
+  "Vi"                 ICON(scroll)
+  "Vim"                ICON(scroll)
+  "Gvim"               ICON(scroll)
+
+  # --- Specific Application Windows ---
+  # EG: not the class NAME of a application
+  "Basicwin"           ICON(go)               # CGoban
+  "minicom"            ICON(modem)            # xminicom
+  "MailThread"         ICON(news)             # Netscape
+  "Navigator"          ICON(netscape_comet)   # Netscape
+  "Tk2Motif"           ICON(key)              # JTS
+
+  # regular expression matched
+  "* - OpenOffice.org *"  ICON(openoffice_doc) # OpenOffice
+  "* - Lotus Notes"       ICON(lotus_notes)    # Citrix - lotus notes
+
+  # --- Machine Terminal Windows ---
+  #            - CIT -
+  "xterm-mage"         ICON(mage)
+  "xterm-wraith"       ICON(ghost)
+  "xterm-wumpus"       ICON(wumpus)
+  "xterm-mimic"        ICON(mimic)
+  #
+  "xterm-lyrch"        ICON(lyrch)
+  "xterm-ent"          ICON(tree)
+  "xterm-orc"          ICON(goran)
+  "xterm-ogre"         ICON(giant)
+  "xterm-golem"        ICON(golem)
+  "xterm-troll"        ICON(troll)
+  "xterm-hobbit"       ICON(hobbit_couple)
+  "xterm-dwarf"        ICON(dwarf)
+  "xterm-kobold"       ICON(kobold)
+  "xterm-gucis"        ICON(gucis)
+  "xterm-spawn"        ICON(spawn)
+  #
+  "xterm-sisyphus"     ICON(sisyphus)
+  "xterm-odysseus"     ICON(sisyphus)
+  "xterm-socrates"     ICON(sisyphus)
+  "xterm-drnick"       ICON(drnick)
+  "xterm-titus"        ICON(titan)
+  #            - NMR -
+  "xterm-dante"        ICON(demon)
+  "xterm-inferno"      ICON(elemental_fire)
+  #           - QPSF -
+  "xterm-balrog"       ICON(balrog)
+  "xterm-ctrl1"        ICON(sp2_ctrl)
+  "xterm-ctrl1e"       ICON(sp2_ctrl)
+  "xterm-sp2"          ICON(sp2)
+  #            - other -
+  "xterm-helios"       ICON(sun)
+  "xterm-dragon"       ICON(dragon)
+  "xterm-wyvern"       ICON(wyvern)
+  "xterm-slugma"       ICON(slugma)
+  "xterm-anubis"       ICON(anubis)
+  "xterm-calliope"     ICON(calliope)
+  "xterm-library"      ICON(library)
+
+  # --- Special Terminals ---
+  "FailSafe"           ICON(terminal_excl)      # fail safe xterm
+  "xterm-failsafe"     ICON(terminal_excl)      # fail safe xterm
+  "xterm"              ICON(terminal)           # xterm without a name
+  "XTerm"              ICON(terminal)           # other machine login
+  "Console"            ICON(terminal_console)   # special console xterm
+  "Terminal Controls"  ICON(terminal_console)   # terminal controls
+}
+undefine([ICON])

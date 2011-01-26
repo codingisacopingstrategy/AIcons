@@ -1,0 +1,43 @@
+/* XPM */
+static char *butterfly2_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c DodgerBlue",
+"X c grey",
+"o c NavyBlue",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXX      XX",
+"XXXXXXXXXXXXXXXXXXXXXX  ...... X",
+"XXXXXXXXXXXXXXXXXXXXX ......... ",
+"XXXXXXXXXXXXXXXXXXXX ...o.o.... ",
+"XXXXXXXXXXXXXXX XXX ...o.o.o.. X",
+"XXXXXXXXXXXXXX XXX ...o.o.o... X",
+"XXXXXXXXXXXXX XXXX ..o.o.o.o.. X",
+"XXXXXXXXXXXXX XXX ..o.o.o.o... X",
+"XXXXXXXXXXXX XXXX ...o.o.o.o.. X",
+"XXXXXXXXXXXX XXXX ..o.o.o.o... X",
+"XXXXXXXXXXXX XXX ..o.o.o.o... XX",
+"XXXXXXXXXXX   XX ...o.o.o.o.. XX",
+"XXXXXXXX      XX ..o.o.o.o... XX",
+"XXXXXX  XXX     ....o.o.o.... XX",
+"XXXXX XXXXXXX    ..o.o.o..... XX",
+"XXXX XXXXXXXX     ..o.o..... XXX",
+"XXXXXXXXXX   .     ......     XX",
+"XXXXXXX   .....     ...  ..... X",
+"XXXXX  .........     ......... X",
+"XXXX .....o.o.o..     ....o.o.. ",
+"XXX ...o.o.o.o.o..    ...o.o... ",
+"XX ...o.o.o.o.o....    ...o.o.. ",
+"X ...o.o.o.o.o.o.....  ....o... ",
+"X ..o.o.o.o.o.o.. .....  ...... ",
+" ..o.o.o.o.o.o... ..... X ..... ",
+" ...o.o.o.o.o... ...o... X  ... ",
+" ..o.o.o.o.o.... ..o.o... XX   X",
+" ...o.o.o....... ...o.o.. XXXXXX",
+" ..............  ..o.o.... XXXXX",
+" .........     X ......... XXXXX",
+"X ..      XXXXXXX  ....... XXXXX",
+"XX  XXXXXXXXXXXXXXX       XXXXXX"
+};

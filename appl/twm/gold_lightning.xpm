@@ -1,0 +1,22 @@
+/* XPM */
+static char * gold_lightning_xpm[] = {
+"14 14 5 1",
+" 	c Gold",
+".	c Wheat",
+"X	c LemonChiffon",
+"o	c Orange",
+"O	c Peru",
+"     ..XXoO   ",
+"     .XXoO    ",
+"    ..XXO     ",
+"    .XXoO     ",
+"   ..XoO      ",
+"  ..XXXXXoO   ",
+"     .XXoO    ",
+"    ..XoO     ",
+"    .XoO      ",
+"   .X O       ",
+"   .XO        ",
+"  .XO         ",
+"  XO          ",
+"  O           "};

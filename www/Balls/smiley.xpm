@@ -1,0 +1,23 @@
+/* XPM */
+static char * smiley_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c yellow",
+/* pixels */
+"              ",
+"     ....     ",
+"   ..XXXX..   ",
+"  .XXXXXXXX.  ",
+"  .X..XX..X.  ",
+" .XX..XX..XX. ",
+" .XXXXXXXXXX. ",
+" .X.XXXXXX.X. ",
+" .XX.XXXX.XX. ",
+"  .XX....XX.  ",
+"  .XXXXXXXX.  ",
+"   ..XXXX..   ",
+"     ....     ",
+"              "};

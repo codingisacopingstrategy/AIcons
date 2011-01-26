@@ -1,0 +1,38 @@
+/* XPM */
+static char * image2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 10 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c firebrick",
+"O	c tomato",
+"+	c black",
+"@	c slate grey",
+"#	c sea green",
+"$	c navy",
+"%	c dodger blue",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXXXXXX XXX ....",
+" XXXooooooo XXXX ...",
+" XXXoOOOOOO+ + + +..",
+" XXXoOOOOOO+++++++..",
+" XXXoOoOoOoOo@@@@+..",
+" XXXXXXXXXXXXX@@@+..",
+" XXX         XXX@+..",
+" XXX ####### XXX@+..",
+" XXX ########XXX@+..",
+" XXX # # # # XXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+" XXX$$$$$$$$$XXX@+..",
+" XXX$%%%%%%%$XXX@+..",
+" XXX$%%%%%%%%XXX@+..",
+" XXX$%$%$%$%$XXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+"  @@@@@@@@@@@@@@ +..",
+"..++++++++++++++++.."};

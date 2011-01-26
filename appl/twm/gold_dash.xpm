@@ -1,0 +1,20 @@
+/* XPM */
+static char * gold_dash_xpm[] = {
+"14 14 3 1",
+" 	c Gold",
+".	c LemonChiffon",
+"X	c Peru",
+"              ",
+"              ",
+"              ",
+"              ",
+"              ",
+"              ",
+" ...........X ",
+" .XXXXXXXXXXX ",
+"              ",
+"              ",
+"              ",
+"              ",
+"              ",
+"              "};

@@ -1,0 +1,197 @@
+# vim:set syntax=perl:
+#
+# GifMap Global Options File
+#
+# Defineds the options I used to create all thge imagemap'ed "Icons.html"
+# files in the library sub-sections.  The gifmap program is in the 
+# ``support/scripts'' subdirectory.
+#
+
+# File naming
+$opt_indexname='Icons.html';    # Per-directory master index file 
+		# if 'NOLINK' then no links made to this directory by gifmap
+$opt_readme='README.html';      # Name of welcome page README file ('' = none)
+$opt_pageindexname='.icons';    # Base name of secondary index files
+$opt_dirindexname='.dirindex';  # Subdirectory Title cross-reference
+                                #  dirname   Directory Title
+
+#
+# Color options
+#
+# Imagemap Frame & non-framed pages
+$opt_colorback  = 'MediumAquamarine';	# Color -- Background
+$opt_colorframe = 'Gray';		# Color -- Frame
+$opt_colortrans = 'MediumAquamarine';	# Color -- Transparency
+$opt_coloralink = '#FF0000';		# Color -- Active link  (As Netscape)
+$opt_colorlink  = '#0000EE';		# Color -- Link         (As Netscape)
+$opt_colorvlink = '#551A8B';		# Color -- Visited link (As Netscape)
+#
+# Directory frame  (Empty if as per Imagemap Frame)
+$opt_dircolorback  = '';		# Color -- Background
+$opt_dircolorframe = '';		# Color -- Frame Color
+$opt_dircoloralink = '';		# Color -- Active link
+$opt_dircolorlink  = '';		# Color -- Link
+$opt_dircolorvlink = '';		# Color -- Visited link
+
+# General options
+$opt_debug      = 0;            # Debug flag (default off)
+$opt_recurse    = 0;            # Recursivally apply gifmap (default off)
+$opt_prune      = 0;            # Do Not recurse into subdirectories (off)
+$opt_ignore     = 0;            # Do not gifmap this directory
+                                #    but still recurse into sub-directories
+$opt_relative	= 1;		# Relative paths flag (default off)
+$opt_srcdir	= '.';		# Source directory path (def. current directory)
+$opt_verbose	= 1;		# Verbose flag (default off)
+$opt_forcehtml	= 0;		# Force HTML files to be generated (default off)
+$opt_forcemontage= 0;		# Force montage (default off)
+$opt_help	= 0;		# Display usage message
+
+
+# Server-side imagemap settings
+$opt_htimage='';	# Base URL to server-side imagemap CGI
+                        #  On some systems this is  /cgi-bin/imagemap
+                        #  Set to '' to use a ".map" URL with relative URLs 
+                        #                        (latest NCSA & Apache) 
+$opt_maptype='ncsa';    # Maptype must be "cern" or "ncsa". If you are using
+                        # Apache, specify "ncsa". Case *is* significant
+
+# ImageMagick Montage settings
+#
+$opt_columns	= 8;		# Max number of columns in montage grid
+$opt_rows	= 6;		# Max number of rows in montage grid
+$opt_thumbfont	= '';		# Font used for thumbnails (use default font)
+#$opt_thumbgeom	= '80x70';	# Max thumbnail size images (width x height)
+$opt_thumbgeom  = '';		# make thumbnails fit image size
+$opt_maxgif	= 30000;	# Maximum GIF imagemap size before trying JPEG
+#$opt_maxgif	= 50000;	# Temporary -- always use gif images
+#$opt_maxgif	= 500000;	# Temporary -- always use gif images
+
+# filter to compress gif images (Note: XV does not like the --optimize flag)
+$opt_compress_gif = 'gifsicle';
+
+# Extra Montage flags (and suggestions)... 
+#  Normal Default  (labeled images)
+#$opt_montageflags='-label \'%f\n%wx%h %bKb\'';
+#
+#  Framed version
+#$opt_montageflags='+frame 5 -label \'%f\n%wx%h %bKb\'';
+#  
+# Simple Framed images or labels (thin frames)
+$opt_montageflags = "";
+#
+#  No labels frame shadow etc... Just the images
+#$opt_montageflags = "+frame +label +shadow -gravity Center";
+
+# Uncomment to try and preserve transparency of individual images.
+#$opt_montageflags .= " -compose over";
+
+# Navigation Icon Paths and URLs
+# Specify the path and file name for the navigation icons.
+#
+$opt_prefixpath = '';           # Path or URL to replace root path
+                                # Not used if local relative paths used
+$opt_rootpath   = "$ENV{'HOME'}/icons";  # Directory Path to top of html tree
+                                # Needed to determine relative paths to images
+$opt_iconpath 	= 'www_images';
+                                # Relative path under rootpath / prefixpath
+
+# Hash table of icons used -- image size read internally by gifmap
+%opt_icons = (
+   'prev',	'blue_prev.gif',	# Previous
+   'next',	'blue_next.gif',	# Next
+#  'prev_grey',	'aqua_prev.gif',	# Previous (grayed out)
+   'next_gray',	'aqua_next.gif',	# Next (grayed out)
+   'up',  	'blue_up.gif',  	# Up
+   'help',	'blue_readme.gif',	# Help (display reda-file)
+   'ball',	'blue_ball_small.gif',	# A ball matching other icons
+
+   # My Extra items
+#  'logo',	'aicons.gif',		# Static Logo for AIcons
+#  'logo_anim',	'aicons_anim.gif',	# Anaimated Logo for AIcons
+   'dir',	'blue_dir.gif',		# Directory Button Addition
+   'shortcut',	'favicon.ico',		# Shortcut icon link image for IE
+);
+
+
+# Extra Information Options.
+# WARNING: $opt_title and $opt_header are caculated in the root directory
+# .gifmaprc which sets them correctly for every subdirectory of AIcons.
+# as well as the $aicon_logo used latter in format strings
+$opt_title	= '';	# Default title for gifmap (default = '')
+$opt_header     = '';	# Blank header obtains default header generation
+
+# Additonal address info for bottom of imagemap page
+# The address however is constant for the whole AIcons library.
+$opt_address    = '
+</ADDRESS>
+<B>WARNING:</B> The images above are most likely to be in the X window;
+Bitmap and Pixmap image formats. Viewing these images directly with most
+Web Browsers does NOT work which is the reason for this example index file.
+<P>
+PC users can look at 
+``<A HREF="http://www.cit.gu.edu.au/~anthony/icons/pc_x_images.shtml">
+Converting Images for PC use</A>\'\' on converting and displaying
+images they may download. <P>
+
+
+<ADDRESS>
+AIcons: <A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html"
+   >Anthony Thyssen</A>
+   &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml"
+   >anthony@cit.gu.edu.au</A>&gt;
+';
+
+
+# 
+# Format Templates
+# WARNING: This is for expert web and perl programmers only
+# do not modify unless you know what you are doing.
+# 
+# Extra Images can be added to the above hash table and then used
+# in the following format options. For example the 'dir' icon above
+# can be uncommented then the following lines added below.
+# WARNING: this is only useful if $opt_indexname is something else.
+#
+
+# 
+# Template for the Directory Index Frame
+#
+$opt_frameddirfmt='
+<FONT SIZE=-1><NOBR><CENTER>
+${aicons_logo}
+</CENTER>
+${uphtml}
+${helphtml}
+<A HREF=\"./\" TARGET=\"pagemap\">
+   <IMG SRC=\"$icon_url{dir}\" $icon_size{dir} ALT=\"\" BORDER=0></A>
+        <A HREF=\"./\" TARGET=\"pagemap\">Dir Listing</A><BR>
+${nexthtml}
+<P>
+${dirhtml}
+</NOBR></FONT>
+';
+
+# 
+# Template for Non-Framed Top Index Page ($opt_indexname)
+#
+$opt_dirfmt='${opt_header}
+<H3>Directory Navigator ...</H3>
+${uphtml}
+${helphtml}
+<A HREF=\"./\" TARGET=\"pagemap\">
+   <IMG SRC=\"$icon_url{dir}\" $icon_size{dir} ALT=\"\" BORDER=0></A>
+        <A HREF=\"./\" TARGET=\"pagemap\">Dir Listing</A><BR>
+${nexthtml}
+<P>
+${dirhtml}
+${pageindexhtml}
+';
+
+#
+# File extensions that we support
+#
+@extensions=( 'avs', 'bmp', 'cgm', 'eps', 'gif', 'hdf',
+	     'jbig', 'jpeg', 'jpg', 'mif', 'miff', 'mpeg', 'mpg',
+	     'pcl', 'pcx', 'pdf', 'pic', 'png', 'png', 'pnm', 'ppm',
+	     'ps', 'rle', 'tga', 'tif', 'tiff', 'xbm', 'xpm', 'xwd');
+

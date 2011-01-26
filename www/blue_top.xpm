@@ -1,0 +1,38 @@
+/* XPM */
+static char *blue_top_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+"  c #001AC6",
+". c dodger blue",
+"X c lavender",
+"o c sky blue",
+"O c navy blue",
+"+ c white",
+"@ c blue",
+/* pixels */
+"@@@@@@@@@@@@@@@@@@@@@@@O",
+"@@@@@@@@@@@@@@@@@@@@@@OO",
+"@@                    OO",
+"@@         .          OO",
+"@@         Xo         OO",
+"@@        .++         OO",
+"@@        X++.        OO",
+"@@        +++X        OO",
+"@@       o++++.       OO",
+"@@       +++++X       OO",
+"@@      o++++++       OO",
+"@@      X++++++.      OO",
+"@@     .++++++++      OO",
+"@@     X++++++++.     OO",
+"@@                    OO",
+"@@        .XX.        OO",
+"@@       .++++.       OO",
+"@@       X++++X       OO",
+"@@       X++++X       OO",
+"@@       .++++.       OO",
+"@@        .XX.        OO",
+"@@                    OO",
+"@OOOOOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOOOOOO"
+};

@@ -1,0 +1,42 @@
+/* XPM */
+static char *square_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c grey",
+". c white",
+"X c slategrey",
+/* pixels */
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"    XXXXXXXXXXXXXXXXXXXXXXX.    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    X                      .    ",
+"    ........................    ",
+"                                ",
+"                                ",
+"                                ",
+"                                "
+};

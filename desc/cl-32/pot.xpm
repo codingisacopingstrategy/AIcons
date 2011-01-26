@@ -1,0 +1,42 @@
+/* XPM */
+static char *pot_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c white",
+"X c LemonChiffon",
+/* pixels */
+".....................  .........",
+".................... X .........",
+"................... XX .........",
+"................... X ..........",
+"................... X ..........",
+".................. X ...........",
+".................. X ...........",
+".........         X ............",
+".....    XXXXXXX XX ............",
+".... X                 .........",
+".... XX            XXX .........",
+".... XXX XX XXXXXXXXX ..........",
+".....    XX XXXXXXX   ..........",
+"......   XXX XXXXXXXX ..........",
+"....     XXX XXXXXXXX  .........",
+"....   X XXXXXXXXXXXXX .........",
+"...  X X XXXXXXXXXXXXX .........",
+"...  X X XXXXXXXXXXXXXX     ....",
+"... XXXXXXXXXXXXXXXXXXX X XX ...",
+"... XXXXXXXXXXXXXXXXXXX XXXXX   ",
+"... XX XXXXXXXXXXXXXXXX XX XXXX ",
+"..  XX XXXXXXXXXXXXXXXXX X XX   ",
+".. XXXXXXXXXXXXXXXXXXXXX XXX  ..",
+".  XXXXXXXXXXXXXXXXXXXXXXXXX  ..",
+". X XXXXXXXXXXXXXXXXXXXXX   ....",
+". X XXXXXXXXXXXXXXXXXXXXX ......",
+".  XXXXXXXXXXXXXXXXXXXXXX ......",
+".  XXXXXXXXXXXXXXXXXXXXXX ......",
+". X XXXXXXXXXXXXXXXXXXXXX ......",
+"..  XXXXXXXXXXXXXXXXXXX  .......",
+"...  XXXXXXXXXXXXXXX   .........",
+".....               ............"
+};

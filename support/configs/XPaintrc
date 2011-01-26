@@ -1,0 +1,136 @@
+# XPaint configuration file
+#
+# Set the XPaints color table to standard
+# And define some interesting patterns
+#
+reset
+
+solid "black"
+solid "dark slate grey"
+solid "slate grey"
+solid "grey"
+solid "gainsboro"
+solid "white"
+solid "violet"
+solid "magenta"
+solid "purple"
+solid "navy"
+solid "blue"
+solid "dodger blue"
+solid "sky blue"
+solid "lavender"
+solid "cyan"
+solid "pale green"
+solid "green"
+solid "lime green"
+solid "sea green"
+solid "firebrick"
+solid "red"
+solid "tomato"
+solid "orange"
+solid "gold"
+solid "yellow"
+solid "lemon chiffon"
+solid "wheat"
+solid "tan"
+solid "peru"
+solid "sienna"
+
+# weave pattern
+gttern BeginData
+P1
+4 4
+1000
+0010
+0100
+0001
+EndData
+
+# light grey (rectangular)
+pattern BeginData
+P1
+2 2
+00
+01
+EndData
+
+# light grey (hexagonal)
+pattern BeginData
+P1
+4 2
+1000
+0010
+EndData
+
+# grey pattern (striple)
+pattern BeginData
+P1
+2 2
+10
+01
+EndData
+
+# dark grey (hexagonal)
+pattern BeginData
+P1
+4 2
+1011
+1110
+EndData
+
+# dark grey (rectangular)
+pattern BeginData
+P1
+2 2
+01
+11
+EndData
+
+# diagonal lines right
+pattern BeginData
+P1
+4 4
+1000
+0001
+0010
+0100
+EndData
+
+# diagonal lines left
+pattern BeginData
+P1
+4 4
+0001
+1000
+0100
+0010
+EndData
+
+#Squares
+pattern BeginData
+P1
+8 8
+11000110
+11011000
+00011000
+10000001
+10001101
+01101100
+01100000
+00000110
+EndData
+
+# Balls
+pattern BeginData
+P1
+8 8
+11100011
+11100011
+11011101
+00100110
+00111110
+00111110
+11011101
+01100010
+EndData
+

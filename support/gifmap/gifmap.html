@@ -1,0 +1,528 @@
+<!-- $Id$ -->
+<HTML><HEAD>
+<TITLE>gifmap</TITLE>
+<LINK REL="SHORTCUT ICON" HREF="../../www_images/favicon.ico">
+</HEAD>
+<BODY></CENTER><p><hr>
+
+<H1> 
+<A NAME="gifmap_name_0">
+NAME</A>
+</H1>
+gifmap - web-based image index builder
+<p><p><hr>
+
+<H1> 
+<A NAME="gifmap_synopsis_0">
+SYNOPSIS</A>
+</H1>
+<STRONG>gifmap</STRONG> <STRONG>[ --address string]</STRONG>
+       <STRONG>[ --coloralink colorspec ]</STRONG>
+       <STRONG>[ --colorback colorspec ]</STRONG>
+       <STRONG>[ --colorlink colorspec ]</STRONG>
+       <STRONG>[ --colortrans colorspec ]</STRONG>
+       <STRONG>[ --colorvlink colorspec ]</STRONG>
+       <STRONG>[ --columns number ]</STRONG>
+       <STRONG>[ --debug ]</STRONG>
+       <STRONG>[ --dircoloralink colorspec ]</STRONG>
+       <STRONG>[ --dircolorback colorspec ]</STRONG>
+       <STRONG>[ --dircolorlink colorspec ]</STRONG>
+       <STRONG>[ --dircolorvlink colorspec ]</STRONG>
+       <STRONG>[ --dirindexname filename ]</STRONG>
+       <STRONG>[ --forcehtml ]</STRONG>
+       <STRONG>[ --forcemontage ]</STRONG>
+       <STRONG>[ --header string ]</STRONG>
+       <STRONG>[ --help ]</STRONG>
+       <STRONG>[ --htimage path ]</STRONG>
+       <STRONG>[ --iconpath path ]</STRONG>
+       <STRONG>[ --indexname filename ]</STRONG>
+       <STRONG>[ --maptype cern|ncsa ]</STRONG>
+       <STRONG>[ --maxgif number ]</STRONG>
+       <STRONG>[ --montageflags string ]</STRONG>
+       <STRONG>[ --pageindexname string ]</STRONG>
+       <STRONG>[ --prefixpath path ]</STRONG>
+       <STRONG>[ --readme filename ]</STRONG>
+       <STRONG>[ --recurse ]</STRONG>
+       <STRONG>[ --relative ]</STRONG>
+       <STRONG>[ --rootpath path ]</STRONG>
+       <STRONG>[ --rows number ]</STRONG>
+       <STRONG>[ --srcdir path ]</STRONG>
+       <STRONG>[ --thumbfont fontspec ]</STRONG>
+       <STRONG>[ --thumbgeom widthxheight ]</STRONG>
+       <STRONG>[ --title string ]</STRONG>
+       <STRONG>[ --verbose ]</STRONG>
+<p><p><hr>
+
+<H1> 
+<A NAME="gifmap_description_0">
+DESCRIPTION</A>
+</H1>
+<STRONG>Gifmap</STRONG> creates HTML index files and imagemaps
+corresponding to a directory of image files. <STRONG>Gifmap</STRONG> is
+ideal for making large image collections available on the
+net or for just using your Web browser for browsing images.
+<p>Configuration options are derived from either the command line
+(options prefixed with '-', '--', or '+'), configuration file
+(<STRONG>$opt_</STRONG> options), or internal defaults (<STRONG>$opt_</STRONG> options). Some
+arguments (like X11 font specifications) seem to confuse PERL's
+getopt function. When this happens, try using the syntax
+<EM>--option=arg</EM> to avoid any confusion caused by a space.
+<p>The default configuration file name is "<EM>.gifmaprc</EM>".
+Configuration files are written in PERL syntax and are sourced via
+PERL's eval statement. When <STRONG>gifmap</STRONG> is executed, it first reads a
+"<EM>.gifmaprc</EM>" file in the user's home directory (if present). When
+a directory is processed, <STRONG>gifmap</STRONG> will process any "<EM>.gifmaprc</EM>"
+files found in the path from the server's root directory
+(<EM><STRONG>$opt_rootpath</STRONG></EM>) to the directory being processed. All
+configuration options are additive.
+<p>Evaluation order is as follows :
+<p>
+<OL>
+<LI><STRONG>$HOME</STRONG>/.gifmaprc
+<p>
+<LI>Command line options
+<p>
+<LI>Per directory .gifmaprc files.
+<p>Gifmaprc  files  are evaluated in path order from server root to
+current directory. This allows sub-directories to "inherit" the
+configuration of parent directories.
+<p>
+</OL>
+Each directory is processed with items 1 &amp; 2 already complete.
+In general, <STRONG>gifmap</STRONG>'s defaults produce nice output.
+However, the options <STRONG><STRONG>$opt_prefixpath</STRONG></STRONG>,
+<STRONG><STRONG>$opt_rootpath</STRONG></STRONG>, <STRONG><STRONG>$opt_iconpath</STRONG></STRONG>, <STRONG><STRONG>$opt_htimage</STRONG></STRONG>, and
+<STRONG><STRONG>$opt_maptype</STRONG></STRONG> must be configured on a per-site basis so
+please read the documentation on these options and
+perform the required configuration before executing the
+program.
+<p><p><hr>
+
+<H1> 
+<A NAME="gifmap_program_0">
+PROGRAM OPTIONS</A>
+</H1>
+<p>
+<H2> 
+<A NAME="gifmap_general_0">
+General:</A>
+</H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_debug</STRONG></STRONG>=<EM>1</EM> (<STRONG>--debug</STRONG>) 
+</STRONG>
+<DD>
+Print debugging messages.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_forcehtml</STRONG></STRONG>=<EM>1</EM> (<STRONG>--forcehtml</STRONG>)
+</STRONG>
+<DD>
+Force HTML files to be generated (default off).
+Without this option, <STRONG>gifmap</STRONG> will only re-generate HTML
+files as required. Use this option if gifmap options have
+changed since the last run and you want to update the
+pages using the new options.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_forcemontage</STRONG></STRONG>=<EM>1</EM>  (<STRONG>--forcemontage</STRONG>)
+</STRONG>
+<DD>
+Force montage (default false).
+Without this option, <STRONG>gifmap</STRONG> will only re-generate
+montages as required. Use this option if gifmap montage
+options have changed since the last run and you want to
+update the pages using the new options
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_help</STRONG></STRONG>=<EM>1</EM>  (<STRONG>--help</STRONG>)
+</STRONG>
+<DD>
+Display usage message.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_ignore</STRONG></STRONG>=<EM>1</EM>
+</STRONG>
+<DD>
+If <STRONG><STRONG>$opt_ignore</STRONG></STRONG> is set in a directory's "&lt;.gifmaprc&gt;" file, then that
+directory will not be processed. If recursion is enabled, then recursion
+will continue into any sub-directories. See also <STRONG><STRONG>$opt_indexname</STRONG></STRONG>.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_prune</STRONG></STRONG>=<EM>1</EM>
+</STRONG>
+<DD>
+If <STRONG><STRONG>$opt_prune</STRONG></STRONG> is set in a directory's "<EM>.gifmaprc</EM>" file, then no
+sub-directories below that directory will be processed by gifmap when
+operating in the recursive mode.  See also <STRONG><STRONG>$opt_indexname</STRONG></STRONG>.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_recurse</STRONG></STRONG>=<EM>1</EM>  (<STRONG>--recurse</STRONG>)
+</STRONG>
+<DD>
+Recurse directory tree. The default is to only process the current
+directory, generating appropriate links for sub-directories and the parent
+directory, as if gifmap is recuring. Selecting this option causes <STRONG>gifmap</STRONG>
+to recurse through sub-directories as well.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_srcdir</STRONG></STRONG>=<EM>path</EM>  (<STRONG>--srcdir</STRONG> <EM>path</EM>)
+</STRONG>
+<DD>
+Image directory to process or start recursion at. Specify this option
+(usally on the command line) if the directory you want to process is not
+the current directory.  The default directory to process is the current
+directory.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_verbose</STRONG></STRONG>=<EM>1</EM>  (<STRONG>--verbose</STRONG>)
+</STRONG>
+<DD>
+Normally <STRONG>gifmap</STRONG> prints only the directory names for directories it
+processes. Selecting the verbose option displays the number of images and
+sub-directories in the directory as well as the number of pages to be
+generated, and the current page number.
+<p>It will also show the current image index <STRONG>gifmap</STRONG> is currently creating
+as a progress report.
+<p>
+</DL>
+
+<H2> 
+<A NAME="gifmap_paths_0">
+Paths:</A>
+</H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_rootpath</STRONG></STRONG>=<EM>path</EM>  (<STRONG>--rootpath</STRONG> <EM>path</EM>)
+</STRONG>
+<DD>
+Absolute path to server root directory (NCSA/Apatche DocumentRoot) or the
+users Home page directory. This must be an absolute path (starting with
+'/') to the top of the WWW directory tree gifmap will be processing in.  If
+this value is specified incorrectly, <STRONG>gifmap</STRONG> will generate incorrect
+URLs.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_prefixpath</STRONG></STRONG>=<EM>path</EM>  (<STRONG>--prefixpath</STRONG> <EM>path</EM>)
+</STRONG>
+<DD>
+The URL to prepend to specify the WWW location of <STRONG><STRONG>$opt_rootpath</STRONG></STRONG>.
+For the WWW server's root directory this is a empty string (""). For a
+user's home pages this is the URL path to their home pages (usally
+"/~username", but may be different on your server). This is only used
+for figuring out the URLs of the <STRONG>gifmap</STRONG> icon images.
+<p>if <STRONG><STRONG>$opt_relative</STRONG></STRONG> is enabled then this option is not actually used.  It
+however must be used if the <STRONG>gifmap</STRONG> icon images are not in the same WWW
+directory tree as the directorys <STRONG>gifmap</STRONG> is processing.  (See the next
+option).
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_relative</STRONG></STRONG>=<EM>1</EM>  (<STRONG>--relative</STRONG>)
+</STRONG>
+<DD>
+Translate URLs for <STRONG>gifmap</STRONG> icon images as relative paths from the
+directory <STRONG>gifmap</STRONG> is processing. The images must be in the same WWW
+directory tree otherwise the relative paths will be incorrect. 
+<p>If the images are is not in the same directory tree, then this option
+will have to be turned off and <STRONG><STRONG>$opt_prefixpath</STRONG></STRONG> and <STRONG><STRONG>$opt_iconpath</STRONG></STRONG>
+used to locate the <STRONG>gifmap</STRONG> icon images using absolute URLs paths
+for that server. 
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_iconpath</STRONG></STRONG>=<EM>path</EM>  (<STRONG>--iconpath</STRONG> <EM>path</EM>)
+</STRONG>
+<DD>
+This is the relative path from the top of the WWW directory tree specified
+in <STRONG><STRONG>$opt_rootpath</STRONG></STRONG>. If this value is specified incorrectly then
+<STRONG>gifmap</STRONG> will generate incorrect URLs for its icons.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>%opt_icon</STRONG></STRONG>=(  '<EM>id</EM>', '<EM>filename</EM>', .... );
+</STRONG>
+<DD>
+This is a hash table of all the icon images used by <STRONG>gifmap</STRONG>
+and located in the <STRONG><STRONG>$opt_iconpath</STRONG></STRONG> directory. The elments are pairs
+of icon <EM>id</EM>s and the filename of the image. The <EM>id</EM>s currently used
+<STRONG>gifmap</STRONG> are :- prev, next, next_grey, up, help, and ball.
+<p>Other images can also be defined in the hash table and <STRONG>gifmap</STRONG> will
+automatically process those images along with the images it uses, to
+generate the icon URL and size infomation. This information can then be
+used in the various special formating options to add extra, or special
+purpose links.  
+<p>WARNING: currently icon information can only be set in the global
+gifmaprc file (usally "<EM>~/.gifmaprc</EM>", as unexpected results can happen
+if modified in per-directory rc files.
+<p>
+</DL>
+
+<H2> 
+<A NAME="gifmap_filenames_0">
+Filenames:</A>
+</H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_indexname</STRONG></STRONG>=<EM>filename</EM>  (<STRONG>--indexname</STRONG> <EM>filename</EM>)
+</STRONG>
+<DD>
+Base name of master index files (default server index), usally set to
+"<EM>index.html"</EM>. This is also the option <STRONG>gifmap</STRONG> will look for
+in sub-directories and parent directory "<EM>.gifmaprc</EM>" files as the
+document to make links to.
+<p>EG: If a directory is not processed by gifmap, by either never running
+<STRONG>gifmap</STRONG> on that directory, or the option <STRONG><STRONG>$opt_ignore</STRONG></STRONG> has been set,
+then setting <STRONG><STRONG>$opt_indexname</STRONG></STRONG> will specify the document <STRONG>gifmap</STRONG> created
+index files of OTHER directories should link to.
+<p>If you do not what gifmap to ever link to this directory then setting this
+option, <STRONG><STRONG>$opt_indexname</STRONG></STRONG>, to <STRONG>"NOLINK"</STRONG> will will prevent <STRONG>gifmap</STRONG> index
+files in other directories having links to this directory.
+<p>If you want <STRONG>gifmap</STRONG> to entirely ignore a particular directory tree,
+even during recursion of the surrounding directories, then you ca use
+the following options in its "<EM>.gifmaprc</EM>" file....
+<p>
+<DL COMPACT>
+</DL>
+
+<DT><STRONG>
+<STRONG><STRONG>$opt_readme</STRONG></STRONG>=<EM>filename</EM>  (<STRONG>--readme</STRONG> <EM>filename</EM>)
+</STRONG>
+<DD>
+Name of directory information file. If this named file exists in
+the directory, then it will be displayed in preference to
+the first page of images. Typically the contents of this file
+describe the images to be viewed.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_pageindexname</STRONG></STRONG>=<EM>string</EM>  (<STRONG>--pageindexname</STRONG> <EM>string</EM>)
+</STRONG>
+<DD>
+Base name of page-related index files. This name is used as the prefix for
+all generated files except for the main index file. It is usally set to
+some hidden (or unix `dot' filename) such as ".index".
+<p>
+<XMP>
+  
+
+</XMP>
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_dirindexname</STRONG></STRONG>=<EM>filename</EM>  (<STRONG>--dirindexname</STRONG> <EM>filename</EM>)
+</STRONG>
+<DD>
+Directory-name to title cross-reference sub-directories. If this file
+exists, then it is searched for a specification for the linked directory.
+If a match is found, then the replacement text is used as the link text.
+The format of the file is:
+<p>
+<XMP>
+ dirname  dirtext
+
+</XMP>
+<p>With <EM>dirname</EM> representing the directory name and
+<EM>dirtext</EM> representing the replacement link text.
+<p>
+</DL>
+
+<H2> 
+<A NAME="gifmap_server_side_0">
+Server-side imagemaps:</A>
+</H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_htimage</STRONG></STRONG>=<EM>path</EM>  (<STRONG>--htimage</STRONG> <EM>path</EM>)
+</STRONG>
+<DD>
+Imagemap CGI program URL (set to " for none). Older
+servers (e.g. CERN and old NCSA) require an external
+program to handle server-side imagemaps. These programs
+are generally supplied with a full URL to the referenced
+file. Newer servers have server-side imagemap support
+built-in and can accept URLs relative to the current
+directory. If you have a modern server, then specify this
+value as a null string.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_maptype</STRONG></STRONG>=<EM>maptype</EM>  (<STRONG>--maptype</STRONG> <EM>maptype</EM>)
+</STRONG>
+<DD>
+Server-side map type (set to "ncsa" or "cern"). NCSA and
+Apache servers require "ncsa". CERN requires "cern".
+Phttpd can use either format.
+<p>
+</DL>
+
+<H2> 
+<A NAME="gifmap_image_0">
+Image Map Options:</A>
+</H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_colortrans</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--colortrans</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Transparent color to use in montage. Usally the same as the background
+color <STRONG><STRONG>$opt_colorback</STRONG></STRONG> of the imagemap page.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_maxgif</STRONG></STRONG>=<EM>number</EM>  (<STRONG>--maxgif</STRONG> <EM>number</EM>)
+</STRONG>
+<DD>
+Maximum size of GIF imagemap before trying JPEG. This is
+an optimization which tries to avoid the JPEG conversion step.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_montageflags</STRONG></STRONG>=<EM>string</EM>  (<STRONG>--montageflags</STRONG> <EM>string</EM>)
+</STRONG>
+<DD>
+Flags to ImageMagick <STRONG>montage</STRONG>. The <STRONG>montage</STRONG> program is used to generate
+the thumbnail images used by <STRONG>gifmap</STRONG>. Read the the <EM>montage</EM>  manpage
+ for details.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_rows</STRONG></STRONG>=<EM>number</EM>  (<STRONG>--rows</STRONG> <EM>number</EM>)
+</STRONG>
+<DD>
+Montage rows (max). This is the maximum number of thumbnail rows
+allowed per page.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_thumbfont</STRONG></STRONG>=<EM>fontspec</EM>  (<STRONG>--thumbfont</STRONG> <EM>fontspec</EM>)
+</STRONG>
+<DD>
+Thumbnail title font. This is the X11 font used to title
+thumbnails. PERL's newgetopt module seems to have difficulties with
+the dashes in most X11 font specifications. If <STRONG>getopt</STRONG> prints the
+usage message rather than doing what you want to, then try using
+the command line syntax <EM>--thumbfont=fontspec</EM> and you should have
+better luck.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_thumbgeom</STRONG></STRONG>=<EM>geometry</EM>  (<STRONG>--thumbgeom</STRONG> <EM>geometry</EM>)
+</STRONG>
+<DD>
+Thumbnail geometry (widthxheight). This defines the size
+of thumbnail images.
+<p>
+</DL>
+
+<H2> <EM>Colors &amp; Appearance:</EM></H2>
+<p>
+<DL COMPACT>
+<DT><STRONG>
+<STRONG><STRONG>$opt_address</STRONG></STRONG>=<EM>string</EM> (<STRONG>--address</STRONG> <EM>string</EM>)
+</STRONG>
+<DD>
+Additional information to place in &lt;ADDRESS&gt;&lt;/ADDRESS&gt; tags in 
+page frame.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_coloralink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--coloralink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (active) color for page frame.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_colorback</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--colorback</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Background color for page frame.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_colorlink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--colorlink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (unvisited) color for page frame.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_colorvlink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--colorvlink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (visited) color for page frame.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_dircoloralink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--dircoloralink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (active) color for directory frame. Defaults to value of <STRONG><STRONG>$opt_coloralink</STRONG></STRONG>
+if not explicitly set.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_dircolorback</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--dircolorback</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Background color for directory frame. Defaults to value of <STRONG><STRONG>$opt_colorback</STRONG></STRONG>
+if not explicitly set.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_dircolorlink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--dircolorlink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (unvisited) color for directory frame.  Defaults to value of <STRONG><STRONG>$opt_colorlink</STRONG></STRONG>
+if not explicitly set.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_dircolorvlink</STRONG></STRONG>=<EM>colorspec</EM>  (<STRONG>--dircolorvlink</STRONG> <EM>colorspec</EM>)
+</STRONG>
+<DD>
+Link (visited) color for directory frame.  Defaults to value of <STRONG><STRONG>$opt_colorvlink</STRONG></STRONG>
+if not explicitly set.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_columns</STRONG></STRONG>=<EM>number</EM>  (<STRONG>--columns</STRONG> <EM>number</EM>)
+</STRONG>
+<DD>
+Montage columns.
+<p>
+<DT><STRONG>
+<STRONG>opt_frameddirfmt</STRONG>=<EM>string</EM>
+</STRONG>
+<DD>
+Template (written in PERL) that represents the format
+used to generate the framed (left frame) directory
+navigation page. This format will be seen by browsers
+that support frames. This is a guru-level option and is
+subject to change.
+<p>
+<DT><STRONG>
+<STRONG>opt_dirfmt</STRONG>=<EM>string</EM>
+</STRONG>
+<DD>
+Template (written in PERL) that represents the format
+used to generate the frame-less directory navigation
+page. This format will be seen by browsers that do not
+support frames. This is a guru-level option and is
+subject to change.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_header</STRONG></STRONG>=<EM>string</EM>  (<STRONG>--header</STRONG> <EM>string</EM>)
+</STRONG>
+<DD>
+Text to add to page header in page frame. This option is subject to change
+and will be eliminated if the page frame is templatized.
+<p>
+<DT><STRONG>
+<STRONG><STRONG>$opt_title</STRONG></STRONG>=<EM>string</EM>  (<STRONG>--title</STRONG> <EM>string</EM>)
+</STRONG>
+<DD>
+Page title. If this option is not specified, then <STRONG>gifmap</STRONG>
+will generate its own title.
+<p>
+</DL>
+<p><hr>
+
+<H1> 
+<A NAME="gifmap_authors_0">
+AUTHORS</A>
+</H1>
+<STRONG>Gifmap</STRONG> is written and maintained by Bob Friesenhahn
+(<A HREF="MAILTO:bfriesen@simple.dallas.tx.us">bfriesen@simple.dallas.tx.us</A>) with copious input from Anthony
+Thyssen (<A HREF="MAILTO:anthony@cit.gu.edu.au">anthony@cit.gu.edu.au</A>). Anthony's diligent
+assistance as the first alpha tester is very much
+appreciated.
+<p>
+</BODY>
+</HTML>

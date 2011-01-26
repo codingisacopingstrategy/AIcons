@@ -1,0 +1,31 @@
+/* XPM */
+static char * book_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c magenta",
+"o	c grey",
+"O	c slate grey",
+/* pixels */
+"                    ",
+"         ..         ",
+"       ..XX.        ",
+"     ..XXXXX.       ",
+"   ..XXXXXXXX.      ",
+" ..XXXXXXXXXXX.     ",
+".o.XXXXXXXXXXXX.    ",
+".Xo.XXXXXXXXXXXX.   ",
+".XXo.XXXXXXXXXXXX.  ",
+".XXXo.XXXXXXXXXXXX. ",
+" .XXXo.XXXXXXXXXXX..",
+"  .XXXo.XXXXXXXX... ",
+"   .XXXo.XXXXX..OO. ",
+"    .XXXo.XX..OOOO. ",
+"     .XXXo..OOOOoo..",
+"      .XX.OOOOoo..  ",
+"       .X.OOoo..    ",
+"        ..oo..      ",
+"         ...        ",
+"                    "};

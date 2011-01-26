@@ -1,0 +1,101 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Std Title Images</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Std Title Images
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+These are standard sized (64x54) bitmaps normally used for application
+icons.  These images are usally only used in document headers and as such
+are reasonably large. Many of these will be colored as time passes. <P>
+
+This is a subset of the 
+``<A HREF="http://www.cit.gu.edu.au/~anthony/icons/desc/std" TARGET="_top"
+><B>Standard Sized Descriptive Bitmaps</B></A>'' section of
+<A HREF="http://www.cit.gu.edu.au/~anthony/icons/" TARGET="_top"><B>
+Anthony's Icon Library</B></A>''.
+
+<HR>
+<H2>Standard Sized Pixmaps</H2> 
+
+<IMG SRC="aicons.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="enterprise.gif"   WIDTH=64 HEIGHT=54>
+<IMG SRC="mail_color.gif"   WIDTH=64 HEIGHT=54>
+<IMG SRC="manpage2.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="netscape.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="news.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="patch.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="wizard.gif"       WIDTH=64 HEIGHT=54>
+
+<H2>Standard Bitmaps</H2> 
+
+<IMG SRC="aborigine.gif"    WIDTH=64 HEIGHT=54>
+<IMG SRC="angel.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="archie.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="atom.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="australia.gif"    WIDTH=64 HEIGHT=54>
+<IMG SRC="bomb.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="bow_ribbon.gif"   WIDTH=64 HEIGHT=54>
+<IMG SRC="button.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="calendar.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="citadel.gif"      WIDTH=64 HEIGHT=54>
+<IMG SRC="earth.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="earth2.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="eye.gif"          WIDTH=64 HEIGHT=54>
+<IMG SRC="finger.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="ftp.gif"          WIDTH=64 HEIGHT=54>
+<IMG SRC="globe.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="gopher.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="gravestone.gif"   WIDTH=64 HEIGHT=54>
+<IMG SRC="hearts.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="help.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="here.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="info.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="library.gif"      WIDTH=64 HEIGHT=54>
+<IMG SRC="mail.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="mandarin.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="manpage.gif"      WIDTH=64 HEIGHT=54>
+<IMG SRC="message.gif"      WIDTH=64 HEIGHT=54>
+<IMG SRC="money.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="mosaic.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="ncsa.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="network.gif"      WIDTH=64 HEIGHT=54>
+<IMG SRC="nuke.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="oracle.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="phone.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="robot.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="scroll.gif"       WIDTH=64 HEIGHT=54>
+<IMG SRC="terminal.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="tools.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="tree.gif"         WIDTH=64 HEIGHT=54>
+<IMG SRC="triangle.gif"     WIDTH=64 HEIGHT=54>
+<IMG SRC="words.gif"        WIDTH=64 HEIGHT=54>
+<IMG SRC="www.gif"          WIDTH=64 HEIGHT=54>
+
+<P><HR>
+
+<ADDRESS>
+Dated:  7 Feburary 1996 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

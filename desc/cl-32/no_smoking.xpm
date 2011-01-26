@@ -1,0 +1,42 @@
+/* XPM */
+static char *no_smoking[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c red",
+"b c white",
+/* pixels */
+"bbbbbbbbbbbbaaaaaaaabbbbbbbbbbbb",
+"bbbbbbbbbaaaaaaaaaaaaaabbbbbbbbb",
+"bbbbbbbaaaaaaaaaaaaaaaaaabbbbbbb",
+"bbbbbbaaaaaaabbbbbbaaaaaaabbbbbb",
+"bbbbbaaaaabbbbbbbbbbbbaaaaabbbbb",
+"bbbbaaaabbbbbb`bbbbbbbbbaaaabbbb",
+"bbbaaaabbbbbb`b`bbbbbbbaaaaaabbb",
+"bbaaaabbbbbbbbbb`bbbbbaaaaaaaabb",
+"bbaaabbbbbbbbb`bbbbbbaaaaabaaabb",
+"baaaabbbbbb`bbbb`bbbaaaaabbaaaab",
+"baaabbbbb`bb`bb`bbbaaaaabbbbaaab",
+"baaabbbb`bb`bbbbbbaaaaabbbbbaaab",
+"aaaabbb`b`bbbbbbbaaaaabbbbbbaaaa",
+"aaabbbbbbbbbbbbbaaaaabbbbbbbbaaa",
+"aaabbb`b`b````````````````bbbaaa",
+"aaabbbb`b``bbbaaaaabbbbbb`bbbaaa",
+"aaabbb`b`b`bbaaaaabbbbbbb`bbbaaa",
+"aaabbbb`b``baaaaabbbbbbbb`bbbaaa",
+"aaabbb`b`b````````````````bbbaaa",
+"aaaabbbbbbaaaaabbbbbbbbbbbbbaaaa",
+"baaabbbbbaaaaabbbbbbbbbbbbbbaaab",
+"baaabbbbaaaaabbbbbbbbbbbbbbbaaab",
+"baaaabbaaaaabbbbbbbbbbbbbbbaaaab",
+"bbaaabaaaaabbbbbbbbbbbbbbbbaaabb",
+"bbaaaaaaaabbbbbbbbbbbbbbbbaaaabb",
+"bbbaaaaaabbbbbbbbbbbbbbbbaaaabbb",
+"bbbbaaaabbbbbbbbbbbbbbbbaaaabbbb",
+"bbbbbaaaaabbbbbbbbbbbbaaaaabbbbb",
+"bbbbbbaaaaaaabbbbbbaaaaaaabbbbbb",
+"bbbbbbbaaaaaaaaaaaaaaaaaabbbbbbb",
+"bbbbbbbbbaaaaaaaaaaaaaabbbbbbbbb",
+"bbbbbbbbbbbbaaaaaaaabbbbbbbbbbbb"
+};

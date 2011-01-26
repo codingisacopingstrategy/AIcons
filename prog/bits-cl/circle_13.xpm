@@ -1,0 +1,22 @@
+/* XPM */
+static char * circle_13_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"13 13 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"    .....    ",
+"  ..XXXXX..  ",
+" .XXXXXXXXX. ",
+" .XXXXXXXXX. ",
+".XXXXXXXXXXX.",
+".XXXXXXXXXXX.",
+".XXXXXXXXXXX.",
+".XXXXXXXXXXX.",
+".XXXXXXXXXXX.",
+" .XXXXXXXXX. ",
+" .XXXXXXXXX. ",
+"  ..XXXXX..  ",
+"    .....    "};

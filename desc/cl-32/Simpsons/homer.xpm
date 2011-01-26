@@ -1,0 +1,43 @@
+/* XPM */
+static char *homer_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c peru",
+"X c white",
+"o c gold",
+/* pixels */
+"XXXXXXXX    XXXXXXXXXXXXXXXXXXXX",
+"XXXXXXX   XX XXXXXXXXXXXXXXXXXXX",
+"XXXXXX  XX      XXXXXXXXXXXXXXXX",
+"XXXXX X   oooooo  XXXXXXXXXXXXXX",
+"XXXXX X oooooooooo XXXXXXXXXXXXX",
+"XXXXXX o oooooooooo XXXXXXXXXXXX",
+"XXXXXX oooooooooooo XXXXXXXXXXXX",
+"XXXXX oooooooooooooo XXXXXXXXXXX",
+"XXXXX oooooooooooooo   XXXXXXXXX",
+"XXXXX ooooooooo     XXX XXXXXXXX",
+"XXXXX oooooooo XXXX XXXX XXXXXXX",
+"XXXXX ooooooo XXXXXX X X XXXXXXX",
+"XXXXX ooooooo XXXXXX XXX XXXXXXX",
+"XXXXXX oo ooo XX XXX    XXXXXXXX",
+"XXXXXX oo  ooo XXXX oooo XXXXXXX",
+"XXXXXX   oo ooo    ooooo XXXXXXX",
+"XXXXXX X  oooooooooo    XXXXXXXX",
+"XXXXXX X   oooooo   .... XXXXXXX",
+"XXXXXXXX ooooooo ........ XXXXXX",
+"XXXXXXXX oo ooo ......... XXXXXX",
+"XXXXXXXXX  ooo ........... XXXXX",
+"XXXXXXXXXX ooo . ......... XXXXX",
+"XXXXXXXXXX ooo .          XXXXXX",
+"XXXXXXXXXX ooo ....... XXXXXXXXX",
+"XXXXXXXXXX oooo ..... XXXXXXXXXX",
+"XXXXXXXXXX oooo ..... XXXXXXXXXX",
+"XXXXXXXXX  ooooo ... XXXXXXXXXXX",
+"XXXXXXXX XX  oooo     XXXXXXXXXX",
+"XXXXXXXX XXXX  ooooo X XXXXXXXXX",
+"XXXXXXX  XXXXXX  ooo XX XXXXXXXX",
+"XXXXXX XX XXXXXX  oo XXX XXXXXXX",
+"XXXXX                     XXXXXX"
+};

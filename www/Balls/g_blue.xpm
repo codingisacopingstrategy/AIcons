@@ -1,0 +1,24 @@
+/* XPM */
+static char * Gem_Blue_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"12 12 6 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c black",
+"o	c sky blue",
+"O	c white",
+"+	c dodger blue",
+/* pixels */
+"  .XXXX.    ",
+" XXXXXXXX   ",
+".XoOXXXX+.  ",
+"XXOoXXX++X  ",
+"XXXXXXX++X  ",
+"XXXXXX+o+X. ",
+"XXXXX+oo+X. ",
+".XX++oo+X.. ",
+" X+++++XX...",
+"  .XXXX.... ",
+"     ...... ",
+"        .   "};

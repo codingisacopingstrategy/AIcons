@@ -1,0 +1,22 @@
+/* XPM */
+static char * tomato_expand_xpm[] = {
+"13 13 6 1",
+" 	c Tomato",
+".	c Gold",
+"X	c Sienna",
+"o	c Red",
+"O	c Orange",
+"+	c Firebrick",
+"      .X     ",
+"     .ooX    ",
+"    .oOooX   ",
+"      Oo     ",
+" .....Oo....O",
+" ..OOOO   o X",
+" .O O    o oX",
+" . O   oooo+X",
+" OXXXXOoXXXXX",
+"      Oo     ",
+"    .oOooX   ",
+"     .oXX    ",
+"      XX     "};

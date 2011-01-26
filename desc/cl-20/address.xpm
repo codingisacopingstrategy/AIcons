@@ -1,0 +1,32 @@
+/* XPM */
+static char * address_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c yellow",
+"o	c firebrick",
+"O	c black",
+"+	c sienna",
+/* pixels */
+"                    ",
+"          ..        ",
+"       ..X...       ",
+"    ..XX......      ",
+"   .o.........      ",
+"   .ooo.......      ",
+"   .OOO......       ",
+"   ..OO...+         ",
+"     ...OO          ",
+"   ..  OO+          ",
+"   ... oo+    OO    ",
+"   ... oo+  OOOOOO  ",
+"    .  oo+  OOOOOO  ",
+"       oo+   OOOO   ",
+"       oo+  OO      ",
+"       oo+ OO       ",
+"       oo+OO        ",
+"       oo+O         ",
+"       ooO          ",
+"                    "};

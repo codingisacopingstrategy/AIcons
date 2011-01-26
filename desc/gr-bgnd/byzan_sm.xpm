@@ -1,0 +1,25 @@
+/* XPM */
+static char * byzan_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+" 	c grey",
+".	c white",
+"X	c dark slate grey",
+/* pixels */
+" ...............",
+"X.              ",
+"X. XXXXXXXXXXX  ",
+"X. X......... . ",
+"X. X.        X. ",
+"X. X. XXXXX  X. ",
+"X. X.  ... . X. ",
+"X. X.     X. X. ",
+"X. X XXX  X. X. ",
+"X.  ..... X. X. ",
+"X.        X. X. ",
+"X XXXXXXXXX. X. ",
+" ........... X. ",
+"             X. ",
+"XXXXXXXXXXXXXX X",
+"                "};

@@ -1,0 +1,33 @@
+/* XPM */
+static char *change_delete_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"104 24 2 1",
+/* colors */
+"X      c dark slate grey",
+"       c None",
+/* pixels */
+"X                                                                                                       "
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XX                                                                                                      ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+};

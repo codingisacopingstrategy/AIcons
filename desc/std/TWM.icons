@@ -1,0 +1,130 @@
+# --- std ---
+# Twm icons using the icon images in this directory.
+# This file can be included ing a m4 source file for the appropriate
+# twm rc file generation. Ctwm rc file usally are automatically
+# m4 pre-processed. Other twm variants may have to be pre-processed
+# separately, especiall before "f.restart" menu function is executed.
+#[
+#   changequotes([,])
+#   PixmapDirectory "......path_to_aicons.../desc"
+#   include(...path_to_aicons.../desc/std/TWM.icons)
+#]
+undefine([ICON])
+define(  ICON, "std/$1.xbm" )
+
+UnknownIcon      ICON(unknown)    # use this icon if none is set
+Icons {
+
+  # NOTE: some clients must have their icons set by resource usally because
+  # these clients modify thier icon as a status indication.  Examples of
+  # such clients are :-  XMail ExMH XBiff XArchie
+
+  # --- General Applications ---
+  "Bitmap"             ICON(bitmap)
+  "Colormap v3.0"      ICON(pixmap)
+  "Fig"                ICON(fig)
+  #Filemgr"            ICON(filing)  -- removed to let program set its icon
+  "Firefox"            ICON(firefox)
+  "Firefox-bin"        ICON(firefox)
+  "GV"                 ICON(words)
+  "Ghostview"          ICON(words)
+  "Ghostscript"        ICON(words)
+  "Gimp"               ICON(picture)
+  "Gnuplot"            ICON(graph)
+  "MGdiff"             ICON(eye)
+  "MOTD"               ICON(info)
+  "Mosaic"             ICON(mosaic)
+  "Notifier"           ICON(printout)
+  "Pixmap"             ICON(pixmap)
+  "Speedcrunch"        ICON(calculator)
+  "SysMgrMain"         ICON(server)             # sun admin tool
+  "Ups"                ICON(roach)
+  "XAcct"              ICON(eye)
+  "XCalc"              ICON(calculator)
+  "XConsole"           ICON(terminal_console)   # specific console program
+  "XIgc"               ICON(go)
+  "XMgt"               ICON(go)
+  "XMcd"               ICON(triangle)
+  "XPaint"             ICON(palette)
+  "XWsh"               ICON(sgi)                # SGI Window
+  "Xgopher"            ICON(gopher)
+  "Xmag"               ICON(magnifier)
+  "Xman"               ICON(manpage)
+
+  # --- Editors ---
+  "Less"               ICON(page)
+  "News"               ICON(news)
+  "MailEd"             ICON(scroll)
+  "Less"               ICON(scroll)
+  "Axe"                ICON(scroll)
+  "Emacs"              ICON(scroll)
+  "XVed"               ICON(scroll)
+  "Xedit"              ICON(scroll)
+  "Xed"                ICON(scroll)
+  "Vi"                 ICON(scroll)
+  "Vim"                ICON(scroll)
+  "Gvim"               ICON(scroll)
+
+  # --- Specific Application Windows ---
+  # EG: not the class NAME of a application
+  #"Basicwin"          ICON(go)               # CGoban
+  "Canvas"             ICON(palette)          # Gimp?
+  "nethack"            ICON(wizard)
+  "crossfire"          ICON(wizard)
+  "xdbx"               ICON(roach)
+  "xdu"                ICON(info)
+  "xv"                 ICON(xv)
+  "Navigator"          ICON(netscape_comet)   # Netscape
+  "MailThread"         ICON(news)             # Netscape
+
+
+  # Normally I set xterm icons by resource settings (depending on their name).
+  # However the following xterms run on a remote system where the icon
+  # library is NOT available, but is available on the window manager host.
+
+  # --- Machine Windows ---
+  #            - CIT -
+  "xterm-dragon"       ICON(dragon_faerie)
+  "xterm-kobold"       ICON(kobold)
+  #
+  "xterm-lyrch"        ICON(lyrch)
+  "xterm-citadel"      ICON(citadel)
+  "xterm-beholder"     ICON(beholder)
+  "xterm-pets"         ICON(pets)
+  "xterm-bootit"       ICON(boot)
+  "xterm-bootems"      ICON(boot)
+  "xterm-beast"        ICON(boot)
+  #
+  "xterm-sphinx"       ICON(sphinx)
+  "xterm-kurango"      ICON(kurango)
+  "xterm-gumtree"      ICON(tree)
+  "xterm-gucis"        ICON(gucis)
+  "xterm-enterprise"   ICON(enterprise)
+  "xterm-antfarm"      ICON(ant)
+  #
+  "xterm-sisyphus"     ICON(sisyphus)
+  "xterm-odysseus"     ICON(sisyphus)
+  "xterm-socrates"     ICON(sisyphus)
+  "xterm-shemesh"      ICON(shemesh)
+  "xterm-drnick"       ICON(drnick)
+  "xterm-taurus"       ICON(browse)
+  "xterm-dali"         ICON(oracle)
+  "xterm-bilby"        ICON(bilby)
+  "xterm-kultarr"      ICON(kultarr)
+  #
+  "xterm-helios"       ICON(sun)
+  "xterm-kraken"       ICON(kraken)
+  "xterm-anubis"       ICON(anubis)
+  "xterm-medusa"       ICON(woman_evil)
+  "xterm-unicorn"      ICON(unicorn)
+  "xterm-library"      ICON(library)
+  #
+  # --- Special Terminals ---
+  "FailSafe"           ICON(terminal)          # failsafe emergengy xterm
+  "xterm-failsafe"     ICON(terminal)          # failsafe emergency xterm
+  "xterm"              ICON(terminal)          # xterm without a name
+  "XTerm"              ICON(terminal)          # other machine login
+  "Console"            ICON(terminal_console)  # special console xterm
+  "Terminal Controls"  ICON(terminal_console)  # terminal controls
+}
+undefine([ICON])

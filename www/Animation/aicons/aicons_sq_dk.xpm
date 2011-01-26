@@ -1,0 +1,13 @@
+/* XPM */
+static char * square_dk_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"6 6 1 1",
+/* colors */
+" 	c navy",
+/* pixels */
+"      ",
+"      ",
+"      ",
+"      ",
+"      ",
+"      "};

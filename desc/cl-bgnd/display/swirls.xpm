@@ -1,0 +1,23 @@
+/* XPM */
+static char * swirls_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 14 3 1",
+/* colors */
+" 	c SeaGreen",
+".	c LimeGreen",
+"X	c DarkSlateGrey",
+/* pixels */
+" ........       ",
+"..             .",
+". XXXXXX      ..",
+" XX....       . ",
+"XX..        X . ",
+"X . XX  X . X . ",
+"X . X . X . X . ",
+"X . X .  .. X . ",
+"X .        XX.. ",
+"X       XXXX..  ",
+"       ......  X",
+"              XX",
+"      XXXXXXXXX ",
+"                "};

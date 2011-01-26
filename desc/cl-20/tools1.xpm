@@ -1,0 +1,33 @@
+/* XPM */
+static char * tools1_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	c peru",
+".	c gold",
+"X	c black",
+"o	c slate grey",
+"O	s None	c None",
+"+	c grey",
+"@	c white",
+/* pixels */
+"                    ",
+" ...X.........X.... ",
+"...XXo.......XX.....",
+" ..XXo......Xo.X... ",
+"   XXo      X  Xo   ",
+"OOOXXoOOOOOOXOOXOXXO",
+"OOOXXoOOOOOOOXXOXOOX",
+"OOOXXoOOOOOOOXoOXOOX",
+"OOOXXoOOOOOOOXoXXXXO",
+"OOOXXoOOOOOOOXoXoOOO",
+"OOXXXXoOOOOOOXXOOOOO",
+"OXo+++XoOOOOXXoOOOOO",
+"Xo++@++XoOOXoXoOOOOO",
+"Xo+@@@+XoOXoOXoOOOOO",
+"Xo++@++XoXoOOXoOOOOO",
+"Xoo+++oXoOOOOXoOOOOO",
+"OXooooXoOOOOOXoOOOOO",
+"OOXXXXoOOOOOOXoOOOOO",
+"OOOOOOOOOOOOOXOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO"};

@@ -1,0 +1,31 @@
+/* XPM */
+static char * pentagram_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c yellow",
+"X	c purple",
+"o	c red",
+"O	c gainsboro",
+/* pixels */
+"         ..         ",
+"        XooX        ",
+"      XXo  oXX      ",
+"    XX  o  o  XX    ",
+"  XX    o  o    XX  ",
+".X     o    o     X.",
+".oooooooooooooooooo.",
+" Xo    o O Oo    oX ",
+" X oo  oO O o  oo X ",
+" X   ooO O O oo   X ",
+"  X   o O O Oo   X  ",
+"  X  o o O Oo o  X  ",
+"  X  o  o Oo  o  X  ",
+"  X  o   oo   o  X  ",
+"  X o   o  o   o X  ",
+"   Xo  o    o  oX   ",
+"   Xooo      oooX   ",
+"   oo          oo   ",
+"   oXXXXXXXXXXXXo   ",
+"   ..          ..   "};

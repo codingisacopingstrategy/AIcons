@@ -1,0 +1,4 @@
+#define /tmp/xbmresize29110_width 7
+#define /tmp/xbmresize29110_height 9
+static unsigned char /tmp/xbmresize29110_bits[] = {
+ 0x1c,0x22,0x41,0x41,0x41,0x41,0x41,0x41,0x41};

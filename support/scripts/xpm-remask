@@ -1,0 +1,121 @@
+#!/bin/sh -
+#
+# xpm-remask [-e] [-b] bitmap/pixmap...
+#
+#   Given a X bitmap or Xpixmap file look for a mask file and output a X
+# Pixmap with transparency set according to the mask file found.  Any
+# transparency already present in the Xpixmap is lost (converted to white by
+# default).
+# 
+# If no mask file is found, a default mask is created in the same way as
+# xbm-mask would, using the options given. The difference here is that
+# instead of outputing a mask file, this new default mask is applied
+# directly to the pixmap image.
+#
+# The options below are used to create a mask, only if no mask is already
+# present. The same method as xbm-mask is used internaly for this mask
+# creation, but the mask file is not created in the current directory.
+#
+# NOTE that no `transparency' mask is provided (as in xbm-mask), as it is a
+# unneeded usless null operation (transparency is set as the transparency!). 
+#
+# OPTIONS  
+#    -b     Background is black - not white
+#    -e     Expand mask by one pixel to form a border
+#
+# Anthony Thyssen    2 September 1995    <anthony@cit.gu.edu.au>
+#
+b="                                                                        "
+TRANS="#BFBFBF"   # Color used to represent the tranparent color in pbmplus
+white=true
+
+# ---- Process options ----
+Usage() {
+  echo >&2 "Usage: xpm-mask [-e] [-b] bitmap/pixmap..."
+  exit 10
+}
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  --) loop=;  shift ;;
+  -b) white=; shift ;;          # Black background
+  -e) expand=-expand; shift ;;  # Expand mask border
+  -*) Usage ;;
+  *)  loop= ;;
+  esac
+done
+
+# ---- Process Files ----
+TMP1=/tmp/xpm-mask$$.1    # image
+TMP2=/tmp/xpm-mask$$.2
+TMPm=/tmp/xpm-mask$$.mask
+trap "rm -f $TMP1 $TMP2 $TMPm; exit 1" 1 2 3 15
+
+for i in "$@"; do
+  echo -n "${b}  masking \"$i\""
+  # --- check out this file ---
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read icon \"$i\""
+    continue;
+  fi
+
+  # --- convert Original to PbmPlus ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+  suffix="`expr "$name" : '.*\.\([^.]*\)'`"
+  name="`expr "$name" : '\([^.]*\)'`"
+  name="`basename $name _masked`"
+  name="`basename $name _recol`"
+  name="`basename $name _recol_bad`"
+
+  case "$suffix" in
+    xbm)       sed 's/unsigned //' "$i" | xbmtopbm > $TMP1 ;;
+    xpm) x2p.sed "$i" | xpmtoppm  > $TMP1 ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         continue ;;
+  esac
+  if [ ! -f $TMP1 -o ! -s $TMP1 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Convert \"$i\" to Pbmplus"
+    continue
+  fi
+
+  # --- convert/create mask ---
+  if [ -f "${name}_mask.xbm" ]; then
+    # Mask is provided -- use it!
+    sed 's/unsigned //' "${name}_mask.xbm" | xbmtopbm > $TMPm
+  else
+    # See notes in xbm-mask on what is happening here
+    if [ "$white" ]
+    then  pnminvert $TMP1
+    else  cat $TMP1
+    fi | ppmtopgm | pnmtoplainpnm | sed '4,$s/[1-9][0-9]*/255/g' |
+      pgmtopbm -threshold | pbmmask $expand > $TMPm
+  fi 
+  if [ ! -f $TMPm -o ! -s $TMPm ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Create/Find Mask for \"$i\""
+    continue
+  fi
+
+  # --- Mask the original file ---
+  # invert mask so black (0) is transparent then multiply with image.
+  pnminvert $TMPm | pnmarith -multiply $TMP1 - >$TMP2  2>/dev/null
+  
+  # --- Add transparent color into area zero'ed above ---
+  pnmdepth 255 $TMPm 2>/dev/null | pgmtoppm "#000-$TRANS" |
+    pnmarith -add $TMP2 - >$TMP1
+
+  # --- Output Pixmap ---
+  ppmtoxpm $TMP1 2>/dev/null |
+    sed "/colors/,/pixels/s/c $TRANS/c None/" |
+      xpm-fix -o "${name}_masked.xpm"
+
+done
+echo "${b}Done"
+
+rm -f $TMP1 $TMP2 $TMPm
+

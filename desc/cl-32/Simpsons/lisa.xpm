@@ -1,0 +1,42 @@
+/* XPM */
+static char *lisa_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c white",
+"X c gold",
+/* pixels */
+"................................",
+"................................",
+"...........  ...... ............",
+"........... X .... X ...........",
+"........... XX .. XX ...  ......",
+"........... XXX  XXXX . X ......",
+".....      XXXXXXXXXX  XX ......",
+"..... XXXXXXXXXXXXXXXXXXX ......",
+"...... XXXXXXXXXXXXXXXXXX ......",
+"...... XXXXXXXXXXXXXXXXXX    ...",
+"....... XXXXXXXXXXXXXXXXXXXX ...",
+"...... XXXXXXXXXXXXXXXXXXXX ....",
+"...   XXXXXXXXXX X XXX X X .....",
+"... XXXXXXXXXX X    XX    . ....",
+".... XXXXXXXXXX .... X ... . ...",
+"..... XXXXXXX  ...... ..... ....",
+"...... XXXXXXX . .... . ... ....",
+"..... XXXXXXXX ...... .... .....",
+".... XXXXXXXXXX ....      ......",
+"... XXXXXXX  XXX    XXXXX ......",
+"....    XX X XXXXXXXXX    ......",
+"....... XX XXX XXXXXXXXXX ......",
+"....... X .  X   XXXXXXXXX .....",
+"........ .. XXXXX         ......",
+"........... XXXXXXX ............",
+".......... XXXXXX  .............",
+"........   XXXXXX ..............",
+"........ .   XXXX ..............",
+"........   ..   X  .............",
+".........    ..   . ............",
+"........ XXX   . . .............",
+".......             ............"
+};

@@ -1,0 +1,30 @@
+/* XPM */
+static char * spider_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 4 1",
+/* colors */
+" 	c None",
+".	c slate grey",
+"X	c dark slate grey",
+"o	c black",
+/* pixels */
+"  . . . .. ..XX  .. ",
+" ..   .....Xoo..  . ",
+". .... . .Xo. XXoo. ",
+". ..   X..XXX ooXX. ",
+"  . ... ..Xo.Xo .ooo",
+" .   .  ..XX XX XX .",
+".... .....XoXooXoXXX",
+"...  . ..oooooooX.oX",
+"  . ....ooooooooooo ",
+".. .  .Xoooooooooo..",
+".......XooooooooooX.",
+". XXXXooooooooooooX ",
+" .oXXXXoooooooooooX ",
+".oX ..Xooooooooooo..",
+".o. oooXoooooooooX .",
+"X..Xo.. Xoooooooo . ",
+". .oX XXoXoooooX.   ",
+"...o XoX..oXX...... ",
+"...X Xo. XX  .   ...",
+".   .Xo .Xo ...   .."};

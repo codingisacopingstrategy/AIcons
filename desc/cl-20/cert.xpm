@@ -1,0 +1,32 @@
+/* XPM */
+static char * cert_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	c black",
+".	s None	c None",
+"X	c white",
+"o	c navy",
+"O	c sienna",
+"+	c blue",
+/* pixels */
+"    .  ..   .    .  ",
+" XXX XX  XXX XXXX X ",
+". XXXXXXXXXXXXXXoXX ",
+" XXXooXXooXXXXXooX .",
+" XXXooXooXoXoXooXXX ",
+" XXXXXXoXoXoXXXoXXX ",
+". XXXXoXXXXXXXXXXXX ",
+". XXXXXXXXXOOOOXXX .",
+" XXXooooXXOOOOOOXXX ",
+" XXXXXXXXOOOOOOOOXX ",
+" XXXoXXXXOOOOOOOOXX ",
+" XXXXXXXXOOOOOOOOXX ",
+"  XXXXXXXOOOOOOOOXX ",
+" XXXXXXXXXOOOOOOXX .",
+" XXX XX XXXooooXXXX ",
+"    .  .   ++++     ",
+".......... +  + ....",
+"......... + .. + ...",
+"......... + .. + ...",
+".......... .... ...."};

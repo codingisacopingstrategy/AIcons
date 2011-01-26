@@ -1,0 +1,27 @@
+/* XPM */
+static char * home2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"26 18 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"                          ",
+"          ..              ",
+"      ....XX........      ",
+"     .....XX.........     ",
+"    .X.X..............    ",
+"   .X.XXX..............   ",
+"  .X.XXXXX..............  ",
+" .X.XXXXXXX.............. ",
+" ..XXXXXXXXX.XXXXXXXXXX.  ",
+"  .X..XX..XX.X..X..X..X.  ",
+"  .X..XX..XX.X..X..X..X.  ",
+"  .XXXXXXXXX.XXXXXXXXXX.  ",
+"  .XXXXXXXXX.XXXXXXXXXX.  ",
+"  .X..XX..XX.X..X..X..X.  ",
+"  .X..XX..XX.X..X..X..X.  ",
+"  .XXXXXXXXX.XXXX..XXXX.  ",
+"  ......................  ",
+"                          "};

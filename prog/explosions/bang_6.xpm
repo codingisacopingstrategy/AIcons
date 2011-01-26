@@ -1,0 +1,43 @@
+/* XPM */
+static char *explosion_6_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c None",
+". c grey",
+"X c dark slate grey",
+"o c slate grey",
+/* pixels */
+"                                ",
+"      X              XXX        ",
+"       XXXXXXX      XXX.X       ",
+"      XXo.ooXXX   XoooooXX      ",
+"      XX.ooooXXX XXo.oo.XX      ",
+"  XXXXXXooo.XooXXoooo.ooXX    X ",
+" XXXXXXXXoooooXXoooo.oooXX  XXXX",
+"X ooooXooooo..ooXoooooooooXXXXXX",
+"XXo.ooooooX.o...Xoo..ooooooXooXX",
+"XXo.oooo.oXo....X.....oo.oooooXX",
+"XXooooo...XX.....ooo...oo...ooXX",
+"X XoooXX.......o.ooo.....o.oXoX ",
+"  oXooX..X..oo..ooo..oo.oooooX  ",
+" XXXoXoo....o...ooo.oo.ooXXXXX  ",
+"  XXXXX....ooooooooo..XXoooooX  ",
+"  X XXoo....o.oooooo.XooooooXX  ",
+"   XXooo..ooo.oo.ooo...oXXooooX ",
+"    oXoo..ooo.oo.o.o...oX.ooooX ",
+"   Xoo.....ooo..oooo.o..oo.oooXX",
+"  XXooo.....ooo.oo.ooo......ooXX",
+"XXXooo..ooo..ooo..o.....ooooooXX",
+"Xoooooo.oo...ooo..oo...ooXooooXX",
+"XXX.o.o.ooXX........oo..ooXoXX  ",
+"XXo..oooooXo.o......Xoo.ooXXXX  ",
+"XXooooXXXoo.XXooo...o.ooX.XXXX  ",
+"  XoXXXXo...ooooooXX.Xoo.ooXXX  ",
+"   XXXXoXo.o.oooooXXoooo..ooXX  ",
+"    XXXXooXXXXoXoo.o.oooooXX    ",
+"    XXXXoXXXXXXXooooooXXXXXX    ",
+"       X XX X XXXXooXX          ",
+"        XXXX  XXXXoX X          ",
+"                                "
+};

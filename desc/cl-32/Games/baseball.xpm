@@ -1,0 +1,43 @@
+/* XPM */
+static char *baseball_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c sienna",
+"X c SeaGreen",
+"o c white",
+/* pixels */
+"                                ",
+"                                ",
+"       XXXXXXXXXXXXXXXXXXX      ",
+"      XXXXXXXXXXXXXXXXXXXXX     ",
+"     XXXXXXXXXXXXXXXXXXXXXXX    ",
+"    XXXXXXXXXXXXXXXXXXXXXXXXX   ",
+"   XXXXXXXXXXXXXXXXXXXXXXXXXXX  ",
+"  XXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ",
+" XXXXXXXXXXXXXXoXXXXXXXXXXXXXXX ",
+" XXXXXXXXXXXXX...XXXXXXXXXXXXXX ",
+" XXXXXXXXXXXX.....XXXXXXXXXXXXX ",
+" XXXXXXXXXXX..XXX..XXXXXXXXXXXX ",
+" XXXXXXXXXX..XXXXX..XXXXXXXXXX  ",
+"  XXXXXXXX..XXXXXXX..XXXXXXXX   ",
+"   XXXXXX..XXXXXXXXX..XXXXXX    ",
+"    XXXX..XXXX..XXXXX..XXXX     ",
+"     XX..XXXXX..XXXXXX..XX      ",
+"      o..XXXXXXXXXXXXX..o       ",
+"       ..XXXXXXXXXXXXX..        ",
+"        ..XXXXXXXXXXX..         ",
+"         ..XXXXXXXXX..          ",
+"          ..XXXXXXX..           ",
+"           ..XXXXX..            ",
+"            ..XXX..             ",
+"             .....              ",
+"              ...               ",
+"               o                ",
+"                                ",
+"                                ",
+"                                "
+};

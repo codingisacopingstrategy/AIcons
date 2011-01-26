@@ -1,0 +1,32 @@
+/* XPM */
+static char * map_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c gold",
+"o	c peru",
+"O	c slate grey",
+"+	c red",
+/* pixels */
+" .     ....      .. ",
+".......XoX.......X.O",
+" .XoXoXoXoXoXoXoX.O ",
+" .oXoXoXoXoXoXoXo.O ",
+" .XoXoXoXoXoXoXoX.O ",
+"  .XoXoXoXoXoXoX.OO ",
+"  .oXoXoXoXoXoXo.O  ",
+"   .oXoXoXoXoXoX.O  ",
+"   .XoXoXoXoO...OO  ",
+"   .o+oX+Xo.OXo.O   ",
+"   .X+X+XoXo.oXo.O  ",
+"   .oX+XoXoXoXoX.   ",
+"  ..X+X+XoXoXoXo.O  ",
+"  .X+XoX+XoXoXoXo.O ",
+"  .oXoXoXoXoX.XoX.O ",
+" .oXoXoXoXoXo..Xo.O ",
+" .XoXoXoXoXoX.XoX.O ",
+"  .XoX..OO.XoX...O  ",
+"   ...OO  O....OO   ",
+"   OO               "};

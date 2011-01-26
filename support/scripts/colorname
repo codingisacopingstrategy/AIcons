@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+#
+# colorname  RRGGBB...
+#
+#   Try to discover a given color pixel's real X windows color name
+#
+$COLOR = "/var/tmp/color";   # the location of the inverted color database
+$pixel_t = 'H12';
+
+use SDBM_File;
+unless ( dbmopen(%COLOR, $COLOR, undef) ) {
+  warn( "Unable to open \"color\" database! -- trying to create it\n" );
+  system( 'color_db_mk >/dev/null' );
+  dbmopen(%COLOR, $COLOR, undef)
+    or die "Unable to open color database: $!\n";
+}
+
+while( $_ = shift ) {
+  if ( ($pixel) = /#?([0-9A-Fa-f]+)/ ) {
+    $pixel = join( '', substr($pixel, 0, 1) x 4,
+		       substr($pixel, 1, 1) x 4,
+		       substr($pixel, 2, 1) x 4 ) if length($pixel) == 3;
+    $pixel = join( '', substr($pixel, 0, 2) x 2,
+		       substr($pixel, 2, 2) x 2,
+		       substr($pixel, 4, 2) x 2 ) if length($pixel) == 6;
+    if ( $color = $COLOR{ pack( $pixel_t, $pixel ) } ) {
+      print "$color\n";
+    } else {
+      print "#$pixel\n";
+    }
+  }
+  else {
+    print STDERR "Argument $_ is not a hex color value\n";
+  }
+} # while argument
+

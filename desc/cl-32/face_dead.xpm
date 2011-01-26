@@ -1,0 +1,43 @@
+/* XPM */
+static char *face_dead_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c LimeGreen",
+"X c tomato",
+"o c white",
+/* pixels */
+"oooooooooooo       ooooooooooooo",
+"ooooooooo   .......   oooooooooo",
+"ooooooo  .............  oooooooo",
+"oooooo ................. ooooooo",
+"ooooo ................... oooooo",
+"oooo ..................... ooooo",
+"ooo ....................... oooo",
+"oo ......................... ooo",
+"oo ......................... ooo",
+"o ........................... oo",
+"o ....... ... ... ... ....... oo",
+"o ........ . ..... . ........ oo",
+" .......... ....... .......... o",
+" ......... . ..... . ......... o",
+" ........ ... ... ... ........ o",
+" ............................. o",
+" ............................. o",
+" ............................. o",
+" ............................. o",
+"o ..........       .......... oo",
+"o ........  .... X   ........ oo",
+"o ....... ...... X X  ....... oo",
+"oo ..... ....... X X . ..... ooo",
+"oo .... ........ X X .. .... ooo",
+"ooo ............ X X ...... oooo",
+"oooo ........... X X ..... ooooo",
+"ooooo .......... XXX .... oooooo",
+"oooooo ..........   .... ooooooo",
+"ooooooo  .............  oooooooo",
+"ooooooooo   .......   oooooooooo",
+"oooooooooooo       ooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

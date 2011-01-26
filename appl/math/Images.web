@@ -1,0 +1,547 @@
+<PRE>WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+<!-- vim:set filetype=html:    Set vim syntax highlighting --></PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Mathematical Symbols</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#66CDAA"
+      LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<H1></NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Mathematical Symbols
+</NOBR></H1>
+
+<A HREF="Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<A HREF="http://ftp.cit.gu.edu.au/pub/AIcons/WWW_Images_Math.tar.gz">
+  <IMG SRC="../blue_grab.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Download a GZip'ed Tar Archive of these Icons</B></A> <BR>
+<P>
+
+These images were originally sources from
+<A HREF="http://donald.phast.umass.edu/kicons/greek.html" TARGET="_top">
+Karen Strom's greek symbol set</A>. However I have added a number
+of new symbols to this set as required for various documents on
+servers I am webmaster for. <P>
+
+NOTE: that some of the symbols below are NOT in this image area but are
+extra characters provided by the <A HREF="ISO_Latin.html">ISO Latin
+Character Set</A> used in HTML. For example the mulitplication (or in
+latex \times) <IMG ALT="" SRC="empty.gif" WIDTH=10> &#215; 
+<IMG ALT="" SRC="empty.gif" WIDTH=10> is provided by the html sequence
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <CODE>&amp#215;</CODE><P>
+
+<I>-- Anthony Thyssen</I><P>
+
+<HR>
+<H3>Mathematical Symbols</H3>
+
+appeq.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT="appeq" SRC="appeq.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+approx.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="approx" SRC="approx.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+neq.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT="notequal" SRC="neq.gif">
+<P>
+ident.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT="" SRC="ident.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+assign.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          `<IMG ALT="" SRC="assign.gif">'
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+imply.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          `<IMG ALT="" SRC="imply.gif">'
+<P>
+For times ( &#215; ) you use the ISO Latin Character &amp;#215;
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+for divide ( &#247; ) use &amp;#247; <BR>
+(See the link at the top of page)
+<P>
+Similaraly for greater ( &gt; ) use &amp;gt; 
+<IMG ALT="" SRC="empty.gif" WIDTH=20>
+for less ( &lt; ) use &amp;lt;
+<IMG ALT="" SRC="empty.gif" WIDTH=20>
+for pos-neg  ( &#177; ) use &amp;#177;
+<P>
+geq.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=geq SRC="geq.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+gg.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=muchgt SRC="gg.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+gtapprox.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT=gtapprox SRC="gtapprox.gif">
+<P>
+leq.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=leq SRC="leq.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+ll.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=muchlt SRC="ll.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+ltapprox.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT=ltapprox SRC="ltapprox.gif">
+<P>
+infty.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=inf SRC="infty.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+propto.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT=propto SRC="propto.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+del.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT="del" SRC="del.gif">
+<P>
+sqrt.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=sqrt SRC="sqrt.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+sum.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=sum SRC="sum.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+integ.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALIGN=middle ALT=integral SRC="integ.gif">
+          (align middle)
+<P>
+prod.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="product" SRC="prod.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+coprod.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="coprod" SRC="coprod.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+models.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="models" SRC="models.gif">
+<P>
+union.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="union" SRC="union.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+intersect.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="intersect" SRC="intersect.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+element.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="element" SRC="element.gif">
+<P>
+subset.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="subset" SRC="subset.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+subset_p.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="proper_subset" SRC="subset.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+subset2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT="subset" SRC="subset2.gif">
+<P>
+perp.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="perp." SRC="perp.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+parallel.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="||" SRC="parallel.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+asterisk.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="*" SRC="asterisk.gif">
+<P>
+sub_min.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           I<IMG ALIGN=middle ALT="_min" SRC="sub_min.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+sub_max.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           I<IMG ALT="sub_max" ALIGN=middle SRC="sub_max.gif">
+<P> 
+<HR>
+<H3> Superscript and Subscripts, Numbers and Letters</H3>
+
+A Range tiny numbers for use as suberscripts and subscripts are available.
+Which will allow you to create things like... <P>
+
+cm<IMG ALIGN=top ALT="^2" SRC="tiny_2.gif">
+   <IMG ALT="" SRC="empty.gif" WIDTH=20>
+
+<B>t</B><IMG ALIGN=bottom ALT="v4" SRC="tiny_4.gif"> <P>
+   <IMG ALT="" SRC="empty.gif" WIDTH=20>
+2.5 &#215; 10<IMG ALIGN=top ALT="^-4" SRC="tiny-4.gif"
+             ><IMG ALIGN=top ALT="1" SRC="tiny_1.gif">
+<P>
+
+M<IMG ALIGN=top ALT="^a" SRC="tiny_a.gif">
+   <IMG ALT="" SRC="empty.gif" WIDTH=20>
+F<IMG ALIGN=middle ALT="_z" SRC="tiny_z.gif">
+   <IMG ALT="" SRC="empty.gif" WIDTH=20>
+<IMG ALT=integral ALIGN=middle SRC="integ.gif">e<IMG
+     ALIGN=top ALT="^4y" SRC="tiny_4.gif"><IMG
+     ALIGN=top SRC="tiny_y.gif"> dy
+<P>
+
+Hint: Superscripts use ``ALIGN=top'' while subscripts use ``ALIGN=bottom''.
+<P>
+
+Here are the various digits and numbers you can use (replace # with digit
+or letter wanted.... <P>
+
+<IMG ALT="" SRC="empty.gif" WIDTH=10> tiny_#.gif
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+<IMG ALT="a" SRC="tiny_a.gif"> <IMG ALT="b" SRC="tiny_b.gif">
+<IMG ALT="c" SRC="tiny_c.gif"> <IMG ALT="d" SRC="tiny_d.gif">
+<IMG ALT="e" SRC="tiny_e.gif"> <IMG ALT="f" SRC="tiny_f.gif">
+<IMG ALT="g" SRC="tiny_g.gif"> <IMG ALT="h" SRC="tiny_h.gif">
+<IMG ALT="i" SRC="tiny_i.gif"> <IMG ALT="j" SRC="tiny_j.gif">
+<IMG ALT="k" SRC="tiny_k.gif"> <IMG ALT="l" SRC="tiny_l.gif">
+<IMG ALT="m" SRC="tiny_m.gif"> <IMG ALT="n" SRC="tiny_n.gif">
+<IMG ALT="o" SRC="tiny_o.gif"> <IMG ALT="p" SRC="tiny_p.gif">
+<IMG ALT="q" SRC="tiny_q.gif"> <IMG ALT="r" SRC="tiny_r.gif">
+<IMG ALT="s" SRC="tiny_s.gif"> <IMG ALT="t" SRC="tiny_t.gif">
+<IMG ALT="u" SRC="tiny_u.gif"> <IMG ALT="v" SRC="tiny_v.gif">
+<IMG ALT="w" SRC="tiny_w.gif"> <IMG ALT="x" SRC="tiny_x.gif">
+<IMG ALT="y" SRC="tiny_y.gif"> <IMG ALT="z" SRC="tiny_z.gif"><BR>
+
+<IMG ALT="" SRC="empty.gif" WIDTH=10> tiny_#.gif
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+<IMG ALT="A" SRC="tiny_A.gif"> <IMG ALT="B" SRC="tiny_B.gif">
+<IMG ALT="C" SRC="tiny_C.gif"> <IMG ALT="D" SRC="tiny_D.gif">
+<IMG ALT="E" SRC="tiny_E.gif"> <IMG ALT="F" SRC="tiny_F.gif">
+<IMG ALT="G" SRC="tiny_G.gif"> <IMG ALT="H" SRC="tiny_H.gif">
+<IMG ALT="I" SRC="tiny_I.gif"> <IMG ALT="J" SRC="tiny_J.gif">
+<IMG ALT="K" SRC="tiny_K.gif"> <IMG ALT="L" SRC="tiny_L.gif">
+<IMG ALT="M" SRC="tiny_M.gif"> <IMG ALT="N" SRC="tiny_N.gif">
+<IMG ALT="O" SRC="tiny_O.gif"> <IMG ALT="P" SRC="tiny_P.gif">
+<IMG ALT="Q" SRC="tiny_Q.gif"> <IMG ALT="R" SRC="tiny_R.gif">
+<IMG ALT="S" SRC="tiny_S.gif"> <IMG ALT="T" SRC="tiny_T.gif">
+<IMG ALT="U" SRC="tiny_U.gif"> <IMG ALT="V" SRC="tiny_V.gif">
+<IMG ALT="W" SRC="tiny_W.gif"> <IMG ALT="X" SRC="tiny_X.gif">
+<IMG ALT="Y" SRC="tiny_Y.gif"> <IMG ALT="Z" SRC="tiny_Z.gif"><BR>
+
+<IMG ALT="" SRC="empty.gif" WIDTH=10> tiny_#.gif
+<IMG ALT="" SRC="empty.gif" WIDTH=40> <IMG ALT="0" SRC="tiny_0.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="1" SRC="tiny_1.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="2" SRC="tiny_2.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="3" SRC="tiny_3.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="4" SRC="tiny_4.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="5" SRC="tiny_5.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="6" SRC="tiny_6.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="7" SRC="tiny_7.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="8" SRC="tiny_8.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="9" SRC="tiny_9.gif"><BR>
+
+<IMG ALT="" SRC="empty.gif" WIDTH=10> tiny-#.gif
+<IMG ALT="" SRC="empty.gif" WIDTH=40> <IMG ALT="-1" SRC="tiny-1.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-2" SRC="tiny-2.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-3" SRC="tiny-3.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-4" SRC="tiny-4.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-5" SRC="tiny-5.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-6" SRC="tiny-6.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-7" SRC="tiny-7.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-8" SRC="tiny-8.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> <IMG ALT="-9" SRC="tiny-9.gif"><BR>
+<IMG ALT="" SRC="empty.gif" WIDTH=50>(note the `-' in the last image name)<P>
+
+To help you create the various numbers The following symbols are also
+available in the same size as well as fractions and a some combinations
+of them. <P>
+
+tiny_pos.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="+"  SRC="tiny_pos.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_neg.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="-"  SRC="tiny_neg.gif">
+<BR>
+tiny_sl.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="/"  SRC="tiny_sl.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_1sl.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="1/" SRC="tiny_1sl.gif">
+<BR>
+tiny_pt.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="."  SRC="tiny_pt.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_0pt.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+             <IMG ALT="0." SRC="tiny_0pt.gif">
+<P>
+
+tiny-1.5.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="-3/2" SRC="tiny-1.5.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_1.5.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="3/2"  SRC="tiny_1.5.gif">
+<BR>
+tiny-0.75.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="-3/4" SRC="tiny-0.75.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_0.75.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="3/4"  SRC="tiny_0.75.gif">
+<BR>
+tiny-0.5.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="-1/2" SRC="tiny-0.5.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_0.5.gif  <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="1/2"  SRC="tiny_0.5.gif">
+<BR>
+tiny-0.25.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="-1/4" SRC="tiny-0.25.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_0.25.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+              <IMG ALT="1/4"  SRC="tiny_0.25.gif">
+<P>
+
+tiny_14.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT="^18"  SRC="tiny_14.gif">
+tiny_18.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT="^14"  SRC="tiny_18.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+For Example: <IMG ALT="" SRC="empty.gif" WIDTH=10>
+    <B>C<IMG ALIGN=top ALT="^18" SRC="tiny_18.gif">O</B>
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+    <B><IMG ALIGN=top ALT="^14" SRC="tiny_14.gif">N</B>
+<P>
+
+And just a odd italic `i' : <IMG ALT="" SRC="empty.gif" WIDTH=10>
+tiny_ital_i.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+                <IMG ALT="i" SRC="tiny_ital_i.gif">
+<P>
+
+<HR>
+<H3>The Greek Alphabet</H3>
+
+alpha.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=alpha SRC="alpha.gif">
+<P>
+beta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=beta SRC="beta.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+beta2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=beta ALIGN=middle SRC="beta2.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+which sits properly on the line (you must set ALIGN=middle!).
+<P>
+gamma.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=gamma SRC="gamma.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Gamma.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=Gamma SRC="Gamma.gif">
+<P>
+delta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=delta SRC="delta.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Delta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=Delta SRC="Delta.gif">
+<P>
+epsilon.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=epsilon SRC="epsilon.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+epsilon_i.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=epsilon SRC="epsilon_i.gif">
+(epsilon italic)
+ <P>
+zeta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=zeta SRC="zeta.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+zeta2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALIGN=middle ALT="zeta" SRC="zeta2.gif">
+<P>
+eta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=eta SRC="eta.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+eta2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="eta" ALIGN=middle SRC="eta2.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+(same as beta2.gif)
+<P> 
+theta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=theta SRC="theta.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Theta.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=Theta SRC="Theta.gif">
+<P>
+iota.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=iota SRC="iota.gif">
+<P>
+kappa.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=kappa SRC="kappa.gif">
+<P>
+lambda.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT=lambda SRC="lambda.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Lambda.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT=Lambda SRC="Lambda.gif">
+<P>
+but mu (&#181;) can be drawn by the client by using the ISO Latin &amp;#181;.
+<P>
+nu.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=nu SRC="nu.gif">
+<P>
+xi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=xi SRC="xi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+xi2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALIGN=middle ALT="xi" SRC="xi2.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Xi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT="Xi" SRC="Xi.gif">
+<P>
+omicron.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=omicron SRC="omicron.gif">
+<P>
+pi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=pi SRC="pi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Pi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=Pi SRC="Pi.gif">
+<P>
+rho.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=rho SRC="rho.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+rho2.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="rho" ALIGN=middle SRC="rho2.gif">
+<P>
+sigma.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=sigma  SRC="sigma.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Sigma.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=Sigma  SRC="Sigma.gif">
+<P>
+tau.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=tau SRC="tau.gif">
+<P>
+upsilon.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=upsilon SRC="upsilon.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Upsilon.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=Upsilon SRC="Upsilon.gif">
+<P>
+phi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=phi SRC="phi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> or <IMG ALT="" SRC="empty.gif" WIDTH=10>
+phi_i.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT="phi" SRC="phi_i.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Phi.gif <IMG lt="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=Phi SRC="Phi.gif">
+<P>
+chi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=chi SRC="chi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Chi.gif<IMG lt="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=Chi SRC="Chi.gif">
+<P>
+psi.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=psi SRC="psi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Psi.gif<IMG ALT="" SRC="empty.gif" WIDTH=10>
+       <IMG ALT=Psi SRC="Psi.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10>
+<P>
+omega.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=omega SRC="omega.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=10> and <IMG ALT="" SRC="empty.gif" WIDTH=10>
+Omega.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=Omega SRC="Omega.gif">
+<P>
+
+<HR>
+<H3>Special symbols for astronomical use</H3>
+
+sub_Bol.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+as in L<IMG ALIGN=middle ALT=_Bol SRC="sub_Bol.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+sub_eff.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+as in T<IMG ALIGN=middle ALT=_eff SRC="sub_eff.gif">
+<P>
+sub_LSR.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+as in V<IMG ALIGN=middle ALT="_LSR" SRC="sub_LSR.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+and sub_GMC.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+as in M<IMG ALIGN=middle ALT="_GMC" SRC="sub_GMC.gif">
+<P>
+mdot.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=Mdot SRC="mdot.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+and star.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+as in R<IMG ALIGN=middle ALT="_star" SRC="star.gif">
+<P>
+sub_wind.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            M<IMG ALIGN=middle ALT="_wind" SRC="sub_wind.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+sub_disk.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            M<IMG ALIGN=middle ALT="_disk" SRC="sub_disk.gif">
+<P>
+sub_in.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          F<IMG ALIGN=middle ALT="_in" SRC="sub_in.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+sub_std.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+     (J - K)<IMG ALIGN=middle ALT="_std" SRC="sub_std.gif">
+<P>
+
+
+<H4> Plus The Planet Symbols!</H4>
+
+sun.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT=sun SRC="sun.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+mercury.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=mercury SRC="mercury.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+venus.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=venus SRC="venus.gif">
+<P>
+earth.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=earth SRC="earth.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+mars.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=mars SRC="mars.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+jupiter.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT=jupiter SRC="jupiter.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+saturn.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT=saturn SRC="saturn.gif">
+<P>
+uranus.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT=uranus SRC="uranus.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+neptune.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT=neptune SRC="neptune.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=40>
+pluto.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+          <IMG ALT=pluto SRC="pluto.gif">
+<P>
+
+<HR>
+<H3>Miscellaneous Symbols</H3>
+
+ell.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT="" SRC="ell.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+hbar.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+         <IMG ALT="hbar" SRC="hbar.gif">
+<P>
+ominus.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="ominus" SRC="ominus.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+otimes.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="otimes" SRC="otimes.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+oslash.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+           <IMG ALT="oslash" SRC="oslash.gif">
+<P> 
+diamond.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+            <IMG ALT="diamond" SRC="diamond.gif">
+<IMG ALT="" SRC="empty.gif" WIDTH=30>
+box.gif <IMG ALT="" SRC="empty.gif" WIDTH=10>
+        <IMG ALT="a box" SRC="box.gif">
+<P>
+
+<HR>
+<ADDRESS>
+Dated: 13 December 1995 <BR>
+Original: K. Strom, J. Norman<BR>
+Modified:
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html">Anthony Thyssen</A>,
+   &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml"
+   >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>
+

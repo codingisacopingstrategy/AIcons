@@ -1,0 +1,163 @@
+#!/bin/sh 
+#
+# xbm-rotate16 [-t] Ximage...
+#
+#    Take a a X Bitmap or Pixmap and create 16 images rotated clockwise
+# from that file. While rotate can rotate at any angle, this script performs
+# appropriate flips to minimize the amount of rotation needed and thus
+# try to produce better results than direct rotation would. 
+#
+# This program assumes the source file is a square
+# Anything else will produce unknown results.
+# 
+# NOTE: created files are placed in the current directory.
+#
+# Anthony Thyssen      5 November 1995     <anthony@cit.gu.edu.au>
+#
+b="                                                                         "
+TRANS=
+TMP=/tmp/xbmrot1.$$
+TMP2=/tmp/xbmrot2.$$
+TMP3=/tmp/xbmrot2.$$
+trap "rm -f $TMP $TMP2; exit 1" 1 2 3 15
+
+if [ "X$1" = "X-t" ]; then
+  TRANS="#BFBFBF"  # the transparent color to use.
+  shift
+fi
+
+p2x() {
+  # Usage: p2x name count suffix
+  dest="${1}_${2}.$3"
+  echo -n "  converting \"$i\" #$2"
+  # convert ppmfile  file  to the destination
+  case "$3" in
+    xbm)
+      pbmtoxbm | sed 's/static  *char/static unsigned char/;
+                      s/noname\([[_]\)/'"$2"'\1/'  > "$dest"
+      ;;
+    xpm)
+      if [ "$TRANS" ]; then
+        # replace transparent color with "None"
+        ppmtoxpm  2>/dev/null |
+          sed "/colors/,/pixels/s/c $TRANS/c None/" |
+          xpm-fix -o "$dest"
+      else
+        # straight conversion
+        ppmtoxpm  2>/dev/null | xpm-fix -o "$dest"
+      fi
+      ;;
+  esac
+}
+
+#pnmcut() { cat; }
+
+for i in "$@"; do
+  echo -n "${b}  converting \"$i\""
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read \"$i\""
+    continue
+  fi
+
+  # --- find out the type ---
+  name="`basename $i`"                         # remove the path
+  suffix="`expr "$name" : '.*\.\([^.]*\)$'`"   # extract last suffix 
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"     # remove last suffix
+  
+  if  expr "$name" : '\(.*\)_[0-9]*$' >/dev/null;  then
+    # the name has a number in it -- remove and check if zero!
+    name="`expr "$name" : '\(.*\)_00*$'`"        # remove _00* from name
+    if [ $? -ne 0 ]; then
+      echo -n "${b}"
+      echo >&2 "File has non-zero number! \"$i\""
+      continue
+    fi
+  fi
+
+  # convert original to TMP file
+  case "$suffix" in
+    xbm)
+      # just direct convert (no transparancy)
+      sed 's/unsigned //' "$i" | xbmtopbm > "$TMP"
+      ;;
+    xpm)
+      if [ $TRANS ] && grep 'c  *None' "$i" >/dev/null; then
+        # convert None to transparent color (above)
+        sed "s/c  *[Nn]one/c $TRANS/g" "$i" |
+           x2p.sed | xpmtoppm > "$TMP"
+      else
+        # straight conversion
+        x2p.sed "$i" | xpmtoppm > "$TMP"
+      fi
+      ;;
+    *)
+      echo -n "${b}"
+      echo >&2 "Unknown suffix for \"$i\""
+      continue ;;
+  esac
+
+  # check conversion
+  if [ ! -s "$TMP" ]; then
+    echo -n "${b}"
+    echo >&2 "Bad conversion from \"$i\" to \"$TMP\"";
+    continue
+  fi
+
+  # get the original size of image (assume its a square image)
+  set - `pnmfile $TMP  | sed 's/.*,//'`;  size=$1
+
+  ## add a margin to the outside of main image (or rotation)
+  margin=`expr $size / 4 + 1 `
+  if [ "$TRANS" ]; then
+    pnmmargin -color $TRANS $margin $TMP > $TMP2
+  else
+    pnmmargin $margin $TMP > $TMP2
+  fi
+  mv $TMP2 $TMP
+  
+
+  # OK calculate the cut point (assume a square image)
+  # figure out how much image was expanded (trigonometry calculations rounded)
+  ns=`expr $size + $margin \* 2`
+  pos00=$margin
+  pos22=`expr \( $ns \* 1307 / 1000 - $size + 1 \) / 2`
+  pos45=`expr \( $ns \* 1414 / 1000 - $size + 1 \) / 2`
+  cut00="$pos00 $pos00 $size $size"
+  cut22="$pos22 $pos22 $size $size"
+  cut45="$pos45 $pos45 $size $size"
+  #echo "size   size = $size  margin = $margin  22 = $pos22   45 = $pos45"
+
+  # Flip the image to produce the flipside 
+  # NOTE: This is done by pnmrotate. This could be done using pnmflip 
+  # but the result image does not seem to be centered correctly.
+  # pnmflip -r180 $TMP > $TMP2     # create the flip side
+  pnmrotate -noantialias -90  $TMP  | pnmrotate -noantialias -90  > $TMP2
+
+  # Let's do it!
+  [ "${name}_0.$suffix" != $i ] &&   # skip first file if the same name results
+  cat                           $TMP  | pnmcut $cut00 | p2x $name 0 $suffix
+  pnmrotate -noantialias -22.5  $TMP  | pnmcut $cut22 | p2x $name 1 $suffix
+  pnmrotate -noantialias -45    $TMP  | pnmcut $cut45 | p2x $name 2 $suffix
+  pnmrotate -noantialias -67.5  $TMP  | pnmcut $cut22 | p2x $name 3 $suffix
+  pnmrotate -noantialias -90    $TMP  | pnmcut $cut00 | p2x $name 4 $suffix
+  # use the flip side
+  pnmrotate -noantialias  67.5  $TMP2 | pnmcut $cut22 | p2x $name 5 $suffix
+  pnmrotate -noantialias  45    $TMP2 | pnmcut $cut45 | p2x $name 6 $suffix
+  pnmrotate -noantialias  22.5  $TMP2 | pnmcut $cut22 | p2x $name 7 $suffix
+  cat                           $TMP2 | pnmcut $cut00 | p2x $name 8 $suffix
+  pnmrotate -noantialias -22.5  $TMP2 | pnmcut $cut22 | p2x $name 9 $suffix
+  pnmrotate -noantialias -45    $TMP2 | pnmcut $cut45 | p2x $name a $suffix
+  pnmrotate -noantialias -67.5  $TMP2 | pnmcut $cut22 | p2x $name b $suffix
+  pnmrotate -noantialias -90    $TMP2 | pnmcut $cut00 | p2x $name c $suffix
+  # back to unflipped copy
+  pnmrotate -noantialias  67.5  $TMP  | pnmcut $cut22 | p2x $name d $suffix
+  pnmrotate -noantialias  45    $TMP  | pnmcut $cut45 | p2x $name e $suffix
+  pnmrotate -noantialias  22.5  $TMP  | pnmcut $cut22 | p2x $name f $suffix
+
+done
+
+echo "${b}DONE!"
+
+rm -f $TMP $TMP2
+

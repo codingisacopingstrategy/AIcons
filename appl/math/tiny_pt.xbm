@@ -1,0 +1,4 @@
+#define tiny_pt_width 3
+#define tiny_pt_height 7
+static unsigned char tiny_pt_bits[] = {
+   0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x02};

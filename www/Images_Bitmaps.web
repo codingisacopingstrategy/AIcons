@@ -1,0 +1,178 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- General Bitmaps</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#66CDAA"
+      LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<H1><NOBR>
+    <IMG SRC="Animation/aicons_anim.gif" ALT="[AIcons Symbol]" 
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- General Bitmaps
+</NOBR></H1>
+
+<A HREF="Images.html" TARGET="_top">
+  <IMG SRC="blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+The following images are the bitmap images provided. However as time goes
+on many of these images are colored and moved to the General Color
+Images. <P>
+
+Some of the images displayed are bitmaps which have had a `mask'
+applied.  That is, while the image is no longer techniqually a bitmap,
+they still only use the black and white colors, AND a transparency
+component. This is a technicality only but allows them to be used
+effectivally on the darker background displays as well. :-) <P>
+
+
+<HR>
+<H2>General Bitmap Images</H2>
+
+<IMG SRC=clipart.gif WIDTH=48 HEIGHT=35>
+<IMG SRC=help.gif WIDTH=32 HEIGHT=32>
+<IMG SRC=fireworks.gif WIDTH=48 HEIGHT=48>
+<BR>
+<IMG SRC=hand_one_moment.gif WIDTH=16 HEIGHT=16>
+<IMG SRC=hand_open.gif WIDTH=19 HEIGHT=13>
+<IMG SRC=hand_point1.gif WIDTH=24 HEIGHT=14>
+<IMG SRC=hand_point2.gif WIDTH=32 HEIGHT=16>
+<IMG SRC=hand_point3.gif WIDTH=48 HEIGHT=24>
+--
+<IMG SRC=pin.gif WIDTH=50 HEIGHT=46>
+<IMG SRC=pin2.gif WIDTH=32 HEIGHT=35>
+<BR>
+<IMG SRC=home.gif WIDTH=24 HEIGHT=16>
+<IMG SRC=home2.gif WIDTH=26 HEIGHT=18>
+<IMG SRC=home3.gif WIDTH=25 HEIGHT=25>
+<IMG SRC=home4.gif WIDTH=17 HEIGHT=20>
+--
+<IMG SRC=balloon.gif WIDTH=16 HEIGHT=16>
+<IMG SRC=balloon2.gif WIDTH=22 HEIGHT=18>
+<IMG SRC=balloon3.gif WIDTH=25 HEIGHT=22>
+<IMG SRC=balloon4.gif WIDTH=32 HEIGHT=32>
+<P>
+
+
+<H2>Block Wrappers</H2>
+
+<!-- Cut & Paste templates
+<PRE><IMG SRC="/images/divider_top.gif" ALT="----8<----" WIDTH=120 HEIGHT=10>
+<IMG SRC="/images/divider_bot.gif" ALT="----8<----" WIDTH=120 HEIGHT=10></PRE>
+
+<I><IMG SRC="/images/speech_start.gif" ALT="" WIDTH=480 HEIGHT=8><BR>
+<IMG SRC="/images/speech.gif" ALT="" WIDTH=480 HEIGHT=16></I>
+<IMG SRC="/images/speech_think.gif" ALT="" WIDTH=480 HEIGHT=16></I>
+<IMG SRC="/images/speech_end.gif" ALT="" WIDTH=480 HEIGHT=16></I>
+
+<I><IMG SRC="/images/speech_start_half.gif" ALT="" WIDTH=240 HEIGHT=8><BR>
+<IMG SRC="/images/speech_end_half.gif" ALT="" WIDTH=240 HEIGHT=8></I>
+-->
+
+
+<BLOCKQUOTE>
+<PRE><IMG SRC="divider_top.gif" ALT="----8<----" WIDTH=120 HEIGHT=10>
+#!/bin/sh
+#
+# Script listing
+#
+<IMG SRC="divider_bot.gif" ALT="----8<----" WIDTH=120 HEIGHT=10></PRE>
+</BLOCKQUOTE>
+<P>
+
+<BLOCKQUOTE><I><IMG SRC="speech_start.gif" ALT="" WIDTH=480 HEIGHT=8><BR>
+`` Hey you... ''<BR>
+`` Yes YOU... ''<BR>
+`` How do you like my own simple line for speech blocks! ''<BR>
+<IMG SRC="speech.gif" ALT="" WIDTH=480 HEIGHT=16></I></BLOCKQUOTE>
+<P>
+
+<BLOCKQUOTE><I><IMG SRC=speech_start.gif ALT="" WIDTH=480 HEIGHT=8><BR>
+`` Now I just wonder what he is thinking about me? '' <BR>
+<IMG SRC=speech_think.gif ALT="" WIDTH=480 HEIGHT=23></I></BLOCKQUOTE>
+<P>
+
+<BLOCKQUOTE><IMG SRC="speech_start.gif" ALT="" WIDTH=480 HEIGHT=8><BR>
+Alternatively these lines can also be used as some sort of
+text inclusion, which could waffle on, and on, and on. This is long
+example as I needed a long paragraph to show the affect of this 
+blockquote wrapper. <BR>
+<IMG SRC="speech_end.gif" ALT="" WIDTH=480 HEIGHT=8></BLOCKQUOTE>
+<P>
+
+<CENTER><IMG SRC="speech_start_half.gif" ALT="" WIDTH=240 HEIGHT=8><BR>
+Or half lines for use in<BR>
+<FONT SIZE="+3">Signs 'R' Us</FONT></B><BR>
+<IMG SRC="speech_end_half.gif" ALT="" WIDTH=240 HEIGHT=8></I></CENTER>
+<P>
+
+
+<TABLE WIDTH="100%" BORDER=0>
+<TR><TD VALIGN=top BACKGROUND="speech_left.gif"
+    ><IMG SRC=space.gif     WIDTH=8   HEIGHT=1></TD>
+<TD>How about using a left speech line for a indented mail text.
+<BR>This uses HTML tables with backgound images technique I found on
+    being used on the net, which automatically resizes with the page size.
+</TD></TR></TABLE><P>
+
+
+<CENTER><TABLE BORDER=0>
+<TR><TD VALIGN=top BACKGROUND="speech_left.gif"
+    ><IMG SRC=space.gif     WIDTH=8   HEIGHT=1></TD>
+<TD ALIGN=center>
+    Or Bracketed on both sides<BR>(table centered)
+<TD VALIGN=top BACKGROUND="speech_right.gif"
+    ><IMG SRC=space.gif     WIDTH=8   HEIGHT=1></TD>
+</TD></TR></TABLE></CENTER><P>
+
+
+<H2>Spacing Images</H2>
+<FONT SIZE=-2>
+--&gt;<IMG SRC=space.gif     WIDTH=1   HEIGHT=1>&lt;-- space (1 pixel)<BR>
+--&gt;<IMG SRC=space_10.gif  WIDTH=10  HEIGHT=1>&lt;-- space 10 <BR>
+--&gt;<IMG SRC=space_20.gif  WIDTH=20  HEIGHT=1>&lt;-- space 20 <BR>
+--&gt;<IMG SRC=space_30.gif  WIDTH=30  HEIGHT=1>&lt;-- space 30 <BR>
+--&gt;<IMG SRC=space_32.gif  WIDTH=32  HEIGHT=1>&lt;-- space 32 <BR>
+--&gt;<IMG SRC=space_40.gif  WIDTH=40  HEIGHT=1>&lt;-- space 40 <BR>
+--&gt;<IMG SRC=space_50.gif  WIDTH=50  HEIGHT=1>&lt;-- space 50 <BR>
+--&gt;<IMG SRC=space_72.gif  WIDTH=72  HEIGHT=1>&lt;-- space 72 <BR>
+--&gt;<IMG SRC=space_100.gif WIDTH=100 HEIGHT=1>&lt;-- space 100<BR>
+--&gt;<IMG SRC=space_144.gif WIDTH=144 HEIGHT=1>&lt;-- space 144<BR>
+--&gt;<IMG SRC=space_200.gif WIDTH=200 HEIGHT=1>&lt;-- space 200<BR>
+--&gt;<IMG SRC=space_240.gif WIDTH=240 HEIGHT=1>&lt;-- space 240<BR>
+</FONT>
+<BR>
+Technically you could just use <TT>WIDTH=</TT> image tag option on the first
+`space.gif' image to adjust the size of the above transparent images. But by
+using the correct size, however, means you don't have to worry about, old, or
+bad web browsers.  <P>
+
+
+<H2>``End of Text'' Images</H2>
+<IMG SRC=end.gif WIDTH=55 HEIGHT=49>
+<IMG SRC=end2.gif WIDTH=123 HEIGHT=34>
+<IMG SRC=end3.gif WIDTH=123 HEIGHT=35>
+<IMG SRC=end_gems.gif WIDTH=100 HEIGHT=32>
+<IMG SRC=end_weave.gif WIDTH=50 HEIGHT=40>
+<P>
+
+
+<HR>
+<ADDRESS>
+Created: 26 May 1995 <BR>
+Modified: 23 October 2000 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

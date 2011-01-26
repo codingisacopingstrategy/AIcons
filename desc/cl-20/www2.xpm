@@ -1,0 +1,30 @@
+/* XPM */
+static char * www2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 4 1",
+/* colors */
+" 	c green",
+".	s None	c None",
+"X	c blue",
+"o	c red",
+/* pixels */
+"  .............  ...",
+" XX............ XX..",
+" Xoo........... Xoo.",
+" Xoo........... Xoo.",
+" Xoo..........  Xoo.",
+".Xoo.......... XXoo.",
+". ooo... ..... Xooo.",
+". Xoo..  X...  Xoo..",
+"..Xoo.. XXo.. XXoo..",
+".. ooo. Xooo. Xooo..",
+".. Xoo  Xooo  Xoo...",
+"...Xoo XXooo XXoo...",
+"... oooXoooooXooo...",
+"... XooXooXooXoo....",
+"....XooXooXooXoo....",
+".... ooooo ooooo....",
+".... Xooo. Xooo.....",
+".....Xooo..Xooo.....",
+"......ooo...ooo.....",
+".......o.....o......"};

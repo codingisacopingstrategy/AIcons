@@ -1,0 +1,31 @@
+/* XPM */
+static char * forked_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"18 18 7 1",
+/* colors */
+" 	s None	c None",
+".	c firebrick",
+"X	c red",
+"o	c grey",
+"O	c white",
+"+	c orange",
+"@	c yellow",
+/* pixels */
+"                  ",
+"        ..        ",
+"       .XX.       ",
+"      .XXXX.      ",
+"      .XXXX.      ",
+"       .XX.       ",
+"        ..        ",
+"        oo        ",
+"       oOOo       ",
+"      oOooOo      ",
+"   ++oOo  oOo++   ",
+"  +@@@o    o@@@+  ",
+" +@@@@+    +@@@@+ ",
+" +@@@@+    +@@@@+ ",
+"  +@@+      +@@+  ",
+"   ++        ++   ",
+"                  ",
+"                  "};

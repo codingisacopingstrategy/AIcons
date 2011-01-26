@@ -1,0 +1,36 @@
+/* XPM */
+static char *blue_dirlist_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+"  c #001AC6",
+". c dodger blue",
+"X c navy blue",
+"o c white",
+"O c blue",
+/* pixels */
+"OOOOOOOOOOOOOOOOOOOOOOOX",
+"OOOOOOOOOOOOOOOOOOOOOOXX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OO             oooo   XX",
+"OO            o....o  XX",
+"OO .ooooooooooooooooX XX",
+"OO oXXXoXXoXXXXXXXooX XX",
+"OO oooooooooooooooooX XX",
+"OO oXXXoXXoXXXooooooX XX",
+"OO oooooooooooooooooX XX",
+"OO oXXXoXXoXXXXXooooX XX",
+"OO oooooooooooooooooX XX",
+"OO oXXXoXXoXXXXXXXXoX XX",
+"OO oooooooooooooooooX XX",
+"OO oXXXoXXoXXXXoooooX XX",
+"OO OoooooooooooooooOX XX",
+"OO  XXXXXXXXXXXXXXXX  XX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXX"
+};

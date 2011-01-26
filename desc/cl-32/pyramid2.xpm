@@ -1,0 +1,43 @@
+/* XPM */
+static char *pyramid2_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c sienna",
+"X c yellow",
+"o c SlateGrey",
+/* pixels */
+"           o o o       o oo o   ",
+"       o  o       o        oo  o",
+"              o     o  o  o oooo",
+"       o   o   X        o  o  oo",
+"o       o o  o X .              ",
+"      o       XXX  o    o       ",
+"   o     o    XXX .   o   o   oo",
+"        o    XXXXX o    oo o o  ",
+"        oo  XXXXXX .o     oo  o ",
+"            XXXXXXX . o         ",
+"           XXXXXXXX o.     oooo ",
+"     o   o XXXXXXXXX o.  o    o ",
+"          XXXXXXXXXX .o.       o",
+"    oo    XXXXXXXXXXX .o. o o o ",
+"         XXXXXXXXXXXX o.o  o  oo",
+" o   oo  XXXXXXXXXXXXX o.o      ",
+" o oo o XXXXXXXXXXXXXX .o.o     ",
+"       XXXXXXXXXXXXXXXX .o.o  oo",
+"    o  XXXXXXXXXXXXXXXX o.o.o oo",
+"      XXXXXXXXXXXXXXXXXX o.o.o  ",
+"    o XXXXXXXXXXXXXXXXXX .o.o. o",
+"     XXXXXXXXXXXXXXXXXXX o.o.   ",
+"  o  XXXXXXXXXXXXXXXXXXXX o.o  o",
+"    XXXXXXXXXXXXXXXXXXXXX .o  oo",
+"o   XXXXXXXXXXXXXXXXXXXXXX .   o",
+"   XXXXXXXXXXXXXXXXXXXXXXX  o  o",
+"                            o  o",
+"         o    o      o     o  o ",
+" oo      o    oo o          o  o",
+" o         oo    o  o    o  oooo",
+" o     o    o   o  o oo  oo     ",
+"                  o o  oooo     "
+};

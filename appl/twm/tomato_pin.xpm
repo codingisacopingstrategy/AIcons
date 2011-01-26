@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_pin_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Red",
+"X	c Firebrick",
+"o	c Gold",
+"O	c Orange",
+"             ",
+"       ..X   ",
+"      .oooX  ",
+"    ..oOOOoX ",
+"   .o.O   OX ",
+"  .ooOX  ..X ",
+"  .oOO.X.XX  ",
+"  .Oo  .XX   ",
+"   XO  ..X   ",
+"  OXXO.XX    ",
+" OX  XXX     ",
+"OX           ",
+"             "};

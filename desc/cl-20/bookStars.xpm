@@ -1,0 +1,37 @@
+/* XPM */
+static char * bookStars_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 11 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c black",
+"o	c red",
+"O	c sienna",
+"+	c yellow",
+"@	c white",
+"#	c cyan",
+"$	c purple",
+"%	c slate grey",
+"&	c grey",
+/* pixels */
+"                    ",
+"         ..         ",
+"       ..XX.        ",
+"     ..XXXXX.       ",
+"   ..XXXoXXXX.      ",
+" ..XXXXoOoXXXX.     ",
+"..XXXXoO+OoXXXX.    ",
+".X.XXoO+@+OoXXXX.   ",
+".XX.XXoO+OoXXX#XX.  ",
+".XXX.XXoOoXXX#@#XX. ",
+" .XXX.XXoXXXXX#XXXX.",
+"  .XXX.XXXXXXXXXXX..",
+"   .XXX.X$XXOXXX..%&",
+"    .XXX.XXXXX..%%%&",
+"     .XXXXXX..%%%%&.",
+"      .XX...%%%%&.. ",
+"       .X.%%%%&..   ",
+"        ..%%&..     ",
+"         .&..       ",
+"          .         "};

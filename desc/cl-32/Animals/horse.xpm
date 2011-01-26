@@ -1,0 +1,43 @@
+/* XPM */
+static char *horse_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c firebrick",
+". c peru",
+"X c white",
+"o c orange",
+/* pixels */
+"XoXoXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXooooXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXoooo..XXXXXXXXXXXXXXXXXXXXXXXX",
+"Xoooooo..XXXXXXXXXXXXXXXXXXXXXXX",
+"XooXoooo..XXXXXXXXXXXXXXXXXXXXXX",
+"Xooo..ooo..XXXXXXXXXXXXXXXXXXXXX",
+"Xoo.X .ooo..XXXXXXXXXXXXXXXXXXXX",
+"Xo.XXX.oooo..XXXXXXXXXXXXXXXXXXX",
+"o.XXXX .oooo..XXXXXXXXXXXXXXooXX",
+". XXXXX.ooooo...XXXXoooooXXooooX",
+"XXXXXXX ooooooooooooooooo. XXooX",
+"XXXXXXX .oooooooooooooooo.. XXoX",
+"XXXXXXXX.ooooooooooooooooo. XXoX",
+"XXXXXXXX.ooooooooooooooooo. XXXo",
+"XXXXXXXX .oooooooooooooooo. XXXo",
+"XXXXXXXX .oooooooooooooooo. XXXo",
+"XXXXXXXX .o.oooooo..oooooo. XXXX",
+"XXXXXXXXX.o..oo...  .oo..o XXXXX",
+"XXXXXXXXX.o .oo   XX .o  o XXXXX",
+"XXXXXXXXX.o .ooXXXXXX.oX .oXXXXX",
+"XXXXXXXXX oX .oXXXXXX.ooX oXXXXX",
+"XXXXXXXXX oX .oXXXXXX .oX .oXXXX",
+"XXXXXXXXX.oXX.oXXXXXXX.oXX oXXXX",
+"XXXXXXXXX.oXX oXXXXXXX.oXXX oXXX",
+"XXXXXXXXX.oXX oXXXXXXX.oXXXXoXXX",
+"XXXXXXXXX.XXX.oXXXXXXX.oXXXXooXX",
+"XXXXXXXXX.XXX.oXXXXXXXXoXXXXXoXX",
+"XXXXXXXXo.XXX.XXXXXXXXooXXXXX.oX",
+"XXXXXXXXoXXXX.XXXXXXXXoXXXXXX.oX",
+"XXXXXXoooXXX.oXXXXXXXXoXXXXXXXoX",
+"XXXXXXooXXXooXXXXXXXoooXXXXXXooX",
+"XXXXXXXXXXXooXXXXXXXooXXXXXXXooX"
+};

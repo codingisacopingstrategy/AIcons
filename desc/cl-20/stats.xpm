@@ -1,0 +1,30 @@
+/* XPM */
+static char * stats_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 4 1",
+/* colors */
+" 	c white",
+".	c black",
+"X	c slate grey",
+"o	c red",
+/* pixels */
+" .   X   X   X   X  ",
+" .                 o",
+" . X X X X X X X X o",
+" .                oo",
+" .   X   X o X   Xo ",
+" .        ooo    oo ",
+" . X X X o Xoo X o X",
+" .      oo   o  o   ",
+" .   X ooX   oo oX  ",
+" .oo ooo      ooo   ",
+" .oXoo X X X X o X X",
+" .o                 ",
+" .   X   X   X   X  ",
+" .                  ",
+" . X X X X X X X X X",
+" .                  ",
+" .   X   X   X   X  ",
+" .                  ",
+"....................",
+" .                  "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * up_motif_gr_recol_bad[] = {
+/* width height ncolors chars_per_pixel */
+"26 24 4 1",
+/* colors */
+".	c gainsboro",
+"X	c dark slate grey",
+" 	c None",
+"o	c slate grey",
+/* pixels */
+".........................X",
+"........................XX",
+"..                      XX",
+"..                      XX",
+"..                      XX",
+"..                      XX",
+"..   o      o           XX",
+"..   o      o           XX",
+"..   o      o           XX",
+"..   o      o  o ooo    XX",
+"..   o      o  oo  o    XX",
+"..   o      o  o    o   XX",
+"..   o      o  o    o   XX",
+"..   o      o  o    o   XX",
+"..   o      o  o    o   XX",
+"..    o    o   oo  o    XX",
+"..     oooo    o ooo    XX",
+"..             o        XX",
+"..             o        XX",
+"..             o        XX",
+"..                      XX",
+"..                      XX",
+".XXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXX"};

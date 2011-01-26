@@ -1,0 +1,30 @@
+/* XPM */
+static char *strawberry_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 19 4 1",
+/* colors */
+"  c red",
+". c sea green",
+"X c white",
+"o c None",
+/* pixels */
+"ooooooo.oooooooo",
+"ooo..oo.ooo..ooo",
+"ooo.........oooo",
+"oo    ....    oo",
+"o      ..      o",
+"o X       X    o",
+"       X     X  ",
+"    X           ",
+"           X    ",
+" X    X         ",
+"              X ",
+"o         X     ",
+"o  X           o",
+"oo      X    X o",
+"oo   X        oo",
+"ooo        X  oo",
+"oooo   X     ooo",
+"oooo         ooo",
+"ooooo  oo   oooo"
+};

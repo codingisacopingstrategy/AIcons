@@ -1,0 +1,36 @@
+/* XPM */
+static char * l_blue_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 10 1",
+/* colors */
+" 	s None	c None",
+".	c blue",
+"X	c dodger blue",
+"o	c purple",
+"O	c navy",
+"+	c sky blue",
+"@	c violet",
+"#	c slate grey",
+"$	c dark slate grey",
+"%	c black",
+/* pixels */
+"                    ",
+"       ......       ",
+"     ..X.o...O.     ",
+"    .Xo+oX.....O    ",
+"   ..oX@+o+...O.O   ",
+"  ..XX@+++Xo...O.O  ",
+"  ..oX@++oX..O.OOO  ",
+" O...oX@+oXo.....OO ",
+" .O..XoXoXo..#.OOOO ",
+" O.....#.X....O.OOO ",
+" .O.........O.OOOOO ",
+" O.O.O....O.O.O.OOO ",
+" OO.O.O.O..O.OOOOOO ",
+"  OOO.O..OO.OOOOOO  ",
+"  OO.OOO$.OO.OOOOO  ",
+"   OOO.O.OOOOOOOO   ",
+"    OOOOOOOOOOO%    ",
+"     OOOOOOO%OO     ",
+"       OOOOOO       ",
+"                    "};

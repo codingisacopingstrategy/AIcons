@@ -1,0 +1,36 @@
+/* XPM */
+static char * drops_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 10 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c black",
+"o	c sienna",
+"O	c yellow",
+"+	c white",
+"@	c sea green",
+"#	c firebrick",
+"$	c green",
+"%	c red",
+/* pixels */
+"                    ",
+"                    ",
+"        .           ",
+"        X           ",
+"        X           ",
+"       .o.          ",
+"       Xo.          ",
+"       ooo          ",
+"   .  .OOo.         ",
+"   X  X+O.X    .    ",
+"   X  XooXX    X    ",
+"  .@.  XXX     X    ",
+"  X@.   .     .#.   ",
+"  @@@         X#.   ",
+" .$$@.        ###   ",
+" X+$.X       .%%#.  ",
+" X@@XX       X+%XX  ",
+"  XXX        X##XX  ",
+"   .          XXX   ",
+"               .    "};

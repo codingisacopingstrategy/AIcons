@@ -1,0 +1,36 @@
+/* XPM */
+static char *icons_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 9 1",
+/* colors */
+"  c black",
+". c cyan",
+"X c green",
+"o c grey",
+"O c magenta",
+"+ c red",
+"@ c white",
+"# c yellow",
+"$ c slate grey",
+/* pixels */
+"@@@@@@@@@@@@@@@@@@@$",
+"@                  $",
+"@ oooooooooooooooo $",
+"@ o    o    o    o $",
+"@ o XX o ## o .. o $",
+"@ o XX o ## o .. o $",
+"@ o    o    o    o $",
+"@ oooooooooooooooo $",
+"@ o    o    o    o $",
+"@ o #+ o .. o OO o $",
+"@ o ++ o .. o OO o $",
+"@ o    o    o    o $",
+"@ oooooooooooooooo $",
+"@ o    o    o    o $",
+"@ o XX o ## o +. o $",
+"@ o XX o ## o .+ o $",
+"@ o    o    o    o $",
+"@ oooooooooooooooo $",
+"@                  $",
+"$$$$$$$$$$$$$$$$$$$$"
+};

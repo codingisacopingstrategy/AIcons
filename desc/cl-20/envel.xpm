@@ -1,0 +1,32 @@
+/* XPM */
+static char * envel_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c black",
+"o	c yellow",
+"O	c white",
+"+	c gainsboro",
+/* pixels */
+"                    ",
+"                    ",
+".............       ",
+".XoOoOoOoOoX.X      ",
+".oXo+o+o+oXo.X      ",
+".OoXo+o+oXo+.X      ",
+".o+oXo+oXo+o.X      ",
+".OoXoX............. ",
+".oXo+o.XoOoOoOoOoX.X",
+".Xo+o+.oXo+o+o+oXo.X",
+".o+o+o.OoXo+o+oXo+.X",
+".......o+oXo+oXo+o.X",
+" XXXXX.OoXoXoXoXo+.X",
+"      .oXo+oXo+oXo.X",
+"      .Xo+o+o+o+oX.X",
+"      .o+o+o+o+o+o.X",
+"      .............X",
+"       XXXXXXXXXXXXX",
+"                    ",
+"                    "};

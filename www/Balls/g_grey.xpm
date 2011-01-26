@@ -1,0 +1,23 @@
+/* XPM */
+static char * g_black_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"12 12 5 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c black",
+"o	c grey",
+"O	c white",
+/* pixels */
+"  .XXXX.    ",
+" XXXXXXXX   ",
+".XoOXXXX..  ",
+"XXOoXXX..X  ",
+"XXXXXXX..X  ",
+"XXXXXX.o.X. ",
+"XXXXX.oo.X. ",
+".XX..oo.X.. ",
+" X.....XX...",
+"  .XXXX.... ",
+"     ...... ",
+"        .   "};

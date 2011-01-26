@@ -1,0 +1,26 @@
+/* XPM */
+static char * text_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 4 1",
+/*root*/
+" 	s None	c None",
+".	c black",
+"X	c lemon chiffon",
+"o	c red",
+/* pixels */
+" .............. ",
+" .XXXXXXXXXXXX. ",
+" .XooXXXXXXXXX. ",
+" .XooX......XX. ",
+" .XXXXXXXXXXXX. ",
+" .XX........XX. ",
+" .XXXXXXXXXXXX. ",
+" .XX........XX. ",
+" .XXXXXXXXXXXX. ",
+" .XX........XX. ",
+" .XXXXXXXXXXXX. ",
+" .XX........XX. ",
+" .XXXXXXXXXXXX. ",
+" .XX......XXXX. ",
+" .XXXXXXXXXXXX. ",
+" .............. "};

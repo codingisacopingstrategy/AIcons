@@ -1,0 +1,43 @@
+/* XPM */
+static char *bart_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c tomato",
+"X c white",
+"o c gold",
+/* pixels */
+"XXXXXXXXXXXXXXXX       XXXXXXXXX",
+"XXXXXXXXXXXX    oo oo XXXXXXXXXX",
+"XXXXXXXXXXX ooo o oo XXXXXXXXXXX",
+"XXXXXXXX    o oooooo XXXXXXXXXXX",
+"XXXXXXX ooo  ooooooo XXXXXXXXXXX",
+"XXXXX     ooooooooooo XXXXXXXXXX",
+"XXXX oooooooooooooooo XXXXXXXXXX",
+"XXX oo ooooooooooooooo XXXXXXXXX",
+"XXX   oooooooooooooooo  XXXXXXXX",
+"XXXXXX ooooooooooooooooo XXXXXXX",
+"XXXXXX ooooooooooooooooo   XXXXX",
+"XXXXXXX ooooooooooooooo XXX XXXX",
+"XXXXXXX ooooooooo    o XXXXX XXX",
+"XXXXXXXX ooooooo XXXX  XX XX XXX",
+"XXXXXXXXX ooooo XXXXXXX XXXX XXX",
+"XXXXXXXXX ooooo XX XXXX XXXX XXX",
+"XXXXXXXXXX oooo XXXXXXX     XXXX",
+"XXXXXXXXXX oooo XXXXXX oooo XXXX",
+"XXXXXXXXXXX oooo XXXX ooooo XXXX",
+"XXXXXXXXXXXX oooo    ooo   XXXXX",
+"XXXXXXXXXXXX  ooooooooooooo XXXX",
+"XXXXXXXXXXX oooooooooooooooo XXX",
+"XXXXXXXXXXX o ooooooooooooooo XX",
+"XXXXXXXXXXXX oo ooooooooooooo XX",
+"XXXXXXXXXXXX o oooooooooooo  XXX",
+"XXXXXXXXXXXX ooo           XXXXX",
+"XXXXXXXXXXXX oo X XX XX XXXXXXXX",
+"XXXXXXXXXXX oooo XX XX XXXXXXXXX",
+"XXXXXXXXXX X  ooo     XXXXXXXXXX",
+"XXXXXXXXX XXXX oooooo XXXXXXXXXX",
+"XXXXXXXX XXXXXX ...o. ...XXXXXXX",
+"XXXXXXX                  XXXXXXX"
+};

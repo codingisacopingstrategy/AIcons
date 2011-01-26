@@ -1,0 +1,33 @@
+/* XPM */
+static char * bookOpen_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c red",
+"O	c slate grey",
+"+	c purple",
+"@	c grey",
+/* pixels */
+"                    ",
+"    ..              ",
+"    .X.             ",
+"  ...XX.    ......  ",
+" ..X.XXX.  .XXX.X.. ",
+".o.X.XOXX..XXOX.X.+.",
+".+.X.XXXX.OOXXX.X.o.",
+".o.X.XOXX.OXXOX.X.+.",
+".+.X.XXXX.OOXXX.X.o.",
+".o.X.XOXX.OXXOX.X.+.",
+".+.X.XXXX.OOXXX.X.o.",
+".o.X.XOXX.OXXOX.X.+.",
+".+.X.XXXX.OOXXX.X.o.",
+".o.X.XOXX.OXXOX.X.+.",
+".+.X..XXX.OXXXX.X.o.",
+".o.XX@.XX.OX....X.+.",
+"..+o+o@.X...@@@@o+..",
+" ......@...@....... ",
+"      .......       ",
+"                    "};

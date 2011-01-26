@@ -1,0 +1,33 @@
+/* XPM */
+static char * carrot_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c lime green",
+"X	c sea green",
+"o	c tomato",
+"O	c orange",
+"+	c red",
+"@	c dark slate grey",
+/* pixels */
+"               .    ",
+"              .. .. ",
+"              .X.   ",
+"             ....XX.",
+"             ..XX.. ",
+"             ....X.X",
+"         ooo..XX..XX",
+"        oOOooXXX ..X",
+"        ++oooo@  .. ",
+"       oOOoo++@@ .. ",
+"      ooooo++@@@ ..X",
+"      oOoo+@@@   ..X",
+"     ++oo+@@@    .X.",
+"    ooo++@@      . .",
+"   ooo++@@          ",
+"  ooo++@            ",
+"  o+++@             ",
+" o++@@              ",
+"oo@@                ",
+"o@                  "};

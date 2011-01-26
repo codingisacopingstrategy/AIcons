@@ -1,0 +1,34 @@
+/* XPM */
+static char * spiral_up_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c lemon chiffon",
+"o	c wheat",
+/* pixels */
+"      .....             ",
+"     .XXXXX....         ",
+"     ..XXXX.XXX..       ",
+"     ...XXX.XXX....     ",
+"      ...XX.XX..XX..    ",
+"       ...X.X..XXXX.    ",
+"        ......XXX...    ",
+"         ..o.XX.......  ",
+"         ..o.....XXXX.. ",
+"          .o.XXXXXXXXX. ",
+"          .o........... ",
+"          .o.XX........ ",
+"          .o...XXXXXXX. ",
+"          .o......XXX.  ",
+"          .o.XX.......  ",
+"          .o..XXXX....  ",
+"          ..X...XXX..   ",
+"        ....XX.....     ",
+"     ...X.X.XXX....     ",
+"  ...XXX.XX.....        ",
+"  .XXXX.XXX.....        ",
+"  ...X.........         ",
+"  ..........            ",
+"   ... ....             "};

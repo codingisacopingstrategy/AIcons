@@ -1,0 +1,28 @@
+/* XPM */
+static char * blue_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"17 17 5 1",
+/* colors */
+" 	s None	c None",
+".	c navy",
+"X	c blue",
+"o	c dodger blue",
+"O	c sky blue",
+/* pixels */
+"       ...       ",
+"      .XXX.      ",
+"     .XXoXX.     ",
+"    .XXoooXX.    ",
+"   .XXooOooXX.   ",
+"  .XXooOOOooXX.  ",
+" .XXooOOOOOooXX. ",
+".XXooOOOOOOOooXX.",
+".XooOOOOOOOOOooX.",
+".XXooOOOOOOOooXX.",
+" .XXooOOOOOooXX. ",
+"  .XXooOOOooXX.  ",
+"   .XXooOooXX.   ",
+"    .XXoooXX.    ",
+"     .XXoXX.     ",
+"      .XXX.      ",
+"       ...       "};

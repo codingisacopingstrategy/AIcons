@@ -1,0 +1,35 @@
+/* XPM */
+static char * spiral_down_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c wheat",
+"O	c lemon chiffon",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"        .........       ",
+"     ....XXXXXXX...     ",
+"    ..XXXXXXXXXXXX..    ",
+"   ..XXXXXXXXXX...      ",
+"  ..XXXXXXXXX..         ",
+"  .XXXXXXXXX.           ",
+" ..XXXXXXXX.............",
+" .XXXXXX....o...........",
+" .XXX....OO.o..OOOOOOOO.",
+" .XX..OO..O.o....OOOOOO.",
+" ..X.OOOOO..o.O.....OO. ",
+"  ........O.o..OO...... ",
+"  ..OOOOOO.O.O..OOO...  ",
+"   ..OOOO.OO.OO..OOO.   ",
+"    ..OO.OOO.OOO..O.    ",
+"      ..OOOO.OOOO..     ",
+"        .........       ",
+"                        "};

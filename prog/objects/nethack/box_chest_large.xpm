@@ -1,0 +1,30 @@
+/* XPM */
+static char *x_341_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 7 1",
+/* colors */
+"  c black",
+". c orange",
+"X c red",
+"o c sienna",
+"O c peru",
+"+ c None s None",
+"@ c yellow",
+/* pixels */
+"++++++++++++++++",
+"+++.oOOO.oOOO.++",
+"+.OoOO.OoOO.ooO+",
+"+OoOOOOoOOOOooo+",
+".oOOO.oOOO.oooo+",
+".oOOO.oOOO.oo o+",
+".....@@....o oo+",
+"  XX    XX  ooo+",
+".....@@....oooo+",
+".ooo@oo@ooooooo+",
+".oOOO@@OOO.oooo ",
+".oOOO@@OOO.oooo ",
+".oOOO.oOOO.ooo  ",
+".o....o....oo  +",
+".OOOOOOOOOOo  ++",
+"+            +++"
+};

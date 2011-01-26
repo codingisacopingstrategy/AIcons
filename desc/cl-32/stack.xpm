@@ -1,0 +1,42 @@
+/* XPM */
+static char *stack_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c SeaGreen",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXX     XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXX ...   XXXXXXXXXXXXXX",
+"XXXXXXXXXX ......         XXXXXX",
+"XXXXXXXXXX ..............    XXX",
+"XXXXXXXXX ...................  X",
+"XXXXXXXXX .................... X",
+"XXXXXXXXX .................... X",
+"XXXXXXXX ..................... X",
+"XXXXXXXX ....................  X",
+"XXXXXXX .....................  X",
+"XXXXXXX .....................  X",
+"XXXXXX .....................   X",
+"XXXXXX .....................   X",
+"XXXXX  .....................   X",
+"XXXXX .....................    X",
+"XXXX  .....................    X",
+"XXXX ......................    X",
+"XXXX   ...................    XX",
+"XXXXXXX        ...........    XX",
+"XXXX   XXXXXXXX    ......     XX",
+"XXXXXXX        XXXX          XXX",
+"XXXX   XXXXXXXX    XXXXXX    XXX",
+"XXXXXXX        XXXX         XXXX",
+"XXXX   XXXXXXXX    XXXXXX   XXXX",
+"XXXXXXX        XXXX         XXXX",
+"XXXX   XXXXXXXX    XXXXXX  XXXXX",
+"XXXXXXX        XXXX        XXXXX",
+"XXXX   XXXXXXXX    XXXXXX XXXXXX",
+"XXXXXXX        XXXX       XXXXXX",
+"XXXXXXXXXXXXXXX    XXXXXX XXXXXX",
+"XXXXXXXXXXXXXXXXXXX      XXXXXXX"
+};

@@ -1,0 +1,4 @@
+#define tiny_ital_i_width 3
+#define tiny_ital_i_height 7
+static unsigned char tiny_ital_i_bits[] = {
+ 0x06,0x00,0x03,0x03,0x03,0x07,0x07};

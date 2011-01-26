@@ -1,0 +1,40 @@
+/* XPM */
+static char *foor_left_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"43 29 4 1",
+/* colors */
+"  c black",
+". c tan",
+"X c tomato",
+"o c None",
+/* pixels */
+"ooooooooooooo.X.ooooooooooooooooooooooooooo",
+"oooooooooooo.X.X.oooooooooooooooooooooooooo",
+"oooooooX.XooX.XXXoooooooooooooooooooooooooo",
+"ooooooXXXXXo.XXXooooooooooooooooooooooooooo",
+"ooooooX.X.Xoo.Xo     oooooooooooooooooooooo",
+"oooooo.X.X.Xoo          ooooooooooooooooooo",
+"oooooo.X.X.Xo             ooooooooooooooooo",
+"oooooooXXXXo                   oooooooooooo",
+"oo.XX.ooooo                       ooooooooo",
+"oXXX.X.oooo                           ooooo",
+"o.X.XXXXooo                              oo",
+"oX.XX.X.oo                                o",
+"ooXX.X.Xoo                                o",
+"ooo.XXXooo                                 ",
+"oooooooooo                                 ",
+"o.X.XXoooo                                 ",
+".XXX.XXXoo                                 ",
+"X.X.X.X.oo                                o",
+"XX.X.X.Xoo              ooo               o",
+"X.XXXXX.oo            oooooo             oo",
+"oX.X.Xoooo           ooooooooo          ooo",
+"ooooooooooo         oooooooooooo       oooo",
+"oooooXX.Xooo       oooooooooooooooooooooooo",
+"ooooXX.XXX.oo     ooooooooooooooooooooooooo",
+"oooX.XX.X.XXooooooooooooooooooooooooooooooo",
+"oooXXX.X.XXXooooooooooooooooooooooooooooooo",
+"ooo.X.XXX.XXooooooooooooooooooooooooooooooo",
+"oooo.X.X.X.oooooooooooooooooooooooooooooooo",
+"oooooXX.XXooooooooooooooooooooooooooooooooo"
+};

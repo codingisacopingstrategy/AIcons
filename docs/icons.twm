@@ -1,0 +1,175 @@
+<PLAINTEXT>
+                       Anthony's X Icon Library
+	       ------------------------------------------
+		 Icon use in the ``Tab Window Manager''
+	       ------------------------------------------
+
+The following is only the sections of a twmrc file that would allow
+general use of the ``standard size'' and twm title bar icons from this
+collection. It is only meant as a guide, not a complete twmrc file and will
+require modification for your local setup.
+
+Only two sections of the collection are used by this setup :-
+
+    desc/std  -- standard sized (64x54) icons for applications
+    appl/twm  -- title bar icons for in title bars.
+
+It is also assumed that the Icon library is somewhere on the bitmap
+file path X resource
+
+    *bitmapFilePath:  /usr/local/AIcons:/usr/include/X11/bitmaps
+
+See also the file "README.xrdb" for resources that can be used instead
+of parts of the `Icons' area below.
+
+--------------8<-----------CUT HERE--------------8<---------------
+#
+# Font Selection
+#
+TitleFont       "lucidasans-bolditalic-12"      # 12 is the point size
+IconFont        "lucidasans-bolditalic-10"
+
+#
+# Icon Handling
+#
+IconRegion "=350x200+510+2" West North 5 10 # region where icons appear
+IconRegion "=800x100-130-2" East South 5 10 # region where icons appear
+#IconDirectory  "~/icons"                   # should use *bitmapFilePath instead
+UnknownIcon  "appl/twm/unknowen.xbm"        # use this icon if none is supplied
+ForceIcons                                  # force programs to use icon listed
+#
+#   The following table causes twm to use certain icons for certain
+# windows.  The elements are in pairs of strings the first being either the
+# the class of the application being used (EG `XConcole')  OR name of the
+# window (EG `xterm-host') The second string is the filename of the icon to
+# use and is found either in the above `IconDirectory' or in the
+# `*bitmapFilePath' Xresource directorys.   --- Anthony Thyssen  19/7/1993
+#
+Icons {
+  "Axe"       "desc/std/axe.xbm"
+  "Bitmap"    "desc/std/bitmap.xbm"
+  "Fig"       "desc/std/fig.xbm"
+  "Ghostview" "desc/std/words.xbm"
+  "Gnuplot"   "desc/std/graph.xbm"
+  "MOTD"      "desc/std/info.xbm"
+  "Mosaic"    "desc/std/xmosaic.xbm"
+  "Ups"       "desc/std/roach.xbm"
+  "XCalc"     "desc/std/calculator.xbm"
+  "XConsole"  "desc/std/terminal.xbm"
+  "XIgc"      "desc/std/go.xbm"
+  "XMgt"      "desc/std/go.xbm"
+  "XMosaic"   "desc/std/xmosaic.xbm"
+  "XVed"      "desc/std/page.xbm"
+  "Xedit"     "desc/std/page.xbm"
+  "Xgopher"   "desc/std/gopher.xbm"
+  "Xmag"      "desc/std/magnifier.xbm"
+  "Xman"      "desc/std/manpage.xbm"
+  "XPaint"    "desc/std/palette.xbm"
+  "Canvas"    "desc/std/palette.xbm"
+  "nethack"   "desc/std/wizard.xbm"
+  "xdbx"      "desc/std/roach.xbm"
+  "xdu"       "desc/std/info.xbm"
+  "xv"        "desc/std/xv.xbm"
+
+  # NOTE: desc associated with the various Xterms are set by resource.
+  # In a similar way certain clients must have their icons set by resource
+  # These clients include :-  XMail XBiff XArchie
+
+  # These icons are for Xterminals run on a remote system where my icon set
+  # is NOT available, but a icon is availble on the window managers host.
+  # Normally the xterms icon is set using Xresources.
+
+  "xterm-cita"    "desc/std/citadelroot.xbm"
+  "xterm-kraken"  "desc/std/kraken.xbm"
+  "xterm-marbar"  "desc/std/marbar.xbm"
+ }
+
+Color {
+    BorderColor           "black"
+    DefaultBackground     "white"         DefaultForeground     "black"
+    TitleBackground       "tomato"        TitleForeground       "black"
+    MenuTitleBackground   "tomato"        MenuTitleForeground   "black"
+    MenuBackground        "sky blue"      MenuForeground        "black"
+    IconBorderColor       "black"
+    IconBackground        "lemon chiffon" IconForeground        "black"
+    IconManagerBackground "wheat"         IconManagerForeground "black"
+   }
+
+#--------------------------------
+#
+# Some basic user twm functions
+#
+MoveDelta 3
+DefaultFunction   f.beep        # beep use if not a proper function
+Function "Print" {f.exec "xwd -frame | xpr -portrait -dev ps | lpr &"}
+Function "print" {f.exec "xwd | xpr -portrait -dev ps | lpr &"}
+Function "Dump"  {f.exec "xwd | xpr -portrait -dev ps \
+            >`xprompt -rlen 40 -ibw 0 -re -p 'Postscript Dump File '` &"}
+Function "MoveRaiseLower" {f.move f.deltastop f.raiselower}
+Function "MoveIconify" {f.move f.deltastop f.iconify}
+#
+# Title bar buttons
+#
+# Define the title bar buttons - NOTE that the number in the icon name
+# refers to the point size of the 75dpi font to use in the title bar.
+# Actually the icon size is the point size + 1.
+#
+# NoDefaults                # remove all title buttons first (iconify,resize)
+# TitleButtonBorderWidth 0  # remove boarders around title buttons
+FramePadding 1              # frame padding between text and buttons
+ButtonIndent 0              # extra indentation around buttons
+Pixmaps { TitleHighlight "prog/patterns/brick_diag_hering.xbm" }
+#
+#---------------- Title Bar Buttons -------------------
+#LeftTitleButton  "appl/twm/X12.xbm"         = f.iconify
+ LeftTitleButton  "appl/twm/Focus12.xbm"     = f.focus
+ LeftTitleButton  "appl/twm/Lightning12.xbm" = f.delete
+ LeftTitleButton  "appl/twm/Nuke12.xbm"      = f.destroy
+ RightTitleButton "appl/twm/Question12.xbm"  = f.identify
+#RightTitleButton "appl/twm/Print12.xbm"     = f.function "Print"
+ RightTitleButton "appl/twm/Rotate12.xbm"    = f.circledown
+ RightTitleButton "appl/twm/FullScrn12.xbm"  = f.fullzoom
+ RightTitleButton "appl/twm/Expand12.xbm"    = f.zoom
+#RightTitleButton "appl/twm/Resize12.xbm"    = f.resize
+#------------------------------------------------------
+--------------8<-----------CUT HERE--------------8<---------------
+
+
+NOTE: In the twm icons section is a set of 3D buttons for use in the
+title bar. To use this you will need to use ctwm, and use the following.
+
+
+--------------8<-----------CUT HERE--------------8<---------------
+PixmapDirectory "/Location/of/AIcons"
+#
+# Font Selection
+#
+TitleFont       "lucidasans-bolditalic-15"
+
+#
+# Title bar buttons
+#
+# This uses a set of 3D title bar icons. (ctwm only)
+NoDefaults                  # remove all title buttons first (iconify,resize)
+TitleButtonBorderWidth 0    # remove boarders around title buttons
+FramePadding 1              # frame padding between text and buttons
+ButtonIndent 0              # extra indentation around buttons
+Pixmaps { TitleHighlight "prog/patterns/brick_diag_hering.xbm" }
+#
+#---------------- Title Bar Buttons -------------------
+ LeftTitleButton  "xpm:appl/twm/3D_Iconify15.xpm"   = f.iconify
+ LeftTitleButton  "xpm:appl/twm/3D_Lightning15.xpm" = f.delete
+ LeftTitleButton  "xpm:appl/twm/3D_Menu15.xpm"      = f.menu "WindowOps"
+ RightTitleButton "xpm:appl/twm/3D_FullScrn15.xpm"  = f.fullzoom
+ RightTitleButton "xpm:appl/twm/3D_Expand15.xpm"    = f.zoom
+ RightTitleButton "xpm:appl/twm/3D_Resize15.xpm"    = f.resize
+#------------------------------------------------------
+
+
+--------------8<-----------CUT HERE--------------8<---------------
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+           Base 8 is just like base 10 really...
+                   ...if you're missing two fingers.    - Tom Lehrer
+------------------------------------------------------------------------------

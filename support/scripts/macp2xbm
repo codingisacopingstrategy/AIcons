@@ -1,0 +1,15 @@
+#!/bin/sh -
+#
+#   This uses the pbmplus package to convert macp format to xbm
+#
+for i in "$@" ; do
+  if [ -f $i ]; then
+    echo "converting \"$i\""
+    j=`basename $i .macp`
+    macptopbm $i 2>/dev/null |
+      pnmcrop |
+      pbmtoxbm |
+       sed 's/static  *char/static unsigned char/;
+            s/noname\([[_]\)/'"$name"'\1/'  > $j.xbm
+  fi
+done

@@ -1,0 +1,49 @@
+!
+! Alternative coloring for bitmap application
+!
+! set global defaults
+Bitmap*foreground:		black
+Bitmap*borderColor:		black
+Bitmap*background: 		white
+
+! widget type settings
+Bitmap*Command.background:	sky blue
+Bitmap*Toggle.background:	sky blue
+Bitmap*MenuButton.background:	sky blue
+Bitmap*Box.background:		wheat
+Bitmap*Form.background:		wheat
+Bitmap*Dialog.background:	wheat
+Bitmap*SimpleMenu*background:	wheat
+Bitmap*Label.background:	wheat
+Bitmap*Text*background:		white
+
+! individual widgets
+Bitmap*bitmap.background:	lemon chiffon
+Bitmap*bitmap.frame:		black
+Bitmap*bitmap.stippled:		off
+!
+Bitmap*normalImage.foreground:	 black
+Bitmap*normalImage.background:	 white
+Bitmap*invertedImage.foreground: white
+Bitmap*invertedImage.background: black
+!
+Bitmap*flipHoriz.background:	purple
+Bitmap*flipVert.background:	purple
+Bitmap*up.background:		purple
+Bitmap*down.background:		purple
+Bitmap*left.background:		purple
+Bitmap*right.background:	purple
+Bitmap*fold.background:		purple
+Bitmap*rotateLeft.background:	purple
+Bitmap*rotateRight.background:	purple
+!
+Bitmap*flipHoriz.foreground:	white
+Bitmap*flipVert.foreground:	white
+Bitmap*up.foreground:		white
+Bitmap*down.foreground:		white
+Bitmap*left.foreground:		white
+Bitmap*right.foreground:	white
+Bitmap*fold.foreground:		white
+Bitmap*rotateLeft.foreground:	white
+Bitmap*rotateRight.foreground:	white
+

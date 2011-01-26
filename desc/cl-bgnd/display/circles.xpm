@@ -1,0 +1,23 @@
+/* XPM */
+static char * circles_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"26 14 3 1",
+/* colors */
+" 	c navy",
+".	c purple",
+"X	c black",
+/* pixels */
+"  ......             XX   ",
+" ..             XXXXXX    ",
+".. XXXX                   ",
+". X ...        ......     ",
+" X .          ..          ",
+" X. XX  X.   .. XXXX      ",
+" X. X . X.   . X ...      ",
+" X.  .. X.    X .         ",
+"       X .    X. XX  X.   ",
+"    XXX . X   X. X . X.   ",
+"    .... XX   X.  .. X.   ",
+"        XX          X .   ",
+"   XXXXXX        XXX . X  ",
+"                 .... XX  "};

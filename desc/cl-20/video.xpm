@@ -1,0 +1,32 @@
+/* XPM */
+static char * video_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c white",
+"o	c black",
+"O	c grey",
+"+	c red",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+".                   ",
+".. ..........       ",
+".XoXXXXOoOOO.o  ..  ",
+".ooOOOOOoOOO.o..Xo  ",
+"o ooooooOOOO.oXXOo  ",
+"  oXOOOOOOOO.oOOOo  ",
+"  .X+OOoOooO.ooo.o  ",
+"  .XOOOOOOOO.o  oo  ",
+"  ...........o      ",
+"   ooooooooooo      ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

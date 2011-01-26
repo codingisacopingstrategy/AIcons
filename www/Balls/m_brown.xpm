@@ -1,0 +1,29 @@
+/* XPM */
+static char *m_yellow_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 6 1",
+/* colors */
+"X c wheat",
+"o c tan",
+"O c peru",
+". c sienna",
+"  c black",
+"+ c None",
+/* pixels */
+"++++++++++++++++",
+"++++oooOoOO+++++",
+"+++oXooOoOOOO+++",
+"++XXooXoOoOO O++",
+"+XXXXooOoOOOOO++",
+"+XXXXooXOoOOO.O+",
+"+XXXXXoOoOOOOO +",
+"ooooooooOoO.O.O+",
+"XooXooooOOOOO O.",
+"OXooooOoOOO.OO +",
+"+oOooOoOOOOO O.+",
+"+OoOoOOOOO OO .+",
+"+OOOOOOOO.OO .++",
+"++OOOOOO.O ...++",
+"+++O.O.O O..++++",
+"+++++.O.O .+++++"
+};

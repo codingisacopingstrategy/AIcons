@@ -1,0 +1,29 @@
+/* XPM */
+static char * cyan_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"17 17 6 1",
+/* colors */
+" 	s None	c None",
+".	c navy",
+"X	c blue",
+"o	c dodger blue",
+"O	c sky blue",
+"+	c cyan",
+/* pixels */
+"       ...       ",
+"      .XoX.      ",
+"     .XoOoX.     ",
+"    .XoOOOoX.    ",
+"   .XoOO+OOoX.   ",
+"  .XoOO+++OOoX.  ",
+" .XoOO+++++OOoX. ",
+".XoOO+++++++OOoX.",
+".oOO+++++++++OOo.",
+".XoOO+++++++OOoX.",
+" .XoOO+++++OOoX. ",
+"  .XoOO+++OOoX.  ",
+"   .XoOO+OOoX.   ",
+"    .XoOOOoX.    ",
+"     .XoOoX.     ",
+"      .XoX.      ",
+"       ...       "};

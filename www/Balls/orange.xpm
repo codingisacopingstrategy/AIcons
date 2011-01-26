@@ -1,0 +1,25 @@
+/* XPM */
+static char * ball_orange_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 5 1",
+/* colors */
+" 	s None	c None",
+"o	c lemon chiffon",
+".	c gold",
+"X	c orange",
+"O	c tomato",
+/* pixels */
+"              ",
+"              ",
+"     ....     ",
+"   o.......   ",
+"   ..oo...X   ",
+"  ..oo....XX  ",
+"  .......XXX  ",
+"  ......XXXO  ",
+"  X..XXXXXOO  ",
+"   XXXXXOOO   ",
+"   XXOOOOOX   ",
+"     OOOO     ",
+"              ",
+"              "};

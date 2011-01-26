@@ -1,0 +1,157 @@
+#!/usr/bin/perl
+#
+# color_db_mk
+#
+#   This perl script creates a inverted dbm database from the
+# X11 name to rgb dbm database in the X11 library. This database
+# is used to map pixel values back into color values.
+#
+#  Anthony Thyssen          3 Oct 1993     anthony@cit.gu.edu.au
+#
+use SDBM_File;
+
+$COLOR = "/var/tmp/color";   # in temp -- built is not present yet
+$pixel_t = 'H12';
+
+select((select(STDERR), $| = 1)[$[]);
+
+umask(022);              # make database readable by all
+
+if ( -f $COLOR ) {
+  warn "Color database is already in existance\n";
+  if ( -r $COLOR ) {
+    warn "But is not readable -- fixing\n";
+    chmod 0644, $COLOR;
+  }
+  exit 10;
+}
+
+# Order here if from lowest to highest preference
+foreach $dir ( "/usr/openwin/lib",    "/usr/lib/X11",
+              "/usr/X11R6/lib/X11", "/usr/X11R6.1/lib/X11" ) {
+   $RGB  = "$dir/rgb"       if -f "$dir/rgb.dir";
+   $RGBT = "$dir/rgb.txt"   if -f "$dir/rgb.txt";
+}
+
+# What environment variable should this be?
+# I have not found one, but knowning the X window system
+# one # probably is hidden away in the libraries somewhere.
+# $RGB = $ENV{'?????'}
+#         if  defined  $ENV{'?????'} && -f $ENV{'?????'};
+
+die("RGB database not found!\n")   unless defined $RGB || defined $RGBT;
+
+# ---------------------------------------------------------------------
+
+# Subroutine to (try to) insert color pixel found into the
+# reversed color database this program creates.
+#
+sub add_color {
+  local($c1,$pixel) = @_;
+
+  #print "$c1 => #", unpack( "H2xH2xH2x", $pixel ), "\n";
+  #$c1 =~ tr/A-Z/a-z/;     # color name is lower case
+  $c2 = $COLOR{$pixel};   # is a name for this pixel is already in database
+  if ( ! defined $c2 ) {
+    # no name conflict
+    $C1 = $c1;
+  }
+  elsif ( $c1 eq $c2 ) {
+    # Same color being added skip
+    print "Color \"$c1\" already set in database -- skipping\n";
+    $C1 = $c1;
+  }
+  else {
+    # name already in database -- name conflict exists
+    #print 'Pixel #', unpack($pixel_t, $pixel), " has multiple color names\n";
+    $s  = ( $c1 =~ /\s/ ) ? 0 : 1;     # flag if any spaces are prsent
+    $s += ( $c2 =~ /\s/ ) ? 0 : 2;
+    $t  = ( $c1 =~ /[0-9]/ ) ? 0 : 1;  # flag if any numbers are present
+    $t += ( $c2 =~ /[0-9]/ ) ? 0 : 2;
+    $a  = ( $c1 =~ /[A-Z]/ ) ? 0 : 1;  # flag if any uppercase is present
+    $a += ( $c2 =~ /[A-Z]/ ) ? 0 : 2;
+    if ( $t == 1 || $t == 2 ) {
+      # only one of the colors as a number associated -- pick non-numbered
+      $C1 = ( $t == 1 ) ? $c1 : $c2;
+      $C2 = ( $t == 1 ) ? $c2 : $c1;
+      print "Picking non-numbered color \"$C1\" over \"$C2\"\n";
+    }
+    elsif ( $s == 1 || $s == 2 ) {
+      # only one color name has a space in it - pick one without space
+      $C1 = ( $s == 1 ) ? $c1 : $c2;
+      $C2 = ( $s == 1 ) ? $c2 : $c1;
+      print "Picking color without a space \"$C1\" over \"$C2\"\n";
+    }
+    elsif ( $c1 =~ /gr[ae]y/i && $c2 =~ /gr[ae]y/i ) {
+      # Color Grey VS Gray naming problem -- pick grey
+      $C1 = ($c1 =~ /grey/i) ? $c1 : $c2;
+      $C2 = ($c1 =~ /grey/i) ? $c2 : $c1;
+      print "Picking by Grey Criteria \"$C1\" over \"$C2\"\n";
+    }
+    elsif ( $a == 1 || $a == 2 ) {
+      # only one of the colors as capatials -- pick one with capitals
+      $C1 = ( $a == 1 ) ? $c2 : $c1;
+      $C2 = ( $a == 1 ) ? $c1 : $c2;
+      print "Picking uppercased color \"$C1\" over \"$C2\"\n";
+    }
+    elsif ( length $c1 != length $c2 ) {
+      # color names have different length -- pick longer
+      $C1 = (length $c1 > length $c2) ? $c1 : $c2;
+      $C2 = (length $c1 > length $c2) ? $c2 : $c1;
+      print "Picking longer name \"$C1\" over \"$C2\"\n";
+    }
+    else {
+      # No method to pick one name over another (smaller alphabetically)
+      $C1 = $c1;
+      print "UNABLE TO CHOOSE!  Using color already in the database\n",
+              "\t\"$c1\" instead of \"$c2\"\n";
+    }
+  }
+  $C1 =~ s/\b./\u$&/g;   # ensure first letter of each word is uppercase
+  $COLOR{$pixel} = $C1;
+
+  # Uncomment to see the database entry added -- for debugging
+  #printf( "%-20s --> #%-15s %s\n",
+  #           $c1, unpack( $pixel_t, $pixel ), $COLOR{$pixel} );
+}
+
+# ---------------------------------------------------------------------
+print "Creating the reverse rgb database - color\n";
+
+if ( defined $RGB ) {
+  dbmopen(%RGB, $RGB, undef)
+      || die "Unable to open RGB database, \"$RGB\": $!\n";
+}
+else {
+  # We forced to read colors from text format database?
+  # This is the case under  XFree86 X windows, (Linux)
+  open(RGB, $RGBT)
+     || die "Unable to open RGB text database, \"$RGBT\": $!\n";
+}
+
+dbmopen(%COLOR, $COLOR, 0666)
+    || die "Unable to create COLOR database, \"$COLOR\": $!\n";
+
+
+if ( defined $RGB ) {
+  while ( ($color, $pixel) = each %RGB ) {
+    add_color($color, $pixel);
+  }
+}
+else {
+  while ( <RGB> ) {
+    next   if /^!/;   # ignore rgb.txt comments
+    s/^\s+//;         # remove start spaces (if present)
+    s/\s+$//;         # remove end of line junk
+    ($r,$g,$b,$color) = split(/\s+/,$_,4);
+    $pixel = pack("c6", $r, $r, $g, $g, $b, $b);
+    add_color($color, $pixel);
+  }
+  close( RGB );
+}
+dbmclose( %RGB );
+
+chmod 0644, $COLOR, "$COLOR.dir", "$COLOR.pag";
+print "Created color database\n";
+
+exit 0;

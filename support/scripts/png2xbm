@@ -1,0 +1,116 @@
+#!/bin/sh -
+#
+# png2xbm [-t] files...
+#
+#   This uses the pbmplus package to convert GIF files into
+# X bitmaps and X pixmap format files approriately. If a -t flag is
+# given and the destination is a pixmap, than it will also set the
+# None Color in the X Pixmap file to that used in the GIF file.
+#
+# WARNING: the -t option uses the pngtopnm -verbose option to gather
+# information on the color used for transparancy.
+#
+# Anthony Thyssen    1 September 1995    <anthony@cit.gu.edu.au>
+#
+b="                                                                         "
+TRANS=
+TMP=/tmp/png2xbm.$$
+trap "rm -f $TMP; exit 1" 1 2 3 15
+
+Usage() {
+  echo >&2 "Usage: png2xbm [-t] [-q #] PNGs..."
+  echo >&2 "    -t     preserve transparency"
+  exit 10
+}
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  --) loop=; shift ;;
+  #-t) TRANS=true; shift ;;      # preserve transparenty
+  -t) # just ignore it 
+      # we can't determine the transparency color at this time!
+      shift ;;
+  *) loop= ;;
+  esac
+done
+
+trap "rm -f $TMP; exit 0" 1 2 3 15
+
+for i in "$@" ; do
+  echo -n "${b}  converting \"$i\""
+  if [ ! -f "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable find file \"$i\""
+    continue
+  fi
+
+  # --- find out the type ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"           # remove path to file
+  suffix="`expr "$name" : '.*\.\([^./]*\)$'`"     # extract last suffix 
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"        # remove last suffix
+
+  if [ "$suffix" != "png" ]; then
+    echo -n "${b}"
+    echo >&2 "Suffix not \".png\" : \"$i\" -> \"$suffix\""
+    continue
+  fi
+
+  # Determine transparent color if present
+  #tcolor=
+  #if [ "$TRANS" ]; then
+  #  # OUTPUT_PNG_TRANSPARANCY "$i" 2>&1 >$TMP
+  #  if  grep "Transparent Color Flag: True" $TMP >/dev/null; then
+  #    tcolor=`nawk '#  Figure out the Transparent color 
+  #      $1 == "Color" && $2 ~ /^[0-9][0-9]*:$/ {
+  #              color[substr($2, 1, length($2)-1)+0] = $9; }     # color table
+  #      /Transparent Color Index:/ { c = $4; }             # TRANS color index
+  #      END { print color[c] }                      # output transparent color
+  #      ' $TMP | tr 'a-f' 'A-F' `
+  #  fi
+  #fi
+
+
+  # Convert png and figure out destination format
+  # case on the standard error on png filter!!
+  case  "`pngtopnm -verbose "$i" 2>&1 >$TMP`"  in
+    *transparency*)
+      dest="$name.xpm"
+      echo -n "${b}"
+      echo >&2 "Warning file \"$i\" has transparency"
+      ppmtoxpm $TMP 2>/dev/null | xpm-fix -o "$dest"
+      ;;
+    *PBM*)
+      dest="$name.xbm"
+      pbmtoxbm < $TMP |
+        sed 's/static  *char/static unsigned char/;
+             s/noname\([[_]\)/'"$name"'\1/'  > "$dest"
+      ;;
+    *P?M*)
+      dest="$name.xpm"
+      #if [ "$tcolor" ]; then
+      #  ppmtoxpm $TMP 2>/dev/null |
+      #    sed "/colors/,/pixels/s/c $tcolor/c None/" |
+      #    xpm-fix -o "$dest"
+      #else
+        ppmtoxpm $TMP 2>/dev/null | xpm-fix -o "$dest"
+      #fi
+      ;;
+    *) echo -n "${b}"
+       echo >&2 "Unable to Parse PNG file \"$i\"!!!!"
+       continue
+  esac
+
+  if [ ! -s "$dest" ]; then
+    rm -f "$dest"
+    echo -n "${b}"
+    echo >&2 "Failed to convert \"$i\""
+  fi
+
+done
+
+echo "${b}DONE!"
+
+rm -f $TMP
+

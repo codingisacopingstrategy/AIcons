@@ -1,0 +1,25 @@
+/* XPM */
+static char * hand_one_moment_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"      ...       ",
+"     .XX..      ",
+"     .XX..      ",
+"     .XX..      ",
+"     .XX..      ",
+"     .XX..      ",
+" ... .XX.....   ",
+".XX...XX.X.X... ",
+" .XX..XX.X.X.X..",
+"  .XX.XXXXXX.X..",
+"  .XX.XXXXXXXX..",
+"   .XXXXXXXXXX..",
+"    .XXXXXXXXX..",
+"    .XXXXXXXX.. ",
+"     .XXXXXXX.. ",
+"     .XXXXXXX.. "};

@@ -1,0 +1,118 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Buttons, A-D</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Buttons, A-D
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<A HREF="ftp://ftp.cit.gu.edu.au/pub/AIcons/WWW_Images_Buttons.tar.gz">
+  <IMG SRC="../blue_grab.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  GZiped-Tar Archive</A> of these Button Images.<BR>
+<P>
+<IMG SRC="../space_30.gif" WIDTH=30 HEIGHT=1 ALT="  ">
+<B><A HREF="Images_Arrows.html">     			Arrows</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<!--<B><A HREF="Images1.html">-->			A-D</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images2.html">   				E-H</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images3.html">   				I-Q</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images4.html">				R-Z</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images_Anim.html">     			Animated</A></B>
+<P>
+
+These are buttons which can be used on WWW html documents for the creation
+of ``Button Banks''. All the buttons follow the style initially set out by
+Greg Bossert, of <A HREF="http://www-ns.rutgers.edu/doc-images/"
+TARGET="_top">Rutgers University</A>. <P>
+
+<HR>
+<H2>Buttons</H2>
+
+<A HREF=a-z.gif           ><IMG SRC=a-z.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=afraid.gif        ><IMG SRC=afraid.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=aicons.gif        ><IMG SRC=aicons.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=archie.gif        ><IMG SRC=archie.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=aroma.gif         ><IMG SRC=aroma.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=art.gif           ><IMG SRC=art.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=asteroid.gif      ><IMG SRC=asteroid.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=australia.gif     ><IMG SRC=australia.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=balance.gif       ><IMG SRC=balance.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=bed.gif           ><IMG SRC=bed.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=bell_hand.gif     ><IMG SRC=bell_hand.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=binary.gif        ><IMG SRC=binary.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=binary_tree.gif   ><IMG SRC=binary_tree.gif   LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=bitmap.gif        ><IMG SRC=bitmap.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=blocks.gif        ><IMG SRC=blocks.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=book.gif          ><IMG SRC=book.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=book_index.gif    ><IMG SRC=book_index.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=book_next.gif     ><IMG SRC=book_next.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=book_prev.gif     ><IMG SRC=book_prev.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=books.gif         ><IMG SRC=books.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=box.gif           ><IMG SRC=box.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=calculator.gif    ><IMG SRC=calculator.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=camera.gif        ><IMG SRC=camera.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=cards.gif         ><IMG SRC=cards.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=castle.gif        ><IMG SRC=castle.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=caution.gif       ><IMG SRC=caution.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=cave.gif          ><IMG SRC=cave.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=cdrom.gif         ><IMG SRC=cdrom.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=chest.gif         ><IMG SRC=chest.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=chicken.gif       ><IMG SRC=chicken.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=coffee.gif        ><IMG SRC=coffee.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=comments.gif      ><IMG SRC=comments.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=compass.gif       ><IMG SRC=compass.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=compass2.gif      ><IMG SRC=compass2.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=compress.gif      ><IMG SRC=compress.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=connect.gif       ><IMG SRC=connect.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=const_hat.gif     ><IMG SRC=const_hat.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=construct.gif     ><IMG SRC=construct.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=construction.gif  ><IMG SRC=construction.gif  LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=continued.gif     ><IMG SRC=continued.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=credit_card.gif   ><IMG SRC=credit_card.gif   LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=crossbones.gif    ><IMG SRC=crossbones.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=cupboard.gif      ><IMG SRC=cupboard.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=curtain.gif       ><IMG SRC=curtain.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=desk.gif          ><IMG SRC=desk.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=document.gif      ><IMG SRC=document.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=dog.gif           ><IMG SRC=dog.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door.gif          ><IMG SRC=door.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door_open.gif     ><IMG SRC=door_open.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door_exit.gif     ><IMG SRC=door_exit.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door2.gif         ><IMG SRC=door2.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door2_1.gif       ><IMG SRC=door2_1.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door2_2.gif       ><IMG SRC=door2_2.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door2_3.gif       ><IMG SRC=door2_3.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=door2_4.gif       ><IMG SRC=door2_4.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=doorknob.gif      ><IMG SRC=doorknob.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=dragon.gif        ><IMG SRC=dragon.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=dungeon.gif       ><IMG SRC=dungeon.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+
+<P><HR>
+
+<ADDRESS>
+Dated: 26 May 1995 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

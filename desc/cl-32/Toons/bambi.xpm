@@ -1,0 +1,43 @@
+/* XPM */
+static char *bambi_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c LemonChiffon",
+/* pixels */
+"ooooooooooooooooooooooo   oooooo",
+"ooooooooooooooo    oo     oooooo",
+"ooooooooooooooo  X        oooooo",
+"ooooooooooooooo XX  ..    oooooo",
+"ooooooooooooooo  X  ....  oooooo",
+"oooooooooooooooo   .   .. oooooo",
+"oooooooo  ooooooo  .    . oooooo",
+"oooooooo  ooooooo  .   .  oooooo",
+"oooooooo  oooooooo     .  oooooo",
+"ooooooo    oo  oooo  .    oooooo",
+"ooooooo                   oooooo",
+"ooooooooo  ........ .. ooooooooo",
+"ooooooooo .........  . ooooooooo",
+"oooooooooo ......... . ooooooooo",
+"oooooooooo ......... . ooooooooo",
+"oooooooo   ... .       ooooooooo",
+"ooooooo .....     .   oooooooooo",
+"ooooooo ..      o . .  ooooooooo",
+"oooooo      .  oo .  . ooooooooo",
+"oooooo . oo   ooo .    ooooooooo",
+"ooooo   oooo   oo   o . oooooooo",
+"ooooo   oooo . oo  oo   oooooooo",
+"oooo   oooooo  oo  ooo   ooooooo",
+"oooo  ooooooo   o  oooo   oooooo",
+"ooo   oooooooo  o  oooo   oooooo",
+"oo   ooooooooo     ooooo   ooooo",
+"o   oooooooooo     ooooo   ooooo",
+"o   ooooooooooo    oooooo   oooo",
+"o  oooooooooooooo  ooooooo   ooo",
+"o  oooooooooooooo   oooooo  oooo",
+"ooooooooooooooooo . oooooooooooo",
+"oooooooooooooo.oo   oooooooooooo"
+};

@@ -1,0 +1,43 @@
+/* XPM */
+static char *fish8_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c cyan",
+"X c red",
+"o c white",
+/* pixels */
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                oo       oo     ",
+"               o  o     o o     ",
+"              o   o    o  o     ",
+"         oooooooo o    o  o     ",
+"      ooooooooooooo   o  o      ",
+"    ooo..............oo  o      ",
+"   o  ..............XXo  o      ",
+"   o  ooo......XXXXXXXX o       ",
+"   ooooooooXXXXXXXXXXXX  o      ",
+"    oooooooXXXXXXXXXXX   o      ",
+"      ooooooXXXXXXX  Xo  o      ",
+"        ooooooooo    o o  o     ",
+"                o   o  o  o     ",
+"                 o o    o o     ",
+"                  o      oo     ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                "
+};

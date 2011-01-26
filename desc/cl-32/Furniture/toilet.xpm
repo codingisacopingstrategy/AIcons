@@ -1,0 +1,43 @@
+/* XPM */
+static char *toilet_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c DarkSlateGrey",
+"X c white",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooo                       ooooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"oooo                       ooooo",
+"ooo ....................... oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo X XX   XXXXXXXXXXXXXXX. oooo",
+"ooo XX  XXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXXXXXXXXXXXXXXXXXXXXX. oooo",
+"ooo XXX                 ... oooo",
+"oooo   XXXXXXXXXXXXXXX..   ooooo",
+"oooooo                   ooooooo",
+"ooooooo ............... oooooooo",
+"ooooooo XXXXXXXXXXXX... oooooooo",
+"oooooooo XXXXXXXXXX... ooooooooo",
+"oooooooo XXXXXXXXXX... ooooooooo",
+"ooooooooo XXXXXXXX... oooooooooo",
+"oooooooooo  XXXXX..  ooooooooooo",
+"oooooooooooo XXX.. ooooooooooooo",
+"ooooooooooo  XXX..  oooooooooooo",
+"ooooooooo  XXXXXXXXX  oooooooooo",
+"oooooooo .XXXXXXX..... ooooooooo",
+"oooooooo               ooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

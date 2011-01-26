@@ -1,0 +1,35 @@
+/* XPM */
+static char * compressed_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 7 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c white",
+"o	c black",
+"O	c slate grey",
+"+	c firebrick",
+"@	c tomato",
+/* pixels */
+"    .....           ",
+"    .XX.X.          ",
+"    .XX.XX.         ",
+"    .XX.XXX.        ",
+"    .XX.XXXX.       ",
+"    .XXo.o.o.o      ",
+"    .XXooooooo      ",
+"    .XXXXOOOOo      ",
+"+@  .XXXXXOOOo  @+  ",
+"+@@ .XXXXXXXOo @@+  ",
+"+@@@.XXXXXXXOo@@@+  ",
+"+@@@@XXXXXXXO@@@@+  ",
+"+@@@@@XXXXXX@@@@@+  ",
+"+@@@@+XXXXXX+@@@@+  ",
+"+@@@+XXXXXXXO+@@@+  ",
+"+@@+.XXXXXXXOo+@@+  ",
+"+@+ .XXXXXXXOo +@+  ",
+"++  .XXXXXXXOo  ++  ",
+"    .XXXXXXXOo      ",
+"    .XXXXXXXOo      ",
+"    ..OOOOOO.o      ",
+"      oooooooo      "};

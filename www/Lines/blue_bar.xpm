@@ -1,0 +1,13 @@
+/* XPM */
+static char * line_bluebar_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"540 4 3 1",
+/* colors */
+" 	c black",
+".	c navy",
+"X	c blue",
+/* pixels */
+"                                       .   .  .  .  . . . . . . . . . . . .. .. .. ... ... .................................................................................................X.......X...X..X..X..X..X..X..X..X.X..X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XX.X.X.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XXX.XXX.XXX.XXXX.XXXX.XXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                   .  .  . . . . . . .  . .  . .  . .  . . . . . . .. .. . .. .. .. . .. ... . . . .. .. .. ....................................................X...X..X..X.X.X.X.X.X.X.X.X...X.X.X..X.X..X..X..X..X.X..X.X.X..X.X..X..X..X..X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XX.XX.XX.XX.XX.XX.XX.XX.X.X.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.XX.X.XX.XX.X.XX.X.XX.X.XX.XXX.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XX.X.XX.XX.XX.XX.XX.XX.XX.XXX.XXX.XXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"              .  .                  .  .   .  .  . . . . . . . . . . . . .. . . .. ... ... . ...... .......... .. .. ..................................X...X..X...X..........................X..X..X....X..X..X..X.X..X.X..X..X..X.X.X.X.X.X.X.X..X.X.X.X.X.X.X.X.X.X.X.XX.XX.X.X.X.X.X.X.XX.X.X.X.XX.X.XX.X.X.X.X.X.X.X.XX.XX.XX.XX.XX.XX.XX.XX.XXXX.XX.XXXXX.XXX.XXX.XX.X.XXX.XXX.XXX.XXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXX.XXXXXXXXXXXXXXXXXX.XXXXXXXX.XXX.XX.X.XX.XX.XX.XX.XX.XXX.XXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"          .         .  . .  . . . .   .  .  .  . .  . .  . . . . .. . . . .. .. . .. .. . .... . .... . .. ............ ..........................X..................X..X..X..X..X.X.X.X.X.X..X...X..X.X..X..X.X..X..X..X.X.X.X.X..X..X.X.X.X.X.X.X..X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.XX.X.X.X.XX.XX.XX.XX.XX.XX.X.X.X.X.XX.XX.XX.XX.XX.XX.X.XX.XX.X.X.XX.XX.XXXX.XXXX.XXX.XXX.XXX.XXX.X.X.X.X.X.X.X.X.X.X.XX.XX.XX.XX.XXXXX.XX.XXXX.X.XX.XX.XX.XXXXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.XX.XX.XXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};

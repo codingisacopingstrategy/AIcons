@@ -1,0 +1,4 @@
+#define circle_05_width 5
+#define circle_05_height 5
+static unsigned char circle_05_bits[] = {
+   0x0e, 0x11, 0x11, 0x11, 0x0e};

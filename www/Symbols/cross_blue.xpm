@@ -1,0 +1,25 @@
+/* XPM */
+static char * cross_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	c None",
+".	c blue",
+"X	c navy",
+/* pixels */
+"   ..               ",
+"  ....          ..X ",
+" ......       ...X  ",
+"  X.....   ....XX   ",
+"    XX........X     ",
+"      X.....XX      ",
+"      ......X       ",
+"      .......       ",
+"    .....XX...      ",
+"   .....X  X...     ",
+"   ....X    XX.     ",
+"  ....X       ..    ",
+"  ...X        X..   ",
+"  ..XX         X.   ",
+"   XX           ..  ",
+"                 X  "};

@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_tri_up_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Gold",
+"X	c Orange",
+"o	c Firebrick",
+"O	c Red",
+"             ",
+"             ",
+"      .      ",
+"     .Xo     ",
+"     .Xo     ",
+"    .XXOo    ",
+"    .X  o    ",
+"   .XX  Oo   ",
+"   .X   Oo   ",
+"  .X OOOOOo  ",
+"  Xoooooooo  ",
+"             ",
+"             "};

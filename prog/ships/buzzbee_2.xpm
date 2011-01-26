@@ -1,0 +1,33 @@
+/* XPM */
+static char *buzzbee_2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 10 1",
+/* colors */
+"  c black",
+". c cyan",
+"X c dodger blue",
+"o c firebrick",
+"O c grey",
+"+ c red",
+"@ c white",
+"# c slate grey",
+"$ c None",
+"% c blue",
+/* pixels */
+"$$$$$$$$$$$$$$$$",
+"$$$$$O$OO$$$$$$$",
+"$$$$@O$$$$$#$$$$",
+"$$$+@@@$$$O@@@$$",
+"$$O$+@#@$$O@@#$$",
+"$O$$oo##O @@O$$$",
+"$$O$$$o O  @O$$$",
+"$$O$$$OO   O$$$O",
+"$$$$%#@@@ O#$$$$",
+"$$$$%X@@OO##@$$O",
+"$$$$X.@#$oo@@@O$",
+"$$$$%X.X$$$o@@O$",
+"$$$$$%%$%$$$++$$",
+"$$$$$$$$$$$O$$$$",
+"$$$$$$$$O$OO$$$$",
+"$$$$$$$$$$$$$$$$"
+};

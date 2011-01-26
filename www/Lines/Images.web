@@ -1,0 +1,200 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Lines</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Lines
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="README">
+  <IMG SRC="../blue_readme.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  README file </A> (including known authorship)<BR> 
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+<B>See Also...</B>
+<A HREF="../FancyLines/Images.html">Fancy Lines</A>,
+<A HREF="../ThreadLines/Images.html">Threaded Lines</A>.
+<P>
+
+This directory contains plain and textured lines, which consist of space
+filling patterns. Very little tranparent space is present and the lines
+are often very solid in appearance.<P>
+
+<HR>
+
+<H2>Plain Lines</H2>
+<A HREF="groove.gif">Groove</A><BR>
+<IMG SRC=groove.gif WIDTH=560 HEIGHT=2><BR>
+<A HREF="groove_wide.gif">Groove Wide</A><BR>
+<IMG SRC=groove_wide.gif WIDTH=560 HEIGHT=4><BR>
+<A HREF="thin_green.gif">Thin Green</A><BR>
+<IMG SRC=thin_green.gif WIDTH=520 HEIGHT=2><BR>
+<A HREF="thin_red.gif">Thin Red</A><BR>
+<IMG SRC=thin_red.gif WIDTH=520 HEIGHT=2><BR>
+<A HREF="blue_bar.gif">Blue Bar</A><BR>
+<IMG SRC=blue_bar.gif WIDTH=540 HEIGHT=4><BR>
+<A HREF="red.gif">Red</A><BR>
+<IMG SRC=red.gif WIDTH=544 HEIGHT=9><BR>
+<A HREF="caution.gif">Caution</A><BR>
+<IMG SRC=caution.gif WIDTH=560 HEIGHT=11><BR>
+<P>
+
+<H2>Rounded Bars</H2>
+<A HREF="bar_red.gif">Bar Red</A><BR>
+<IMG SRC=bar_red.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_orange.gif">Bar Orange</A><BR>
+<IMG SRC=bar_orange.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_yellow.gif">Bar Yellow</A><BR>
+<IMG SRC=bar_yellow.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_brown.gif">Bar Brown</A><BR>
+<IMG SRC=bar_brown.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_green.gif">Bar Green</A><BR>
+<IMG SRC=bar_green.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_cyan.gif">Bar Cyan</A><BR>
+<IMG SRC=bar_cyan.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_blue.gif">Bar Blue</A><BR>
+<IMG SRC=bar_blue.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_purple.gif">Bar Purple</A><BR>
+<IMG SRC=bar_purple.gif WIDTH=560 HEIGHT=11><BR>
+<A HREF="bar_grey.gif">Bar Grey</A><BR>
+<IMG SRC=bar_grey.gif WIDTH=560 HEIGHT=11><BR>
+<P>
+
+<H2>Color Textures</H2>
+<A HREF="blue_marble.gif">Blue Marble</A><BR>
+<IMG SRC=blue_marble.gif WIDTH=556 HEIGHT=10><BR>
+<A HREF="blue_marble2.gif">Blue Marble 2</A><BR>
+<IMG SRC=blue_marble2.gif WIDTH=556 HEIGHT=10><BR>
+<A HREF="blue_shade.gif">Blue Shade</A><BR>
+<IMG SRC=blue_shade.gif WIDTH=560 HEIGHT=6><BR>
+<A HREF="blue_stripe.gif">Blue Stripe</A><BR>
+<IMG SRC=blue_stripe.gif WIDTH=450 HEIGHT=11><BR>
+<A HREF="color_splotch.gif">Color Splotch</A><BR>
+<IMG SRC=color_splotch.gif WIDTH=540 HEIGHT=8><BR>
+<A HREF="color_swirl.gif">Color Swirl</A><BR>
+<IMG SRC=color_swirl.gif WIDTH=540 HEIGHT=9><BR>
+<A HREF="color_tweed.gif">Color Tweed</A><BR>
+<IMG SRC=color_tweed.gif WIDTH=524 HEIGHT=6><BR>
+<A HREF="cyber.gif">Cyber</A><BR>
+<IMG SRC=cyber.gif WIDTH=562 HEIGHT=8><BR>
+<A HREF="desert.gif">Desert</A><BR>
+<IMG SRC=desert.gif WIDTH=527 HEIGHT=7><BR>
+<A HREF="orange_striped.gif">Orange Striped</A><BR>
+<IMG SRC=orange_striped.gif WIDTH=540 HEIGHT=4><BR>
+<A HREF="rainbow.gif">Rainbow</A><BR>
+<IMG SRC=rainbow.gif WIDTH=540 HEIGHT=4><BR>
+<A HREF="red_blue.gif">Red & Blue</A><BR>
+<IMG SRC=red_blue.gif WIDTH=504 HEIGHT=4><BR>
+<A HREF="Suntan">Suntan</A><BR>
+<IMG SRC=suntan.gif WIDTH=576 HEIGHT=11><BR>
+<A HREF="WaterBar">WaterBar</A><BR>
+<IMG SRC=waterbar.gif WIDTH=604 HEIGHT=27><BR>
+<P>
+
+<H2>Color Patterns</H2>
+<A HREF="celtic.gif">Celtic</A><BR>
+<IMG SRC=celtic.gif WIDTH=572 HEIGHT=22><BR>
+<A HREF="knot.gif">Knot</A><BR>
+<IMG SRC=knot.gif WIDTH=560 HEIGHT=24><BR>
+<P>
+
+<H2>Bitmap Lines</H2>
+<A HREF="grey.gif">Grey</A><BR>
+<IMG SRC=grey.gif WIDTH=540 HEIGHT=6><BR>
+<A HREF="greyscale.gif">Greyscale</A><BR>
+<IMG SRC=greyscale.gif WIDTH=400 HEIGHT=9><BR>
+<A HREF="speckled.gif">Speckled</A><BR>
+<IMG SRC=speckled.gif WIDTH=540 HEIGHT=6><BR>
+
+
+<H2>Grey Lines</H2>
+<A HREF="grad.gif">Grad</A><BR>
+<IMG SRC=grad.gif WIDTH=500 HEIGHT=3><BR>
+<A HREF="grad_left.gif">Grad Left</A><BR>
+<IMG SRC=grad_left.gif WIDTH=100 HEIGHT=3><BR>
+<A HREF="grad_right.gif">Grad Right</A><BR>
+<IMG SRC=grad_right.gif WIDTH=100 HEIGHT=3><BR>
+<A HREF="grey_squares.gif">Grey Squares</A><BR>
+<IMG SRC=grey_squares.gif WIDTH=540 HEIGHT=6><BR>
+<A HREF="gradiated.gif">Gradiated</A><BR>
+<IMG SRC=gradiated.gif WIDTH=540 HEIGHT=6><BR>
+<A HREF="raised.gif">Raised</A><BR>
+<IMG SRC=raised.gif WIDTH=560 HEIGHT=9><BR>
+<P>
+
+<H2>Transparent Patterns</H2>
+<A HREF="pat_astec.gif">Pat Astec</A><BR>
+<IMG SRC=pat_astec.gif WIDTH=600 HEIGHT=33><BR>
+<A HREF="pat_byzan.gif">Pat Byzan</A><BR>
+<IMG SRC=pat_byzan.gif WIDTH=560 HEIGHT=15><BR>
+<A HREF="pat_celtic.gif">Pat Celtic</A><BR>
+<IMG SRC=pat_celtic.gif WIDTH=600 HEIGHT=22><BR>
+<A HREF="pat_circles.gif">Pat Circles</A><BR>
+<IMG SRC=pat_circles.gif WIDTH=562 HEIGHT=14><BR>
+<A HREF="pat_crossed.gif">Pat Crossed</A><BR>
+<IMG SRC=pat_crossed.gif WIDTH=560 HEIGHT=14><BR>
+<A HREF="pat_crossed2.gif">Pat Crossed2</A><BR>
+<IMG SRC=pat_crossed2.gif WIDTH=560 HEIGHT=15><BR>
+<A HREF="pat_crumpled.gif">Pat Crumpled</A><BR>
+<IMG SRC=pat_crumpled.gif WIDTH=540 HEIGHT=6><BR>
+<A HREF="pat_diamond.gif">Pat Diamond</A><BR>
+<IMG SRC=pat_diamond.gif WIDTH=592 HEIGHT=22><BR>
+<A HREF="pat_diamond_dbl.gif">Pat Diamond Dbl</A><BR>
+<IMG SRC=pat_diamond_dbl.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_diamond2.gif">Pat Diamond 2</A><BR>
+<IMG SRC=pat_diamond2.gif WIDTH=560 HEIGHT=16><BR>
+<A HREF="pat_dotted.gif">Pat Dotted</A><BR>
+<IMG SRC=pat_dotted.gif WIDTH=560 HEIGHT=14><BR>
+<A HREF="pat_flowers.gif">Pat Flowers</A><BR>
+<IMG SRC=pat_flowers.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_locked.gif">Pat Locked</A><BR>
+<IMG SRC=pat_locked.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_meshed.gif">Pat Meshed</A><BR>
+<IMG SRC=pat_meshed.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_spiral.gif">Pat Spiral</A><BR>
+<IMG SRC=pat_spiral.gif WIDTH=600 HEIGHT=20><BR>
+<A HREF="pat_squares.gif">Pat Squares</A><BR>
+<IMG SRC=pat_squares.gif WIDTH=560 HEIGHT=15><BR>
+<A HREF="pat_squares2.gif">Pat Squares2</A><BR>
+<IMG SRC=pat_squares2.gif WIDTH=560 HEIGHT=14><BR>
+<A HREF="pat_swirls.gif">Pat Swirls</A><BR>
+<IMG SRC=pat_swirls.gif WIDTH=560 HEIgHT=14><BR>
+<A HREF="pat_vibration.gif">Pat Vibration</A><BR>
+<IMG SRC=pat_vibration.gif WIDTH=600 HEIgHT=20><BR>
+<A HREF="pat_weave.gif">Pat Weave</A><BR>
+<IMG SRC=pat_weave.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_weave_dbl.gif">Pat Weave Dbl</A><BR>
+<IMG SRC=pat_weave_dbl.gif WIDTH=600 HEIGHT=20><BR>
+<A HREF="pat_weave_wide.gif">Pat Weave Wide</A><BR>
+<IMG SRC=pat_weave_wide.gif WIDTH=600 HEIGHT=28><BR>
+<A HREF="pat_zag.gif">Pat Zag</A><BR>
+<IMG SRC=pat_zag.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_zag2.gif">Pat Zag 2</A><BR>
+<IMG SRC=pat_zag2.gif WIDTH=600 HEIGHT=24><BR>
+<A HREF="pat_zigzag.gif">Pat ZigZag</A><BR>
+<IMG SRC=pat_zigzag.gif WIDTH=560 HEIGHT=14><BR>
+<P>
+
+<HR>
+<ADDRESS>
+Dated: 9 Feburary 1996 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

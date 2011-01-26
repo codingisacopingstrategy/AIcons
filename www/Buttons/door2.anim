@@ -1,0 +1,15 @@
+-loop 20
+-delay 120
+              door2.xpm
+-delay 50
+              door2_1.xpm
+              door2_2.xpm
+              door2_3.xpm
+-delay 120
+              door2_4.xpm
+-delay 15
+              door2_3.xpm
+              door2_2.xpm
+              door2_1.xpm
+-delay 0
+              door2.xpm

@@ -1,0 +1,529 @@
+.rn '' }`
+''' $RCSfile$$Revision$$Date$
+'''
+''' $Log$
+'''
+.de Sh
+.br
+.if t .Sp
+.ne 5
+.PP
+\fB\\$1\fR
+.PP
+..
+.de Sp
+.if t .sp .5v
+.if n .sp
+..
+.de Ip
+.br
+.ie \\n(.$>=3 .ne \\$3
+.el .ne 3
+.IP "\\$1" \\$2
+..
+.de Vb
+.ft CW
+.nf
+.ne \\$1
+..
+.de Ve
+.ft R
+
+.fi
+..
+'''
+'''
+'''     Set up \*(-- to give an unbreakable dash;
+'''     string Tr holds user defined translation string.
+'''     Bell System Logo is used as a dummy character.
+'''
+.tr \(*W-|\(bv\*(Tr
+.ie n \{\
+.ds -- \(*W-
+.ds PI pi
+.if (\n(.H=4u)&(1m=24u) .ds -- \(*W\h'-12u'\(*W\h'-12u'-\" diablo 10 pitch
+.if (\n(.H=4u)&(1m=20u) .ds -- \(*W\h'-12u'\(*W\h'-8u'-\" diablo 12 pitch
+.ds L" ""
+.ds R" ""
+.ds L' '
+.ds R' '
+'br\}
+.el\{\
+.ds -- \(em\|
+.tr \*(Tr
+.ds L" ``
+.ds R" ''
+.ds L' `
+.ds R' '
+.ds PI \(*p
+'br\}
+.\"	If the F register is turned on, we'll generate
+.\"	index entries out stderr for the following things:
+.\"		TH	Title 
+.\"		SH	Header
+.\"		Sh	Subsection 
+.\"		Ip	Item
+.\"		X<>	Xref  (embedded
+.\"	Of course, you have to process the output yourself
+.\"	in some meaninful fashion.
+.if \nF \{
+.de IX
+.tm Index:\\$1\t\\n%\t"\\$2"
+..
+.nr % 0
+.rr F
+.\}
+.TH GIFMAP 1 "1.37" "26/Jan/97" "User Commands"
+.IX Title "GIFMAP 1"
+.UC
+.IX Name "gifmap - web-based image index builder"
+.if n .hy 0
+.if n .na
+.ds C+ C\v'-.1v'\h'-1p'\s-2+\h'-1p'+\s0\v'.1v'\h'-1p'
+.de CQ          \" put $1 in typewriter font
+.ft CW
+'if n "\c
+'if t \\&\\$1\c
+'if n \\&\\$1\c
+'if n \&"
+\\&\\$2 \\$3 \\$4 \\$5 \\$6 \\$7
+'.ft R
+..
+.\" @(#)ms.acc 1.5 88/02/08 SMI; from UCB 4.2
+.	\" AM - accent mark definitions
+.bd B 3
+.	\" fudge factors for nroff and troff
+.if n \{\
+.	ds #H 0
+.	ds #V .8m
+.	ds #F .3m
+.	ds #[ \f1
+.	ds #] \fP
+.\}
+.if t \{\
+.	ds #H ((1u-(\\\\n(.fu%2u))*.13m)
+.	ds #V .6m
+.	ds #F 0
+.	ds #[ \&
+.	ds #] \&
+.\}
+.	\" simple accents for nroff and troff
+.if n \{\
+.	ds ' \&
+.	ds ` \&
+.	ds ^ \&
+.	ds , \&
+.	ds ~ ~
+.	ds ? ?
+.	ds ! !
+.	ds /
+.	ds q
+.\}
+.if t \{\
+.	ds ' \\k:\h'-(\\n(.wu*8/10-\*(#H)'\'\h"|\\n:u"
+.	ds ` \\k:\h'-(\\n(.wu*8/10-\*(#H)'\`\h'|\\n:u'
+.	ds ^ \\k:\h'-(\\n(.wu*10/11-\*(#H)'^\h'|\\n:u'
+.	ds , \\k:\h'-(\\n(.wu*8/10)',\h'|\\n:u'
+.	ds ~ \\k:\h'-(\\n(.wu-\*(#H-.1m)'~\h'|\\n:u'
+.	ds ? \s-2c\h'-\w'c'u*7/10'\u\h'\*(#H'\zi\d\s+2\h'\w'c'u*8/10'
+.	ds ! \s-2\(or\s+2\h'-\w'\(or'u'\v'-.8m'.\v'.8m'
+.	ds / \\k:\h'-(\\n(.wu*8/10-\*(#H)'\z\(sl\h'|\\n:u'
+.	ds q o\h'-\w'o'u*8/10'\s-4\v'.4m'\z\(*i\v'-.4m'\s+4\h'\w'o'u*8/10'
+.\}
+.	\" troff and (daisy-wheel) nroff accents
+.ds : \\k:\h'-(\\n(.wu*8/10-\*(#H+.1m+\*(#F)'\v'-\*(#V'\z.\h'.2m+\*(#F'.\h'|\\n:u'\v'\*(#V'
+.ds 8 \h'\*(#H'\(*b\h'-\*(#H'
+.ds v \\k:\h'-(\\n(.wu*9/10-\*(#H)'\v'-\*(#V'\*(#[\s-4v\s0\v'\*(#V'\h'|\\n:u'\*(#]
+.ds _ \\k:\h'-(\\n(.wu*9/10-\*(#H+(\*(#F*2/3))'\v'-.4m'\z\(hy\v'.4m'\h'|\\n:u'
+.ds . \\k:\h'-(\\n(.wu*8/10)'\v'\*(#V*4/10'\z.\v'-\*(#V*4/10'\h'|\\n:u'
+.ds 3 \*(#[\v'.2m'\s-2\&3\s0\v'-.2m'\*(#]
+.ds o \\k:\h'-(\\n(.wu+\w'\(de'u-\*(#H)/2u'\v'-.3n'\*(#[\z\(de\v'.3n'\h'|\\n:u'\*(#]
+.ds d- \h'\*(#H'\(pd\h'-\w'~'u'\v'-.25m'\f2\(hy\fP\v'.25m'\h'-\*(#H'
+.ds D- D\\k:\h'-\w'D'u'\v'-.11m'\z\(hy\v'.11m'\h'|\\n:u'
+.ds th \*(#[\v'.3m'\s+1I\s-1\v'-.3m'\h'-(\w'I'u*2/3)'\s-1o\s+1\*(#]
+.ds Th \*(#[\s+2I\s-2\h'-\w'I'u*3/5'\v'-.3m'o\v'.3m'\*(#]
+.ds ae a\h'-(\w'a'u*4/10)'e
+.ds Ae A\h'-(\w'A'u*4/10)'E
+.ds oe o\h'-(\w'o'u*4/10)'e
+.ds Oe O\h'-(\w'O'u*4/10)'E
+.	\" corrections for vroff
+.if v .ds ~ \\k:\h'-(\\n(.wu*9/10-\*(#H)'\s-2\u~\d\s+2\h'|\\n:u'
+.if v .ds ^ \\k:\h'-(\\n(.wu*10/11-\*(#H)'\v'-.4m'^\v'.4m'\h'|\\n:u'
+.	\" for low resolution devices (crt and lpr)
+.if \n(.H>23 .if \n(.V>19 \
+\{\
+.	ds : e
+.	ds 8 ss
+.	ds v \h'-1'\o'\(aa\(ga'
+.	ds _ \h'-1'^
+.	ds . \h'-1'.
+.	ds 3 3
+.	ds o a
+.	ds d- d\h'-1'\(ga
+.	ds D- D\h'-1'\(hy
+.	ds th \o'bp'
+.	ds Th \o'LP'
+.	ds ae ae
+.	ds Ae AE
+.	ds oe oe
+.	ds Oe OE
+.\}
+.rm #[ #] #H #V #F C
+.SH "NAME"
+.IX Header "NAME"
+gifmap \- web-based image index builder
+.SH "SYNOPSIS"
+.IX Header "SYNOPSIS"
+\fBgifmap\fR [\ --address\ string]
+       [\ --coloralink\ colorspec\ ]
+       [\ --colorback\ colorspec\ ]
+       [\ --colorlink\ colorspec\ ]
+       [\ --colortrans\ colorspec\ ]
+       [\ --colorvlink\ colorspec\ ]
+       [\ --columns\ number\ ]
+       [\ --debug\ ]
+       [\ --dircoloralink\ colorspec\ ]
+       [\ --dircolorback\ colorspec\ ]
+       [\ --dircolorlink\ colorspec\ ]
+       [\ --dircolorvlink\ colorspec\ ]
+       [\ --dirindexname\ filename\ ]
+       [\ --forcehtml\ ]
+       [\ --forcemontage\ ]
+       [\ --header\ string\ ]
+       [\ --help\ ]
+       [\ --htimage\ path\ ]
+       [\ --iconpath\ path\ ]
+       [\ --indexname\ filename\ ]
+       [\ --maptype\ cern|ncsa\ ]
+       [\ --maxgif\ number\ ]
+       [\ --montageflags\ string\ ]
+       [\ --pageindexname\ string\ ]
+       [\ --prefixpath\ path\ ]
+       [\ --readme\ filename\ ]
+       [\ --recurse\ ]
+       [\ --relative\ ]
+       [\ --rootpath\ path\ ]
+       [\ --rows\ number\ ]
+       [\ --srcdir\ path\ ]
+       [\ --thumbfont\ fontspec\ ]
+       [\ --thumbgeom\ widthxheight\ ]
+       [\ --title\ string\ ]
+       [\ --verbose\ ]
+.SH "DESCRIPTION"
+.IX Header "DESCRIPTION"
+\fBGifmap\fR creates HTML index files and imagemaps
+corresponding to a directory of image files. \fBGifmap\fR is
+ideal for making large image collections available on the
+net or for just using your Web browser for browsing images.
+.PP
+Configuration options are derived from either the command line
+(options prefixed with \*(L'\-\*(R', \*(L'--\*(R', or \*(L'+'), configuration file
+($opt_ options), or internal defaults ($opt_ options). Some
+arguments (like X11 font specifications) seem to confuse PERL's
+getopt function. When this happens, try using the syntax
+\fI--option=arg\fR to avoid any confusion caused by a space.
+.PP
+The default configuration file name is \*(L"\fI.gifmaprc\fR\*(R".
+Configuration files are written in PERL syntax and are sourced via
+PERL's eval statement. When \fBgifmap\fR is executed, it first reads a
+\*(L"\fI.gifmaprc\fR\*(R" file in the user's home directory (if present). When
+a directory is processed, \fBgifmap\fR will process any \*(L"\fI.gifmaprc\fR\*(R"
+files found in the path from the server's root directory
+(\fI$opt_rootpath\fR) to the directory being processed. All
+configuration options are additive.
+.PP
+Evaluation order is as follows :
+.Ip "1) $\s-1HOME\s0/.gifmaprc" 4
+.IX Item "1) $\s-1HOME\s0/.gifmaprc"
+.Ip "2) Command line options" 4
+.IX Item "2) Command line options"
+.Ip "3) Per directory .gifmaprc files." 4
+.IX Item "3) Per directory .gifmaprc files."
+Gifmaprc  files  are evaluated in path order from server root to
+current directory. This allows sub-directories to \*(L"inherit\*(R" the
+configuration of parent directories.
+.PP
+Each directory is processed with items 1 & 2 already complete.
+.PP
+In general, \fBgifmap\fR's defaults produce nice output.
+However, the options \fB$opt_prefixpath\fR,
+\fB$opt_rootpath\fR, \fB$opt_iconpath\fR, \fB$opt_htimage\fR, and
+\fB$opt_maptype\fR must be configured on a per-site basis so
+please read the documentation on these options and
+perform the required configuration before executing the
+program.
+.SH "PROGRAM OPTIONS"
+.IX Header "PROGRAM OPTIONS"
+.Sh "General:"
+.IX Subsection "General:"
+.Ip "\fB$opt_debug\fR=\fI1\fR (\fB--debug\fR) " 4
+.IX Item "\fB$opt_debug\fR=\fI1\fR (\fB--debug\fR) "
+Print debugging messages.
+.Ip "\fB$opt_forcehtml\fR=\fI1\fR (\fB--forcehtml\fR)" 4
+.IX Item "\fB$opt_forcehtml\fR=\fI1\fR (\fB--forcehtml\fR)"
+Force \s-1HTML\s0 files to be generated (default off).
+Without this option, \fBgifmap\fR will only re-generate \s-1HTML\s0
+files as required. Use this option if gifmap options have
+changed since the last run and you want to update the
+pages using the new options.
+.Ip "\fB$opt_forcemontage\fR=\fI1\fR  (\fB--forcemontage\fR)" 4
+.IX Item "\fB$opt_forcemontage\fR=\fI1\fR  (\fB--forcemontage\fR)"
+Force montage (default false).
+Without this option, \fBgifmap\fR will only re-generate
+montages as required. Use this option if gifmap montage
+options have changed since the last run and you want to
+update the pages using the new options
+.Ip "\fB$opt_help\fR=\fI1\fR  (\fB--help\fR)" 4
+.IX Item "\fB$opt_help\fR=\fI1\fR  (\fB--help\fR)"
+Display usage message.
+.Ip "\fB$opt_ignore\fR=\fI1\fR" 4
+.IX Item "\fB$opt_ignore\fR=\fI1\fR"
+If \fB$opt_ignore\fR is set in a directory's \*(L"<.gifmaprc>\*(R" file, then that
+directory will not be processed. If recursion is enabled, then recursion
+will continue into any sub-directories. See also \fB$opt_indexname\fR.
+.Ip "\fB$opt_prune\fR=\fI1\fR" 4
+.IX Item "\fB$opt_prune\fR=\fI1\fR"
+If \fB$opt_prune\fR is set in a directory's \*(L"\fI.gifmaprc\fR\*(R" file, then no
+sub-directories below that directory will be processed by gifmap when
+operating in the recursive mode.  See also \fB$opt_indexname\fR.
+.Ip "\fB$opt_recurse\fR=\fI1\fR  (\fB--recurse\fR)" 4
+.IX Item "\fB$opt_recurse\fR=\fI1\fR  (\fB--recurse\fR)"
+Recurse directory tree. The default is to only process the current
+directory, generating appropriate links for sub-directories and the parent
+directory, as if gifmap is recuring. Selecting this option causes \fBgifmap\fR
+to recurse through sub-directories as well.
+.Ip "\fB$opt_srcdir\fR=\fIpath\fR  (\fB--srcdir\fR \fIpath\fR)" 4
+.IX Item "\fB$opt_srcdir\fR=\fIpath\fR  (\fB--srcdir\fR \fIpath\fR)"
+Image directory to process or start recursion at. Specify this option
+(usally on the command line) if the directory you want to process is not
+the current directory.  The default directory to process is the current
+directory.
+.Ip "\fB$opt_verbose\fR=\fI1\fR  (\fB--verbose\fR)" 4
+.IX Item "\fB$opt_verbose\fR=\fI1\fR  (\fB--verbose\fR)"
+Normally \fBgifmap\fR prints only the directory names for directories it
+processes. Selecting the verbose option displays the number of images and
+sub-directories in the directory as well as the number of pages to be
+generated, and the current page number.
+.Sp
+It will also show the current image index \fBgifmap\fR is currently creating
+as a progress report.
+.Ip "\fB$opt_rootpath\fR=\fIpath\fR  (\fB--rootpath\fR \fIpath\fR)" 4
+.IX Item "\fB$opt_rootpath\fR=\fIpath\fR  (\fB--rootpath\fR \fIpath\fR)"
+Absolute path to server root directory (\s-1NCSA/\s0Apatche DocumentRoot) or the
+users Home page directory. This must be an absolute path (starting with
+\*(L'/') to the top of the \s-1WWW\s0 directory tree gifmap will be processing in.  If
+this value is specified incorrectly, \fBgifmap\fR will generate incorrect
+URLs.
+.Ip "\fB$opt_prefixpath\fR=\fIpath\fR  (\fB--prefixpath\fR \fIpath\fR)" 4
+.IX Item "\fB$opt_prefixpath\fR=\fIpath\fR  (\fB--prefixpath\fR \fIpath\fR)"
+The \s-1URL\s0 to prepend to specify the \s-1WWW\s0 location of \fB$opt_rootpath\fR.
+For the \s-1WWW\s0 server's root directory this is a empty string (""). For a
+user's home pages this is the \s-1URL\s0 path to their home pages (usally
+"/~username", but may be different on your server). This is only used
+for figuring out the URLs of the \fBgifmap\fR icon images.
+.Sp
+if \fB$opt_relative\fR is enabled then this option is not actually used.  It
+however must be used if the \fBgifmap\fR icon images are not in the same \s-1WWW\s0
+directory tree as the directorys \fBgifmap\fR is processing.  (See the next
+option).
+.Ip "\fB$opt_relative\fR=\fI1\fR  (\fB--relative\fR)" 4
+.IX Item "\fB$opt_relative\fR=\fI1\fR  (\fB--relative\fR)"
+Translate URLs for \fBgifmap\fR icon images as relative paths from the
+directory \fBgifmap\fR is processing. The images must be in the same \s-1WWW\s0
+directory tree otherwise the relative paths will be incorrect. 
+.Sp
+If the images are is not in the same directory tree, then this option
+will have to be turned off and \fB$opt_prefixpath\fR and \fB$opt_iconpath\fR
+used to locate the \fBgifmap\fR icon images using absolute URLs paths
+for that server. 
+.Ip "\fB$opt_iconpath\fR=\fIpath\fR  (\fB--iconpath\fR \fIpath\fR)" 4
+.IX Item "\fB$opt_iconpath\fR=\fIpath\fR  (\fB--iconpath\fR \fIpath\fR)"
+This is the relative path from the top of the \s-1WWW\s0 directory tree specified
+in \fB$opt_rootpath\fR. If this value is specified incorrectly then
+\fBgifmap\fR will generate incorrect URLs for its icons.
+.Ip "\fB%opt_icon\fR=(  \*(L'\fIid\fR\*(R', \*(L'\fIfilename\fR\*(R', .... );" 4
+.IX Item "\fB%opt_icon\fR=(  \*(L'\fIid\fR\*(R', \*(L'\fIfilename\fR\*(R', .... );"
+This is a hash table of all the icon images used by \fBgifmap\fR
+and located in the \fB$opt_iconpath\fR directory. The elments are pairs
+of icon \fIid\fRs and the filename of the image. The \fIid\fRs currently used
+\fBgifmap\fR are :\- prev, next, next_grey, up, help, and ball.
+.Sp
+Other images can also be defined in the hash table and \fBgifmap\fR will
+automatically process those images along with the images it uses, to
+generate the icon \s-1URL\s0 and size infomation. This information can then be
+used in the various special formating options to add extra, or special
+purpose links.  
+.Sp
+\s-1WARNING\s0: currently icon information can only be set in the global
+gifmaprc file (usally \*(L"\fI~/.gifmaprc\fR\*(R", as unexpected results can happen
+if modified in per-directory rc files.
+.Sh "Filenames:"
+.IX Subsection "Filenames:"
+.Ip "\fB$opt_indexname\fR=\fIfilename\fR  (\fB--indexname\fR \fIfilename\fR)" 4
+.IX Item "\fB$opt_indexname\fR=\fIfilename\fR  (\fB--indexname\fR \fIfilename\fR)"
+Base name of master index files (default server index), usally set to
+\*(L"\fIindex.html\*(R"\fR. This is also the option \fBgifmap\fR will look for
+in sub-directories and parent directory \*(L"\fI.gifmaprc\fR\*(R" files as the
+document to make links to.
+.Sp
+\s-1EG\s0: If a directory is not processed by gifmap, by either never running
+\fBgifmap\fR on that directory, or the option \fB$opt_ignore\fR has been set,
+then setting \fB$opt_indexname\fR will specify the document \fBgifmap\fR created
+index files of \s-1OTHER\s0 directories should link to.
+.Sp
+If you do not what gifmap to ever link to this directory then setting this
+option, \fB$opt_indexname\fR, to \fB"\s-1NOLINK\s0\*(R"\fR will will prevent \fBgifmap\fR index
+files in other directories having links to this directory.
+.Sp
+If you want \fBgifmap\fR to entirely ignore a particular directory tree,
+even during recursion of the surrounding directories, then you ca use
+the following options in its \*(L"\fI.gifmaprc\fR\*(R" file....
+\f(CW
+#
+# .gifmaprc -- Gifmap is not to process or even link to this directory tree
+#
+$opt_indexname    = 'NOLINK';  # Do not link to this directory
+$opt_ignore       = 1;         # Do not generate gifmap image indexes
+$opt_prune        = 1;         # Don't recurse into sub-directories
+\fR
+.Ip "\fB$opt_readme\fR=\fIfilename\fR  (\fB--readme\fR \fIfilename\fR)" 4
+.IX Item "\fB$opt_readme\fR=\fIfilename\fR  (\fB--readme\fR \fIfilename\fR)"
+Name of directory information file. If this named file exists in
+the directory, then it will be displayed in preference to
+the first page of images. Typically the contents of this file
+describe the images to be viewed.
+.Ip "\fB$opt_pageindexname\fR=\fIstring\fR  (\fB--pageindexname\fR \fIstring\fR)" 4
+.IX Item "\fB$opt_pageindexname\fR=\fIstring\fR  (\fB--pageindexname\fR \fIstring\fR)"
+Base name of page-related index files. This name is used as the prefix for
+all generated files except for the main index file. It is usally set to
+some hidden (or unix `dot\*(R' filename) such as \*(L".index\*(R".
+.Sp
+.Vb 2
+\&  
+\&=item B<$opt_dirindexname>=I<filename>  (B<--dirindexname> I<filename>)
+.Ve
+Directory-name to title cross-reference sub-directories. If this file
+exists, then it is searched for a specification for the linked directory.
+If a match is found, then the replacement text is used as the link text.
+The format of the file is:
+.Sp
+.Vb 1
+\& dirname  dirtext
+.Ve
+With \fIdirname\fR representing the directory name and
+\fIdirtext\fR representing the replacement link text.
+.Sh "Server-side imagemaps:"
+.IX Subsection "Server-side imagemaps:"
+.Ip "\fB$opt_htimage\fR=\fIpath\fR  (\fB--htimage\fR \fIpath\fR)" 4
+.IX Item "\fB$opt_htimage\fR=\fIpath\fR  (\fB--htimage\fR \fIpath\fR)"
+Imagemap \s-1CGI\s0 program \s-1URL\s0 (set to \*(L'\*(R' for none). Older
+servers (e.g. \s-1CERN\s0 and old \s-1NCSA\s0) require an external
+program to handle server-side imagemaps. These programs
+are generally supplied with a full \s-1URL\s0 to the referenced
+file. Newer servers have server-side imagemap support
+built-in and can accept URLs relative to the current
+directory. If you have a modern server, then specify this
+value as a null string.
+.Ip "\fB$opt_maptype\fR=\fImaptype\fR  (\fB--maptype\fR \fImaptype\fR)" 4
+.IX Item "\fB$opt_maptype\fR=\fImaptype\fR  (\fB--maptype\fR \fImaptype\fR)"
+Server-side map type (set to \*(L"ncsa\*(R" or \*(L"cern"). \s-1NCSA\s0 and
+Apache servers require \*(L"ncsa\*(R". \s-1CERN\s0 requires \*(L"cern\*(R".
+Phttpd can use either format.
+.Sh "Image Map Options:"
+.IX Subsection "Image Map Options:"
+.Ip "\fB$opt_colortrans\fR=\fIcolorspec\fR  (\fB--colortrans\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_colortrans\fR=\fIcolorspec\fR  (\fB--colortrans\fR \fIcolorspec\fR)"
+Transparent color to use in montage. Usally the same as the background
+color \fB$opt_colorback\fR of the imagemap page.
+.Ip "\fB$opt_maxgif\fR=\fInumber\fR  (\fB--maxgif\fR \fInumber\fR)" 4
+.IX Item "\fB$opt_maxgif\fR=\fInumber\fR  (\fB--maxgif\fR \fInumber\fR)"
+Maximum size of \s-1GIF\s0 imagemap before trying \s-1JPEG\s0. This is
+an optimization which tries to avoid the \s-1JPEG\s0 conversion step.
+.Ip "\fB$opt_montageflags\fR=\fIstring\fR  (\fB--montageflags\fR \fIstring\fR)" 4
+.IX Item "\fB$opt_montageflags\fR=\fIstring\fR  (\fB--montageflags\fR \fIstring\fR)"
+Flags to ImageMagick \fBmontage\fR. The \fBmontage\fR program is used to generate
+the thumbnail images used by \fBgifmap\fR. Read the the \fImontage\fR manpage for details.
+.Ip "\fB$opt_rows\fR=\fInumber\fR  (\fB--rows\fR \fInumber\fR)" 4
+.IX Item "\fB$opt_rows\fR=\fInumber\fR  (\fB--rows\fR \fInumber\fR)"
+Montage rows (max). This is the maximum number of thumbnail rows
+allowed per page.
+.Ip "\fB$opt_thumbfont\fR=\fIfontspec\fR  (\fB--thumbfont\fR \fIfontspec\fR)" 4
+.IX Item "\fB$opt_thumbfont\fR=\fIfontspec\fR  (\fB--thumbfont\fR \fIfontspec\fR)"
+Thumbnail title font. This is the X11 font used to title
+thumbnails. \s-1PERL\s0's newgetopt module seems to have difficulties with
+the dashes in most X11 font specifications. If \fBgetopt\fR prints the
+usage message rather than doing what you want to, then try using
+the command line syntax \fI--thumbfont=fontspec\fR and you should have
+better luck.
+.Ip "\fB$opt_thumbgeom\fR=\fIgeometry\fR  (\fB--thumbgeom\fR \fIgeometry\fR)" 4
+.IX Item "\fB$opt_thumbgeom\fR=\fIgeometry\fR  (\fB--thumbgeom\fR \fIgeometry\fR)"
+Thumbnail geometry (widthxheight). This defines the size
+of thumbnail images.
+.Sh "Colors & Appearance:"
+.IX Subsection "Colors & Appearance:"
+.Ip "\fB$opt_address\fR=\fIstring\fR (\fB--address\fR \fIstring\fR)" 4
+.IX Item "\fB$opt_address\fR=\fIstring\fR (\fB--address\fR \fIstring\fR)"
+Additional information to place in <\s-1ADDRESS\s0></\s-1ADDRESS\s0> tags in 
+page frame.
+.Ip "\fB$opt_coloralink\fR=\fIcolorspec\fR  (\fB--coloralink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_coloralink\fR=\fIcolorspec\fR  (\fB--coloralink\fR \fIcolorspec\fR)"
+Link (active) color for page frame.
+.Ip "\fB$opt_colorback\fR=\fIcolorspec\fR  (\fB--colorback\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_colorback\fR=\fIcolorspec\fR  (\fB--colorback\fR \fIcolorspec\fR)"
+Background color for page frame.
+.Ip "\fB$opt_colorlink\fR=\fIcolorspec\fR  (\fB--colorlink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_colorlink\fR=\fIcolorspec\fR  (\fB--colorlink\fR \fIcolorspec\fR)"
+Link (unvisited) color for page frame.
+.Ip "\fB$opt_colorvlink\fR=\fIcolorspec\fR  (\fB--colorvlink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_colorvlink\fR=\fIcolorspec\fR  (\fB--colorvlink\fR \fIcolorspec\fR)"
+Link (visited) color for page frame.
+.Ip "\fB$opt_dircoloralink\fR=\fIcolorspec\fR  (\fB--dircoloralink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_dircoloralink\fR=\fIcolorspec\fR  (\fB--dircoloralink\fR \fIcolorspec\fR)"
+Link (active) color for directory frame. Defaults to value of \fB$opt_coloralink\fR
+if not explicitly set.
+.Ip "\fB$opt_dircolorback\fR=\fIcolorspec\fR  (\fB--dircolorback\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_dircolorback\fR=\fIcolorspec\fR  (\fB--dircolorback\fR \fIcolorspec\fR)"
+Background color for directory frame. Defaults to value of \fB$opt_colorback\fR
+if not explicitly set.
+.Ip "\fB$opt_dircolorlink\fR=\fIcolorspec\fR  (\fB--dircolorlink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_dircolorlink\fR=\fIcolorspec\fR  (\fB--dircolorlink\fR \fIcolorspec\fR)"
+Link (unvisited) color for directory frame.  Defaults to value of \fB$opt_colorlink\fR
+if not explicitly set.
+.Ip "\fB$opt_dircolorvlink\fR=\fIcolorspec\fR  (\fB--dircolorvlink\fR \fIcolorspec\fR)" 4
+.IX Item "\fB$opt_dircolorvlink\fR=\fIcolorspec\fR  (\fB--dircolorvlink\fR \fIcolorspec\fR)"
+Link (visited) color for directory frame.  Defaults to value of \fB$opt_colorvlink\fR
+if not explicitly set.
+.Ip "\fB$opt_columns\fR=\fInumber\fR  (\fB--columns\fR \fInumber\fR)" 4
+.IX Item "\fB$opt_columns\fR=\fInumber\fR  (\fB--columns\fR \fInumber\fR)"
+Montage columns.
+.Ip "\fBopt_frameddirfmt\fR=\fIstring\fR" 4
+.IX Item "\fBopt_frameddirfmt\fR=\fIstring\fR"
+Template (written in \s-1PERL\s0) that represents the format
+used to generate the framed (left frame) directory
+navigation page. This format will be seen by browsers
+that support frames. This is a guru-level option and is
+subject to change.
+.Ip "\fBopt_dirfmt\fR=\fIstring\fR" 4
+.IX Item "\fBopt_dirfmt\fR=\fIstring\fR"
+Template (written in \s-1PERL\s0) that represents the format
+used to generate the frame-less directory navigation
+page. This format will be seen by browsers that do not
+support frames. This is a guru-level option and is
+subject to change.
+.Ip "\fB$opt_header\fR=\fIstring\fR  (\fB--header\fR \fIstring\fR)" 4
+.IX Item "\fB$opt_header\fR=\fIstring\fR  (\fB--header\fR \fIstring\fR)"
+Text to add to page header in page frame. This option is subject to change
+and will be eliminated if the page frame is templatized.
+.Ip "\fB$opt_title\fR=\fIstring\fR  (\fB--title\fR \fIstring\fR)" 4
+.IX Item "\fB$opt_title\fR=\fIstring\fR  (\fB--title\fR \fIstring\fR)"
+Page title. If this option is not specified, then \fBgifmap\fR
+will generate its own title.
+.SH "AUTHORS"
+.IX Header "AUTHORS"
+\fBGifmap\fR is written and maintained by Bob Friesenhahn
+(bfriesen@simple.dallas.tx.us) with copious input from Anthony
+Thyssen (anthony@cit.gu.edu.au). Anthony's diligent
+assistance as the first alpha tester is very much
+appreciated.
+
+.rn }` ''

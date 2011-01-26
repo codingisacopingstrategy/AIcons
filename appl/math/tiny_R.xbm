@@ -1,0 +1,4 @@
+#define tiny_r_width 5
+#define tiny_r_height 6
+static unsigned char tiny_r_bits[] = {
+ 0x1f,0x1e,0x06,0x06,0x06,0x0f};

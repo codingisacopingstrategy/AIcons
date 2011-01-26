@@ -1,0 +1,36 @@
+/* XPM */
+static char *line_purple.recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"562 8 21 1",
+/* colors */
+"` c black",
+"a c tan",
+"b c dodger blue",
+"c c lavender",
+"d c gainsboro",
+"e c firebrick",
+"f c peru",
+"g c sky blue",
+"h c violet",
+"i c grey",
+"j c sienna",
+"k c dark slate grey",
+"l c magenta",
+"m c sea green",
+"n c purple",
+"o c navy blue",
+"p c tomato",
+"q c white",
+"r c slate grey",
+"s c pale green",
+"t c blue",
+/* pixels */
+"`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````q",
+"```kkpqcr````hagm```o```rrhmbobromroromrokoenrkekjkkjkkekkkkkk``errprkkk```anprrrk```nrr`iccrrrr`ekerii`k`kokkkkkk`k```khgi`kk`````hhgrkk`kkk`kkojkkjokkkojokkkkokkoo```````eihhrrnjonkkrkteomok````ebbborkkkk`ko`kkokkkk`kk``ookkjokk`jneaonfkkkk```hrrjrrj```kkkkooo`k`ko`kk`k`ebbok``k``agir```khpcrr````rigm```````rhhmnobokrktorrooknenkkekkkekjkkkkk`kk`kjrnprkkk```ahrrrkk``onf``icrrrrr`keerii`kkkk`kkkkk`o``ekhik`ko```o`hggr`kkkkk`kk`rkkkkkjojkkokkkokk`o`````k`ehhhrenknkkrkkookkk`o``eebrborkk`k`ko`kk`kkkk`k```okojokk``kprrnrjrkkk```hrpfrjj``kkkkkook`k`ko`k`k```q",
+"``````qqdk````khgrjo``k```errpnnnhnnhnnnnrn`joeo`k`k`kkokjkk``jkrnjrkerk```arnpnar````aarjcqdiark`````k```ke`krrrj`eo`e`hrbkk`kk`o`eehrk`oj`keo`jkkkojeojjkroknkekokmrkk```k`k`nplrnjrnkkn`mokooko`k`hhhhrbbigr``k`ook`jkkkke`k`eokoko``rnrarknjrk```eahrnrrjrra`k``kkkokekkeokkennho`eo`k`khig`e````qddk```ohigjo``o```ekrphjhnanhlrnnhke`jkk`k`k`ko`ekkke``jnerjkkekk```prplrfr``j`irrjcdgirrk`o``kk``k`kk`rrrek`k```hrk`k`kk```eghgkke`kkeojkkkkkeonkkojknkkoeonojk``````kjnhrrjknknkkkroookko`oohhlhrbrgrr````okoekokke``k`koeok```nrprjrojke`o`eanrnrrkrar`oo`k`eookjoeoeoe`q",
+"``````qcir`````eigik`k`khrner`k````k`kkkekko```````e``k`k`rri`kkkjeojkkk```nprjrrkr``knjhrrki``````````okkkkk`rhrnjkkk``arg`eo`eooko`hgbkj``kkkkkkkkkkkeoorojkkkkoronrkjkrk`````kkrrnerkeofonokkok``neoenhhphhgr``k`kojookjkk``koeoroe`oppjnfnkkkr````hfhjrjrcdrkkko`oek`oeokokokklnrooko`e`rrakk``o`cgir`k``jjhgkkk`kjnrnk`````k`k`k`kkjoo```````e``k`k`rgik`kkekerkok```anjjnkkr``krahrkii``````````kkkke``rinrkeo`e`nrk`oe`k`kk`hhgr``ojkkkook`eoke`orjokekreoorrrkjkkk``````ennnjrjonkekkkoko`ekekkphhhhgirkj`kokkokekkk`e`nkkkn``kprnrrnjkrr```oarprjjrcjrkekokoo`ekokoooek`q",
+"``k``rrjhcrr````khiigirrrkhoe``jk`eke```o`e`k`k`k`k`k`riiknphre`kkkrokoj```anrnjrrj``ejj`````kjkkkorkkkeobk``k`aiirnk`eohomok`rk`j```khrgrokek`ek`eoeokkoekeokneojknkfrrkjkkk`````enrronnkokkkkmo`eoknekjekknehgiiarb`oe`okkk`k`nkkokk`krnrrnfrkjker``eehahkirak`kekkeokko`keoeeo`hhok``eotenhrrr``jkrhidr`````khiigrrrraheo`kko`k`e``eo```ke`kkk`k`krhkkhhirkeokkknkjk```nrrrjrrk`kej`e````jrjkkkkkorkeokk`k`aihnkjk`khrkkkkjk`e``ekhgrrk`k`kek`eokekkkkojorokkrknofrrrkkkk```k``arenorknokokok`nknrenkeorrhhgriir`ok`ookkk``okokkk```nprnjrrkkke```ehnakkhakk```k`okeoo`ekkeok`q",
+"``````e`kagd`k```kkdddhk``kjkok``k`o`ko`kardigiiiiabjrehhjkk`oeoekjoerok``erjjaoekr```neinjknknkknekknkokkkrrk```ihnrjr`hmbkkk`ek``o`kecdgrr``rkoekkkk`koeokkkokknorjtrfnkjojkkk```hnenjoekeokoko`o`pojonoekjjrhihgrnmbrbj`e``kk`kokek``eenprpnrnror``kkanpkhiikkkooko`okkook`koekhnk``k`kk`nkhiik````jkhi`ek```kdcdhhk`kkkkke``k`e`kok`addiggiiribjkehfj``eoeokekokkok`kkpjfnroer```eirrrrnkkorokknkokkokkok`o`snrrek`lb``e``jo`o`koehggr`oek``krkk`oeoeeojoeknknkjbfrnekojkok`oopnonjkekookkoo``enkekeojkenodhiirbmnrkjk```kk`oeok```ernpalrnrkr```oaapkeiikkkoookkkokkkokkkoe`q",
+"``i````o`higr`o```````knpnhbrkkonokkobokkrrahaanpnrpoeo``k`ke`kkkokeo`ekenjnenrenrok``kkrnrrjerrokknkkkrkoeokor```iihor`hnr`o`n`rek`k``nrhigrko`k`k`keokjkkoen`nokkeorrrrrnjkoek```rlhjkrokokkokk`k`nnereknkeojerjnhhnhrb`oor`o`ookkom````rhpnrjjrrrk```errhijre``k`kkk`koke`rokrohhokkoeo`e`kpcdr```o``agrr``e`````kkrphhrokkororotkokkraphpanfnfhkeo``okk`kkkeokjkk`kenrenrjrnro`k`knhenkkebkkekkkkkkekrokkn```dnhok`hrkk`on`joek`k`jhlgrrokokk`k`r`ek`keokkeokkkoeorrrjkkke````npkkknkojkkoeo`krjnkkknkeekje`hhnhnhb``oenk``omoeok```rrhnhjjrnrke``eercdijke`jkj`o`k`okkeoknk`q",
+"``ikk````khhrkkek``k``````ehhrnprnhhpnahe``k`ekkkkekkk`kkekkoke`kkoke``nrrjnrknkkktek``enreenkknkkokeokokkomkkekn`rinekjnkb`kr`okkke`ek`erhhg`kkkokk`oek`eokkkkjjoeoeoeorjrkkkkk```hjrnjrenrokooo`ekkjknkjoekjoekkjknjngrke`k`kkkeoonokk```phrhprrfmn````nedhirrjkjkkk`oo`koeojjoehnb`ko`kkok`riiiekk```khsikk```o````o`kkhrrhnnnnhpnhjk`e`k`k`ke``kk`kokkkoj`ok`ook`kknajnrknoekor```hlrknjnkeoknkoeokomoekjoek`rhnekrnk`kokkokekk`ekkrrhgg``koe`oekkoorkkreokoeoeoknrrroekkoe`e`hrnnkereokkokk``nojnnrkekojkkkjjnjjhrkk`kk`kk`nmokkke```njranprjno``koedihrrrkekk`kkkk`kokoeke`q"
+};

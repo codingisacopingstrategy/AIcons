@@ -1,0 +1,30 @@
+/* XPM */
+static char * note_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c white",
+/* pixels */
+"                    ",
+"         ..         ",
+"         ...X       ",
+"        o....X      ",
+"        o..o..X     ",
+"        o...o..X    ",
+"        o....o..X   ",
+" XXXXXX o.......XXX ",
+" oooooo o..X ...Xoo ",
+"        o..X...X    ",
+" XXXXXX o..X..XXXXX ",
+" ooooo  o..Xooooooo ",
+"     o.....X        ",
+" XX o.oo...X XXXXXX ",
+" ooo..o....X oooooo ",
+"   o.......X        ",
+" XXo.......XXXXXXXX ",
+" oo o.....X ooooooo ",
+"    ooXXXX          ",
+"                    "};

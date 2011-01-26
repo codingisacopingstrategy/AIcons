@@ -1,0 +1,43 @@
+/* XPM */
+static char *phone2[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c black",
+"a c firebrick",
+"b c red",
+"c c white",
+/* pixels */
+"cccccccccccccccccccccccccccccccc",
+"cccccccccccccccccccccccccccacccc",
+"cccccccccccccccccccccccccccacccc",
+"cccccccccccccccccccccccccaaaaacc",
+"ccccccccccccccccccccccc`ccca`ccc",
+"ccccccccccccccccccccc`cccaaaaacc",
+"ccccccccccccccccccc`ccc`ccca``cc",
+"ccccccccccccccccc`ccc`cccc`acccc",
+"ccccccccccccccc`ccc`ccccc`cacccc",
+"cccccccccccc``cccc`cccc`cccacccc",
+"cccccccccc``cccc`cccc`cccccacccc",
+"cccccccc``cccc`ccccc`ccccccacccc",
+"cccccc``cccc`ccccc`ccccccccccccc",
+"ccc`aacccc`cccccc`cccccccccccccc",
+"cc`caacc`cccccc`cccccccccccccccc",
+"aaaaaaaaaaccc`cccccccccccccccccc",
+"aaaaaaaaaacc`ccccccccccccccccccc",
+"ccc`aacccc``cccc`````````````ccc",
+"cc`caacc``ccccc`bbbbbbbbbbbbb`cc",
+"aaaaaaaaaacccc`bbb``bbbbb``bbb`c",
+"aaaaaaaaaaccc`bbb`bb`bbb`bb`bbb`",
+"ccccaaccccccc`bbb`bb`````bb`bbb`",
+"ccccaacccccccc```bbbbbbbbbbb```c",
+"ccccaacccccccccc`bb`c`c`c`bbb`cc",
+"ccccaaccccccccc`bbbcbcbcbcbbbb`c",
+"ccccaacccccccc`bbbb`c`c`c`bbbbb`",
+"ccccaacccccccc`bbbbcbcbcbcbbbbb`",
+"ccccaacccccccc`bbbb`c`c`c`bbbbb`",
+"ccccaacccccccc`bbbbbbbbbbbbbbbb`",
+"ccccaaccccccccc`bbbbbbbbbbbbbb`c",
+"ccccaacccccccccc``````````````cc",
+"ccccaaccccccccccc```cccccc```ccc"
+};

@@ -1,0 +1,42 @@
+/* XPM */
+static char *Heart_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c violet",
+". c grey",
+"X c red",
+/* pixels */
+"................................",
+"................................",
+".......XXXX...........XXXX......",
+".....XXXXXXXXX.....XXXXXXXXX....",
+"....XXXXXXXXXXX...XXXXXXXXXXX...",
+"...XXXXXXXXXXXXX.XXXXXXXXXXXXX..",
+"...XXXX XXXXXXXX.XXXXXXXXXXXXX..",
+"..XXXX   XXXXXXXXXXXXXXXXXXXXXX.",
+"..XXXXX  XXXXXXXXXXXXXXXXXXXXXX.",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXXX.",
+"...XXXXXXXXXXXXXXXXXXXXXXXXXXX..",
+"....XXXXXXXXXXXXXXXXXXXXXXXXX...",
+".....XXXXXXXXXXXXXXXXXXXXXXX....",
+"......XXXXXXXXXXXXXXXXXXXXX.....",
+"........XXXXXXXXXXXXXXXXX.......",
+".........XXXXXXXXXXXXXXX........",
+"..........XXXXXXXXXXXXX.........",
+"...........XXXXXXXXXXX..........",
+"............XXXXXXXXX...........",
+".............XXXXXXX............",
+"..............XXXXX.............",
+"..............XXXXX.............",
+"...............XXX..............",
+"...............XXX..............",
+"................X...............",
+"................X...............",
+"................X...............",
+"................................",
+"................................"
+};

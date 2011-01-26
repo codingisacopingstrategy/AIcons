@@ -1,0 +1,68 @@
+# --- bw-32 ---
+# Twm icons using the icon images in this directory.
+# This file can be included ing a m4 source file for the appropriate
+# twm rc file generation. Ctwm rc file usally are automatically
+# m4 pre-processed. Other twm variants may have to be pre-processed
+# separately, especiall before "f.restart" menu function is executed.
+#
+#   changequotes([,])
+#   PixmapDirectory "......path_to_aicons.../desc"
+#   include(...path_to_aicons.../desc/bw-32/TWM.icons)
+#
+undefine([ICON])
+define( ICON, "bw-32/$1.xbm" )
+
+UnknownIcon ICON(question)  # use this icon if none is supplied
+Icons {
+
+  # --- General Applications ---
+  "Fig"              ICON(fig)
+  "GV"               ICON(page)
+  "Ghostview"        ICON(page)
+  "Ghostscript"      ICON(page)
+  "Gimp"             ICON(paint2)
+  "Gnuplot"          ICON(gnuplot)
+  "MOTD"             ICON(postit)
+  "Navigator"        ICON(earth)
+  "Netscape"         ICON(earth)
+  "Notifier"         ICON(printout)
+  "Pixmap"           ICON(icon_edit)
+  "XAcct"            ICON(eye)
+  "XCalc"            ICON(calculator)
+  "XConsole"         ICON(xterm_console)
+  "Xmag"             ICON(magnify)
+  "Xman"             ICON(page)
+  "XPaint"           ICON(palette)
+
+  # --- Editors ---
+  "News"             ICON(news) 
+  "MailEd"           ICON(scroll) 
+  "Less"             ICON(scroll) 
+  "Axe"              ICON(edit)
+  "Emacs"            ICON(edit)
+  "XVed"             ICON(edit)
+  "Xedit"            ICON(edit)
+  "Xed"              ICON(edit)
+  "Vi"               ICON(edit)
+  "Vim"              ICON(edit)
+
+  # --- Specific Application Windows ---
+  "Basicwin"         ICON(go)     # CGoban
+  "nethack"          ICON(sword)
+  "crossfire"        ICON(sword)
+  "xdu"              ICON(printout)
+  "xv"               ICON(image)
+
+  # --- Machine Windows ---
+  "xterm-dragon"     ICON(dragon)
+  "xterm-lyrch"      ICON(monster2)
+
+  # --- Special Terminals ---
+  "FailSafe"          ICON(xterm)    # failsafe login xterm name
+  "xterm-failsafe"    ICON(xterm)    # failsafe login xterm name
+  "xterm"             ICON(xterm)    # xterm without a name
+  "XTerm"             ICON(xterm)    # other machine login
+  "Console"           ICON(xterm_console)
+  "Terminal Controls" ICON(xterm_console)
+}
+undefine([ICON])

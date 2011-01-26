@@ -1,0 +1,32 @@
+/* XPM */
+static char *answer_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"25 22 3 1",
+/* colors */
+"  c firebrick",
+". c red",
+"X c None",
+/* pixels */
+"XXX..XXXXXXXXXXXXXXXXXXXX",
+"XX.....XXXXXXXXXXXXXXXXXX",
+"X.......XXXXXXXXXXXX.... ",
+".........XXXXXXXXX....  X",
+"X  .......XXXXX.....  XXX",
+"XXX  .......X.....  XXXXX",
+"XXXXX  .........  XXXXXXX",
+"XXXXXXX .......  XXXXXXXX",
+"XXXXXXXX....... XXXXXXXXX",
+"XXXXXXX.........XXXXXXXXX",
+"XXXXXX...........XXXXXXXX",
+"XXXXX......   ....XXXXXXX",
+"XXXX......  XX ....XXXXXX",
+"XXX......  XXXX ...XXXXXX",
+"XX......  XXXXXX ...XXXXX",
+"X......  XXXXXXXX ..XXXXX",
+"X.....  XXXXXXXXXX ..XXXX",
+"X..... XXXXXXXXXXXX ..XXX",
+"X ...  XXXXXXXXXXXXX..XXX",
+"XX .. XXXXXXXXXXXXXX ..XX",
+"XXX   XXXXXXXXXXXXXXX .XX",
+"XXXXXXXXXXXXXXXXXXXXXX  X"
+};

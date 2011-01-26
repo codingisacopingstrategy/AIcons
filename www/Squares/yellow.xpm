@@ -1,0 +1,18 @@
+/* XPM */
+static char * yellow_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"9 9 3 1",
+/* colors */
+" 	c yellow",
+".	c orange",
+"X	c gold",
+/* pixels */
+"         ",
+"        .",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+" ........",
+"........."};

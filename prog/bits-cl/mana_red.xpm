@@ -1,0 +1,29 @@
+/* XPM */
+static char * mana_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"17 19 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c orange",
+"o	c red",
+/* pixels */
+"    .......      ",
+"  ..XXXXXXX..    ",
+" .XXXX.XXXXXX.   ",
+" .XX.. .oXoXX.   ",
+" .X.   .Xo..X... ",
+"....   ......XX. ",
+".     ..  .oXXXX.",
+"          .ooXXX.",
+"    ........ooXX.",
+"   .oooooo...XoX.",
+"  .oooooooo.ooX. ",
+"  .ooooooo..oX.  ",
+" .XXXoooo..oXoX. ",
+" .XXoXooo.oooX.  ",
+" .XXXXXoXoXXXX.  ",
+" .XXoXXXoXXX..   ",
+"  .XXXXXXXXX.    ",
+"   .XXXXXXX.     ",
+"    .......      "};

@@ -1,0 +1,25 @@
+/* XPM */
+static char * mine_0_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"15 15 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c orange",
+"o	c yellow",
+/* pixels */
+"               ",
+"               ",
+"               ",
+"               ",
+"      ...      ",
+"     .XXX.     ",
+"    .XoooX.    ",
+"    .XoooX.    ",
+"    .XoooX.    ",
+"     .XXX.     ",
+"      ...      ",
+"               ",
+"               ",
+"               ",
+"               "};

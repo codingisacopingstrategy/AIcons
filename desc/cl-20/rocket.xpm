@@ -1,0 +1,32 @@
+/* XPM */
+static char * rocket_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c grey",
+"O	c red",
+"+	c yellow",
+/* pixels */
+"         ..         ",
+"        .XX.        ",
+"       .XooX.       ",
+"       .XooX.       ",
+"      .XooooX.      ",
+"      .XooooX.      ",
+"      .XooooX.      ",
+"      .XooooX.      ",
+"     ..Xo.XoX..     ",
+"    .X.Xo.XoX.X.    ",
+"    .X.Xo.XoX.X.    ",
+"   .XX.Xo.XoX.XX.   ",
+"   .XX.Xo.XoX.XX.   ",
+"   .XX.Xo.XoX.XX.   ",
+"   ....XooooX....   ",
+"       ......       ",
+"        ....        ",
+"        O++O+       ",
+"       O+O +O       ",
+"      O+O +O+O      "};

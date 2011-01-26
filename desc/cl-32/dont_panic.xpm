@@ -1,0 +1,43 @@
+/* XPM */
+static char *dont_panic_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c red",
+"o c SeaGreen",
+/* pixels */
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"  o o o                   o o o ",
+"  o o o                   o o o ",
+"  ooooooo               ooooooo ",
+"   ooo   o  ooooooo    o   ooo  ",
+"    o     ooooooooooo       o   ",
+"    o    ooooooooooooo      o   ",
+"   oo   ooooooooooooooo     o   ",
+"   o   ooooooooooooooooo    oo  ",
+"  oo   ooooooooooooooooo    oo  ",
+"  oo  ooooooooooooooooooo    o  ",
+" oo   ooooooooooooooooooo    oo ",
+" oo   ooooooooooooooooooo    oo ",
+" oo  oooo ooooooooooo oooo   oo ",
+"oo   ooo o   oooooo  o ooo    oo",
+"oo  oo oo             oo oo   oo",
+"oo ooo oo   XXX  X    oo ooo  oo",
+"ooooo   ooo  XX.XXX ooo   ooo oo",
+" oooo    ooooXXX.XXXoo    oooooo",
+"  oo      ooooXX.XXXo      oooo ",
+"            ooXXX.XX         oo ",
+"              XXX.XXX           ",
+"               XX.XXX           ",
+"               XXX.XX           ",
+"               XXX.XX           ",
+"                XXXX            ",
+"                 XX             ",
+"                                "
+};

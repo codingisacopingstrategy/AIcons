@@ -1,0 +1,29 @@
+/* XPM */
+static char * iconolog_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	s None	c None",
+".	c navy",
+"X	c gold",
+/* pixels */
+"           ...      ",
+"          .....     ",
+"          .....     ",
+"         ...X..     ",
+"         ..XX...    ",
+"        ...XXX..    ",
+"       ...XXXX..    ",
+"       ..XXXXX...   ",
+"      ...XXXXXX..   ",
+"      ..XXXXXXX..   ",
+"     ..XXXXXXXX...  ",
+"    ...XXXXXX.....  ",
+"    ..XXXXX.......  ",
+"   ..XXXX.....  ... ",
+"  ...XX.....     .. ",
+"  ..X.....       .. ",
+" .......          ..",
+" .....            ..",
+"....               .",
+"..                 ."};

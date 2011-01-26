@@ -1,0 +1,43 @@
+/* XPM */
+static char *bug_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c green",
+"X c SeaGreen",
+"o c yellow",
+/* pixels */
+"oo....oo.o.ooo..o.oo.oo.ooo..ooo",
+"..o..oo..XoXX..X..o.ooX..X..o..o",
+"..o.oo.X.ooooo..Xoo..o.o..o.....",
+"...o.o..oo..o..o.o.o..o...o.Xo..",
+".o....o..o...o.o.oXo......oo..o.",
+".X..ooXX...ooo..ooooo..oXoo...oX",
+".ooo..X...o..X.o...o.oo..oXo.oo.",
+"......ooo.ooo.o...o...o...X...X.",
+"oo....oo.o.ooo..o.oo.oo.ooo..ooo",
+"..o..oo..XoXX..X..o.ooX..X..o..o",
+"..o.oo.X.ooooo..Xoo..o.o..o.....",
+"...o.o..oo..o..o.o.o..o...o.Xo..",
+".o........        .........o..o.",
+".X...o..  oooooooo  .....oo...oX",
+".oo.oo. oooooo  oooo .  ..oo.oo.",
+"....o. oooooo oX oooo oX .o...X.",
+"oo.... Xoooooo X oooo X ..oo.ooo",
+"..o.. o  Xoooo X oooo X ....o..o",
+"..o. X oo  Xoo X      X  .......",
+".o. X oX oo   X oooooo XX ...o..",
+"..o  oX oX  o  oo  o  o XX ooo..",
+"X..  o oX  o  ooo  o  oX X .Xo..",
+"o... o o X o  oooooooooX  ..oXX.",
+"o....  o  o X XoooooooXX .......",
+"o.o.... . o .  XXooooXX ...o..oo",
+"ooo.oo.... .... XXXXXX ..ooo....",
+".X...o..........      ...o.oo.oo",
+"...o.o..oo..o..o.o.o..o...o.Xo..",
+".o....o..o...o.o.oXo......oo..o.",
+".X..ooXX...ooo..ooooo..oXoo...oX",
+".ooo..X...o..X.o...o.oo..oXo.oo.",
+"......ooo.ooo.o...o...o...X...X."
+};

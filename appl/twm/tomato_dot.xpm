@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_iconify_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Gold",
+"X	c Orange",
+"o	c Red",
+"O	c Firebrick",
+"             ",
+"             ",
+"    ....X    ",
+"   ..X.XXo   ",
+"  ..X. X  o  ",
+"  .X. X  oO  ",
+"  .. X  o O  ",
+"  .XX  o oO  ",
+"  XX  o ooO  ",
+"   ooooooO   ",
+"    oOOOO    ",
+"             ",
+"             "};

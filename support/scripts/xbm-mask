@@ -1,0 +1,149 @@
+#!/bin/sh
+#
+# xbm-mask [options] bitmap/pixmap...
+#
+#   Take a X bitmap or X pixmap file and CREATE a mask bitmap file of the
+# image of either all the white (or black) areas of the image, which are on
+# the edges of the image (pbmmask filter). 
+#
+# For Xpixmaps the transparency becomes white by default.
+#
+# Any color in a X pixmap which is NOT the background is ensured as being
+# part of the resulting mask. This is different to the masking method given
+# in the pbmmask manpage which uses a threshold to determine what is and is
+# not part of the mask.
+# 
+# Mask files for X pixmaps are often created for the sole purpose of adding
+# the transparent color into the X Pixmap file. 
+#
+# OPTIONS
+#     -t     Background is the X pixmap transparency ONLY
+#     -b     Background is black - not white
+#     -e     Expand mask by one pixel to form a border
+#
+# Anthony Thyssen    2 September 1995    <anthony@cit.gu.edu.au>
+#
+# Updated 10 December 1999 for X Pixmap transparency handling
+#
+
+# ---- Process options ----
+Usage() {
+  echo >&2 "Usage: xbm-mask [-e] [-b] bitmap/pixmap..."
+  exit 10
+}
+
+TRANS="#BFBFBF"  # the transparent color to use. (note xBF => 191)
+white=true
+b="                                                                  "
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  --) loop=;  shift ;;
+  -t) trans=true; shift ;;      # Handle transparency
+  -b) white=; shift ;;          # Black background
+  -e) expand=-expand; shift ;;  # Expand mask border
+  -*) Usage ;;
+  *)  loop= ;;
+  esac
+done
+
+# ---- Process Files ----
+TMP1=/tmp/xbm-mask$$.1
+TMP2=/tmp/xbm-mask$$.2
+trap "rm -f $TMP1 $TMP2; exit 1" 1 2 3 15
+
+for i in "$@"; do
+  echo -n "${b}  masking \"$i\""
+  # --- check out this file ---
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read icon \"$i\""
+    continue;
+  fi
+
+  # --- convert it to PbmPlus ---
+  name="`basename $i`"
+  suffix="`expr "$name" : '.*\.\([^.]*\)'`"
+  name="`expr "$name" : '\([^.]*\)'`"
+  name="`basename $name _masked`"
+  name="`basename $name _recol`"
+  name="`basename $name _recol_bad`"
+
+  case "$suffix" in
+    xbm) sed 's/unsigned //' "$i" | xbmtopbm > $TMP1 ;;
+    xpm) if [ "$trans" ] && grep 'c  *[Nn]one' "$i" >/dev/null; then
+           # set transparency color in pixmap
+	   sed "s/c  *[Nn]one/c $TRANS/g" "$i" | x2p.sed |
+	     xpmtoppm | pnmdepth 255 2>/dev/null > $TMP1
+	 else
+           x2p.sed "$i" | xpmtoppm | pnmdepth 255 2>/dev/null > $TMP1 
+	 fi ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         continue ;;
+  esac
+  if [ ! -f $TMP1 -o ! -s $TMP1 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Convert \"$i\" to Pbmplus"
+    continue
+  fi
+
+  # Do the task and convert back
+  # Note: The output image is white for transparent and black for image.
+  # This is vital for things in X windows like cursors etc.
+  #
+  # Bitmaps and pixmaps with white/black backgrounds...
+  # * If white is to be transparent, image is inverted so black is to be
+  #   made transparent instead, this makes the `sed' command later easier.
+  # * Image is converted to gray scale and colors which are not 0 (black) is
+  #   converted to 255 (white) via a `sed' script.
+  # * It is then converted to bitmap and pbmmask used to full internal
+  #   `holes' in the image, and also inverts the image.
+  #
+  # Pixmaps with transparency preparation...
+  # 
+  # Anything which has any RGB value which is not 191 (definately not part
+  # of the transparent color is set to 0 (toward black). And any RGB value
+  # of 191 is set to 0 (transparency is now black).
+  #
+  # This should well separate the transparency color from all other colors,
+  # including any `close to transparency' color (grey) which may be present.
+  # 
+  # At this point the normal procedure to mask this image (black being
+  # transparent) is followed, except that no final pbmmask is needed so
+  # transparent `holes' can be preserved.
+  #
+
+  if [ "$trans" -a $suffix = 'xpm' ]; then
+    # Pixmap with a transparency color ...
+    pnmtoplainpnm $TMP1 | \
+      sed '4,${ s/191/T/g; s/[0-9][0-9]*/255/g; s/T/0/g; }' |
+        ppmtopgm | pnmtoplainpnm | sed '4,$s/[1-9][0-9]*/255/g' |
+          pgmtopbm -threshold | pnminvert > $TMP2
+  else
+    if [ "$white" ]; then    # invert as black should be transparent
+      pnminvert $TMP1 > $TMP2
+      mv $TMP2 $TMP1
+    fi
+    ppmtopgm $TMP1 | pnmtoplainpnm | sed '4,$s/[1-9][0-9]*/255/g' |
+      pgmtopbm -threshold | pbmmask $expand > $TMP2
+  fi
+
+  if [ ! -f $TMP2 -o ! -s $TMP2 ]; then
+    echo -n "${b}"
+    echo >&2 "Failed to Create a mask for \"$i\""
+    continue
+  fi
+  
+  # --- convert to "_mask.xbm" ---
+  pbmtoxbm < $TMP2 |
+    sed 's/static  *char/static unsigned char/;
+         s/noname\([[_]\)/'"$name"'\1/' > "${name}_mask.xbm"
+
+done
+echo "${b}Done"
+
+rm -f $TMP1 $TMP2
+

@@ -1,0 +1,194 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Balls</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Balls
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="README">
+  <IMG SRC="../blue_readme.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  README file </A> (including known authorship)<BR> 
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+<B>See Also...</B>
+<A HREF="../Squares/Images.html">Squares</A>,
+<A HREF="../Diamonds/Images.html">Diamonds</A>,
+<A HREF="../Symbols/Images.html">Symbols/Markers</A>.
+<P>
+
+Colored Balls for highting Web Listings. <P>
+
+<HR>
+<H2>Shaded Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC=white.gif    WIDTH=14 HEIGHT=14> <A HREF=white.gif>    white </A><BR>
+<IMG SRC=grey.gif     WIDTH=14 HEIGHT=14> <A HREF=grey.gif>     grey </A><BR>
+<IMG SRC=black.gif    WIDTH=14 HEIGHT=14> <A HREF=black.gif>    black </A><BR>
+<P>
+<IMG SRC=yellow.gif   WIDTH=14 HEIGHT=14> <A HREF=yellow.gif>   yellow </A><BR>
+<IMG SRC=orange.gif   WIDTH=14 HEIGHT=14> <A HREF=orange.gif>   orange </A><BR>
+<IMG SRC=brown.gif    WIDTH=14 HEIGHT=14> <A HREF=brown.gif>    brown </A><BR>
+<IMG SRC=red.gif      WIDTH=14 HEIGHT=14> <A HREF=red.gif>      red </A><BR>
+<IMG SRC=purple.gif   WIDTH=14 HEIGHT=14> <A HREF=purple.gif>   purple </A><BR>
+<IMG SRC=blue.gif     WIDTH=14 HEIGHT=14> <A HREF=blue.gif>     blue </A><BR>
+<IMG SRC=green.gif    WIDTH=14 HEIGHT=14> <A HREF=green.gif>    green </A><BR>
+<IMG SRC=cyan.gif     WIDTH=14 HEIGHT=14> <A HREF=cyan.gif>     cyan </A><BR>
+<P>
+</BLOCKQUOTE>
+
+<H2>Bordered Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC="b_blue.gif"       WIDTH=14 HEIGHT=14>
+<IMG SRC="b_blue_anim.gif"  WIDTH=14 HEIGHT=14>
+   <A HREF="b_blue.gif">blue</A>
+   (<A HREF="b_blue_anim.gif">anim</A>)<BR>
+<IMG SRC="b_green.gif"      WIDTH=14 HEIGHT=14>
+<IMG SRC="b_green_anim.gif" WIDTH=14 HEIGHT=14>
+   <A HREF="b_green.gif">green</A>
+   (<A HREF="b_green_anim.gif">anim</A>)<BR>
+<IMG SRC="b_yellow.gif"        WIDTH=14 HEIGHT=14>
+<IMG SRC="b_yellow_anim.gif"   WIDTH=14 HEIGHT=14>
+   <A HREF="b_yellow.gif">yellow</A>
+   (<A HREF="b_yellow_anim.gif">anim</A>)<BR>
+<IMG SRC="b_red.gif"        WIDTH=14 HEIGHT=14>
+<IMG SRC="b_red_anim.gif"   WIDTH=14 HEIGHT=14>
+   <A HREF="b_red.gif">red</A>
+   (<A HREF="b_red_anim.gif">anim</A>)<BR>
+<IMG SRC="b_grey.gif"       WIDTH=14 HEIGHT=14>
+   <A HREF="b_grey.gif">grey </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Medium Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC=m_white.gif  WIDTH=16 HEIGHT=16> <A HREF=m_white.gif>  white </A><BR>
+<IMG SRC=m_grey.gif   WIDTH=16 HEIGHT=16> <A HREF=m_grey.gif>   grey </A><BR>
+<IMG SRC=m_black.gif  WIDTH=16 HEIGHT=16> <A HREF=m_black.gif>  black </A><BR>
+<P>
+<IMG SRC=m_yellow.gif WIDTH=16 HEIGHT=16> <A HREF=m_yellow.gif> yellow </A><BR>
+<IMG SRC=m_orange.gif WIDTH=16 HEIGHT=16> <A HREF=m_orange.gif> orange </A><BR>
+<IMG SRC=m_brown.gif  WIDTH=16 HEIGHT=16> <A HREF=m_brown.gif>  brown </A><BR>
+<IMG SRC=m_red.gif    WIDTH=16 HEIGHT=16> <A HREF=m_red.gif>    red </A><BR>
+<IMG SRC=m_blue.gif   WIDTH=16 HEIGHT=16> <A HREF=m_blue.gif>   blue </A><BR>
+<IMG SRC=m_green.gif  WIDTH=16 HEIGHT=16> <A HREF=m_green.gif>  green </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Large Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC=l_white.gif  WIDTH=20 HEIGHT=20> <A HREF=l_white.gif>  white </A><BR>
+<IMG SRC=l_grey.gif   WIDTH=20 HEIGHT=20> <A HREF=l_grey.gif>   grey </A><BR>
+<IMG SRC=l_black.gif  WIDTH=20 HEIGHT=20> <A HREF=l_black.gif>  black </A><BR>
+<P>
+<IMG SRC=l_yellow.gif WIDTH=20 HEIGHT=20> <A HREF=l_yellow.gif> yellow </A><BR>
+<IMG SRC=l_orange.gif WIDTH=20 HEIGHT=20> <A HREF=l_orange.gif> orange </A><BR>
+<IMG SRC=l_brown.gif  WIDTH=20 HEIGHT=20> <A HREF=l_brown.gif>  brown </A><BR>
+<IMG SRC=l_red.gif    WIDTH=20 HEIGHT=20> <A HREF=l_red.gif>    red </A><BR>
+<IMG SRC=l_purple.gif WIDTH=20 HEIGHT=20> <A HREF=l_purple.gif> purple </A><BR>
+<IMG SRC=l_blue.gif   WIDTH=20 HEIGHT=20> <A HREF=l_blue.gif>   blue </A><BR>
+<IMG SRC=l_green.gif  WIDTH=20 HEIGHT=20> <A HREF=l_green.gif>  green </A><BR>
+<IMG SRC=l_cyan.gif   WIDTH=20 HEIGHT=20> <A HREF=l_cyan.gif>   cyan </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Arrow_Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC=a_left.gif   WIDTH=20 HEIGHT=20> <A HREF=a_left.gif>   left </A><BR>
+<IMG SRC=a_right.gif  WIDTH=20 HEIGHT=20> <A HREF=a_right.gif>  right </A><BR>
+<IMG SRC=a_up.gif     WIDTH=20 HEIGHT=20> <A HREF=a_up.gif>     up </A><BR>
+<IMG SRC=a_down.gif   WIDTH=20 HEIGHT=20> <A HREF=a_down.gif>   down </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Gem/Led Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC="g_blue.gif"         WIDTH=12 HEIGHT=12>
+<IMG SRC="g_blue_on.gif"      WIDTH=12 HEIGHT=12>
+<IMG SRC="g_blue_anim.gif"    WIDTH=12 HEIGHT=12>
+   <A HREF="g_blue.gif">blue</A>
+   <A HREF="g_blue_on.gif">on</A>
+   <A HREF="g_blue_anim.gif">anim</A><BR>
+<IMG SRC="g_green.gif"        WIDTH=12 HEIGHT=12>
+<IMG SRC="g_green_on.gif"     WIDTH=12 HEIGHT=12>
+<IMG SRC="g_green_anim.gif"   WIDTH=12 HEIGHT=12>
+   <A HREF="g_green.gif">green</A>
+   <A HREF="g_green_on.gif">on</A>
+   <A HREF="g_green_anim.gif">anim</A><BR>
+<IMG SRC="g_red.gif"          WIDTH=12 HEIGHT=12>
+<IMG SRC="g_red_on.gif"       WIDTH=12 HEIGHT=12>
+<IMG SRC="g_red_anim.gif"     WIDTH=12 HEIGHT=12>
+   <A HREF="g_red.gif">red</A>
+   <A HREF="g_red_on.gif">on</A>
+   <A HREF="g_red_anim.gif">anim</A><BR>
+<IMG SRC="g_yellow.gif"       WIDTH=12 HEIGHT=12>
+<IMG SRC="g_yellow_on.gif"    WIDTH=12 HEIGHT=12>
+<IMG SRC="g_yellow_anim.gif"  WIDTH=12 HEIGHT=12>
+   <A HREF="g_yellow.gif">yellow</A>
+   <A HREF="g_yellow_on.gif">on</A>
+   <A HREF="g_yellow_anim.gif">anim</A><BR>
+<IMG SRC="g_grey.gif"         WIDTH=12 HEIGHT=12>
+<IMG SRC="g_grey_on.gif"      WIDTH=12 HEIGHT=12>
+<IMG SRC="g_grey_anim.gif"    WIDTH=12 HEIGHT=12>
+   <A HREF="g_grey.gif">grey</A>
+   <A HREF="g_grey_on.gif">on</A>
+   <A HREF="g_grey_anim.gif">anim</A><BR>
+<P>
+<IMG SRC=gem_blue.gif  WIDTH=16 HEIGHT=16> <A HREF=gem_blue.gif>  blue </A><BR>
+<IMG SRC=gem_green.gif WIDTH=16 HEIGHT=16> <A HREF=gem_green.gif> green </A><BR>
+<IMG SRC=gem_box.gif   WIDTH=16 HEIGHT=16> <A HREF=gem_box.gif>   boxed </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Marbles</H2>
+<BLOCKQUOTE>
+<IMG SRC=marble_blue.gif      WIDTH=30 HEIGHT=30>
+<A  HREF=marble_blue.gif      > blue </A><BR>
+<IMG SRC=marble_yellow.gif    WIDTH=30 HEIGHT=30>
+<A  HREF=marble_yellow.gif    > yellow </A><BR>
+<IMG SRC=marble_sky.gif       WIDTH=30 HEIGHT=30>
+<A  HREF=marble_sky.gif       > sky </A><BR>
+<IMG SRC=marble_blue_red.gif  WIDTH=30 HEIGHT=30>
+<A  HREF=marble_blue_red.gif  > blue red </A><BR>
+</BLOCKQUOTE>
+<P>
+
+<H2>Miscellaneous Balls</H2>
+<BLOCKQUOTE>
+<IMG SRC=cool.gif     WIDTH=25 HEIGHT=25> <A HREF=cool.gif>     cool </A><BR>
+<IMG SRC=crystal.gif  WIDTH=24 HEIGHT=24> <A HREF=crystal.gif>  crystal </A><BR>
+<IMG SRC=metalic.gif  WIDTH=16 HEIGHT=16> <A HREF=metalic.gif>  metalic </A><BR>
+<IMG SRC=sphere.gif   WIDTH=16 HEIGHT=16> <A HREF=sphere.gif>   sphere </A><BR>
+<IMG SRC=gold.gif     WIDTH=16 HEIGHT=16> <A HREF=gold.gif>     gold </A><BR>
+<IMG SRC=earth.gif    WIDTH=14 HEIGHT=14> <A HREF=earth.gif>    earth </A><BR>
+<IMG SRC=earth2.gif   WIDTH=16 HEIGHT=16> <A HREF=earth2.gif>   earth 2 </A><BR>
+<IMG SRC=smiley.gif   WIDTH=14 HEIGHT=14> <A HREF=smiley.gif>   smiley </A><BR>
+<IMG SRC=eye.gif      WIDTH=14 HEIGHT=14> <A HREF=eye.gif>      eye</A><BR>
+<IMG SRC=metalic_purple.gif WIDTH=9  HEIGHT=9 >
+                             <A HREF=metalic_purple.gif> metalic_purple</A><BR>
+</BLOCKQUOTE>
+<P>
+
+<HR>
+<ADDRESS>
+Dated: 14 May 1995 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

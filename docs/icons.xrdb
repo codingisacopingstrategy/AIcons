@@ -1,0 +1,100 @@
+<PLAINTEXT>
+                       Anthony's X Icon Library
+              ------------------------------------------
+                     Using Icon Through Resources
+              ------------------------------------------
+
+This file contains a set of example resource settings for Xterm windows to
+various machines here at Griffith University (Australia).  These should be
+changed to suit your local machines.
+
+  The xterm client is assumed to have been started with either the `xon',
+`xrlogin' or `xrsh' shell scripts. These scripts start the xterm window
+with the resource name of ``xterm-<machine_name>'' (See below).
+
+If this is not the case, then you will need to either :-
+     1/ Use the TWM `f.identify' function to figure out the resource name
+        used ( if any ).
+ or  2/ Move the icon settings into your .twmrc file to set the icons
+        through its window title name matching ability (if any).
+
+  The reason I use the following resources is that I can insert them into
+a global resource file that all users read in via the `xrdb' program.
+This ensures that any new machines can be given an icon without need to
+notify the users (who are typically not experts in X windows).
+
+This is the original reason for the standard sized icons.
+
+  Also in this file are resource settings for clients which MUST have
+icons given to them as resource settings. That is, these clients must NOT
+have their icons forced onto them by the TWM window manager. The main
+reason for this is that the client modifies its icon as a status indicator
+to the user. The window manager would thus just get in the way if it
+forced a icon onto these application clients.
+
+  While most applications do provide a user definable resource for the
+icon they are to use, some applications hardcode the icon into the
+application, and provide no alternative means of changing the default
+icon.  The Icons for these applications must have the icon forced onto
+them by the window manager to have it changed. For this reason almost all
+the application icons are set in the ".twmrc" file instead of by resource.
+See the ``docs/twm'' file for the example application icon settings.
+
+  To see how applications should set icons to still allow the user
+to override it, see the ``docs/using'' file.
+
+--------------8<-----------CUT HERE--------------8<---------------
+! Example Icon resource settings to use `standard sized' icons from
+!               `` Anthony's Icon Library ''
+!
+! point the following to the top of the AIcons directory tree
+!
+*bitmapFilePath:  /usr/local/AIcons:/usr/include/X11/bitmaps
+!
+! Specialized xterm usage icons (twm menu, or alias executed)
+!
+Console.iconPixmap:             desc/std/terminal.xbm
+News.iconPixmap:                desc/std/news.xbm
+Archie.iconPixmap:              desc/std/archie.xbm
+XMailEd.iconPixmap:             desc/std/scroll.xbm
+xterm-library.iconPixmap:       desc/std/library.xbm
+!
+! Local machine xterm icons (xrlogin)
+! This is an example only, edit it to suit
+!
+xterm-kurango.iconPixmap:       desc/std/kurango.xbm
+xterm-dragon.iconPixmap:        desc/std/dragon.xbm
+xterm-marbar.iconPixmap:        desc/std/marbar.xbm
+xterm-challenge.iconPixmap:     desc/std/shuttle.xbm
+!
+! Icons that should be set by resource only (not by twm).
+! All others should be set by twm to force icon usage.
+!
+XTerm.iconPixmap:               desc/std/terminal.xbm
+Xarchie.busyIcon:               desc/std/archie-busy.xbm
+Xarchie.defaultIcon:            desc/std/archie.xbm
+!
+XBiff*geometry:                 70x48
+XBiff*shapeWindow:              true
+XBiff*flip:                     false
+XBiff*fullPixmap:               appl/mail/dog_new.xbm
+XBiff*fullPixmapMask:           appl/mail/dog_new_mask.xbm
+XBiff*emptyPixmap:              appl/mail/dog_none.xbm
+XBiff*emptyPixmapMask:          appl/mail/dog_none_mask.xbm
+!
+! XMail requires some special resource settings
+!XMail.icon*geometry:           64x64
+!XMail.icon*noMailFlag:         mail/barrel_none.xbm
+!XMail.icon*mailFlag:           mail/barrel_new.xbm
+!
+! NOTE: Xman should also have the following resource set to reduce
+! the length of the icon name (which is overly long).
+Xman.manualBrowser.iconName:    Manual
+!
+--------------8<-----------CUT HERE--------------8<---------------
+
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+         Two wrongs don't make a right,   but three lefts do.
+------------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+/* XPM */
+static char *answer_unknown_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"13 24 4 1",
+/* colors */
+"  c dodger blue",
+". c navy blue",
+"X c None",
+"o c blue",
+/* pixels */
+"XXX      XXXX",
+"XX oooooooXXX",
+"X oo...ooooXX",
+" oo..XXXooooX",
+" oo.XXXX ooo.",
+"oooo.XXX ooo.",
+"oooo.XXX ooo.",
+"Xoo..XX oooo.",
+"XX..XXX ooo..",
+"XXXXXX ooo..X",
+"XXXXXX oo..XX",
+"XXXXXX o..XXX",
+"XXXXX oo.XXXX",
+"XXXXX o..XXXX",
+"XXXXX ..XXXXX",
+"XXXXX .XXXXXX",
+"XXXXX .XXXXXX",
+"XXXXXXXXXXXXX",
+"XXXX   XXXXXX",
+"XXX  oooXXXXX",
+"XXX oooo.XXXX",
+"XXX oooo.XXXX",
+"XXXXooo..XXXX",
+"XXXXX...XXXXX"
+};

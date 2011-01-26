@@ -1,0 +1,33 @@
+/* XPM */
+static char * cradle_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c firebrick",
+"X	c orange",
+"o	c red",
+"O	c yellow",
+"+	c blue",
+"@	c dodger blue",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"    .    .X.    .   ",
+"   .o.  ..X..  .o.  ",
+"   .o....oOo....o.  ",
+"   .XOX.ooOoo.XOX.  ",
+"     XOX.   .XOX    ",
+"      XOXX XXOX     ",
+"       XOXOXOX      ",
+"        XOOOX       ",
+"         XOX        ",
+"         XOX        ",
+"         XOX        ",
+"         XOX        ",
+"         XOX        ",
+"        +@X@+       ",
+"        +@@@+       ",
+"         +++        ",
+"                    "};

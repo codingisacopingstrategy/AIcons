@@ -1,0 +1,38 @@
+/* XPM */
+static char * sissors_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 25 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c grey",
+"O	c slate grey",
+"+	c firebrick",
+"@	c red",
+/* pixels */
+"                        ",
+"       ...              ",
+"       .Xo.             ",
+"        .Xo.            ",
+"        .Xo.            ",
+"         .Xo.           ",
+"         .Xo.           ",
+" ..       .Xo.          ",
+" .X..     .Xo.          ",
+" .OXX..    .Xo.         ",
+"  .OOXX..  .Xo.         ",
+"   ..OOXX.. .Xo.....    ",
+"     ..OOXX..Xo.+@@@..  ",
+"       ..OOXX.o.@...@+. ",
+"         ..OOO..@.  .@+.",
+"           .... .@.. .@.",
+"           .+@@. .@@..@.",
+"           .@..@. ..@@+.",
+"           .@. .@.  ... ",
+"           .@. .@.      ",
+"            .@. .@.     ",
+"            .+@..@.     ",
+"             .+@@+.     ",
+"              ....      ",
+"                        "};

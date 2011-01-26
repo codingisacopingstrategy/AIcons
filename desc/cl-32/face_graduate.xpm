@@ -1,0 +1,43 @@
+/* XPM */
+static char *face_graduate_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c DarkSlateGrey",
+"o c yellow",
+/* pixels */
+"................................",
+"...........................  ...",
+"........................     ...",
+".....................      .....",
+"..................      ........",
+"...............      ...........",
+"............         ...........",
+".........              .........",
+"......                   .......",
+"...      ..               ......",
+".      ...                 .....",
+".  . X ...          ooooooo  ...",
+".... X ...      oooooooooooo ...",
+".... X ..     ooooooooooooooo ..",
+".... X ..    ooooooooooooooooo .",
+".... X ..   oooooooooooooooooo .",
+".... X ..  oooooo ooooo ooooooo ",
+".... X .. oooooo   ooo   oooooo ",
+"......... ooooooo ooooo ooooooo ",
+"......... ooooooooooooooooooooo ",
+"......... ooooooooooooooooooooo ",
+"......... ooo ooooooooooooo ooo ",
+"......... oooo ooooooooooo oooo ",
+".......... ooo ooooooooooo ooo .",
+".......... oooo ooooooooo oooo .",
+"........... oooo  ooooo  oooo ..",
+"............ ooooo     ooooo ...",
+"............  ooooooooooooo  ...",
+".............. ooooooooooo .....",
+"...............  ooooooo  ......",
+".................       ........",
+"................................"
+};

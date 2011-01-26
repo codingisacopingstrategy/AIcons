@@ -1,0 +1,60 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Small Buttons</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Small Buttons
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+Very small and tiny buttons. generally these are prefered by Macintosh
+Users or in situations where larger buttons are too big. <P>
+
+<HR>
+<H2>Small Buttons</H2>
+
+Blanks and Arrows:<BR>
+<A HREF=blank.gif      ><IMG SRC=blank.gif      WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=frame.gif      ><IMG SRC=frame.gif      WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=left.gif       ><IMG SRC=left.gif       WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=right.gif      ><IMG SRC=right.gif      WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=up.gif         ><IMG SRC=up.gif         WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=down.gif       ><IMG SRC=down.gif       WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=top.gif        ><IMG SRC=top.gif        WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<P>
+
+Miscellanous:<BR>
+<A HREF=home_blue.gif  ><IMG SRC=home_blue.gif  WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=home_green.gif ><IMG SRC=home_green.gif WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=home_grey.gif  ><IMG SRC=home_grey.gif  WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=home_red.gif   ><IMG SRC=home_red.gif   WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=mail.gif       ><IMG SRC=mail.gif       WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=question.gif   ><IMG SRC=question.gif   WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<A HREF=warning.gif    ><IMG SRC=warning.gif    WIDTH=20 HEIGHT=20 LOWSRC=frame.gif></A>
+<P>
+
+<HR>
+<ADDRESS>
+Created: 7 December 1994 <BR>
+Updated: 1 August 1996 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

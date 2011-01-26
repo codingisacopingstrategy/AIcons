@@ -1,0 +1,43 @@
+/* XPM */
+static char *chess_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"       XXXXXXXXXXXXXXX ooo      ",
+"      XXX   XXXXXXXXX  XX.      ",
+"     XXX XX. XXXXXXX    X       ",
+"XXXX     X..        XXX X XXXXXX",
+"XXX       .        XXX XX. XXXXX",
+"XX        .       XXX  X..  XXXX",
+"X        X.o     XXXX X.... XXXX",
+"        XX.oo   XXXXXX     XXXXX",
+"        X...o  XXXXXXXXXXXXXXXXX",
+"XXXXXXX X...o                   ",
+"XXXXXXX XX.oo                  X",
+"XXXXXXXX X.o                  XX",
+"XXXXXXX X   o                XXX",
+"XXXXXX XXX...o              XXXX",
+"XXXXXX XX...oo             XXXXX",
+"XXXXXXX X...o             XXXXXX",
+"XXXXXX                   XXXXXXX",
+"        XX..o XXXXXXXXXX        ",
+"       XX...oo XXXXXXXX         ",
+"      XX......o XXXXXX          ",
+"    X X.......o XXXXX           ",
+"   XX o......oo XXXX            ",
+"  XXXX ooooooo XXXX             ",
+" XXXXXX       XXXX              ",
+"XXXXXXXXXXXXXXXXX               ",
+"XXXXXXXXXXXXXXXX                ",
+"                XXXXXXXXXXXXXXXX",
+"               XXXXXXXXXXXXXXXXX",
+"              XXXXXXXXXXXXXXXXX ",
+"             XXXXXXXXXXXXXXXXX  ",
+"            XXXXXXXXXXXXXXXXX   ",
+"           XXXXXXXXXXXXXXXXX    "
+};

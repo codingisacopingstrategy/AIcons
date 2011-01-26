@@ -1,0 +1,33 @@
+/* XPM */
+static char * a_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 5 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c black",
+"O	c slate grey",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXXXXXX XXX ....",
+" XXXXXXXXXX XXXX ...",
+" XXXXXXXXXXooo o o..",
+" XXXXXXXXXOooooooo..",
+" XXXXXXXXOoooOOOOo..",
+" XXXXXXXOoOooXOOOo..",
+" XXXXXXOoOXooXXXOo..",
+" XXXXXOooOXooXXXOo..",
+" XXXOooOooOooXXXOo..",
+" XXoooOXXOoooXXXOo..",
+" XXOooXXXXOooXXXOo..",
+" XXXXOXXXXXooXXXOo..",
+" XXXXXXXXooooXXXOo..",
+" XXXXXXXXOoooXXXOo..",
+" XXXXXXXXXXOooXXOo..",
+" XXXXXXXXXXXXOXXOo..",
+" XXXXXXXXXXXXXXXOo..",
+"  OOOOOOOOOOOOOO o..",
+"..oooooooooooooooo.."};

@@ -1,0 +1,40 @@
+/* XPM */
+static char *sun_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"27 28 5 1",
+/* colors */
+"  c peru",
+". c yellow",
+"X c gold",
+"o c orange",
+"O c None",
+/* pixels */
+"OOOOOOOOOOOOOOOOoOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOooOOOOOOOOO",
+"OOOOOOXXOOOOOOOOooXOOOOOOOO",
+"OOOOOOoooXXOOOOXooXOOOOOOOO",
+"OOOOOOOooooXOOOXooXOOOOOOOO",
+"OOOOOOOXoXoXoXXXXXXXOOOOXXO",
+"OOOOOOOOoXoXXXXXXoXXOOOXoXO",
+"OOOOOOOOXXXXXXXXXXoXOXooXOO",
+"OOOOOOXXXX.......XXoXXoXXOO",
+"OOOXXooXX..........oXXXXXOO",
+"OXoooooX...........XXXXXOOO",
+"ooooooXX...........XoXoOOOO",
+"ooooooX............XXXXOOOO",
+"OOOO oXX...........XoXOOOOO",
+"OOOOOoX............oXXXOOOO",
+"OOOOooXX..........XXXXXoooo",
+"OOOXo XXX.........XXXXXXooX",
+"OOOoo oXX........XoXXXooOOO",
+"OOXoXo oXXX.....X oo OOOOOO",
+"OOooooo oXXXXXXooX OOOOOOOO",
+"OXoooOOXo   o oXXXOOOOOOOOO",
+"OooXOOOXXXXXoXXXXoOOOOOOOOO",
+"OXXOOOOoooXXOXoXXXXOOOOOOOO",
+"OOOOOOOXoXXOOOoooXXOOOOOOOO",
+"OOOOOOOOoXXOOOOOoo XOOOOOOO",
+"OOOOOOOOooXOOOOOOOOOOOOOOOO",
+"OOOOOOOOXoOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOoOOOOOOOOOOOOOOOOO"
+};

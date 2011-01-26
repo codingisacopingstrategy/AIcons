@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_pit_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Firebrick",
+"X	c Orange",
+"o	c Red",
+"O	c Gold",
+"             ",
+" ..........X ",
+" .oooooooo O ",
+" .ooo o    O ",
+" .oo o    XO ",
+" .o o    XXO ",
+" .o     X XO ",
+" .       XXO ",
+" .    X XXOO ",
+" .   X XXXOO ",
+" . XXXXXXOOO ",
+" XOOOOOOOOOO ",
+"             "};

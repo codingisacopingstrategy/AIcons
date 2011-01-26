@@ -1,0 +1,27 @@
+/* XPM */
+static char *line_sun.recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"576 9 11 1",
+/* colors */
+"` c tan",
+"a c wheat",
+"b c firebrick",
+"c c peru",
+"d c violet",
+"e c grey",
+"f c sienna",
+"g c dark slate grey",
+"h c tomato",
+"i c gold",
+"j c slate grey",
+/* pixels */
+"aa`aa`aa`aa`aa`aa`aa`aa`aa`a`a`a`a`a`a`a`a`a`a`a`a`a`a`a`a``a`a``a``a``a``a```a```a````````````````````````````````````````````````````````````````````````````````````````````````````````````````````c`````c````c```c```c``c``c``c``c``c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`c`cc`cc`c`cc`cc`cc`cc`ccjcc`ccjcc`cjccjccjccjccjccjccjcccjccjccjccjccjccjccjccjcf`fcjcfcjcfcjcfcjcfcjcfcjcfcjfcjfcfjcfcjfcfjcfcfjcfcfjfcfjfcfjfffjfffjfffjfffjfffjfffjffffjfffjffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+"``a``a`a`a`a``a``a``a``a````a``a``a`````a```a```a`````````a````a````````````````````a```a````````````````````````````````````````````````````````````````````h````h``h``c``h``h``c`h`c`c`c`c`c`c`c`c`h``c`c`c``c`c``c``c`c``c``c``c``c`c`c``c``c``c``c`j`c``c`j`c`j`c`cj`c`jc`cjc`cjc`f`cjc`f`f`cjcjcjcjf`jcjcjcjcjcjcjcjcjcjcjc`cjcjhjcjf`f`ccjccjccjccjccjhjcjccjccjccjccjcjccjfcjfcjcjcjccjfcjcjfcjcfjcjcfjcfjcjfcjfcjfcjfjfcjfcfjfjffjfjcfjcffjcfcjcfcjcfjcjfcjfcfjcfjfjfcfjfffjfffjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjfjgfjfgfjfgfjfgfjfgfjfgfjfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgf",
+"aa`aa`a`a`a`a`a`a``a`a`a`aa``a``a``a`a`a``a```a```a`a`a``a``a````a``a`a```a````a```````````````````````````````````````````````````h````h``h``h``h``h``h``h`````h``````h`````c``````````h```h```h```c`````h```h```h``c``c``c``c`c``c`c``c`c`jh`jh`jh`c`h`jhj`ch`jh`cj`c`hjh``cjh`jh`cj`c`cjhj`cjh`c`c`c`c`c`c`c`c`c`c`cjh`cjh`cjcjh`cc`cc`f`fjc`cjhjhcjhjhjccjhjhjhjccjccjhfcfjccjccjhfcfcfjccjhfccjcfjccfcjcfjcfcf`fcjfcjfccfjcfjfjccfcjcfcfjfjcjffjffjfjffjfffjffjfjfffcffjfjfcjffjfcfjfffjfffjfffffjfffffjfffjfffjfffgfffgffffffffjffffffffffffffgbffgbfjbjbjbjbfjbfgfffgbffgbffgbffgbffffffg",
+"``a`a``a`a``a`a``a`a`a```a``a``a`a``a```a``a`a``a``a````a`````a`````````````a```````````````a``````````````````````````````````h``````````````````````````````h````h```````h````h``h``h```h```h````h```h`c```cec`c`jh``h`jh`j`c``jc`c`jh`j``c``c`c``hj`c`c``c`j`c`c`h`hj`c``f`c``hjc`hjhjc`c`c`c`cjhjhjcjhjcjhjhjhjhjhjc`f`hjcjh`ccjcjcjcjcjc`hjf`ccj`f`cjhjhjccjcjccjhjfcj`jhjhjcf`fcjcjcjhjhjcjfjcf`fcjfjcfjhjcjfjfjhjfhjfjcfjhjcffjcjffjfjfcffffjcfjfcfjffcjfcfjfcffjfjfjcffjffjcffjfffjfffjfffjfjfffjfjfffjfffjffffjfffjffgfjfjfgfbjbjfjbjgbjfgfffjfbjfbgffffbgffgbjbgfffgfffgfffgfffgbgfgbf",
+"aa``a`a`a`a``a`a`a`a``aa``a`a`a```a``a```a`````a``a``a`a```a````a`a`````a`````````a`````````````a`````````````````````````````````````h`````````````````h````````````h```h```h```````c``````c```h`c``h````h`c``heh```jhe`h``h`jh`h``h`h`ch`hj`h`j`c`jh`jh`c`c`h`jhj`jc`c`cjh`hjc`c`cjh`c`hjc`f`jc`c`c`c`cjh`cjhjc`cjhjhjhjcjh`cjcjhjhjhc`f`hjcjhjhjccf`fjhjccjhjhccjhjccjhjfcjcjhjcjcjhjhjhjfcfjhjhjfjhjhjhjfcfjhjhfcffjcjfhjfcfffjhjffcjhfjhjfjcjcfjfcfjfcjfffjfjhfjfjhffjffjfffjffjffjfjffjffjffffjffjbffjfffjfffjfjfffjfffjbffffffjfgffgbfffjbgbjbgbgffgfffgfgffgbfffgbjbjbjbgffgffgbjbgbfgfg",
+"`a`a`a`a`a`a`a``a`a``a``a``a```a`a``a``a``a`a`a````a`````a````a````a``a````````a```````a````````````````````````````````````h`````````````h```h```h``h``````h````h`````h```````h`c`h````h``h```c```c```h`c`jeh``j``h`c``c``c``h````hj`j```j``hj`h`c`c``c``jhjhj`c`h`hj`hj`h`j``hjhj``c`jhj`hj`f`hjhjcjhjh`cjc`c`hjf`c`c`f`c`cjchjc`cc`cjhjcjhjcc`f`f`jf`cccjhjccjcjfcjhjhjchjcfcjhjhjhjcfjcfcj`fcjcf`fcfjffhjcjcffjfjcjcfcfjhfjcjcjfhjfjcfjfffjcffjfhjfjbjfhjfjcfffjfffjfjbjfcfjfffjffjffbjffjfffjfjfbjffjfffjfbjfjffbjbjfbjfbjbjgbjffffbjffjfgffbjfbjfbjffgbjfbjbjbjfgbjfbgbgbgfbjfbjbgfffgffbf",
+"a`a`a`a`a`a`a`a``a`a`a`a`a`a`a````a``a``a```a```a````a`a```a`a```````a````a`a````````````````````````````````````````````h``a`````h````````````````````````````h````h````h``h````````h```````h```h```c`j``h`h``h`c````c``jh`jh`jhjhec`h`c`h`c``c`jh`c`hjh`h```c`cj`c``hjh`jh`cj`c`chjh`c`c`jh`c`jh`c`cjh`jh`cjhjc`hjcjcjhjhjh`f`cjhjcjcjhjhcjhjcjhjhjhjhjcjhjcjhjhjhjhjcjhjcjhjcfjhjfcfjhcjcjfcjfcfjhjfjhjcjfcfjhjhjhjffjhjfjfhjbcfjfcfhjfcjcffjhjffjfcfcfjffjhfjfjfhjffcfcfjfjhjfffjhfjfjhfjbjfjbfffjbfjbjfjbjffffgfjbgffjbjfffffjbgfjfgbfgbffjbgffgffjbfjbfgbjbgbfgbjbgbjbffjbfgbgbfffgbjbfgfg",
+"`a`a`a`a`a`a`a`aa```a``a``aia`a`a`a`a``aia`a```a``a`a````a```````a``````a`````````a```a``````````````````````````````h```a``h```````````````h```h````````h``h```````````````````h``h```h`c`h```h````h```h`````j````hjh``h``c```c```c```c`hj`c`hjh`jh`jc``c`jc`hj`c`hjc``c`h`jh`h`fec`jcjhjcc`f`f`cjhj`hjccjhjhjc`cjhjh`hjc`cjcjhjc`f`f`cc`cjhjchjccjhjccjccjcchjccjccjfccjhjccjhjcfhjcjcjhjcf`fhjf`fjhjcfcjfhjcfjcfjfcf`fjfcfcjfjfjhjfjjffjffjcfjbjcbjfjfjffjffjhjffjffjfjfjffffbjfjbjfffbjfffffffjfjffjffffffffjbjbjfffjbgfffgfjfbjbjbfffjffjfbjbjffffffgfbjfbgfffjfbgffbgfgbgbjbjbgfgfbgfbgfff",
+"a`a`a``a``a``a``a`a``a``a`a`a``aia```a`a`a``a`a``a````a````a``a````a`````````a```````````````````````````````````````a`````````h`````h`````````````h``h`````````h``h``h``h``h````````c```````h```c`hec`hec`c`h`h`c````cj`c``c`c``c`c`cj`h``hj```c`h``h`jhj`h`j`h`cj`h`f`jhjc`cj`jh`cjh`c`cdcj`hjhj`cc`jh`jh`c`c`jh`c`cjc`cjh`f`cjhjhjhjhjcjh`cjccjh`f`f`f`jhjcjcjhcjhcjhjcfcjhjccjcjccf`fjfhjfjccjfcfjhjcjhjfjhjhjfcjfjfhjhjfjhfcjhffcfhjcf`fjfjhfcjfcfjhfjhfjffffjhfjfhjbjfcjfjfcfffjfjfjffjfjfjfffffjbfjfjfjbjbjbffjffffjbjffjbgffffgjbjbfgbfgbffgfjbgbfgffgfffgbfgfffgffffjbgbgbffjbjbfgffbgf"
+};

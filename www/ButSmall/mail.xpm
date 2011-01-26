@@ -1,0 +1,32 @@
+/* XPM */
+static char * mail_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	c lavender",
+".	c dark slate grey",
+"X	c grey",
+"o	c slate grey",
+"O	c tan",
+"+	c lemon chiffon",
+/* pixels */
+"                   .",
+" XXXXXXXXXXXXXXXXXX.",
+" X............... X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XooooooooooooX X.",
+" X.XoO++++++++OoX X.",
+" X.Xo+oo++++oo+oX X.",
+" X.Xo+++o++o+++oX X.",
+" X.Xo++O+oo+O++oX X.",
+" X.Xo+O++++++O+oX X.",
+" X.XoO++++++++OoX X.",
+" X.XooooooooooooX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X                X.",
+" XXXXXXXXXXXXXXXXXX.",
+"...................."};

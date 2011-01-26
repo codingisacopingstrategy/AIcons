@@ -1,0 +1,408 @@
+#
+# Anthony's Tomato Color Scheme
+#
+# The following is an example of a ".ctwmrc" color scheme...
+# It is only the color and title bar arrangements.  It is up
+# to the user of the scheme to add their own root application menus.
+#
+# Please edit the "Main Menu" at the bottom for your own needs
+#
+#==============================================================
+# EMERGENCY BINDING
+# In case CTWM fails for some unknow reason,
+# arrange so "shift-Pause" will re-read ctwm's RC file.
+"Pause" = s : r|w|t|m|f : f.twmrc
+#==============================================================
+changequote([,])dnl  # m4 quoting interferes with shell escapes (replace it)
+dnl                  # and { } is used by ctwm syntax!
+#
+# --- General Flags ---
+#
+BorderWidth             3        # border size of windows (user can grab)
+MoveDelta               3        # Move or Click pixel distance
+ConstrainedMoveTime     0        # disable constrained moves
+OpaqueMove                       # Move windows directly, not just a border
+NoGrabServer                     # don't hog the server on moves, resize, etc.
+RestartPreviousState             # try to figure out the old window state
+UsePPosition        "non-zero"   # honor positions that are not (0,0)
+DecorateTransients               # Add a Titlebar to the tmp popup windows
+RandomPlacement                  # randomly place windows with no geometry
+NoMenuShadows                    # dont shadow menus (much faster)
+#Zoom                  16        # so de/iconifing in 'mac' like maner
+#ReverseVideo                    # reverse the colors of the screen (BW)
+#XorValue               1        # Make outlines more visible (maybe)
+
+#SloppyFocus                  # Version >= 3.6 ????
+#PackNewWindows               # try not to overlap with existing windows
+#OpaqueResize                 # Move windows directly, not just a border
+
+IconBorderWidth           3
+BorderShadowDepth         3
+IconManagerShadowDepth    3
+MaxIconTitleWidth         64
+                              # limit width of the titlebar
+ConstrainedMoveTime       0   # disable constrained moves
+#OpaqueMoveThreshold     50   # % of screen area
+#OpaqueResizeThreshold   50
+TransientOnTop           30   # % area of parent
+AnimationSpeed            5   # frames per second
+StayUpMenus                   # popup and wait menus
+
+ThreeDBorderWidth         2   # 3d Effects
+UseThreeDMenus
+UseThreeDIconManagers
+UseThreeDWMap
+#UseThreeDTitles
+#UseThreeDBorders
+#SunkFocusWindowTitle
+#BeNiceToColorMap             # use dither shading -- not extra colors
+
+#
+# --- Font Selection ---
+#
+TitleFont       "*-lucida-bold-i-*-120-75-75-*"     # Window Titles
+IconFont        "*-lucida-bold-i-*-100-75-75-*"     # Icon Title
+IconManagerFont "*-lucida-bold-i-*-100-75-75-*"     # Postit Icon Manager
+MenuFont        "*-fixed-bold-r-*-120-75-75-*"      # Menu     (fixed)
+ResizeFont      "*-lucida-bold-r-*-240-75-75-*"     # Size Adj (large)
+WorkSpaceFont   "*-clean-medium-r-*-60-75-75-*"     # Workspace Font (tiny)
+
+#
+# --- Color and Cursour Fluff ---
+#
+Color {
+  DefaultBackground     "black"         DefaultForeground     "white"
+  TitleBackground       "tomato"        TitleForeground       "black"
+  BorderColor           "firebrick"
+  BorderTileBackground  "darkslategrey" BorderTileForeground  "darkslategrey"
+  IconManagerBackground "grey"          IconManagerForeground "black"
+  IconBackground        "wheat"         IconForeground        "black"
+  MenuTitleBackground   "tomato"        MenuTitleForeground   "black"
+  MenuBackground        "grey"          MenuForeground        "black"
+  MenuShadowColor       "darkslategrey"
+  # CTWM Specific Colors
+  IconBorderColor       "black"         IconManagerHighlight  "slategrey"
+  MapWindowBackground   "grey"          MapWindowForeground   "black"
+}
+Cursors { Resize "sizing"     Button "hand2"     Icon "gumby" }
+
+#
+# --- Window Handling ---
+#
+NoTitle {               # programs which are not to have a title bar
+    "xclock"  "xbiff"  "xload"  "xnetload"  "xmeter" "xeyes" "xlogout"
+    "xcdplayer" "xpostit" "bricons" "Sunclock" "notitle" "UnseenWin"
+    "xapplaunch" "PostItNote Icon Manager" "WorkSpaceManager"
+    "Modem_Monitor" "Ping_Monitor" "CD_Monitor" "xosview" "x0rfbserver"
+    "VTWM *"  "LicqWharf" "xmms"
+   }
+StartIconified {        # Programs to iconify immediately on starup
+    "Terminal Controls"  "Console"  "XConsole"   "xterm-failsafe"
+    "PostItNote"   "Sunclock"   "Licq *"
+   }
+AutoRaise {            # program to raise to top if pointer is in its window
+    "WorkSpaceManager"  "xlogout"
+   }
+
+NoIconTitle { "sunclock" }
+NoBorder {            # programs which are not to have a border
+  "PostItNote Icon Manager"
+}
+
+#
+# Tab Windows
+DontSqueezeTitle
+#SqueezeTitle {         # compress the title on these windows
+#     "xterm-red"             left   15    24
+#     ...
+#     "xterm-maroon"          left    1    24
+#}
+#NoTitleHighlight {    # compress squeezed title even further
+#     "xterm-red"            "xterm-khaki"           "xterm-navy"
+#     "xterm-brown"          "xterm-green"           "xterm-purple"
+#     "xterm-orange"         "xterm-cyan"            "xterm-violet"
+#     "xterm-gold"           "xterm-skyblue"         "xterm-pink"
+#     "xterm-yellow"         "xterm-blue"            "xterm-maroon"
+#}
+
+#
+# --- Icon Handling ---
+#
+# General Icon Options...
+#
+ForceIcons                             # force programs to use icon listed
+#IconDirectory   "HOME/icons/desc"     # should use *bitmapFilePath instead
+PixmapDirectory "HOME/icons/appl/twm"  # Color Icon location
+IconRegionAlignement     "top"         # How to place icon in region
+IconRegionJustification  "center"
+
+# Standard 64x54 icons, along top below postitnote icon manager
+IconRegion "=eval(WIDTH-150)x80+2+30"   West North 7 4
+
+# Overflow Icon Region (along bottom)
+IconRegion "=eval(WIDTH-150)x300+2-0"   West South 7 4
+
+#
+# Application Icon Override
+#
+# ... add icons and edit to suit ...
+#
+define( ICON, "xpm:std-cl/$1.xpm"  # where do you store application icons?
+UnknownIcon   ICON(unknown)        # use this icon if none is set
+#Icons {
+#   "XTerm"              ICON(terminal)
+#   "konqueror"          ICON(folder)
+#   "Gimp"               ICON(picture)
+#   "Vmware"             ICON(vmware)
+#   "VMware Workstation" ICON(windows)
+#   "Vim"                ICON(scroll)
+#   "Mozilla"            ICON(mozilla)
+#}
+
+#
+# --- Icon Manager for PostItNotes ---
+#
+IconManagers { "PostItNote" "=1000x21+45+3" 12 }  # across the top of display
+
+# The next three is to get ctwm to display the Icon Manager, immediately!
+ShowIconManager                      # Show Icon Managers
+IconManagerDontShow                  # but dont show the global manager
+IconManagerShow { "PostItNote" }     # only show the PostIt manager
+
+# Don't these show icons (controled by menu or icon manager)
+IconifyByUnmapping { "WorkSpaceManager" "PostItNote" }
+
+#
+# --- CTWM -- Workspace Manager ---
+#
+WorkSpaceManagerGeometry  "128x42-120-5"  2  # position & columns
+ShowWorkSpaceManager            # start with workspace manager up
+StartInMapState                 # start in the map rather than button state
+DontPaintRootWindow             # don't draw WS map pixmap into root window
+# ReverseCurrentWorkspace       # use inverse fg/bg colors for current wrkspc
+# ReallyMoveInWorkspaceManager  # really move the win when manipulated in map
+# AlwaysShowWindowWhenMovingFromWorkspaceManager  # show win during move
+
+WorkSpaces {
+  # name  bg-button  fg-button  bg-root      fg-root    pixmap
+  "Main" { "grey"    "black"    "dodgerblue" "black"    "rootmap1.xbm" }
+  "Alt"  { "grey"    "black"    "seagreen"   "black"    "rootmap2.xbm" }
+}
+MapWindowCurrentWorkSpace { "firebrick" }  # highlight the current WS
+
+# Where to place each window (after workspace declarations)
+NoShowOccupyAll
+OccupyAll {  # make these clients sticky
+  "xclock"  "xmeter" "XLoad" "xosview"  "xlogout" "lavaps" "Notifier"
+}
+Occupy {
+  "Nautilus"  {"Alt"}
+  "Vncviewer" {"Alt"}
+# "*" {"Main"}   # default is first workspace
+}
+
+#
+# --- User Functions ---
+#
+DefaultFunction   f.beep        # beep use if not a proper function
+Function "MoveRaiseLower" {f.movepack f.deltastop f.raiselower}
+Function "MoveIconify"    {f.movepack f.deltastop f.iconify}
+
+#
+# --- Title Bar Control ---
+#
+# Define the title bar buttons to use the "tomato" scheme.
+#
+NoDefaults                # remove all title buttons first (iconify,resize)
+TitleButtonBorderWidth 0  # remove boarders around title buttons
+FramePadding 1            # frame padding between text and buttons
+ButtonIndent 0            # extra indentation around buttons
+Pixmaps { TitleHighlight "xpm:tomato_highlight.xpm" }  # title highlight
+#Pixmaps { TitleHighlight "title_squiggle.xbm" }
+#Pixmaps { TitleHighlight "title_herring.xbm" }
+
+#---------------- Title Bar Buttons -------------------
+  LeftTitleButton  "xpm:tomato_dash.xpm" {
+    button1 : f.function "MoveRaiseLower"
+    button2 : f.resize
+    button3 : f.menu "TwmMenu"
+  }
+  LeftTitleButton  "xpm:tomato_iconify.xpm"   = f.iconify
+  LeftTitleButton  "xpm:tomato_pin.xpm"       = f.function "OccupyOther"
+# LeftTitleButton  "xpm:tomato_pin.xpm"       = f.occupy   # popup
+  LeftTitleButton  "xpm:tomato_focus.xpm"     = f.focus
+  LeftTitleButton  "xpm:tomato_lightning.xpm" = f.delete
+  LeftTitleButton  "xpm:tomato_nuke.xpm"      = f.destroy
+  RightTitleButton "xpm:tomato_fullscrn.xpm"  = f.fullzoom
+  RightTitleButton "xpm:tomato_expand.xpm"    = f.zoom
+  RightTitleButton "xpm:tomato_resize.xpm"    = f.resize
+
+#------------------- Mouse Buttons --------------------
+# Window Controls
+Button1 =    : title|frame   : f.function "MoveRaiseLower"
+Button2 =    : title|frame|i : f.resize
+Button3 =    : title|frame|i : f.menu "WindowOps"
+
+# Root Menus -- User Defined
+# These menus shuld also include  "TwmMenu"  and  "WindowOps"  menus
+Button3 =    : root          : f.menu "MainMenu"
+
+# Icon Controls
+Button1 =    : iconmgr       : f.iconify
+Button1 =    : icon          : f.function "MoveIconify"
+
+#------------------- Keyboard HotKeys ---------------------
+# Window Handling controls
+#Insert" = c -- used in xterm binding for quick pasting to a stack of windows
+#                      (EG: Next, Insert, Next, Insert..)
+"Prior"  = c : all : f.iconify             # Ctrl - Page Up
+"Next"   = c : all : f.raiselower          # Ctrl - Page Down
+"Home"   = c : all : f.fullzoom            # Ctrl - Home
+"End"    = c : all : f.delete              # Ctrl - End
+"F9"     =   : all : f.nextworkspace       # flip workspaces
+
+# ---------------- Popup Menus -----------------
+#
+menu "TwmMenu" {
+  "CTwm Menu"         f.title
+  "Restart"           f.restart
+  "Window Ops"        f.menu "WindowOps"
+  "Icon Mgr Show"     f.showiconmgr
+  "Icon Mgr Hide"     f.hideiconmgr
+  "Workspace On/Off"  f.toggleworkspacemgr  # workspace selector
+  "Workspace Button"  f.togglestate         # toggle button/map state
+  "Animation"         f.menu "Animation"
+  "Twm Icons"         f.menu "TwmIcons"
+  "Twm Visible"       f.menu "TwmVisible"
+  "Twm Windows"       f.menu "TwmWindows"
+  "Twm All Windows"   f.menu "TwmAllWindows"
+  "Twm Workspaces"    f.menu "TwmWorkspaces"
+# "TwmKeys"           f.menu "TwmKeys"  # being added to CTwm v3.7
+  "Show Version"      f.version
+  "---------------"   f.separator
+  "Exit WinMgr"       f.menu "ReallyExit"
+  "Logout"            f.menu "ReallyLogout"
+}
+
+menu "WindowOps" {
+  "Window Ops"        f.title
+  "Refresh"           f.winrefresh
+  "Move"              f.forcemove
+  "Resize"            f.resize
+  "Raise/Lower"       f.raiselower
+  "Squeeze(Un)"       f.squeeze
+  "Iconify(De)"       f.iconify
+  "Identify"          f.identify
+  "Focus(Un)"         f.focus
+  "Zoom (vert)"       f.zoom
+  "FullZoom"          f.fullzoom
+  "FullRefresh"       f.refresh
+  "Workspace"         f.menu "Workspace"
+
+  # Dangerious Functions (use warning colors)
+  "---------------"                  f.separator
+  "Delete"   ("firebrick":"grey")    f.delete
+  "Destroy"  ("firebrick":"grey")    f.destroy
+}
+
+# Move a window to the another workspace (failes with more than 2 workspaces)
+Function "OccupyOther"  { f.occupyall f.vanish f.nextworkspace f.raise}
+
+# Move window to a specific Workspaces
+Function "OccupyMain"   { f.toggleoccupation "Main" f.vanish
+                          f.gotoworkspace    "Main" f.raise }
+Function "OccupyAlt"    { f.toggleoccupation "Alt"  f.vanish
+                          f.gotoworkspace    "Alt"  f.raise }
+
+menu "Workspace" {
+  "Workspace"      f.title
+  "Occupy Menu"    f.occupy
+  "Occupy All"     f.occupyall
+  "Vanish"         f.vanish
+  "-----------"    f.separator
+  "To Other"       f.function "OccupyOther"  # This is also on titlebar "pin"
+  "To Main"        f.function "OccupyMain"
+  "To Alt"         f.function "OccupyAlt"
+}
+
+menu "CTwm_Anim" {
+  "Anim Start"        f.startanimation
+  "Anim Faster"       f.speedupanimation
+  "Anim Slower"       f.slowdownanimation
+  "Anim Stop"         f.stopanimation
+}
+
+menu "ReallyExit" {
+  "Really Exit ?"                   f.nop
+  "     Yes"  ("gold":"firebrick")  f.quit
+}
+
+menu "ReallyLogout" {
+  "Really Logout ?"                 f.nop
+  "     Yes"  ("gold":"firebrick")  !"xclosedown &"
+}
+
+#-----------------------------------------------------------------------------
+# Edit the following for your own application menus
+
+menu "MainMenu" {
+  "Main Menu"        f.title
+  "XTerm"            !"xterm -ls &"
+  "Mozilla"          !"mozilla &"
+  "Postit"           !"xpostit -g 37x21+2+2 &"
+  "-------------"    f.separator
+  "Calculator"       !"xcalc -stipple -rpn &"
+  "XLogo"            !"xlogo &"
+  "Eyes"             !"xeyes &"
+  "Maze"             !"maze &"
+  "Puzzle"           !"puzzle &"
+  "Gas Demo"         !"xgas &"
+  "ManPage"          !"xman -notopbox &"
+  "Xv"               !"xv &"
+  "FontSel"          !"xfontsel &"
+  "Magnify"          !"xmag -source 150x100 &"
+  "Konqueror"        !"konqueror 2>/dev/null &"
+  "K Terminal"       !"kvt &"
+  "-------------"    f.separator
+  "Twm Stuff"        f.menu "TwmMenu"     # defined above
+  "Window Ops"       f.menu "WindowOps"   # defined above
+  "Root Maps"        f.menu "Root Maps"
+}
+
+# The following menu assumes you have "Anthony's Icon Library"
+# Modify (or delete) to suit
+
+define([XR], [xsetroot -fg $1 -bg $2 -bitmap icons/desc/bw-bgnd/$3 &])dnl
+define([XG], [xv -root -quit icons/desc/gr-bgnd/$1 &])dnl
+define([XV], [xv -root -quit icons/desc/cl-bgnd/$1 &])dnl
+menu "Root Maps" {
+  "Root Maps"    f.title
+  "Default"      !"xsetroot -fg Black -bg PaleGreen \
+                      -bitmap icons/appl/twm/rootmap.xbm &"
+  "Clear Root"   !"xv -clear &"
+  "Bitmaps"      f.title
+  "spotty"       !"XR( Black,  PaleGreen,  Spotty.xbm )"
+  "SandyWaves"   !"XR( Sienna, Peru,       Sandy_Waves.xbm )"
+  "grainy"       !"XR( Navy,   DodgerBlue, grainy.xbm )"
+  "BROWSE.."     !"xbmbrowser icons/desc/bw-bgnd &"
+  "Grey"         f.title
+  "curves"       !"XG( curves.xpm )"
+  "BROWSE.."     !"xbmbrowser icons/desc/gr-bgnd &"
+  "Color"        f.title
+  "blue_maze"    !"XV( textures/blue_maze.gif )"
+  "dragonscale"  !"XV( dark/dragonscale.gif )"
+  "blocks"       !"XV( dark/blocks.jpg )"
+  "cyber_tile"   !"XV( dark/cyber_tile.xpm )"
+  "cyber_metal"  !"XV( dark/cyber_metal.gif )"
+  "blackblue"    !"XV( dark/blackblue.gif )"
+  "denim"        !"XV( medium/denim.xpm )"
+  "leaves"       !"XV( display/leaves.gif )"
+  "overlap"      !"XV( display/overlap.xpm )"
+  "rocks"        !"XV( display/rocks.gif )"
+  "bubble_green" !"XV( display/bubble_green.gif )"
+  "circle_weave" !"XV( display/circle_weave.xpm )"
+  "BROWSE.."     !"xbmbrowser icons/desc/cl-bgnd &"
+}
+undefine(XR)dnl
+undefine(XG)dnl
+undefine(XV)dnl

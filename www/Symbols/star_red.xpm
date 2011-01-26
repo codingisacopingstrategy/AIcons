@@ -1,0 +1,25 @@
+/* XPM */
+static char * star_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c firebrick",
+"X	c red",
+/* pixels */
+"                    ",
+"         ..         ",
+"         ..         ",
+"        .X..        ",
+"        .X..        ",
+"       .XXX..       ",
+"  ......XXX.......  ",
+"   .XXXXXXXXXXX..   ",
+"    ..XXXXXXX...    ",
+"     ..XXXXX...     ",
+"     .XXXXXXX..     ",
+"     .XX...XX..     ",
+"    .XX.....XX..    ",
+"    .X...  ..X..    ",
+"    ...      ...    ",
+"                    "};

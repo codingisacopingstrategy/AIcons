@@ -1,0 +1,25 @@
+/* XPM */
+static char * ball_cyan_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 5 1",
+/* colors */
+" 	s None	c None",
+"o	c lavender",
+".	c cyan",
+"X	c sky blue",
+"O	c dodger blue",
+/* pixels */
+"              ",
+"              ",
+"     ...X     ",
+"   o.....X.   ",
+"   ..oo..XX   ",
+"  ..oo...XXO  ",
+"  ......XXXO  ",
+"  X...XXXXOO  ",
+"  XXXXXXXOOO  ",
+"   OXXXOOOO   ",
+"   XOOOOOOX   ",
+"     OOOO     ",
+"              ",
+"              "};

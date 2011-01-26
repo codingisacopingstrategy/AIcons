@@ -1,0 +1,19 @@
+#
+# owl.anim      Blinking Owl Animated line.
+# 
+-dispose None
+-delay 500
+             owl.xpm
+-delay 20
+-page +29+6  owl/owl_1.xpm
+             owl/owl_2.xpm
+             owl/owl_1.xpm
+-delay 200
+             owl/owl_0.xpm
+-delay 40
+-page +50+0  owl/owl_3.xpm
+-delay 20
+-page +90+0  owl/owl_3.xpm
+-delay 0
+-page +0+0   owl.xpm
+-loop 0

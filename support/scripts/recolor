@@ -1,0 +1,160 @@
+#!/bin/sh -
+#
+# recolor [options] file....
+#
+#   Recolor all the given X pixmap files so as to use a specific colormap
+# or the default AIcons library colormap.
+#
+# OPTIONS
+#    -fs       dither the colors using the given color map
+#    -f cmap   Use this PPM file for the colors to use.
+#    -t        Preserve the transparency of Xpixmaps (slower)
+#
+progname=`basename $0`
+
+Usage() {
+  echo >&2 "Usage: $progname [-t] [-fs] [-f colormap] Xpixmaps...."
+  exit 10;
+}
+
+# Set location of default AIcons colormap
+cmap="$HOME/icons/local/colormap.ppm"
+#b="                                                           "
+b="
+"
+flag=''
+TRANS="#BFBFBF"  # the transparent color to use. (note xBF => 191)
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  --)  shift; loop= ;;             # end of options
+  -fs) shift; flag=-fs ;;          # dither flag
+  -f)  shift; cmap="$1"; shift ;;  # change colormap file
+  -t)  shift; trans=true ;;        # preserve transparency
+  -*) echo >&2 "Unknown option $1" # unknown option
+      Usage ;;
+  *)  loop= ;;
+  esac
+done
+
+if [ ! -r $cmap ]; then
+  echo "$progname: unable to find colormap to recolor icons with"
+  exit 10;
+fi
+
+# find number of colors in recoloring colormap
+numcolors() {
+  expr `ppmhist $1 | wc -l` - 2
+}
+cmap_col=`numcolors $cmap`
+
+TMP1=/tmp/recolor$$.1       # image converted to pbmplus
+TMP2=/tmp/recolor$$.2       # recolored image
+TMPm=/tmp/recolor$$.mask    # mask of image (to preserve)
+trap "rm -f $TMP1 $TMP2 $TMPm; exit 0" 1 2 3 15
+
+for i in "$@" ; do
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to find pixmap \"$i\""
+    continue
+  fi
+
+  preserve=    # does this image require the transparency preserved
+
+  case "$i" in
+   *_recol.xpm | *_recol_bad.xpm ) 
+     echo -n "${b}"
+     echo >&2 "Skipping recolored pixmap \"$i\"" 
+     continue ;;
+   *.xpm )
+     if [ "$trans" ] && grep 'c  *[Nn]one' "$i" >/dev/null; then
+       # set transparency color in pixmap
+       sed "s/c  *[Nn]one/c $TRANS/g" "$i" | x2p.sed |
+         xpmtoppm | pnmdepth 255 2>/dev/null > $TMP1
+       preserve=true    # yes preserve the images transparency
+     else
+       x2p.sed "$i" | xpmtoppm | pnmdepth 255 2>/dev/null > $TMP1
+     fi
+     ;;
+   *.ppm )
+     cat "$i" > $TMP1
+     ;;
+   * )        # anything else
+     echo -n "${b}"
+     echo >&2 "Skipping non-pixmap \"$i\"" 
+     continue ;;
+   esac
+  echo -n "${b}  recoloring \"$i\""
+
+  # get the filename
+  name="`expr "//$i" : '.*/\([^/]*\)'`"          # remove path to file
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"       # remove last suffix
+
+  # check it converted fine
+  if [ ! -s $TMP1 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to convert \"$i\" to ppm"
+    continue
+  fi
+
+  # Preseve the transparency in a mask file (note black=transparent)
+  if [ "$preserve" ]; then
+    pnmtoplainpnm $TMP1 | \
+      sed '4,${ s/191/T/g; s/[0-9][0-9]*/255/g; s/T/0/g; }' |
+        ppmtopgm | pnmtoplainpnm | sed '4,$s/[1-9][0-9]*/255/g' |
+          pgmtopbm -threshold > $TMPm
+  fi
+
+  # get the original number of colors
+  orig_col=`numcolors $TMP1`
+  
+  # Do the Recolor
+  ppmquant $flag -map $cmap $TMP1 > $TMP2 2>/dev/null
+
+  # find out the result
+  if [ ! -s $TMP2 ]; then
+    echo -n "${b}"
+    echo >&2 "Recoloring (ppmquant) failed for \"$i\""
+    continue
+  fi
+
+  # Remask the image (restoring the transparent color)
+  # Note this is different xpm-remask as black=transparent instead of white
+  if [ "$preserve" ]; then
+
+    # mask the recolored file (multiply so transparent area => 0)
+    pnmarith -multiply $TMP2 $TMPm  >$TMP1  2>/dev/null
+
+    # add mask (as transparent color) into area zero'ed above
+    pnmdepth 255 $TMPm 2>/dev/null | pgmtoppm "$TRANS-#000" |
+       pnmarith -add $TMP1 - > $TMP2
+  fi
+  
+  new_col=`numcolors $TMP2`
+
+  # -- Output Recolored image --
+  suffix=recol
+  if [ $orig_col -ne $new_col ]; then
+    echo -n "${b}"
+    echo >&2 "WARNING: Color Reduction in \"$i\" ($orig_col to $new_col)"
+    suffix=recol_bad
+  fi
+  case "$i" in
+  *.xpm ) if [ "$preserve" ]; then
+            ppmtoxpm $TMP2 2>/dev/null |
+              sed "/colors/,/pixels/s/c $TRANS/c None/" |
+                 xpm-fix -o "${name}_${suffix}.xpm"
+          else
+            ppmtoxpm $TMP2 2>/dev/null |
+              xpm-fix -o "${name}_${suffix}.xpm"
+          fi ;;
+  *.ppm ) cat $TMP2 > "${name}_${suffix}.ppm" ;;
+  esac
+
+done
+echo "${b}Done!"
+
+rm -f $TMP1 $TMP2 $TMPm

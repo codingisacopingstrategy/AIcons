@@ -1,0 +1,4 @@
+#define tiny_neg_width 6
+#define tiny_neg_height 7
+static unsigned char tiny_neg_bits[] = {
+   0x00, 0x00, 0x00, 0x3e, 0x00, 0x00, 0x00};

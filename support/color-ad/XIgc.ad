@@ -1,0 +1,18 @@
+XIgc*goban*stipple             : true
+
+XIgc*goban*background            : peru
+XIgc*goban*foreground            : black
+XIgc*goban*blackStoneBackground  : black
+XIgc*goban*blackStoneForeground  : white
+XIgc*goban*whiteStoneBackground  : white
+XIgc*goban*whiteStoneForeground  : black
+XIgc*goban*blackStoneBorder      : black
+XIgc*Goban*whiteStoneBorder      : black
+
+XIgc*background               : peru
+XIgc*Label*background         : sandy brown
+XIgc*Command*background       : sky blue
+XIgc*Label*width              : 170
+XIgc*Command*width            : 170
+XIgc*lastw.width              : 346
+

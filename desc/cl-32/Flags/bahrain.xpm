@@ -1,0 +1,42 @@
+/* XPM */
+static char *bahrain_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"XXXXXXXX........................",
+"XXXXXX..........................",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

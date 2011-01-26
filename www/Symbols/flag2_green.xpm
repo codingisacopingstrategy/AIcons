@@ -1,0 +1,26 @@
+/* XPM */
+static char * flag2_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 4 1",
+/* colors */
+" 	c black",
+".	s None	c None",
+"X	c green",
+"o	c sea green",
+/* pixels */
+" ...................",
+"  XXXX..............",
+". .XXXXX............",
+". .XXXXXXXXXXXX.....",
+". .XXXXXXXXXXXXXXX..",
+".. .XXXXXXXXXXXXXXo.",
+".. .XXXXXXXXXXoooooo",
+".. .XooXXXXXooo.....",
+".. .o..oooooo.......",
+"... ................",
+"... ................",
+"... ................",
+"... ................",
+".... ...............",
+".... ...............",
+".... ..............."};

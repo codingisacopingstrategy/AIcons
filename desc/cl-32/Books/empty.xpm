@@ -1,0 +1,43 @@
+/* XPM */
+static char *empty_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c red",
+". c white",
+"X c SlateGrey",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"ooooooooooooooooooooXXXooooooooo",
+"ooooXXXXooooooooooXX..XoXXoooooo",
+"oo XXX..XXoooooooX....XX.Xoooooo",
+"oo XXX....XXooooX.....X..XXXoooo",
+"oo XXX......XXoX......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X.......X..X.XX oo",
+"oo XXX........X......XX..X.XX oo",
+"oo XXX........X...XXX...XX.XX oo",
+"oo XXXXX......X.XX...XXX..XXX oo",
+"oo  XXXXXX....XX..XXX.XXXXX   oo",
+"oooo    XXXX..XXXXXXXXX    ooooo",
+"oooooooo    XXXXXX     ooooooooo",
+"oooooooooooo      oooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

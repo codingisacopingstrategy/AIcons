@@ -1,0 +1,42 @@
+/* XPM */
+static char *xclock_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c white",
+"b c gold",
+/* pixels */
+"aaaaaaaaaaaa```````aaaaaaaaaaaaa",
+"aaaaaaaaa`````````````aaaaaaaaaa",
+"aaaaaaa`````aaa`aaa`````aaaaaaaa",
+"aaaaaa```aaaaaa`aaaaaa```aaaaaaa",
+"aaaaa``aaaaaaaa`aaaaaaaa``aaaaaa",
+"aaaa```aaaaaaaaaaaaaaaaaa``aaaaa",
+"aaa``aa`aaaaaaa`aaaaaaaaa```aaaa",
+"aa``aaaaaaaaaa`b`aaaaaaa`aa``aaa",
+"aa``aaaaaaaaaa`b`aaaaaaaaaa``aaa",
+"a``aaaaaaaaaaa`b`aaaaaaaaaaa``aa",
+"a``aaaaaaaaaaa`b`aaaaaaaaaaa``aa",
+"a``aaaaaaaaaaa`b`aaaaaaaaaaa``aa",
+"``aaaaaaaaaaaa`b`aaaaaaaaaaaa``a",
+"``aaaaaaaaaaaa`b`aaaaaaaaaaaa``a",
+"``aaaaa`aaaaaa`b```````aaaaaa``a",
+"`````a`b`aaaaa`bbbbbbbb`aa`````a",
+"``aaaaa`aaaaaa`````````aaaaaa``a",
+"``aaaaaaaaaaaaaaaaaaaaaaaaaaa``a",
+"``aaaaaaaaaaaaaaaaaaaaaaaaaaa``a",
+"a``aaaaaaaaaaaaaaaaaaaaaaaaa``aa",
+"a``aaaaaaaaaaaaaaaaaaaaaaaaa``aa",
+"a``aaaaaaaaaaaaaaaaaaaaaaaaa``aa",
+"aa``aaa`aaaaaaaaaaaaaaaaaaa``aaa",
+"aa``aa`aaaaaaaaaaaaaaaaaaaa``aaa",
+"aaa```aaaaaaaaaaaaaaaaaaaa``aaaa",
+"aaaa``aaaaaaaaaaaaaaaaaaa``aaaaa",
+"aaaaa``aaaaaaaa`aaaaaaaa``aaaaaa",
+"aaaaaa```aaaaaa`aaaaaa```aaaaaaa",
+"aaaaaaa`````aaa`aaa`````aaaaaaaa",
+"aaaaaaaaa`````````````aaaaaaaaaa",
+"aaaaaaaaaaaa```````aaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+};

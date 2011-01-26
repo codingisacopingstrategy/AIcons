@@ -1,0 +1,4 @@
+-loop 300
+-dispose 1
+-delay 50 g_blue_on.xpm
+-delay 20 g_grey.xpm

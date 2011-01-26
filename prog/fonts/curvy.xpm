@@ -1,0 +1,33 @@
+/* XPM */
+static char *set10_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 20 6 1",
+/* colors */
+"  c black",
+". c gainsboro",
+"X c grey",
+"o c dark slate grey",
+"O c white",
+"+ c slate grey",
+/* pixels */
+"                                                                                                                                                      ",
+"      o+OOo        oo+XOO++o                        +OOOo     o++++XOOOX          o++       o++++++++++o   ++++++ooX+                                 ",
+"    o+OOOXo       o+XOOOOOXoo   oooooo++ooo       ooOOOOX     oOOOOOOOOXo      oo+OO+       oOOOOOOOOOO+  oXOOOOOXoXO+      oo+XX++o                  ",
+"    oOOOOoo       o.OOOOOOO+o   o+XOOOOO++oo     o+OOOOO+     oOOOOOOOOo      ooXOOO        +OOOOOOOOOO+  +OOOOOOO++OO+   ooXOOOOOXoo     ooXXXX+oo   ",
+"    o+OOO         +OOOOX+OOO+   +OOOOOOOOO+o     +OOX+OOo     oOOOOOOOo       oXOOO+        +OOOOOO+OOXo  OOOOOOOO+oOO+   o+OOOOOOOX+o    oOOOOOOO+o  ",
+"     +OO+        +.OOOX+o+OO+   +OOOOOXOOOO+    oXOO++O.o     +OOO.X+o        +OOO+        oOOOOX+o+OO+   OOOO+++Xo+OO+   +OOOX++OOOO+   oOOOOOOOOOX+ ",
+"     oXO+        +OOO+ooooOOX    o++++++OOOo    oOOOo+OOo     +OOOOX++oo     +OOOXo        +OOO+oooOO+o   XOO+oooo+OOXo  +OOX+ooo+OOO+  oOOOOX++XOOO+ ",
+"      +OX       o+OOX ooooOOX       oooXOO+    oXOO+o+OOo    oXOOOOOOOOXo   +OOOOoooooo    OOO+  o+OOo    +OOXoo+XOOOo   OOO+  oo+OOO+  XOOXoooo+XOO+ ",
+"      +OX       o+OO+o++ooOO+        oXOOXo    +OOX o+OOo     ++oooo+OOO+   XOOO+o+XOOXo   OOOXo oOOXo    o+OOO+OOOO+o   OOO+   oo+OO+  OOO+    ++OOX ",
+"      +OX        +OOO+O+o+OO+   ooooo+OOOXo   oXOOo o+OO     o+X++++o++OO+  OOOO++XOOOO+   XOOX+ +OO+     ++OOOOOOOO+o   OOO+o  oo+OO+  OOO+     o+OO ",
+"      +OX         +XOOXoo+OOo  o++XX++o+OOXo  +OOX oooOOo    +OOOOOO+ooXOO  OOOOX+++XOOO+  oXX+o OOXo     oOOO++++XOOX   +OOO+++oo+OO+  OOOX      oOO ",
+"     o+OX         oo+++ooXOXo  +OOOOOOo oOOX  +OOX++++OOooo  OOOOOOO+ o+OO  OOOOOoooo+OOX   oooo+OO+o     +OOO+oooo+OOX  oXOOOOO+o+OO+  OOOO+oo   oOO ",
+"     o+O+           oooo+OXo   OOOXOOO+  +OO  OOOOOOOOOO++o  OOOXOOO+  +OO  +OOOOXo   +OO      oXOO       OOOO+o    oOO   o+OOO+oo+OO+  OOOOO++o  oOO ",
+"     +XOO           o+o+OO+o   OO+XXO.+ooOOO  OOOOOOOOOOO+o  OOXXOOX+ oOOO  oOOOOO+oo +OO      +OOO       OOOOX+o    OO    o+++o oOOX+  +OOOOX++oo+O+ ",
+"     oXOOo          oo+OOX++o  OOX+++++++OOO  ++++XXOOOOXoo  OOX+++++o+OOO  o+OOOO+++o+O+      +OOOo      OOOOXX+++o+OO     oo  oXOXoo  o+OOOOX+++OXo ",
+"      +OO+o        oo+OOOOX++  +OOOX+XOOOOO+  ooo oo+XOOo    OOOX++++OOOO+  o+OOOOOXXXOX       oOOOX      OOOOO+++++OOX        oOOXoo   ooXOOOOOOOXo  ",
+"     oOOOXo        o+OOOOOOOO  ++OOOOOOOOO+         oXOOo    +OOOOOOOOOO+    o+OOOOOOOXo       oOOOX      +OOOOOOOOOOOo       oXO+oo     o+++OOOOX+o  ",
+"     +OOOO+       ++OOOOOOOO+   ooo+++X+++          +XOOo    ++XOOOOOOO+o     oo++XXX+o        oOOX+      ++XOOOOOOOOo        ++++o       o oo+++oo   ",
+"    o++XOO+       +X+++XOOO+o                      o+XX+o     ooo++++++o        ooooooo        o++o        oo+++XXX+o                                 ",
+"                                                                                                                                                      "
+};

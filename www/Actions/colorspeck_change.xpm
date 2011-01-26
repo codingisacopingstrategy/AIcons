@@ -1,0 +1,43 @@
+/* XPM */
+static char *Change_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"90 25 11 1",
+/* colors */
+"` c black",
+"a c tan",
+"b c firebrick",
+"c c peru",
+"d c sienna",
+"e c dark slate grey",
+"f c navy blue",
+"g c tomato",
+"h c yellow",
+"i c gold",
+"j c orange",
+/* pixels */
+"ijjiidiijjiijijjjijjjjijjjjjjjjjijijjijijjiijijjjjcjijjijjjijiijjcijjjijjijjijiijjjijjijji",
+"jiicjijcijijjicjijcijiicjcjjjjjicjjjicijijjiajijjjijjijicijjjjcjjjjjijiicicijicjcijjcjcjji",
+"jjciijicjjiajjcjijjjjcjcjiijijijjijjjijjjcjjjjjiaijjijijijiijjijjiijijajiiijcjijjjijjiciji",
+"jcicijjiiaiijjijjjijijjjicijijjcijijicjijiijjicjiidjjiajicjjjcjicicijijjjajijijijjijicjiji",
+"jiijcjijjjjjjijcijjijjiijicijiiijijijjjcijjjijjcjjiijijijjiijijjiiajijijjjicijcijijijijcjj",
+"ijcjijcijjciijijiijijijjjiicicijjaiajiijciccijjijjicijcjiicjijcijijijijjiijjjjiiijjcijjiij",
+"jijjjijijiijjcijjajcjceeeebjjjeebjijjjjicjjjcjjjcijicjijjjjiiidjjjjicijicjiicijjjjiicijiai",
+"jiijijicjcjijijcijjidbebfbeejjfbfjciicijjijijjijijaicijjijijcjcjidiiijijcjicicijjicjjjjjij",
+"jjijjijjijjjijijijcjeebfbfbfdjbfbdijiicijjjcijjijijjccjjjjjjijiijcjcijiaijjijjicijijijjcij",
+"cicjiaijijjiaiicjjjgebfdcbfbejfbfijecdciicddjjciicijcdjcjjjddjcdejijdciijicjjcijjijiciijij",
+"jijiijijjcijijjijicdeebejdeeebebebfbecjceeebfdjebfdfb`ejieeeeebfbddeeeecjjjjjijcjijajccccj",
+"cijjaijcijicijijccjbebeddjdbjdbeeefb`difbebfb`cdfbfbfbedbebfbbeeddeebfbecciicjijicijijjijj",
+"jjiijjiiijijijicijifeebjjddjdifbebbfbfjdebdeebdebfbdeebeebfdcebfiebebdebejjcjjjajijijjjjii",
+"ijjcijjjjjjiaijjicjbebfdjjiijjfbedbfbeddd`bfbeedfbedfbeebfbedfbejfbfbebeejjjjijijjjjjjijji",
+"jjcijiijiiijijdijjjebfbecifedjebfdebfbdebfebfbdebfbdebfddebfbeebjbfbfbfbfjjiicjjjiijicjjic",
+"ijicjajjjjcichdjiiicfb`ddbebejfbebefbeebfbdfbeedfbedfbedbe`ddddjdfbeddedddjcijiiicjijijijj",
+"jcjijijijiciijiijajjeebedebfbjeebd`bfb`bfedbfbedeeedbfbeebfbfebddeeebe`bejicjiijciijjcijci",
+"jjjijjijcjijjjjajjijdbefbeeejjebedbfbfdeebfbeebebebdee`bbfbeeb`eddebebfbejjcidcjijaijijiji",
+"jdijjiciiijijiicjijjjdfbfbebddeeedebfbdebfbfbebebfbd`bfdebfbeebebddeebebddjiijijjiijjiicci",
+"jijicjijjjaijaijicijjjjcddjjdjjdjdjcjddjdcjddjjdjjcjjdjcbedddbeeejcjbejcdjjjaiiijaijijcjij",
+"jjjciijjcjijiijiccijjjjjjcdjdijjjijcdjcididdidjjjjjdjjddeee`bfbebdjjjjdicidjjjjjjijjajjjji",
+"cijjjjcijcicjjjciijijicijjidjcjjjjjjciiijicijicicijdjjjjjbebfbedidjciijdjjijcjijijjiijijij",
+"jjijjijjijijijjjjjjiijjjcidjijcicjjddjciciijidijjdiijjjijcjjdddjjjjjcjcijijijijciaijijjjij",
+"jjjicijijijccijijicijjjjijjijjjjjcjijjcijicijijjcijciccijjidiidcdjidjjjjcjjcijicjijijjcijj",
+"jijiijijiaiiiiccjcjjjijjjijcijijjjcjjijicjijiciijjiiijijicjijjjiicjiijijijijcjiijjccjcijjj"
+};

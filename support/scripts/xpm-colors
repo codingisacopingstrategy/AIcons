@@ -1,0 +1,130 @@
+#!/bin/sh
+#
+# xpm-colors [file.xpm...]
+#
+# Given a list of files create a full sorted histogram of all the colors
+# and output a colormap of all the colors used. The colormap is in ppm
+# format and is suitable for use with the ``ppmquant'' program.
+#
+#  Anthony Thyssen          3 Oct 1993     anthony@cit.gu.edu.au
+#
+# Convertsion to use single work color names.
+# Some programs have problems with multi-word color name s like "Dark Slate
+# Grey", as such these are converted to "DarkSlateGrey"
+#
+#  Anthony Thyssen          5 January 2001     anthony@cit.gu.edu.au
+#
+progname="`basename $0`"
+
+Usage() {
+  echo >&2 "usage: $progname [options..] files... > histogram"
+  echo >&2 "   -colormap <file>   use a non-standard colormap file"
+  echo >&2 "NOTE: file format (xpm or ppm) depends on the suffix of file"
+  exit 1
+}
+
+r=""
+b="                                                                      $r"
+
+while [ 1 ]; do
+  case  "$1"  in
+    -c*)     COLROUT="$2"; shift ;;
+    -*)      Usage ;;
+    *)       break ;;
+  esac
+  shift 
+done
+[ $# -eq 0 ] && Usage
+
+echo " r   g   b      lum     count"
+echo "--- --- ---     ---     -----"
+exec 9>&1
+
+for i in "$@"; do
+  echo >&9 -n "  $i$r"
+
+  name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+  suffix="`expr "$name" : '.*\.\([^.]*\)'`"
+
+  case "$suffix" in    # assume that the icon is xpm
+    pbm|pgm|ppm|pnm)  ppmhist $i ;;
+    xpm) x2p.sed "$i" | xpmtoppm | ppmhist ;;
+    xbm) true ;;
+    *) false ;;
+  esac 2>/dev/null
+
+  if [ $? != 0 ]; then
+    echo >&9 -n "${b}"
+    echo >&2 "Bad xpm file \"$i\""
+    continue
+  fi
+
+  echo >&9 -n "${b}"
+
+done |\
+awk '# merge histograms
+  $1 == "r" {
+      next
+  }
+  $1 == "---" {
+      next
+  }
+  { color = substr($0, 0, 11)
+    lum[color] = $4
+    count[color] += $5
+  }
+  END {
+    for ( color in count ) {
+      printf "%-11s%8d%10d\n", color, lum[color], count[color]
+    }
+  }
+' |\
+sort +4nr |\
+sed '# substitute the standard color table
+  # colors starting with a # are not standard AIcons colors
+  s/^  0   0   0     /Black          /
+  s/^ 47  79  79     /DarkSlateGrey  /
+  s/^112 128 144     /SlateGrey      /
+  s/^190 190 190     /Grey           /
+  s/^220 220 220     /Gainsboro      /
+  s/^255 255 255     /White          /
+
+  s/^238 130 238     /Violet         /
+  s/^255   0 255     /Magenta        /
+  s/^176  48  96     /#Maroon        /
+  s/^160  32 240     /Purple         /
+
+  s/^178  34  34     /Firebrick      /
+  s/^255   0   0     /Red            /
+  s/^255  99  71     /Tomato         /
+  s/^255 165   0     /Orange         /
+  s/^255 215   0     /Gold           /
+  s/^255 255   0     /Yellow         /
+
+  s/^255 250 205     /LemonChiffon   /
+  s/^255 255 224     /#LightYellow   /
+  s/^245 222 179     /Wheat          /
+  s/^210 180 140     /Tan            /
+  s/^139 134  78     /Khaki4         /
+  s/^139 134  78     /#DarkKhaki     /
+
+  s/^244 164  96     /#SandyBrown    /
+  s/^205 133  63     /Peru           /
+  s/^210 105  30     /#Chocolate     /
+  s/^160  82  45     /Sienna         /
+
+  s/^ 32 178 170     /LightSeaGreen  /
+  s/^  0 100   0     /#DarkGreen     /
+  s/^ 46 139  87     /SeaGreen       /
+  s/^ 50 205  50     /LimeGreen      /
+  s/^  0 255   0     /Green          /
+  s/^152 251 152     /PaleGreen      /
+
+  s/^  0   0 128     /NavyBlue       /
+  s/^  0   0 255     /Blue           /
+  s/^ 30 144 255     /DodgerBlue     /
+  s/^135 206 235     /SkyBlue        /
+  s/^230 230 250     /Lavender       /
+  s/^  0 255 255     /Cyan           /
+'
+

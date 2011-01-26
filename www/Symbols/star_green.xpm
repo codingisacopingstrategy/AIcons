@@ -1,0 +1,25 @@
+/* XPM */
+static char * star_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c sea green",
+"X	c green",
+/* pixels */
+"                    ",
+"         ..         ",
+"         ..         ",
+"        .X..        ",
+"        .X..        ",
+"       .XXX..       ",
+"  ......XXX.......  ",
+"   .XXXXXXXXXXX..   ",
+"    ..XXXXXXX...    ",
+"     ..XXXXX...     ",
+"     .XXXXXXX..     ",
+"     .XX...XX..     ",
+"    .XX.....XX..    ",
+"    .X...  ..X..    ",
+"    ...      ...    ",
+"                    "};

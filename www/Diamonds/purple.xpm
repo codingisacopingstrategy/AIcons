@@ -1,0 +1,28 @@
+/* XPM */
+static char * purple_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"17 17 5 1",
+/* colors */
+" 	s None	c None",
+".	c navy",
+"X	c purple",
+"o	c magenta",
+"O	c violet",
+/* pixels */
+"       ...       ",
+"      .XXX.      ",
+"     .XoooX.     ",
+"    .XoooooX.    ",
+"   .XoooOoooX.   ",
+"  .XoooOOOoooX.  ",
+" .XoooOOOOOoooX. ",
+".XoooOOOOOOOoooX.",
+".XooOOOOOOOOOooX.",
+".XoooOOOOOOOoooX.",
+" .XoooOOOOOoooX. ",
+"  .XoooOOOoooX.  ",
+"   .XoooOoooX.   ",
+"    .XoooooX.    ",
+"     .XoooX.     ",
+"      .XXX.      ",
+"       ...       "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * quill_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 6 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c black",
+"O	c sky blue",
+"+	c slate grey",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX  oooo",
+" XXXXXXXXXX X ooO+o.",
+" XXXXXXXXXX ooO++o..",
+" XXXXXXXXXooO+++oo..",
+" XXXXXXXXoO++++o+o..",
+" XXXXXXXoO++++o++o..",
+" XXXXXXoO++++oXX+o..",
+" XXXXXoO++++oXXX+o..",
+" XXXXoO++++oXXXX+o..",
+" XXX O++++oXXXXX+o..",
+" XXXoO+++oXXXXXX+o..",
+" XX O+++oXXXXXXX+o..",
+" XXoO ooXXXXXXXX+o..",
+" X O +XXXXXXXXXX+o..",
+" Xo +XXXXXXXXXXX+o..",
+" Xo+XXXXXXXXXXXX+o..",
+" XoXXXXXXXXXXXXX+o..",
+" XXXXXXXXXXXXXXX+o..",
+"  ++++++++++++++ o..",
+"..oooooooooooooooo.."};

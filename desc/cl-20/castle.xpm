@@ -1,0 +1,32 @@
+/* XPM */
+static char * castle_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	c black",
+".	s None	c None",
+"X	c wheat",
+"o	c tan",
+"O	c sea green",
+"+	c lime green",
+/* pixels */
+"     ....       ....",
+" XXX ....   XXX ....",
+" X     ..   X     ..",
+" X  ooo .   X  ooo .",
+" X       o  X       ",
+" X   XXX oo X   XXX ",
+"     X X oooX   X X ",
+"     X X oooo   X X ",
+"     XXX o o o  XXX ",
+"     X X        X X ",
+"     X XXXXXXXXXX X ",
+"     XXXXX X X XXXX ",
+"     XXXXXXXXXXXXXX ",
+"     XXXXXXXXXXXXXX ",
+"     XXXXX     XXXX ",
+"     XXXXX ooo XXXX ",
+"O    XXXXX o o XXXX ",
+"++   XXXXX ooo XXXX ",
+"O++  XOXXX     XOXX ",
+"+OO+  O O  ooo  O  O"};

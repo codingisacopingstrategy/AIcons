@@ -1,0 +1,43 @@
+/* XPM */
+static char *calvin2_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c yellow",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX  XXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXX o XXXXXXXXXXXXXX",
+"XXXXXXXo  XXXXX oo XXXXXXXXXXXXX",
+"XXXXX Xooo  XXX oo XXX  XXXXXXXX",
+"XXXXXo  oooo XX ooo X o XXXXXXXX",
+"XXXX ooo oooo X ooo X oo XXXXXXX",
+"XXXX oooo oooo  oooo  oo XXXXXXX",
+"XXXXX ooooooooooooooo ooo X XXXX",
+"XXXX  ooooooXoXoXoooooooo X ooXX",
+"XXXX ooXXXXXXXXXXXXXXXXooo oooX ",
+"XXX  oXoXoXoXoXoXoXoXoXooooooo o",
+"XXX XXXX XXXXX XXXXXXXXXXoooo oo",
+"XXX XoX  oXoX  oXoXoXoXoXooo ooo",
+"XXX XXX  XXXX  XXXXXXXXXXXXoooX ",
+"XXX XoX  oXoX  oXoXoXoXoXoooo  X",
+"XXX XXX     X XXXXXXXXXXXXXoooXX",
+"XXX XoX XoXoXoXXXoXoXoXXXoXooo X",
+"XXX XXX XXXXXXXXXXXXXXXXXXXXo  X",
+"XX oXoX XoXoXoXoXoXoXoXoXoXoo XX",
+"XX XXXXX    XXXXXXXXXXXXXXXXX  X",
+"XXX XoXoXoXoXoXoXoXoXoXoXoXo oX ",
+"XXX XX                    XXXXX ",
+"XXX Xo      ...  ...     oXoXoX ",
+"XXXX XX     ... ....    XXXXX XX",
+"XXXXX XX    .. ....    oXo o XXX",
+"XXXXXX XX    ....     XXXX  XXXX",
+"XXXXXXX Xo          XoXo  XXXXXX",
+"XXXXXXXX XXX      XXXXX XXXXXXXX",
+"XXXXXXXXX  oXoXoXoXoXo XXXXXXXXX",
+"XXXXXXXXXXX           XXXXXXXXXX"
+};

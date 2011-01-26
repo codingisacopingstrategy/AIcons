@@ -1,0 +1,38 @@
+/* XPM */
+static char * wand_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 12 1",
+/* colors */
+" 	c grey",
+".	c yellow",
+"X	s None	c None",
+"o	c red",
+"O	c gold",
+"+	c firebrick",
+"@	c pale green",
+"#	c green",
+"$	c slate grey",
+"%	c black",
+"&	c cyan",
+"*	c light sea green",
+/* pixels */
+" .XXXXXXXXoXXXXXXXXX",
+".O.XXXXXXo+oXXXXXXXX",
+"X.XXXXXXXXoXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXX@XXXX",
+"XXXXXXXXXXXXXX@#@XXX",
+"XXXXXXX$%%XXXXX@XXXX",
+"XXXXXXX%..%XXXXXXXXX",
+"XXXXXXXX%..%XXXXXXXX",
+"XX&XXXXXX%%%%XXXXXXX",
+"X&*&XXXXXX%%%%XXXXXX",
+"XX&XXXXXXXX%%%%XXXXX",
+"XXXXXXXXXXXX%%%%XXXX",
+"XXXXXXXXXXXXX%%%%XXX",
+"XXXXXXXXXXXXXX%%%%XX",
+"XXXXXXXXXXXXXXX%%%%X",
+"XXXXXXXXXXXXXXXX%%%%",
+"XXXXXXXXXXXXXXXXX%.%",
+"XXXXXXXXXXXXXXXXXX%%"};

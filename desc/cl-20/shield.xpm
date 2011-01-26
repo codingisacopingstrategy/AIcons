@@ -1,0 +1,31 @@
+/* XPM */
+static char * shield_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c gainsboro",
+"O	c grey",
+/* pixels */
+" ..            ..   ",
+" .X............X.   ",
+" .XoXXXXXXXXXXXo.   ",
+" .XooooooooooOOo.   ",
+" .XoXooooooooOOo.   ",
+" .XoXooooooooOOo.   ",
+" .XooooooooooOOo.   ",
+" .XooooooooooOOo.   ",
+" .XooooooooooOOo.   ",
+" .XooooooooooOOo.   ",
+"  .XoooooooooOo.    ",
+"  .XoooooooooOo.    ",
+"  .XooooooooOOo.    ",
+"   .XoooooooOo.     ",
+"   .XooooooOOo.     ",
+"    .XoooOOOo.      ",
+"     .XooOoo.       ",
+"      ..oo..        ",
+"        ..          ",
+"                    "};

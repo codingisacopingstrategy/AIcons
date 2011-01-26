@@ -1,0 +1,28 @@
+/* XPM */
+static char *crab_d_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 5 1",
+/* colors */
+"  c sienna",
+". c tomato",
+"X c white",
+"o c orange",
+"O c None",
+/* pixels */
+"OOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOO",
+"OOOOo OOOOOOOOOO",
+"OOOOOooOOO .OOOO",
+"OOOOoo OO. OOOOO",
+"OOOOoOo O. OOOOO",
+"OOOo O oo  O ..O",
+"OOOOO.OO..X.  OO",
+"Oo OO...X.. OOOO",
+"OOoO....X..XOOOO",
+"Ooo oOOX..XOOOOO",
+"Oooo OoX..XOOOOO",
+"o O OO ..XXOOOOO",
+"OOOOO.  O OOOOOO",
+"OOOOO. OO.  OOOO",
+"OOOOO .OO ..OOOO"
+};

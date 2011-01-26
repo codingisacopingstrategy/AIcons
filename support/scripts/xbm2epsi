@@ -1,0 +1,52 @@
+#!/bin/sh
+#
+# xbm2epsi file.xbm
+#
+#  Convert a X bitmap into a Encapulated PS file with preview image
+#  NOTE the script outputs to a file with a `.epsi' suffix in the
+#  current directory.
+#
+#  Anthony Thyssen          3 Oct 1993       anthony@cit.gu.edu.au
+#
+output_name=`basename $1 .xbm`.epsi
+tmp=/tmp/xbm2epsi.$$
+
+# get the postscript format (capturing the intermediate)
+xbmtopbm $1 | pnmtoplainpnm > $tmp
+pnmtops -noturn < $tmp > $output_name
+
+# read the size of the icon
+set - `sed -n '2p;2q' $tmp`
+
+# convert the bitmap as appropriate
+ed -s $output_name <<-EOF
+	/^%%EndComments\$/a
+	%%BeginPreview: $1 $2 1 $2
+	`sed '#
+	     1,2d;
+	     s|\([01]\{4\}\)|:\1|g;
+	     s|:0000|:0|g;
+	     s|:0001|:1|g;
+	     s|:0010|:2|g;
+	     s|:0011|:3|g;
+	     s|:0100|:4|g;
+	     s|:0101|:5|g;
+	     s|:0110|:6|g;
+	     s|:0111|:7|g;
+	     s|:1000|:8|g;
+	     s|:1001|:9|g;
+	     s|:1010|:A|g;
+	     s|:1011|:B|g;
+	     s|:1100|:C|g;
+	     s|:1101|:D|g;
+	     s|:1110|:E|g;
+	     s|:1111|:F|g;
+	     s|:||g;
+	     s|^|% |;
+	  ' $tmp`
+	%%EndPreview
+	.
+	w
+	EOF
+
+rm -f $tmp

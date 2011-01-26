@@ -1,0 +1,9 @@
+! color resources for xpostit notes with the standard color table
+
+XPostit*Foreground:             navy blue
+XPostit*Background:             wheat
+XPostit*Text*Foreground:        black
+XPostit*Text*Background:        lemon chiffon
+XPostit*Plaid*Foreground:       black
+XPostit*Plaid*Background:       red
+

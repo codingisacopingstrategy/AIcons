@@ -1,0 +1,62 @@
+
+                   Backgrounds Available in AIcons
+                  ---------------------------------
+
+| Mark Vogt <markvogt@xnet.com> sent the following
+| comment to "anthony", and now you are reading it:
+| ------------------------------------------------------------
+| Hi Anthony,
+|
+| I came here looking for some interesting patterns
+| I could use as backdrops/backgrounds for several multimedia
+| applications I am creating here at work.
+|
+| Can you offer any assistance?
+|
+| Mark
+
+Have a look in my icon library
+
+   Anthonys Icons
+      http://www.cit.gu.edu.au/~anthony/icons/
+
+Or more specifically
+
+   Color Background Images (descriptive)
+      http://www.cit.gu.edu.au/~anthony/icons/desc/cl-bgnd    
+ 
+This directory contains a number of X pixmap backgrounds patterns   
+Also in this directory are two sub-directories of GIF images
+
+   Textures  -- a partial set of the ``DeskTop Textures package''
+                This is free to use an any machines except PC's
+                and if the copyright notices are left with the images.
+
+   Netscape  -- The background gif images from netscape communications
+                I am currently trying to get express permission but they
+                released it to the world so I slurped it up.
+    
+The last is also included in the www section under the sub-directory BGnds
+
+You may also like to look in
+
+   Greyscale backgrounds
+     http://www.cit.gu.edu.au/~anthony/icons/desc/gr-bgnd
+   Bitmap Background Images
+     http://www.cit.gu.edu.au/~anthony/icons/desc/bw-bgnd
+
+The README file in the bitmap area has a number of color suggestions
+for when you use of convert the bitmaps. Bitmaps do not have any colors
+associated with them by default.
+
+Similarly you can look at bitmap patterns.. (low scale textures)
+
+   Patterns and Textures
+      http://www.cit.gu.edu.au/~anthony/icons/prog/patterns
+
+and pick appropriate colors for display.
+
+A full list of Icon patterns and collors can be found in
+    http://www.cit.gu.edu.au/~anthony/icons/support/xbgnd_cmds.cpp
+
+Anthony Thyssen

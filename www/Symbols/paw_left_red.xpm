@@ -1,0 +1,25 @@
+/* XPM */
+static char * paw_left_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"30 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c firebrick",
+/* pixels */
+"                              ",
+"       ..                     ",
+"      ...X                    ",
+"       XXX  ..                ",
+"   ..      ...X               ",
+"  ...X      XXX               ",
+"   XXX  ...                   ",
+"       ......                 ",
+"  ..  ........                ",
+" ...X ........X               ",
+"  XXX .........X              ",
+"      .........X              ",
+"      ........XX              ",
+"      .......XX               ",
+"       X....XX                ",
+"        XXXXX                 "};

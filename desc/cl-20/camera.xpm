@@ -1,0 +1,31 @@
+/* XPM */
+static char * camera_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c slate grey",
+"O	c red",
+/* pixels */
+"                    ",
+"                    ",
+"       .....        ",
+"      .......       ",
+"     ..X.X.X.. ...  ",
+" .................  ",
+".......XXXXX....... ",
+"..X...XX.X.XX......o",
+"..X..XX.XXX.XX.OO..o",
+"..X..X.X.XXX.X.....o",
+"..X..XX.X.X.XX.....o",
+"..X..X.X.X.X.X.....o",
+"..X..XX.X.X.XX.....o",
+"......XX.X.XX..XX..o",
+".......XXXXX.......o",
+"...................o",
+" .................oo",
+"  ooooooooooooooooo ",
+"                    ",
+"                    "};

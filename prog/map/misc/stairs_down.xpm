@@ -1,0 +1,34 @@
+/* XPM */
+static char * stairs_down_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c lemon chiffon",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"                        ",
+"       ....             ",
+"      ..XX.....         ",
+"      .XXXXXXX.....     ",
+"     ..XXXXXXXXXXX..... ",
+"     .XXXXXXXXXXXXX.....",
+"    ..XXXXXXXXXXXXX.oo. ",
+"    .XXXXXXXXXXX....oo. ",
+"   ..XXXXXXXXXXX.oo.o.  ",
+"   .XXXXXXXXX....o.oo.  ",
+"  ..XXXXXXXXX.oo.o.o.   ",
+"  .XXXXXXX....o.o.oo.   ",
+" ..XXXXXXX.oo.o.o.o.    ",
+" ....XX....o.o.o.oo.    ",
+"    ....oo.o.o.o.o.     ",
+"        ....o.o.oo.     ",
+"            ....o.      ",
+"                ..      ",
+"                        ",
+"                        "};

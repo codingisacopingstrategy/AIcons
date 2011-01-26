@@ -1,0 +1,29 @@
+/* XPM */
+static char * blank_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	c lavender",
+".	c dark slate grey",
+"X	c grey",
+/* pixels */
+"                   .",
+" XXXXXXXXXXXXXXXXXX.",
+" X............... X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X                X.",
+" XXXXXXXXXXXXXXXXXX.",
+"...................."};

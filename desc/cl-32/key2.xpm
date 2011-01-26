@@ -1,0 +1,42 @@
+/* XPM */
+static char *key_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c gainsboro",
+"b c yellow",
+/* pixels */
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaa`````aaaaa",
+"aaaaaaaaaaaaaaaaaaaa``bbbbb``aaa",
+"aaaaaaaaaaaaaaaaaaa`bbbbbbbbb`aa",
+"aaaaaaaaaaaaaa``aa`bbbbbbbbbbb`a",
+"aaaaaaaaaaaaaa`b`a`bbbbbbbbbbb`a",
+"a``````````````b``bbbbbbbb```bb`",
+"`bbbbbbbbbbbbbbbbbbbbbbbb`````b`",
+"`bbbbbbbbbbbbbbbbbbbbbbbb`aaa`b`",
+"a`bbbbbbbbbbbbbbbbbbbbbbb`aaa`b`",
+"aa````````````````bbbbbbbb```bb`",
+"aaa`bb```bbbb``b`a`bbbbbbbbbbb`a",
+"aaaa``aaa````a``aa`bbbbbbbbbbb`a",
+"aaaaaaaaaaaaaaaaaaa`bbbbbbbbb`aa",
+"aaaaaaaaaaaaaaaaaaa```bbbbb```aa",
+"aaaaaaaaaaaaaa`aaa`````````````a",
+"aaaaaaaaaaaaaaa`aa`````````````a",
+"aa`````````````````````````a```a",
+"a`````````````````````````aaa```",
+"``````````````````````````aaa```",
+"a`````````````````````````aaa```",
+"aa`````````````````````````a```a",
+"aaa```a`a```````aa`````````````a",
+"aaaa`aaaaa`a`a`aaa`````````````a",
+"aaaaaaaaaaaaaaaaaaa```````````aa",
+"aaaaaaaaaaaaaaaaaaaa`````````aaa",
+"aaaaaaaaaaaaaaaaaaaaaaa```aaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+};

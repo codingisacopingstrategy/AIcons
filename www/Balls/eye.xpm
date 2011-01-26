@@ -1,0 +1,29 @@
+/* XPM */
+static char * eye_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 9 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c lavender",
+"O	c grey",
+"+	c slate grey",
+"@	c blue",
+"#	c dark slate grey",
+"$	c gainsboro",
+/* pixels */
+"              ",
+"     . . .    ",
+"   . ..... .  ",
+"    .XXXoO.   ",
+" . .XXXXoO+.  ",
+"  .XXXX@@O++. ",
+" ..XXX@..@+#. ",
+"...$oo@..@+#. ",
+" ..OOO@..@#+. ",
+"  .++++@@##.. ",
+"   .++####..  ",
+"    .+##+..   ",
+"     .....    ",
+"              "};

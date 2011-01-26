@@ -1,0 +1,33 @@
+/* XPM */
+static char * bookStand_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c light sea green",
+"o	c white",
+"O	c cyan",
+"+	c slate grey",
+"@	c sienna",
+/* pixels */
+"     ....   ...     ",
+"   X.oooo. .ooo.X   ",
+" .XOooo.oo.oooooOX. ",
+" .XOoooooo.oooooOX. ",
+" .XOooo.oo.oooooOX. ",
+" .XOoooooo.oooooOX. ",
+" .XOooo.oo.oooooOX. ",
+" .XOoooooo.oooooOX. ",
+"+.XOoooooo.oooooOX.+",
+"@.XOoooooo.oooooOX.@",
+"@.XOoooooo.oooooOX.@",
+"@.XOoooooo.oooooOX.@",
+"@.XOoo...o.o...oOX.@",
+"@.XO..XXX...XXX..X.@",
+"@...XXX...O...XXX..@",
+"@@@@@@@@@@@@@@@@@@@@",
+"++++++++++++++++++++",
+"....................",
+"      .@@@@@@.      ",
+"   ...@@@@@@@@...   "};

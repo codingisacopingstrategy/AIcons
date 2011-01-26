@@ -1,0 +1,43 @@
+/* XPM */
+static char *thumper_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c LimeGreen",
+"X c grey",
+"o c white",
+/* pixels */
+"................................",
+"................................",
+"................................",
+"..................       .......",
+".................  X      ......",
+"...............         X  .....",
+"..............    X    XXX .....",
+"..............   o XXX   X  ....",
+"............. X     XXX   X  ...",
+".............  X    XXXXX  X   .",
+"..........         XX XXXX   X .",
+".......... XoooXXXXXX XXXX      ",
+".........  XoooXoooooX XX    o  ",
+"......... XooooooooXXX     .  o ",
+"......... ooooooooXXXX .   ..   ",
+"........  XoooooooXXXX .......  ",
+".......  XXXoooooXXXXX  ........",
+"....... XX  ooooooXXXXX ........",
+"....... XX  XooooXXXXXX  .......",
+"....... XX   XXXX  XXXXX      ..",
+"........     XXX  XXXX XX      .",
+"........      X  XXXX  XXX ooX .",
+"..........  X   XX   XXXXX oooX ",
+".......... XXX  X   XXXXXXX oo  ",
+".........  XXX     XXXXXXX ooo .",
+"...       XXX XX  XXXXXXXX ooo .",
+".. XXXX XX    XXXX  XXXXX ooX  .",
+".   XXX    XX    X X          ..",
+"..             .    XXXXX  .....",
+"................... XXXXX  .....",
+"...................   XX  ......",
+"....................      ......"
+};

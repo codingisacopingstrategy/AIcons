@@ -1,0 +1,32 @@
+/* XPM */
+static char * potions_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c white",
+"o	c navy",
+"O	c cyan",
+"+	c blue",
+/* pixels */
+"  .........         ",
+"  .XXXXXXX.         ",
+"   .......          ",
+"   .XXXXX.  ooooo   ",
+"   .XXXXX.  oXXXo   ",
+"   .OOOOO.   ooo    ",
+"   .OOOOO.   oXo    ",
+"   .OOOOO.   oXo    ",
+"   .O...O.   o+o    ",
+"  .OOOOOOO. o+++o   ",
+"  .O....OO. o+++o   ",
+" .OOOOOOOOOo+++++o  ",
+" .O....OOOOo+oo++o  ",
+".OOOOOOOOOo+++++++o ",
+".O......OOo+oo++++o ",
+".OOOOOOOOOo+++++++o ",
+".OO......Oo++oo+++o ",
+".OOOOOOOOOOo+++++o  ",
+" .OOOOOOOOOo+++++o  ",
+"  ......... ooooo   "};

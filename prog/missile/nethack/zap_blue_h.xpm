@@ -1,0 +1,25 @@
+/* XPM */
+static char *x11tiles_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 2 1",
+/* colors */
+"  c None s None",
+". c dodger blue",
+/* pixels */
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+" ..  ..  ..  .. ",
+"................",
+"................",
+" ..  ..  ..  .. ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                ",
+"                "
+};

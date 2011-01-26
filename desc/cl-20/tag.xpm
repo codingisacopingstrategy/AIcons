@@ -1,0 +1,33 @@
+/* XPM */
+static char * tag_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c yellow",
+"o	c white",
+"O	c blue",
+"+	c red",
+"@	c slate grey",
+/* pixels */
+"                    ",
+"                    ",
+"       ............ ",
+"      .XoXoXXoXooXo.",
+"     .XoXoXooXoXXoX.",
+"    .XoXoOOOOOOOOXo.",
+"   .XoXoXoXooXoXXoX.",
+".. .oX++oXoXXoXooXo.",
+"  ..X+. +oOOOOOOOoX.",
+" . ...  +XoXXoXooXo.",
+".  .Xo++XoXooXoXXoX.",
+".   .XoXoOOOOOOOOXo.",
+"     .XoXoXooXoXXoX.",
+"      .XoXoXXoXooXo.",
+"       ............@",
+"        @@@@@@@@@@@@",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

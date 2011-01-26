@@ -1,0 +1,73 @@
+#!/bin/sh
+#
+# xbm-cmd  Ximage  pbmplus-command args...
+#
+#    Perform a pbmplus command on the xbm file given.
+#
+#  Anthony Thyssen         16 Dec 1993       anthony@cit.gu.edu.au
+#
+TRANS="#BFBFBF"
+i="$1"
+shift
+
+exec </dev/null
+
+TMP1=/tmp/xbmcmd$$.1
+TMP2=/tmp/xbmcmd$$.2
+trap "rm -f $TMP1 $TMP2; exit 0" 0
+
+# on any failure exit
+set -e "$@"
+
+if [ ! -r "$i" ]; then
+  echo >&2 "xbm-cmd: Unable to read \"$i\""
+  exit 10;
+fi
+if [ ! -w "$i" ]; then
+  echo >&2 "xbm-cmd: Unable to write \"$i\""
+  exit 10;
+fi
+
+# --- find out the type ---
+name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+suffix="`expr "$name" : '.*\.\([^.]*\)'`"
+name="`expr "$name" : '\([^.]*\)'`"
+
+# --- convert to PbmPlus format ---
+case "$suffix" in
+  xbm) sed 's/unsigned //' "$i" | xbmtopbm > $TMP1 ;;
+  xpm)
+      if [ "$TRANS" ] && grep 'c  *None' "$i" >/dev/null; then
+        # convert None to transparent color (above)
+        sed "s/c  *[Nn]one/c $TRANS/g" "$i" |
+           x2p.sed | xpmtoppm > "$TMP1"
+      else
+        x2p.sed "$i" | xpmtoppm  > $TMP1
+      fi ;;
+  *)   echo >&2 "Unknown suffix for \"$i\""
+       exit 0 ;;
+esac
+
+# --- execute the command given ---
+"$@" < $TMP1 > $TMP2
+
+if [ ! -f $TMP2 -o ! -s $TMP2 ]; then
+  echo >&2 "Command failed for \"$i\""
+  exit 0;
+fi
+
+# --- convert back ---
+case "$suffix" in
+  xbm) pbmtoxbm < $TMP2 |
+       sed 's/static  *char/static unsigned char/;
+            s/noname\([[_]\)/'"$name"'\1/' > "$i" ;;
+  xpm)
+      if [ "$TRANS" ]; then    # replace transparent color with "None"
+        ppmtoxpm $TMP2 2>/dev/null |
+          sed "/colors/,/pixels/s/ c $TRANS/ c None/" |
+          xpm-fix -o "$i"
+      else
+        ppmtoxpm $TMP2 2>/dev/null | xpm-fix -o "$i"
+      fi ;;
+esac 2>/dev/null
+

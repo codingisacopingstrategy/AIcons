@@ -1,0 +1,31 @@
+/* XPM */
+static char * exclaim_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c firebrick",
+"o	c red",
+"O	c tomato",
+/* pixels */
+"         ..         ",
+"        ....        ",
+"        X...        ",
+"        XX..        ",
+"        oXX.        ",
+"        ooXX        ",
+"        OooX        ",
+"        OOoo        ",
+"        oOOo        ",
+"        ooOO        ",
+"        XooO        ",
+"        XXoo        ",
+"         XX         ",
+"         XX         ",
+"                    ",
+"                    ",
+"         ..         ",
+"        ....        ",
+"        ....        ",
+"         ..         "};

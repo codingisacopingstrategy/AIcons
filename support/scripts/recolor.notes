@@ -1,0 +1,55 @@
+Recolor Notes.
+
+The recolor script is what I use to recolor icons VIA the PbmPlus Filter
+package (see Software http://www.cit.gu.edu.au/~anthony/icons/software.html)
+Specifically it uses the ppmquant program to do the hard work.
+
+It hands ppmquant a color table (location defined at the top of recolor)
+which you can get from
+    http://www.cit.gu.edu.au/~anthony/icons/desc/cl-misc/colortable.xpm
+converted to ppm format for ppmquant to use.
+
+The scripts to convert X Pixmaps to and from using other pbmplus scripts
+   x2p  x2p.sed  p2x  and xpm-fix
+xpm-fix is a perl script returns the ppm pixal values back into X window
+color names. It is not nessary but makes the X pixmap more readable
+and editable.  This program calls one more script, if a `reverse color
+table' (the reverse of the RGB file) is not available, it will call
+   color_db_mk
+to create such a database.
+
+
+Requirments....
+
+   recolor
+   PbmPlus Filters  (see software link above)
+   colortable.ppm    (from link above and converted)
+   x2p
+   x2p.sed
+   p2x
+   xpm-fix
+   mk-color-db
+
+
+I know this is a lot or inter-links but these scripts were built slowly
+as the need developed and as such I re-used parts I already had created.
+
+To recolor a group of icons I just use the command...
+
+     recolor  file.xpm...
+
+and it will recolor all the icons given to a new file either
+
+    file_recol.xpm     OR     file_recol_bad.xpm
+
+The later being created if the recolor program detects that the number
+of colors were reduced in size, (posibility of colors being lost).
+
+Note also that recolor can take a couple of options
+
+    -f cmap.ppm       set different colormap file
+    -fs               dither icon using the colormap
+                      (IE: don't just replace the colors)
+
+Anthony Thyssen     16 August 1996       http://www.cit.gu.edu.au/~anthony/
+

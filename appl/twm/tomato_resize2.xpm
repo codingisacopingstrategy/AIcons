@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_resize2_xpm[] = {
+"13 13 5 1",
+" 	c Gold",
+".	c Firebrick",
+"X	c Orange",
+"o	c Tomato",
+"O	c Red",
+"            .",
+"    XXXoXXoo.",
+" XXXXXoXoooo.",
+"XXXXXoXooooo.",
+"        .ooo.",
+"    XXoX.ooo.",
+" XXXXoXo.ooO.",
+"XXXXoooo.ooO.",
+"    .ooO.oOO.",
+"  XX.ooO.OoO.",
+" Xoo.oOO.oOO.",
+" oOO.OOO.OOO.",
+".....O...O..."};

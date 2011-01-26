@@ -1,0 +1,42 @@
+/* XPM */
+static char *chip_button[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c grey",
+"b c white",
+/* pixels */
+"````````````````````````````````",
+"`bbbbbbbbbbbbbbbbbbbbbbbbbbbbba`",
+"`bbbbbbbbbbbbbbbbbbbbbbbbbbbba``",
+"`bbbbbbbbbbbbbbbbbbbbbbbbbbbb```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`bbbaaaaa```````````````aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaaaa`bbbbbbbbbbbbb`aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaaaa`bbbbbbbbbbbbb`aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaaaa`bbbbbbbbbbbbb`aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaaaa`bbbbbbbbbbbbb`aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaaaa`bbbbbbbbbbbbb`aaaaa```",
+"`bbbaaa```bbbbbbbbbbbbb```aaa```",
+"`bbbaaa```bbbbb```bbbbb```aaa```",
+"`bbbaaaaa```````a```````aaaaa```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`bbbaaaaaaaaaaaaaaaaaaaaaaaaa```",
+"`ba`````````````````````````````",
+"`a``````````````````````````````",
+"````````````````````````````````"
+};

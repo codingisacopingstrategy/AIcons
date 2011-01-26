@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_keyboard_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Gold",
+"X	c Orange",
+"o	c Firebrick",
+"O	c Red",
+"             ",
+"..... .....  ",
+".XX o .XX o  ",
+".   o .   o  ",
+". OOo . OOo  ",
+"ooooo ooooo  ",
+"             ",
+"  ..... .....",
+"  .XX o .XX o",
+"  .   o .   o",
+"  . OOo . OOo",
+"  ooooo ooooo",
+"             "};

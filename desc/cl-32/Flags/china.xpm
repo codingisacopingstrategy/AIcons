@@ -1,0 +1,43 @@
+/* XPM */
+static char *china_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c yellow",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"................................",
+"................................",
+".....o....o.....................",
+".....o..........................",
+"...ooooo....o...................",
+"....ooo.........................",
+"....o.o.....o...................",
+"...o...o........................",
+"..........o.....................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

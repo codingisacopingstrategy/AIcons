@@ -1,0 +1,31 @@
+/* XPM */
+static char * eisel_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c sienna",
+"o	c grey",
+"O	c lemon chiffon",
+/* pixels */
+"         .          ",
+"        .X.         ",
+" .................  ",
+" .ooooooooooooooo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .oOOOOOOOOOOOOOo.  ",
+" .ooooooooooooooo.  ",
+" .................  ",
+"     .   .   .      ",
+"    .    .    .     ",
+"    .    .    .     ",
+"   .     .     .    ",
+"   .           .    ",
+"                    "};

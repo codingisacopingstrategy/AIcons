@@ -1,0 +1,37 @@
+/* XPM */
+static char * hut_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c black",
+"o	c tan",
+"O	c sienna",
+"+	c wheat",
+"@	c peru",
+/* pixels */
+"                    .. .",
+"                   . .  ",
+"                   ..   ",
+"          XXX     ..    ",
+"         XoooX   .      ",
+"         XoooX   ..     ",
+"        XoOoOoX XXXX    ",
+"       X.ooooooXOOOOX   ",
+"      X.OoOoooooXOOOX   ",
+"     X.ooooooooooXOOX   ",
+"    X.OOoOOOoOooooXOX   ",
+"   X.ooooooooooooooX    ",
+"  X.OOoOoOOoOoooooooX   ",
+" X.OoooooooooooooooooX  ",
+" X.OOOOooooooooooooooX  ",
+"  XXXXXXXXXXXXXXXXXXX   ",
+"   X..ooo++++++++o+X    ",
+"   X+o+o+++XXXXX+++X    ",
+"  X.o++o++X@@@@@X+++X   ",
+"  X++o++++X@...@X+++X   ",
+"  X.++++++X@...@X+++X   ",
+" X++++++++X@@@@@X++++X  ",
+" X++++++++X@@@@@X++++X  ",
+"  XXXXXXXXXXXXXXXXXXX   "};

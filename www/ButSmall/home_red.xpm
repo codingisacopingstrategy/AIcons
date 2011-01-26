@@ -1,0 +1,31 @@
+/* XPM */
+static char * home_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	c lavender",
+".	c dark slate grey",
+"X	c grey",
+"o	c black",
+"O	c firebrick",
+/* pixels */
+"                   .",
+" XXXXXXXXXXXXXXXXXX.",
+" X............... X.",
+" X.XXXXXXXXXXXXXX X.",
+" X.XXXXXXooXoooXX X.",
+" X.XXXXXoOOooOoXX X.",
+" X.XXXXoOOOOoOoXX X.",
+" X.XXXoOOOOOOOoXX X.",
+" X.XXoOOOOOOOOoXX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XoOOOOOOOOOOoX X.",
+" X.XooooooooooooX X.",
+" X.XXXXXXXXXXXXXX X.",
+" X                X.",
+" XXXXXXXXXXXXXXXXXX.",
+"...................."};

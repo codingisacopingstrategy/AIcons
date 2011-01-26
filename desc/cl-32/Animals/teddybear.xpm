@@ -1,0 +1,43 @@
+/* XPM */
+static char *teddybear_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c tan",
+"X c wheat",
+"o c None",
+/* pixels */
+"ooooooooooo  oooooooo  ooooooooo",
+"oooooooooo .. o    o .. oooooooo",
+"ooooooooo .XX. .... .XX. ooooooo",
+"ooooooooo .XX........XX. ooooooo",
+"oooooooooo ... ... .... oooooooo",
+"oooooooooo ........... ooooooooo",
+"oooooooooo ...........   ooooooo",
+"ooooooooo .....  ..... ..  ooooo",
+"ooooooooo .....  ..... .... oooo",
+"oooooooo  ... .... ... .... oooo",
+"ooooooo .. ...    ... ...... ooo",
+"oooooo ....  ......  .. .... ooo",
+"oooooo ......      .... .... ooo",
+"ooooo ... ............ ..... ooo",
+"ooooo ... ....XXXX.... .... oooo",
+"ooooo .... ..XXXXXX.. ..... oooo",
+"ooooo ...  .XXXXXXXX.  ... ooooo",
+"oooooo ... .XXXXXXXX. ...  ooooo",
+"oooooo . . .XXXXXXXX.  . . ooooo",
+"ooooooo   ..XXXXXXXX..  .. ooooo",
+"ooooooooo ..XXXXXXXX...... ooooo",
+"oooooooooo ..XXXXXXX..... oooooo",
+"oooo    o ....XXXXX. .... oooooo",
+"ooo .. . .....    . ..... oooooo",
+"oo . XXX. ... .. . ..... ooooooo",
+"oo .XXXXX... . XXX. .... ooooooo",
+"oo .XXXXX... .XXXXX.... oooooooo",
+"oo .XXXXX..  .XXXXX... ooooooooo",
+"oo .XXXXX. o .XXXXX.. oooooooooo",
+"ooo .XXXX oo .XXXXX. ooooooooooo",
+"oooo     oooo .XXXX oooooooooooo",
+"oooooooooooooo     ooooooooooooo"
+};

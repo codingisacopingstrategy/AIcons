@@ -1,0 +1,43 @@
+/* XPM */
+static char *s_korea_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c NavyBlue",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"                                ",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"ooooooo oooooooooooooooo ooooooo",
+"oooooo o oooooooooooooo o oooooo",
+"ooooo o o oooooooooooo o ooooooo",
+"oooo o o oooooooooooooooo o oooo",
+"ooooo o oooooo....oooooo o ooooo",
+"oooooo oooooo......oooooo oooooo",
+"oooooooooooo........oooooooooooo",
+"ooooooooooXo.........ooooooooooo",
+"ooooooooooXo...ooooo.ooooooooooo",
+"ooooooooooXoooooXXXo.ooooooooooo",
+"ooooooooooXXXXXXXXXo.oooo oooooo",
+"ooooo oooooXXXXXXXXooooo o ooooo",
+"oooo o oooooXXXXXXooooooo o oooo",
+"ooo o o oooooXXXXooooo ooo ooooo",
+"oooo ooo oooooooooooo o oooooooo",
+"ooooo o oooooooooooooo o ooooooo",
+"oooooo oooooooooooooooo oooooooo",
+"oooooooooooooooooooooooooooooooo",
+"                                ",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

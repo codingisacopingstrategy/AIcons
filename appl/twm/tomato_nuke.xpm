@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_nuke_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Gold",
+"X	c Orange",
+"o	c Red",
+"O	c Firebrick",
+"    ..XX     ",
+"  ...XX oo   ",
+" ..XXX X oo  ",
+"..XXX X  ooO ",
+"..XX X  o ooO",
+".XX ooooOooOO",
+" ooo .oO OOO ",
+"     .oO     ",
+"   oOoOOOO   ",
+"     .oO     ",
+" o O XoO oO  ",
+"oOOoXOoOXOoOo",
+"OOXOOXOoOOXoO"};

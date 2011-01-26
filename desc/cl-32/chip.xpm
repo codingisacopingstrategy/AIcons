@@ -1,0 +1,42 @@
+/* XPM */
+static char *chip[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c white",
+"b c yellow",
+/* pixels */
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaa`aaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaa```aaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaa`````aaaaaaaa",
+"aaaaaaaaaaaaaaaaaa```````aaaaaaa",
+"aaaaaaaaaaaaaaaaa`````````aaaaaa",
+"aaaaaaaaaaaaaaaa```````````aaaaa",
+"aaaaaaaaaaaaaaa````bb```````aaaa",
+"aaaaaaaaaaaaaa````b``````````aaa",
+"aaaaaaaaaaaaa`````b``bb```````aa",
+"aaaaaaaaaaaa```````bb``b``````aa",
+"aaaaaaaaaaa````bb```b``b````a`aa",
+"aaaaaaaaaa````b``b```bb````a`aaa",
+"aaaaaaaaa`````b``bb```````a``aaa",
+"aaaaaaaa```````bb``b`````a`a`aaa",
+"aaaaaaa````bb```b``b````a``a`aaa",
+"aaaaaa````b``b```bb````a`a`aaaaa",
+"aaaaa`````b``bb```````a``a`aaaaa",
+"aaaa````````b``b`````a`a`aaaaaaa",
+"aaaa```````````b````a``a`aaaaaaa",
+"aaaa`a```````bb````a`a`aaaaaaaaa",
+"aaaaa`a```````````a``a`aaaaaaaaa",
+"aaaaa``a`````````a`a`aaaaaaaaaaa",
+"aaaaa`a`a```````a``a`aaaaaaaaaaa",
+"aaaaa`a``a`````a`a`aaaaaaaaaaaaa",
+"aaaaaaa`a`a```a``a`aaaaaaaaaaaaa",
+"aaaaaaa`a``a`a`a`aaaaaaaaaaaaaaa",
+"aaaaaaaaa`a`a``a`aaaaaaaaaaaaaaa",
+"aaaaaaaaa`a``a`aaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaa`aa`aaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaa`aaaaaaaaaaaaaaaaaaaa"
+};

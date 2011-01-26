@@ -1,0 +1,30 @@
+/* XPM */
+static char * gem_box_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 8 1",
+/* colors */
+" 	c yellow",
+".	c gold",
+"X	c dark slate grey",
+"o	c black",
+"O	c pale green",
+"+	c sea green",
+"@	c lime green",
+"#	c green",
+/* pixels */
+"    ..XXXX.    .",
+"  ..XXooooXX  ..",
+" .XXooooooooXX..",
+" .XooooooooooX..",
+".XoooooooooOooX.",
+".XooooooooooooX.",
+"XooXXooooooooooX",
+"XoX+++XooooooooX",
+"XX+@@@+XoooooooX",
+"X+@@#@@+XooooooX",
+".+@#O#@@+oooooX.",
+" X@#OO#@+XooooX ",
+"  +@##@@+XoooX  ",
+"  X+@@@+XoooXX  ",
+" ...X++XooXX... ",
+"......XXXX......"};

@@ -1,0 +1,35 @@
+/* XPM */
+static char *elephant_masked_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+"  c black",
+". c dark slate grey",
+"X c slate grey",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooXXXXXXooo",
+"ooooooooooooooXXXXXXXXoo",
+"oooooooXXXXXX.XXX.XXXXoo",
+"oooooXXXXXXXX.XXX.X XXXo",
+"ooooXXXXXXXXX.XXX.XXXXXo",
+"oooXXXXXXXXXXX...XXXXXXo",
+"ooXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXXXXXo",
+"oXXXXXXXXXXXXXXXXXXoXXXo",
+"XoXXXXXXXXXXXXXXXXoooXXo",
+"ooXXXXXXXXXXXXXXXXoooXXo",
+"ooXXXXXXXXXXXXXXXXoooXXo",
+"ooXXXXXXXXXXXXXXXXoooXXo",
+"ooXXXXoXXXXXXoXXXXoooooo",
+"ooXXXXooooooooXXXXoooooo",
+"ooXXXXooooooooXXXXoooooo",
+"ooX.X.ooooooooX.X.oooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo"
+};

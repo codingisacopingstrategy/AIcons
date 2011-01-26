@@ -1,0 +1,31 @@
+/* XPM */
+static char * fist_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c tan",
+"o	c wheat",
+"O	c white",
+/* pixels */
+"       ........     ",
+"    .....X.XXo..    ",
+"  .....XooX.ooo..   ",
+" ...Xoo.ooo......   ",
+"...o.ooo.o..Xoo...  ",
+".Xooo.oo..OOoooo..  ",
+".ooooo.oo.ooooXoo.. ",
+".Xo.oo.oo.XXX..ooo. ",
+".Xo.oo.oO......Xoo..",
+"..o.OO.OO.XX....ooo.",
+" .oo..........XXXoo.",
+" .XoooXXXXX...ooooo.",
+" .XoooXXXXX.Xooooo..",
+" ..XooooXX..oooooX. ",
+"  .Xooooo.XoooooX.. ",
+"  .Xooooo.oooooX..  ",
+"  ..XoooooooooXX.   ",
+"   .XoooooooXXX.    ",
+"   .Xo...oooo.o.    ",
+"   .Xoooooooooo.    "};

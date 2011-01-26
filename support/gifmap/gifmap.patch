@@ -1,0 +1,38 @@
+*** gifmap.orig	Mon Feb 10 19:54:51 1997
+--- gifmap	Mon Feb 10 20:00:20 1997
+***************
+*** 361,367 ****
+          local($red, $green, $blue, $color);
+          chop;
+          ($red, $green, $blue, $color) = split( /[ \t]+/, $_, 4);
+!         $RGBDB{"$color"} = sprintf("#%2X%2X%2X", $red, $green, $blue);
+      }
+      close( RGBDB );
+  } else {
+--- 361,367 ----
+          local($red, $green, $blue, $color);
+          chop;
+          ($red, $green, $blue, $color) = split( /[ \t]+/, $_, 4);
+!         $RGBDB{"\L$color"} = sprintf("#%2X%2X%2X", $red, $green, $blue);
+      }
+      close( RGBDB );
+  } else {
+***************
+*** 1707,1714 ****
+          return( "\U$color" );   # just uppercase the color hex value
+      } 
+  
+!     if( defined($RGBDB{"$color"}) ) {
+!         return( $RGBDB{"$color"} );
+      } else {
+          print( STDERR "No such color \"$color\" found\n" );
+          return("#BEBEBE");    # Return grey as default in case of error
+--- 1707,1714 ----
+          return( "\U$color" );   # just uppercase the color hex value
+      } 
+  
+!     if( defined($RGBDB{"\L$color"}) ) {
+!         return( $RGBDB{"\L$color"} );
+      } else {
+          print( STDERR "No such color \"$color\" found\n" );
+          return("#BEBEBE");    # Return grey as default in case of error

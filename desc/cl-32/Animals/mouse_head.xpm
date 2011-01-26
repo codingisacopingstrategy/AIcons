@@ -1,0 +1,43 @@
+/* XPM */
+static char *mouse_head_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c magenta",
+"o c white",
+/* pixels */
+"oooooooo      oooooooooooooooooo",
+"ooooooo .X.XXX  oooooooooooooooo",
+"oooooo ..X.XXX o Xooooooooo    o",
+"oooooo ...X.  oo   ooooooo ..oo ",
+"oooo      .X o Xoo         ...X ",
+"oo  ..X...   o     XXXXXXXX    o",
+"o .....X.X.. ooo .XX.X.XXXXX ooo",
+"o ..X    .X.X   XX.XXXXXXXXX ooo",
+" ...    . ..X.X.X.XX.XX.XXX oooo",
+" ..   ...X.X.X.X XX.XXXXXXX oooo",
+" ..   ..X..X.X.X .XX.X.XXX ooooo",
+" ..  ...X..X.X.  X.XXXXXX oooooo",
+" .. .......X.X X.  .X.X. ooooooo",
+" .. ..X.X...X.X.XX.   X oooooooo",
+" ... .....X. .X.X.XX.X ooooooooo",
+"o ....X.X..X X.X.X.XX.X oooooooo",
+"o ..X.....X.  .X.      ooooooooo",
+"oo  ..X.X.  oo . ooooooooooooooo",
+"oooo      oooo X ooooooooooooooo",
+"oooooooooooooo X ooooooooooooooo",
+"oooooooooooooo X ooooooooooooooo",
+"ooooooooooooo  X  oooooooooooooo",
+"oooooooooooo ..X.. ooooooooooooo",
+"oooooooooo   XXXX.  oooooooooooo",
+"oooooooo  XX.XXXXXXX  oooooooooo",
+"oooooo  .XX.XXXXXXXXXX  oooooooo",
+"ooooo .XX.XXXX.     .XXX ooooooo",
+"oooo  X.XXXXX  XXXXX .XXX oooooo",
+"ooo .X.XX.XX .XXXXXXX XXXX ooooo",
+"oo  XX.XX   .XXXX X X XXXXX oooo",
+"o XXX..X.X.XXXX X X X XXX... ooo",
+"o               . . .        ooo"
+};

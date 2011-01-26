@@ -1,0 +1,34 @@
+/* XPM */
+static char * chart_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 8 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c cyan",
+"o	c light sea green",
+"O	c yellow",
+"+	c sienna",
+"@	c magenta",
+"#	c purple",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"            .....   ",
+"            .XXo.   ",
+"           ..XXo....",
+"          . .ooo.   ",
+"  .....  .  .....   ",
+"  .OO+. .           ",
+"...OO+..            ",
+"  .+++. .           ",
+"  .....  .  .....   ",
+"          . .@@#.   ",
+"           ..@@#....",
+"            .###.   ",
+"            .....   ",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

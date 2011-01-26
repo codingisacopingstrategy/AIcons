@@ -1,0 +1,177 @@
+#!/bin/sh -
+#
+# xbm-list - show all xbm, xpm and pnm  images in one fixed width window
+#
+#   This program was completely rewritten from the pnmindex file in the
+# pbmplus image filter package.
+#   That particular script had the drawback that only a fixed number of
+# images were output on a single row. This produced  large differances in
+# the width and length of the output file depending on weather you were
+# viewing small images or large ones.
+#   This script packs as many images into one row of the output image.
+# 
+# Original by  :  Jef Poskanzer     1991
+# This Version :  Anthony Thyssen   10 Nov 1993    anthony@cit.gu.edu.au
+#
+progname="`basename $0`"
+
+Usage() {
+  echo >&2 "usage: $progname [options..] files... "
+  echo >&2 "   -#num           width of final window (default 600)"
+  echo >&2 "   -colors #num    number of colors in output image"
+  echo >&2 "   -black/-white   background color (default black)"
+  echo >&2 "   -notext         don't include text in output (faster,compact)"
+  echo >&2 "   -o list.ppm     output picture of all icons (default list.ppm)"
+  echo >&2 "NOTE: file format reading in depends on the suffix of file"
+  exit 1
+}
+
+width=900  
+colors=256         # quantize results to this many colors
+back="-black"      # default background color
+text=true
+output=list.ppm
+
+while [ 1 ]; do
+  case  "$1"  in
+    -[0-9]*) width=`expr - $1` ;;
+    -c*)     colors="$2"; shift ;;
+    -b*)     back="-black" ;;
+    -w*)     back="-white" ;;
+    -n*)     text="" ;;
+    -o*)     output="$2"; shift ;;
+    -*)      Usage ;;
+    *)       break ;;
+  esac
+  shift 
+done
+[ $# -eq 0 ] && Usage
+
+itemfile="/tmp/pl.i.$$"   # row and item temporary files
+rowfile="/tmp/pl.r.$$"
+tmpfile="/tmp/pl.$$"
+
+trap 'rm -f ${rowfile}* ${itemfile}*; exit 1' 1 2 3 15
+
+item=0             # number of items in item_list
+item_list=""       # item images to place into rows
+row=0              # number of rows in row_list
+row_list=""        # row images to place into a column
+row_width=0        # total width of the current row
+b="                                                                      "
+
+#error() {
+#  echo >&2 -n $b
+#  echo >&2 "item      = '$item'"
+#  echo >&2 "item_list = '$item_list'"
+#  echo >&2 "row       = '$row'"
+#  echo >&2 "row_list  = '$row_list'"
+#  echo >&2 "maxformat = '$maxformat'"
+#  exit 10
+#}
+
+for i in $*; do
+  echo -n "${b}  listing \"$i\""
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read \"$i\""
+    continue
+  fi
+ 
+  name="`basename $i`"
+  suffix="`expr "$name" : '.*\.\([^.]*\)'`"
+  name="`expr "$name" : '\([^.]*\)'`"
+
+  case "$suffix" in
+    pbm|pgm|ppm|pnm) cat $i > $tmpfile ;;
+    xbm) sed 's/unsigned //' "$i" | xbmtopbm > $tmpfile ;;
+    xpm) x2p.sed "$i" | xpmtoppm  > $tmpfile ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         continue
+  esac
+  if [ ! -s $tmpfile ]; then
+    echo -n "${b}"
+    echo >&2 "Bad xpm file \"$i\""
+    continue
+  fi
+
+  item_out=${itemfile}.${row}.${item}
+  if [ "$text" ]; then
+    if [ "$back" = "-white" ]; then
+      pbmtext "$name" | pnmcat $back -tb $tmpfile - > $item_out
+    else
+      pbmtext "$name" | pnminvert |\
+                  pnmcat $back -tb $tmpfile - > $item_out
+    fi
+    rm -f $tmpfile
+  else  # no text so just use image direct
+    mv $tmpfile $item_out
+  fi
+
+  # calculate items width
+  desc=`pnmfile $item_out`
+  wdth=`expr "$desc" : '.*\<\([0-9][0-9]*\) *by'`
+
+  if [ $wdth -gt $width ]; then     # check that it can be output
+    echo -n "${b}"
+    echo >&2 "$type \"$i\" too wide for list"
+    continue
+  fi
+
+  new_width=`expr $row_width + $wdth`
+  if [ $new_width -le $width ]; then   # just add to the row of items
+
+    item=`expr $item + 1`
+    item_list="$item_list $item_out"
+    row_width=$new_width
+
+  else                         # ok concatanate the images into a row
+
+    row_out=${rowfile}.${row}
+    if [ $item -le 1 ]; then   # if row consists of only one item
+      mv $item_list $row_out   # just move that item
+    else                       # concat multiple items
+      pnmcat $back -lr -jbottom $item_list | ppmquant -quiet $colors > $row_out
+    fi
+    row=`expr $row + 1`
+    row_list="$row_list $row_out"
+
+    # now tack the last item into the next row list
+    [ "$text" ] && rm -f $item_list    # remove named item images
+    item=1;
+    item_list="$item_out"
+    row_width=$wdth
+
+  fi
+done
+
+# --- concatanate the last row of items together ---
+
+echo -n "${b}  Final Construction"
+
+row_out=${rowfile}.${row}
+if [ $item -eq 1 ]; then   # if row consists of only one item
+  mv $item_list $row_out   # just move that item
+else  # concat multiple items
+  pnmcat $back -lr -jbottom $item_list | ppmquant -quiet $colors > $row_out
+fi
+[ "$text" ] && rm -f $item_list  # remove named item images
+row=`expr $row + 1`
+row_list="$row_list $row_out"
+
+# --- concatanate all the rows together and send to standard output
+
+echo -n "${b}  Outputting List"
+
+if [ $row -eq 1 ]; then   # if only one row produced
+  cat $row_list > $output          # output that row
+else
+  pnmcat $back -tb $row_list | ppmquant -quiet $colors > $output
+fi
+rm -f $row_list  # remove all the row images
+
+echo "${b}Done. Result in \"$output\"."
+
+exit 0
+

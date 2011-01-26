@@ -1,0 +1,17 @@
+/* XPM */
+static char *LineRight_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"100 3 7 1",
+/* colors */
+"` c tan",
+"a c gainsboro",
+"b c peru",
+"c c grey",
+"d c sienna",
+"e c dark slate grey",
+"f c slate grey",
+/* pixels */
+"acacacaccccccccccccccccccccccccccfccfcfcfcf`fcf`ff`fff`ffffffffffffffffffffffffffeffefefefefefedefee",
+"cacacacacacaccccccccccccccf`cfcf`cf`cf`c`fcfcf`ffcf`f`fff`f`f`fbffbffdffdfdfdfedfdfdfdfdfdfdedfefede",
+"acacaccacccccacccccccccfccccfcccfccfccfcf`f`f`fcf`ff`ff`fffffffffffffffdfffffdffefefefefeefefeedefef"
+};

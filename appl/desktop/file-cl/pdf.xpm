@@ -1,0 +1,34 @@
+/* XPM */
+static char * pdf_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 6 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c red",
+"O	c slate grey",
+"+	c black",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXXoXXX XXX ....",
+" XXXXXoXoXX XXXX ...",
+" XXXXOoXoOX+ + + +..",
+" XXXXXoXoXX+++++++..",
+" XXOXXXooXXXOOOOO+..",
+" XXXXXXooXXXXXOOO+..",
+" XOXXXXoXoXXXOXXO+..",
+" XXXXXoXXXoooooXO+..",
+" XXXXXoXXoooXXXoO+..",
+" XOXXXoooXXXoooXO+..",
+" XXXoooXXXXXXOXXO+..",
+" XXoXoXXXXXXXXXXO+..",
+" XoXXoXXXXXXOXXXO+..",
+" XoXoXXOXXOXXXXXO+..",
+" XXoXXXXXXXXXXXXO+..",
+" XXXXXXXXXXXXXXXO+..",
+" XXXXXXXXXXXXXXXO+..",
+"  OOOOOOOOOOOOOO +..",
+"..++++++++++++++++.."};

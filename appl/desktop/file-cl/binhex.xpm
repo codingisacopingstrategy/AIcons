@@ -1,0 +1,34 @@
+/* XPM */
+static char * binhex_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 6 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c black",
+"O	c slate grey",
+"+	c gainsboro",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XooooooooX XX .....",
+" XooooooooX XXX ....",
+" XXXXooXXXX XXXX ...",
+" XooooooooXo o o o..",
+" XooooooooXooooooo..",
+" XXXXXXXXXXXXOOOOo..",
+" XOooooooOXXXXOOOo..",
+" XooooooooXXXXXXOo..",
+" Xo+OXXXXoXXXXXXOo..",
+" X oooooooXXXXXXOo..",
+" XooOooooOXXXXXXOo..",
+" XOXXXXXXXXXXXXXOo..",
+" Xoo XX ooXXXXXXOo..",
+" XooooooooXXXXXXOo..",
+" XXXXooXXXXXXXXXOo..",
+" XooooooooXXXXXXOo..",
+" Xoo XX ooXXXXXXOo..",
+" XXXXXXXXXXXXXXXOo..",
+"  OOOOOOOOOOOOOO o..",
+"..oooooooooooooooo.."};

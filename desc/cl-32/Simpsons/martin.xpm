@@ -1,0 +1,43 @@
+/* XPM */
+static char *martin_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c peru",
+"X c white",
+"o c gold",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXX     XXXXXXXXX   XXX",
+"XXXXXXXXXXX . ...    XXXX XXXXXX",
+"XXXXXXXXX  . o ......  X XX  XXX",
+"XXXXXXXX .. ooo .......    XXXXX",
+"XXXXXXXX . ooooo . ...... XXXXXX",
+"XXXXXXXXX ooooooo  .. .... XXXXX",
+"XXXXXXXXX oooooooo .. .. .. XXXX",
+"XXXXXXXX  oooooooo   . . .. XXXX",
+"XXXXXXX ooooooooooo  . .. . XXXX",
+"XXXXXXX   oo    ooo o . . . XXXX",
+"XXXXXX XXX  XXXX oooo .  .  XXXX",
+"XXXXXX X X  XX X oooo ..   XXXXX",
+"XXXXXXX   o XXXX ooooo  oo XXXXX",
+"XXXXXXX oooo    oooooooooo XXXXX",
+"XXXXXXX    ooooooooooooooo XXXXX",
+"XXXXXX ooooooooooooooooo  XXXXXX",
+"XXXXX oooooooooooooooooo XXXXXXX",
+"XXXXX ooooooo ooooooooooo XXXXXX",
+"XXXXXX        ooooooooooo XXXXXX",
+"XXXXXXXX ooooo oooooooooo XXXXXX",
+"XXXXXXXX oooooooooooooooo XXXXXX",
+"XXXXXXXXX oooooooooooo   XXXXXXX",
+"XXXXXXXXX  ooooo      XXX XXXXXX",
+"XXXXXXXX XX ooo  XXXXXXXX XXXXXX",
+"XXXXXXXX X     X XXXXXXX XXXXXXX",
+"XXXXXXX X X XX X XXXXXX X XXXXXX",
+"XXXXXXX   XX X XX XXX  XX   XXXX",
+"XXXXXXXXX XXX XXXX   XXX XXX XXX",
+"XXXXXXXX XXXXXXXXXXXXXX XXXXX XX",
+"XXXXXXX                        X"
+};

@@ -1,0 +1,43 @@
+/* XPM */
+static char *campus_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c black",
+"a c firebrick",
+"b c grey",
+"c c yellow",
+/* pixels */
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaa````````b",
+"baaaaaaaaaaaaaa```````````````bb",
+"baaaaaaa`````````````````````bab",
+"baaaaaa``````````````````````bab",
+"baaaaa````````````````ccccccbaab",
+"baaaa``````````ccccccc`````caaab",
+"baaa```````````cc``````````caaab",
+"baa```````````````````````bcaaab",
+"baa``````````````````````bacaaab",
+"ba````````````````bbbbbbbaacaaab",
+"b`````````bbbbbbbb`````aaaabaaab",
+"bbbbbbbbbb``````````````aacccaab",
+"baaaaaaaa```````````````aacccaab",
+"baaaaaaaa```````````````aabbbaab",
+"baaaaaaaa`````````````aaaacccaab",
+"baaaaaaaaaa```````aaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaacccaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaccaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"baaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+};

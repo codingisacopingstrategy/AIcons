@@ -1,0 +1,33 @@
+/* XPM */
+static char * magnify_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c grey",
+"o	c white",
+"O	c firebrick",
+"+	c sienna",
+"@	c slate grey",
+/* pixels */
+"            ....    ",
+"          ..XXXX..  ",
+"         .XooooXXX. ",
+"         .ooooooXX. ",
+"        .ooooooooXX.",
+"        .ooooooooXX.",
+"        .ooooooooXX.",
+"        .ooooooooXX.",
+"        .ooooooooXX.",
+"        O.oooooooX. ",
+"       +O@.oooooXX. ",
+"      +O.@@.oooX..  ",
+"     +O.@O.O....    ",
+"    +O.@O.O         ",
+"   +O.@O.O          ",
+"  +O.@O.O           ",
+" +O.@O.O            ",
+" O.@O.O             ",
+" O@O.O              ",
+"  O.O               "};

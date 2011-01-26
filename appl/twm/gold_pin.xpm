@@ -1,0 +1,22 @@
+/* XPM */
+static char * gold_pin_xpm[] = {
+"14 14 5 1",
+" 	c Gold",
+".	c Orange",
+"X	c Peru",
+"o	c LemonChiffon",
+"O	c Wheat",
+"              ",
+"        ..X   ",
+"       .oooX  ",
+"     ..oOOOoX ",
+"    .o.O   OX ",
+"   .ooOX  ..X ",
+"   .oOO.X.XX  ",
+"   .Oo  .XX   ",
+"    XO  ..X   ",
+"   OXXO.XX    ",
+"  OX  XXX     ",
+" OX           ",
+" X            ",
+"              "};

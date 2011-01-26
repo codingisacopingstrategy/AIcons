@@ -1,0 +1,43 @@
+/* XPM */
+static char *life_preserver_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c DodgerBlue",
+". c red",
+"X c white",
+"o c LemonChiffon",
+/* pixels */
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"             X...X              ",
+"           XXX...XXX            ",
+"     oo   XXXX...Xoooooo        ",
+"    oooooooXXX...ooooo  o       ",
+"    o   XoooXX..ooooXXX  o      ",
+"   oo  XXXoooX  oooXXXXX oo     ",
+"   o   XXXXoo    oXXXXXX  o     ",
+"   o  XXXXXX       XXXXXX  o    ",
+"   o  XXXXX         XXXXX  o    ",
+"   o  .....         .....  o    ",
+"   o  .....         .....  o    ",
+"   o  .....  ooo    .....  o    ",
+"   o  XXXXX  o  oo  XXXXX  o    ",
+"   o  XXXXXXoo   ooXXXXXX  o    ",
+"   oo  XXXXXX     XXXXXX   o    ",
+"    o  XXXXXXX   XXXXXXX   o    ",
+"    oo  XXXXXX...XXXXXX   o     ",
+"     ooooXXXXX...XXXXX    o     ",
+"          XXXX...XXXXo    o     ",
+"           XXX...XXX o  oo      ",
+"             X...X    ooo       ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                ",
+"                                "
+};

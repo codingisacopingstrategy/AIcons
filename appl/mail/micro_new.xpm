@@ -1,0 +1,34 @@
+/* XPM */
+static char * micro_new_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"22 18 10 1",
+/* colors */
+" 	c cyan",
+".	c black",
+"X	c gold",
+"o	c orange",
+"O	c white",
+"+	c sea green",
+"@	c green",
+"#	c lime green",
+"$	c tan",
+"%	c pale green",
+/* pixels */
+"                      ",
+"         ....         ",
+"        .XXXX.        ",
+"       .XXXXXX.       ",
+"      .XXXXXXX.       ",
+"     ....XXXXX..   .  ",
+"    .oooo.XXX.X.  ..  ",
+"   .oooooo.X.XX. .O.  ",
+"   .ooooooo.XXX.. ..  ",
+"   .oo...oo.XX..      ",
+"   .ooo.ooo.X.X.      ",
+"+++.ooooooo.XXX.+++++ ",
+"@#@.ooooooo.XX.@#@#@# ",
+"#@#.ooooooo.X.@#@#@#@ ",
+"@@@.ooooooo...@@@@@@@ ",
+"@@@.........$.@@@@@@@ ",
+"%@%@%@%.$.$$$.@%@%@%@ ",
+"@%@%@%@.$.$$$.%@%@%@% "};

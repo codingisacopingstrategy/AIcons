@@ -1,0 +1,43 @@
+/* XPM */
+static char *chile_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c blue",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"oooooooooooXXXXXXXXXXXXXXXXXXXXX",
+"oooooXoooooXXXXXXXXXXXXXXXXXXXXX",
+"oooooXoooooXXXXXXXXXXXXXXXXXXXXX",
+"ooXXXXXXXooXXXXXXXXXXXXXXXXXXXXX",
+"ooooXXXooooXXXXXXXXXXXXXXXXXXXXX",
+"oooXXoXXoooXXXXXXXXXXXXXXXXXXXXX",
+"ooXXoooXXooXXXXXXXXXXXXXXXXXXXXX",
+"oooooooooooXXXXXXXXXXXXXXXXXXXXX",
+"oooooooooooXXXXXXXXXXXXXXXXXXXXX",
+"oooooooooooXXXXXXXXXXXXXXXXXXXXX",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

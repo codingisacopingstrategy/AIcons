@@ -1,0 +1,43 @@
+/* XPM */
+static char *pages_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"   XXXoooooooooooooooooooooooooo",
+"X   XXXooooooooooooooooooooooooo",
+"    oXXXoooooooooooooooooooooooo",
+"   o XXXXooooooooooooooooooooooo",
+" oooo XXXXoooooooooooooooooooooo",
+"X o.o XXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XX ..o XXXXXXXXXXXXXXXXXXXXXXXXX",
+"    ..o XXXXXXXXXXXXXXXXXXXXXXXX",
+"     ..o XXXXX.......X..X.X...X.",
+" ...  .oo XXXXXXXXXXXXXXXXXXXXXX",
+"  ... ..oo XXXXXX..X.......X....",
+"   ... ..oo XXXXXXXXXXXXXX..XXXX",
+"X   ... ..oo XXXXXX.X..X.X.XXXXX",
+"X    ... ..oo XXXXXXXXXXXXX.....",
+"XX    ... ..oo XXXXXX..X..X..XXX",
+"XXX    .. ...oo XXXXXXXXXXXXXXXX",
+"XXXX   ... ...oo XXXXXX.XXXXXXXX",
+"XXXXX   ... ...oo XXXXX....X....",
+"XXXXXX   ... ..ooo XXXXXXXXXXXXX",
+"XXXXXX    ... ..oo XXXXXX.....XX",
+"XXXXXXXX   ... .ooo XXXXXX...XXX",
+"XXXXXXXX    ... ..oo XXXXXX.....",
+"XXXXXXXXX    .. ..ooo XXXXXXXXXX",
+"XXXXXXXXXX    .. ..ooo XXXXXXXXX"
+};

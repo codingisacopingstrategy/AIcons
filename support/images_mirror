@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# WWW Image Mirror
+#   Download and un-tar the ``Pre-converted WWW Images'' from
+#       Anthony's Icon Library
+#          http://www.cit.gu.edu.au/~anthony/icons/
+# Please modify the various shell variable below to suit.
+#
+# OPTIONS
+#   -v    be verbose in the un-tar operation
+#   -l    list the gifs in the archive ONLY
+#
+# Anthony Thyssen     25 March 1995      <anthony@cit.gu.edu.au>
+#
+#-----------------------------------------------------------------
+# URL to download
+IMAGES="ftp://ftp.cit.gu.edu.au/pub/AIcons/WWW_Images.tar.gz"
+
+# Where to create the "images" sub-directory of WWW images
+# this should be the WWW servers ``document root''
+# DIR=/opt/httpd/www
+# DIR=.
+DIR=/www
+
+# Set the location of various executable needed
+PATH="$PATH:/opt/bin"; export PATH
+GZIP=gzip
+WEB_GET="lynx -dump"
+
+tarflags=xf
+case "$1" in
+-v) tarflags=xvf ;;
+-l) tarflags=tvf ;;
+esac
+
+
+# Download and Un-Tar the WWW Images archive.
+cd $DIR
+$WEB_GET "$IMAGES" | $GZIP -d | tar $tarflags -
+
+exit 0
+

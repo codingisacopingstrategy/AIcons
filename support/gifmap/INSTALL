@@ -1,0 +1,94 @@
+The following are notes to help you install gifmap.
+
+If you are installing gifmap for global use, edit the definitions of
+$opt_prefixpath, $opt_rootpath, $opt_iconpath, $opt_htimage, and
+$opt_maptype in the gifmap script as described in the manual page.
+
+If you are installing gifmap for personal use, place definitions for these
+variables in the $HOME/.gifmaprc file rather than editing the script. This
+will make it easier to update to new versions of the program.
+
+			  Path Configuration
+			  ==================
+
+The following .gifmaprc file path variables will configure gifmap for a Web
+server root of "/html" and gifmap icon path "/html/Images/gifmap".
+
+$opt_prefixpath = '';		# Path or URL to prepend to root URL
+				# Not used if local relative paths used
+$opt_rootpath   = '/html';      # Directory Path to top of html tree
+				# Needed to determine relative paths to images
+$opt_iconpath   = 'Images/gifmap';
+				# Relative path under rootpath / prefixpath
+
+Or, if your images and icons are under your personal HTML directory (e.g.
+http://www.bogus.com/~bfriesen/) which is physically "/home/bfriesen/html"
+and the gifmap icons are in "/home/bfriesen/html/icons/gifmap", you can use
+the configuration:
+
+$opt_prefixpath = '/~bfriesen'; # Path or URL to prepend to root URL
+				# Not used if local relative paths used
+$opt_rootpath   = '/home/bfriesen/html'; # Directory Path to top of html tree
+				# Needed to determine relative paths to images
+$opt_iconpath   = 'icons/gifmap';
+				# Relative path under rootpath / prefixpath
+
+			Server Side Imagemaps
+			=====================
+
+In order for server-side imagemaps (used by older browsers) to work
+properly, some configuration may be required. The default configuration is
+for the original CERN server as follows:
+
+# Server-side imagemap settings
+$opt_htimage='/cgi-bin/htimage'; # Base URL to server-side imagemap CGI
+			# On some systems this is /cgi-bin/imagemap
+			# Set to '' to use a ".map" URL with
+			# relative URLs (latest NCSA & Apache)
+$opt_maptype='cern';	# Maptype must be "cern" or "ncsa". If
+			# you are using Apache, specify "ncsa".
+			# Case *is* significant
+
+
+If you are using a recent NCSA or Apache server that supports server-side
+imagemaps using relative URLs, then you can use values similar to the
+following:
+
+# Server-side imagemap settings
+$opt_htimage='';	# Base URL to server-side imagemap CGI
+			# On some systems this is /cgi-bin/imagemap
+			# Set to '' to use a ".map" URL with
+			# relative URLs (latest NCSA & Apache)
+$opt_maptype='ncsa';	# Maptype must be "cern" or "ncsa". If
+			# you are using Apache, specify "ncsa".
+			# Case *is* significant
+
+
+			     INSTALLATION
+			     ============
+
+If you would like an automated installation, execute the provided configure
+script specifying a --prefix option for a GNU-style directory heriarchy you
+would like to install in (e.g. "./configure --prefix=/opt/tools"). Then
+"make install". This will install gifmap and its manual page. The #! line
+will be edited to reflect the location of your PERL interpreter. The gifmap
+icons will *not* be automatically installed. You must copy these into place
+by hand. The only requirement is that they share the same directory
+somewhere under the same server "root" as the images you want to catalogue.
+
+Please be careful than when running gifmap you are in the correct directory.
+If you are in the wrong directory (such as in the server's root),
+you can do serious damage because gifmap will overwrite all your
+HTML index files. To ensure that gifmap never generates HTML index
+files in a particular directory you can create a ".gifmaprc" file
+in that directory with the line:
+    $opt_ignore = 1;  # ignore this directory (though link it in)
+
+If no sub-directories are to be have gifmap applied (if run with
+the option ``-recurse'') you can also add the line:
+     $opt_prune = 1;  # prune all sub-directories for recursive runs
+
+If you encounter any difficulties, have suggestions, or accolades, feel
+free to send gifmap's author (Bob Friesenhahn, bfriesen@simple.dallas.tx.us)
+an email.
+

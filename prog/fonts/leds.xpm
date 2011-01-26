@@ -1,0 +1,30 @@
+/* XPM */
+static char *set16_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 20 3 1",
+/* colors */
+"  c black",
+". c white",
+"X c slate grey",
+/* pixels */
+"                                                                                                                                                      ",
+" X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X ",
+"                                                                                                                                                      ",
+" X X X . X X X  X X .X.X. X X  X .X.X.X.X. X  X X X X . X X  X .X.X.X.X. X  X X X .X. X X  X .X.X.X.X. X  X X .X.X. X X  X X .X.X. X X  X X .X.X. X X ",
+"       X           X     X              X            XX        X                 X                   X       X     X        X     X        X     X    ",
+" X X .X. X X X  X . X X X . X  X X X X . X X  X X X . . X X  X . X X X X X  X X . X X X X  X X X X X . X  X . X X X . X  X . X X X . X  X . X X X . X ",
+"       X                  X           X            X  X        X               X                    X       X       X      X       X      X      XX   ",
+" X X X . X X X  X X X X X . X  X X X . X X X  X X . X . X X  X .X.X.X. X X  X . X X X X X  X X X X . X X  X . X X X . X  X . X X X . X  X . X X . . X ",
+"       X                 X            X          X    X               X       X                   X          X     X        X      X      X    X  X   ",
+" X X X . X X X  X X X X . X X  X X X X . X X  X . X X . X X  X X X X X . X  X .X.X.X. X X  X X X . X X X  X X .X.X. X X  X X .X.X.X. X  X . X . X . X ",
+"       X               X                X       X     X                X      X      X          X            X     X               X      X  X    X   ",
+" X X X . X X X  X X X . X X X  X X X X X . X  X .X.X.X.X. X  X X X X X . X  X . X X X . X  X X . X X X X  X . X X X . X  X X X X X . X  X . . X X . X ",
+"       X             X                   X            X                X      X       X        X            X       X             X       XX      X   ",
+" X X X . X X X  X X . X X X X  X . X X X . X  X X X X . X X  X . X X X . X  X . X X X . X  X X . X X X X  X . X X X . X  X X X X . X X  X . X X X . X ",
+"       X           X              X     X             X         X     X        X     X         X             X     X            X          X     X    ",
+" X X .X.X. X X  X .X.X.X.X. X  X X .X.X. X X  X X X X . X X  X X .X.X. X X  X X .X.X. X X  X X . X X X X  X X .X.X. X X  X X .X. X X X  X X .X.X. X X ",
+"                                                                                                                                                      ",
+" X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X ",
+"                                                                                                                                                      ",
+" X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X  X X X X X X X "
+};

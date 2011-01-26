@@ -1,0 +1,33 @@
+/* XPM */
+static char * isn_prev_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"18 18 9 1",
+/* colors */
+" 	c grey",
+".	c slate grey",
+"X	c white",
+"o	c tomato",
+"O	c red",
+"+	c black",
+"@	c tan",
+"#	c dark slate grey",
+"$	c firebrick",
+/* pixels */
+"        . X     . ",
+"        . X X  X  ",
+"        .X  .  XX ",
+"        . X Xo. X ",
+"        .  oOO+.  ",
+"        @oOOOO+#XX",
+"      oOOOOOOO+#. ",
+"   @oOOOOOOOOO+#  ",
+"   $$OOOOOOOOO+#X ",
+"     $$OOOOOOO+#X.",
+"       $$OOOOO+#  ",
+"        .$$OOO+#X ",
+"        .  $$O+#. ",
+"        . X  $+#X ",
+"        .   X.    ",
+"        .X   X  XX",
+"        .X X X X  ",
+"        .XXX X   X"};

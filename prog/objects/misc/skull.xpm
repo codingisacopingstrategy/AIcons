@@ -1,0 +1,33 @@
+/* XPM */
+static char * skull_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 19 8 1",
+/* colors */
+" 	s None	c None",
+".	c wheat",
+"X	c lemon chiffon",
+"o	c white",
+"O	c grey",
+"+	c tan",
+"@	c peru",
+"#	c dark slate grey",
+/* pixels */
+"       ......       ",
+"     ...XXXXX.      ",
+"   ..X.XooooooXX    ",
+"  ....X.XXoooooX.   ",
+"  O++OO..XXXooooX.  ",
+" O+++++O.XXXXooooXX ",
+"O++OOO++..XXXXoXXXX ",
+"O+OOOO++O+.XooX.o.. ",
+"OOOOOO+++O.+@.ooO++o",
+"OOO+O+O@O.X##+Xo+@@o",
+"OO+++++@O.+##@O..##X",
+"OOO+++@@O.+##+O.o##.",
+" OOOOO.XXXoooXOOoooX",
+"  O++@+O.XXXXOO##.XX",
+"   O@@@+O...O..OXo..",
+"    @@@@@@++OXXX.oo+",
+"          OO+.XXXXX.",
+"          OO+++....O",
+"             OO#oo  "};

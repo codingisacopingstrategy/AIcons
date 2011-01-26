@@ -1,0 +1,19 @@
+/* XPM */
+static char *line_gray_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"540 6 6 1",
+/* colors */
+"` c black",
+"a c tan",
+"b c grey",
+"c c sienna",
+"d c dark slate grey",
+"e c slate grey",
+/* pixels */
+"``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``ddddee``dd",
+"`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`ddece`d`d",
+"`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcdceea`dcd",
+"dddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaedddeeeaeddde",
+"dceceaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebceceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebcdceeaebceceeaebcdceeaebcdec",
+"ceeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbeeeeebbbedeeebbbeeeeebbbecee"
+};

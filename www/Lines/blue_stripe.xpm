@@ -1,0 +1,26 @@
+/* XPM */
+static char *bluestripe_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"450 11 8 1",
+/* colors */
+"` c cyan",
+"a c dodger blue",
+"b c lavender",
+"c c sky blue",
+"d c grey",
+"e c white",
+"f c slate grey",
+"g c blue",
+/* pixels */
+"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+"daaa`ceed``aaa`cbcccedc```aaaaaaaaaaaaaaaa``d`aaaaaaa``ccbdb`aaa``cc`a`baaaaaaa`be`aaaaaaaa`e``aaaa`e`aaaa```c````````aaaaaaaaa``cceb`aaaaaa`ccaaaaa`dc```ccaa`ebbecaa`c`a`````````cedc`````aaa````aaab``a`c`a`e``ce`aaa`bec`a``aaaaa`ce``aaa```bbdeeeeedc`aaa```c``aa`e```bb`aa`cbeebc``ceeeeb``````aaaaaa`````aaaac`a`bdecaa`ec`cbaa`caaa`e`a`dbbcc``ccedc`````````bdc```````beee`aa`d```e``aaa``cbbc```cbdec``aaa`baaaaaaa`e`aaaaaa`ceccc``````cbeeedbccb`aaa``",
+"daaaaa````aaaaaacccccbec``aaaaaaaaaa`aaaaaa``b`aaaaaaaa``cbbc`aaa`bbcb`a``aaaaa``d`aaaaaaaa``cec`aaaa`ec`````ccc``````aaaa``c``aa``cceb`aaaaaa`b`aaaaa`edccdb`aa`deee`aacc`````````cbeec`````aaa```c``aac``a`c`a`ceec`aa`ce``e`a`caaa``bc`aaaa``ccbc```````aaaa```cc``aa`e```bb`a`cdeeebbee`````dc`````aaaa``````aaaaa``a`ebe`aa`ec`bcaac`aaa`daa`eeeebedeec`````````cbbc``aaaa``cddb`aacb``cdc```beeeecc`cbeedc`aaaa`b`aaaaaa`d`a`bdb`aa`dcc`````ccdeeeec```b`aaa",
+"db`aaaa````aaa``aa`ccbeb``aaaaaaaaaaaaaaaaaa`cc`aaaaaaaaaaccc`aaaacbc`ac`ac`aaaa`cc`aaa``aaa```cdc``aa``dbcccbbbc`````aaaaa`dbbe`aaa```be`aaaaaa`e`aaaa``beec``aa`ceeee`aa`ecceeeeeeeeeecc```aaaa`cbeeb`aac``a`c`aa```aaa`bc```eaa`c````ccaaaa````c``aaaaaaaaaaa````cc`aaa`e```bcaa`beeeeed``aaaaa`e````a````cebbc`aaaaa``a`eee`aa`dccb`aae`aaa`caacbeddddbc``````````cbb``aaaaaaa`cbc`aa`bccccbbedddedecccbddbbb`aaaaa`b`aaaaaac`a`b```caa`bc`````cbdeeebc```cbag",
+"d`ccaaaa```aaaaa`aaaa`cc`aagggaaaaaaaaaaaaaaaac`aaaggggaaaaa``aaaaac`aaaaaaaaaaaaac`aga```aagaaaa`cc`aaa``bebbcbc``aaaaaggga`e`a`c`agaaaa`d`agggggaeaggaaa````aaggaa`cedcaga`cbc`````cbbcc``aaggaaceebebd`aa``aaa`cagggggaacc`aa`caaaaaa``caaaaaa``aaaagaaaaaaaaaaa`````aaga`caaac`agacdebdcaagaaaaaacaaaaaaa`b`aaacaagaaa`aga``aaga`bccc`aabaaaacaaacbbbbc```aaaaaaaa`cbc`aagggggaa`caaaaacc```cccbbbebc```cbc```caaaaaaacaaaaaaaaaacaaaacaa````````bbccccbc``cca",
+"daa`d`aa`cbb`aaa`ccaaaaaaaaggaaaaaaaaaaaaaaaaaacaaagggggggaaaaaaaaaccaaaagaaaaaaaaa``agacbccaagaaaaa`cc````cbedbc``aaaaagggga`e`aa`b`agaaaa`b`aggaggaeagaaa```aaggaaa``cbc`agaaaaaaaaa``cbcc`aaga`ec````ccd`aac`aaaae`aagaaa`c``aa``aaaaa``aaaaaaaaaaaggaa`ccc`aaaaaa```aaaagab`aaa``agabbcbcaga`c`caaacaaaaa`c`aaggaaaaaaag`agaaaagaacccccaaaaaaaaaaaaccccc``aaaaaaaaaacc`aaagggggga``aaaa`c`````ccccbbc``aa`cc``aaaaagaaa`caaaaaacaa`aagaaaaac`aaaa`cc````cbbbca",
+"d````b```cb```aaaaccaaagaaggggaaaaaaaaagaaaaaaaaaaaggggggggggaacaga`b`aaagggaaaaacaaccaaaac`c`aggaaaaaacbccccbbebc`aaaaggggggaa`b```ccaggaaaaac`aggaga``gaa`cbc`aggaaaa````aaggaaaagggaaa`cbc`aagae`aaaaa``cd`gac`aaaa`b`aaaaa`bc```c`aaacaaaaaaaaaaaaggaac`aaa`e`aaaaa`aaaaaggae`aaa``ga`b``b`aa``aaa`aacaaaaaaaagaaaaaaaaagaaaaggggaaccccccaaaaaaaaaa`cccc`aaaaaaggggaaa`aaaaggggggacaagaac`aaaaa`cccbc`aaaaaaaaaaaacaaaaaacaaaaaac`aacaaaacaac`aaaaaacc``a```aa",
+"dbc`cdaaaaacaaaaaagaaaagggggggaaaaaaaaagggaaaaaagacaggggggggggggaaggcaaaggggggacagaacccaggaaccaagggggggaaacdccccddaaagggggggggggaadccccagggggggaaagggggaaggacdcccagggggaaaaaggggggggggggggaacdcaggadagggggaacdcagadaggggacaaaaaacdcaacdaggacaaaaaagggggggaaaaggggadaaaaaaaaagggggadaagacggadaaadagaagggaagaaagaaaaaggaaagaaggggaaaagggaacccccccaaaagggaccccccaaaaaaggggaaaaaaaaggggggaaaagaacaaaaaaaaccccaaagggggaaaaaaacagaaacaaaaaaadaggaaacaggaaaggggaaccaaaagg",
+"d`cdcaagggggaaagaaagggggggggggaaaaaaaaaggggaaacdcagafgggggggggggggaagaaaaaagggaaaaggaaacaaggaaaaggggggggggaaadcaaacdagggggggggggggaaccaaaggggggggaaaagggacggacaaaadagggaaaaaagggggggggggggggaacdcaggaaggggggaadcaggadaggggaacaaaaacdccddaaggacaaaaaggggggggaaagggggadaaaaaaaaagggggadaaacggadaaaadagaagggaagaaaggaaaggaaaagaagggaacaaaaaaccddccccaaggaacaaaaacaaaaaggggaaaagacaaaggggaaaaggaaaagggggaaacdcaagggggggaaaaaaacagaaaaaaaaaccdaggaaagggaaagggggaadaaggg",
+"d`aaaaagggggggaaggadaggggggggggaaccaaaagggggaacdcadagacgggggggggggggaagaaaaaaaaaaadagggaaaaaggggggggaaagggggaaadaaaaccagggggggggggggaaaaaggggggggggaacaaadaggacaaaaadaggaaacaagggggggggggggggggacdcaggcggggggaadaaaggacaggggaccaaaacddddcaagggaccacaggggggggadaggggggaccaacaaaaggggggaccaaggadaaaaadagaaggaaggdaggggaagaacaggaaaaaadaaaaaacccccddddaaaacaggggaacaaaggggaaaacagadaaaaaaaaaggacaaggggggaaaddcaaggggggggacaagaaaggaaaaaaaaaddagggggggadaaggggggadaggg",
+"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+};

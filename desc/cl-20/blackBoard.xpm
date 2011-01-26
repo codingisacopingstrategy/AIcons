@@ -1,0 +1,31 @@
+/* XPM */
+static char * blackBoard_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c dark slate grey",
+"o	c gainsboro",
+"O	c slate grey",
+/* pixels */
+"                    ",
+"....................",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXoXoX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXoooXXooXXooXoXoX.",
+".XoXXoXoXXXoXXXoXoX.",
+".XoXXoXXoXXoXXXoXoX.",
+".XoXXoXXXoXoXXXoXoX.",
+".XXooXoooXXXooXoXoX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+"....................",
+"OOOOOOOOOOOOOOOOOOOO",
+"....................",
+"                    "};

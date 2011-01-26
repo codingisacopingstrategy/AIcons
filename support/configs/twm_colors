@@ -1,0 +1,98 @@
+<PLAINTEXT>
+===============================================================================
+Layout scheme 
+Color {
+    Border/Foreground     "color"      Background             "color"
+   }
+===============================================================================
+Default colour scheme of TWM
+Color {
+    BorderColor           "slategrey"
+    DefaultForeground     "gray85"      DefaultBackground     "maroon"
+    TitleForeground       "gray85"      TitleBackground       "maroon"
+    MenuForeground        "gray85"      MenuBackground        "maroon"
+    MenuTitleForeground   "maroon"      MenuTitleBackground   "gray70"
+    IconManagerForeground "gray85"      IconManagerBackground "maroon"
+    IconForeground        "gray85"      IconBackground        "maroon"
+    IconBorderColor       "gray85"
+   }
+
+-------------------------------------------------------------------------------
+Griffith & Flinders University  
+Color {
+    BorderColor           "black"
+    DefaultForeground     "black"       DefaultBackground     "white"
+    TitleForeground       "black"       TitleBackground       "tomato"
+    MenuTitleForeground   "black"       MenuTitleBackground   "tomato"
+    MenuForeground        "black"       MenuBackground        "aquamarine"
+    IconManagerForeground "black"       IconManagerBackground "wheat"
+    IconForeground        "black"       IconBackground        "wheat"
+    IconBorderColor       "black"
+   }
+
+-------------------------------------------------------------------------------
+Chalmers University (Sweden)
+Color {
+    BorderColor           "red"
+    BorderTileForeground  "red"          BorderTileBackground  "black"
+    TitleForeground       "black"        TitleBackground       "cyan"
+    MenuTitleForeground   "white"        MenuTitleBackground   "SkyBlue"
+    MenuForeground        "yellow"       MenuBackground        "orchid"
+    MenuShadowColor       "firebrick"
+    IconManagerForeground "black"        IconManagerBackground "gold"
+    IconForeground        "firebrick"    IconBackground        "coral"
+    IconBorderColor       "green"
+}
+
+-------------------------------------------------------------------------------
+Purdue University Computing Center
+Color {
+    BorderColor           "cornsilk"
+    DefaultForeground     "yellow"       DefaultBackground     "navy"
+    TitleForeground       "yellow"       TitleBackground       "blue"
+    MenuTitleForeground   "red"          MenuTitleBackground   "wheat"
+    MenuForeground        "yellow"       MenuBackground        "black"
+    MenuShadowColor       "maroon"
+    IconManagerForeground "pink"         IconManagerBackground "darkgreen"
+    IconForeground        "yellow"       IconBackground        "blue"
+    IconBorderColor       "red"
+}
+
+-------------------------------------------------------------------------------
+Micheal Lawley's color scheme
+Color {
+    BorderColor           "red"
+    BorderTileForeground  "blue"         BorderTileBackground  "yellow"
+    TitleForeground       "white"        TitleBackground       "blue"
+    MenuTitleForeground   "red"          MenuTitleBackground   "blue"
+    MenuForeground        "yellow"       MenuBackground        "darkgreen"
+    IconForeground        "darkgreen"    IconBackground        "cadetblue"
+    IconBorderColor       "green"
+}
+
+-------------------------------------------------------------------------------
+Sketchley's color schmeme (very dark)
+Color {
+    BorderColor           "grey"
+    DefaultForeground     "gray85"       DefaultBackground     "turquoise4"
+    TitleForeground       "black"        TitleBackground       "darkturquoise"
+    MenuTitleForeground   "black"        MenuTitleBackground   "seaGreen"
+    MenuForeground        "gray85"       MenuBackground        "DarkOliveGreen4"
+    IconManagerForeground "white"        IconManagerBackground "seaGreen"
+    IconManagerHighlight  "red"
+    IconForeground        "gray85"       IconBackground        "darkturquoise"
+    IconBorderColor       "white"
+}
+
+-------------------------------------------------------------------------------
+James Cook University (Stuart)
+Color {
+    BorderColor           "black"
+    TitleForeground       "ivory"        TitleBackground       "Blue"
+    MenuTitleForeground   "ivory"        MenuTitleBackground   "Red"
+    MenuForeground        "black"        MenuBackground        "ivory"
+    IconForeground        "black"        IconBackground        "ivory"
+    IconBorderColor       "black"
+
+}
+-------------------------------------------------------------------------------

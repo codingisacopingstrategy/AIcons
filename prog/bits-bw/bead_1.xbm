@@ -1,0 +1,4 @@
+#define noname_width 4
+#define noname_height 4
+static char noname_bits[] = {
+ 0x06,0x09,0x0f,0x06};

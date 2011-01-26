@@ -1,0 +1,43 @@
+/* XPM */
+static char *binoculars_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXX         XXX         XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX         XXX         XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX ..ooooo XXX ..ooooo XXXXXX",
+"XXXXX ..ooooo     ..ooooo XXXXXX",
+"XXXXX ..ooooo ooo ..ooooo XXXXXX",
+"XXXXX ..oooo       .ooooo XXXXXX",
+"XXXXX ..oooo ..ooo .ooooo XXXXXX",
+"XXXXX ..oooo       .ooooo XXXXXX",
+"XXXXX ..ooooo     ..ooooo XXXXXX",
+"XXXXX          X          XXXXXX",
+"XXXXXXX ...ooo X ....oo XXXXXXXX",
+"XXXXXXX        X        XXXXXXXX",
+"XXXXXXXXX ooo XXX ooo XXXXXXXXXX",
+"XXXXXXXXX     XXX     XXXXXXXXXX",
+"XXXXXXXX ooooo X ooooo XXXXXXXXX",
+"XXXXXXXX       X       XXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

@@ -1,0 +1,23 @@
+/* XPM */
+static char * title_leopard_xpm[] = {
+"100 16 4 1",
+" 	c Orange",
+".	c Tomato",
+"X	c Red",
+"o	c Firebrick",
+" .Xo........  .ooo..... XXo...   o.......... ............. ...XXXXo....... ......Xo. ...Xo..     ...",
+" .Xo...  ... . ....   ..ooo.  ...o...  ..       ....     . ..Xoooo..    o. ......Xo.. ..Xo. ....o...",
+"..Xo.. .. o. ..   . ..  .... ....Xo. ..o.  ....Xo.  ..XXo. .Xo...... ...o.. .....Xo. ...Xo. ..Xo..  ",
+"XXo... ..Xo. ....o. ...   .. ...Xo.. ..o.. ...XXo. ..Xoo. .Xo.    o. ....o. XXXXXXo. ...Xo. ..o.. ..",
+"oo... ...Xo. ...Xo. .....Xo.. XXoo. ...Xo. .XXooo. .Xo.. XXo. ....o.. ....o.ooXooo..  .XXo. XXo.. XX",
+"...  ....Xo. ..XXo. .....XXo. Xo... ....o. Xoo.... .Xo.. oo. ......oo. ...Xo..o.......  Xo. oo...ooo",
+".  ......Xo. XXXoo. ...XXXo.. o... .....o. o.   o. .Xo...... .......o.. ...Xo...     ... o..........",
+" .......XXo..oooo.. XXoooo....... ......Xo... ..o.. .Xo.  o. .......Xo.  ..Xo... o...  .....   .. o.",
+" .....XXXoo....... Xoo..   ..  ...oo.....o.. ...oo. .Xo. .o. XX......o.. ..Xo....oo....o... ...  Xo.",
+".....XXoo...   o.. o..  ..oo. .   ..  ...Xo. ....o. Xo.. .o. oooX....Xo. XXo..  o.. ....o. .....Xo. ",
+"XX..XXo...  ..Xoo...  ....Xo. ...Xo.. ....Xo o..Xo. o.  .Xo.....oX..XXo. oo.. .Xo.. ...Xo.  ...Xo.. ",
+"ooXXXo...  ...XXo.  .....XXo. ....Xo. XXXXXo.o..Xo.... .Xo...  ..oXXXo.....  ...Xo. ...Xo.. ..Xo....",
+"..ooo... .....Xo.. oXXXXXooo. ....Xo..ooooo...o..Xo.. .Xo..  ..o..ooXo.    ....XXo. ..Xo..  ..Xo.  o",
+"oo....  ......Xo....ooooo.... oXXXXoo.........oX.Xo.  Xo.. .....oo..o. ........Xo. ..XXo. ...XXo ...",
+".Xo..  .......Xo.  .......  ..oooooo..       o.oXXo. .Xo. .......Xo... .......Xo.. XXoo.  XXXoo. ...",
+"Xoo. .........Xo. .o..       ........  .....Xo..oXo. Xo.. ........Xo.. ......XXo.. oo... oooo.... .."};

@@ -1,0 +1,43 @@
+/* XPM */
+static char *hash_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c firebrick",
+". c red",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXX...XXXXXXXX...XXXXXXXXXXX",
+"XXXXXXX.X.  XXXXXX.X.  XXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"X.......X..........X.......XXXXX",
+"X.XXXXXXXXXXXXXXXXXXXXXXXX.  XXX",
+"X.......X..........X.......  oXX",
+"XXX    .X.        .X.        oXX",
+"XXX    .X.        .X.        oXX",
+"XXXXooo.X.  oooooo.X.  oooooooXX",
+"XXXXXXX.X.  XXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  XXXXXX.X.  oXXXXXXXX",
+"X.......X..........X.......XXXXX",
+"X.XXXXXXXXXXXXXXXXXXXXXXXX.  XXX",
+"X.......X..........X.......  oXX",
+"XXX    .X.        .X.        oXX",
+"XXX    .X.        .X.        oXX",
+"XXXXooo.X.  oooooo.X.  oooooooXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX.X.  oXXXXX.X.  oXXXXXXXX",
+"XXXXXXX...  oXXXXX...  oXXXXXXXX",
+"XXXXXXXX    oXXXXXX    oXXXXXXXX",
+"XXXXXXXX    oXXXXXX    oXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

@@ -1,0 +1,4 @@
+-loop 300
+-dispose 1
+-delay 50 b_red.xpm
+-delay 20 b_grey.xpm

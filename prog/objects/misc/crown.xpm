@@ -1,0 +1,27 @@
+/* XPM */
+static char *crown_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 13 7 1",
+/* colors */
+"  c firebrick",
+". c red",
+"X c navy blue",
+"o c gold",
+"O c orange",
+"+ c None",
+"@ c blue",
+/* pixels */
+"o++++++++++++++++++o",
+"ooo++++++oo++++++ooo",
+"oOoo++++oOOo++++ooOo",
+"oOOoo++oOooOo++ooOOo",
+"oOoOoo+oOooOo+ooOoOo",
+"oOooOooOooooOooOooOo",
+"oOoooooooXXoooooooOo",
+"ooo ooooXXX@oooo ooo",
+"oo  .oooXXX@ooo  .oo",
+"ooo.oooo@X@@oooo.ooo",
+"OOOOOOOOo@@oOOOOOOOO",
+"oooooooooooooooooooo",
+"OOOOOOOOOOOOOOOOOOOO"
+};

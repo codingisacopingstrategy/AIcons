@@ -1,0 +1,17 @@
+/* XPM */
+static char * hv_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"8 8 3 1",
+/* colors */
+" 	s None	c None",
+".	c Black",
+"X	c White",
+/* pixels */
+"  .XX.  ",
+"  .XX.  ",
+"  .XX.  ",
+"...XX...",
+"XXXXXXXX",
+"...XX...",
+"  .XX.  ",
+"  .XX.  "};

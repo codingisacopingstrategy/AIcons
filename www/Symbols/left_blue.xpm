@@ -1,0 +1,26 @@
+/* XPM */
+static char * left_blue_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 4 1",
+/* colors */
+" 	s None	c None",
+".	c dodger blue",
+"X	c navy",
+"o	c blue",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"         ..         ",
+"        ..X         ",
+"       ..oX         ",
+"      ..ooX.....    ",
+"     ..ooooooooX    ",
+"    ..oooooooooX    ",
+"     XoooooooooX    ",
+"      XoooXXXXXX    ",
+"       XooX         ",
+"        XoX         ",
+"         XX         ",
+"                    ",
+"                    "};

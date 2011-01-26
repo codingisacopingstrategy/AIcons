@@ -1,0 +1,23 @@
+/* XPM */
+static char * zigzag_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 3 1",
+/* colors */
+" 	c black",
+".	c white",
+"X	c grey",
+/* pixels */
+" .X X. X.X .XX",
+" XXXX. ..  .XX",
+"XX.X X .X .. X",
+"X XXXX..  .X .",
+"XXX.X .X ..  X",
+".X XXX.  .X .X",
+"XXXX.XX ..  . ",
+"X.X XX  .X ..X",
+" XXXX. ..  .XX",
+"XX.X X .X .. X",
+"X XXXX..  .X .",
+"XXX.X .X ..  X",
+".X XXX.  .X .X",
+"XXXX.XX ..  . "};

@@ -1,0 +1,89 @@
+#!/bin/sh -
+#
+# xbm2gif [-t] files...
+#
+#   This uses the pbmplus package to convert the xpm files to GIF format
+#
+# If transparency (-t) flag is given, the white color in X bitmaps and the
+# transparent color of X pixmaps, is first converted into a grey color (as
+# used in WWW clients) and then this color is set as the transparent color
+# inside the GIF image.  This make the Bitmap or Pixmap appropriate for
+# direct use on a WWW server in a form which is usable by the maximum
+# number of web clients including those which do not understand the
+# transparent GIF extension.
+# 
+# If the transparency flag is not given the transparent color is converted
+# into the `white' by default by the PbmPlus utilities.
+#
+# The script also checks X Pixmaps for the "None" color before actually
+# applying the transparancy (-t) option. This stops some Web Clients
+# mis-interperting the GIF transparency on other `close' grey shades in the
+# image.
+#
+# NOTE: created files are placed in the current directory, not the
+# directory of the source X Bitmap/Pixmap file. This is a feature
+# exploited by other scripts to convert whole directories of gif files
+# into a completely different directory (the current).
+# 
+#  Anthony Thyssen         12 Feburary 1995     anthony@cit.gu.edu.au
+#
+# -------
+
+TRANS=
+if [ "X$1" = "X-t" ]; then
+  TRANS="#BFBFBF"  # the transparent color to use.
+  shift
+fi
+
+exec 9>&1
+
+for i in "$@" ; do
+
+  if [ ! -r $i ]; then
+    echo >&2 "Unable to read \"$i\""
+    continue
+  fi
+
+  echo >&9 "converting \"$i\""
+
+  name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+  suffix="`expr "$name" : '.*\.\([^.]*\)$'`"   # extract last suffix 
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"     # remove last suffix
+
+  case "$suffix" in
+    xbm)  # ------ X Bitmap ------
+      if [ "$TRANS" ]; then
+        # Make white (background) transparent
+        sed 's/unsigned //' "$i" | xbmtopbm |\
+          pnmdepth 255 2>/dev/null | pgmtoppm "$TRANS" |\
+          ppmtogif -transparent "$TRANS" 2>&1  1>"$name.gif"
+      else
+        # just plain conversion
+        sed 's/unsigned //' "$i" | xbmtopbm | ppmtogif 2>&1  1>"$name.gif"
+      fi
+      ;;
+    xpm)  # ------- X Pixmap ------
+      if [ $TRANS ] && grep 'c  *[Nn]one' "$i" >/dev/null; then
+        # Make "None" color transparent
+        sed "s/c  *[Nn]one/c $TRANS/g" "$i" | x2p.sed |\
+          xpmtoppm | pnmdepth 255 2>/dev/null |\
+              ppmtogif -transparent "$TRANS" 2>&1  1>"$name.gif"
+      else
+        # just plain conversion
+        x2p.sed "$i" | xpmtoppm | pnmdepth 255 2>/dev/null |\
+              ppmtogif 2>&1  1>"$name.gif"
+      fi 
+      ;;
+    *)
+      echo >&2 "Unknown suffix for \"$i\"."
+      continue
+      ;;
+  esac
+
+  if [ ! -s "$name.gif" ]; then
+    rm -f "$name.gif"
+    echo >&2 "Failed to convert \"$i\""
+  fi
+
+done | egrep -v '(computing colormap|colors found)' >&2
+

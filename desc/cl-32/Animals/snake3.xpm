@@ -1,0 +1,43 @@
+/* XPM */
+static char *snake3_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c LimeGreen",
+"X c tomato",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"ooooooooooooo           oooooooo",
+"ooooooooooo  ...........  oooooo",
+"ooooooooo  ...ooo..ooo.... ooooo",
+"ooooooooo ....ooo..ooo....  oooo",
+"ooooooo  ....oo oooo oo.... oooo",
+"oooooo  .....o   oo   o.... oooo",
+"oooooo ......oo oooo oo..... ooo",
+"ooooo ........ooo..ooo...... ooo",
+"oooo  ........ooo..ooo...... ooo",
+"ooo ........................ ooo",
+"ooo ........................ ooo",
+"oo .......................... oo",
+"oo .......................... oo",
+"oo .......................... oo",
+"oo .................... ..... oo",
+"oo ..................   ..... oo",
+"oo .................  ....... oo",
+"ooo ............     ....... ooo",
+"ooo  ......      XX ........ ooo",
+"oooo       XX  XXX ......... ooo",
+"ooooooo XXXX XXXX ......... oooo",
+"oooooooo  X XXX  ..... .... oooo",
+"oooooooooo  XX ....    ...  oooo",
+"ooooooooo o        ....... ooooo",
+"oooooooo ooooooooo ...... oooooo",
+"ooooooo ooooooooo ...... ooooooo",
+"oooooo  oooooooo ...... oooooooo",
+"ooooo o oooooooo ...... oooooooo",
+"oooo oo ooooooo ...... ooooooooo",
+"ooo ooo oooooo ...... oooooooooo",
+"oooooooooooooo ...... oooooooooo"
+};

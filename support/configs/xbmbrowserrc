@@ -1,0 +1,148 @@
+#    Xbmbrowser Menu Config File
+# 
+# Used by Anthony Thyssen in maintaining the AIcons Library, using the
+# scripts found in the AIcons distribution in ``support/scripts''
+# 
+# NOTE: Exmaple only it will NOT work on your system as is
+# 
+# -------------------------
+menu "main"
+
+item "CD Home"     chdir("~/")
+item "CD Start"    chdir("%D")
+item "CD Parent"   chdir("../")
+item "CD Icons"    chdir("~/icons/")
+item "CD Sort"     chdir("~/icons/sort/")
+item "CD Std"      chdir("~/icons/desc/std/")
+item "CD WWW"      chdir("~/icons/appl/www/")
+line
+item "New Browser.."   input("New Browser","%d") exec("xbmbrowser '%i' &")
+item "Text Editor.."   input("File to Edit","") \
+                         exec("xterm -g 80x40 -name Vi -e ${EDITOR:-vi} %i &")
+item "Make Dir.."      input("Make Directory","") exec("mkdir '%i'")
+item "Execute Cmd.."   input("Command to Execute","") exec('%i')
+line
+item "Netscape Dir"    exec("netscape file://localhost`pwd` &")
+line
+line
+item "Quit Browser.."  quit()
+
+# -------------------------
+menu "global" "Global Menu"
+
+item "Grab Icon"    selected() exec("merge -c '%f' %h/grab &")
+item "Rename"       selected() input("Rename File","%f") \
+                               exec("merge '%f' '%i'")
+item "Copy"         selected() input("Copy File","%f") \
+                               exec("merge -c '%f' '%i'")
+item "Duplicate"    selected() exec("merge -c '%f' '%b.%s'")
+item "Delete"       selected() exec("rm -f '%f'")
+item "Text Editor"  exec("xterm -g 80x40 -name Vi -e ${EDITOR:-vi} %f &")
+line
+item "Move Edit"    input("Move Edit","%b=%s =%s") exec("mved %i")
+item "Copy Edit"    input("Copy Edit","%b=%s =%s") exec("mved -c %i")
+item "Delete Edit"  input("Delete Files","%f")     exec("rm -f %i")
+line
+item "Invert"       exec("xbm-cmd '%f' pnminvert")
+item "Flip Horz"    exec("xbm-cmd '%f' pnmflip -lr")
+item "Flip Vert"    exec("xbm-cmd '%f' pnmflip -tb")
+item "Resize crop *" input("Crop", "*") exec("xbm-resize -t -c %i >/dev/null")
+item "Resize inpt *" input("Resize ","-64 *") \
+                        exec("xbm-resize -t -%i '%f' >/dev/null")
+line
+item "XV All"       exec("xv '%d/'* &")
+
+# -------------------------
+menu "bitmap" "Bitmap Menu"
+
+item "Bitmap Edit"  exec("bitmap '%f' &")
+item "XV Image"     exec("xv '%f' &")
+item "XPaint Edit"  exec("xpaint '%f' &")
+item "setroot"      exec("xsetroot -fg black -bg DodgerBlue -bitmap '%f'&")
+item "setroot inv"  exec("xsetroot -rv -fg black -bg DodgerBlue -bitmap '%f'&")
+item "setroot col"  input("Select Colors", "-fg black  -bg blue") \
+                    exec("xsetroot %i -bitmap '%f'&")
+line
+item "Resize Crop"  exec("xbm-resize -c '%f' >/dev/null")
+item "Resize Std"   exec("xbm-resize '%f' >/dev/null")
+item "Resize Inpt"  input("Resize ","-64 %f") exec("xbm-resize %i")
+item "Mask"         exec("xbm-mask '%f'")
+item "Mask Expand"  exec("xbm-mask -e '%f'")
+item "Mask Black"   exec("xbm-mask -b '%f'")
+item "Mask Pixmap"  exec("xpm-mask '%f'")
+line
+item ">Pixmap"      exec("xbm2xpm '%f' >/dev/null" )
+item ">Gif"         exec("xbm2gif -t '%f' >/dev/null" )
+item ">Pbm"         exec("x2p '%f' >/dev/null" )
+item "All >Pixmap"  exec("xbm2xpm *.xbm >/dev/null" )
+item "All >Gif"     exec("xbm2gif -t *.xbm >/dev/null" )
+
+
+# -------------------------
+menu "pixmap" "Pixmap Menu"
+
+item "Pixmap Edit"  exec("pixmap -f '%f' &")
+item "XV Image"     exec("xv '%f' &")
+item "Gimp Edit"    exec("gimp '%f' &")
+item "XPaint Edit"  exec("xpaint '%f' &")
+item "SetRoot"      exec("xloadimage -quiet -onroot '%f' &")
+item "SetRoot xv"   exec("xv -root -noresetroot '%f' -quit &")
+line
+item "Resize Crop"  exec("xbm-resize -t -c '%f' >/dev/null")
+item "Resize Std"   exec("xbm-resize -t -64x38 %f >/dev/null")
+item "Resize Inpt"  input("Resize ","-64 %f") exec("xbm-resize -t %i")
+item "Mask"         exec("xbm-mask '%f'")
+item "Mask Expand"  exec("xbm-mask -e '%f'")
+item "Mask Black"   exec("xbm-mask -b '%f'")
+item "Mask Pixmap"  exec("xpm-mask '%f'")
+item "Rotate 16"    exec("xbm-rotate16 -t '%f' &")
+line
+item "Recolor"      exec("recolor '%f' >/dev/null")
+item "Recolor -fs"  exec("recolor -fs '%f' >/dev/null")
+item "Color Fix"    exec("xpm-fix '%f' >/dev/null")
+item ">Xbm thres"   exec("xpm2xbm '%f' >/dev/null")
+item ">Xbm dither"  exec("xpm2xbm -dither '%f' >/dev/null")
+item ">Gif"         exec("xbm2gif -t '%f' >/dev/null")
+item ">Ppm"         exec("x2p -t '%f' >/dev/null" )
+line
+item "All recolor"  exec("recolor *.xpm &")
+item "All  `' -fs"  exec("recolor -fs *.xpm &")
+item "rename recol" exec("mved =_recol.xpm =.xpm")
+item "rename `'bad" exec("mved =_recol_bad.xpm =.xpm")
+item "All Col Fix"  exec("xpm-fix *.xpm >/dev/null")
+item "All >Gif"     exec("xbm2gif -t *.xpm &")
+
+# -------------------------
+menu "directory" "Dir Menu"
+
+item "Goto.."       chdir('%f')
+item "New Browser"  exec("xbmbrowser '%f' &")
+line
+item "Rename Dir"   input("Rename Dir","%f")  exec("mv '%f' '%i'")
+item "Make Dir"     input("Make Directory","") exec("mkdir '%i'")
+item "Delete"       exec("rmdir '%f'")   # this is fairly safe
+item "Delete Dir"   confirm("DANGER -- Really Delete ALL of `%f' -- DANGER")\
+                    exec("rm -fr '%f'")   # this is very dangerous!
+
+# -----------------------
+menu "other" "Other Menu"
+
+item "SetRoot xv"   exec("xv -root '%f' -noresetroot -quit &")
+item "XV Image"     exec("xv '%f' &")
+item "Gimp Image"   exec("gimp %f &")
+item "Animate"      exec("animate %f &")
+item "Text Editor"  exec("xterm -g 80x40 -name Vi -e ${EDITOR:-vi} %f &")
+line
+item "Icon -> Xbm"  exec("icon2xbm '%f' >/dev/null")
+item "Gif  -> Xpm"  exec("gif2xbm -t '%f' >/dev/null")
+item "Pbm  -> Xpm"  exec("p2x -t '%f' >/dev/null" )
+item "Anim -> Gif"  exec("anim2gif '%f' >/dev/null" )
+line
+item "XV All"       exec("xv '%d/'* &")
+item "All Icon>Xbm" exec("icon2xbm *.icon &")
+item "All Gif>Xpm"  exec("gif2xbm -t *.gif &")
+line
+item "Delete Gifs"  exec("rm *.gif &")
+
+# -----------------------
+

@@ -1,0 +1,30 @@
+/* XPM */
+static char *set27_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 20 3 1",
+/* colors */
+"  c black",
+". c grey",
+"X c white",
+/* pixels */
+"                                                                                                                                                      ",
+"                                                                                                                                                      ",
+"       . .        XXXXXXXX        XX XXXX          XX X       .X  XXX            XXXX       XXX XXX           XXXXX          XXXX             XXX     ",
+"      X X X      X        X       X X    X        X XX X      X XX   XX      XXXX    X      X XX   XXX      XX     X        XX    X        XXX  X X   ",
+"     XX   X      X    XX XX      X    X X X       X X X       XX X   X X      X   XXX X     X   X  X  X    X  X X X X      X       X      X    X XXX  ",
+"     X    X      X XXXXXXXX       XXX XXXXX        XXXX X     XXXXX XX X      XXXX XXXX     XX XXXXXX X    XXXX XXX X      X    XXXX       X XX XX X  ",
+"     X   XX      X XXX  XXXX     XXXXX XXXX        XXX XX     XXXXXXXXXX     .XXXX XXXX     XXXXXXXXXX     XXXXX XX X      XXXXX XXXX     XXXX. XXXX  ",
+"     XXXXXX      XXXXX  XXXX     XXX.  XXXX       XXX XXX     XXXX ..        XXXX  XXXX            XXX     XXXX  XXXX      XXXX  XXXX     XXXX  XXXX  ",
+"       XXXX      XXXXX  XXXX         XXXXX.       XX XXXX     XXXXX  XX.     XXXXXXXX             XX.      XXXX  XXXX      XXXX  XXXX     XXXX  XXXX  ",
+"       XXXX      .XXX. XXXXX        XX XXX       XX  XXXX     XXXX  X XX     XXXX    X           XXX       XXXXXXXXX       XXXXXXXXXX     XXXX  XXXX  ",
+"       XXXX           XXXXX.      X XXXXXX.      XXXXXXXXX    XXXXXXXXXX     XXXXXXX  X         .XX.        XXXXXXXXX      XXXXXXXXXX     XXXX  XXXX  ",
+"       XXXX         XXXXXX.      XXX XXXXXX     XX   XXXX X   XXXX   XXX.    XXXX  XXXXX        XXX         XXXXXXXXX.      XXXXXXXXX     XXXX  XXXX  ",
+"       XXXX        XXXXXX        X  X  XXXX.   .XX    XXX X   XXXX   XXXX    XXXX  XXXXX       .XXX        .XXX   XXXX           XXXX     XXXX  XXXX  ",
+"       XXXX       XXXXX          XXXX  XXXXX   XXXXXXXXXX X   X  X  XXXXX    XXXXX XXXXX       XXXX        XXXX X XXXX     .XXX  XXXX     XXXX  XXXX  ",
+"       XXXX      XXXX  .XXX      XXXX  XXXXX   .XXXXXXXXXXX   XX XXX XXXX    .XXX XXXXX.      .XXXX        XXXXX XXXX.     XXXXXXXXXX     .XXX  XXX.  ",
+"       XXXX      XXXX   X X      XXXX  XXXX.         XXXX     XXXX  XXXX.     XXX  XXXX       XXXXX        .XXXX XXXX      XXXXX XXX.      XXX. XXX   ",
+"       XXXX      XXXXXXXX XX      XXXXXXXXX          XXXX      XXXX XXXX      .XXX XXX.       XXXXX         XXXX XXX.       .XXXXXXX       XXXXXXXX   ",
+"       XXXX      XXXXXXXXXXX       XXXXXX            XXXX       XXXXXXX         XXXX.         XXXXX          XXXXXX          XXXXXX         XXXXXX    ",
+"                                                                                                                                                      ",
+"                                                                                                                                                      "
+};

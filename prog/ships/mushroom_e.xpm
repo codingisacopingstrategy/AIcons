@@ -1,0 +1,34 @@
+/* XPM */
+static char *mushroom_e_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c dark slate grey",
+"o c red",
+"O c yellow",
+"+ c gold",
+"@ c None",
+/* pixels */
+"@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@",
+"@@@@@..@@@@@@@@@@@@@",
+"@@@..ooo.@@@@@@@@@@@",
+"@@.ooooo..o..o.@@@@@",
+"@.ooooooooooo.@@@@@@",
+"@@.ooo o oooo.@@@@@@",
+"@.ooo   ooo...@@@@@@",
+"@@@.oo  ooo...X@@@@@",
+"@@@.oo oo...XX..@@@@",
+"@@.ooooo...X..oo..@@",
+"@@@.oooo..XX.ooooo@@",
+"@@@ooo...X..ooooOO@@",
+"@@@.oo...X.oooooO@@@",
+"@@@...@XX.ooooOO+@@@",
+"@@@@@@@@..ooooO++@@@",
+"@@@@@@@@@.ooOO+@@@@@",
+"@@@@@@@@.ooO++@@@@@@",
+"@@@@@@@@@@.O@@@@@@@@"
+};

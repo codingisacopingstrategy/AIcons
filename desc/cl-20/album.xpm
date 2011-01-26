@@ -1,0 +1,32 @@
+/* XPM */
+static char * album_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c yellow",
+"o	c dark slate grey",
+"O	c sienna",
+"+	c slate grey",
+/* pixels */
+" . ...............  ",
+".XoXXXXXXXXXXXXXX.oo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOXOXOXOXOXOXOXO.Xo",
+".XoOXOXOXOXOXOXOO.Xo",
+".XOOOOOOOOOOOOOOO.Xo",
+" .O...............Xo",
+"  oXXXXXXXXXXXXXXXXo",
+"  ooooooooooooooooo+"};

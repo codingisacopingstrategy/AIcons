@@ -1,0 +1,4 @@
+#define pluto_width 7
+#define pluto_height 7
+static unsigned char pluto_bits[] = {
+ 0x3f,0x66,0x66,0x3e,0x06,0x46,0x7f};

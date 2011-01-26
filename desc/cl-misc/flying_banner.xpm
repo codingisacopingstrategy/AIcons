@@ -1,0 +1,38 @@
+/* XPM */
+static char * flying_banner_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 25 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c red",
+"o	c sky blue",
+"O	c wheat",
+"+	c white",
+"@	c tan",
+/* pixels */
+"                                                                                                                    .....                             ",
+"                                                           ................                                        .......                            ",
+"                                                          ..XXXXXXXXXXXXXXX............                           ........    oo                      ",
+"                  ..........                  .............XXXXXXXXXXXXXXXX.XXXXXXXXXX.        ooo        XXXXX   ...O....    o .                     ",
+"                 ...XXXXXXXX..................XXXXXXXXXXXX.XXX++XXXXXXX+++XXXXXXXXXXXX....     oooo     XXXXXXXXXX....OOOO    o  .                    ",
+"             .....XXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXXXXXX++++XXXXXX+++++XXXXX++XXXX.  .     ooooo   XXXXXXXXXXX...O..Ooo   o   o     .             ",
+"           ...XXXXXX++XXX++XXXXXXXXXXXXXXXXXXXXX++++++++XX.X++++XXXXX+++X+++XX++++XXXX.   .    ooooo   XXXX   XXX  ..OOOOooo  o   o     .             ",
+"            ..XXX.XX++XXX++XX++++++X++XXXXX++XXX++++++++XXXXXX++XXXXX++XXX++XX++++XXXX.    ..  oooooo   X        X.XXooooo o  ooooo.o.  .             ",
+"              ...XXX++XXX++XX++++++X++XXXXX++XXXXXX++XXXXX.XXX++XXXXX++XXX++XXXX++XXXX.      . ooooooo           . .XXOOOo o ooooooo..  .             ",
+"               ...XX+++XX++XX++XXXXX++XXXXX++XXXXXX++XXXXXXXXX++XXXXX++XXX++XXXX++XXXX.       .oooooooo           o  XXXXo oooooooo.o.  .             ",
+"              ..XXXX++++X++XX++XXXXX++XXXXX++XXXXXX++XXXXX.XXX++XXXXX++XXX++XXXX++XXXX.        ooooooooooooooooooooooooooooooooooooo..  .             ",
+"            ...XX.XX+++++++XX+++++XX++X+++X++XXXXXX++XXXXXXXXX++XXXXX+++X+++XXXX++XXXX.        oooooooooooooooooooooooooooooooooooo.o.oo.             ",
+"            .XXXXXXX++X++++XX+++++XX++X+++X++XXXXXX++XXXXX.X+++++X++XX+++++XXXXX++XXXX.      ..oooo@+@@@@@ooooooo+oo+oo+oo+o@o@@oooo......            ",
+"           ..XXXX.XX++XX+++XX++XXXXX++X+++X++XXXXXX++XXXXXXX+++++X++XXX+++XXXX+++++XXX.......  oo@+@@@@@oooooooo@@@@@@@@@@@@@@ooooo.o.oo.             ",
+"            ....XXXX++XXX++XX++XXXXX++X+++X++XXXXXX++XXXXX.XXXXXXXXXXXXXXXXXXX+++++XXX..       @@@@@+@oooooooo@@@@@@@@@@@@@@oooooooo..  .             ",
+"               ...XX++XXX++XX++++++X++++X++++XXXXXX++XXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXX.        ooooooooooooo@@@@@@@@@@@@@@@oooooooo.o.  .             ",
+"              ..XXXXXXXXXXXXX++++++X+++XXX+++XXXXXXXXXXXXX....................XXXXXXXX.        oooooooooooo@@@@@@@@@@@@@@@oooooooooo..  .             ",
+"              .XX.XXXXXXXXXXXXXXXXXXXXXXXXXXXX.XXXXXXXXXX....             .............           ooooooooooooooooooooooooooooooooo.o.  .             ",
+"             .XXXXX..........XXXXXXXXXXXXXXXX................                                              ooooooooooooooooooooooooo..  .             ",
+"            ..XXXX...      ....................             .                                                  oooooooooooooooooooo.o.  .             ",
+"            .XXXXX....                                                                                                  o.o  o.o        .             ",
+"           ...........                                                                                                  o.o .....       .             ",
+"           ...                                                                                                         ..........                     ",
+"                                                                                                                       ..... ...                      ",
+"                                                                                                                        ...                           "};

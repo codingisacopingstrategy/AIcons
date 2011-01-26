@@ -1,0 +1,29 @@
+/* XPM */
+static char * gem_blue_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 7 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c black",
+"o	c sky blue",
+"O	c navy",
+"+	c blue",
+"@	c dodger blue",
+/* pixels */
+"      ....      ",
+"    ..XXXX..    ",
+"  ..XXXXXXXX..  ",
+"  .XXXXXXXXXX.  ",
+" .XXXXXXXXXoXX. ",
+" .XXXXXXXXXXXX. ",
+".XXOOXXXXXXXXXX.",
+".XOOOOOXXXXXXXX.",
+".OO+++OOXXXXXXX.",
+".O+++++OOXXXXXX.",
+" O++@+++OXXXXX. ",
+" .+@@@++OOXXXX. ",
+"  O+@+++OOXXX.  ",
+"  .O+++OOXXX..  ",
+"    .OOOXX..    ",
+"      ....      "};

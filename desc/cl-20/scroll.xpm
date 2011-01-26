@@ -1,0 +1,34 @@
+/* XPM */
+static char * scroll_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 8 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c cyan",
+"o	c grey",
+"O	c white",
+"+	c navy",
+"@	c slate grey",
+"#	c light sea green",
+/* pixels */
+"  .............     ",
+" .X.oOoOoOoOoOo.    ",
+".X.X.XOXOXOXOXOX.   ",
+".X.X.OXOXOXOXOXO.   ",
+" .X..XOXOXOXOXOX.   ",
+"  . .OX++O+O++XO.   ",
+"    .XOXOXOXOXOX.   ",
+"    .OX++O+O++XO.   ",
+"    .XOXOXOXOXOX.   ",
+"    .OX++O+O++XO.   ",
+"    .XOXOXOXOXOX.   ",
+"    .OX++O+O++XO.   ",
+"    .XOXOXOXOXOX.   ",
+"    .OXOXOXOXOXO.   ",
+"    .XOXOXOXOXOX.   ",
+"    .OXOX...........",
+"    .XOXo.oXoXoXoXo.",
+"    @.Xo.#########..",
+"    @@............. ",
+"     @@@@@@@@@@@@@  "};

@@ -1,0 +1,43 @@
+/* XPM */
+static char *rev_lovejoy_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c wheat",
+"X c white",
+"o c gold",
+/* pixels */
+"XXXXXXXXXXX   XXXXXXXXXXXXXXXXXX",
+"XXXXXXXXX       XX    XXXXXXXXXX",
+"XXXXXXXX                XXXXXXXX",
+"XXXXXXXX                 XXXXXXX",
+"XXXXXXXXX                 XXXXXX",
+"XXXXXXXXXXXXX ooooooo     XXXXXX",
+"XXXXXXXXXXXXX oooooooooo  XXXXXX",
+"XXXXXXXXXXXX  ooooooooo    XXXXX",
+"XXXXXXXXXXX  oooooooooo    XXXXX",
+"XXXXXXXXXX oo o  oooooo     XXXX",
+"XXXXXXXXXX oo  oo ooooo     XXXX",
+"XXXXXXXXXX        ooooo     XXXX",
+"XXXXXXXXXX  X X X ooooo     XXXX",
+"XXXXXXXXXX XX XXX oooo     XXXXX",
+"XXXXXXXXX     XXX oooo     XXXXX",
+"XXXXXXXX oooo XX oooo     XXXXXX",
+"XXXXXXX oooooo  ooooo     XXXXXX",
+"XXXXXXX ooooooo  ooo      XXXXXX",
+"XXXXXXX ooooo oooooo     XXXXXXX",
+"XXXXXXXX     oooooo   ooo XXXXXX",
+"XXXXXXXXX oooooooooo  o o XXXXXX",
+"XXXXXXXX ooooooooooooooo XXXXXXX",
+"XXXXXXXX oooooooooooo   XXXXXXXX",
+"XXXXXXX ooooooo ooooo XXXXXXXXXX",
+"XXXXXXX ooo     oooo XXXXXXXXXXX",
+"XXXXXXX    oooo oooo XXXXXXXXXXX",
+"XXXXXXXXXX   ooooooo XXXXXXXXXXX",
+"XXXXXXXXXXXX ooooooo   XXXXXXXXX",
+"XXXXXXXXXX   ooooooo ..  XXXXXXX",
+"XXXXXXXX  .. ooooooo ....  XXXXX",
+"XXXXXXX ....         ...... XXXX",
+"XXXXXX                       XXX"
+};

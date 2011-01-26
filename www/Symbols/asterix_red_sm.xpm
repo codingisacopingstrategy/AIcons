@@ -1,0 +1,26 @@
+/* XPM */
+static char *asterix_red_sm_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+"  c firebrick",
+". c red",
+"X c None",
+/* pixels */
+"XXXXXXX...XXXXXX",
+"XXXXXX.... XXXXX",
+"XXXXXX.... XXXXX",
+"X...XX...  XXXXX",
+".... XX.. XX...X",
+".... XX. XX.... ",
+"......X. X..... ",
+"X  ...........  ",
+"XXX  ......    X",
+"XXXXX.. ..XXXXXX",
+"XXXX.. X...XXXXX",
+"XX.... X.....XXX",
+"X.... XXX.... XX",
+"X.... XXX.... XX",
+"X...  XXX...  XX",
+"XX   XXXXX   XXX"
+};
