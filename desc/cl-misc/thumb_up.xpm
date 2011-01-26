@@ -1,0 +1,32 @@
+/* XPM */
+static char * thumb_up_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"25 19 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c grey",
+"O	c blue",
+"+	c slate grey",
+"@	c navy blue",
+/* pixels */
+"                         ",
+"           ..            ",
+"          .Xo.           ",
+"          .Xo.           ",
+"          .Xo.           ",
+"          .Xo.           ",
+"       ...XXo.           ",
+"   ....XXXXXo.           ",
+"  .XXX.XXXXXoo.  ....... ",
+" .Xoo..oXXXXXoo...OOOOOO ",
+" .oo.oo.oXXXXXXXo.OOOOOO ",
+" ...Xoo..oXXXXXoo.OOOOOO ",
+" .XXo..oo.oXXXoo+.OOOOOO ",
+"  ...XXo..ooooo++.O@O@O@ ",
+"  .XXo..oo.+oo+++.@O@O@O ",
+"   ...oXo..+++....@@@@@@ ",
+"   .XXo..+++..   .@@@@@@ ",
+"    ........      ...... ",
+"                         "};

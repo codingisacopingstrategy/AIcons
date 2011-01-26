@@ -1,0 +1,35 @@
+/* XPM */
+static char * generic_sec_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 7 1",
+/* colors */
+" 	c dark slate grey",
+".	c tomato",
+"X	c firebrick",
+"o	s None	c None",
+"O	c white",
+"+	c black",
+"@	c slate grey",
+/* pixels */
+"    ....X    ooooooo",
+" OOO....XOO O oooooo",
+" OOO....XOO OO ooooo",
+" OOO....XOO OOO oooo",
+" OOO....XOO OOOO ooo",
+" OOO....XOO+ + + +oo",
+" OOO....XOO+++++++oo",
+" OOO....XOOOO@@@@+oo",
+" OOO....XOOOOO@@@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+" OOO....XOOOOOOO@+oo",
+"  @@....X@@@@@@@ +oo",
+"oo+++XXXX+++++++++oo"};

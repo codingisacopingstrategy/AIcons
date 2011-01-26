@@ -1,0 +1,34 @@
+#include "XMail"
+
+! return all colors to defaults
+XMail*foreground:		black
+XMail*background:		white
+XMail*borderColor:              black
+
+! widget type
+!XMail*Text*foreground:		sienna
+XMail*Text*background:		lemon chiffon
+XMail*textWindow.background:    lemon chiffon
+XMail*Command.background:       sky blue
+XMail*Box.background:		wheat
+XMail*Form.background:		wheat
+XMail*Form.Command.background:  gold
+XMail*popup*Label.background:   wheat
+
+! MailBox
+XMail*mailbox*foreground:       black
+XMail*mailbox*background:       gold
+!Use these if XPM is not compiled
+!XMail*mailbox*foreground:       sienna
+!XMail*mailbox*background:       yellow
+
+! specific widget
+XMail*titleBar*foreground:	yellow
+XMail*titleBar*background:	sienna
+XMail*titleBar.logo.foreground:	sienna
+XMail*titleBar.logo.background:	yellow
+XMail*statusWindow.background:	orange
+XMail*face.background:          lemon chiffon
+XMail*helpWindow*background:	wheat
+XMail:*grip*foreground:         brown
+

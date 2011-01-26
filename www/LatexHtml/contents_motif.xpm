@@ -1,0 +1,34 @@
+/* XPM */
+static char * contents_motif_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"65 24 4 1",
+/* colors */
+".	c gainsboro",
+"X	c dark slate grey",
+" 	c None",
+"o	c black",
+/* pixels */
+"................................................................X",
+"...............................................................XX",
+"..                                                             XX",
+"..                                                             XX",
+"..                                                             XX",
+"..                                                             XX",
+"..     oooo                                                    XX",
+"..    oo   o                   o                   o           XX",
+"..    o     o                  o                   o           XX",
+"..   o          oooo   o ooo  ooo   oooo   o ooo  ooo  oooo    XX",
+"..   o          o  o   oo   o  o   o    o  oo   o  o  o    o   XX",
+"..   o         o    o  o    o  o   o    o  o    o  o  o        XX",
+"..   o         o    o  o    o  o   oooooo  o    o  o  ooo      XX",
+"..   o         o    o  o    o  o   o       o    o  o     ooo   XX",
+"..    o     o  o    o  o    o  o   o       o    o  o       o   XX",
+"..    oo   o    o  o   o    o  o    o   o  o    o  o  o    o   XX",
+"..     oooo     oooo   o    o  oo    ooo   o    o  oo  oooo    XX",
+"..                                                             XX",
+"..                                                             XX",
+"..                                                             XX",
+"..                                                             XX",
+"..                                                             XX",
+".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};

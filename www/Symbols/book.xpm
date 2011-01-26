@@ -1,0 +1,26 @@
+/* XPM */
+static char *book_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 12 7 1",
+/* colors */
+"  c Black",
+". c Wheat",
+"X c Peru",
+"o c Sienna",
+"O c Yellow",
+"+ c None",
+"@ c None",
+/* pixels */
+"+++oooo+++++++",
+"+++oooooo+++++",
+"++oooOOOoooo++",
+"++ooOOooOooX++",
+"+ooooOOoooo. +",
+"+ooOooOOooX.  ",
+"ooooOOOooo.o +",
+"oooooooooX.  +",
+"o..oooooo.o ++",
+"+oo...ooX.  ++",
+"+++ooo...o +++",
+"++++++ooo  +++"
+};

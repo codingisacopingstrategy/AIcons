@@ -1,0 +1,27 @@
+/* XPM */
+static char * mine_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"15 15 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c grey",
+"o	c dark slate grey",
+"O	c red",
+"+	c firebrick",
+/* pixels */
+"               ",
+"               ",
+"               ",
+"      ...      ",
+"     .XXX.     ",
+"    .ooXoo.    ",
+"   .XooOooX.   ",
+"   .XXO+OXX.   ",
+"   .XooOooX.   ",
+"    .ooXoo.    ",
+"     .XXX.     ",
+"      ...      ",
+"               ",
+"               ",
+"               "};

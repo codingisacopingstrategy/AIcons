@@ -1,0 +1,21 @@
+/* XPM */
+static char * crossed_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 12 3 1",
+/* colors */
+" 	c grey",
+".	c white",
+"X	c black",
+/* pixels */
+" ..  XX..  ..XX  .. ",
+".  XX..  XX  ..XX  .",
+" XX..  XX..XX  ..XX ",
+"X..  XX..  ..XX  ..X",
+".  XX..  XX  ..XX  .",
+" XX..  XX  XX  ..XX ",
+" XX..  XX  XX  ..XX ",
+".  XX..  XX  ..XX  .",
+"X..  XX..  ..XX  ..X",
+" XX..  XX..XX  ..XX ",
+".  XX..  XX  ..XX  .",
+" ..  XX..  ..XX  .. "};

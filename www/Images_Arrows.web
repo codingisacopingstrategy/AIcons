@@ -1,0 +1,142 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Arrows</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#66CDAA"
+      LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<H1></NOBR>
+    <IMG SRC="Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Arrows
+</NOBR></H1>
+
+<A HREF="Images.html" TARGET="_top">
+  <IMG SRC="blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+Arrows and Pointer images available throught this WWW Image Library. <P>
+
+<HR>
+<H2>Arrows</H2>
+<IMG SRC=prev.gif	 WIDTH=16 HEIGHT=16>
+<IMG SRC=next.gif	 WIDTH=16 HEIGHT=16>
+<IMG SRC=back.gif	 WIDTH=16 HEIGHT=16>
+<IMG SRC=top.gif	 WIDTH=16 HEIGHT=16>
+<IMG SRC=cross-ref.gif	 WIDTH=16 HEIGHT=16>
+--
+<IMG SRC=left.gif	 WIDTH=20 HEIGHT=20>
+<IMG SRC=right.gif	 WIDTH=20 HEIGHT=20>
+<IMG SRC=up.gif  	 WIDTH=20 HEIGHT=20>
+<IMG SRC=down.gif  	 WIDTH=20 HEIGHT=20>
+<IMG SRC=bar.gif  	 WIDTH=20 HEIGHT=20>
+<IMG SRC=plus.gif  	 WIDTH=20 HEIGHT=20>
+--
+<IMG SRC=left2.gif	 WIDTH=15 HEIGHT=15>
+<IMG SRC=right2.gif	 WIDTH=15 HEIGHT=15>
+<IMG SRC=up2.gif	 WIDTH=15 HEIGHT=15>
+<BR>
+<IMG SRC=blue_next.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_prev.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_down.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_up.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_top.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_grab.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_readme.gif WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_dir.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_dir2.gif	 WIDTH=24 HEIGHT=24>
+<IMG SRC=blue_help.gif	 WIDTH=24 HEIGHT=24>
+<BR>
+<IMG SRC=shadow_left.gif WIDTH=18 HEIGHT=18>
+<IMG SRC=shadow_lg_left.gif WIDTH=36 HEIGHT=32>
+<IMG SRC=shadow_lg_right.gif WIDTH=36 HEIGHT=32>
+<IMG SRC=shadow_right.gif WIDTH=18 HEIGHT=18>
+<BR>
+<IMG SRC=granite_left.gif WIDTH=30 HEIGHT=30>
+<IMG SRC=granite_right.gif WIDTH=30 HEIGHT=30>
+<IMG SRC=granite_up.gif WIDTH=30 HEIGHT=30>
+<IMG SRC=granite_top.gif WIDTH=30 HEIGHT=30>
+--
+<IMG SRC=granitesm_left.gif WIDTH=15 HEIGHT=15>
+<IMG SRC=granitesm_right.gif WIDTH=15 HEIGHT=15>
+<IMG SRC=granitesm_up.gif WIDTH=15 HEIGHT=15>
+<IMG SRC=granitesm_top.gif WIDTH=15 HEIGHT=15>
+--
+<IMG SRC=hpoint_left.gif WIDTH=33 HEIGHT=14>
+<IMG SRC=hpoint_right.gif WIDTH=33 HEIGHT=14>
+<IMG SRC=hpoint_down.gif WIDTH=14 HEIGHT=33>
+<IMG SRC=hpoint_up.gif WIDTH=14 HEIGHT=33>
+<BR>
+<IMG SRC=color_back.gif WIDTH=41 HEIGHT=41>
+<IMG SRC=color_left.gif WIDTH=41 HEIGHT=41>
+<IMG SRC=color_right.gif WIDTH=41 HEIGHT=41>
+<IMG SRC=color_down.gif WIDTH=41 HEIGHT=41>
+<IMG SRC=color_up.gif WIDTH=41 HEIGHT=41>
+--
+<IMG SRC=cyan_left.gif WIDTH=31 HEIGHT=31>
+<IMG SRC=cyan_right.gif WIDTH=31 HEIGHT=31>
+<IMG SRC=cyan_down.gif WIDTH=31 HEIGHT=31>
+<IMG SRC=cyan_up.gif WIDTH=31 HEIGHT=31>
+<BR>
+<IMG SRC=isn_prev.gif WIDTH=18 HEIGHT=18>
+<IMG SRC=isn_next.gif WIDTH=18 HEIGHT=18>
+--
+<IMG SRC=Balls/a_left.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=Balls/a_right.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=Balls/a_down.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=Balls/a_up.gif WIDTH=20 HEIGHT=20>
+--
+<IMG SRC=ButSmall/left.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=ButSmall/right.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=ButSmall/down.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=ButSmall/up.gif WIDTH=20 HEIGHT=20>
+<IMG SRC=ButSmall/top.gif WIDTH=20 HEIGHT=20>
+<BR>
+<IMG SRC=Buttons/next.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/prev.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/back.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/multiple.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/return.gif WIDTH=40 HEIGHT=40>
+<BR>
+<IMG SRC=Buttons/left.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/right.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/down.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/up.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/top.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/more.gif WIDTH=40 HEIGHT=40>
+<BR>
+<IMG SRC=Buttons/dir_N.gif  WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_NE.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_E.gif  WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_SE.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_S.gif  WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_SW.gif WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_W.gif  WIDTH=40 HEIGHT=40>
+<IMG SRC=Buttons/dir_NW.gif WIDTH=40 HEIGHT=40>
+<BR>
+<IMG SRC=RButtons/back.gif  WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/prev.gif  WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/next.gif  WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/left.gif  WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/right.gif WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/down.gif  WIDTH=32 HEIGHT=32>
+<IMG SRC=RButtons/up.gif    WIDTH=32 HEIGHT=32>
+<P><HR>
+
+<ADDRESS>
+Dated: 9 May 1995 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

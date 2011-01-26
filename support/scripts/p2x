@@ -1,0 +1,62 @@
+#!/bin/sh -
+#
+#  p2x [-t] file...
+#
+#    This script converts pbmplus format files to xbm and xpm formats
+#  Modified to allow use of the transparent colour for xpm files
+#
+# Anthony Thyssen   3 November 1995    anthony@cit.gu.edu.au
+#
+b="                                                                         "
+TRANS=
+if [ "X$1" = "X-t" ]; then
+  TRANS="#BFBFBF"  # the transparent color to use.
+  shift
+fi
+
+for i in "$@" ; do
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read \"$i\""
+    continue;
+  fi
+
+  echo -n "${b}  converting \"$i\""
+
+  # --- find out the type ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+  suffix="`expr "$name" : '.*\.\([^.]*\)$'`"          # extract last suffix 
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"            # remove last suffix
+
+  case "$suffix" in
+    pbm)
+      pbmtoxbm < $i |
+        sed 's/static  *char/static unsigned char/;
+             s/noname\([[_]\)/'"$name"'\1/'  > "$name.xbm"
+      destsfx=xbm
+      ;;
+    ppm|pgm|pnm)
+      if [ "$TRANS" ]; then
+        # replace transparent color with "None"
+        ppmtoxpm $i 2>/dev/null |
+          sed "/colors/,/pixels/s/c $TRANS/c None/" |
+          xpm-fix -o "$name.xpm"
+      else
+        # straight conversion
+        ppmtoxpm $i 2>/dev/null | xpm-fix -o "$name.xpm"
+      fi
+      destsfx=xpm
+      ;;
+    *) echo -n "${b}"
+       echo >&2 "Unknown suffix for \"$i\""
+       continue ;;
+  esac
+
+  if [ ! -s "$name.$destsfx" ]; then
+    rm -f "$name.$destsfx"
+    echo -n "${b}"
+    echo >&2 "Failed to convert \"$i\""
+  fi
+
+done
+echo "${b}Done!"

@@ -1,0 +1,40 @@
+/* XPM */
+static char *tree3_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"18 28 5 1",
+/* colors */
+"  c lime green",
+". c green",
+"X c sienna",
+"o c sea green",
+"O c None",
+/* pixels */
+"OOOOOOOOOo OOOOOOO",
+"OOOOOOOOo o OOOOOO",
+"OOOOOOOo oo.oOOOOO",
+"OOOOOOo.. ooOOOOOO",
+"OOOOOO o X o.oOOOO",
+"OOOOOOo oXo.oOOOOO",
+"OOOOOo o X ooOOOOO",
+"OOOOOOo .Xo o.oOOO",
+"OOOO o o Xoo oOOOO",
+"OOOOo . oo  ooOOOO",
+"OOOo.o o..oo ooOOO",
+"OOOOo oo Xo oo.oOO",
+"OOOOo  ooXooo.oOOO",
+"OOOo o. X o oooOOO",
+"OOOo.o.o Xoo o oOO",
+"OOO ooo  Xo ooo.oO",
+"OOo o ooX.ooo.oo.O",
+"Oo o.o ooX.ooo.oOO",
+"O oo.oo Xoo  oo oO",
+" o .oo  oX oo  o O",
+"oOooo.oo Xo ooo oO",
+"O oo.oo.oXoo..oo o",
+"OoOooOOoXX  .o ooO",
+"oOOOOOoOXXOoOOOO o",
+"OOOOOOOOXXOOOOOOOO",
+"OOOOOOOOXXOOOOOOOO",
+"OOOOOOOOXXOOOOOOOO",
+"OOOOOOOXXXXOOOOOOO"
+};

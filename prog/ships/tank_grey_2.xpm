@@ -1,0 +1,32 @@
+/* XPM */
+static char *tank_grey_2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+"  c black",
+". c grey",
+"X c white",
+"o c slate grey",
+"O c None",
+/* pixels */
+"OOOOOOOOOOOOO OOOOOO",
+"OOOOOOOOO   XOOOOOOO",
+"OOOOOOOOO ..X OOOOOO",
+"OOOOOOO ..XooO  OOOO",
+"OOOOOOO .XXo   XOOOO",
+"OOOOOO  .Xo.. XX OOO",
+"OOOO  .XXo.  X  O  O",
+"OOO  ..Xoo. X    oXO",
+"OO ..Xoo.. X ..oXX O",
+"OOO.XXo..o.X .ooX.. ",
+"OO Xoo.oo....oX.. OO",
+"OO Xo .oooo.ooX.  OO",
+"OOOO Oo..o.ooXX. OOO",
+"OOOOO ooo.oXX.  OOOO",
+"OOOOOO   oXX.. OOOOO",
+"OOOOOOOOoX.. OOOOOOO",
+"OOOOOOOO X.  OOOOOOO",
+"OOOOOOOO O  OOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO"
+};

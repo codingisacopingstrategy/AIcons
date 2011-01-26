@@ -1,0 +1,33 @@
+/* XPM */
+static char * draw_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c grey",
+"O	c green",
+"+	c lime green",
+"@	c yellow",
+/* pixels */
+"     .              ",
+"     ..             ",
+"     .X.            ",
+"     .XX.           ",
+"     .XoX.          ",
+"     .XooX.         ",
+"     .XoooX.        ",
+" ... .Xo.ooX.       ",
+".OO. .Xo..ooX.      ",
+".O+. .Xo...ooX.     ",
+".O+. .XoXXXXooX.    ",
+".O+. .XooooooooX.   ",
+".O+................ ",
+".O+.X@X@X@X@X@X@X@. ",
+".O+.@@@@@@@@@@@@@@. ",
+".O+................ ",
+".O+.                ",
+".O+.                ",
+" ...                ",
+"                    "};

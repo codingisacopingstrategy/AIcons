@@ -1,0 +1,25 @@
+/* XPM */
+static char * circle_16_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"     ......     ",
+"   ..XXXXXX..   ",
+"  .XXXXXXXXXX.  ",
+" .XXXXXXXXXXXX. ",
+" .XXXXXXXXXXXX. ",
+".XXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXX.",
+" .XXXXXXXXXXXX. ",
+" .XXXXXXXXXXXX. ",
+"  .XXXXXXXXXX.  ",
+"   ..XXXXXX..   ",
+"     ......     "};

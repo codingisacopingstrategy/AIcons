@@ -1,0 +1,21 @@
+/* XPM */
+static char *ColourLine_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"524 6 8 1",
+/* colors */
+"` c cyan",
+"a c green",
+"b c magenta",
+"c c red",
+"d c purple",
+"e c white",
+"f c yellow",
+"g c blue",
+/* pixels */
+"``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aaccga``aa",
+"``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aadggg``aa",
+"f`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bbegggf`bb",
+"bbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbbb`dgbbbb",
+"ecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaecccbaaaeccc",
+"e`c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`ggac``c`"
+};

@@ -1,0 +1,43 @@
+/* XPM */
+static char *floppy_red_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXX                          XXX",
+"XXX                          XXX",
+"XXX  .X.X.X.X.X.X.X          XXX",
+"XXX  X.X.X.X.X.X.X.          XXX",
+"XXX  .X.X.X.X.X.X.X          XXX",
+"XXX  X.X.X.X.X.X.X.        XXXXX",
+"XXX                        XXXXX",
+"XXX                          XXX",
+"XXX                          XXX",
+"XXX          ooooo           XXX",
+"XXX         ooXXXoo          XXX",
+"XXX        ooXXXXXoo         XXX",
+"XXX        oXXXXXXXo         XXX",
+"XXX        oXXXXXXXo         XXX",
+"XXX        oXXXXXXXo         XXX",
+"XXX        ooXXXXXoo         XXX",
+"XXX         ooXXXoo          XXX",
+"XXX          ooooo           XXX",
+"XXX                          XXX",
+"XXX                          XXX",
+"XXX            o             XXX",
+"XXX           ooo            XXX",
+"XXX           ooo            XXX",
+"XXX           ooo            XXX",
+"XXX           ooo            XXX",
+"XXX            o             XXX",
+"XXX         X     X          XXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

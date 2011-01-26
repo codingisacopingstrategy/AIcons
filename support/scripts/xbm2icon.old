@@ -1,0 +1,95 @@
+#!/bin/sh
+#
+#  xbm2icon - convert X11 bitmaps to SunView icons
+#
+#  Original :-  Jonathan Bowen, Oxford University, June 1988.  #               bowen@uk.ac.oxford.prg
+#  Rewritten :- Anthony Thyssen,  4 April 1992.
+#               anthony@cit.gu.edu.au
+#
+PATH=/bin:/usr/bin:/usr/ucb:/usr/news/bin
+PROGNAME=`basename $0`
+TMP=/tmp/$PROGNAME$$
+VERBOSE=false
+
+Usage() {
+  echo "Usage: $PROGNAME [-v] file..."
+  echo "  -v  enable verbose messages"
+  exit 0
+}
+
+trap   "/bin/rm -f $TMP; exit 1" 1 2 3 15
+
+while getopts v i
+do
+  case "$i" in
+    v) VERBOSE=true ;;       # be verbose in actions
+    \?) Usage ;;
+  esac
+done
+shift `expr $OPTIND - 1`
+
+case $# in
+  0) Usage ;;
+  *) FILES=$* ;;
+esac
+
+
+for FILE in $FILES
+do
+  # Check for standard extension
+  if [ ! -r $FILE ]; then
+    FILE=$FILE.xbm
+  fi
+
+  if [ ! -r $FILE ]; then
+    echo "$PROGNAME: can't read $FILE" 1>&2
+  else
+    case "$FILE" in
+      *_mask.xbm) OUTPUT="`basename $FILE _mask.xbm`.iconmask"  ;;
+      *.xbm)      OUTPUT="`basename $FILE .xbm`.icon" ;;
+    esac
+
+    # Read X bitmap, detect width/height, reverse bytes,
+    #  convert from 8-bit bytes to 16-bit words and
+    #  split into lines with two entries on each line.
+    ( # stdout redirection
+      eval `sed -n \
+        's/^#define .*_width *\(.*\)/width=\1;/p
+         s/^#define .*_height *\(.*\)/height=\1;/p' $FILE`
+      $VERBOSE && echo "$PROGNAME: processing $FILE (${width}x${height})" 1>&2
+      cat - <<-HEADER_END
+	/* Format_version=1, Width=$width, Height=$height, Depth=1, Valid_bits_per_item=16
+	 */
+	HEADER_END
+
+      # add a few extra line break characters to end of file
+      echo :::: | cat $FILE - |
+      # Remove header, breakup lines words to bytes, reverse bit order
+      sed \
+        '/^#/d
+         /^static/d
+         s/[	 {};]//g
+         y/0123456789abcdefABCDEF/084c2a6e195d3b7f5d3b7f/
+         s/0x\(.\)\(.\)/0x\2\1/g
+         s/0x\(..\),0x\(..\)/0x\1\2/g
+         s/\(0x....,0x....\),/\1,:/g
+         s/:$//
+      ' |
+      # break lines at points given
+      tr ':' '\012' |
+      # recreate lines of 8 words per line
+      sed \
+        'N; N; N; s/\n//g
+         s/^/   /
+         s/,/, /g
+         s/, *$/,/
+         s/[^,]$/& };/
+       '
+    ) | cat > $OUTPUT
+  fi
+
+done
+
+/bin/rm -f $TMP
+exit 0
+

@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_lightning_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Orange",
+"X	c Gold",
+"o	c Red",
+"O	c Firebrick",
+"     ..XXoO  ",
+"     .XXoO   ",
+"    ..X O    ",
+"    .X oO    ",
+"   ..XoO     ",
+"  ..XXXXXoO  ",
+"     .XXoO   ",
+"    ..XoO    ",
+"    .X O     ",
+"   .X O      ",
+"   . O       ",
+"  .XO        ",
+"  XO         "};

@@ -1,0 +1,40 @@
+/* XPM */
+static char *beaker_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"28 24 9 1",
+/* colors */
+"  c black",
+". c lavender",
+"X c gainsboro",
+"o c grey",
+"O c dark slate grey",
+"+ c sea green",
+"@ c white",
+"# c slate grey",
+"$ c None",
+/* pixels */
+"$$$$X.@..XXXXXXXXXXXX$$$$$$$",
+"$$$$XXXXXooooooooX..X$$$$$$$",
+"$$$$$XXo#XXXXXXXXXXXX$$$$$$$",
+"$$$$$$XXo#$##$$#$$#oX$$$$$$$",
+"$$$$$$$.X$#$$$$$###oX$$$$$$$",
+"$$$$$$$@.$#$$$$#$##oX$$$$$$$",
+"$$$$$$$@.#$##$$$$$#oX$$$$$$$",
+"$$$$$$$@.$#$$$#$###oX$$$$$$$",
+"$$$$$$$@.$#$$#$#$##oX$$$$$$$",
+"$$$$$$$@.#$#$$$$$$#oX$$$$$$$",
+"$$$$$$$@.#$$$$$$$$#oX$$$$$$$",
+"$$$$$$$@. #    # ##oX$$$$$$$",
+"$$$$$$+.@.X.XooXoooooXo+$$$$",
+"$$$$$$+.@@.Xoo###OOOO##+$$$$",
+"$$$$$$oX@@X.oo##OOO ###+$$$$",
+"$$$$+X@..Xooo#+oOOOO #O##$$$",
+"$$$+X.....XXXX+o#oooooooo+$$",
+"$$+@o#OOOOOOO+XoO     OO@oO$",
+"$+ooO$$$$$$$$+X#O $$$$$$XXO#",
+"+o.##$$$$$$$+oooO#$$$$$$+X#O",
+"$+@OO$$$$$$$$+XoO$$$$$$$+XO#",
+"   o#$$$$$$$$ .#O$$$$$$$+o$$",
+"+XXO#$$$$$$$$+X#O$$$$$$$+X#O",
+"+XXO#$$$$$$$+oooO#$$$$$$+X#O"
+};

@@ -1,0 +1,4 @@
+#define tiny_u_width 7
+#define tiny_u_height 6
+static unsigned char tiny_u_bits[] = {
+ 0x37,0x26,0x26,0x26,0x36,0x7e};

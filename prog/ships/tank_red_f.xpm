@@ -1,0 +1,34 @@
+/* XPM */
+static char *tank_red_f_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c grey",
+"o c red",
+"O c white",
+"+ c slate grey",
+"@ c None",
+/* pixels */
+"@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@ @@@@@@@@@",
+"@@@@@@@@@@O @@@@@@@@",
+"@@@@@@ @@ OX  @@@@@@",
+"@@ @@ O  ++OX @@@@@@",
+"@@@O @ O   +OX @@@@@",
+"@@ O+   O o+OX @@@@@",
+"@ XXO+o O o+OX @@@@@",
+"@@ XO+o O o+OXX @@@@",
+"@@ XO+o O oo+OX @@@@",
+"@@@ XO+o Oooo+OX @@@",
+"@@@ XO++ooo.o+OX @@@",
+"@@@  XO+o...o+OX  @@",
+"@@@@ XO+o...++OOX@@@",
+"@@@@ XO+o.oo+ +O @@@",
+"@@@@@ XO++o++ @  @@@",
+"@@@@@ XOO+   @@@@@@@",
+"@@@@@@ XO @@@@@@@@@@",
+"@@@@@@@  @@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@"
+};

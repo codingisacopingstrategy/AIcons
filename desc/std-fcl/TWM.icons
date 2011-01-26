@@ -1,0 +1,40 @@
+# --- std-cl ---
+# Twm icons using the icon images in this directory.
+# This file can be included ing a m4 source file for the appropriate
+# twm rc file generation. Ctwm rc file usally are automatically
+# m4 pre-processed. Other twm variants may have to be pre-processed
+# separately, especiall before "f.restart" menu function is executed.
+#[
+#   changequotes([,])
+#   PixmapDirectory "......path_to_aicons.../desc"
+#   include(...path_to_aicons.../desc/std-cl/TWM.icons)
+#]
+undefine([ICON])
+ifelse( TWM_TYPE, ctwm,
+  [ define( ICON, "xpm:std-fcl/$1.xpm" )
+],[ define( ICON, "std-fcl/$1.xpm" )
+])
+
+# NOTE: that the "std" bitmap icons are generally loaded BEFORE these
+# icons so that these can override them with color versions if available
+# otherwise retain the older bitmap version.
+
+# UnknownIcon   ICON(unknown)    # use this icon if none is set
+Icons {
+  # --- General Applications ---
+  "Firefox"            ICON(firefox)
+  "Firefox-bin"        ICON(firefox)
+
+  # --- Editors (including special xterm windows) ---
+
+  # --- Specific Application Windows ---
+  # EG: not the class NAME of a application
+
+  # regular expression matched
+
+  # --- Machine Terminal Windows ---
+  "xterm-mirror"       ICON(mirror)
+
+  # --- Special Terminals ---
+}
+undefine([ICON])

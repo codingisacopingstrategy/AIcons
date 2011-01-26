@@ -1,0 +1,35 @@
+/* XPM */
+static char * ball_up_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 9 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c grey",
+"o	c black",
+"O	c dark slate grey",
+"+	c sea green",
+"@	c pale green",
+"#	c gainsboro",
+"$	c lime green",
+/* pixels */
+"                    ",
+"       ......       ",
+"     X......o.O     ",
+"    ..X..+@...O.    ",
+"   X.O.XX+@..OOOo   ",
+"  ...XX#+$@.O..O.o  ",
+"  .O..X#+$$@.OOOoO  ",
+" OO..X.#+$$@..O.OOo ",
+" .O.O..+$$$@O.OoOoo ",
+" OO...O+$$$$@OO.oOo ",
+" .o.O.+$$$$$@.oOooo ",
+" o.o.o+$$$$$@o.OoOo ",
+" .o.OO+$$$$$$@.o.oo ",
+"  oOo+$$$$$$$@Oooo  ",
+"  oOo+@@@@@@@@.ooo  ",
+"   OooOo.ooOo.ooo   ",
+"    oOooooOoOoOo    ",
+"     ooooooOoOo     ",
+"       oOoooo       ",
+"                    "};

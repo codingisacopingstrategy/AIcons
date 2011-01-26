@@ -1,0 +1,42 @@
+/* XPM */
+static char *dog_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c tomato",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXX  XXXXX",
+"XXXXXXXXXXXXX     XXXX   ..  XXX",
+"XXXXX  XXXXX ..... XX ....... XX",
+"XXXX ..  XX   ....   ......... X",
+"XXX .....  ......... ......... X",
+"XX ....... .    ..     .. .... X",
+"XX ........ XXXX  XXXXX .. ... X",
+"X ........ XXXXXX XXXXX    ... X",
+"X .... ... XXXXXX XXX X XXX .. X",
+"X ....     XX XXX XXXXX XXX   XX",
+"XX ... XXX XXXXXX XXXX XXXXXXXXX",
+"XX ... XXXX XXX  .    XXXXXXXXXX",
+"XXX . XXXXX    ...... XXXXXXXXXX",
+"XXXX  XXXXX .......... XXXXXXXXX",
+"XXXXXXXXXXX ...........    XXXXX",
+"XXXXXXXXXXX ............    XXXX",
+"XXXXXXXXXXX ...........      XXX",
+"XXXXXXXXXX ............      XXX",
+"XXXXXXXXXX ............     XXXX",
+"XXXXXXXXX ..   ......... XXXXXXX",
+"XXXXXXXXX .....  ...... XXXXXXXX",
+"XXXXXXXX ........      XXXXXXXXX",
+"XXXXXXXX ............. XXXXXXXXX",
+"XXXXXXX ............... XXXXXXXX",
+"XXXXXXX ................ XXXXXXX",
+"XXXXXX ... .......... .. XXXXXXX",
+"XXXXXX .. ............ .. XXXXXX",
+"XXXXXX                    XXXXXX"
+};

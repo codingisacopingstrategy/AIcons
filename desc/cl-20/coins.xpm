@@ -1,0 +1,33 @@
+/* XPM */
+static char * coins_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c yellow",
+"o	c grey",
+"O	c gainsboro",
+"+	c purple",
+"@	c white",
+/* pixels */
+"                    ",
+"      ........      ",
+"    ..XoXOoXOX..    ",
+"   .XXoXOoooOoXX.   ",
+"   .XXXOoooOooXX.   ",
+"   ...XXXoOOXX...   ",
+"   .o+.........o.   ",
+"   .XoX@@++XXoXo.   ",
+"   ...X@@oo@Xo...   ",
+"   .o+.........o.   ",
+"   .XoX@@++@XoXo.   ",
+"   ...X@@oo@Xo...   ",
+"   .o+.........o.   ",
+"   .XoX@@++@XoXo.   ",
+"   ...X@@ooXXo...   ",
+"   .o+.........o.   ",
+"   .XoX@@++XXoXo.   ",
+"    ..X@@oo@Xo..    ",
+"     ..........     ",
+"                    "};

@@ -1,0 +1,320 @@
+<HTML><HEAD>
+<TITLE>Color Table Development Notes</TITLE>
+<LINK REL="SHORTCUT ICON" HREF="../www_images/favicon.ico">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#66CDAA"
+      LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+
+<H1>                 Color Table Development Notes                     </H1>
+<H2>                   Anthony's X Icon Library                        </H2>
+
+
+<H3> Sections: </H3>
+<MENU>
+<LI><A HREF="#why">   Why use a `standard icon color table'   </A>
+<LI><A HREF="#how">   Development of the color table          </A>
+<LI><A HREF="#what">  The current `standard icon color table' </A>
+<LI><A HREF="#when">  Changes made to the color table         </A>
+</MENU>
+
+
+<A NAME="why">
+<H3>  Why use a `standard icon color table'  </H3>
+</A>
+
+    The icons individually use only a couple of colors (rarely more than
+  5), but when you use a large group of icons, you very quickly use up all
+  the colors available on a standard pseudo-color Xterminal. Thus very
+  soon a new application will appear to use many different colors than
+  what it normally would use. This problem is made even worse by the
+  "angry fruit salad" setup as Peter Norby &lt;norby@soda.berkeley.edu&gt;
+  puts it.<P>
+
+  <DL>
+  <DT> "angry fruit salad" (n). --
+  <DD>    A bad visual-interface design that uses too many colors.
+       This term derives, of course, from the bizarre day-glo colors found
+       in canned fruit salad.)  Too often one sees similar effects from
+       interface designers using color window systems such as {X}; there
+       is a tendency to create displays that are flashy and
+       attention-getting but uncomfortable for long-term use.<P>
+  </DL>
+
+    The need is a small set of colors, say 20 to 30, which all icons,
+  and window managers can follow and MOST APPLICATIONS as well. Only a
+  few applications should require extra colors outside this color table,
+  in particular, graphic applications for, drawing, pictures, animation
+  etc.<P>
+
+    The color table can, if the user desires, should be loadable as
+  permanent shared color table entries, with the remainig colors (about
+  230 colors) usable by applications with special color needs (see
+  above). This can be done.<P>
+
+    The colors used by a background picture or pattern, is also of concern
+  in this matter.  But I leave the choice of, and the number of, colors
+  used up to the user involved.  To this end I have not changed any colors
+  used by the color background patterns, though some of these patterns
+  could also follow the standard color table developed below.<P>
+
+    I tried to start a discussion in `comp.windows.x' at the start of the
+  year (Feb '93) about some sort of `standard color table' that icons
+  should follow, however no response was received by the network on this
+  matter.<P>
+
+
+<A NAME="how">
+<H3>   Development of the color table  </H3>
+</A>
+
+    Developing a small color table for general use for icons is not easy
+  to say the least. This is not a simple problem and no simple solution
+  exists. Formulated solutions only work (in general) for color maps
+  involving more than 100 colors (the large number the better).  Previous
+  problems of this type are usually solved by hand for the requirements at
+  that time.<P>
+
+    A common solution is to use a 3x3x3 color cube to provide a total of
+  27 colors. This however is far from satisfactory.  While the grey scale
+  and primary/secondary colors provided by the color cube are well used by
+  applications and icon images, the other colors are very dark and
+  oppressive, which are often, just not used.<P>
+
+    Also an number of other important colors are not available in a 3x3x3
+  color cube.  For example, no brown or tan colors are present, a very
+  common need by most applications and icon images. Similarly certain
+  shades in some of the primary colors are also usually required for
+  various purposes. In particular, a blue color scale is often required by
+  application writers for the purpose of 3 dimensional effects.<P>
+
+    All this is well and good but we still need some sort of color table.
+  After great deliberation on this subject, I came up with the following
+  requirements:-<P>
+  <UL>
+  <LI> Color table should at least include :-
+    <UL>
+    <LI> a small grey scale    black, 2 shades of grey and white
+    <LI> the 6 primary/secondary colors
+	     magenta, red, yellow, green, cyan, and blue
+    <LI> darker and lighter forms of the 6 primary/secondary colors
+    </UL><P>
+
+  <LI> A few brown or tan colors. 
+       Particularly for use in skin tones, and paper colors.<P>
+
+  <LI> Colors used should appear in the X Window RGB color database.
+       These colors (should) be the most common colors in use by the X
+       community and thus (should) more sharable. This also provides more
+       symbolic naming for the colors, which is already widely used.<P>
+
+  <LI> A absolute maximum of 32 colors in the final color table.
+       Note however that I do NOT intent to pick all the colors
+       immediately.  Nor should I.<P>
+
+  </UL><P>
+
+    Toward the above requirements, I needed a small list of colors from
+  the RGB color database which are already commonly used.  To do this I
+  looked at the various colors used by the various applications and window
+  manager setups used on our local system. The results of this survey are
+  as follows :-<P>
+  <UL> 
+  <LI> All but one of the applications using colors didn't use color names.
+       A couple of other applications only had one or two direct color pixel
+       values. In general, almost all color references were by name.<P>
+
+  <LI> All the primary/secondary colors were heavily used by just about
+       all applications with the exception of "magenta", which was only used
+       by one application.  This was very interesting, considering 5
+       applications opted to use a "maroon" (dark magenta-red) color.<P>
+
+  <LI> Approximately 10 different off-whites were used. Basicaly an
+       application selected one of the off-whites for use instead of using
+       a plain "white" colour.  Due to the large variety available, almost
+       all application writers then selected a different off-white to
+       use.  Maybe the user should be allowed to select a common off-white
+       color for general use on his/her display. <P>
+
+         ASIDE: The most common off-white was "ivory" with "snow" a close
+       second. All other off-white colours appeared only once.<P>
+
+  <LI> A very large varity of blue colors were used by different
+       applications.  This looks to be the main color area used for shading
+       effects.  If an application writer used only a single `blue' color in
+       his/her application, he/she then generally picked the primary "blue"
+       color.<P>
+
+  <LI> Ignoring white, black, numbered colors (like "RoyalBlue3"), and
+       off-white colors, the numerical results of the survey were:
+     <PRE>
+     #applications       colors used
+	> 5   :  red (17),  yellow (10),  blue (9),   green (7),
+                 grey (7),  wheat (7),   maroon (5),  cyan (5),
+
+          4   :  light grey,  navy,  cadet blue
+          3   :  slate grey,  gold,  lemon chiffon
+
+          2   :  steel blue,  medium blue,  light blue,  aquamarine,
+                 dark green,  sea green,  tan,  orchid,
+                 pink,  indian red,  light yellow
+
+          1   :  magenta,  plum,  purple,  violet,  
+                 tomato,  coral,  firebrick,  brown,  orange,
+                 khaki,  sienna,  goldenrod,  light goldenrod,  sienna,
+                 pale green,  chartreuse,  dark turquoise,  pale turquoise,
+                 light cyan,  light sky blue,  sky blue,  deep sky blue,
+                 powder blue,  cornflower blue,  dodger blue, 
+                 royal blue,  light slate blue,  slate blue,  dark slate blue,
+                 
+                 and 11 different off-whites.
+       </PRE><P>
+  </UL><P>
+
+    I was thinking of using this exercise with icons but most icons color
+  selections already present in the collection seem to have no bearing on
+  the RGB color name database.<P>
+
+  I used the above results to form `Color Groupings' and a few `Special
+  Color Scales'.  This resulted in the following list of color groups and
+  scales.  I have also places a few comments on particular colors.<P>
+  <PRE>
+   Color Groupings              Color/s
+     Blue-Magenta       "purple"
+     Dark Magenta       "maroon"
+     -- magenta --
+     Light Magenta      "violet",  "plum",  "orchid"
+     Dark Red           "brown",   "firebrick",  "indian red"(?)
+     -- red --
+     Light Red          "coral",  "tomato",  "pink"(too light?)
+     Red-Yellow         "orange"
+     Dark Yellow        "gold",  "light goldenrod",  "goldenrod"
+     -- yellow --
+     Light Yellow       "lemon chiffon",  "light yellow"(too light?)
+     Green-Yellow?      "green yellow",  "lawn green"
+                            "chartreuse",  "yellow green"(?)
+     Dark Green         "lime green",  "sea green",  "dark green",
+     -- green --
+     Light Green        "pale green",  "spring green"
+     Green-Cyan         "aquamarine"
+     Light cyan         "light cyan"(too light?)
+     -- cyan --
+     Dark Cyan          "pale turquoise",  "turquoise",  "dark turquoise",
+     Very Light Blue    "light blue",  "powder blue"
+     Lighter Blue       "deep sky blue",  "sky blue",  "light sky blue"
+     Light Blue         "dodger blue",  "cornflower blue",  "royal blue",
+                            "steel blue",  "light slate blue",
+                            "slate blue",  "cadet blue"(?),
+     Very Light Blue    "lavender"
+     -- blue --
+     Dark Blue          "navy",  "medium blue",  "dark slate blue"
+
+
+   Special Color Scales
+     Grey Scale         "black",  "dark slate grey",  "slate grey",
+                            "dim grey",  "grey",  "light grey",
+                                 "gainsboro",  "white"
+
+     Brown Scale        "sienna",  "chocolate",  "peru", "orange",
+                            "sandy brown" (close to orange), 
+                              "burlywood" (close to tan)
+
+     Tan Scale          "tan",  "wheat",  "lemon chiffon",
+                            "khaki"(a bit too yellow)
+  </PRE><P>
+
+
+<A NAME="what">
+<H3>  The Current `Standard Icon Color Table'.  </H3>
+</A>
+
+    The above exercise allowed me to select colors to form a (I hope) good
+  standard color table to start with, and one which seems to cause minimal
+  problems when recoloring the color icons already in the collection.<P>
+
+    I did not use all the color groups listed above.  For example I have
+  provide no light or dark cyan color in the current color table and so
+  far have found no problems. Instead I have added an extra light blue
+  color.<P>
+
+    The final color table, listed in various color scales is as follows :-
+  <PRE>
+  Version 1.6 AIcons Color Table
+  .-----------------------------------------------------------------------.
+  |    "black",     "dark slate grey",     "slate grey",            |     |
+  |                         "grey",     "gainsboro",     "white"    |   6 |
+  |               "purple",    "magenta",    "violet"               |   3 |
+  |  "firebrick",  "red",  "tomato",  "orange",  "gold",  "yellow"  |   6 |
+  |                "sienna",  "peru", +--^                          |   2 |
+  |               "tan",   "wheat",   "lemon chiffon"               |   3 |
+  |       "sea green",  "lime green",  "green",  "pale green"       |   4 |
+  |      "navy",  "blue",  "dodger blue",  "sky blue", "lavender"   |   5 |
+  |                          "cyan"                                 |   1 |
+  `-----------------------------------------------------------------------'
+                                                                Total: 30
+  </PRE><P>
+
+    These colors are also displayed in the icon "colortable.xpm" in the
+  `cl-misc' section of this collection. Also in this section is a icon
+  with one pixel representing each color, "colormap.xpm". I convert this
+  icon into the PbmPlus (ppm) format to use with the `ppmquant' program.
+  This makes it easy to write a script to recolor icons, though you still
+  need to check at how well it turned out.<P>
+
+    In the future, I may remove a few colors that do not seem to be used
+  much and are fairly close to other colors (see below for the changes
+  that have occurred. This is however becoming quite unlikely.
+
+    The current colors under consideration are... <MENU>
+  <LI><I>MediumSeaGreen</I> -- as a fill in for the green scale (do we need it).
+  <LI><I>Misty Rose</I> -- to complete the red scale (this is a bit too light).
+  <LI><I>????</I> -- as a light color for the purple/violet scale.
+  </MENU>
+    
+<A NAME="when">
+<H3>   Changes made from the original table to create the above </H3>
+</A>
+  <DL>
+  <DT> V1.9:
+  <DD> Two pastel colors added to make a reasonable correspondance to
+       the PC 16 color colormap. A mustard like color "dark khaki", and
+       a dark cyan color "light sea green". <P>
+
+  <DT> V1.6:
+  <DD>  One color "lavender" was added which seemed to round off the
+      required blue scale. This brings the color table back to 30 colors. <P>
+
+  <DT> V1.5:
+  <DD>    The original color "dark green", was replaced by a lighter
+      color "sea green".  The original dark green proved to be too dark
+      for most situations, and too distant for the next green color "lime
+      green".  This change should (and has) allowed the better use of the
+      green color scale.<P>
+
+	A new color "purple" added to provide better linkage between the
+      red and the blue areas of the color table.<P>
+
+	The original color "maroon" was removed and the existing usage
+      of this color switched to "firebrick" which it closly resembles.<P>
+
+        The color "sandy brown" removed as it too closly matches the color
+      "orange".<P>
+
+      Creating a new total of 29 colors in standard table. <P>
+
+  <DT> V1.4:
+  <DD>    Original color selections made -- 30 colors.
+
+   </DL><P>
+
+<HR><P>
+   Any suggestions on color choices, changes, and/or pointers to published
+ material is most welcome.<P>
+  
+<PRE>
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+     Life (n).      A sexually transmitted disease which afflicts some
+                people more severly than others.
+------------------------------------------------------------------------------
+</PRE>
+</BODY></HTML>

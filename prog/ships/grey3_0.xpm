@@ -1,0 +1,36 @@
+/* XPM */
+static char * grey3_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 10 1",
+/* colors */
+" 	s None	c None",
+".	c grey",
+"X	c slate grey",
+"o	c tan",
+"O	c sienna",
+"+	c green",
+"@	c peru",
+"#	c tomato",
+"$	c dark slate grey",
+"%	c red",
+/* pixels */
+"                    ",
+"                    ",
+"   .    XXXX    .   ",
+"   X   X....X   X   ",
+"   X  X..oo..X  X   ",
+"   X oOO.OO.OOo X   ",
+"   + o@@O@@O@@o +   ",
+"   +X.o#@oo@#o.X+   ",
+"   +X..o####o..X+   ",
+"   +XX  #OO#  XX+   ",
+"   $     @@     $   ",
+"   $  X X##X X  $   ",
+"      XXo..oXX      ",
+"      +X....X+      ",
+"      + %%%% +      ",
+"      +      +      ",
+"      $      $      ",
+"      $      $      ",
+"                    ",
+"                    "};

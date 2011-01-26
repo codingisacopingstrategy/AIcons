@@ -1,0 +1,32 @@
+/* XPM */
+static char * noteBook_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c grey",
+"o	c black",
+"O	c white",
+"+	c gainsboro",
+/* pixels */
+"    ................",
+"   .XXXXXXXXXXXXXXX.",
+"  ................X.",
+" o.OOOOOOOOOOOOOO.X.",
+"o .O++++++++++++X.X.",
+" ooo++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+" o.O++++++++++++X.X.",
+"o .O++++++++++++X.X.",
+" ooo++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+"  .O++++++++++++X.X.",
+" o.O++++++++++++X.X.",
+"o .O++++++++++++X.X.",
+" ooo++++++++++++X.X.",
+"  .OXXXXXXXXXXXXX.. ",
+"  ................  "};

@@ -1,0 +1,29 @@
+/* XPM */
+static char * afactor_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	s None	c None",
+".	c peru",
+"X	c gold",
+/* pixels */
+"                    ",
+"            .       ",
+"           ..       ",
+"           ...      ",
+"          ....      ",
+"         .....      ",
+"         ..XX..     ",
+"        ...XX..     ",
+"       ...XXX..     ",
+"       ..XXXXX..    ",
+"      ...XXXXX..    ",
+"      ..XXXXX...    ",
+"     ..XXXX......   ",
+"    ...XX..... ..   ",
+"    ..X.....   ..   ",
+"   .......      ..  ",
+"   .....        ..  ",
+"  ....           .  ",
+"  ..             .  ",
+"                    "};

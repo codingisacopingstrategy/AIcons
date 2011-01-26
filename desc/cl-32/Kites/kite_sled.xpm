@@ -1,0 +1,43 @@
+/* XPM */
+static char *kite_sled_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c tomato",
+"X c SlateGrey",
+"o c None",
+/* pixels */
+"ooooooooooooo     oooooooooooooo",
+"oooooooooooo XXXXX   ooooooooooo",
+"ooooooooooo XXXXXXXXX oooooooooo",
+"ooooooooooo  XXXXXXXX  ooooooooo",
+"ooooooooooo X XXXXXXX . oooooooo",
+"ooooooooooo X XXXXXXX . oooooooo",
+"ooooooooooo XX XXXXXX .. ooooooo",
+"ooooooooooo XXX XXXXX ... oooooo",
+"ooooooooooo XXXX XXXX .... ooooo",
+"ooooooooooo  XXX XXXX .... ooooo",
+"ooooooooooo   XXX XX X  ... oooo",
+"ooooooooooo oo  XX  XXXX  .. ooo",
+"oooooooooo ooooo X  XXXXXX .. oo",
+"oooooooooo oooooo   XXX       oo",
+"ooooooooo oooooo oo  X ooooo   o",
+"ooooooooo ooooo ooooo ooooooooo ",
+"oooooooo ooooo ooooooooooooooooo",
+"oooooooo oooo oooooooooooooooooo",
+"ooooooo oooo ooooooooooooooooooo",
+"ooooooo ooo oooooooooooooooooooo",
+"oooooo ooo ooooooooooooooooooooo",
+"oooooo oo oooooooooooooooooooooo",
+"ooooo oo ooooooooooooooooooooooo",
+"ooooo o oooooooooooooooooooooooo",
+"oooo o ooooooooooooooooooooooooo",
+"oooo  oooooooooooooooooooooooooo",
+"ooo  ooooooooooooooooooooooooooo",
+"ooo oooooooooooooooooooooooooooo",
+"oo ooooooooooooooooooooooooooooo",
+"o oooooooooooooooooooooooooooooo",
+" ooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

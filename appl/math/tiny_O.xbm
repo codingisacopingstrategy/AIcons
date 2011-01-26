@@ -1,0 +1,4 @@
+#define tiny_o_width 7
+#define tiny_o_height 6
+static unsigned char tiny_o_bits[] = {
+ 0x1c,0x22,0x22,0x22,0x22,0x1c};

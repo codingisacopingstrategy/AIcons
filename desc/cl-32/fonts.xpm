@@ -1,0 +1,43 @@
+/* XPM */
+static char *fonts_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c black",
+"a c red",
+"b c white",
+"c c blue",
+/* pixels */
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbccbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbcccbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbccccbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbcccccbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbccbcccbb",
+"bbbbbbbbbbbbbbbbbbbbbbbccbbcccbb",
+"bbbbbbbbbbbbbbbbbbbbbbccbbbcccbb",
+"bbbbbbbbaabbbbbbbbbbbccbbbbcccbb",
+"bbbbbbbbaabbbbbbbbbbccbbbbbcccbb",
+"bbbbbbbaaaabbbbbbbbcccccccccccbb",
+"bbbbbbbaaaabbbbbbbccbbbbbbbcccbb",
+"bbbbbbaaaaaabbbbbccbbbbbbbbcccbb",
+"bbbbbbaaaaaabbbbccbbbbbbbbbcccbb",
+"bbbbbaaaaaaaabccccccbbbbbccccccc",
+"bbbbbaaaaaaaabbbbbbbbbbbbbbbbbbb",
+"bbbbaaabbaaaaabbbbbbbbbb``bbbbbb",
+"bbbbaaabbaaaaabbbbbbbbb````bbbbb",
+"bbbaaabbbbaaaaabbbbbbb``````bbbb",
+"bbbaaabbbbaaaaabbbbbb`bb`````bbb",
+"bbaaabbbbbbaaaaabbbb``bbb````bbb",
+"bbaaaaaaaaaaaaaabbb```bbbb```bbb",
+"baaaaaaaaaaaaaaaabb```bbbb```bbb",
+"baaabbbbbbbbaaaaabb```bbbb```bbb",
+"aaabbbbbbbbbbaaaaab```bbbb```bbb",
+"aaabbbbbbbbbbaaaaab```bbbb```bbb",
+"bbbbbbbbbbbbbbbbbbb```bbbb```bbb",
+"bbbbbbbbbbbbbbbbbbb```bbbb```bbb",
+"bbbbbbbbbbbbbbbbbbb````bb````bb`",
+"bbbbbbbbbbbbbbbbbbb``````b`````b",
+"bbbbbbbbbbbbbbbbbbbb````bbb```bb"
+};

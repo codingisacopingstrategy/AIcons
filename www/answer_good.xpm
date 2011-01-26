@@ -1,0 +1,34 @@
+/* XPM */
+static char *answer_good_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"23 23 4 1",
+/* colors */
+"  c lime green",
+". c green",
+"X c sea green",
+"o c None",
+/* pixels */
+"oooooooooooooooooooo..o",
+"ooooooooooooooooooo.. X",
+"oooooooooooooooooo..  X",
+"ooooooooooooooooo..   X",
+"oooooooooooooooo..   XX",
+"ooooooooooooooo..   XXX",
+"oooooooooooooo..   XXXo",
+"ooooooooooooo..   XXXoo",
+"o....ooooooo..   XXXooo",
+"..   .ooooo..   XXXoooo",
+".     Xooo..    XXooooo",
+".     XXo..    XXXooooo",
+".     XX..    XXXoooooo",
+".     X..    XXXooooooo",
+".     ..    XXXoooooooo",
+".          XXXooooooooo",
+".         XXXoooooooooo",
+".        XXXooooooooooo",
+".       XXXoooooooooooo",
+".      XXXooooooooooooo",
+"o.    XXXoooooooooooooo",
+"oo.  XXXooooooooooooooo",
+"oooXXXXoooooooooooooooo"
+};

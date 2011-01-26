@@ -1,0 +1,27 @@
+-dispose 1
+-colors 256
+-delay 200
+-page +0+0   aicons/aicons_frame.xpm
+-delay 15
+-page +4+4   aicons/aicons_blank.xpm
+-page +34+40 aicons/aicons_sq_lt.xpm
+-page +22+22 aicons/aicons_sq_dk.xpm
+-page +40+22 aicons/aicons_sq_lt.xpm
+-page +4+40  aicons/aicons_sq_dk.xpm
+-page +40+28 aicons/aicons_sq_dk.xpm
+-page +46+40 aicons/aicons_sq_lt.xpm
+-page +40+4  aicons/aicons_sq_dk.xpm
+-page +22+28 aicons/aicons_sq_lt.xpm
+-page +16+28 aicons/aicons_sq_dk.xpm
+-page +34+28 aicons/aicons_sq_lt.xpm
+-page +40+40 aicons/aicons_sq_dk.xpm
+-page +40+10 aicons/aicons_sq_lt.xpm
+-page +10+34 aicons/aicons_sq_dk.xpm
+-page +10+40 aicons/aicons_sq_lt.xpm
+-page +40+16 aicons/aicons_sq_dk.xpm
+-page +40+34 aicons/aicons_sq_lt.xpm
+-page +28+28 aicons/aicons_sq_dk.xpm
+-page +28+16 aicons/aicons_sq_lt.xpm
+-page +34+10 aicons/aicons_sq_dk.xpm
+-page +0+0   aicons/aicons_frame.xpm
+-loop 0

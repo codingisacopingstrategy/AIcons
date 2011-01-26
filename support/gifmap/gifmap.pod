@@ -1,0 +1,450 @@
+=head1 NAME
+
+gifmap - web-based image index builder
+
+=head1 SYNOPSIS
+
+B<gifmap> S<[ --address string]>
+       S<[ --coloralink colorspec ]>
+       S<[ --colorback colorspec ]>
+       S<[ --colorlink colorspec ]>
+       S<[ --colortrans colorspec ]>
+       S<[ --colorvlink colorspec ]>
+       S<[ --columns number ]>
+       S<[ --debug ]>
+       S<[ --dircoloralink colorspec ]>
+       S<[ --dircolorback colorspec ]>
+       S<[ --dircolorlink colorspec ]>
+       S<[ --dircolorvlink colorspec ]>
+       S<[ --dirindexname filename ]>
+       S<[ --forcehtml ]>
+       S<[ --forcemontage ]>
+       S<[ --header string ]>
+       S<[ --help ]>
+       S<[ --htimage path ]>
+       S<[ --iconpath path ]>
+       S<[ --indexname filename ]>
+       S<[ --maptype cern|ncsa ]>
+       S<[ --maxgif number ]>
+       S<[ --montageflags string ]>
+       S<[ --pageindexname string ]>
+       S<[ --prefixpath path ]>
+       S<[ --readme filename ]>
+       S<[ --recurse ]>
+       S<[ --relative ]>
+       S<[ --rootpath path ]>
+       S<[ --rows number ]>
+       S<[ --srcdir path ]>
+       S<[ --thumbfont fontspec ]>
+       S<[ --thumbgeom widthxheight ]>
+       S<[ --title string ]>
+       S<[ --verbose ]>
+
+=head1 DESCRIPTION
+
+B<Gifmap> creates HTML index files and imagemaps
+corresponding to a directory of image files. B<Gifmap> is
+ideal for making large image collections available on the
+net or for just using your Web browser for browsing images.
+
+Configuration options are derived from either the command line
+(options prefixed with '-', '--', or '+'), configuration file
+($opt_ options), or internal defaults ($opt_ options). Some
+arguments (like X11 font specifications) seem to confuse PERL's
+getopt function. When this happens, try using the syntax
+I<--option=arg> to avoid any confusion caused by a space.
+
+The default configuration file name is "I<.gifmaprc>".
+Configuration files are written in PERL syntax and are sourced via
+PERL's eval statement. When B<gifmap> is executed, it first reads a
+"I<.gifmaprc>" file in the user's home directory (if present). When
+a directory is processed, B<gifmap> will process any "I<.gifmaprc>"
+files found in the path from the server's root directory
+(I<$opt_rootpath>) to the directory being processed. All
+configuration options are additive.
+
+Evaluation order is as follows :
+
+=over 4
+
+=item 1)
+$HOME/.gifmaprc
+
+=item 2)
+Command line options
+
+=item 3)
+Per directory .gifmaprc files.
+
+Gifmaprc  files  are evaluated in path order from server root to
+current directory. This allows sub-directories to "inherit" the
+configuration of parent directories.
+
+=back
+
+Each directory is processed with items 1 & 2 already complete.
+
+In general, B<gifmap>'s defaults produce nice output.
+However, the options B<$opt_prefixpath>,
+B<$opt_rootpath>, B<$opt_iconpath>, B<$opt_htimage>, and
+B<$opt_maptype> must be configured on a per-site basis so
+please read the documentation on these options and
+perform the required configuration before executing the
+program.
+
+=head1 PROGRAM OPTIONS
+
+=head2 General:
+
+=over 4
+
+=item B<$opt_debug>=I<1> (B<--debug>) 
+
+Print debugging messages.
+
+=item B<$opt_forcehtml>=I<1> (B<--forcehtml>)
+
+Force HTML files to be generated (default off).
+Without this option, B<gifmap> will only re-generate HTML
+files as required. Use this option if gifmap options have
+changed since the last run and you want to update the
+pages using the new options.
+
+=item B<$opt_forcemontage>=I<1>  (B<--forcemontage>)
+
+Force montage (default false).
+Without this option, B<gifmap> will only re-generate
+montages as required. Use this option if gifmap montage
+options have changed since the last run and you want to
+update the pages using the new options
+
+=item B<$opt_help>=I<1>  (B<--help>)
+
+Display usage message.
+
+=item B<$opt_ignore>=I<1>
+
+If B<$opt_ignore> is set in a directory's "<.gifmaprc>" file, then that
+directory will not be processed. If recursion is enabled, then recursion
+will continue into any sub-directories. See also B<$opt_indexname>.
+
+=item B<$opt_prune>=I<1>
+
+If B<$opt_prune> is set in a directory's "I<.gifmaprc>" file, then no
+sub-directories below that directory will be processed by gifmap when
+operating in the recursive mode.  See also B<$opt_indexname>.
+
+=item B<$opt_recurse>=I<1>  (B<--recurse>)
+
+Recurse directory tree. The default is to only process the current
+directory, generating appropriate links for sub-directories and the parent
+directory, as if gifmap is recuring. Selecting this option causes B<gifmap>
+to recurse through sub-directories as well.
+
+=item B<$opt_srcdir>=I<path>  (B<--srcdir> I<path>)
+
+Image directory to process or start recursion at. Specify this option
+(usally on the command line) if the directory you want to process is not
+the current directory.  The default directory to process is the current
+directory.
+
+=item B<$opt_verbose>=I<1>  (B<--verbose>)
+
+Normally B<gifmap> prints only the directory names for directories it
+processes. Selecting the verbose option displays the number of images and
+sub-directories in the directory as well as the number of pages to be
+generated, and the current page number.
+
+It will also show the current image index B<gifmap> is currently creating
+as a progress report.
+
+=back
+ 
+=head2 Paths:
+
+=over 4
+
+=item B<$opt_rootpath>=I<path>  (B<--rootpath> I<path>)
+
+Absolute path to server root directory (NCSA/Apatche DocumentRoot) or the
+users Home page directory. This must be an absolute path (starting with
+'/') to the top of the WWW directory tree gifmap will be processing in.  If
+this value is specified incorrectly, B<gifmap> will generate incorrect
+URLs.
+
+
+=item B<$opt_prefixpath>=I<path>  (B<--prefixpath> I<path>)
+
+The URL to prepend to specify the WWW location of B<$opt_rootpath>.
+For the WWW server's root directory this is a empty string (""). For a
+user's home pages this is the URL path to their home pages (usally
+"/~username", but may be different on your server). This is only used
+for figuring out the URLs of the B<gifmap> icon images.
+
+if B<$opt_relative> is enabled then this option is not actually used.  It
+however must be used if the B<gifmap> icon images are not in the same WWW
+directory tree as the directorys B<gifmap> is processing.  (See the next
+option).
+
+
+=item B<$opt_relative>=I<1>  (B<--relative>)
+
+Translate URLs for B<gifmap> icon images as relative paths from the
+directory B<gifmap> is processing. The images must be in the same WWW
+directory tree otherwise the relative paths will be incorrect. 
+
+If the images are is not in the same directory tree, then this option
+will have to be turned off and B<$opt_prefixpath> and B<$opt_iconpath>
+used to locate the B<gifmap> icon images using absolute URLs paths
+for that server. 
+
+
+=item B<$opt_iconpath>=I<path>  (B<--iconpath> I<path>)
+
+This is the relative path from the top of the WWW directory tree specified
+in B<$opt_rootpath>. If this value is specified incorrectly then
+B<gifmap> will generate incorrect URLs for its icons.
+
+=item B<%opt_icon>=(  'I<id>', 'I<filename>', .... );
+
+This is a hash table of all the icon images used by B<gifmap>
+and located in the B<$opt_iconpath> directory. The elments are pairs
+of icon I<id>s and the filename of the image. The I<id>s currently used
+B<gifmap> are :- prev, next, next_grey, up, help, and ball.
+
+Other images can also be defined in the hash table and B<gifmap> will
+automatically process those images along with the images it uses, to
+generate the icon URL and size infomation. This information can then be
+used in the various special formating options to add extra, or special
+purpose links.  
+
+WARNING: currently icon information can only be set in the global
+gifmaprc file (usally "I<~/.gifmaprc>", as unexpected results can happen
+if modified in per-directory rc files.
+
+=back
+
+
+=head2 Filenames:
+
+=over 4
+
+=item B<$opt_indexname>=I<filename>  (B<--indexname> I<filename>)
+
+Base name of master index files (default server index), usally set to
+"I<index.html">. This is also the option B<gifmap> will look for
+in sub-directories and parent directory "I<.gifmaprc>" files as the
+document to make links to.
+
+EG: If a directory is not processed by gifmap, by either never running
+B<gifmap> on that directory, or the option B<$opt_ignore> has been set,
+then setting B<$opt_indexname> will specify the document B<gifmap> created
+index files of OTHER directories should link to.
+
+If you do not what gifmap to ever link to this directory then setting this
+option, B<$opt_indexname>, to B<"NOLINK"> will will prevent B<gifmap> index
+files in other directories having links to this directory.
+
+If you want B<gifmap> to entirely ignore a particular directory tree,
+even during recursion of the surrounding directories, then you ca use
+the following options in its "I<.gifmaprc>" file....
+
+=over 4
+
+C<
+#
+# .gifmaprc -- Gifmap is not to process or even link to this directory tree
+#
+$opt_indexname    = 'NOLINK';  # Do not link to this directory
+$opt_ignore       = 1;         # Do not generate gifmap image indexes
+$opt_prune        = 1;         # Don't recurse into sub-directories
+>
+
+=back
+
+
+=item B<$opt_readme>=I<filename>  (B<--readme> I<filename>)
+
+Name of directory information file. If this named file exists in
+the directory, then it will be displayed in preference to
+the first page of images. Typically the contents of this file
+describe the images to be viewed.
+
+
+=item B<$opt_pageindexname>=I<string>  (B<--pageindexname> I<string>)
+
+Base name of page-related index files. This name is used as the prefix for
+all generated files except for the main index file. It is usally set to
+some hidden (or unix `dot' filename) such as ".index".
+
+  
+=item B<$opt_dirindexname>=I<filename>  (B<--dirindexname> I<filename>)
+
+Directory-name to title cross-reference sub-directories. If this file
+exists, then it is searched for a specification for the linked directory.
+If a match is found, then the replacement text is used as the link text.
+The format of the file is:
+
+
+ dirname  dirtext
+
+With I<dirname> representing the directory name and
+I<dirtext> representing the replacement link text.
+
+=back
+
+
+=head2 Server-side imagemaps:
+
+=over 4
+
+=item B<$opt_htimage>=I<path>  (B<--htimage> I<path>)
+
+Imagemap CGI program URL (set to '' for none). Older
+servers (e.g. CERN and old NCSA) require an external
+program to handle server-side imagemaps. These programs
+are generally supplied with a full URL to the referenced
+file. Newer servers have server-side imagemap support
+built-in and can accept URLs relative to the current
+directory. If you have a modern server, then specify this
+value as a null string.
+
+=item B<$opt_maptype>=I<maptype>  (B<--maptype> I<maptype>)
+
+Server-side map type (set to "ncsa" or "cern"). NCSA and
+Apache servers require "ncsa". CERN requires "cern".
+Phttpd can use either format.
+
+=back
+ 
+
+=head2 Image Map Options:
+
+=over 4
+
+=item B<$opt_colortrans>=I<colorspec>  (B<--colortrans> I<colorspec>)
+
+Transparent color to use in montage. Usally the same as the background
+color B<$opt_colorback> of the imagemap page.
+
+
+=item B<$opt_maxgif>=I<number>  (B<--maxgif> I<number>)
+
+Maximum size of GIF imagemap before trying JPEG. This is
+an optimization which tries to avoid the JPEG conversion step.
+
+
+=item B<$opt_montageflags>=I<string>  (B<--montageflags> I<string>)
+
+Flags to ImageMagick B<montage>. The B<montage> program is used to generate
+the thumbnail images used by B<gifmap>. Read the L<montage> for details.
+
+
+=item B<$opt_rows>=I<number>  (B<--rows> I<number>)
+
+Montage rows (max). This is the maximum number of thumbnail rows
+allowed per page.
+
+=item B<$opt_thumbfont>=I<fontspec>  (B<--thumbfont> I<fontspec>)
+
+Thumbnail title font. This is the X11 font used to title
+thumbnails. PERL's newgetopt module seems to have difficulties with
+the dashes in most X11 font specifications. If B<getopt> prints the
+usage message rather than doing what you want to, then try using
+the command line syntax I<--thumbfont=fontspec> and you should have
+better luck.
+
+=item B<$opt_thumbgeom>=I<geometry>  (B<--thumbgeom> I<geometry>)
+
+Thumbnail geometry (widthxheight). This defines the size
+of thumbnail images.
+
+=back
+  
+
+=head2 Colors & Appearance:
+
+=over 4
+
+=item B<$opt_address>=I<string> (B<--address> I<string>)
+
+Additional information to place in <ADDRESS></ADDRESS> tags in 
+page frame.
+
+=item B<$opt_coloralink>=I<colorspec>  (B<--coloralink> I<colorspec>)
+
+Link (active) color for page frame.
+
+=item B<$opt_colorback>=I<colorspec>  (B<--colorback> I<colorspec>)
+
+Background color for page frame.
+
+=item B<$opt_colorlink>=I<colorspec>  (B<--colorlink> I<colorspec>)
+
+Link (unvisited) color for page frame.
+
+=item B<$opt_colorvlink>=I<colorspec>  (B<--colorvlink> I<colorspec>)
+
+Link (visited) color for page frame.
+
+=item B<$opt_dircoloralink>=I<colorspec>  (B<--dircoloralink> I<colorspec>)
+
+Link (active) color for directory frame. Defaults to value of B<$opt_coloralink>
+if not explicitly set.
+
+=item B<$opt_dircolorback>=I<colorspec>  (B<--dircolorback> I<colorspec>)
+
+Background color for directory frame. Defaults to value of B<$opt_colorback>
+if not explicitly set.
+
+=item B<$opt_dircolorlink>=I<colorspec>  (B<--dircolorlink> I<colorspec>)
+
+Link (unvisited) color for directory frame.  Defaults to value of B<$opt_colorlink>
+if not explicitly set.
+
+=item B<$opt_dircolorvlink>=I<colorspec>  (B<--dircolorvlink> I<colorspec>)
+
+Link (visited) color for directory frame.  Defaults to value of B<$opt_colorvlink>
+if not explicitly set.
+
+=item B<$opt_columns>=I<number>  (B<--columns> I<number>)
+
+Montage columns.
+
+=item B<opt_frameddirfmt>=I<string>
+
+Template (written in PERL) that represents the format
+used to generate the framed (left frame) directory
+navigation page. This format will be seen by browsers
+that support frames. This is a guru-level option and is
+subject to change.
+
+=item B<opt_dirfmt>=I<string>
+
+Template (written in PERL) that represents the format
+used to generate the frame-less directory navigation
+page. This format will be seen by browsers that do not
+support frames. This is a guru-level option and is
+subject to change.
+
+=item B<$opt_header>=I<string>  (B<--header> I<string>)
+
+Text to add to page header in page frame. This option is subject to change
+and will be eliminated if the page frame is templatized.
+
+=item B<$opt_title>=I<string>  (B<--title> I<string>)
+
+Page title. If this option is not specified, then B<gifmap>
+will generate its own title.
+
+=back
+
+
+=head1 AUTHORS
+
+B<Gifmap> is written and maintained by Bob Friesenhahn
+(bfriesen@simple.dallas.tx.us) with copious input from Anthony
+Thyssen (anthony@cit.gu.edu.au). Anthony's diligent
+assistance as the first alpha tester is very much
+appreciated.
+

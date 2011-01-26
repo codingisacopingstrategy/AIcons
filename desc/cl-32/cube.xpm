@@ -1,0 +1,43 @@
+/* XPM */
+static char *cube[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c gainsboro",
+"a c red",
+"b c orange",
+"c c blue",
+/* pixels */
+"````````````````````````````````",
+"````````````````aa``````````````",
+"```````````````aaaa`````````````",
+"``````````````aaaaaaa```````````",
+"`````````````aaaaaaaaa``````````",
+"````````````aaaaaaaaaaa`````````",
+"```````````aaaaaaaaaaaaaa```````",
+"``````````aaaaaaaaaaaaaaaa``````",
+"`````````aaaaaaaaaaaaaaaaaaa````",
+"````````aaaaaaaaaaaaaaaaaaaaa```",
+"```````aaaaaaaaaaaaaaaaaaaaaaa``",
+"`````baaaaaaaaaaaaaaaaaaaaaaaaa`",
+"`````bbaaaaaaaaaaaaaaaaaaaaaaac`",
+"`````bbbbaaaaaaaaaaaaaaaaaaaacc`",
+"`````bbbbbaaaaaaaaaaaaaaaaaaccc`",
+"````bbbbbbbaaaaaaaaaaaaaaaaccc``",
+"````bbbbbbbbbaaaaaaaaaaaaacccc``",
+"````bbbbbbbbbbaaaaaaaaaaaccccc``",
+"```bbbbbbbbbbbbbaaaaaaacccccc```",
+"```bbbbbbbbbbbbbbaaaaaccccccc```",
+"```bbbbbbbbbbbbbbbaaacccccccc```",
+"``bbbbbbbbbbbbbbbbbbcccccccc````",
+"````bbbbbbbbbbbbbbbbccccccc`````",
+"`````bbbbbbbbbbbbbbccccccc``````",
+"``````bbbbbbbbbbbbbcccccc```````",
+"````````bbbbbbbbbbbccccc````````",
+"`````````bbbbbbbbbbcccc`````````",
+"```````````bbbbbbbcccc``````````",
+"````````````bbbbbbccc```````````",
+"`````````````bbbbbcc````````````",
+"```````````````bbcc`````````````",
+"````````````````bc``````````````"
+};

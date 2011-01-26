@@ -1,0 +1,62 @@
+#!/bin/sh
+#
+# update_readme
+#
+# From the "Icons.html" file if present, grab the buttons and pages
+# and add to the README.html.
+
+if [ ! -f "README.html" ]; then
+  echo "no \"README.html\" - update_readme aborted"
+  exit 0;
+fi
+if [ ! -f "Icons.html" ]; then
+  echo "no \"Icons.html\" - update_readme aborted"
+  exit 0;
+fi
+
+newer() {        # is file 1 newer than all others given
+  [ `ls -1rtd "$@" | tail -1` = "$1" ]
+}
+
+if newer README.html Icons.html; then
+  #echo "README.html is up-to-date - update_readme aborted"
+  exit 0;
+fi
+
+echo "Updating \"README.html\" navagation from newer \"Icons.html\" file.\n";
+
+
+# Extract the navagation buttons from the "Icons.html"
+navagation=`sed -n '/HREF="README.html"/,/ReadMe/d;
+                    s/>.*<\/A><BR>$/><\/A>/;
+                    /Directory Navigator/,/^<P>$/p;
+                    /^<P>$/q;
+                   ' Icons.html | tail +2`
+#echo "$navagation"
+
+# Add cut lines to README.html if not present
+if [ `grep -c 'Navagation START' README.html` -eq 0 ]; then
+  ed -s README.html <<-EOF
+	/<.H1>/ a
+	
+	<!-- Navagation START -->
+	<!-- Navagation END -->
+	.
+	w
+	EOF
+fi
+
+# Insert navagation into README.html
+ed -s README.html >/dev/null <<-EOF
+	/-- Navagation START --/ ks
+	/-- Navagation END --/ ke
+	's a
+	Junk Text Line --- Ensure next delete operation does not fail
+	.
+	's+1,'e-1 d
+	's a
+	$navagation
+	.
+	w
+
+

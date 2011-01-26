@@ -1,0 +1,32 @@
+/* XPM */
+static char *set24_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 20 5 1",
+/* colors */
+"  c black",
+". c lavender",
+"X c gainsboro",
+"o c white",
+"O c slate grey",
+/* pixels */
+"                                                                                                                                                      ",
+"                                                                                                                                                      ",
+"                    OXX            OXXXXO              XX      OX..XXX.O                     XXO                                                      ",
+"       XX          .XXXX         X...XX.XX     X.X    X..X     X.......XO         ..XX      X...XXOO           XX.X           OOXO                    ",
+"       XXX       OX...XXX        .....X..X     X..X   X.XX     .........        XX...X      XX....XX..XX     XX.....X       XX.....O        XXX       ",
+"       X..       ...XO..X        X..   X.X     X..X   X..O     X.....XX        X.....O      XX....X....X    O.........     OX.......X      X.....X    ",
+"       XXX      X...  .XX         O   XX.X     X..X   XX.      X...X           ...XO         X..O OX...X    X....X....     X.........     X......X..  ",
+"       XXX      X..X  XXX            X...O     X..X   X..O     ...O            ...            XX   .X.X      ...  ....     X...  ....    O........... ",
+"       X.X       OO   OXXO          .....      ...........     ....XXXX       O..X                X..X        ......X      OX..X.....    X.XXO   O.X. ",
+"       XXX            XXXX         X...X..     ...........O    X.......X      X..                 .X.X        O.....O       XX.X....X   X..X      ... ",
+"       XXX            XXXO          ......X    X...XXX...X     X........X     X..  OXX.O         X.X.         .....XX        X..XX..X   XX.       X.X ",
+"       XXX         X.....            XO ...     XXO   ...O      ...O X...     X..X......         XXXO        XX....X              ..X   X..      XXXX ",
+"       XXX        XX...X..             X..X           X..O       O    ...     X.........X       X...        X.XX..XX             O...   X..     XX.X  ",
+"       XX.O       .X.......           O.X.X           XX.             ..X     O....  ...X       ...X        X..  .Xo             X...   XX.X  OX..XX  ",
+"       XX.X      X..  .....X      XX...X.X            X..X       XX......      X..XXX...X      O..X          ....Xoo             OXXX    X.X.XX.XXO   ",
+"        X.O       ...XXX ..XO    O......X             XX.X       X...X...       X......X       X...          O.XXoo               XX     XX.XXXXX     ",
+"                   X.XX  XXX      X.XXXO              OX.X        X.....O        X...XX        XXXX                                        OXOO       ",
+"                          XO       O                               OO                            O                                                    ",
+"                                                                                                                                                      ",
+"                                                                                                                                                      "
+};

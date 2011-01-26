@@ -1,0 +1,35 @@
+/* XPM */
+static char *change_delete_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"109 24 4 1",
+/* colors */
+".      c gainsboro",
+"X      c dark slate grey",
+"       c None",
+"o      c black",
+/* pixels */
+".............................................................................................................",
+"............................................................................................................X",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                           oooooo            o                           o                               XX",
+"..                           o     o           o          o                o                               XX",
+"..                           o     o           o          o                o                               XX",
+"..                           o      o   oooo   o   oooo  ooo   oooo    ooo o                               XX",
+"..                           o      o  o    o  o  o    o  o   o    o   o  oo                               XX",
+"..                           o      o  o    o  o  o    o  o   o    o  o    o                               XX",
+"..                           o      o  oooooo  o  oooooo  o   oooooo  o    o                               XX",
+"..                           o      o  o       o  o       o   o       o    o                               XX",
+"..                           o     o   o       o  o       o   o       o    o                               XX",
+"..                           o     o    o   o  o   o   o  o    o   o   o  oo                               XX",
+"..                           oooooo      ooo   o    ooo   oo    ooo    ooo o                               XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..                                                                                                         XX",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

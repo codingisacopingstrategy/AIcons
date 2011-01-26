@@ -1,0 +1,25 @@
+/* XPM */
+static char * diamond_navy_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c navy",
+"X	c blue",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"         .          ",
+"        .X.         ",
+"       .XXX.        ",
+"      .XXXXX.       ",
+"     .XXXXXXX.      ",
+"    .XXXXXXXX..     ",
+"     .XXXXXX..      ",
+"      .XXXX..       ",
+"       .XX..        ",
+"        ...         ",
+"         .          ",
+"                    ",
+"                    "};

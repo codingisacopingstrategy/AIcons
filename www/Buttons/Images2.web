@@ -1,0 +1,107 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Buttons, E-H</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Buttons, E-H
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<A HREF="ftp://ftp.cit.gu.edu.au/pub/AIcons/WWW_Images_Buttons.tar.gz">
+  <IMG SRC="../blue_grab.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  GZiped-Tar Archive</A> of all these Button Images.<BR>
+<P>
+<IMG SRC="../space_30.gif" WIDTH=30 HEIGHT=1 ALT="  ">
+<B><A HREF="Images_Arrows.html">     			Arrows</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images1.html">   				A-D</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<!--<B><A HREF="Images2.html">-->			E-H</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images3.html">   				I-Q</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images4.html">				R-Z</A></B>
+<IMG SRC="../space_10.gif" WIDTH=10 HEIGHT=1 ALT=" ">
+<B><A HREF="Images_Anim.html">     			Animated</A></B>
+<P>
+
+These are buttons which can be used on WWW html documents for the creation
+of ``Button Banks''. All the buttons follow the style initially set out by
+Greg Bossert, of <A HREF="http://www-ns.rutgers.edu/doc-images/"
+TARGET="_top">Rutgers University</A>. <P>
+
+<HR>
+<H2>Buttons</H2>
+
+<A HREF=earth.gif         ><IMG SRC=earth.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=earth_au.gif      ><IMG SRC=earth_au.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=earth2.gif        ><IMG SRC=earth2.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=electronics.gif   ><IMG SRC=electronics.gif   LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=eye.gif           ><IMG SRC=eye.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=exclaimation.gif  ><IMG SRC=exclaimation.gif  LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=feedback.gif      ><IMG SRC=feedback.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=file.gif          ><IMG SRC=file.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=file_trans.gif    ><IMG SRC=file_trans.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=film.gif          ><IMG SRC=film.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=finger.gif        ><IMG SRC=finger.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=fire.gif          ><IMG SRC=fire.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=fishbowl.gif      ><IMG SRC=fishbowl.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=fist.gif          ><IMG SRC=fist.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=flask.gif         ><IMG SRC=flask.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=fortune.gif       ><IMG SRC=fortune.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=france.gif        ><IMG SRC=france.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=ftp.gif           ><IMG SRC=ftp.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=ftp_fish.gif      ><IMG SRC=ftp_fish.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=fun.gif           ><IMG SRC=fun.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=games.gif         ><IMG SRC=games.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=glasses.gif       ><IMG SRC=glasses.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=globe.gif         ><IMG SRC=globe.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=globe_earth.gif   ><IMG SRC=globe_earth.gif   LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=go.gif            ><IMG SRC=go.gif            LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=goblet.gif        ><IMG SRC=goblet.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=gopher.gif        ><IMG SRC=gopher.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=gopher_page.gif   ><IMG SRC=gopher_page.gif   LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=graduate.gif      ><IMG SRC=graduate.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=grapes.gif        ><IMG SRC=grapes.gif        LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=grin.gif          ><IMG SRC=grin.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hand.gif          ><IMG SRC=hand.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hand_point.gif    ><IMG SRC=hand_point.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hand_shake.gif    ><IMG SRC=hand_shake.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hand_up.gif       ><IMG SRC=hand_up.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home.gif          ><IMG SRC=home.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home1.gif         ><IMG SRC=home1.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home2.gif         ><IMG SRC=home2.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home_blue.gif     ><IMG SRC=home_blue.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home_green.gif    ><IMG SRC=home_green.gif    LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home_grey.gif     ><IMG SRC=home_grey.gif     LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=home_red.gif      ><IMG SRC=home_red.gif      LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hotlist.gif       ><IMG SRC=hotlist.gif       LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=html.gif          ><IMG SRC=html.gif          LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=html2.gif         ><IMG SRC=html2.gif         LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+<A HREF=hut.gif           ><IMG SRC=hut.gif           LOWSRC=frame.gif WIDTH=40 HEIGHT=40></A>
+
+<P><HR>
+
+<ADDRESS>
+Dated: 26 May 1995 <BR>
+Updated: 24 December 1996 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

@@ -1,0 +1,32 @@
+/* XPM */
+static char *recycle_empty_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"18 18 7 1",
+/* colors */
+"  c Black",
+". c Grey",
+"X c SeaGreen",
+"o c White",
+"O c SlateGrey",
+"+ c None",
+"@ c None",
+/* pixels */
+"++++++++++++++++++",
+"+++++OOOO+++++++++",
+"+++OOoOooOO+++++++",
+"+OOooO ..ooOO+++++",
+"+OooOO O...ooOO+++",
+"+O..oo OO....oo ++",
+"+O....ooO...ooO ++",
+"++O...XXooooOOO ++",
+"++O..X..XX.OOOO ++",
+"++O.XXX.XX.OOO +++",
+"++O..X.....OOO +++",
+"+++O.X.X.X.OOO +++",
+"+++O..XXXX.OOO +++",
+"+++O ..X...OO ++++",
+"+++++  ....OO ++++",
+"+++++++  ..OO ++++",
+"+++++++++    +++++",
+"++++++++++++++++++"
+};

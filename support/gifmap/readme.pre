@@ -1,0 +1,15 @@
+<HTML><HEAD>
+<TITLE>__TITLE__</TITLE>
+<LINK REL="shortcut icon" HREF="__TOP__www_images/favicon.ico">
+<BASE TARGET="_top">
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+   <A HREF="__TOP__">
+      <IMG SRC="__TOP__www_images/aicons_anim.gif"
+           LOWSRC="__TOP__www_images/aicons.gif" ALT="[AIcons]"
+           ALIGN=left WIDTH=56 HEIGHT=50 BORDER=0></A>
+
+   "__DIRECTORY__"<BR>
+   __DESCRIPTION__
+
+<BR CLEAR=all></NOBR></H1>

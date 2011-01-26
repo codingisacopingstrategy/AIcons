@@ -1,0 +1,25 @@
+/* XPM */
+static char * diamonds_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+" 	c tan",
+".	c wheat",
+"X	c peru",
+/* pixels */
+"    ..XX..XX    ",
+"   ..XX.X..XX   ",
+"  ..XX..XX..XX  ",
+" ..XX..X.XX..XX ",
+"..XX..XX..XX..XX",
+".XX..XX.X..XX..X",
+"XX..XX..XX..XX..",
+"X..XX..X.XX..XX.",
+"XX..XX..XX..XX..",
+".XX..XX.X..XX..X",
+"..XX..XX..XX..XX",
+" ..XX..X.XX..XX ",
+"  ..XX..XX..XX  ",
+"   ..XX.X..XX   ",
+"    ..XX..XX    ",
+"     ..X.XX     "};

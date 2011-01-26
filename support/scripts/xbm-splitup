@@ -1,0 +1,158 @@
+#!/bin/sh -
+#
+# xbmsplitup [options] size  file
+#  
+#  splitup a xbm xpm or pbmplus file into smaller images
+# of the same format.  See usage below
+#
+TMP1=/tmp/xbmsplitup1.$$
+TMP2=/tmp/xbmsplitup2.$$
+
+Usage() {
+  echo >&2 "Usage: $0 [options] size image"
+  echo >&2 "  where  size  is either   #  or  #x#"
+  echo >&2 "  output filename is of form  image_#.sfx"
+  echo >&2 "  with # defaulting to hexidecimal"
+  echo >&2 "    -a      use letters instead of numbers"
+  echo >&2 "    -d      use decimal numbers not hexadecimal"
+  echo >&2 "    -f 03d  format for output numbers"
+  echo >&2 "    -x      use a #x# format for output names"
+  echo >&2 "    -t      preserve the xpm trasparency"
+  exit 10;
+}
+
+NumFmt='x'
+CrossFmt=
+
+while :; do
+  case "$1" in
+    -a) NumFmt='c'; shift ;;         # Ascii letters not Hexadecimal
+    -d) NumFmt='d'; shift ;;         # Normal Numbers not Hexadecimal
+    -f) NumFmt="$2"; shift; shift ;; # Normal Numbers not Hexadecimal
+    -x) CrossFmt=true; shift ;;      # use a Cross format for output names
+    -t) TRANS="#BFBFBF"; shift ;;    # the transparent color to use.
+    -*) echo >&2 "Unknown option \"$1\""; Usage ;;
+    *)  break;;
+  esac
+done
+
+[ $# -ne 2 ] && Usage;
+
+case "$1" in
+  *x*)           #  resize to fully specified size
+      Width=`expr "$1" : '\([0-9]*\)'`
+      Height=`expr "$1" : '[0-9]*x\([0-9]*\)'`
+      shift ;;
+  *)             #  resize to a square of this size
+      if  size=`expr "$1" : '\([0-9]*\)'`;  then
+        Width=$size
+        Height=$size
+        shift
+      else 
+        Usage;
+      fi ;;
+esac
+
+i="$1"
+if [ ! -f "$i" ]; then
+  echo >&2 "Unknown file \"$i\""
+  Usage
+fi
+
+# --- find out the type and name of file ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+  suffix="`expr "$i" : '.*\.\([^.]*\)'`"
+  name="`expr "$i" : '\([^.]*\)'`"
+
+# --- convert to PbmPlus format ---
+  case "$suffix" in
+    xbm)  sed 's/unsigned //' "$i" | xbmtopbm > $TMP1 ;;
+    xpm)
+      if [ "$TRANS" ] && grep 'c  *None' "$i" >/dev/null; then
+        # convert None to transparent color (above)
+        sed "s/c  *[Nn]one/c $TRANS/g" "$i" |
+           x2p.sed | xpmtoppm > "$TMP1"
+      else
+        x2p.sed "$i" | xpmtoppm  > $TMP1
+      fi ;;
+    pbm|pgm|ppm) 
+         cp "$i" $TMP1 ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         exit;
+  esac
+
+OUT=.
+#mkdir $OUT
+
+Xsize=`expr "\`pnmfile $TMP1\`" : '.*, \([0-9]*\)'`
+Ysize=`expr "\`pnmfile $TMP1\`" : '.*by \([0-9]*\)'`
+
+X=`expr $Xsize / $Width`   # columns
+Y=`expr $Ysize / $Height`  # rows
+
+if [ `expr \( $X \* $Width \)` -ne $Xsize ];  then
+  echo >&2 "WARNING: $file not split width-wise correctly"
+  X=`expr $X + 1`
+fi
+
+if [ `expr \( $Y \* $Height \)` -ne $Ysize ];  then
+  echo >&2 "WARNING: $file not split width-wise correctly"
+  Y=`expr $Y + 1` 
+fi
+
+
+x=0; y=0; c=0
+while [ $y -lt $Y ]; do
+  x=0;
+  while [ $x -lt $X ]; do
+    # split a pixmap from picture
+
+    if [ "$CrossFmt" ]; then    
+      if [ $NumFmt = 'c' ]; then
+        n=${name}_`awk 'BEGIN{
+              printf "%cx%c", "'"$x"'"+65, "'"$y"'"+65; exit; }'`
+      else
+        n=${name}_`awk 'BEGIN{
+              printf "%'$NumFmt'x%'$NumFmt'", "'"$x"'", "'"$y"'"; exit; }'`
+      fi
+    else
+      if [ $NumFmt = 'c' ]; then
+        n=${name}_`awk 'BEGIN{ printf "%c", "'"$c"'"+65; exit; }'`
+      else
+        n=${name}_`awk 'BEGIN{ printf "%'$NumFmt'", "'"$c"'"; exit; }'`
+      fi
+    fi
+    echo "$x x $y  -> $n.$suffix"
+
+    pnmcut `expr $x \* $Width`   `expr $y \* $Height` \
+           $Width  $Height  $TMP1  >  $TMP2
+
+    # Insert convert back to correct format
+    case "$suffix" in
+      xbm)
+	pbmtoxbm $TMP2 | sed 's/static  *char/static unsigned char/;
+			s/noname\([[_]\)/'"$2"'\1/'  > $OUT/$n.$suffix
+	;;
+      xpm)
+	if [ "$TRANS" ]; then
+	  # replace transparent color with "None"
+	    ppmtoxpm $TMP2  2>/dev/null |
+	    sed "/colors/,/pixels/s/c $TRANS/c None/" |
+	    xpm-fix -o $OUT/$n.$suffix
+	else
+	  # straight conversion
+	    ppmtoxpm $TMP2  2>/dev/null | xpm-fix -o $OUT/$n.$suffix
+	fi
+        ;;
+      pbm|pgm|ppm)
+	cp $TMP2 $OUT/$n.$suffix
+	;;
+    esac
+
+    c=`expr $c + 1`
+    x=`expr $x + 1`
+  done
+  y=`expr $y + 1`
+done
+

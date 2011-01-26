@@ -1,0 +1,26 @@
+/* XPM */
+static char * b_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c tan",
+"o	c tomato",
+"O	c white",
+"+	c firebrick",
+/* pixels */
+"              ",
+"     ....     ",
+"    .XXXo.    ",
+"   .XOXoo+.   ",
+"  .XXOXXoo+.  ",
+"  .oXoXo+++.  ",
+"  .XoXooo+..  ",
+"  .oooo+++..  ",
+"  .oo+o++...  ",
+"   .++++...   ",
+"    .+....    ",
+"     ....     ",
+"              ",
+"              "};

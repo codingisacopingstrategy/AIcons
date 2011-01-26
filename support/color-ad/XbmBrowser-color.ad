@@ -1,0 +1,24 @@
+!
+! Simple color selections for XbmBrowser
+!                          -- Anthony Thyssen (anthony@cit.gu.edu.au)
+!
+#include "XbmBrowser"
+ 
+! Standard Color Scheme using the 
+!   Standard Color Table of Anthony's Icon Library
+*Command.background:        sky blue
+*Toggle.background:         sky blue
+*MenuButton.background:     sky blue
+*Label.background:          lemon chiffon
+*Box.background:            lemon chiffon
+*Form.background:           lemon chiffon
+*SimpleMenu*background:     wheat
+*List.background:           wheat
+*Dialog.background:         wheat
+*Dialog.Label.background:   wheat
+*Text*background:           white
+
+! Specific Application Colors
+*bitmaps.background:        pale green
+*bitmaps*background:        white
+

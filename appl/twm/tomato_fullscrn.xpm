@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_fullscrn_xpm[] = {
+"13 13 5 1",
+" 	c Gold",
+".	c Orange",
+"X	c Tomato",
+"o	c Firebrick",
+"O	c Red",
+"      .XXXXXX",
+" ....XoXXXXXX",
+" ..X.Oo     .",
+" .XXXOo....Xo",
+" .XXOOo.X.XXo",
+" OOOOOo..XXOo",
+"OooooooXXXXOo",
+"XX ...XXXXOOo",
+"XX .X.XXXXOOo",
+"XX ..XXXXOOOo",
+"XX .XXOOOOOOo",
+"XX XOOOOOOOOo",
+"XXOoooooooooo"};

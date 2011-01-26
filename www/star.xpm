@@ -1,0 +1,30 @@
+/* XPM */
+static char *star_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"21 20 3 1",
+/* colors */
+"  c None",
+"` c red",
+"b c yellow",
+/* pixels */
+"                     ",
+"         ``          ",
+"         ``          ",
+"        ````         ",
+"        `b``         ",
+"        `b```        ",
+"       ``b```        ",
+"       `bbb```       ",
+"````````bbb````````` ",
+" ``bbbbbbbbbbbbb```  ",
+"  ```bbbbbbbbb````   ",
+"   ```bbbbbbb````    ",
+"     ``bbbbb````     ",
+"     ``bbbbb```      ",
+"     `bbb`bbb``      ",
+"    ``bb```bb```     ",
+"    `bb`````bb``     ",
+"    `b```  ``b```    ",
+"   `````    `````    ",
+"   ```        ```    "
+};

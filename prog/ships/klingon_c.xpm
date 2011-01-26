@@ -1,0 +1,33 @@
+/* XPM */
+static char *klingon_c_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+"  c dodger blue",
+". c sienna",
+"X c yellow",
+"o c gold",
+"O c None",
+"+ c blue",
+/* pixels */
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOO..o.OO",
+"OOOOOOOOOOOO.ooX.OOO",
+"OOOOOOOOOOO.OX..OOOO",
+"OO.OOOOOOOooX.OOOOOO",
+"OOo.OOOOOOO.oo OOOOO",
+"O..X.....ooX.  +OOOO",
+"OoooXooXXXXXXo +OOOO",
+"O..X.....ooX.  +OOOO",
+"OOo.OOOOOOO.oo OOOOO",
+"OO.OOOOOOOooX.OOOOOO",
+"OOOOOOOOOOO.oX..OOOO",
+"OOOOOOOOOOOO.ooX.OOO",
+"OOOOOOOOOOOOOO..o.OO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO",
+"OOOOOOOOOOOOOOOOOOOO"
+};

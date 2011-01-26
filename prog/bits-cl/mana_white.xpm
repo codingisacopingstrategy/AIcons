@@ -1,0 +1,35 @@
+/* XPM */
+static char * mana_white_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 21 8 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c wheat",
+"o	c lemon chiffon",
+"O	c grey",
+"+	c gainsboro",
+"@	c yellow",
+"#	c white",
+/* pixels */
+"      .     .           ",
+"      ...  ..           ",
+"      .XX..XX. ....     ",
+"      .XX.XXX..XXX.     ",
+"  ... .oXoXoXoXXX.  ..  ",
+"  .XX..XoXoooXXXX...X.  ",
+"  .XXXXooo....ooXXXX.   ",
+"   .XXoXo.OOOO.oXXXX.   ",
+"   .Xooo.+O+O+O.XoX...  ",
+"   .XXoo.OOOOOO.oXXXX@..",
+" ..XXoo#.OO+O+O.ooXXX.. ",
+"..XXXXoo.OOOOOO.oXXX.   ",
+"  ..Xoooo.O+O+.oXoX.    ",
+"   .XXXXoX....oXoXX.    ",
+"   .XXXoooooooXoXXX.    ",
+"  .....XXXoXoXoX..XX.   ",
+"  .   .XXoXoXoXX. ...   ",
+"      .X..XX.XXX.   ..  ",
+"     ...  .X ..X.       ",
+"     .    .X.  ..       ",
+"           .            "};

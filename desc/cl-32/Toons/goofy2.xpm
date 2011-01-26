@@ -1,0 +1,43 @@
+/* XPM */
+static char *goofy2_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c blue",
+/* pixels */
+"XXXXXXXXXXXXX X    XXXXXXXXXXXXX",
+"XXXXXXXXXX  o   XXX  XXXXXXXXXXX",
+"XXXXXXXXX  ooo X  XXXXXXXXXXXXXX",
+"XXXXXXXX     o  XX  XXXXXXXXXXXX",
+"XXXXXXX    X     XXX XXXXXXXXXXX",
+"XXXXXXX   XXX     XXXXXXXXXXXXXX",
+"XXXXXX    XXX XXX XXXXXXXXXXXXXX",
+"XXXXXX    XXXXXXX  XXXXXXXXXXXXX",
+"XXXXXX    XXX XXX  XXXXXXXXXXXXX",
+"XXXXXX    XX  X X  XXXXXXXXXXXXX",
+"XXXXXX XX  X  X X XXX   XXXXXXXX",
+"XXXXXX XXX X      XX  X XXXXXXXX",
+"XXXXX  X XXX XX X    oo XXXXXXXX",
+"XXXX    X XXXX X XX  oo XXXXXXXX",
+"XXX    X XXXXXX XXX      XXXXXXX",
+"XX     X  X XXXXXXXX   X  XXXXXX",
+"XX    X X  XXXXXXXXXXXXXX XXXXXX",
+"X    XXX  XXXXXXXXXXXXXXX  XXXXX",
+"X o  XXX XXXXXXXXXXXXXXXX   XXXX",
+" o  XXX  XXXXXXXXXXXXXXXX X  X X",
+"oo  XX  XX XXXXXXX XXXXXXXXX  XX",
+"o      XXXXXXXXXX XX XXXXX XX XX",
+"o   XX XX X XXXX    XXXXXXXXX  X",
+"o   X  XXXXXXXX ..X  XXXX XXX XX",
+"o    X   XXXXX ...X    XXXX   XX",
+"o   XXXX      ....X XX      XXXX",
+"     XXXX  XX ... X XXX XX XXXXX",
+"      XXX     .. X XXXX    XXXXX",
+"X     XXXX XX   XX XXXX    XXXXX",
+"XX   XXXXX  XXXXX XXXX    o XXXX",
+"XX X XXXXX       XXXX X  o  XXXX",
+"X XXX XXX      XXXXXXXXX   XXXXX"
+};

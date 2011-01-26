@@ -1,0 +1,35 @@
+/* XPM */
+static char * box2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c grey",
+"O	c sea green",
+"+	c dark slate grey",
+"@	c white",
+/* pixels */
+"                    ",
+"                    ",
+"      .             ",
+"     .X.            ",
+"    .XXo.           ",
+"   .XXXoo.          ",
+"   .OXXooo.         ",
+"   .OOXoooo.        ",
+"+XX.OOOooo+.XXXXX+  ",
+"+@@.OOOOo++.XXXXX.  ",
+"+@@.OOOO+++.XXXXX.  ",
+"+@@.OOOO+++.XXXXX.  ",
+"+@@.OOOO+++.XXX@X.  ",
+"+@@.OOOO+++.XX@@X.  ",
+"+@@@.OOO+++.X@@@X.  ",
+"+@@@@.OO+++.@@@@X.  ",
+"+@@@@@.O++.@@@@@X.  ",
+"+@@@@@@.+.@@@@@@X.  ",
+"+@@@@@@@.@@@@@@@X.  ",
+"+@@@@@@@@@@@@@@@X.  ",
+"++XXXXXXXXXXXXXX+.  ",
+"  ................  "};

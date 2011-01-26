@@ -1,0 +1,16 @@
+#
+# Netscape Mozilla Logo Animation
+# 
+-loop 10
+-dispose 1
+-delay 100
+              mozilla/mozilla_0.xpm
+-page +19+30  mozilla/mozilla_1.xpm
+-page +19+28  mozilla/mozilla_2.xpm
+-page +19+25  mozilla/mozilla_3.xpm
+-page +8+17   mozilla/mozilla_4.xpm
+-page +3+11   mozilla/mozilla_5.xpm
+-page +3+7    mozilla/mozilla_6.xpm
+-page +2+0    mozilla/mozilla_7.xpm
+-page +0+0    mozilla/mozilla_8.xpm
+-page +0+0    mozilla/mozilla_8.xpm

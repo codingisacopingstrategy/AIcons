@@ -1,0 +1,42 @@
+/* XPM */
+static char *chair_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+/* pixels */
+"   XXXXXXXXXXXXXXX   XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X ............... X XXXXXXXXXXX",
+" X XXXXXXXXXXXXXXX X XXXXXXXXXXX",
+" X XXXXXXXXXXXXXXX X XXXXXXXXXXX",
+"           XXXXXXX         XXXXX",
+" XXXXXXXXX XXXXXXX XXXXXXX XXXXX",
+"          XXXXXXXX        XXXXXX",
+" X XXXX X XXXXXXXX X X X XXXXXXX",
+" X XXXX X XXXXXXXX X X X XXXXXXX",
+" X XXXX X XXXXXXXX X X X XXXXXXX",
+" X .... X .......... X X XXXXXXX",
+" X .... X ...........  X  XXXXXX",
+"   .... X ............ X  XXXXXX",
+"X                         XXXXXX",
+"XXXX   XX X X   XXXX X XXXX  XXX",
+"XXXXX   XX X   XXXX X XXXXX  XXX",
+"XXXXXX   XX X XXXX X XXXXXX  XXX",
+"XXXXXXX      X XX X XXXXX    XXX",
+"XXXXXXXX    X X  X XXXXX X    XX",
+"XXXXXXXX    XX X  XXXXXX X    XX",
+"XXXXXXX      X  X XXXXXX X    XX",
+"XXXXXX   XX   X  X XXXXX X     X",
+"XXXXX   XXXX X XX X XXXXX      X",
+"XXXX   XXXX X   XX X XXXX  XX  X",
+"XXX   XXXX X X   XX X XXX      X",
+"XXX  XXXX X XXX  XXX X X        ",
+"XXXXXXXXX  XXXXXXXXXX  X        "
+};

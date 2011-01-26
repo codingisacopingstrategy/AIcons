@@ -1,0 +1,28 @@
+/* XPM */
+static char * b_yellow_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 8 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c yellow",
+"o	c gold",
+"O	c orange",
+"+	c lemon chiffon",
+"@	c peru",
+"#	c sienna",
+/* pixels */
+"              ",
+"     ....     ",
+"    .XooO.    ",
+"   .X+XoOO.   ",
+"  .X++XoOOO.  ",
+"  .oXXooOO@.  ",
+"  .ooooOOO@.  ",
+"  .OOOOOO@#.  ",
+"  .OOOO@@##.  ",
+"   .@@@@##.   ",
+"    .@###.    ",
+"     ....     ",
+"              ",
+"              "};

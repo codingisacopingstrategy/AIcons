@@ -1,0 +1,27 @@
+/* XPM */
+static char *x11tiles_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 4 1",
+/* colors */
+"  c black",
+". c magenta",
+"X c None s None",
+"o c blue",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXXXoXXooooXXXXX",
+"XXXoXXoo   oXXXX",
+"XXoXXo    XXoXXX",
+"Xo Xo    .oXXoXX",
+"Xo  .      oXXXX",
+"Xo          oXXX",
+"Xoo         ooXX",
+"XXo          oXX",
+"XXXo      .  oXX",
+"XoXXo.    oX oXX",
+"XXoXX    oXXoXXX",
+"XXXo   ooXXoXXXX",
+"XXXXooooXXoXXXXX",
+"XXXXXXXXXXXXXXXX"
+};

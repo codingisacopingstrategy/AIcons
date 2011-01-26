@@ -1,0 +1,33 @@
+/* XPM */
+static char * spot_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c gold",
+"X	c yellow",
+"o	c black",
+"O	c white",
+"+	c grey",
+"@	c slate grey",
+/* pixels */
+"          .         ",
+"         .X.        ",
+"        .XXX.       ",
+"       .XXXXX.      ",
+".......XXXXXXX......",
+" .XXXXXXXXXXXXXXXX. ",
+"  .XXXXXXXXXXXXXX.  ",
+"   .XXXXXXXXXXXX.   ",
+"    .XXXXXXXXXX.    ",
+"     .XXXXXXXX.     ",
+"    .XXXXXXXXXX.    ",
+"    .XXXXXXXXXX.    ",
+"   .XXXX....XXXX.   ",
+"  o.XX..    ..XX.o  ",
+" oOo..        ..oOo ",
+"o+o@o          o@o+o",
+"oO@o            o@Oo",
+"@oo              oo@",
+"+@                @+",
+"@                  @"};

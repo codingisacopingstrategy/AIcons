@@ -1,0 +1,28 @@
+/* XPM */
+static char *bug_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 16 5 1",
+/* colors */
+"  c black",
+". c wheat",
+"X c firebrick",
+"o c red",
+"O c None",
+/* pixels */
+"OOOOOOOOOO  OOOOOO  OOOO",
+"OOOOOOOO OOO  OOO  O  OO",
+"OOOOOOOOO  OO       OOO ",
+"OOOOOOOOOO O  XXXXXX OOO",
+"OOOOOOO  O  XXXXXXXXX OO",
+"OOOOOO XX XXXXXXXoooXX O",
+"O    XXXoX XXXXoo...XXXO",
+" OOOOXXXoX XXXXoo..oXXXO",
+"OOOOO XXoX             O",
+"O    XXXXX XXXXXooooXXXO",
+"OO    XXXX XXXXXXXXXXXXO",
+"OOOOOOO  O  XXXXXXXXX OO",
+"OOOOOOOOOO O   XXXXX OOO",
+"OOOOOOOOO  OO       OOO ",
+"OOOOOOOO OOO  OOO  O  OO",
+"OOOOOOOOOO  OOOOOO  OOOO"
+};

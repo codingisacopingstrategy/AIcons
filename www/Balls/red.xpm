@@ -1,0 +1,25 @@
+/* XPM */
+static char * ball_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 5 1",
+/* colors */
+" 	s None	c None",
+".	c tomato",
+"X	c red",
+"o	c orange",
+"O	c firebrick",
+/* pixels */
+"              ",
+"              ",
+"     ...X     ",
+"   o.....X.   ",
+"   ..o...XX   ",
+"  ..o.o..XXO  ",
+"  ......XXXO  ",
+"  X...XXXXOO  ",
+"  XXXXXXXOOO  ",
+"   OXXXOOOO   ",
+"   XOOOOOOX   ",
+"     OOOO     ",
+"              ",
+"              "};

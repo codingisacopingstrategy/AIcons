@@ -1,0 +1,129 @@
+<HTML><HEAD>
+<TITLE>AIcons - "support/scripts"</TITLE>
+<LINK REL="SHORTCUT ICON" HREF="../../www_images/favicon.ico">
+<BASE TARGET="_top">
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+   <A HREF="../../">
+      <IMG SRC="../../www_images/aicons_anim.gif"
+           LOWSRC="../../www_images/aicons.gif" ALT="[AIcons]"
+           ALIGN=left WIDTH=56 HEIGHT=50 BORDER=0></A>
+
+   "support/scripts"<BR>
+   Miscellaneous Scripts I use to organize the icon library
+   
+
+<BR CLEAR=all></NOBR></H1>
+
+<!-- Navagation START -->
+<A HREF="../index.html">
+  <IMG SRC="../../www_images/blue_up.gif" HEIGHT=24 WIDTH=24 ALT="^" BORDER=0></A>
+  <A HREF="../index.html"></A>
+<A HREF="./" TARGET="pagemap">
+   <IMG SRC="../../www_images/blue_dir.gif" HEIGHT=24 WIDTH=24 ALT="" BORDER=0></A>
+        <A HREF="./" TARGET="pagemap"></A>
+
+<P>
+<!-- Navagation END -->
+
+Numerous shell and perl scripts I use in managing this icon library.
+About half of the scripts assume that Jef Poskanzer's PbmPlus (or
+NetPbm) Filter Package is in the users path. I make no guarantee on
+these scripts, though I use them almost everyday.  <P>
+
+The latest scripts, such as those used to generate GIF animations are
+now using the larger image filter package ImageMagick. <P>
+
+Most of the scripts are also designed to handle both X bitmaps and or X
+pixmap images which is from here on referred to as X images. Also all files
+work on multiple X image files unless otherwise noted (unlike their PbmPlus
+counter parts).  <P>
+
+Also many of these scripts understand the X pixmap transparent color and
+preserves it while filtering the icon through the PbmPlus filters, which
+does not understand transparency. The big exception to this is
+the recolor script which I hope to convert from using pbmplus to
+imagemagick commands so it will preserve the transparency. <P>
+
+To find where these software packages are, look in the <A
+HREF="../../software.html">software index files</A> from the AIcons Web
+page.<P>
+
+As these are scripts, the usage and any documentation for the command is
+given as comments at the start of the script files. I try to comment all my
+scripts this way. So look at the top of the script for its usage and
+purpose.  <P>
+
+You can find a Xbmbrowser Menu Config File which uses these scripts in "<A
+HREF="../configs/xbmbrowserrc">support/configs/xbmbrowserrc</A>". The
+Xbmbrowser program program is a must for viewing and modifying a whole
+directory of icons, under X Windows. (See software web page above) <P>
+
+Anything marked as "OLD" means that I have not used that script for
+sometime and as such it could be broken and/or behave unexpectedly. Please
+check such scripts carefully before use.  <P>
+
+<PRE>
+
+Scripts by Catagory
+
+  Information
+    README         You are reading it!  :-)
+    recolor.notes  Using the recolor script and its needs to work correctly
+
+  Filters
+    xbm-cmd        Run a given PbmPlus filter on a single X image
+    xbm-resize     Attempt to resize X images (lots of options)
+    xbm-mask       Create mask files for X bitmaps and pixmaps ("???_mask.xbm")
+    xpm-remask     Re-add a mask create an X pixmap with transparency
+    xbm-splitup    Split up a large image array into individual icons
+
+    recolor        Recolor given X pixmaps using the standard color table
+    xpm-fix        Fix the X pixmap output from pbmplus (restore color names)
+    color_db_mk    Create a reverse color name database (for xpm-fix)
+    colorname      find the rgb.txt colorname of a pixel #rrggbb value
+    color_lookup   Print the #rrggbb pixel value for a named X window color
+    xpm-colors     Count the number of color pixels over the X pixmap given
+
+    xbm-list       Create a Image Listing (like pnmimage) for X images - OLD
+    xbm-rotate16   rotate a X image into 16 directions
+
+    bdf2xbms       Split a bdf font into a collection of bitmaps (awk script)
+
+  Converters
+    x2p            Convert X Images into PbmPlus Images of the same type
+    p2x            Convert PbmPlus Images into X Images of the same type
+    x2p.sed        Sed script to clean pixmaps before converting to PPM
+
+    xbm2epsi       Convert a Xbm to Encapulated Postscript with Preview Image
+    xbm2xpm        Convert X bitmap to X pixmap (colors fixed correctly)
+    xpm2xbm        Convert X pixmap to X bitmap (threshold or dithering)
+
+    gif2xbm        Gif files to X Image (transparency retained for Pixmaps!)
+    xbm2gif        X Image to GIF  (with transparency option for WWW use)
+    ppm2gif        Multiple file ppmtogif converter (example)  - OLD
+
+    a2hex          Ascii file (output of bmtoa) to Hex (for xbm2epsi)
+    hex2a          Reverse of the above.
+    face2xbm       Xmail face file to bitmap (needs uncompface)
+    xbm2face       Reverse of the above (needs compface)
+    macp2xbm       Mac paint to X bitmap
+    xpm1to3.pl     Covert Xpm type 1 to type 3  (From the Xpm dist - not used)
+    any2pnm        As `anytopnm' but for multiple files        - OLD
+    any2xbm        As above but one step further               - OLD
+
+    icon2xbm       Sun Icons  to  X bitmaps (using pbmplus)    - OLD
+    xbm2icon       Reverse of the above                        - OLD
+    icon2xbm.old   As above but using a internal sed script.   - OLD
+    xbm2icon.old   Reverse of the above                        - OLD
+    ilbm2gif       Amiga Ilbm to Gif                           - OLD
+    ilbm2xbm       Amiga Ilbm to X bitmap                      - OLD
+
+</PRE>
+
+<HR>
+<ADDRESS>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" >Anthony Thyssen</A>,
+   &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml"
+   >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

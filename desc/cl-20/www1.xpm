@@ -1,0 +1,33 @@
+/* XPM */
+static char * www1_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c cyan",
+"X	c light sea green",
+"o	c blue",
+"O	c navy",
+"+	c red",
+"@	c firebrick",
+/* pixels */
+"                    ",
+"... ...  ...        ",
+"..XX...X ..XX       ",
+"..X  ..X ..X        ",
+" ..  ..X .XX        ",
+" ..X......X         ",
+" ..ooo.oooX ooo     ",
+"  .ooOOoooO ooOO    ",
+"  .ooO .ooO ooO     ",
+"   Xoo  ooO oOO     ",
+"    ooOooooooO      ",
+"    oo+++o+++O +++  ",
+"     o++@@+++@ ++@@ ",
+"     o++@ o++@ ++@  ",
+"      O++  ++@ +@@  ",
+"       ++@++++++@   ",
+"       ++++@++++@   ",
+"        +++@+++@@   ",
+"        ++@@ ++@    ",
+"         @@   @@    "};

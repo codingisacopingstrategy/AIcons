@@ -1,0 +1,42 @@
+/* XPM */
+static char *falcon[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c red",
+"b c white",
+/* pixels */
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaabbbbbbbbbbbbbbbbbbbbbaaaa",
+"aaaaaab`````````````````b```bbaa",
+"aaaaab``````````````````b`````bb",
+"aaaab```````````````````b``b````",
+"aaab````````````````````b```````",
+"aaab````````````````````b`````bb",
+"aab`````````````````````bbbbbbaa",
+"aab`````````````````````bbaaaaaa",
+"ab`````bb```````````````b`bbaaaa",
+"ab````bab```````````````b```bbaa",
+"b```bbaab```````````````b`````ba",
+"b`bbaaaab````b``````````b``````b",
+"abaaaaaab```b```````````bbbbb``b",
+"aaaaaaaab``b````````````baaaab`b",
+"aaaaaaaab`b````b````````baaaaaba",
+"aaaaaaaabb````b`````````baaaaaaa",
+"aaaaaaaab`````b`````````baaaaaaa",
+"aaaaaaaab````b````b`````baaaaaaa",
+"aaaaaaaaab```b````b`````baaaaaaa",
+"aaaaaaaaab``b````b``````baaaaaaa",
+"aaaaaaaaab``b````b````b`baaaaaaa",
+"aaaaaaaaaabb`````b````b`baaaaaaa",
+"aaaaaaaaaaab````b````b```baaaaaa",
+"aaaaaaaaaaab````b````b```baaaaaa",
+"aaaaaaaaaaaab``b`````b````baaaaa",
+"aaaaaaaaaaaaab`b`````b````baaaaa",
+"aaaaaaaaaaaaaabb````b``````baaaa",
+"aaaaaaaaaaaaaaabbb``b``````baaaa",
+"aaaaaaaaaaaaaaaabbbbbbbbbbbbaaaa"
+};

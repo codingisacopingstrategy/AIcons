@@ -1,0 +1,111 @@
+<PLAINTEXT>
+                       Anthony's X Icon Library
+              ------------------------------------------
+                      Quick Guide to using icons
+              ------------------------------------------
+
+| I wonder if you could write a short description of how one would actually
+| use the go.xbm file.  A lot of go players are computer illiterate and I
+| personally am X illiterate.  (Well, I've learned a little since I started
+| using X 3 months ago, but I don't know what to do with the xbm file.  Maybe
+| I'm using the wrong window manager to take advantage of it?)
+|
+|           --- Adrian Mariano  <adrian@bsdserver.ucsf.edu>
+
+
+There is a couple of methods.  More information is available in the
+other files:   ``docs/twm''   and   ``docs/xrdb''.
+
+1/ TWM
+     get twm to set the icon (this is what I do). To your .twmrc file
+   add the following to the appropriate area.
+
+--------CUT HERE-----------
+#
+# Icon Handling
+#
+IconDirectory  "~/icons"      # where you place your icons for twm to use
+UnknownIcon  "unknowen.xbm"   # use this icon if none is supplied
+ForceIcons                    # force programs to use icon listed
+#
+#   The following table causes twm to use certain icons for certain
+# windows.  The elements are in pairs of strings the first being either the
+# name of the window (EG `xterm-host') OR the class of the application being
+# used (EG `XConcole'). The second string is the filename of the icon to
+# use and is found either in the above `IconDirectory' or in the
+# `*bitmapFilePath'.   --- Anthony Thyssen  19/7/1993
+#
+Icons {
+  "XIgc"      "desc/std/go.xbm"
+  "XMgt"      "desc/std/go.xbm"
+}
+--------CUT HERE-----------
+
+
+2/ Resources
+     Add the following to the appropriate clients application default file
+   or into a  ~/.Xdefaults  or into a file and use xrdb to merge the
+   resources into the server. (read the manuals).  This method has the
+   advantage of working on almost all window managers.
+
+--------CUT HERE-----------
+*bitmapFilePath:    /usr/local/AIcons:/usr/include/X11/bitmaps
+
+XIgc*iconPixmap:    desc/std/go.xbm
+XMgt*iconPixmap:    desc/std/go.xbm
+--------CUT HERE-----------
+   ^--- the clients class name
+
+  This assumes that the "bitmapFilePath" setting points to the top of the
+AIcons tree. Otherwise you will need to adjust the paths accordingly.
+
+
+3/ Program the icon into the application -- this is for the developers.
+     NOTE: the developer should ensure that users can still override their
+   own icon choice with the appropriate resource. This is a failing almost
+   every in almost every X program which sets an icon internally.
+
+   Example:
+     This assumes that ``toplevel'' is the application window widget.
+     --------CUT HERE-----------
+     #include "icon.xbm"
+     { Pixmap icon;
+
+       /* first test if user set his own icon */
+       XtVaGetValues(toplevel, XtNiconPixmap, &icon, NULL);
+       if ( icon == None ) {
+         /* Ok set our own default icon */
+         icon = XCreateBitmapFromData(
+              XtDisplay(toplevel), RootWindowOfScreen(XtScreen(toplevel)),
+              (char *)icon_bits, icon_width, icon_height);
+         XtVaSetValues(toplevel, XtNiconPixmap, icon, NULL);
+       }
+     }
+     --------CUT HERE-----------
+
+----------------------------------------------------------------------------
+Color Icons
+
+To set Color icons to typical X Window applications will require one
+of two stratagies..
+
+ 1/ The first is to patch the X window library to understand
+    color icons. EG: install a converter to conver a .xpm filename
+    into a color icon pixmap. This will then allow you to specify
+    X Pixmaps as Application Icons via resources.
+
+ 2/ The second which is what I and most other people use is to use a
+    window manager which understands color icons, and have it override
+    the icon `suggested' by the application.
+
+    Most modern window managers understand how to do this.  I myself use
+    ctwm and have it specify the icons I want, simular to the twm method
+    above but with color pixmap icons.
+
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+    The very best, and oldest, computer system built by man is Stonehenge.
+    Built by the Druids, who didn`t die out, but went bankrupt trying to 
+    debug the software.
+------------------------------------------------------------------------------

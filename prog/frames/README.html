@@ -1,0 +1,61 @@
+<HTML><HEAD>
+<TITLE>AIcons - "prog/frames"</TITLE>
+<LINK REL="SHORTCUT ICON" HREF="../../www_images/favicon.ico">
+<BASE TARGET="_top">
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+   <A HREF="../../">
+      <IMG SRC="../../www_images/aicons_anim.gif"
+           LOWSRC="../../www_images/aicons.gif" ALT="[AIcons]"
+           ALIGN=left WIDTH=56 HEIGHT=50 BORDER=0></A>
+
+   "prog/frames"<BR>
+   Framing templates you can use to `wrap' icons.
+
+<BR CLEAR=all></NOBR></H1>
+
+<!-- Navagation START -->
+
+<!-- Navagation END -->
+
+This directory contains numerous `templates' or borders you can use
+to surround the descriptive icons of various sizes, to create buttons. <P>
+
+Using the same template on a specific size and type of icons produces a
+collection which is coordinated. Use these as you will.  <P>
+
+For example I can add a border around a 32x32 pixel description icon to
+create a button like those I use within the WWW images collection
+using the following ImageMagick command.
+<PRE>
+      combine button.xpm -geometry +4+4 ../../desc/cl-32/castle.xpm \
+              castle_button.gif
+</PRE>
+
+While I do not have a script to automatically add a template to a set of
+icons of a particular size, such a script should be easily created using
+the PbmPlus or other filter package.  <P>
+
+
+<B>Specific Templates</B>
+<BLOCKQUOTE><TABLE>
+<TR VALIGN=top>
+   <TD>button   <TD>40 pixel template for use with 32 pixel icons <BR>
+       This last is the template I use for generating the 
+       "<A HREF="../../www/Buttons/">www/Buttons</A>"
+       from descriptive 32x32 icons.
+<TR VALIGN=top>
+   <TD>butsmall <TD>20 pixel template for use with 16 pixel icons<BR>
+<TR VALIGN=top> 
+   <TD>gfm      <TD>40 pixel template for use with 32 pixel icons<BR>
+   <TD>large    <TD>50 pixel template for use with 48 pixel icons<BR>
+   <TD>double   <TD>double raised template<BR>
+</TABLE></BLOCKQUOTE><P>
+
+
+<HR>
+<ADDRESS>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" >Anthony Thyssen</A>,
+   &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml"
+   >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

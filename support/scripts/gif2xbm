@@ -1,0 +1,144 @@
+#!/bin/sh -
+#
+# gif2xbm [-t] files...
+#
+#   This uses the pbmplus package to convert GIF files into X bitmaps
+# and X pixmap format files approriately. If a -t flag is given and the
+# destination is a pixmap, than it will also set the None Color in the
+# X Pixmap file to the transparency color used in the GIF file.
+#
+# WARNING: the X Bitmap output have been turned off, all output will be
+# X pixmap format (if at all posiable).
+# 
+# WARNING: "giftrans" program is used to look up if the GIF contains
+# multiple images in a GIF animation, and for the transparent color to
+# preserve in the conversion (if -t option). As such it is required to
+# be on your command path!
+#
+# NOTE: created files are placed in the current directory, not the
+# directory of the source GIF file. This is a feature exploited by
+# other scripts to convert whole directories of gif files into a
+# completely different directory (the current).
+# 
+# Anthony Thyssen    1 September 1995    <anthony@cit.gu.edu.au>
+#
+
+b="                                                                          "
+b="     ${b}"
+
+TRANS=
+TMP=/tmp/gif2xbm.$$
+trap "rm -f $TMP; exit 1" 1 2 3 15
+
+Usage() {
+  echo >&2 "Usage: gif2xbm [-t] [-q #] Gifs..."
+  echo >&2 "    -t     preserve transparency"
+  exit 10
+}
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  -t) TRANS=true; shift ;;      # preserve transparenty
+  --) loop=; shift ;;
+  *) loop= ;;
+  esac
+done
+
+# Test command present
+cmd_found() {
+  expr match "`type $1 2>&1`" '.*not found' == 0 >/dev/null
+}
+
+if [ "$TRANS" ]; then
+  cmd_found giftrans || echo >&2 "WARNING: giftrans not found!"
+fi
+
+for i in "$@" ; do
+  echo -n "${b}  converting \"$i\""
+  if [ ! -f "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable find file \"$i\""
+    continue
+  fi
+
+  # --- find out the type ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"           # remove path to file
+  suffix="`expr "$name" : '.*\.\([^./]*\)$'`"     # extract last suffix 
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"        # remove last suffix
+
+  case "$name.$suffix" in
+   *_anim.gif )
+       echo -n "${b}"
+       echo >&2 "Skipping GIF Animation: \"$i\""
+       continue ;;
+   *.gif ) ;;
+   * ) echo -n "${b}"
+       echo >&2 "Skipping non-GIF file: \"$i\""
+       continue ;;
+  esac
+
+  # let's look for certain info
+  numimages=`giftrans -L "$i" 2>&1 | tee $TMP |
+                 grep 'Image Descriptor:' | wc -l`
+
+  if [ $numimages -gt 1 ]; then 
+    echo -n "${b}"
+    echo >&2 "Skipping GIF Animation: \"$i\" (Renaming File)"
+    path="`expr "$i" : '\(.*\)/'`"      # get file path (if any)
+    mv "$i" "${path:-.}/${name}_anim.gif"
+    continue
+  fi
+
+  # Determine transparent color if present
+  tcolor=
+  if [ "$TRANS" ]; then
+    if  grep "Transparent Color Flag: True" $TMP >/dev/null; then
+      tcolor=`awk '#  Figure out the Transparent color 
+        $1 == "Color" && $2 ~ /^[0-9][0-9]*:$/ {
+                color[substr($2, 1, length($2)-1)+0] = $9; }     # color table
+        /Transparent Color Index:/ { c = $4; }             # TRANS color index
+        END { print color[c] }                      # output transparent color
+        ' $TMP | tr 'a-f' 'A-F' `
+    fi
+  fi
+
+  # Convert gif and figure out destination format
+  # case on the standard error on gif filter!!
+  output=`giftopnm -verbose "$i" 2>&1 >$TMP` 
+  case  "$output"  in
+    #*PBM*)
+    #  dest="$name.xbm"
+    #  pbmtoxbm < $TMP |
+    #    sed 's/static  *char/static unsigned char/;
+    #         s/noname\([[_]\)/'"$name"'\1/'  > "$dest"
+    #  ;;
+    *P?M*)
+      dest="$name.xpm"
+      if [ "$tcolor" ]; then     # Output Pixmap with Transparency
+        ppmtoxpm $TMP 2>/dev/null |
+          sed "/colors/,/pixels/s/c $tcolor/c None/" |
+          xpm-fix -o "$dest"
+      else                       # Output Plain Pixmap
+        ppmtoxpm $TMP 2>/dev/null | xpm-fix -o "$dest"
+      fi
+      ;;
+    *) echo -n "${b}"
+       echo >&2 "Unable to Parse GIF file \"$i\"!!!!"
+       continue
+  esac
+
+  if [ ! -s "$dest" ]; then
+    rm -f "$dest"
+    echo -n "${b}"
+    echo >&2 "Failed to convert \"$i\""
+  fi
+
+done
+
+#echo "${b}DONE!"
+echo -n "${b}"
+
+rm -f $TMP
+

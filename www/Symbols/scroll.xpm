@@ -1,0 +1,30 @@
+/* XPM */
+static char *scroll_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"12 13 10 1",
+/* colors */
+"  c Black",
+". c Tan",
+"X c Wheat",
+"o c Peru",
+"O c Red",
+"+ c White",
+"@ c SlateGrey",
+"# c LemonChiffon",
+"$ c None",
+"% c None",
+/* pixels */
+"$@#+#+#+@. $",
+"OXXXXXXX.Oo$",
+"$@......@o  ",
+"$$       @ $",
+"$$.XoXXoX@ $",
+"$$.oXooXo@ $",
+"$$.XXXXXX@ $",
+"$$oXXoXXo@ $",
+"$$.ooXooX@ $",
+"$@#+#+#+@. $",
+"OXXXXXXX.Oo$",
+"$@......@o  ",
+"$$         $"
+};

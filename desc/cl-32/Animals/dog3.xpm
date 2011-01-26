@@ -1,0 +1,43 @@
+/* XPM */
+static char *dog3_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c wheat",
+"X c red",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooo  oo",
+"ooooooooooooooooooooooooooo .. o",
+"ooooo     ooooooooooooooooo .. o",
+"oooo ....  o   ooooooooooo .. oo",
+"ooo ....        ooooooooo ... oo",
+"oo  . ..        oooo     ... ooo",
+"  ... ..        o   ..... . oooo",
+" ........      o .......... oooo",
+" .........   .  ............ ooo",
+"o .. ....................... ooo",
+"oo  ... .................... ooo",
+"o X ..  .................... ooo",
+"o X   oo .................... oo",
+"o X ooo    .................. oo",
+"oo oooo .............. .......  ",
+"oooooo  ..............  .. .... ",
+"ooooo .....  .......   o    ... ",
+"oo   ..... o         oo    o .. ",
+"o ......  o   ooooooooooooo o   ",
+"o  ...  oo ooooooooooooooooo   o",
+"oo    oo  oooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

@@ -1,0 +1,32 @@
+/* XPM */
+static char * bird_of_prey_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+"X	c dark slate grey",
+".	c sienna",
+"o	c peru",
+"O	c yellow",
+"+	c gold",
+/* pixels */
+"                    ",
+"        .  .        ",
+"        .  .        ",
+"       Xo  oX       ",
+"       .o  o.       ",
+"       .o..o.       ",
+" X     X.oo.X     X ",
+" .X     .XX.     X. ",
+" o.X    XooX    X.o ",
+" .X     .XX.     X. ",
+" .o     .oo.    Xo. ",
+" .X..   X..X   ..X. ",
+" X.oo....  ....oo.X ",
+"  X..ooX.oo.Xoo..X  ",
+"   ...XXoXXoXX...   ",
+"    ..X.X  X.X..    ",
+"     ..O++++O..     ",
+"      XXOOOOXX      ",
+"                    ",
+"                    "};

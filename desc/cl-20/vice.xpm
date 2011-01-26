@@ -1,0 +1,30 @@
+/* XPM */
+static char * vice_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c grey",
+"o	c sienna",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"        ..   ..     ",
+" ..    .X.  .o.  .  ",
+".o.    .X.  .o.  .  ",
+".o.    .X....o...X..",
+".o.    .X....o...X..",
+".o.    .X.  .o.  .  ",
+".o.    ..   .o.  .  ",
+".o...........o.     ",
+".ooooooooooooo.     ",
+" .............      ",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

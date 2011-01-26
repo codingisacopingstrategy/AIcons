@@ -1,0 +1,43 @@
+/* XPM */
+static char *videocam_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"` c black",
+"a c grey",
+"b c white",
+"c c yellow",
+/* pixels */
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbb````````````````````bb`b",
+"bbbbbbbb`cccccccccccccccccc````b",
+"bbbbbbb``c`c`c`c`c`c````````b``b",
+"bbbbbbb``cc`c`c`c`c````````````b",
+"b```bbb``c`c`c`c`c`c`a`a`a``bb`b",
+"b`a```b`c`c`c`c`c`c``aaaaaa`bbbb",
+"b`a`a```cccccccccccc`aaaaaa`bbbb",
+"b```a`a`c`c`c`c`c`c``a`aa`a`bbbb",
+"b```a```cccccccccccc`aaaaaa`bbbb",
+"b`a```b`c`c`c`c`c`c``aaaaaa`bbbb",
+"b```bbb````````````````````bbbbb",
+"bbbbbbb`c```````cccc`cccc`bbbbbb",
+"bbbbbbbb`````````````````bbbbbbb",
+"bbbbbbbbbbb``aaa``aa`bbbbbbbbbbb",
+"bbbbbbbbbbb````a`a```b``bbbbbbbb",
+"bbbbbbbbbbbb`aa``a``bbbbbbbbbbbb",
+"bbbbbbbbbbb`aa``aaaa`bbbbbbbbbbb",
+"bbbbbbbbbbb`a``a````bbbbbbbbbbbb",
+"bbbbbbbbbbbb``a`````bbbbbbbbbbbb",
+"bbbbbbbbbb```b`aaaa`bbbbbbbbbbbb",
+"bbbbbbbbb``bb``````bbbbbbbbbbbbb",
+"bbbbbbbb``bb`bbbbbb``bbbbbbbbbbb",
+"bbbbbbb``bbb`bb``bb`b`bbbbbbbbbb",
+"bbbbbbb`bbbb`b`b``b`bb`bbbbbbbbb",
+"bbbbbb``bbbb`b````b`bbb`bbbbbbbb",
+"bbbbbb`bbbbb`bb``bb`bbb``bbbbbbb",
+"bbbbbb`bbbbb``bbbb`````````bbbbb",
+"bbbbbb`bbbbbb``````bbbbbb````bbb",
+"bbbbbb``bbbbbb````bbbbbbbb````bb",
+"bbbbbbb`bbbbbb````bbbbbbbbb```bb"
+};

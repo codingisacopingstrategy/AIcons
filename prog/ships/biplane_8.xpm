@@ -1,0 +1,33 @@
+/* XPM */
+static char *biplane_8_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+"  c green",
+". c sienna",
+"X c dark slate grey",
+"o c sea green",
+"O c white",
+"+ c None",
+/* pixels */
+"++++++++++++++++++++",
+"++++++++++++++++++++",
+"++++++++++++++++++++",
+"++++++XXoo XoXX+++++",
+"+++++ooooo XXooo++++",
+"+++++ooooo XXXoo++++",
+"+++++XXooo XXXXX++++",
+"++++++++ooooo+++++++",
+"++++++++oo oo+++++++",
+"++++++++o   o+++++++",
+"+++++++.o + o.++++++",
+"++++++.+X+++X+.+++++",
+"+++               ++",
+"++                 +",
+"++                 +",
+"+++               ++",
+"++++++++XoooX+++++++",
+"++++++++o   o+++++++",
+"++++++++++++++++++++",
+"++++++++OOOOO+++++++"
+};

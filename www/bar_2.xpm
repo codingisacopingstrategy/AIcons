@@ -1,0 +1,19 @@
+/* XPM */
+static char *barh2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 4 8 1",
+/* colors */
+"  c #E67878",
+". c #892626",
+"X c #BF3333",
+"o c #D64646",
+"O c #144266",
+"+ c #2374B2",
+"@ c #4696E1",
+"# c #1D5B91",
+/* pixels */
+"       .@@@@@@@O",
+" oooooo.@++++++O",
+" XXXXXX.@######O",
+" .......@OOOOOOO"
+};

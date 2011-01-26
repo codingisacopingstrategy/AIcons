@@ -1,0 +1,33 @@
+/* XPM */
+static char * infinity_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"21 23 4 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c white",
+"o	c black",
+/* pixels */
+"       .......       ",
+"     ...........     ",
+"    ....XXXXX....    ",
+"   ...XXXXXXXXX...   ",
+"  ...XXXXXXXXXXX...  ",
+"  ..XXXXXXXXXXXXX..  ",
+" ..XXXXXXXXXXXXXXX.. ",
+" ..XXXXXXXXXXXXXXX.. ",
+"..XXXXXXXXXXXXXXXXX..",
+"..XXXXoooXXXooooXXX..",
+"..XXXoXXXoXooXXXoXX..",
+"..XXXoXXXXooXXXXoXX..",
+"..XXXoXXXooXoXXXoXX..",
+"..XXXXooooXXXoooXXX..",
+"..XXXXXXXXXXXXXXXXX..",
+" ..XXXXXXXXXXXXXXX.. ",
+" ..XXXXXXXXXXXXXXX.. ",
+"  ..XXXXXXXXXXXXX..  ",
+"  ...XXXXXXXXXXX...  ",
+"   ...XXXXXXXXX...   ",
+"    ....XXXXX....    ",
+"     ...........     ",
+"       .......       "};

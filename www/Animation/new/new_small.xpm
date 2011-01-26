@@ -1,0 +1,34 @@
+/* XPM */
+static char *new_01_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 20 7 1",
+/* colors */
+"  c black",
+". c tan",
+"X c wheat",
+"o c None",
+"O c yellow",
+"+ c gold",
+"@ c lemon chiffon",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooo@@OOX@o@@@oOOO+Xoooooooo",
+"oooooo@@XOOOOOOOOOOOOO+Xoooooooo",
+"oooooOOOOOOOOOOOOOOOOOOOX@@ooooo",
+"oooooOOO   OOO  OO O O OOOXooooo",
+"oooooXOO  O O  O O O O OO+.ooooo",
+"ooooooOO  O O    O     OO.Xooooo",
+"oooooOOO  O O  OOO     OOOoooooo",
+"oooooOOO  O OO  OOO OO OOOOooooo",
+"oooooXOOOOOOOOOOOOOOOOOOO++ooooo",
+"oooooo@XOOOOOOOOOOOOOOO++..ooooo",
+"ooooooooOOOOOOOO+++++OO+.ooooooo",
+"ooooooooo++...OOoooooXX.oooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

@@ -1,0 +1,32 @@
+/* XPM */
+static char * door_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c sienna",
+"o	c peru",
+"O	c orange",
+"+	c gold",
+/* pixels */
+"   ..............   ",
+"  .XXXXX.XXXXXXX.   ",
+"  .XXXXX.XXXXXXX.   ",
+"  .XX.XX.XXXXX.oo   ",
+"  .XX.XX.XXXXXXX.   ",
+"  .XX.XX.XXXXXXX.   ",
+"  .XXXXXXXXXX.XX.   ",
+"  oooXXXXXXXX.XX.   ",
+"  oO+++OXXXXX.XX.   ",
+"  o.OOOXXXXXX.XX.   ",
+"  o.oXXXXXXXX.XX.   ",
+"  oooXXXXXXXX.XX.   ",
+"  .oXXX.XXXXX.XX.   ",
+"  .XXXX.XXXXX.XX.   ",
+"  .XXXXXXX.XXXXX.   ",
+"  .XXXX.XX.XXXXX.   ",
+"  .XXXX.XX.XXX.oo   ",
+"  .XXXX.XX.XXXXX.   ",
+"  .XXXX.XX.XXXXX.   ",
+"  ...............   "};

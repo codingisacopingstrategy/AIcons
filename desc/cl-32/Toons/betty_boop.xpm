@@ -1,0 +1,42 @@
+/* XPM */
+static char *betty_boop_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c cyan",
+"X c white",
+/* pixels */
+"......... ......................",
+"........  .  ..........  .......",
+"........                  ......",
+"......                    ......",
+"....                       .....",
+"...                          ...",
+"...                           ..",
+"...                           ..",
+"...                           ..",
+"...         X   X    XX      ...",
+"...         XX  XXXXXXX XX   ...",
+"..         XX   XXXXXX  X    ...",
+".       XXXX  XXXXXXXXX  X    ..",
+".        XX  XXXXXXXXXX  XX   ..",
+"..       X  XXXXXXXXXX X X    ..",
+"...      X X X  XXXX        ....",
+"....    XXX      XX      X  ....",
+".....   X X      XX         ....",
+".....     X      XX    X     ...",
+"....      X   X  XX   XX X   ...",
+"....      X  XX  XXX  X     ....",
+".....    XXX    XXXX     XX ....",
+".....    XXX X  XX  XX X X  ....",
+".....    XXXXXXXXX XXXXXXX  ....",
+".....    XXXXXXXX   XXXXXX  ....",
+"......                     .....",
+".......       XXX   X    .......",
+"........   XXXXXXXXXXXX ........",
+"......     XXXXXXXXXXXX ........",
+".....       XXXXXXX XXX ........",
+"......   XX XXXXXXX XXX ........",
+".......  XX  XXXXX  XX  ........"
+};

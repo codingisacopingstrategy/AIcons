@@ -1,0 +1,66 @@
+<PLAINTEXT>
+                       Anthony's X Icon Library
+                     ----------------------------
+                            Historical Notes
+                     ----------------------------
+
+  Looking on the internet for icons is not easy. A number of libraries for
+bitmap/picture libraries exist but few are devoted to the X application
+builder and general X usage.
+
+  This is not to say they don't exist, the "Poskanzer Bitmap Collection"
+being a good example. Although these contain some bitmaps that are
+suitable for icons and X programming, these bitmaps are small in number,
+are of mixed sizes, and many are not very nice looking. Aside from this,
+the Poskanzer's Collection contains a tremendous collection of large
+background pictures.  It also looks as if this collection is not being
+coordinated anymore as seems to have had no new entries over the last few
+years.
+
+  Originally I restricted myself to bitmaps that can be used as program
+icons in every day usage. The goal was to create a collection of bitmaps
+of a ``standard'' size that can be used for icons on the screen. It
+removes the `hodge podge' of different icon sizes that I see people use,
+and window managers have to contend with. Using a `standard' size results
+in a nicer looking display of the icons in the ``icon regions'' of the
+screen.
+
+  With this goal in mind, a ``standard'' size of 64x54 was agreed on by
+the system programmers here are Griffith University, Division of Science
+and Technology at that time. This size was chosen as it is close to a
+``golden rectangle'' (IE it is pleasing to the eye) and when a icon name
+is attached by the window manager it generally become another ``golden
+rectangle''.  It was also close to the 64x64 size which was in common use
+when sunview windows were prevalent (and not that long ago either).  To
+complete this goal, I usually try to convert icons to this `standard size'
+and am slowly succeeding in this respect.
+
+  These ``standard'' sized icons can be found in the `std' sub-directory
+and consist of descriptive icons to refer to specific applications or
+machines we have in our local network (IE: kurango (aboriginal for sun),
+gucis, sphinx, opera...). These machine icons could be renamed to a more
+descriptive name for the icon (IE: "kurango.xbm" to "ayres_rock.xbm") but
+the users here would now probably kill me if I made this change.
+
+  As time went on however this collection soon expanded to include:
+buttons for the TWM window manager (for in title bars), in the `twm'
+section; background patterns (small ones not root-maps), `bground'; and
+general use buttons or cursors, `buttons' and `masks'. One directory
+`misc' is a collection of odd sized icons which have either defied sorting
+to the various areas or are just waiting to be resized to the `standard'
+size. Color icons have also since been added to the collection.
+
+ASIDE: since the above paragraph was written the directories may have been
+renamed. See the general description near the top of this file.
+
+  The subdirectories `std' and `twm' are an intergral part of the X window
+setup here at the Griffith University, Science and Technology Division.
+And is used to provide a usable default X window setup for naive staff and
+students.
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+    Light thinks it travels faster than anything, but it is wrong.
+  No matter how fast light travels, it finds the darkness always got
+  there first, and it is waiting for it.  -- Terry Pratchett - ``Reaper''
+------------------------------------------------------------------------------

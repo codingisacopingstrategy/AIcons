@@ -1,0 +1,33 @@
+/* XPM */
+static char *hot_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 20 6 1",
+/* colors */
+"  c None",
+"X c peru",
+"O c red",
+"+ c yellow",
+"@ c gold",
+"# c orange",
+/* pixels */
+"                                ",
+"   ++++      ++++      ++++     ",
+"  +++       +++       +++       ",
+" ++++      ++++      ++++       ",
+" ++OOO   OOO+++OOOOOO++OOOOOOO  ",
+" ++O+O   O+O++OO++++OO+O+++++O  ",
+" ++O+O+  O+O++O+OOOO+OXOOO+OOO  ",
+" ++O+O++ O+O+OO+O  OO+O+@O+O    ",
+"  +O+OOOOO+O+O+O+@  O+O+@O+O    ",
+"   O+++++++O O+O+@@ O+O+@O+O@   ",
+"   O+OOOOO+O O+O+@@@O+O+@O+O@@  ",
+"   O+O+@@O+O O+OO@@OO+O @O+O@#  ",
+"   O+O@@@O+O OO+OOOO+OO @O+O@#O ",
+"   O+O@@#O+OO OO++++OO+  O+O@#O ",
+"   OOO@@#OOOO  OOOOOO#O  OOO@#O ",
+"    ########O #######OO ######O ",
+"   OOOOOOOOOOOOOOOOOOOOOOOOOOOO ",
+" OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO ",
+" OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO ",
+"                                "
+};

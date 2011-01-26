@@ -1,0 +1,31 @@
+/* XPM */
+static char * keyboard_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c grey",
+"O	c slate grey",
+/* pixels */
+"                    ",
+" .................  ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XX...o...o...oX.O ",
+" .XXX.ooo.ooo.ooX.O ",
+" .XXX.XXX.XXX.XXX.O ",
+" .XXX.XXX.XXX.XXX.O ",
+" .XXX.XXX.XXX.XXX.O ",
+" .XXX.XXX.XXX.XXX.O ",
+" .XXX.XXX.XXX.XXX.O ",
+" .................O ",
+"  OOOOOOOOOOOOOOOOO ",
+"                    ",
+"                    "};

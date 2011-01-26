@@ -1,0 +1,36 @@
+/* XPM */
+static char * alert_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 8 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c firebrick",
+"O	c tomato",
+"+	c black",
+"@	c slate grey",
+"#	c tan",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXooooX XXX ....",
+" XXXXXoOOOX XXXX ...",
+" XXXXXoOOOX+ + + +..",
+" XXXXXoOOOX+++++++..",
+" XXXXXoOOOXX@@@@@+..",
+" XXXXXoOOOXXX@@@@+..",
+" XXXXXoOOOXXXXXX@+..",
+" XXXXXoOOOXXXXXX@+..",
+" XXXXX#OO#XXXXXX@+..",
+" XXXXXXOOXXXXXXX@+..",
+" XXXXXXOOXXXXXXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+" XXXXXooooXXXXXX@+..",
+" XXXXXoOOOXXXXXX@+..",
+" XXXXXoOOOXXXXXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+" XXXXXXXXXXXXXXX@+..",
+"  @@@@@@@@@@@@@@ +..",
+"..++++++++++++++++.."};

@@ -1,0 +1,34 @@
+#!/bin/sh -
+#
+# xpm2xbm  files...
+#
+#   This uses the pbmplus package to convert the xpm files to xbm format
+# With options for dithering or by default threshold conversion
+#
+#  Anthony Thyssen         20 Dec 1993     anthony@cit.gu.edu.au
+#
+if [ "X$1" = "X-dither" ]; then
+  dither=true
+  shift
+fi
+
+for i in "$@" ; do
+  if [ -f $i ]; then
+    echo "converting \"$i\""
+    name="`expr "//$i" : '.*/\([^/]*\)'`"               # remove path
+    name="`expr "$name" : '\([^.]*\)'`"
+    j=`basename $i .xpm`
+    if [ "$dither" ]; then
+      x2p.sed "$i" | xpmtoppm | ppmtopgm | pgmnorm 2>/dev/null |
+        pgmtopbm -fs | pbmtoxbm |
+          sed 's/static  *char/static unsigned char/;
+               s/noname\([[_]\)/'"$name"'\1/'  > $j.xbm
+    else
+      x2p.sed "$i" | xpmtoppm | ppmtopgm |
+        pgmtopbm -threshold | pbmtoxbm |
+          sed 's/static  *char/static unsigned char/;
+               s/noname\([[_]\)/'"$name"'\1/'  > $j.xbm
+
+    fi
+  fi
+done

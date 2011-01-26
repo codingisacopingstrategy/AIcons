@@ -1,0 +1,33 @@
+/* XPM */
+static char *plaid_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"22 22 4 1",
+/* colors */
+"` c black",
+"a c green",
+"b c red",
+"c c yellow",
+/* pixels */
+"`b`b```b`b``````c`````",
+"b`b`b`b`b`b```````````",
+"`b`b```b`b``````c`````",
+"b`b`b`b`b`b```````````",
+"`b`b```b`b``````c`````",
+"aaaaa`aaaaac`c`c`c`c`c",
+"`b`b```b`b``````c`````",
+"b`b`b`b`b`b```````````",
+"`b`b```b`b``````c`````",
+"b`b`b`b`b`b```````````",
+"`b`b```b`b``````c`````",
+"bbbbb`bbbbb`b`b`a`b`b`",
+"bbbbb`bbbbbb`b`bab`b`b",
+"bbbbb`bbbbb`b`b`a`b`b`",
+"bbbbb`bbbbbb`b`bab`b`b",
+"bbbbb`bbbbb`b`b`a`b`b`",
+"``````````````````````",
+"bbbbb`bbbbb`b`b`a`b`b`",
+"bbbbb`bbbbbb`b`bab`b`b",
+"bbbbb`bbbbb`b`b`a`b`b`",
+"bbbbb`bbbbbb`b`bab`b`b",
+"bbbbb`bbbbb`b`b`a`b`b`"
+};

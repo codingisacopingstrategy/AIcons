@@ -1,0 +1,30 @@
+/* XPM */
+static char *led_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"150 20 3 1",
+/* colors */
+"  c black",
+". c #800000",
+"X c red",
+/* pixels */
+"                                                                                                                                                      ",
+"   XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX   ",
+"   XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX   ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+" XX         XX  ..         XX  ..         XX  ..         XX  XX         XX  XX         ..  XX         ..  ..         XX  XX         XX  XX         XX ",
+"   .........      .........      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX   ",
+"   .........      .........      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX   ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+" XX         XX  ..         XX  XX         ..  ..         XX  ..         XX  ..         XX  XX         XX  ..         XX  XX         XX  ..         XX ",
+"   XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX   ",
+"   XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX      .........      XXXXXXXXX      XXXXXXXXX   ",
+"                                                                                                                                                      "
+};

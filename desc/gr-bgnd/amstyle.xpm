@@ -1,0 +1,38 @@
+/* XPM */
+static char * amstyle_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"29 29 3 1",
+/* colors */
+" 	c black",
+".	c white",
+"X	c grey",
+/* pixels */
+"                             ",
+" ................. ..........",
+" .XXXXXXXXXXXXXXXX .XXXXXXXXX",
+" .XXXXXXXXXXXXXXXX .XXXXXXXXX",
+" .XXXXXXXXXXXXXXXX .XXXXXXXXX",
+" .XXXXXXXXXXXXXXXX .XXXXXXXXX",
+" .XXXXXXXXXXXXXXXX .XXXXXXXXX",
+"                   .XXXXXXXXX",
+" ...... .......... .XXXXXXXXX",
+" .XXXXX .XXXXXXXXX .XXXXXXXXX",
+" .XXXXX .XXXXXXXXX .XXXXXXXXX",
+" .XXXXX .XXXXXXXXX .XXXXXXXXX",
+" .XXXXX .XXXXXXXXX .XXXXXXXXX",
+" .XXXXX .XXXXXXXXX .XXXXXXXXX",
+" .XXXXX                      ",
+" .XXXXX ............... .....",
+" .XXXXX .XXXXXXXXXXXXXX .XXXX",
+" .XXXXX .XXXXXXXXXXXXXX .XXXX",
+" .XXXXX .XXXXXXXXXXXXXX .XXXX",
+" .XXXXX .XXXXXXXXXXXXXX .XXXX",
+" .XXXXX                      ",
+" .XXXXX .....................",
+" .XXXXX .XXXXXXXXXXXXXXXXXXXX",
+"        .XXXXXXXXXXXXXXXXXXXX",
+" ...... .XXXXXXXXXXXXXXXXXXXX",
+" .XXXXX .XXXXXXXXXXXXXXXXXXXX",
+" .XXXXX .XXXXXXXXXXXXXXXXXXXX",
+" .XXXXX .XXXXXXXXXXXXXXXXXXXX",
+" .XXXXX .XXXXXXXXXXXXXXXXXXXX"};

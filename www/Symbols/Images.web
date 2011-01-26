@@ -1,0 +1,173 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Symbols and Markers</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Symbols and Markers
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+<B>See Also...</B>
+<A HREF="../Balls/">Balls</A>,
+<A HREF="../Squares/">Squares</A>,
+<A HREF="../Diamonds/">Diamonds</A>.
+<P>
+
+Various Symbols and Markers for use within your text for various purposes.
+Example uses include, foot note symbols, coryright and trade marks, and
+for hightlight listings in unusual ways. <P>
+
+<HR>
+<H2>Symbols and Markers</H2>
+
+<B>Symbols for Within Text</B> (miscellaneous sizes)<BR>
+<IMG SRC="copyright.gif"        WIDTH=15 HEIGHT=15>
+<IMG SRC="copyright2.gif"       WIDTH=9  HEIGHT=9>
+<IMG SRC="registered.gif"       WIDTH=12 HEIGHT=13>
+<IMG SRC="trademark.gif"        WIDTH=17 HEIGHT=12>
+<IMG SRC="cloverleaf.gif"       WIDTH=9  HEIGHT=9>
+<IMG SRC="foot.gif"             WIDTH=9  HEIGHT=14>
+<IMG SRC="foot2.gif"            WIDTH=9  HEIGHT=14>
+<IMG SRC="tick_sm.gif"          WIDTH=14 HEIGHT=13>
+<IMG SRC="cross_sm.gif"         WIDTH=18 HEIGHT=16>
+<BR>
+<IMG SRC="thumbs_up_sm.gif"     WIDTH=14 HEIGHT=15>
+<IMG SRC="thumbs_down_sm.gif"   WIDTH=14 HEIGHT=15>
+<IMG SRC="asterix_sm.gif"       WIDTH=16 HEIGHT=16>
+<IMG SRC="asterix_red_sm.gif"   WIDTH=16 HEIGHT=16>
+<IMG SRC="asterix_green_sm.gif" WIDTH=16 HEIGHT=16>
+<IMG SRC="asterix_blue_sm.gif"  WIDTH=16 HEIGHT=16>
+<BR>
+<IMG SRC="text.gif"             WIDTH=16 HEIGHT=16>
+<IMG SRC="mail.gif"             WIDTH=16 HEIGHT=14>
+<IMG SRC="scroll.gif"           WIDTH=12 HEIGHT=13>
+<IMG SRC="book.gif"             WIDTH=14 HEIGHT=12>
+<P>
+
+<B>Plain Symbols for Listings</B> (20x16 pixels)<BR>
+<IMG SRC="dot.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="square.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="diamond.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="triangle.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="gem.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="asterix.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="clover.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="flag.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="flag2.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="star.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="star2.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="paw.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="left.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="right.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="tick.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="cross.gif"      WIDTH=20 HEIGHT=16>
+<BR>
+<IMG SRC="dot_red.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="square_red.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="diamond_red.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="triangle_red.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="gem_red.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="asterix_red.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="clover_red.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="flag_red.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="flag2_red.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="star_red.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="star2_red.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="paw_red.gif"        WIDTH=20 HEIGHT=16>
+<IMG SRC="left_red.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="right_red.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="tick_red.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="cross_red.gif"      WIDTH=20 HEIGHT=16>
+<BR>
+<IMG SRC="dot_green.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="square_green.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="diamond_green.gif"  WIDTH=20 HEIGHT=16>
+<IMG SRC="triangle_green.gif" WIDTH=20 HEIGHT=16>
+<IMG SRC="gem_green.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="asterix_green.gif"  WIDTH=20 HEIGHT=16>
+<IMG SRC="clover_green.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="flag_green.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="flag2_green.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="star_green.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="star2_green.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="paw_green.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="left_green.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="right_green.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="tick_green.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="cross_green.gif"    WIDTH=20 HEIGHT=16>
+<BR>
+<IMG SRC="dot_blue.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="square_blue.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="diamond_blue.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="triangle_blue.gif"  WIDTH=20 HEIGHT=16>
+<IMG SRC="gem_blue.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="asterix_blue.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="clover_blue.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="flag_blue.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="flag2_blue.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="star_blue.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="star2_blue.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="paw_blue.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="left_blue.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="right_blue.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="tick_blue.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="cross_blue.gif"     WIDTH=20 HEIGHT=16>
+
+<BR><!-- miscellanous items -->
+<IMG SRC="anchor.gif"         WIDTH=20 HEIGHT=16>
+<IMG SRC="exit.gif"           WIDTH=20 HEIGHT=16>
+<IMG SRC="check.gif"          WIDTH=20 HEIGHT=16>
+<IMG SRC="check_tick.gif"     WIDTH=20 HEIGHT=16>
+<IMG SRC="stop.gif"           WIDTH=20 HEIGHT=16>
+<IMG SRC="stop_red.gif"       WIDTH=20 HEIGHT=16><!-- only in red -->
+<P>
+
+<B>Color Symbols for Text and Listings</B> (20x16 pixels)<BR>
+<IMG SRC="reminder.gif"       WIDTH=20 HEIGHT=16>
+<IMG SRC="thumbs_up.gif"      WIDTH=20 HEIGHT=16>
+<IMG SRC="thumbs_down.gif"    WIDTH=20 HEIGHT=16>
+<IMG SRC="thumbs_right.gif"   WIDTH=20 HEIGHT=16>
+<IMG SRC="xbones.gif"         WIDTH=20 HEIGHT=16>
+<P>
+
+<B>Blank Symbol for Listings</B> (20x16 pixels to leave correct gap)<BR>
+--&gt;<IMG SRC="blank.gif"       WIDTH=20 HEIGHT=16>&lt;-- Blank Image
+<P>
+
+<B>Paw Print Trail</B> (30x16 pixels)<BR>
+<IMG SRC="paw_left.gif"         WIDTH=30 HEIGHT=16> How about a track <BR>
+<IMG SRC="paw_right.gif"        WIDTH=30 HEIGHT=16> of paw prints to <BR>
+<IMG SRC="paw_left_red.gif"     WIDTH=30 HEIGHT=16> highlight your listings!<BR>
+<IMG SRC="paw_right_red.gif"    WIDTH=30 HEIGHT=16><BR>
+<IMG SRC="paw_left_green.gif"   WIDTH=30 HEIGHT=16><BR>
+<IMG SRC="paw_right_green.gif"  WIDTH=30 HEIGHT=16><BR>
+<IMG SRC="paw_left_blue.gif"    WIDTH=30 HEIGHT=16><BR>
+<IMG SRC="paw_right_blue.gif"   WIDTH=30 HEIGHT=16><BR>
+<IMG SRC="paw_blank.gif"        WIDTH=30 HEIGHT=16>&lt;--
+        Blank Paw for correct listing gap<BR>
+<P>
+
+<HR>
+<ADDRESS>
+Dated: 6 Feburary 1996 <BR>
+Updated: 7 January 1997 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

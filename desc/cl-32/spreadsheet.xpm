@@ -1,0 +1,43 @@
+/* XPM */
+static char *spreadsheet_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c LemonChiffon",
+/* pixels */
+"XXXXXX XXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXX XXX  XXX XX   XXX XXX  XX",
+"XXXXXX XX XX XXXXXX X XXXXX XX X",
+"XXXXXX XX    XX XXX  XXX XX XXXX",
+"XXXXXX XX XX XXXXXX X XXXXX XX X",
+"XXXXXX XX XX XX XX   XXX XXX  XX",
+"XXXXXX XXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"XXXXXX ooooooooooooooooooooooooo",
+"XX  XX oooooooo oooooooo ooooooo",
+"X XX X ooooooooooooooooooooooooo",
+"X XX X oooooooo oooooooo ooooooo",
+"X XX X ooooooooooooooooooooooooo",
+"XX  XX oooooooo oooooooo ooooooo",
+"XXXXXX ooooooooooooooooooooooooo",
+"X X X   o o o o o o o o o o o o ",
+"XXXXXX ooooooooooooooooooooooooo",
+"XXX XX oooooooo oooooooo oooooo.",
+"XX  XX ooooooooooooooooooooooo..",
+"XXX XX oooooooo oooooooo oooo...",
+"XXX XX ooooooooooooooooooooooo..",
+"XX   X oooooooo oooooooo oooooo.",
+"XXXXXX ooooooooooooooooooooooooo",
+"X X X   o o o o o o o o o o o o ",
+"XXXXXX ooooooooooooooooooooooooo",
+"XX  XX oooooooo oooooooo ooooooo",
+"X XX X ooooooooooooooooooooooooo",
+"XXX XX oooooooo oooooooo ooooooo",
+"XX XXX ooooooooooooooooooooooooo",
+"X    X oooooooo oooooooo ooooooo",
+"XXXXXX ooooooooooooooooooooooooo",
+"X X X   o o o o o o o o o o o o "
+};

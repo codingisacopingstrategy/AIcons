@@ -1,0 +1,36 @@
+/* XPM */
+static char * portal_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 8 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c slate grey",
+"O	c black",
+"+	c peru",
+"@	c grey",
+"#	c gold",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXXXXXX XXX ....",
+" XXX        XXXX ...",
+" XXX ooooooO O O O..",
+" XXX oOOOOOOOOOOOO..",
+" XXX oO+OOO@OooooO..",
+" XXX o+#+OO@OXoooO..",
+" XXX oO+OOO@OXXXoO..",
+" XXX oOOO+O@OXXXoO..",
+" XXX oOOOOO@OXXXoO..",
+" XXX oO+OOO@OXXXoO..",
+" XXX oOOOOO@OXXXoO..",
+" XXX oOOO+O@OXXXoO..",
+" XXX @@@@@@@OXXXoO..",
+" XXXOOOOOOOOOXXXoO..",
+" XXXXXXXXXXXXXXXoO..",
+" XXXXXXXXXXXXXXXoO..",
+" XXXXXXXXXXXXXXXoO..",
+"  oooooooooooooo O..",
+"..OOOOOOOOOOOOOOOO.."};

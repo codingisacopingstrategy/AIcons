@@ -1,0 +1,40 @@
+/* XPM */
+static char *foot_right_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"43 29 4 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c sienna",
+"o c None",
+/* pixels */
+"ooooooooooooooooooooooooooooooooo     ooooo",
+"oooooooooooooooooooooooooooooooo       oooo",
+"ooooooooooooooooooooooooooooooo         ooo",
+"ooooooooooooooooooooooooooooooo         ooo",
+"ooooooooooooooooooooooooooooooo         ooo",
+"ooooooooooooooooooooooooo.XX.Xoo       oooo",
+"ooooooooooooooooooooooooXX.XX.Xooo    ooooo",
+"oooo.XXX.X.ooooooooooooX.XX.XXX.ooooooooooo",
+"ooo.XX.XX.XX.oooooooooX.X.XX.X.XXoooo     o",
+"ooXX.XX.XXX.XX.ooooooXXXXXXXX.XX.oo        ",
+"oX.XX.XX.XXX.XX.oooXXX.X.XX.XXX.Xoo        ",
+"o.X.XX.XXX.XX.XX.X.XX.X.XX.XXXXXXoo        ",
+"XXXXXXX.X.XXXX.XX.XX.XXXX.XX.X.XXoo        ",
+".X.XX.XXXX.X.XX.XX.XX.XXXX.XX.XX.oooo     o",
+"X.XX.XXX.XX.X.XXXXX.XX.X.XX.XX.XXoooooooooo",
+"XXX.XX.XX.XXXX.X.XXX.XX.XXXX.XX.Xooo    ooo",
+"oXXX.XX.XXX.XXX.XX.XX.XX.X.XXXXX.oo      oo",
+"oX.XX.XX.X.XX.XXX.X.XXXXX.XX.X.XXoo       o",
+"ooX.XX.XX.XX.XXX.XXX.X.XXX.XX.XXooo       o",
+"oooooXX.XXXXXX.XX.XXX.XX.XX.XXX.oooo      o",
+"oooooooooX.X.XX.XXX.XXX.X.XX.X.Xooooo    oo",
+"ooooooooooooX.XX.XXX.X.XXXXXX.Xo    ooooooo",
+"oooooooooooooooooX.XX.XX.XX.XXo      oooooo",
+"ooooooooooooooooooo.XXX.XX.XXoo      oooooo",
+"oooooooooooooooooooooo.XX.X   oo     oooooo",
+"oooooooooooooooooooooooooo.    o     oooooo",
+"oooooooooooooooooooooooooo    .oo   ooooooo",
+"oooooooooooooooooooooooooo     oooooooooooo",
+"ooooooooooooooooooooooooooo   ooooooooooooo"
+};

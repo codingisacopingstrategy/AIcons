@@ -1,0 +1,33 @@
+/* XPM */
+static char * gift_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c cyan",
+"o	c light sea green",
+"O	c magenta",
+"+	c purple",
+"@	c violet",
+/* pixels */
+"   ....      ....   ",
+"  ..XX..    ..XX.   ",
+"  ..oXX......XoX..  ",
+"  ..oX.X.OO.X.XXX.  ",
+"  ..oXo.X..X.oXXX.. ",
+" ...oXXX.XX.oXXXX.. ",
+"....oXXX.oo.ooXXX...",
+"..+..oo..o...ooo..O.",
+".@...o..OO++...o.O..",
+"..@....+.OOO.....OO.",
+".@...o..+...O+.X.O..",
+"..@..o.@.+.OO+.X.OO.",
+".@...o..@..O.+.X.O..",
+"..@..o.@.@.OO+.X.OO.",
+".....o..@..O.+.X.O..",
+" ....o.@.@.OO+.X....",
+"   .....@..O.+....  ",
+"     ....@.O....    ",
+"       .......      ",
+"         ...        "};

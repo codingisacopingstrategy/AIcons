@@ -1,0 +1,31 @@
+/* XPM */
+static char * Asteroid_sm_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 9 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c tan",
+"o	c grey",
+"O	c gainsboro",
+"+	c black",
+"@	c dark slate grey",
+"#	c lavender",
+"$	c sienna",
+/* pixels */
+"     .XoOo.     ",
+"    +o..o.XO.   ",
+"   +.X+@@oo.OX# ",
+"  ++.@ooX@.ooO. ",
+" ++X.O@o.$@X.oo ",
+"++.@oO$@o.o@.oX.",
+"++X..@OO.$.@X.O.",
+" +.@XX@O@o@X.o.O",
+" +o...@X@@O.X.Xo",
+"  +o$@X.X@X.o.o.",
+"  +.@o.@.X.o.X. ",
+"  +.X.@X.o@.@.  ",
+"   ++@X+o@X@    ",
+"   +o+++.+.+    ",
+"    .++++X.+    ",
+"     X+o.+X     "};

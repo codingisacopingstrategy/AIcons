@@ -1,0 +1,33 @@
+/* XPM */
+static char * mana_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"19 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c green",
+"o	c lime green",
+"O	c sea green",
+"+	c dark slate grey",
+"@	c sienna",
+/* pixels */
+"        ...        ",
+"       .XXX.       ",
+"    .. .XXX.....   ",
+"   .XX.XXXXXXXXX.  ",
+"  .oXoXoXoXoXoXo.  ",
+"  .ooXoooXoooXoo.  ",
+"  .oooooXoooooooX..",
+" .oooooooooooooooo.",
+".ooooooooooooooooo.",
+".oOoOoOoooOoOoOooo.",
+".OoOoOoOoOoOoOoOoO.",
+".+O+O+O+O+O+O+O+O+.",
+" .+O+...+O+O+O.....",
+"  ...  .@+@+..     ",
+"        .@@@.      ",
+"     ...@.@.  ..   ",
+"     .@@@@@@..@.   ",
+"    .@@.@@@.@@@.   ",
+"    .......@@@.    ",
+"           ...     "};

@@ -1,0 +1,36 @@
+<PLAINTEXT>
+
+Usage of the Standard Color Table over all the X pixmaps.
+Excluding Grey Scale and ``desc/cl-bgnd/Texture'' sections.
+
+
+    Color Name          Pixels          Color Name          Pixels
+    ----------------    ------          ----------------    ------
+    white		952954		sky blue	     25997
+    black		320190		lime green	     24860
+    grey		157493		orange		     24154
+    slate grey		 93301		dodger blue	     23658
+    dark slate grey	 78276		gold		     23445
+    red			 74011		sienna		     21949
+    wheat		 50049		navy blue	     20223
+    lemon chiffon	 49494		green		     18795
+    yellow		 41998		peru		     18330
+    lavender		 38886		tan		     17619
+    sea green		 36326		tomato		      9606
+    blue		 36320		magenta		      9188
+    gainsboro		 35742		pale green	      7907
+    cyan		 31600		purple		      5380
+    firebrick		 26138		violet		      3590
+
+
+Note: The white figure above includes the X pixmap transparent color,
+due to pbmplus interpreting this as white. Grey of course is heavily used
+due to the influence of the World Wide Web.
+
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+   ``angry fruit salad'' (n). --  A bad visual-interface design that uses
+         too many colors.  This term derives, of course, from the bizarre
+         day-glo colors found in canned fruit salad.
+------------------------------------------------------------------------------

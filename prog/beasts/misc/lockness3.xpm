@@ -1,0 +1,35 @@
+/* XPM */
+static char *lockness3_masked_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+"  c sea green",
+". c navy blue",
+"X c tomato",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooo",
+"oooooooooooXXXoooooooooo",
+"oooooooooooXXXXooooooooo",
+"oooooooooooXXX    oooooo",
+"oooooooooooX        oooo",
+"ooooXXXXooo          ooo",
+"ooooXXXXXX           ooo",
+"ooooXXXXX             oo",
+"oooooXXX         ooo  oo",
+"ooooooXX        oooooooo",
+"ooooooo         oooooooo",
+"ooooooo         oooooooo",
+"oooXXX          oooooooo",
+"ooo..X          oooooooo",
+"oo.ooo          .o.ooooo",
+"oo.o..          ..o.oooo",
+"o.ooo............oo.oooo",
+"oo..oooooooooooooo.ooooo",
+"oooooooo..ooo.oooooooooo",
+"ooooo...oooo.o...ooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo",
+"oooooooooooooooooooooooo"
+};

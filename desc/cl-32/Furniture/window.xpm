@@ -1,0 +1,43 @@
+/* XPM */
+static char *window_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c lavender",
+". c grey",
+"X c DarkSlateGrey",
+"o c red",
+/* pixels */
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXX..",
+"..XooooooooooooooooooooooooooX..",
+"..XoXXXXXXXXXXXXXXXXXXXXXXXXoX..",
+"..XoXooooooooooooooooooooooXoX..",
+"..XoXooooooXXXXX XXXXooooooXoX..",
+"..XoXoooooXXXXXX XXXXXoooooXoX..",
+"..XoXooooXXXXXXX XXXXXXooooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXXXXXXXXXXXX XXXXXXXXXXXoX..",
+"..Xooooo                oooooX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..Xooooo                oooooX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..XoXoooXXXXXXXX XXXXXXXoooXoX..",
+"..Xooooo                oooooX..",
+"..XXXXXXXXXXXXXXXXXXXXXXXXXXXX.."
+};

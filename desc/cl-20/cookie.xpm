@@ -1,0 +1,29 @@
+/* XPM */
+static char * cookie_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	s None	c None",
+".	c sienna",
+"X	c peru",
+/* pixels */
+"     ......         ",
+"   ..XXXXXX..       ",
+"  .XXXXXXXXXX.      ",
+" .XXXXXX.XXXXX.     ",
+".XXXXXXXXXXXXXX.    ",
+".XXXXXXXXXXXXXX.    ",
+".XXXXXXXXXXXX.X.    ",
+".XXXXXX.X.......    ",
+".XXXXXX..XXXXXX..   ",
+" .XXXX.XXXXXXXXXX.  ",
+"  .XX.XXXXXX.XXXXX. ",
+"   ..XXXXXXXXXXXXXX.",
+"    .XXXXXXXXXXXXXX.",
+"    .XXXXXXXXXXXX.X.",
+"    .XXXXXX.XXXXXXX.",
+"    .XXXXXXXXXXXXXX.",
+"     .XXXXXXXXXXXX. ",
+"      .XXXXXXXXXX.  ",
+"       ..XXX.XX..   ",
+"         ......     "};

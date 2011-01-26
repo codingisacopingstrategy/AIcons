@@ -1,0 +1,33 @@
+/* XPM */
+static char * pin1_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c blue",
+"X	c white",
+"o	c cyan",
+"O	c slate grey",
+"+	c grey",
+"@	c black",
+/* pixels */
+"          .....     ",
+"        .........   ",
+"       ...XXX.....  ",
+"      ....XX....... ",
+"      ............. ",
+"     ...........o...",
+"     ...............",
+"     ...............",
+"     ............o..",
+"     ..o............",
+"      ..........o.. ",
+"      ..o.....oo... ",
+"      O...ooooo...  ",
+"     OX+.........   ",
+"    OX+@  .....     ",
+" O OX+@             ",
+"O@OX+@              ",
+"OOX+@               ",
+"O@+@O               ",
+" O@OO               "};

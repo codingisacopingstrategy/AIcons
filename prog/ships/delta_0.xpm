@@ -1,0 +1,33 @@
+/* XPM */
+static char * delta_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"19 19 8 1",
+/* colors */
+" 	s None	c None",
+".	c orange",
+"X	c gold",
+"o	c yellow",
+"O	c sienna",
+"+	c white",
+"@	c dodger blue",
+"#	c blue",
+/* pixels */
+"                   ",
+"                   ",
+"                   ",
+"         .         ",
+"        .X.        ",
+"       .XoX.       ",
+"      .XoOoX.      ",
+"      .XO+OX.      ",
+"      .XO+OX.      ",
+"     .XooOooX.     ",
+"    .XoooooooX.    ",
+"    .XoooooooX.    ",
+"   ..Xooo.oooX..   ",
+"  .XXooo.@.oooXX.  ",
+" .XXXXX.#@#.XXXXX. ",
+"  ......###......  ",
+"         #         ",
+"                   ",
+"                   "};

@@ -1,0 +1,33 @@
+/* XPM */
+static char * l_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c gainsboro",
+"+	c grey",
+"x	c slate grey",
+"o	c dark slate grey",
+"O	c black",
+"@	c black",
+/* pixels */
+"                    ",
+"       xxxxxx       ",
+"     +xxxxxxOxo     ",
+"    xx+xxxxxxxox    ",
+"   +xox++oxxxoooO   ",
+"  xxx++..+xxoxxoxO  ",
+"  xoxx+..++xxoooOo  ",
+" ooxx+x++xxxxxoxooO ",
+" xoxoxx+o+xxoxoOoOO ",
+" ooxxxxxxxxxxooxOoO ",
+" xOxoxxxxxOxOxOoOOO ",
+" @xOxOoxOxxoxOxoOoO ",
+" xOxoxooxOxOx@x@x@O ",
+"  OoOoOxoooooooOOO  ",
+"  OoOxOoOxOOo@x@OO  ",
+"   oOOoOxOOoOx@OO   ",
+"    OoOOOOo@o@o@    ",
+"     OOOOOOo@o@     ",
+"       @o@OO@       ",
+"                    "};

@@ -1,0 +1,26 @@
+/* XPM */
+static char *metal_purple_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"9 9 10 1",
+/* colors */
+"  c wheat",
+". c lavender",
+"X c peru",
+"o c sky blue",
+"O c grey",
+"+ c purple",
+"@ c navy blue",
+"# c slate grey",
+"$ c lemon chiffon",
+"% c None",
+/* pixels */
+"%%o+++%%%",
+"%..$X@@@%",
+"o..$X@@@%",
+"+$$$ #@@@",
+"+XX ##++#",
+"+@@##Ooo+",
+"%@@@+o..%",
+"%@@@+o.%%",
+"%%%@#+%%%"
+};

@@ -1,0 +1,27 @@
+/* XPM */
+static char * green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 7 1",
+/* colors */
+" 	s None	c None",
+".	c green",
+"X	c lime green",
+"o	c pale green",
+"O	c white",
+"+	c sea green",
+"@	c dark slate grey",
+/* pixels */
+"              ",
+"              ",
+"     ...X     ",
+"   o..o..X.   ",
+"   .OoOo.XX   ",
+"  .ooOo..XX+  ",
+"  ..o...XX++  ",
+"  X...XXX++@  ",
+"  XXXXXX++@+  ",
+"   XXX+++@@   ",
+"   +++++@@+   ",
+"     +@@+     ",
+"              ",
+"              "};

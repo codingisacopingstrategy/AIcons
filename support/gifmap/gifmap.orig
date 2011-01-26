@@ -1,0 +1,1717 @@
+#! /opt/bin/perl
+# -*- Mode: Perl -*-
+#
+# $Id: gifmap.in,v 1.39 1997/02/10 04:45:44 bfriesen Exp $
+#
+# Create HTML index files and imagemaps corresponding to a
+# directory tree of image files. Current name is "gifmap".
+#
+# Copyright Bob Friesenhahn (bfriesen@simple.dallas.tx.us) 1996
+#
+# This work may be used for any purpose, public or private,
+# provided that this work or derivations thereof are
+# attributed to its authors.
+#
+# Suggestions and moral support were provided by Anthony Thyssen
+# (anthony@cit.gu.edu.au). His help is very much appreciated.
+#
+# Requires the ImageMagick package (last tested with 3.8.0)
+#
+# Obtain ImageMagick from
+# "ftp://ftp.wizards.dupont.com/pub/ImageMagick" or visit the
+# ImageMagick web page at
+# "http://www.wizards.dupont.com/cristy/ImageMagick.html".
+# ImageMagick is written by John Cristy (cristy@dupont.com).
+#
+# Depth-first recursion is supported except that directories
+# represented by symbolic links are ignored.
+#
+# All generated files use two prefixes and are placed in the
+# same directory as the image files. One prefix is for master
+# index files that the Web server knows about (e.g. index.html).
+# The other prefix is for the remaining files. The dual prefix
+# scheme provides for special treatments such as making all page
+# index related files hidden (nicer for 'xv').
+#
+# Selection of GIF vs JPEG montages is made based on file size
+# for the client's benefit.
+#
+# Both client-side imagemaps and server-side (CERN & NCSA)
+# imagemaps are supported. For server-side imagemaps to work, a path
+# mapping must be done in the server such that paths as reported by
+# /bin/pwd map into the equivalent server paths or, the server must
+# support relative imagemap paths.
+#
+$help=('gifmap: web-based image index builder
+Bob Friesenhahn (bfriesen@simple.dallas.tx.us) $Date: 1997/02/10 04:45:44 $
+
+Command line options:
+ General:
+  --debug	  Print debug messages
+  --forcehtml	  Force HTML files to be generated (default off)
+  --forcemontage  Force montage (default off)
+  --help	  Display usage message
+  --recurse	  Recurse directory tree
+  --srcdir	  Image directory to process
+  --verbose	  Tell us more ...
+ 
+ Paths:
+  --iconpath	  Relative path under rootdir (--rootpath) to gifmap icons
+  --prefixpath    Path to prepend to generated URLs (e.g. /~username)
+  --relative	  Translate URLs to relative paths (same filesystem)
+  --rootpath	  Absolute path to server root (NCSA DocumentRoot)
+
+ Server-side imagemaps:
+  --htimage	  Imagemap CGI program URL (set to \'\' for none)
+  --maptype	  Server-side map type ("ncsa" or "cern")
+ 
+ Filenames:
+  --dirindexname  Directory-name to title cross-reference file name
+  --indexname	  Name of master index files (default server index)
+  --pageindexname Base name of page-related index files
+  --readme	  Name of directory info file
+  
+ Image Map:
+  --maxgif        Maximum size of GIF imagemap before trying JPEG.
+  --montageflags  Flags to ImageMagick montage
+  --rows	  Montage rows (max)
+  --columns	  Montage columns
+  --thumbfont	  Thumbnail title font
+  --thumbgeom	  Thumbnail geometry (widthxheight)
+  
+ Colors & Appearance:
+  --address       Optional user address info
+  --coloralink	  Link (active) color
+  --colorback	  Background color
+  --colorlink	  Link (unvisited) color
+  --colortrans    Transparent color
+  --colorvlink	  Link (visited) color
+  --dircoloralink Link (active) color (directory frame)
+  --dircolorback  Background color (directory frame)
+  --dircolorlink  Link (unvisited) color (directory frame)
+  --dircolorvlink Link (visited) color (directory frame)
+
+  --header        Page header (imagemap frame)
+  --title         Page title
+');
+
+###########################################################################
+#                     Internal Default Options
+###########################################################################
+
+# RC files
+#$global_option_file = "$ENV{'HOME'}/.gifmaprc"; # global rc file
+$global_option_file = "$ENV{'HOME'}/icons/support/gifmap/gifmaprc";
+$gifmaprc='.gifmaprc';		# Name of per-directory rc file
+
+# File naming
+$opt_indexname='index.html';	# Per-directory master index file 
+$opt_readme='README.html';	# Name of welcome page README file ('' = none)
+$opt_pageindexname='.index';	# Base name of secondary index files
+$opt_dirindexname='.dirindex';	# Subdirectory Title cross-reference
+				#  dirname   Directory Title
+
+#
+# Color related options
+#
+# X11 RBG color database location
+$opt_rgbdb='/usr/X11R6/lib/X11/rgb.txt';
+#
+# Page Frame & non-framed pages
+$opt_colorback	= 'peach puff';	# Color -- Background
+$opt_colorframe = '#C0C0C0';	# Color -- Frame Color
+$opt_colortrans = '#C0C0C0';	# Color -- Image Transparency
+$opt_coloralink	= '#FF0000';	# Color -- Active link
+$opt_colorlink	= '#0000EE';	# Color -- Link
+$opt_colorvlink	= '#551A8B';	# Color -- Visited link
+#
+# Directory frame (Leave options empty ('') to use page frame colors
+$opt_dircolorback  = 'light sky blue';	# Color -- Background
+$opt_dircolorframe = '';	# Color -- Frame Color
+$opt_dircoloralink = '';	# Color -- Active link
+$opt_dircolorlink  = '';	# Color -- Link
+$opt_dircolorvlink = '';	# Color -- Visited link
+
+
+# General options
+$opt_debug      = 0;		# Debug flag (default off)
+$opt_recurse    = 0;		# Recursivally apply gifmap (default off)
+$opt_prune      = 0;		# Do Not recurse into subdirectories (off)
+$opt_ignore     = 0;		# Do not gifmap this directory
+				#    but still recurse into sub-directories
+$opt_relative	= 0;		# Relative paths flag (default off)
+$opt_srcdir	= '.';		# Source directory path (current directory)
+$opt_verbose	= 0;		# Verbose flag (default off)
+$opt_forcehtml	= 0;		# Force HTML files to be generated (default off)
+$opt_forcemontage= 0;		# Force montage (default off)
+$opt_help	= 0;		# Display usage message
+$opt_header	= '';		# Blank header obtains default header generation
+$opt_title	= '';		# Blank title obtains default title generation
+$opt_address	= '';		# Additonal address info for bottom of imagemap page
+
+# Server-side imagemap settings
+$opt_htimage='/cgi-bin/htimage'; # Base URL to server-side imagemap CGI
+			#  On some systems this is  /cgi-bin/imagemap
+			#  Set to '' to use a ".map" URL with relative URLs 
+			#                        (latest NCSA & Apache)
+$opt_maptype='cern';   	# Maptype must be "cern" or "ncsa". If you are using
+			# Apache, specify "ncsa". Case *is* significant
+
+#				
+# ImageMagick Montage settings
+#
+$opt_columns	= 8;		# Max number of columns in montage grid
+$opt_rows	= 5;		# Max number of rows in montage grid
+$opt_thumbfont	= '5x8';	# Font used for thumbnails
+$opt_thumbgeom	= '106x80';	# Size of thumbnail images (width x height)
+$opt_maxgif	= 30000;	# Maximum GIF imagemap size before trying JPEG
+
+# Extra Montage flags (and suggestions)...
+#  Normal Default  (labled images)
+$opt_montageflags='+frame +shadow -gravity South -label \'%f\n%wx%h %bKb\'';
+#
+#  Framed version
+#$opt_montageflags='+label +shadow -gravity South -label \'%f\n%wx%h %bKb\'';
+#
+# Simple Framed images without lables (thin frames)
+#$opt_montageflags = "+label +shadow -borderwidth 2";
+#
+#  No labels frame shadow etc... Just the images
+#$opt_montageflags = "+frame +label +shadow -gravity Center";
+#
+# Uncomment to try and preserve transparency of individual images.
+#$opt_montageflags .= " -compose over";
+#
+# Uncomment to make tile as small as posible 
+# Only use this for directories of small images and without lables
+#$opt_thumbgeom  = '';
+
+#
+# Navigation Icon Paths and URLs
+# Specify the path and file name for the navigation icons.
+#
+$opt_rootpath	= '/html';	# Directory Path to top of html tree
+				# Needed to determine relative paths to images
+$opt_prefixpath	= '';		# Path or URL to prepend to root URL
+				# Not used if local relative paths used
+$opt_iconpath	= 'Images/gifmap';
+                                # Relative path under rootpath / prefixpath
+
+# Hash table of icons used -- image size read internally by gifmap
+%opt_icons = (
+   'prev',	'blue_prev.gif',	# Previous
+   'next',	'blue_next.gif',	# Next
+#  'prev_grey',	'gray_prev.gif',	# Previous (grayed out) NOT USED (YET)
+   'next_gray',	'gray_next.gif',	# Next (grayed out)
+   'up',	'blue_up.gif',  	# Up
+   'help',	'blue_readme.gif',	# Help Readme File
+#  'help',	'blue_help.gif',	# Help Alternative (Question)
+#  'dir',	'blue_dir.gif', 	# Directory List Icon (See below)
+   'ball',	'blue_ball.gif',	# A ball matching other icons
+);
+
+#
+# Format Templates
+# WARNING: This is for expert web and perl programmers only
+# do not modify unless you know what you are doing.
+# 
+# Extra Images can be added to the above hash table and then used
+# in the following format options. For example the 'dir' icon above
+# can be uncommented then the following lines added below.
+# WARNING: this is only useful if $opt_indexname is something else.
+# 
+# <A HREF=\"./\" TARGET=\"pagemap\">
+#    <IMG SRC=\"$icon_url{dir}.gif\" $icon_size{dir} ALT=\"\" BORDER=0></A>
+#    <A HREF=\"./\" TARGET=\"pagemap\">Dir Listing</A><BR>
+#
+
+#
+# Template for the Directory Index Frame
+#
+$opt_frameddirfmt='
+<P>
+<FONT SIZE=-1>
+${uphtml}
+${nexthtml}
+</P>
+${dirhtml}
+';
+
+#
+# Template for Non-Framed Top Index Page ($opt_indexname)
+#
+$opt_dirfmt='<H3>Directory Navigator ...</H3>
+${uphtml}
+${helphtml}
+${dirhtml}
+${pageindexhtml}
+';
+
+#
+# File extensions that we support
+#
+@extensions=( 'avs', 'bmp', 'cgm', 'eps', 'gif', 'hdf',
+	     'jbig', 'jpeg', 'jpg', 'mif', 'miff', 'mpeg', 'mpg',
+	     'pcl', 'pcx', 'pdf', 'pic', 'png', 'png', 'pnm', 'ppm',
+	     'ps', 'rle', 'tga', 'tif', 'tiff', 'xbm', 'xpm', 'xwd');
+
+###########################################################################
+#                  End of Internal Default Options
+###########################################################################
+
+select(STDERR); $| = 1;		# Make stderr unbuffered
+select(STDOUT); $| = 1;		# Make stdout unbuffered
+
+umask( 022 );			# Sets default file mode 644
+$start_time = time;		# Save start time
+
+#
+# Allow global options file to override defaults set above
+# (but not command line options)
+#
+&source_gifmaprc( $global_option_file );
+
+# Set signal handler to gracefully abort (hah!)
+# Handle signal induced exits properly
+sub sig_handler {
+    local($sig) = @_;
+    print("\nCaught signal SIG$sig -- aborting ...\n");
+    exit(1);
+}
+$SIG{'HUP'} = 'sig_handler';
+$SIG{'INT'} = 'sig_handler';
+$SIG{'QUIT'} = 'sig_handler';
+
+#
+# Get version info from RCS variables
+#
+{
+    local($crap);
+    ($crap, $gifmap_revision ) = split( ' ', '$Revision: 1.39 $' );
+    ($crap, $gifmap_date ) = split( ' ', '$Date: 1997/02/10 04:45:44 $' );
+}
+
+#
+# We don't really like command line options but we'll support them anyway. :-)
+#
+require('newgetopt.pl');
+if ( ! &NGetOpt(
+	      'address:s',
+	      'coloralink:s',
+	      'colorback:s',
+	      'colorlink:s',
+	      'colortrans:s',
+	      'colorvlink:s',
+	      'columns:i',
+	      'debug',
+	      'dircoloralink:s',
+	      'dircolorback:s',
+	      'dircolorlink:s',
+	      'dircolorvlink:s',
+	      'dirindexname:s',
+	      'forcehtml',
+	      'forcemontage',
+	      'header:s',
+	      'help',
+	      'htimage:s',
+	      'iconpath:s',
+	      'indexname:s',
+	      'maptype:s',
+	      'maxgif:i',
+	      'montageflags:s',
+	      'pageindexname:s',
+	      'prefixpath:s',
+	      'readme:s',
+	      'recurse',
+	      'relative',
+	      'rootpath:s',
+	      'rows:i',
+	      'srcdir:s',
+	      'thumbfont:s',
+	      'thumbgeom:s',
+	      'title:s',
+	      'verbose'	     ) ) {
+    &help;
+    exit(0);
+}
+
+#
+# Print help message
+#
+if( $opt_help ) {
+    &help;
+    exit(0);
+}
+
+#
+# Check if source directory is valid
+#
+if ( ! -d "${opt_srcdir}" ) {
+    print( STDERR "No ${opt_srcdir} directory\n" );
+    exit;
+}
+
+
+#
+# Open X11 RGB database
+#
+if ( -f $opt_rgbdb ) {
+    open( RGBDB, "<$opt_rgbdb" ) || die "Unable to open RGB database $opt_rgbdb";
+    while( <RGBDB> ) {
+        local($red, $green, $blue, $color);
+        chop;
+        ($red, $green, $blue, $color) = split( /[ \t]+/, $_, 4);
+        $RGBDB{"$color"} = sprintf("#%2X%2X%2X", $red, $green, $blue);
+    }
+    close( RGBDB );
+} else {
+    print( STDERR "Warning: RGB database \'$opt_rgbdb\' not found\n" );
+}
+
+#
+# Build-up regular expression for file extensions we accept.
+#
+$include='';
+foreach $ext (@extensions) {
+    ($uext = $ext) =~ tr/[a-z]/[A-Z]/;
+    if($include) {
+	$include .= "|";
+    }
+    $include .= "(\\.${ext}\$)|(\\.${uext}\$)";
+}
+
+#
+# Build-up regular expression for file names we don't accept
+#
+$exclude="(^$opt_indexname)|(\\.html\$)|(^\\.)";
+
+#
+# Translate paths to physical paths (avoid symlink problems)
+#
+$opt_srcdir	= &lets_get_physical( $opt_srcdir );
+$opt_rootpath 	= &lets_get_physical( $opt_rootpath );
+$icon_dir_path  = "${opt_rootpath}/${opt_iconpath}";
+
+#
+# Run ImageMagick's identify program on an image and return
+# HTML text (HEIGHT=foo WIDTH=bar) representing size
+# This is very slow since identify insists in reading the
+# entire image.
+#
+sub html_imgsize {
+    local($file) = @_;
+    local($args,$retval);
+    local($imgwidth,$imgheight);
+    
+    $args = "$file\[0\]";
+    $retval = '';
+
+    open( IDENT, "identify $args|" ) || die("$0: Failed to execute \"identify $args|\"\n$@\n");
+    while( <IDENT> ) {
+	chop;
+	# marble_blue.gif[46] 30x30+0+0 DirectClass 728b GIF 1s
+	if((($imgwidth,$imgheight)=/(\d+)x(\d+)/)) {
+	    $retval="HEIGHT=$imgheight WIDTH=$imgwidth";
+	}
+    }
+    close( IDENT );
+    return( $retval );
+}
+
+#
+# Use Randy Ray's (rjray@uswest.com) Image::Size module (v2.1)
+# to obtain in-line image sizes. Obtained from CPAN. Requires
+# IO module (1.14) which is available from CPAN or included
+# in post 5.003 betas of PERL.
+# If you obtain and install this module, then comment out the
+# html_imgsize subroutine above and uncomment the 'use' line.
+#
+#use Image::Size 'html_imgsize';
+
+#
+# Get icon image sizes
+#
+for $icon ( keys %opt_icons ) {
+  $icon_size{$icon} = &html_imgsize( $icon_dir_path .'/'.  $opt_icons{$icon} );
+}
+
+if( $opt_recurse ) {
+    # Recurse depth-first under current directory, executing &wanted
+    # for each directory ignoring hidden directories
+    require "find.pl";
+    print( "Processing directory tree $opt_srcdir ...\n" ) if $opt_debug;
+    &find("$opt_srcdir");
+} else {
+    print( "Processing directory $opt_srcdir ...\n" ) if $opt_debug;
+    &dodir("$opt_srcdir");
+}
+
+#
+# Close RGB database (let's be pedantic)
+#
+dbmclose(RGBDB);
+
+#
+# Print run times if running in verbose mode
+#
+if( $opt_verbose ) {
+    local($user, $system, $cuser, $csystem, $total_user, $total_system, $total_time );
+    local($user_m, $system_m, $cuser_m, $csystem_m, $total_user_m, $total_system_m, $total_time_m );
+    # $user is the CPU time spent in user code for this process
+    # $system is the CPU time spent in system code on behalf of this process
+    # $cuser is CPU time spend in user code of child processes
+    # $csystem is CPU time spend in system code on behalf of child processes
+    ($user, $system, $cuser, $csystem) = times;
+    $user_m		= &elapsedminutes( $user );
+    $system_m		= &elapsedminutes( $system );
+    $cuser_m		= &elapsedminutes( $cuser );
+    $csystem_m		= &elapsedminutes( $csystem );
+    $total_user		= $user + $cuser;		# Total user time
+    $total_user_m	= &elapsedminutes( $total_user );
+    $total_system	= $system + $csystem;		# Total system time
+    $total_system_m	= &elapsedminutes( $total_system );
+    $total_time		= time - $start_time;		# Total run time
+    $total_time_m	= &elapsedminutes( $total_time );
+    print( STDERR "Run time statistics:\n" );
+    print( STDERR "Detailed times: ${user_m} user, ${system_m} system, ${cuser_m} child_user, ${csystem_m} child_system\n" );
+    print( STDERR "Summary times : ${total_time_m} total, ${total_user_m} user, ${total_system_m} system\n" );
+}
+ 
+exit(0);
+
+#####################
+#####################
+
+# Executed for each find operation 
+# Want:
+# is directory
+# not hidden directory
+sub wanted {
+    local($dev,$ino,$mode,$nlink,$uid,$gid,$saved_opt_recurse);
+    ($dev,$ino,$mode,$nlink,$uid,$gid) = lstat($_);
+    if ( -d $_ && !/^\..+/ ) {
+        if( $_ ne '.' && &get_gifmaprc_var('.', 'opt_prune', 0) ) {
+            $prune=1;
+            print( STDERR "Pruning    $name\n" );
+            return;
+        } 
+        &forking_dodir($name);
+    }
+}
+
+#
+# Execute dodir with the protection of a fork
+# This ensures that current directory and global
+# gifmap configuration values are preserved between
+# directories.
+#
+sub forking_dodir {
+    local($srcdir) = @_;        # Directory to process
+    local($waitpid);            # PID returned by wait
+    local($childstat);          # Status returned from child
+FORK: {
+        if( $pid = fork ) {
+            # parent here
+            # child process pid is available in $pid
+            $waitpid=wait();
+            $childstat=$?;
+            # If clean exit, then return 0
+            return 0 if ( $childstat == 0 );
+            # If child died due to a signal, print message
+            # and return -1
+            if( ( $childstat && 255 ) != 0 ) {
+                local( $sig ) = $childstat && 255;
+                print( "Child exited due to signal $sig\n" );
+                return( -1 );
+            }
+            # Return child exit status
+            return( $childstat >> 8 );
+
+        } elsif ( defined $pid ) {  # $pid is zero here if defined
+            # child here
+            # parent process pid is available with getppid
+            &dodir( $srcdir );
+            exit( 0 );
+        } elsif ( $! =~ /No more process/ ) {
+            # EAGAIN, supposedly recoverable fork error
+            sleep 5;
+            redo FORK;
+        } else {
+            # weird fork error
+            die( "Can't fork: $!\n$@\n" );
+        }
+    }
+    return(0);	# Should never get here!
+}
+
+#
+# Generate index files for directory specified by $srcdir
+#
+sub dodir {
+    local($srcdir) = @_;	# Directory to process
+    local(@allimgfiles);	# List of all source file names in directory
+    local(@srcfiles);		# List of source file names for current page
+    local(@subdirectories);	# List of directories under this directory
+    
+    local($maxfiles)=0;		# Maximum number of index links per page
+    local($numpages)=0;		# Number of index pages to be generated
+    local($numimages)=0;	# Number of images in directory
+    local($numdirectories)=0;	# Number of subdirectories in directory
+    local($pagenum)=0;		# Current index page number (1 to N)
+
+    #
+    # Change current directory to $srcdir
+    #
+    chdir($srcdir) || die("Can't cd to $srcdir\n$@\n");
+    
+    # Get current (absolute) directory
+    $currentdir=&cwd;
+    
+    #
+    # Eval per-directory rc files if they exist.
+    # Rc files are evaluated for each directory starting from
+    # $opt_rootdir until the current directory is reached. This supports
+    # "additive" behavior for a branch in the tree.
+    #
+    &eval_gifmaprc();
+
+    #
+    # Decide if we want to process this directory or not based
+    # on the value of $opt_ignore.  If not, then just return.
+    #
+    if( $opt_ignore ) {
+        # Skip this directory
+        print( STDERR "Skipping   $srcdir\n" );
+        return( 0 );
+    } else {
+        print( STDERR "Processing $srcdir\n" );
+    }
+
+    #
+    # Set time and date related variables for general use
+    #
+    @calendar_months=('January','February','March','April','May','June','July',
+        'August','September','October','November','December');
+    ($td_seconds, $td_minutes, $td_hours, $td_mday, $td_month, $td_year, $td_wday,
+        $td_yday, $td_isdst ) = localtime(time);
+
+    #
+    # Default directory frame colors to page colors if not set
+    #
+    $opt_dircolorback 	= $opt_colorback	if ! $opt_dircolorback;
+    $opt_dircolorframe	= $opt_colorframe	if ! $opt_dircolorframe;
+    $opt_dircoloralink	= $opt_coloralink	if ! $opt_dircoloralink;
+    $opt_dircolorlink 	= $opt_colorlink	if ! $opt_dircolorlink;
+    $opt_dircolorvlink	= $opt_colorvlink	if ! $opt_dircolorvlink;
+
+    #
+    # Convert all colors to hex format
+    #
+    $opt_colorback	= &lookuprgb( $opt_colorback );
+    $opt_colorframe	= &lookuprgb( $opt_colorframe );
+    $opt_colortrans	= &lookuprgb( $opt_colortrans );
+    $opt_coloralink	= &lookuprgb( $opt_coloralink );
+    $opt_colorlink	= &lookuprgb( $opt_colorlink );
+    $opt_colorvlink	= &lookuprgb( $opt_colorvlink );
+    $opt_dircolorback	= &lookuprgb( $opt_dircolorback );
+    $opt_dircolorframe	= &lookuprgb( $opt_dircolorframe );
+    $opt_dircoloralink	= &lookuprgb( $opt_dircoloralink );
+    $opt_dircolorlink	= &lookuprgb( $opt_dircolorlink );
+    $opt_dircolorvlink	= &lookuprgb( $opt_dircolorvlink );
+
+    #
+    # Calculate the maximun number of images per index page
+    # 
+    $maxfiles=$opt_columns*$opt_rows;
+
+    #
+    # Now put the montage options together
+    #
+    $montageopts = join(' ', $opt_montageflags,
+               "-font '${opt_thumbfont}'",
+               "-geometry '${opt_thumbgeom}+2+2>'",
+               "-tile '${opt_columns}x${opt_rows}'",
+               "-background  '${opt_colorback}'",	# between frames color
+               "-bordercolor '${opt_colortrans}'",	# color inside frame
+               "-mattecolor  '${opt_colorframe}'");	# color of the frame itself
+
+    #
+    # Compute icon URLs
+    # Make paths relative if in current filesystem and -relative specified
+    #
+    if ( $opt_relative ) {
+    	# Convert to relative URL
+        $icon_base_url = &abs_path_to_rel($icon_dir_path);
+    } else {
+        # Convert to absolute URL
+        $icon_base_url = &escapeurl( &abs_path_to_url($icon_dir_path));
+    }
+
+    print( "Icon URLs:\n" )  if $opt_debug;
+    for $icon ( keys %opt_icons ) {
+       $icon_url{$icon}  =  $icon_base_url . '/' . $opt_icons{$icon};
+       printf( "   \$icon_url%-10s = $icon_url{$icon}\n", "{'$icon'}" )
+         if $opt_debug;
+    }
+
+    #
+    #  Read source file names (if any)
+    #  Filter out any names matching the exclude list
+    #
+    opendir( SRCDIR, ".") || die("$0: Failed to open directory $srcdir\n$@\n");
+    @allfiles = sort(grep(!/$exclude/,readdir( SRCDIR )));
+    closedir( SRCDIR );
+
+    #
+    # Build list of image files
+    #
+    @allimgfiles = grep( /$include/, @allfiles);
+
+    #
+    # Find subdirectory names (if any) ignoring hidden directories
+    # and directories without index files. Directories should have index
+    # files since our find goes from the bottom up and we should have already
+    # processed the subdirectories.
+    #
+    # Only test files that are not in the allimgfiles list
+    { 
+        local(%tarray);
+	local(@dirfiles);
+        grep($tarray{$_}++, @allimgfiles);
+        @dirfiles = grep(! $tarray{$_},@allfiles);
+ 
+	foreach $_ (@dirfiles) {
+	    #if( -f "${_}/${opt_indexname}" ) { 	# If directory & index file exists
+	    if( -d "${_}" ) {				# If directory exists
+		push(@subdirectories, $_);		# Then add it to the list
+	    }
+	}
+    }
+
+    #
+    # Determine the number of index pages to be generated, etc.
+    #
+    $numimages=scalar(@allimgfiles);		# Number of images in directory
+    $numdirectories=scalar(@subdirectories);	# Number of subdirectories in directory
+    $numpages=int($numimages/$maxfiles);
+    if ( $numimages%$maxfiles != 0 ) {
+        ++$numpages;
+    }
+
+    #
+    # Check for README file and set havereadme flag if exists
+    #
+    $havereadme = 0;
+    if( -f "${opt_readme}" ) {
+    	$havereadme = 1;
+    }
+
+    # Set haveimages flag if there are images in directory. This
+    # effects the way the directory listing appears.
+    $haveimages = 0;
+    if( $numimages > 0 ) {
+    	$haveimages = 1;
+    }
+
+    #
+    # Handle a directory name to title index file
+    # Store alternative names in %dirnames
+    #
+    undef( %dirnames );
+    if ( -f $opt_dirindexname ) {
+        open( DIRINDX, "<$opt_dirindexname" );
+	    while( <DIRINDX> ) {
+	        chop;
+		( $dirname, $dirtitle) = split( /[ \t]+/, $_, 2);
+		$dirnames{$dirname} = &escapehtml($dirtitle);
+		#print(STDERR "dirname=$dirname  dirtitle=$dirtitle\n ");
+	    }
+	close( DIRINDX );
+    }
+    
+    #
+    # Determine page title
+    #
+    if( $opt_title ne '' ) {
+        $title = $opt_title;
+    } else {
+        $dirname=&basename($srcdir);
+        $title = "Index of directory \"$dirname\"";
+    }
+
+    #
+    # Print statistics message
+    #
+    print( STDERR "   $numimages Images $numdirectories Directories $numpages Pages --- " ) if $opt_verbose;
+
+    #
+    # Loop through file list, building pages for each $maxfiles images
+    # Do at least one page (there might not be any images)
+    #
+    $pagenum=1;
+    while (scalar(@allimgfiles) > 0 || $pagenum == 1) {
+        
+        print(STDERR " $pagenum" ) if $opt_verbose;
+
+        @srcfiles=splice(@allimgfiles,0,$maxfiles);
+        $numfiles=scalar(@srcfiles);
+
+        #
+        # Calculate per-page file names based on $pagenum
+        #
+        &setpagefnames;
+
+	#
+	# Decide if we need to do HTML & montage
+        #
+        $domontage=0;
+        $dohtml=0;
+
+        #
+        # Use status file from last run if available
+        #
+        if ( -f $pagestat ) {
+            &source_gifmaprc($pagestat);
+#print("stat_srcfiles=" . $stat_srcfiles . "\n" );
+#print("stat_montageopts=" . $stat_montageopts . "\n" );
+
+	    # If file list is different than last time, then do html & montage
+            if( "$stat_srcfiles" ne join(' ',@srcfiles) ) {
+                print( STDERR "Need to do both montage and HTML because file list differs\n") if $opt_debug;
+                ++$domontage;
+                ++$dohtml;
+            }
+
+            # If directory list is differnet than last time, then do html
+            if( "$stat_subdirectories" ne join(' ',@subdirectories) ) {
+                print( STDERR "Need to do HTML because directory list has changed\n") if $opt_debug;
+                ++$dohtml;
+            }
+
+            # If montage options differ from last time, then do montage
+            if( $montageopts ne $stat_montageopts ) {
+                print( STDERR "Need to do montage because options have changed\n") if $opt_debug;
+                ++$domontage;
+            }
+	}
+	# Montage specific checks
+	# Check for missing output files
+	# Check for new input files
+        if( $numfiles > 0 ) {
+            if( ! -f $pagestat || ( ! -f $montagegif && ! -f $montagejpeg ) || ! -f $montageshtml ) {
+                # If key file is missing then do montage
+                print(STDERR "\nMust do montage because a required output file is missing\n") if $opt_debug;
+                ++$domontage;
+            } else {
+                # If any file in file list is newer than montage status file, then do montage
+                $pagestattime=&fmtime($pagestat);
+                foreach $file (@srcfiles) {
+                    if( &fmtime($file) > $pagestattime ) {
+                        print( STDERR "Need to do both montage and HTML because file has been updated\n") if $opt_debug;
+                        ++$domontage;
+                        ++$dohtml;
+                        print(STDERR "\nMust do montage and html: file updated\n") if $opt_debug;
+                    }
+                }
+            }
+        }
+
+	# HTML specific checks
+	# Check for missing files
+	if( ! -f $pagestat || ! -f $htmlindex ) {
+            # If key file is missing then do HTML
+            ++$dohtml;
+            print(STDERR "\n   Must do HTML: output file missing\n") if $opt_debug;
+	}
+        # If README file has appeared or vanished, then do HTML
+        if( $stat_havereadme != $havereadme ) {
+            print(STDERR "\n   Must do HTML: README status changed\n") if $opt_debug;
+            ++$dohtml;
+        }
+
+	# Overrides
+	if( $opt_forcehtml ) {
+	    ++$dohtml;
+	}
+	if( $opt_forcemontage ) {
+	    ++$dohtml;		# Montage effects HTML output
+	    ++$domontage;
+	}
+
+PAGES:	{
+	    $errorstat = 1;
+
+	    #
+	    # Build montage for current page
+	    #
+	    if( $domontage && ( $numfiles > 0 ) ) {
+		&domontage(@srcfiles) && last PAGES;
+	    }
+	
+	    #
+	    # Write out page index file for current page
+	    #
+	    if( $dohtml ) {
+		&writeindexfile(@srcfiles) && last PAGES;
+	    }
+
+	    # Write client-side imagemap file
+	    if( $dohtml && ( $numfiles > 0 ) ) {
+		&writeimagemap && last PAGES;
+	    }
+
+	    # Save status (source files and montage options)
+            if ( $dohtml || $domontage ) {
+	        open( STAT, ">$pagestat" ) || die( "Unable to open file $pagestat!\n$@\n" );
+	        print( STAT "\$stat_srcfiles=\'" . join( ' ', @srcfiles) . "\'" . "\;\n" );
+                print( STAT "\$stat_subdirectories=\'" . join( ' ', @subdirectories) . "\'" . "\;\n" );
+                ($stat_montageopts=$montageopts) =~ s/\'/\\'/g;
+	        print( STAT "\$stat_montageopts=\'$stat_montageopts\'\;\n" );
+                print( STAT "\$stat_havereadme=$havereadme\;\n" );
+	        close( STAT );
+            }
+
+	    # Clear error flag
+	    $errorstat = 0;
+	}
+	print( STDERR "Error encountered when creating page\n" ) if $errorstat;
+        ++$pagenum;	# Next page
+    }
+   
+    print( STDERR "\n" ) if $opt_verbose;
+    
+    #
+    # Clean up old files
+    #
+    &setpagefnames;
+    while( -f $pagestat ||
+           -f $montageshtml ||
+           -f $montagegif ||
+           -f $montagejpeg ||
+           -f $montagemiff ||
+           -f $montagemap ||
+           -f $htmlindex
+         ) {
+        unlink($pagestat,$montageshtml,$montagegif,$montagejpeg,$montagemiff,$montagemap,$htmlindex);
+        ++$pagenum;	# Next page
+        &setpagefnames;
+    }
+
+    #
+    # Write out index files (Both main index and frames index files)
+    #
+    if( $dohtml ) {
+        &writeindexes;
+    }
+}
+
+#
+# Write out both top index and frame index files
+#
+sub writeindexes {
+
+    print( STDERR "Writing Index Files ${opt_indexname} & ",
+                   "${opt_pageindexname}dir.html ...\n" ) if $opt_debug;
+
+    #---- Generate the Variables for Format Options ----
+    #
+    # Generate HTML for up link
+    #
+    local($uphtml) = ('');
+    # get indexname of parent directory
+    local($indexname) =
+             &get_gifmaprc_var('..', 'opt_indexname', $opt_indexname);
+    unless ( $indexname eq 'NOLINK' ) {
+       $uphtml = "<A HREF=\"../${indexname}\">
+    <IMG SRC=\"$icon_url{'up'}\" $icon_size{'up'} ALT=\"^\" BORDER=0></A>
+    <A HREF=\"../${indexname}\">Up</A><BR>";
+    }
+
+    #
+    # Generate HTML for help link
+    #
+    local($helphtml) = ('');
+    if( $havereadme ) {
+        $helphtml = "<A HREF=\"${opt_readme}\" TARGET=\"pagemap\">
+    <IMG SRC=\"$icon_url{'help'}\" $icon_size{'help'} ALT=\"?\" BORDER=0></A>
+    <A HREF=\"${opt_readme}\" TARGET=\"pagemap\">ReadMe</A><BR>";
+    }
+
+    #
+    # Compute HTML for link to first image page
+    #
+    local($nexthtml) = ('');
+    if( $havereadme && $haveimages ) {
+        $nexthtml .= "<A HREF=\"${opt_pageindexname}1.html\" TARGET=\"pagemap\">
+    <IMG SRC=\"$icon_url{'next'}\" $icon_size{'next'} ALT=\"\" BORDER=0></A>
+    <A HREF=\"${opt_pageindexname}1.html\" TARGET=\"pagemap\">Images</A><BR>";
+    }
+
+    #
+    # Compute HTML for directory list
+    #
+    local($dirhtml) = ('');
+    if( !$opt_prune && scalar(@subdirectories) > 0 ) {
+      local($subdir);
+      $dirhtml = "<H3>Directories</H3>\n";
+      foreach $subdir (sort(@subdirectories)) {
+
+	# If an alternative name is defined, then use it
+	if( defined( $dirnames{$subdir} ) ) {
+	  $dirtitle=$dirnames{$subdir};
+	} else {
+	  $dirtitle=$subdir;
+	}
+
+	# get indexname for sub-directory (default as this directory)
+	local($indexname) =
+	   &get_gifmaprc_var($subdir, 'opt_indexname', $opt_indexname);
+
+	unless ( $indexname eq 'NOLINK' ) {
+	  $dirhtml .= "<NOBR><A HREF=\"${subdir}/${indexname}\">
+    <IMG SRC=\"$icon_url{'ball'}\" $icon_size{'ball'} ALT=\"*\" BORDER=0></A>
+    <A HREF=\"${subdir}/${indexname}\">$dirtitle</A></NOBR><BR>\n";
+	} 
+      }
+    }
+
+    #
+    # Generate HTML for page index list
+    #
+    local($pageindexhtml) = ('');
+    if( $haveimages ) {
+        $pageindexhtml = "<H3>Page Navigator</H3>\n";
+        for( $i=1; $i <= $numpages; ++$i ) {
+            $pageindexhtml .= 
+                "  <A HREF=\"${opt_pageindexname}${i}.html\">${i}</A><BR>\n";
+        }
+    }
+
+    # ----- Evaluate the Format Options -----
+    #
+    # Evaluate the Top Index File Format Option
+    #
+    local($indexhtml);
+    $indexhtml = eval '"' . $opt_dirfmt . '"';
+    die( "Bad Eval of directory page template (\$opt_dirfmt)\n$@\n" )
+       if $@;
+    
+    # Change header to plain bold text for framed directory file
+    $dirhtml =~
+        s|^<H3>Directories</H3>\n|<B>Directories</B><BR>\n|;
+    $pageindexhtml =~
+        s|^<H3>Page Navigator</H3>\n|<B>Page Navigator</B><BR>\n|;
+
+    #
+    # Evaluate the Framed Directory File Format Option
+    #
+    local($pagedirhtml);
+    $pagedirhtml = eval '"' . $opt_frameddirfmt . '"';
+    die( "Bad Eval for directory page template (\$opt_frameddirfmt)\n$@\n" )
+       if $@; 
+
+    # ----- Output Top Index File (usally "index.html") -------
+    #
+    open( INDEX, ">${opt_indexname}")
+	|| die("$0: Failed to open file ${opt_indexname} for output\n$@\n");
+    print( INDEX "<HTML><HEAD>\n",
+                 "<TITLE>${title}</TITLE>\n",
+                 "</HEAD>\n",
+                 "<FRAMESET COLS=\"110,*\" FRAMEBORDER=NO BORDER=1>\n",
+                 "<FRAMESET ROWS=\"*\">",
+                 "<FRAME SRC=\"${opt_pageindexname}dir.html\" NAME=\"directories\" MARGINWIDTH=3>\n" );
+    if( $havereadme ) {
+        print( INDEX "  <FRAME SRC=\"${opt_readme}\" NAME=\"pagemap\">\n" );
+    } else {
+        print( INDEX "  <FRAME SRC=\"${opt_pageindexname}1.html\" NAME=\"pagemap\" MARGINWIDTH=3>\n" );
+    }
+    print( INDEX " </FRAMESET></FRAMESET>",
+                 "<NOFRAMES>\n",
+                 "<BODY TEXT=\"#000000\" BGCOLOR=\"${opt_colorback}\"\n",
+                 "      LINK=\"${opt_colorlink}\" VLINK=\"${opt_colorvlink}\" ALINK=\"${opt_coloralink}\">");
+
+    print( INDEX $indexhtml );
+    print( INDEX "</BODY></NOFRAMES></HTML>" );
+    close( INDEX );
+
+
+    # ----- Output Frame Directory File (usally ".indexdir.html") ------
+    #
+    open( INDEX, ">${opt_pageindexname}dir.html")
+	|| die("$0: Failed to open file \"${opt_pageindexname}dir.html\" for output\n$@\n");
+    print( INDEX "<HTML><HEAD>\n",
+                 "<TITLE>${title}</TITLE>\n",
+                 "<BASE TARGET=\"_top\">\n",
+                 "</HEAD>\n",
+                 "<BODY TEXT=\"#000000\" BGCOLOR=\"${opt_dircolorback}\"\n",
+                 "      LINK=\"${opt_dircolorlink}\" VLINK=\"${opt_dircolorvlink}\" ALINK=\"${opt_dircoloralink}\">" );
+
+    print( INDEX $pagedirhtml );
+    print( INDEX "</BODY></HTML>\n" );
+    close( INDEX );
+
+    return ( 0 );
+}
+
+
+#
+# Write out page index file
+#
+sub writeindexfile {
+    local(@srcfiles) = @_;	# Source files to process
+    local($indexbar);		# HTML text representing numeric selection bar
+    local($errorstat)=0;
+
+    print( STDERR "Writing file ${htmlindex} ...\n" ) if $opt_debug;
+
+    $numimages = scalar(@srcfiles);
+    
+    # Calculate page index bar
+    # No link for current page
+    # Nothing at all when there is only one page.
+    $indexbar = "<NOBR>\n";
+
+    # --- readme link ---
+    if ( $havereadme ) {
+	$indexbar .= "<A HREF=\"${opt_readme}\" TARGET=\"pagemap\"
+    ><IMG SRC=\"$icon_url{'help'}\" $icon_size{'help'} ALT=\"ReadMe\" BORDER=0></A>\n";
+    }
+    # --- prev link ---
+    if( $pagenum == 1 ) {
+        # Go to base index page if on first page
+        $indexbar .= "<A HREF=\"${opt_indexname}\" TARGET=\"_top\"
+     ><IMG SRC=\"$icon_url{'prev'}\" $icon_size{'prev'} ALT=\"Prev\" BORDER=0></A>\n";
+    } else {
+        # Go to preceding page
+        $indexbar .= "<A HREF=\"${previndex}\" TARGET=\"pagemap\"
+    ><IMG SRC=\"$icon_url{'prev'}\" $icon_size{'prev'} ALT=\"Prev\" BORDER=0></A>\n";
+    }
+    # --- next link ---
+    if( $numpages > 1 ) {
+	if( $pagenum < $numpages ) {
+	    $indexbar .= "<A HREF=\"${nextindex}\" TARGET=\"pagemap\"
+    ><IMG SRC=\"$icon_url{'next'}\" $icon_size{'next'} ALT=\"Next\" BORDER=0></A>\n";
+	} else {
+	    # Print a grayed out arrow to maintain alignment
+	    $indexbar .= "<IMG SRC=\"$icon_url{'next_gray'}\" $icon_size{'next_gray'} ALT=\"\" BORDER=0>\n";
+        }
+    # --- page links ---
+	for ($page = 1; $page <= $numpages; ++$page) {
+	    if ( $page != $pagenum ) {
+                $indexbar .= "<A HREF=\"${opt_pageindexname}${page}.html\" TARGET=\"pagemap\">${page}</A>\n";
+	    } else {
+        	$indexbar .= " ${page}\n";
+	    }
+	}
+    }
+    $indexbar .= "</NOBR>\n";
+
+    
+    open( INDEX, ">${htmlindex}") || die("$0: Failed to open file ${htmlindex} for output\n$@\n");
+    print( INDEX "<HTML><HEAD>\n",
+                 "<TITLE>${title}</TITLE>\n",
+                 "<BASE TARGET=\"_top\">\n",
+                 "</HEAD>\n",
+                 "<BODY\n TEXT=\"#000000\" BGCOLOR=\"${opt_colorback}\"\n",
+                 "        LINK=\"${opt_colorlink}\" VLINK=\"${opt_colorvlink}\" ALINK=\"${opt_coloralink}\">\n\n");
+
+    # Leave page blank unless there is something to show
+    if( $numimages > 0 ) {
+        print( INDEX "${opt_header}\n" ) if $opt_header;
+	print( INDEX "<H4>Index of files \"$srcfiles[0]\" through \"$srcfiles[$numimages-1]\"</H4>\n" );
+	print( INDEX "<P>\n$indexbar\n</P>\n" );
+	    
+	# Determine image name to use
+	if( -f $montagegif ) {
+	    $imagename = $montagegif;      # Use GIF
+	}
+	if( -f $montagejpeg ) {
+	    $imagename = $montagejpeg;     # Use JPEG
+	}
+
+	#
+        # Get montage image size
+	# Commented out for the moment until a standard and fast
+	# means is found or developed to obtain image sizes.
+        $imagesize='';
+        #$imagesize=&html_imgsize("${imagename}") if ( -f $imagename );
+
+	# Add image map info to html file
+	if ( -f $montageshtml ) {
+	    # Write out client-side imagemap
+	    if( open( MAP, "<$montageshtml" ) ) {
+		while( <MAP> ) {
+		    chop;
+		    if(/<map name=([^>]+)/) {
+			$mapname=$1;
+			if ( "${opt_htimage}" ne '' ) {
+			    print( INDEX "<A HREF=\"${opt_htimage}${montagemap}\"\n>" );
+			} else {
+			    print( INDEX "<A HREF=\"" . &basename($montagemap) . "\"\n>" );
+			}
+			print( INDEX "<IMG SRC=\"${imagename}\" ${imagesize} USEMAP=#${mapname} BORDER=0 ISMAP>" );
+			print( INDEX "</A>\n" );
+		    }
+		    print( INDEX "$_\n" );
+		}
+		close( MAP );
+	    } else {
+		print( STDERR "\nFailed to open file $montageshtml for input\n");
+		++$errorstat;
+	    }
+	} else {
+	    print( STDERR "\nInput file $montageshtml is missing\n");
+	    ++$errorstat;
+	}
+    }
+
+    # Print Copyright info on non-blank pages.
+    if( $numimages > 0 ) {
+       print( INDEX "<P>\n<ADDRESS>\n" );
+       if( "${opt_address}" ne '' ) {
+           print( INDEX "${opt_address}<BR>\n" );
+       }
+       print( INDEX "<FONT SIZE=-1>" );
+       print( INDEX "Page generated on @calendar_months[$td_month] $td_mday, 19${td_year}<BR><HR>\n" );
+       print( INDEX "Produced by " );
+       print( INDEX "<A HREF=\"http://www.cyberramp.net/~bfriesen/gifmap/\">gifmap</A>" );
+       print( INDEX " ${gifmap_revision}, Copyright &copy; Bob Friesenhahn\n" );
+       print( INDEX "(<A HREF=\"mailto:bfriesen\@simple.dallas.tx.us\">bfriesen\@simple.dallas.tx.us</A>)\n" );
+       print( INDEX "</ADDRESS>\n" );
+    }
+
+    print( INDEX "</BODY>\n" );
+    print( INDEX "</HTML>\n" );
+
+    # Close current HTML index file
+    close( INDEX );
+    return ( $errorstat );
+}
+
+
+#
+# Build montage
+#
+sub domontage {
+     local(@srcfiles) = @_;
+     local($montageargs);	# File argument string for montage program
+     local($errorstat) = 1;	# Started with "failed" status
+
+MERROR:
+     {     
+         # If we need to, then do the expensive stuff
+         # Build index files via ImageMagick's montage program
+         # Go out of our way to avoid problems with multi-image files
+	 # JPEG does not support transparency but we fudge by setting the background
+	 # color in the MIFF file to the page color. Hopefully browsers that support
+	 # setting the background also support JPEG.
+
+         unlink( $montagemiff, $montagegif, $montagejpeg, $montageshtml );
+
+         $montageargs=${montageopts};              # montage options
+         foreach $file (@srcfiles) {               # source files
+             $montageargs .= " '$file\[0\]'";
+         }
+         $montageargs .= " MIFF:${montagemiff}";   # destination file
+
+         # Do the montage
+         print("\nmontage ${montageargs}\n" ) if $opt_debug;
+         system( "montage ${montageargs}" ) &&
+             print("\nNon-zero status when creating MIFF montage!!!\n") &&
+	     last MERROR;
+	 
+	 # Build GIF file
+         # -map netscape: +dither
+         system( "convert -interlace Line -transparency \\${opt_colorback} "
+                  . "MIFF:${montagemiff} GIF:${montagegif}" ) &&
+            print("\nNon-zero status when converting montage to GIF!!!\n" ) &&
+            last MERROR;
+	      
+	 # Only do JPEG if GIF is large.  Most reasonable GIFs are under 30K
+	 if( &fsize( $montagegif ) > $opt_maxgif ) {
+             print( "convert -interlace None -quality 56 MIFF:${montagemiff} JPEG:${montagejpeg}" ) if $opt_debug;
+             system( "convert -interlace None -quality 56 MIFF:${montagemiff} JPEG:${montagejpeg}" ) &&
+                   print("\nNon-zero status when converting montage to JPEG!!!\n" ) &&
+	           last MERROR;
+	 } else {
+             print( "Avoiding JPEG image since GIF is small enough\n" ) if $opt_debug;
+         }
+	 
+	 # Obtain imagemap information
+         print( "convert MIFF:${montagemiff} SHTML:${montageshtml}\n" )
+            if $opt_debug;
+         unlink( "${montageshtml}" );
+         system( "convert MIFF:${montagemiff} SHTML:${montageshtml}" ) &&
+             print("\nNon-zero status when converting MIFF to HTML imagemap!!!\n" ) &&
+	     last MERROR;
+
+	 # Decide to use GIF or JPEG version of output depending on size.
+	 # If there is only one type then no need.
+	 if( -f $montagegif && -f $montagejpeg ) {
+	     if( &fsize($montagegif) > &fsize($montagejpeg) ) {
+                 print( STDERR "Choosing JPEG since it is smaller\n" ) if $opt_debug;
+	         unlink($montagegif); # Use JPEG
+	     } else {
+                 print( STDERR "Choosing GIF since it is smaller\n" ) if $opt_debug;
+	         unlink($montagejpeg); # Use GIF
+	     }
+	 }
+	 unlink($montagemiff);
+	 $errorstat = 0;	# If it made it this far, then no error
+     }
+     unlink($montagemiff, $montagejpeg, $montagegif, $montageshtml) if $errorstat;
+     return( $errorstat );
+}
+
+#
+# Write out imagemap data
+#
+sub writeimagemap {
+    local($errorstat) = 0;
+    # Write out server-side imagemap (CERN or NCSA)
+    # This uses the absolute path as the URL or a relative one
+    # from the referring URL
+    # The server must map URLs specified with filesystem paths
+    # or support relative URLs from the referrer (Apache &
+    # latest NCSA do.
+    print( STDERR "Writing file $montagemap ...\n" ) if $opt_debug;
+    if( open( MAP, "<$montageshtml" ) ) {
+	open( IMAGEMAP, ">$montagemap" ) || die("$0: Failed to open file $montagemap for output\n$@\n");
+	# default URL
+	if ( "${opt_htimage}" ne '' ) {
+	    print( IMAGEMAP "default " . &abs_path_to_url("${srcdir}/${opt_pageindexname}${pagenum}.html") . "\n" );
+	} else {
+	    print( IMAGEMAP "default ${opt_pageindexname}${pagenum}.html\n" );
+	}
+	while( <MAP> ) {
+	    chop;
+	    if( (($url,$x1,$y1,$x2,$y2) = /<area href=(.+) shape=rect coords=(\d+),(\d+),(\d+),(\d+)>/) ) {
+		if( "$opt_maptype" eq 'ncsa' ) {
+		    if ( "${opt_htimage}" ne '' ) {
+			print( IMAGEMAP "rect " . &abs_path_to_url("${srcdir}/${url}") . " $x1,$y1 $x2,$y2\n" );
+		    } else {
+			print( IMAGEMAP "rect ${url} $x1,$y1 $x2,$y2\n" );
+		    }
+		} elsif ( "$opt_maptype" eq 'cern' ) {
+		    if ( "${opt_htimage}" ne '' ) {
+			print( IMAGEMAP "rect ($x1,$y1) ($x2,$y2) " . &abs_path_to_url("${srcdir}/${url}") . "\n" );
+		    } else {
+			print( IMAGEMAP "rect ($x1,$y1) ($x2,$y2) ${url}\n" );
+		    }
+		} else {
+		    die( "\nError: \$opt_maptype must be \"cern\" or \"ncsa\".\n" );
+		}
+	    }
+	}
+	close( IMAGEMAP );
+	close( MAP );
+	$errorstat=0;
+    } else {
+	print( STDERR "\nFailed to open file $montageshtml for input\n");
+	$errorstat=1;
+    }
+    return( $errorstat );
+}
+
+#
+# Return current directory
+#
+sub cwd {
+    local($_);
+    chop($_ = `pwd`);
+    return $_;
+}
+
+#
+# Return size of file in bytes
+#
+sub fsize {
+    local($name) = @_;
+    ($dev,$ino,$mode,$nlink,$uid,$gid,$rdef,$size,$atime,$mtime,$ctime,$blksize,$blocks) = lstat($name);
+    return $size;
+}
+
+#
+# Return file modification time
+#
+sub fmtime {
+    local($name) = @_;
+    ($dev,$ino,$mode,$nlink,$uid,$gid,$rdef,$size,$atime,$mtime,$ctime,$blksize,$blocks) = lstat($name);
+    return $mtime;
+}
+
+
+#
+# Run ImageMagick's identify program on a list of images
+# Put resulting information in imginfo associative array
+#
+sub identify {
+    local(@files) = @_;
+    local($file,$args);
+    local($imgname,$imginstance,$imgwidth,$imgheight,$imgclass,$imgsize,$imgformat);
+    
+    $args='';
+    foreach $file (@files) {
+	# Only accept regular files.
+	# The addition of [0] causes identify to only look at the first image.
+	# This is important for multi-image files like animations.
+	if( -f $file ) {
+	    $args .= "$file\[0\] ";
+	}
+    }
+    open( IDENT, "identify $args|" ) || die("$0: Failed to execute \"identify $args|\"\n$@\n");
+    while( <IDENT> ) {
+	chop;
+	# marble_blue.gif[46] 30x30+0+0 DirectClass 728b GIF 1s
+	# The regular expression from hell ...
+	if((($imgname,$imginstance,$imgwidth,$imgheight,$imgclass,$imgsize,$imgformat)=/^([^[]+)(\[\d+\])?\s(\d+)x(\d+)\S*\s(\S+)\s(\S+)\s(\S+)/)) {
+	    ($imginstance=$imginstance) =~ s/[\[\]]//g;
+	    #print("Name:$imgname Instance:$imginstance Width:$imgwidth Height:$imgheight Displayclass:$imgclass Size:$imgsize Format:$imgformat\n");
+	    $imginfo{$imgname}="$imgwidth:$imgheight:$imgsize:$imgformat";
+	    push(@allimgfiles,$imgname);
+	}
+    }
+    close( IDENT );
+}
+
+#
+# Return file name portion of path
+#
+sub basename {
+    local($name) = @_;
+    $name =~ s:([^\/]*/)+::;
+    return($name);
+}
+ 
+#
+# Return directory name portion of path
+#
+sub dirname {
+    local($name) = @_;
+    $name =~ s:(/[^\/]+$)::g;
+    return($name);
+}
+
+#
+# Get the physical path for a specified directory/file path
+#
+sub lets_get_physical {
+    local( $path ) = @_;
+    $physical=$path;
+    if( -d $path ) {
+        local( $savedir ) = &cwd;
+        chdir( $path );
+        $physical=&cwd;
+        chdir( $savedir );
+    }
+    if( -f $path ) {
+        local($dir)=&dirname($path);
+	local($fname)=&basename($path);
+        local( $savedir ) = &cwd;
+        chdir( $dir );
+        $physical=&cwd;
+        chdir( $savedir );
+	$physical .= "/$fname";
+    }
+    return( $physical );
+}
+
+#
+# Build a relative path to a file given the absolute physical
+# path and the directory location specified by $currentdir
+#
+# Usage:   abs_path_to_rel($path);
+#
+# Example:  $relative_icon_path = abs_path_to_rel($absolute_path);
+#
+sub abs_path_to_rel {
+  local($path)	= @_;
+  local($dir)	= $currentdir;  # Obtained from global $currentdir
+  local(@path,@dir);
+  local($savepath);
+  
+  $savepath=$path;
+   
+  # Don't do any transformations if either path is not absolute
+  # This also avoids paths that contain things like "http://".
+  if ( ( $path !~ m|^/| ) || ($dir !~ m|^/|) ) {
+      print( "abs_path_to_rel: Not absolute path, returning $savepath\n" ) if $opt_debug;
+      return( $savepath );
+  }
+  
+  if( ! -f $path && ! -d $path ) {
+      print( "abs_path_to_rel: Path does not exist, returning $savepath\n" ) if $opt_debug;
+      return( $savepath );
+  }
+  
+  @path=split('/', $path);	# Array form
+  shift(@path);
+  @dir=split('/', $dir);	# Array form
+  shift(@dir);
+  
+  # If roots are not the same, then return without transformation
+  if ( $path[0] ne $dir[0] ) {
+      print( "abs_path_to_rel: Roots are not the same, returning $savepath\n" ) if $opt_debug;
+      return( $savepath );
+  }
+  
+  # Remove common start directories
+   while( scalar(@path) && scalar(@dir) ) {
+      last if( $path[0] ne $dir[0] );
+      shift(@path);
+      shift(@dir);
+   }
+   
+   # Prepend any ../ part
+   grep($_='..',@dir);
+   
+   # Return results
+   if( scalar(@dir) ) {
+       return( join('/',@dir,@path) );
+   } else {
+       if( scalar(@path) ) {
+           return( './' . join('/',@path) );
+       } else {
+       	   return( '.' );
+       }
+   }
+}
+
+#
+# Build a relative path to a file given the absolute physical path
+# Uses the option variables $opt_rootpath and $opt_prefixpath
+#
+sub abs_path_to_url {
+    local($_) = @_;
+    
+    # Remove root prefix if absolute
+    s|^${opt_rootpath}||;
+    
+    # Tack on prefix (if any)
+    $_ = $opt_prefixpath . $_;
+    return( $_ );
+}
+
+#
+# Subroutine to print help message
+#
+sub help {
+    print( STDOUT $help );
+}
+
+#
+# Subroutine to calculate per-page file names
+# This is so names can be defined in one place
+#
+sub setpagefnames {
+    # Run status file
+    $pagestat="${opt_pageindexname}${pagenum}.stat";
+
+    # Generated map file
+    $montageshtml="${opt_pageindexname}${pagenum}_map.shtml";
+
+    # Generated GIF file
+    $montagegif="${opt_pageindexname}${pagenum}.gif";
+
+    # Generated JPEG file
+    $montagejpeg="${opt_pageindexname}${pagenum}.jpg";
+
+    # Generated MIFF file
+    $montagemiff="/tmp/gifmap${opt_pageindexname}${pagenum}.miff.$$";
+
+    # Generated server-side imagemap file
+    $montagemap="${srcdir}/${opt_pageindexname}${pagenum}.map";
+
+    # Montage size cache file
+    $montagesize="${opt_pageindexname}${pagenum}.siz";
+
+    # Image map tag name
+    $montageUSEMAP="${opt_pageindexname}${pagenum}";
+
+    # Name for current HTML index page
+    $htmlindex="${opt_pageindexname}${pagenum}.html";
+    
+    # Name for next HTML index page
+    $nextpagenum=$pagenum + 1;
+    $nextindex="${opt_pageindexname}${nextpagenum}.html";
+    
+    # Name for previous HTML index page
+    $prevpagenum=$pagenum - 1;
+    $previndex="${opt_pageindexname}${prevpagenum}.html";
+}
+
+#
+# Escape special characters in HTML text
+#
+sub escapehtml {
+    local($_) = @_;
+    s/&/&amp;/g;
+    s/>/&gt;/g;
+    s/</&lt;/g;
+    return( $_ );
+}
+
+#
+# Escape unsafe characters in URLs
+#		
+sub escapeurl {
+    local($_) = @_;
+    s/\%/%25/g;		# % (must substitute first!)
+    s/\"/%22/g;		# "
+    s/\#/%23/g;		# #
+    s/\</%3C/g;		# <
+    s/\>/%3E/g;		# >
+    s/\[/%5B/g;		# [
+    s/\\/%5C/g;		# \
+    s/\]/%5D/g;		# ]
+    s/\^/%5E/g;		# ^
+    s/\`/%60/g;		# `
+    s/\{/%7B/g;		# {
+    s/\|/%7C/g;		# |
+    s/\}/%7D/g;		# }
+    s/\~/%7E/g;		# ~
+    return( $_ );
+}
+
+#
+# Convert time in seconds to minutes:seconds.hundreths
+#
+sub elapsedminutes {
+    local($seconds) = @_;
+    $min   = int($seconds/60);
+    $sec   = int($seconds%60);
+    $hund = ($seconds - int($seconds)) * 100;
+    return( "${sec}s" ) if $min == 0;
+    return( "${min}:" . sprintf( "%02d", $sec ) ) if $hund == 0;
+    return( "${min}:" . sprintf( "%02d.%02d", $sec, $hund ) );
+}
+
+#
+# --------------------------
+# Gifmap RC file handlers
+#
+
+#
+# Search for and return the contents of the gifmaprc file
+# Note i don't close the gifmaprc file handle for
+# simplicity but it will be auto-close for next file.
+sub get_gifmaprc {
+   local($rc) = @_;
+   open( GIFMAPRC, "<${rc}" );
+   return join('', <GIFMAPRC>);
+}
+
+#
+# Eval .gifmaprc files with specified path. If the file does
+# not exist or is not readable, then return silently. If an
+# error occurs, then die with a message.
+#
+sub source_gifmaprc {
+    foreach $rc (@_) {
+        if ( -r $rc && -f _ ) {
+           print( "Sourcing ${rc}\n" ) if $opt_debug;
+           eval ( &get_gifmaprc($rc) );
+           die( "Bad Eval for file \"${rc}\"...\n$@\n" ) if $@; 
+        }
+    }
+}
+
+#
+# Look in the .gifmaprc file for the given directory and
+# return the variable requested, or the default value given.
+# this tries to be a bit more intelegent than previous eval.
+#   -- added by Anthony Thyssen <anthony@cit.gu.edu.au>
+#   
+sub get_gifmaprc_var {
+   local($dir, $var, $def) = @_;   
+   local($rc) = "$dir/$gifmaprc";
+   local($val) = ';' . &get_gifmaprc( $rc );
+   $val =~ s/#.*//g;   # remove comments to avoid confusion
+   if ( $val =~ /\$$var\b/ > 1 ) {
+     print STDERR "Var \"\$$var\" is not simple in \"$rc\" -- using default.\n";
+     return $def;
+   }
+   # find variable assignment if pressent and remove stuff before it
+   unless ( $val =~ s/[\000-\177]*;\s*\$$var\s*=\s*// ) {
+     print("DB: \$$var not found in \"$rc\"\n")  if $opt_debug;
+     return $def;               # variable assignment was not found
+   }
+   $val =~ s/;[\000-\177]*//;   # remove stuff after assignment expression
+
+   # print("Assignment for \$$var = \"$val\"\n") if $opt_debug;
+
+   $val = eval ( $val );
+   if ( $@ ) {
+     warn("Bad Eval for variable \"\$$var\" in \"$rc\"...\n$@\n");
+     $val = $def;
+   }
+
+   print("DB: \$$var found in \"$rc\" with value of \"$val\"\n") if $opt_debug;
+   return  $val;
+}
+
+#
+# Eval .gifmaprc files in order from $opt_rootpath to $currentdir directory
+# Values are added to global environment variables
+#
+sub eval_gifmaprc {
+    local($dir)  = $currentdir;	  # current directory
+    local(@top,@dir);
+    local($gifmappath);
+
+    # Decide how far to look for .gifmaprc files
+    # Support the case where processing outside of the server
+    # root directory.  In that case, use the srcdir instead.
+    if( $currentdir =~ m|^$opt_rootpath| ) {
+        local($top)  = $opt_rootpath; # Use server root directory
+    } else {
+        local($top)  = $opt_srcdir; # Use specified source directory
+    }
+
+    @top=split('/', $top);	# Array form
+    shift(@top);
+    
+    @dir=split('/', $dir);	# Array form
+    shift(@dir);
+
+    splice(@dir, 0, scalar(@top) ); # Leave only subdirectory part
+
+    #
+    # Build up path starting at top sourcing any .gifmaprc as we go.
+    #
+    $path=$top;
+    $direlem='';
+    do {
+	# Certain values must only be vaild in the last
+	# current directory gifmaprc file.
+        $opt_ignore=0;          # Ignore -- do not process this directory
+
+        if( $direlem ) {
+            $path = "$path/$direlem";
+        }
+        $gifmappath = "$path/$gifmaprc";
+        &source_gifmaprc( $gifmappath );
+    } while( $direlem = shift(@dir) );
+
+    return( 0 );
+}
+
+#
+# Lookup color in X11 RGB database
+#
+sub lookuprgb {
+    local($color) = @_;
+ 
+    # If already in hex format, don't translate
+    if( $color =~ /^\#/ ) {
+        return( "\U$color" );   # just uppercase the color hex value
+    } 
+
+    if( defined($RGBDB{"$color"}) ) {
+        return( $RGBDB{"$color"} );
+    } else {
+        print( STDERR "No such color \"$color\" found\n" );
+        return("#BEBEBE");    # Return grey as default in case of error
+    }
+}
+

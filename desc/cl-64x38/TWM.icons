@@ -1,0 +1,78 @@
+# Twm icons using the icon images in this directory.
+# This file can be included ing a m4 source file for the appropriate
+# twm rc file generation. Ctwm rc file usally are automatically
+# m4 pre-processed. Other twm variants may have to be pre-processed
+# separately, especiall before "f.restart" menu function is executed.
+#
+#   changequotes([,])
+#   PixmapDirectory "......path_to_aicons.../desc"
+#   include(...path_to_aicons.../desc/cl-64x38/TWM.icons)
+#
+ifelse( TWM_TYPE, ctwm, [
+    define( ICON, "xpm:cl-64x38/$1.xpm" )
+],[ define( ICON, "cl-64x38/$1.xpm" )
+])
+
+UnknownIcon ICON(database)  # use this icon if none is supplied
+Icons {
+  # --- General Applications ---
+  #Fig"               ICON(fig)
+  "GV"                ICON(arthur)
+  "Ghostview"         ICON(arthur)
+  "Ghostscript"       ICON(arthur)
+  "Gimp"              ICON(island)
+  #Gnuplot"           ICON(graph)
+  #MOTD"              ICON(info)
+  "Notifier"          ICON(printout)
+  "Pixmap"            ICON(colormap)
+  #Pixmap"            ICON(pixmap)
+  "XAcct"             ICON(eye)
+  "XCalc"             ICON(xcalc_hp)
+  "XConsole"          ICON(term)    # Console Output
+  #Xmag"              ICON(magnify)
+  "Xman"              ICON(xman)
+  "XPaint"            ICON(island)
+
+  # --- Editors (including special xterm windows) ---
+  "News"              ICON(newspaper)
+  "MailEd"            ICON(book)
+  "Less"              ICON(book)
+  "Axe"               ICON(xedit)
+  "Emacs"             ICON(xedit)
+  "XVed"              ICON(xedit)
+  "Xedit"             ICON(xedit)
+  "Xed"               ICON(xedit)
+  "Vi"                ICON(xedit)
+  "Vim"               ICON(xedit)
+  "YaST"              ICON(patch)
+
+  # --- Specific Application Windows ---
+  # EG: not the class NAME of a application
+  "Basicwin"          ICON(Games/go)     # CGoban
+  "nethack"           ICON(wizard)
+  "bookmarks"         ICON(hotlist)      # netscape bookmarks window
+  "crossfire"         ICON(Games/sword_shield)
+  "crossedit"         ICON(Games/swords)
+  "xdu"               ICON(info)
+  "xv"                ICON(art)
+  "StarOffice *"      ICON(Animals/butterfly.xpm)
+  "Navigator"         ICON(Network/netscape_comet)
+  "MailThread"        ICON(Network/news)             # Netscape
+
+
+  # --- Machine Windows ---
+  "xterm-kobold"      ICON(Animals/kobold)
+  "xterm-dragon"      ICON(Animals/dragon)
+  "xterm-lyrch"       ICON(Animals/penguin)
+  "xterm-gumtree"     ICON(tree)
+  "xterm-drnick"      ICON(dr_nick)
+
+  # --- Special Terminals ---
+  "FailSafe"          ICON(CompEquip/xterm)    # failsafe login xterm
+  "xterm-failsafe"    ICON(CompEquip/xterm)    # failsafe login xterm
+  "xterm"             ICON(CompEquip/xterm)    # xterm without a name
+  "XTerm"             ICON(CompEquip/terminal) # other machine login
+  "Console"           ICON(CompEquip/terminal) # Special xterm
+  "Terminal Controls" ICON(CompEquip/terminal) # terminal controls
+}
+undefine([ICON])

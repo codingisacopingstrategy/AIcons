@@ -1,0 +1,18 @@
+/* XPM */
+static char * brown_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"9 9 3 1",
+/* colors */
+" 	c tan",
+".	c sienna",
+"X	c peru",
+/* pixels */
+"         ",
+"        .",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+"  XXXXX..",
+" ........",
+"........."};

@@ -1,0 +1,25 @@
+/* XPM */
+static char * ball_white_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 5 1",
+/* colors */
+" 	s None	c None",
+".	c gainsboro",
+"X	c grey",
+"o	c white",
+"O	c slate grey",
+/* pixels */
+"              ",
+"              ",
+"     ...X     ",
+"   o.....X.   ",
+"   ..oo..XX   ",
+"  ..oo...XXO  ",
+"  ......XXXO  ",
+"  X...XXXXOO  ",
+"  XXXXXXXOOO  ",
+"   OXXXOOOO   ",
+"   XOOOOOOX   ",
+"     OOOO     ",
+"              ",
+"              "};

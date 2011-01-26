@@ -1,0 +1,32 @@
+/* XPM */
+static char * metalic_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 10 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c tan",
+"o	c dark slate grey",
+"O	c grey",
+"+	c lavender",
+"@	c black",
+"#	c white",
+"$	c tomato",
+"%	c firebrick",
+/* pixels */
+"     .X.o..     ",
+"    .X..Xooo.   ",
+"   .XOOO..o.oo  ",
+"  .OO++XX..o@o. ",
+" ..O+#+OOoo.oo@ ",
+" oXX+#O.ooooo@@.",
+".o.$XX.%ooo@o@oo",
+"o..$.%oooo@o@o@o",
+".o..$%oooo@o@@@o",
+"o.o...ooo@o@o@oo",
+".oooo.....o@@o@.",
+" .oooo..oo@oo@. ",
+" .ooooooooo@@o. ",
+"  .oooooo@@o@.  ",
+"   .oooo@o@oo   ",
+"     .oooo.     "};

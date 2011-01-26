@@ -1,0 +1,4 @@
+#define Brush_circle_2_width 5
+#define Brush_circle_2_height 5
+static char Brush_circle_2_bits[] = {
+ 0x0e,0x1f,0x1f,0x1f,0x0e};

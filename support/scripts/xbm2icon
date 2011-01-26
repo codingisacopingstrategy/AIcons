@@ -1,0 +1,44 @@
+#!/bin/csh -f
+#
+# convert X pixmap to sunview icon
+#
+
+set file=/tmp/xbm2icon.$$
+
+if ( $#argv ) then
+   cat $argv[1] | bmtoa > $file
+else
+   cat - | bmtoa > $file
+endif
+
+set wc=`cat $file | wc`
+@ height = $wc[1]
+@ width  = ( $wc[3] / $height - 1 )
+
+echo "/* Format_version=1, Width=$width, Height=$height, Depth=1, Valid_bits_per_item=16"
+echo " */"
+cat $file | sed \
+   'N; s|\n||;\
+    s|\([-#]\{4\}\)|:\1|g;\
+    s|:----|0|g;\
+    s|:---#|1|g;\
+    s|:--#-|2|g;\
+    s|:--##|3|g;\
+    s|:-#--|4|g;\
+    s|:-#-#|5|g;\
+    s|:-##-|6|g;\
+    s|:-###|7|g;\
+    s|:#---|8|g;\
+    s|:#--#|9|g;\
+    s|:#-#-|A|g;\
+    s|:#-##|B|g;\
+    s|:##--|C|g;\
+    s|:##-#|D|g;\
+    s|:###-|E|g;\
+    s|:####|F|g;\
+    s|\(.\{4\}\)|0x\1,|g;\
+    s|^|	|;\
+    $ s|,$||;\
+   '
+
+rm -f $file

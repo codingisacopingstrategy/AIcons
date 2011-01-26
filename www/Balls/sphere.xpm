@@ -1,0 +1,30 @@
+/* XPM */
+static char * shere_yellow_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 8 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c sienna",
+"o	c peru",
+"O	c orange",
+"+	c gold",
+"@	c yellow",
+"#	c lemon chiffon",
+/* pixels */
+"     .XXXX.     ",
+"   ..XoOOOXX.   ",
+"  .Xo.XoOo+OX.  ",
+" .XOOOOXXOo++X. ",
+" .O++@#O.oO@+oX ",
+".O+OO@@OX.+@#+X.",
+".X+O+++O.XO#@+X.",
+"X.XXOOOoX.O+#+o.",
+"XX..XXXXX.XOO@o.",
+"X.XX..XXX...O@o.",
+"..XOXX.....+@#X.",
+" .XOOXX..XX+#O. ",
+" .XoOOoXX.XX+X. ",
+"  .XXOOOOo.oX.  ",
+"   ..XXXX.X..   ",
+"     ......     "};

@@ -1,0 +1,32 @@
+/* XPM */
+static char * cog_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c white",
+"X	c dark slate grey",
+"o	c grey",
+"O	c light sea green",
+"+	c cyan",
+/* pixels */
+"         ...        ",
+"   ..   .XXX.   .   ",
+"  .oX.  .XoX.  .X.  ",
+" .XXXX..XXXX...XoX. ",
+" .XXoXXXOoOoXXXXXX. ",
+"  .XXXoOoOoOooOXXo. ",
+"   .XoO++oOoOOoOX.  ",
+"....XO+OoOoOooOoX.  ",
+".XXXOoOoOOXXoOoOoX..",
+".XoXoOoOXXXXXoOoOXXX",
+".XXXOoOoXXXXXOoOoXoX",
+" ..XoOoOooXXOo+oOXXX",
+"   .XoOoOOoOoO+OXX..",
+"   .XOoOooOoO+OoX.  ",
+"   .XXOoOOoOoOoXXo. ",
+"  .XoXXXooOoOXXXXX. ",
+"  .XoX..XXXXX..XoX. ",
+"  .XX.. .XoX.  .X.  ",
+"   ..   .XXX.   .   ",
+"         ...        "};

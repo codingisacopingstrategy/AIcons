@@ -1,0 +1,25 @@
+/* XPM */
+static char *land_grass_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 2 1",
+/* colors */
+"  c lime green",
+". c sea green",
+/* pixels */
+"   ..       ..  ",
+"         ..     ",
+"..  ..       .. ",
+"        ..      ",
+" ..             ",
+"      ..   .. ..",
+"..              ",
+"         ..     ",
+".  .. ..       .",
+"           ..   ",
+"     ..         ",
+"..       ..  .. ",
+"    ..          ",
+"        ..   .. ",
+" ..             ",
+"    .. ..   ..  "
+};

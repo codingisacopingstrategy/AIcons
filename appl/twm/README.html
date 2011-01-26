@@ -1,0 +1,61 @@
+<HTML><HEAD>
+<TITLE>AIcons - "appl/twm"</TITLE>
+<LINK REL="SHORTCUT ICON" HREF="../../www_images/favicon.ico">
+<BASE TARGET="_top">
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+   <A HREF="../../">
+      <IMG SRC="../../www_images/aicons_anim.gif"
+           LOWSRC="../../www_images/aicons.gif" ALT="[AIcons]"
+           ALIGN=left WIDTH=56 HEIGHT=50 BORDER=0></A>
+
+   "appl/twm"<BR>
+   Icons for the TWM application
+
+<BR CLEAR=all></NOBR></H1>
+
+<!-- Navagation START -->
+
+<!-- Navagation END -->
+
+Icons for use as part of the TWM window manager, and its derivatives, like
+CTWM and VTWM. <P>
+
+Of special note are icon sets designed specifically for window titlebar
+decoration. The number in the icon name refers to the 75dpi font point size of
+the title bar font.  This is actually equal to the pixel size of box
+containing the symbol, -1. <P>
+
+For example a "12pt" icon set...
+
+<BLOCKQUOTE>
+<PRE><IMG SRC="/images/divider_top.gif" ALT="----8<----" WIDTH=120 HEIGHT=10>
+TitleFont       "*-lucida-bold-i-*-120-75-75-*"     # Window Titles
+
+NoDefaults                # remove all title buttons first (iconify,resize)
+TitleButtonBorderWidth 0  # remove boarders around title buttons
+FramePadding 1            # frame padding between text and buttons
+ButtonIndent 0            # extra indentation around buttons
+
+Pixmaps { TitleHighlight "title_squiggle.xbm" }
+LeftTitleButton  "bm_12pt_iconify.xbm"   = f.iconify
+LeftTitleButton  "bm_12pt_lightning.xbm" = f.delete
+LeftTitleButton  "bm_12pt_nuke.xbm"      = f.destroy
+RightTitleButton "bm_12pt_fullscrn.xbm"  = f.fullzoom
+RightTitleButton "bm_12pt_expand.xbm"    = f.zoom
+RightTitleButton "bm_12pt_resize.xbm"    = f.resize
+
+<IMG SRC="/images/divider_bot.gif" ALT="----8<----" WIDTH=120 HEIGHT=10></PRE>
+</BLOCKQUOTE>
+
+I myself use CTWM, which inturn allows the use of the more colorful X pixmaps,
+and in particualr the "tomato" icons.  If interested you can have a look at
+the<A HREF="CTwm_config_example" >CTwm RC Example file</A> which is a cut and
+simplified verion of my own RC file. <P>
+
+<HR>
+<ADDRESS>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" >Anthony Thyssen</A>,
+   &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml"
+   >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

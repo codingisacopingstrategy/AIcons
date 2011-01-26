@@ -1,0 +1,42 @@
+/* XPM */
+static char *cheklist_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c red",
+"b c white",
+/* pixels */
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"bbbbb``````````````````````bbbbb",
+"bbbbb`bbbbbbbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`bbbbbbbaaabbbbbbbbbb`bbbbb",
+"bbbbb`bbbbbbaaabbbbbbbbbbb`bbbbb",
+"bbbbb`aa```aabbbbbbbbbbbbb`bbbbb",
+"bbbbb`baabaabb```b``bb```b`bbbbb",
+"bbbbb`b`aaabbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b````bb``b``b``b``bb`bbbbb",
+"bbbbb`bbbbbbbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b````bbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b`bb`bb```b``b`b``bb`bbbbb",
+"bbbbb`b`bb`bbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b````bbaaabbbbbbbbbb`bbbbb",
+"bbbbb`bbbbbbaaabbbbbbbbbbb`bbbbb",
+"bbbbb`aa```aabbbbbbbbbbbbb`bbbbb",
+"bbbbb`baabaabb````b``b``bb`bbbbb",
+"bbbbb`b`aaabbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b````bbaaa`b```bbbbb`bbbbb",
+"bbbbb`bbbbbbaaabbbbbbbbbbb`bbbbb",
+"bbbbb`aa```aabbbbbbbbbbbbb`bbbbb",
+"bbbbb`baabaab```b`b``b``bb`bbbbb",
+"bbbbb`b`aaabbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`b````bb`b```b```b`bb`bbbbb",
+"bbbbb`bbbbbbbbbbbbbbbbbbbb`bbbbb",
+"bbbbb`bbbbbbb```b``b``bbbb`bbbbb",
+"bbbbb`bbbbbbbbbbbbbbbbbbbb`bbbbb",
+"bbbbb``````````````````````bbbbb",
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+};

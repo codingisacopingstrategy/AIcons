@@ -1,0 +1,42 @@
+/* XPM */
+static char *cat_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c wheat",
+". c sienna",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXX.XXXXXXXXXXXXXXXXXXXXXXX...",
+"XXXXX..XXXXXXXXXXXXXXXXXXXXX....",
+"XXXXX...XXXXXXXXXXXXXXXXXXX.   .",
+"XXXXX....XXXXXXXXXXXXXXXXX... .X",
+"XXXXX.  ..XXXXXXXXXXXXXXX.   .XX",
+"XXXX..    ..XXXXXXXXXXXX... .XXX",
+"XXX.      . .XXXXXXXXX..   .XXXX",
+"XX.  .    . ..XXXXX...  .  .XXXX",
+"XX.  .   .  ..XXX..  ..  . .XXXX",
+"XX.  .      . .X. ..   .  . .XXX",
+"X.         .  ..    .   .   .XXX",
+"X.    ....      ..   .   .  .XXX",
+"X.            .   .   .     .XXX",
+"XX.            .   .        .XXX",
+"XXX....                      .XX",
+"XXXXXXX....        .     .   .XX",
+"XXXXXXX.            .. ..   . ..",
+"XXXXXX...             ... ..   .",
+"XXXXX..  . ..      ....  ....  .",
+"XXXX.  .  . .......XXXX....  . .",
+"XXX. .  .. ...XXXXXXXXXXXXX.  ..",
+"XX.   ..  .XXXXXXXXXXXXXXXXX..XX",
+"XXX...XX..XXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

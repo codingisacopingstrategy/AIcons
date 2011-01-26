@@ -1,0 +1,43 @@
+/* XPM */
+static char *face_mon_dead_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c DarkSlateGrey",
+"X c tomato",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"o                              o",
+" .............................. ",
+" ..                          .. ",
+" . oooooooooooooooooooooooooo . ",
+" . oooooooooooooooooooooooooo . ",
+" . oooooooooooooooooooooooooo . ",
+" . ooooooo   oooooo   ooooooo . ",
+" . oooooo   o oooo ooo oooooo . ",
+" . ooooo    oo oo ooooo ooooo . ",
+" . ooooo   ooo oo ooo   ooooo . ",
+" . ooooo ooooo oo oo    ooooo . ",
+" . oooooo ooo oooo o   oooooo . ",
+" . ooooooo   oooooo   ooooooo . ",
+" . oooooooooooooooooooooooooo . ",
+" . oooooooooooooooooooooooooo . ",
+" . oooooooooooooooooooooooooo . ",
+" . ooooooooo         oooooooo . ",
+" . oooooo   ooooo XX    ooooo . ",
+" . oooo  oooooooo XX XX   ooo . ",
+" . ooo oooooooooo XX XX oo oo . ",
+" . oooooooooooooo XX XX ooooo . ",
+" . oooooooooooooo XX XX ooooo . ",
+" . oooooooooooooo XX XX ooooo . ",
+" ..               XX XX      .. ",
+" ................ XX XX ....... ",
+"o                 XX XX        o",
+"ooooooooooooooooo XXXXX oooooooo",
+"oooooooooooooooooo XXX ooooooooo",
+"ooooooooooooooooooo    ooooooooo"
+};

@@ -1,0 +1,33 @@
+/* XPM */
+static char * mushroom_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	s None	c None",
+".	c firebrick",
+"X	c red",
+"o	c black",
+"O	c dark slate grey",
+"+	c yellow",
+"@	c gold",
+/* pixels */
+"                    ",
+"        ....        ",
+"       .XXXX.       ",
+"      .XXXXXX.      ",
+"      .XXXXXX.      ",
+"      .XXooXX.      ",
+"     .XXXooXXX.     ",
+"    .XXXooooXXX.    ",
+"   .XXXXXXXXXXXX.   ",
+"  .XXXXXXXXXXXXXX.  ",
+"   ..............   ",
+"     ..........     ",
+"     OOOOOOOOOO     ",
+"     ..........     ",
+"     .XXXXXXXX.     ",
+"    .XXXXXXXXXX.    ",
+"    .XXXXXXXXXX.    ",
+"     ++++++++++     ",
+"       @@@@@@       ",
+"                    "};

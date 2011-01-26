@@ -1,0 +1,4 @@
+#define tiny_x_width 7
+#define tiny_x_height 6
+static unsigned char tiny_x_bits[] = {
+ 0x77,0x1e,0x1c,0x1c,0x36,0x77};

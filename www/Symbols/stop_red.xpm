@@ -1,0 +1,26 @@
+/* XPM */
+static char * stop_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 4 1",
+/* colors */
+" 	s None	c None",
+".	c firebrick",
+"X	c red",
+"o	c white",
+/* pixels */
+"       ......       ",
+"      .XXXXXX.      ",
+"     .XXXXXXXX.     ",
+"    .XXXXXXXXXX.    ",
+"   .XXXXXXXXXXXX.   ",
+"  .XoXoooXXoXXooX.  ",
+"  .oXXXoXXoXoXoXo.  ",
+"  .oXXXoXXoXoXoXo.  ",
+"  .XoXXoXXoXoXooX.  ",
+"  .XoXXoXXoXoXoXX.  ",
+"  .oXXXoXXXoXXoXX.  ",
+"   .XXXXXXXXXXXX.   ",
+"    .XXXXXXXXXX.    ",
+"     .XXXXXXXX.     ",
+"      .XXXXXX.      ",
+"       ......       "};

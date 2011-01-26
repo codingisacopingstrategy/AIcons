@@ -1,0 +1,98 @@
+
+                        Anthony's Icon Library
+                      -------------------------
+               Color Formats Available and Formats Used.
+               -----------------------------------------
+
+  The X consortium have yet to formally support a color icon format,
+like they do for X Bitmap files. Some support, however, exists for the
+xpm format, though that support is mostly because xpm have been in place
+for so long.
+
+
+PbmPlus Format (ppm) :-
+
+  The Poskanzer's extended Portable Bitmap library (ppm icons) has been
+around now since 1990. This package provides converters, to convert to
+and from almost any other icon and picture format available, and new
+converters are being published all the time, though I'd wish someone
+would collect them all together and re-publish the PbmPlus package.
+
+  This allows users to easily convert icons from one format into
+another format easily, using the intermediate PbmPlus format. The ppm
+format can be in either a binary (for small size) or in a ascii format
+(for mailing) completely interchangeably. 
+
+The Latest Pbm Plus package can be found on the X ftp site
+  
+      ftp.x.org  :   /contrib/netpbm-13oct93.tar.gz
+
+or any other mirrors of this site. New xpm converters for this package
+are also available in the comp.sources.misc archives, look for
+`ppmtoxpm' in the archie database.
+
+
+X Pixmap Format (xpm) :-
+
+  The X Pixmap format is quite compact, and they can be easily edited
+using a simple text editor. The format however seems to breakdown to some
+extent when more than 50 colors are present in the image. When this
+happens a string of 2 or more characters are used to represent each
+pixel, and it becomes difficult to edit with a text editor.
+
+  Many programs support the xpm format, but not all of them. The `xv'
+program for instance doesn't support it and it is one of the major ways
+of viewing and using icons. Also just about all the programs to tile the
+root window do not seem to support this format. As such icons in this
+format for use as background tiling patterns are useless.
+
+  Xpm's however do have a `transparent color' built into it. Also in the
+past, it has had many `incompatible' revisions. UPDATE: the latest Xpm
+library understands both the new and the old formats directly.
+Some sites however (particularly some old motif distributions) do not
+understand the new pixmap format.
+
+  Recently two programs have become available to allow you to easily edit
+these icons.  And a long time coming they were too. These are ``pixmap'',
+by Lionel Mallet, which can handle the transparent color.  The other is
+``xpaint'', by David Koblas, koblas@netcom.com. This program has very good
+with excellent cut and paste features, and a customisable palette.  The
+program however has many unresolved bugs, which I hope will be fixed
+sometime (soon) in the future.
+
+  The main problem has been that until recently you couldn't use X pixmaps
+to set the root background pattern. The ``xloadimage'' program now
+supports the use of a filter (like xpmtoppm from pbmplus) to convert X
+pixmaps to a format it does understand. Also the latest release of ``xv''
+now understands the X pixmap format directly.
+
+
+Graphic Interchange Format (gif) :-
+
+  Gifs is a compressed picture format, however it seems not to be a very
+common format for icon images. It does however seem to be the defacto
+standard for large pictures, and as such is understood by various set root
+window programs.
+
+  Other Picture formats TIFF, MACP (not color), Amiga IFF, etc are also
+available but do not seem to be as wide spread or as usable as the gif
+picture format.
+
+
+Current Solution :-
+
+  The color icons in this collection are currently formatted using the X
+Pixmap format version 3.4a.
+
+  Background Color images were formatted in the GIF format until this
+release, and are now stored as X pixmaps. The Color Textures are however
+still in their GIF format as these are large in size and contain lots of
+different colors. They do not follow the standard color table of the rest
+of the library, so use at your own risk of color table problems.
+
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+    Any smoothly functioning technology
+             will have the appearance of magic.    - Arthur C. Clarke
+------------------------------------------------------------------------------

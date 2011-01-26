@@ -1,0 +1,36 @@
+/* XPM */
+static char *blue_next_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+"  c #001AC6",
+". c dodger blue",
+"X c navy blue",
+"o c white",
+"O c blue",
+/* pixels */
+"OOOOOOOOOOOOOOOOOOOOOOOX",
+"OOOOOOOOOOOOOOOOOOOOOOXX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OO     .              XX",
+"OO     oo.            XX",
+"OO     oooo.          XX",
+"OO     oooooo.        XX",
+"OO     oooooooo.      XX",
+"OO     oooooooooo.    XX",
+"OO     oooooooo.      XX",
+"OO     oooooo.        XX",
+"OO     oooo.          XX",
+"OO     oo.            XX",
+"OO     .              XX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OO                    XX",
+"OXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXX"
+};

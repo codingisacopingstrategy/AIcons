@@ -1,0 +1,34 @@
+/* XPM */
+static char *plaid2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 3 1",
+/* colors */
+"` c black",
+"a c firebrick",
+"b c white",
+/* pixels */
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"````````````````````````",
+"b`b`bbb`b`bbb`b`bbb`b`bb",
+"````````````````````````",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"````````````````````````",
+"b`b`bbb`b`bbb`b`bbb`b`bb",
+"````````````````````````",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"````````````````````````",
+"b`b`bbb`b`bbb`b`bbb`b`bb",
+"````````````````````````",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"````````````````````````",
+"b`b`bbb`b`bbb`b`bbb`b`bb",
+"````````````````````````",
+"a`b`aaa`b`aaa`b`aaa`b`aa",
+"a`b`aaa`b`aaa`b`aaa`b`aa"
+};

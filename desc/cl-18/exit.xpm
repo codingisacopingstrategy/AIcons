@@ -1,0 +1,33 @@
+/* XPM */
+static char * tb_exit_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"18 18 9 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	s iconColor1	m black	c Black",
+"X	s iconColor2	m none	c White",
+"o	s bottomShadowColor	m black	c SlateGrey",
+"O	s iconColor3	m black	c Red",
+"+	s iconGray3	m none	c Grey",
+"@	s iconGray4	m none	c SlateGrey",
+"#	s iconGray5	m black	c SlateGrey",
+"$	s iconGray6	m black	c DarkSlateGrey",
+/* pixels */
+"                  ",
+"                  ",
+"        ........  ",
+"        .XXXXXX.o ",
+"        .XXXXXX.o ",
+"      ...XXXXXX.o ",
+"      .O.XXXXXX.o ",
+" ......OO.XX..X.o ",
+" .OOOOOOOO.X..X.o ",
+" .OOOOOOOO.XXXX.o ",
+" ......OO.XXXXX.o ",
+"      .O.XXXXX+.o ",
+"      ...XXXX++.o ",
+"        .XX++@#.o ",
+"        .X+@##$.o ",
+"        ........o ",
+"          ooooooo ",
+"                  "};

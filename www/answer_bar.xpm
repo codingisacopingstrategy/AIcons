@@ -1,0 +1,34 @@
+/* XPM */
+static char * answer_bar_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"15 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c firebrick",
+"o	c slate grey",
+/* pixels */
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+" ...........X  ",
+" ...........Xo ",
+" ...........Xo ",
+" ...........Xo ",
+" XXXXXXXXXXXXo ",
+"  oooooooooooo ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               ",
+"               "};

@@ -1,0 +1,26 @@
+/* XPM */
+static char *asterix_blue_sm_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+"  c navy blue",
+". c None",
+"X c blue",
+/* pixels */
+".......XXX......",
+"......XXXX .....",
+"......XXXX .....",
+".XXX..XXX  .....",
+"XXXX ..XX ..XXX.",
+"XXXX ..X ..XXXX ",
+"XXXXXX.X .XXXXX ",
+".  XXXXXXXXXXX  ",
+"...  XXXXXX    .",
+".....XX XX......",
+"....XX .XXX.....",
+"..XXXX .XXXXX...",
+".XXXX ...XXXX ..",
+".XXXX ...XXXX ..",
+".XXX  ...XXX  ..",
+"..   .....   ..."
+};

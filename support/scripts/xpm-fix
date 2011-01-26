@@ -1,0 +1,173 @@
+#!/usr/bin/perl
+#
+# xpm-fix file...                         -- just fix all these files in-place
+# xpm-fix [-o out_file] [-n name] file    -- fix this file to given output file
+# xpm-fix [-o out_file] [-n name]         -- pipeline (stding to stdout)
+#
+#   This perl script fixed the icon name stored inside the xpm and sets all
+# the colors of the xpm to proper X RBG color names.  To do this the
+# program uses a inverted RGB color database "/usr//tmp/color.*" to find
+# the color name of a pixel value present in the xpm.  The `color_db_mk'
+# program will be called automatically if the database have not been
+# created yet.
+#   This program is especially usful after converting a Portable Pixmap or
+# other format into a X pixmap file.
+#
+#  Anthony Thyssen          3 Oct 1993     anthony@cit.gu.edu.au
+#
+use SDBM_File;
+
+$COLOR = "/var/tmp/color";   # the location of the inverted color database
+$pixel_t = 'H12';
+$tmp = '/tmp/xpm-fix.' . $$;
+$b = "                                                                     \r";
+$| = 1;   # auto flush stdout
+
+#------------------------------------------------------------------------------
+# Subroutines
+
+sub Usage {
+  print STDERR @_;
+  print STDERR "usage: xpm-fix [-o outfile] [-n name] [file]\n";
+  print STDERR " or  : xpm-fix file...\n";
+  exit 10;
+}
+
+sub message {
+  #  clear the line and print a message
+  print $b, '  ', @_, "\r";
+}
+
+sub error {
+  # clear line and output error message
+  print $b;
+  warn @_;
+}
+
+sub do_file {
+  local($input, $output, $name) = @_;
+
+  # convert name to a style suitable for inclusion in xpm
+  $name =~ s#^.*/([^/]*)$#$1#;
+  $name =~ s#\W#_#;
+  1 while $name =~ s#(_|_xpm|_ppm|_recol|_recol_bad)$##g;
+
+  # substitute the name for pixel values  : look up database
+  while (<$input>) {
+    if ( /^static/ && /\[\]/ ) {     # name substitute
+      $_ = join( '', 'static char *', $name, "_xpm[] = {\n");
+    }
+    if (  ( /XPM/ ... /pixels/ )  &&  /^".*\sc\s.*",$/  ) {
+      if ( ($pixel) = /\sc\s+#([0-9A-Fa-f]+)/ ) {
+        # Attempt to substitute a colorname for pixel value
+        $pixel_v = join( '', substr($pixel, 0, 1) x 4,
+                             substr($pixel, 1, 1) x 4,
+                             substr($pixel, 2, 1) x 4 ) if length($pixel) == 3;
+        $pixel_v = join( '', substr($pixel, 0, 2) x 2,
+                             substr($pixel, 2, 2) x 2,
+                             substr($pixel, 4, 2) x 2 ) if length($pixel) == 6;
+        if ( $color = $COLOR{ pack( $pixel_t, $pixel_v ) } ) {
+          s/(\sc\s+)#[0-9A-Fa-f]+/$1$color/;
+          # Uncomment to see color substitutions made
+          #print STDERR "pixel = #$pixel   color = $color\n";
+        } #else {
+          #print STDERR "Unable to substitute colorname for pixel #$pixel\n";
+        #}
+      }
+      # Fix up english color names..
+      # For AIcon library conventions and the brain dead XV xpm reader which
+      # does not undestand multi-word colornames!
+      unless ( s/\sc\s+#[0-9A-Fa-f]+/\L$&/g ) { # lowercase pixel values
+        # then apply the following to non-pixel values (EG: color names)
+        s/(\sc\s+)(\w\w)/$1\u$2/g;             # capilise first letter
+        s/(\sc\s+)(\w\w+)\s+(\w\w)/$1$2\u$3/g; # join colorname words
+        s/(\sc\s+)(\w\w+)\s+(\w\w)/$1$2\u$3/g; # do twice for three word colors
+        s/blue\b/Blue/ig;
+        s/green\b/Green/ig;
+        s/seaGreen\b/SeaGreen/ig;
+        s/gr[ae]y/Grey/ig;
+        s/slate/Slate/ig;
+        s/\bGrey0\b/Black/ig;
+        s/\bLemonchiffon\b/LemonChiffon/ig;
+      }
+    }
+    print $output $_;
+  }
+}
+
+#------------------------------------------------------------------------------
+# Main program
+
+# --- Process options ---
+while( $_ = $ARGV[0], ($_, $arg) = /^-(.)(.*)/ ) {
+  shift;
+  if ( /-/ ) { last };
+  if ( /o/ ) { $outfile    =  $arg || shift;  next }
+  if ( /n/ ) { $name       =  $arg || shift;  next }
+  &Usage( "Bad Option `-", $_, $arg, "'\n" );
+}
+undef($arg);
+
+# set the standard output name to insert
+$outname = 'noname';
+$outname = $outfile   if $outfile;
+$outname = $name      if $name;
+undef($name);
+
+# --- Open the pixel to color database ---
+unless ( dbmopen(%COLOR, $COLOR, undef) ) {
+  warn( "Unable to open \"color\" database! -- trying to create it\n" );
+  system( 'color_db_mk >/dev/null' );
+  dbmopen(%COLOR, $COLOR, undef) || die "Unable to open color database\n";
+}
+
+
+# --- do the job one of three methods ---
+if ( $#ARGV > 0 || ( $#ARGV == 0 && ! defined $outfile ) ) {
+  # multiple files  or  one file and no outfile given
+  die "Unable to use given out_file with multiple files -- quiting\n"
+    if defined $outfile;
+  foreach $filename ( @ARGV ) {
+    &message( 'fixing colors for "', $filename, '"' );
+    if ( ! open( FILE , $filename ) ) {
+      &error( 'Unable to open file "', $filename, '" : ', $!, "\n" );
+      next;
+    }
+    open( TMP, ">$tmp" );
+    &do_file( FILE, TMP, $filename );
+    close FILE;
+    close TMP;
+    system( 'mv', $tmp, $filename );
+  }
+  print( $b, "DONE!\n" );
+}
+elsif ( $#ARGV == 0 ) {
+  # one file given as well as a outfile
+  if ( ! open( FILE , $ARGV[0] ) ) {
+    &error( 'Unable to open file "', $ARGV[0], '" : ', $!, "\n" );
+    exit 0;
+  }
+  if ( ! open( OUTFILE , ">$outfile" ) ) {
+    &error( 'Unable to open file "', $outfile, '" : ', $!, "\n" );
+    exit 0;
+  }
+  &do_file( FILE, OUTFILE, $outname );
+  close FILE;
+  close OUTFILE;
+}
+else {
+  # no files given -- stdin only
+  if( $outfile ) {
+    if ( ! open( OUTFILE , ">$outfile" ) ) {
+      &error( 'Unable to open file "', $outfile, '" : ', $!, "\n" );
+      exit 0;
+    }
+    &do_file( STDIN, OUTFILE, $outname );
+    close OUTFILE;
+  }
+  else {
+    &do_file( STDIN, STDOUT, $outname );
+  }
+}
+
+dbmclose(COLOR);

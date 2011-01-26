@@ -1,0 +1,33 @@
+#!/bin/sh -
+#
+# xbm-pack [options] num_per_row files... output_file
+#  
+# Rejoin a image that was divided into an number of pieces back into
+# a single image.
+#
+
+Usage() {
+  echo >&2 "Usage: $0 num_per_row files... output_file"
+  exit 10;
+}
+
+while :; do
+  case "$1" in
+    -*) echo >&2 "Unknown option \"$1\""; Usage ;;
+    *)  break;;
+  esac
+done
+
+case "$1" in
+  *)             #  number of images per row
+      if  size=`expr "$1" : '\([0-9]*\)'`;  then
+        Row=$size
+        shift
+      else 
+        Usage;
+      fi ;;
+esac
+
+# all the above for just this!!!
+montage +display -mode concatenate -tile ${Row}x999 -compose in  "$@" 
+

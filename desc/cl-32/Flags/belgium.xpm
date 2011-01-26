@@ -1,0 +1,43 @@
+/* XPM */
+static char *belgium_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c yellow",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"          ooooooooooo...........",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

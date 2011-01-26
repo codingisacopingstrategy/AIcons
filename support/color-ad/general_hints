@@ -1,0 +1,121 @@
+!
+! My suggested Coloring Scheme using the Libraries Standard Color Table
+!
+! -----------------------------------------------------------------------------
+!
+! 3D Athena Widgets library
+!
+#ifdef COLOR
+*Form.background:                       grey67
+*TransientShell*Dialog.background:      grey67
+*Command.background:                    grey77
+*MenuButton.background:                 grey77
+*MenuButton.foreground:                 black
+*SimpleMenu*background:                 grey77
+*SimpleMenu*foreground:                 black
+*ScrollbarBackground:                   grey67
+*ScrollbarForeground:                   grey37
+*Scrollbar*background:                  grey77
+*Scrollbar*pointerColor:                black
+*Scrollbar*pointerColorBackground:      white
+*beNiceToColormap:                      False
+#else
+*Form.background:                       black
+*Form.foreground:                       white
+*TransientShell*Dialog.background:      black
+*TransientShell*Dialog.foreground:      white
+*Command.background:                    black
+*Command.foreground:                    white
+*MenuButton.background:                 black
+*MenuButton.foreground:                 white
+*SimpleMenu*background:                 black
+*SimpleMenu*foreground:                 white
+*ScrollbarBackground:                   black
+*ScrollbarForeground:                   white
+*Scrollbar*background:                  black
+*Scrollbar*foreground:                  white
+*Scrollbar*pointerColor:                black
+*Scrollbar*pointerColorBackground:      white
+*beNiceToColormap:True
+#endif
+!
+! -----------------------------------------------------------------------------
+!
+! Athena Widget Set (Version 1)...
+! 
+*foreground:			black
+*borderColor:			black
+!
+*Command.background:		sky blue
+*Toggle.background:		sky blue
+*MenuButton.background:		sky blue
+*Label.background:		lemon chiffon
+*Box.background:		lemon chiffon
+*Form.background:		lemon chiffon
+*SimpleMenu*background:		wheat
+*List.background:		wheat
+*Dialog.background:		wheat
+*Dialog.Label.background:	wheat
+*Text*background:		white
+!
+! -----------------------------------------------------------------------------
+!
+! Athena Widget Set (Version 2)...
+! 
+*foreground:                    black
+*borderColor:                   black
+!
+*Command.background:            sky blue
+*Toggle.background:             sky blue
+*MenuButton.background:         sky blue
+*Label.background:              dodger blue
+*Box.background:                dodger blue
+*Form.background:               dodger blue
+*SimpleMenu*background:         dodger blue
+*List.background:               dodger blue
+*Dialog.background:             dodger blue
+*Dialog.Label.background:       dodger blue
+*Text*background:               lavender
+!
+! -----------------------------------------------------------------------------
+!
+! Motif Widget Set... (incomplete)
+!
+! foreground colors
+*foreground:			black
+*XmList.foreground:		black
+*XmText.foreground:		black
+*XmTextField.foreground:	black
+*XmScrollBar*foreground:	wheat
+*XmLabel*foreground:		navy blue
+*XmPushButton*foreground:	navy blue
+*XmToggleButton*foreground:	black
+!
+! background colors
+*background:			wheat
+*XmList*background:		wheat
+*XmText*background:		tan
+*XmTextField*background:	tan
+*XmSelectionBox*background:	wheat
+*XmMessageBox*background:	wheat
+!
+! hightlighted edge of widgets
+*TopShadowColor:		lemon chiffon
+*XmList*TopShadowColor:		lemon chiffon
+*XmText*TopShadowColor:		lemon chiffon
+*XmSelectionBox*TopShadowColor: lemon chiffon
+*XmMessageBox*TopShadowColor:	lemon chiffon
+!
+! trough of scrollbar (dark color)
+*TroughColor:			sienna
+# selection color (dark color) for toggles etc..
+*SelectColor:			sea green
+!
+! -----------------------------------------------------------------------------
+!
+! Then adjust the colors of the important widgets which are specific
+! to that application.
+!						--- Anthony Thyssen
+!
+! -----------------------------------------------------------------------------
+

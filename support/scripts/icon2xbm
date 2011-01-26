@@ -1,0 +1,17 @@
+#!/bin/sh -
+#
+#   This uses the pbmplus package to convert  sun icons to xbm
+#
+if [ $# -eq 0 ]; then
+  echo "Usage: icon2xbm  icon..." 2>&1
+  exit
+fi
+for i in "$@" ; do
+  if [ -f $i ]; then
+    j=`basename $i .icon`
+    j=`basename $j .pr`
+    echo "converting \"$i\""
+    icontopbm $i | pbmtoxbm > $j.xbm || rm $j.xbm
+  fi
+done
+

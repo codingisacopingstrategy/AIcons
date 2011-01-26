@@ -1,0 +1,31 @@
+/* XPM */
+static char * timer_1_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"       .....        ",
+"     ..XX.....      ",
+"    .XXXX......     ",
+"   .XXXXX.....X.    ",
+"  .XXXXXX....XXX.   ",
+"  .XXXXXX...XXXX.   ",
+" .XXXXXXX..XXXXXX.  ",
+" .XXXXXXX.XXXXXXX.  ",
+" .XXXXXXXXXXXXXXX.  ",
+" .XXXXXXXXXXXXXXX.  ",
+" .XXXXXXXXXXXXXXX.  ",
+"  .XXXXXXXXXXXXX.   ",
+"  .XXXXXXXXXXXXX.   ",
+"   .XXXXXXXXXXX.    ",
+"    .XXXXXXXXX.     ",
+"     ..XXXXX..      ",
+"       .....        "};

@@ -1,0 +1,167 @@
+
+This is to announce the release of
+                       ___  _____
+                      / _ \|_   _|
+                     | |_| | | |  ___ ___  _ __  ___
+                     |  _  | | | / __/ _ \| '_ \/ __|
+                     | | | |_| || (_| (_) | | | \__ \
+                     |_| |_|_____\___\___/|_| |_|___/
+                 __   __          _            ___   __
+                 \ \ / /__ _ _ __(_)___ _ _   |_  ) /  \
+                  \ V / -_) '_(_-< / _ \ ' \   / / | () |
+                   \_/\___|_| /__/_\___/_||_| /___(_)__/
+
+Anthony's Icon Library (version 2.0)
+  This is a large collection of X window Icons for general use by the X
+community and WWW Servers.  Few icon libraries are devoted to the X Window
+System and this is the reason this library was started in 1991.
+
+The icon images found inside this collection are small (generally less
+than 100 by 100 pixel across) images that can be used for
+
+        * Program icons for general use by window managers
+        * Buttons / Widgets / Gadgets  in X window programs
+        * Document types for a desktop program (like xdtm)
+        * World Wide Web; buttons, indicators, lines, etc.
+        * walls, landscapes, space ships, and other objects for games
+
+This collection does NOT contain any `large' pictures, though smaller root
+window tile patterns are present. Nor does it contain `junky' icon images
+you often find in other libraries. It is also NOT a library of clipart.
+
+
+WHERE CAN FIND THE LIBRARY
+
+You can examine (and download) the actual library (between releases)
+through the world wide web at
+
+        http://www.cit.gu.edu.au/~anthony/icons/
+
+Alternative sources of AIcons (last official release anyway) includes :-
+
+# No longer valid
+#  FTP Distribution
+#    Official Servers       ftp://ftp.cs.indiana.edu/pub/AIcons/
+#                           ftp://ftp.cit.gu.edu.au/pub/AIcons/
+
+ WWW Servers for the full AIcons Library
+   Full Server Listing   http://www.cit.gu.edu.au/~anthony/icons/links.html
+   BsdI Server           http://bsdi.com/icons/AIcons/
+   German Server         http://www.hlt.uni-duisburg.de/AIcons/
+   French Server         http://www.ircam.fr/images/archives
+   Netspace Server       http://www.netspace.org/icons/AIcons/ (v1.6 BAD)
+
+ Some Servers for the  WWW Images Section Only
+   Full Server Listing   http://www.cit.gu.edu.au/~anthony/icons/links_web.html
+   Central Server        http://www.cit.gu.edu.au/images/Images.html
+   France                http://www.lirmm.fr/bib-icons/
+   Italian               http://www.vol.it/MIRROR/EN/images/
+   Troubador Systems     http://troubador.com/gifs/images/Images.html
+
+There is also a couple of AIcons Mailing Lists you can now subscribe
+to by mailing    majordomo@cit.gu.edu.au    with either the lines
+``subscribe aicons'' for the AIcons Discussion list or for just the
+official release announcements ``subscribe aicons-announce''
+
+  aicons@cit.gu.edu.au            General Discussion (including Announcements)
+  aicons-announce@cit.gu.edu.au   Announcement about new AIcon Library Releases
+  majordomo@cit.gu.edu.au         Mailing List Server for (Un)Subscriptions
+
+Mirrors coordinators of the library are placed on another internal mailing
+list to recieve announcements about two weeks before the main announcement
+so that the mirrors can be upgraded.
+
+ORGANIZATION
+
+The library's organization is basically by intended usage.
+The icons are stored into 4 major categories,
+
+     desc     General descriptive icons for general use. (icons)
+     appl     Icons for use within specific applications.
+     prog     Icons for programming and other purposes.
+     www      Source Images for  ``Anthony's WWW Images''
+     large    Icons which are too large for the library (but included anyway).
+
+And a couple of minor categories
+     docs          General information files.
+     support       A collection of support scripts, config files, etc...
+     www_images    Supporting images for HTML files of the library
+
+
+MAJOR CHANGES
+
+1/
+    Thanks to the continued development on the World Wide Web, a real
+  flood of icons have become available, usually one or two icons from
+  numerous sites around the globe. All icons downloaded are re-colored to
+  fit the standard color table used by the library and probably edited a
+  small amount.
+
+    As part of this the WWW area is now forming its own major section of the
+  library. This whole section is converted to GIF image format and forms
+
+    Anthony's WWW Images  (GIF format)
+        http://www.cit.gu.edu.au/images/Images.html
+    Download of WWW Images
+        http://www.cit.gu.edu.au/images/Archives/WWW_Images.tar.gz
+    Just the Button Images of this set
+        http://www.cit.gu.edu.au/images/Archives/WWW_Images_Buttons.tar.gz
+
+  Note, that in the AIcons library itself this section is in the source
+  X Window image formats, mostly X Pixmap image format, and as such are
+  not directly usable by Web users.
+
+2/
+  The other major change is that I am now using a program called ``gifmap''
+  which creates imagemaped index files of all the images in the library
+  for perusal by Web users.
+
+  As part of this process the `list_icons' program has been depreciated
+  and is no longer used by the collection.
+
+3/
+  The ``desc/cl-32'' icon section containing icons of the same size as used
+  on PC Computers and Macintosh Computers, has as been sub-catagorised
+  due to the huge number of images in this section.
+
+4/
+  The ``desc/cl-bgnd'' section of the library has also been re-organised
+  into sub-directories to group background tiles which are suitable
+  for backgrounds of documents (like those of the WWW) or those which
+  only work as root window backgrounds on Windowed Displays.
+
+
+
+PROGRAMS TO USE WITH THIS LIBRARY
+
+The following programs and packages are recommended by me to make this
+icon library more enjoyable.
+
+  X Pixmap Library   ftp://koala.inria.fr/pub/xpm
+  XbmBrowser 5.1     ftp://ftp.x.org/contrib/utilities/xbmbrowser5.1.tar.gz
+  PbmPlus (netpbm)   ftp://ftp.x.org/contrib/utilities/netpbm-1mar1994.p1.tar.gz
+  CTwm               ftp://ftp.x.org/contrib/window_managers/ctwm-3.3.tar.Z
+  Xv 3.10a           ftp://ftp.cis.upenn.edu/pub/xv
+  Xv Xpm Patch       ftp://koala.inria.fr/pub/xpm/xvxpm.c
+  XLoadImage         ftp://ftp.x.org/R5contrib/xloadimage.4.1.tar.gz
+  GifMap             (Still in beta testing)
+
+NOTE: The XbmBrowser (UNIX X Windows program) is a must for viewing the
+AIcons library as a whole.  Without this program this library would
+probably just not exist.
+
+I am also eagerly awaiting the arrival of the official PbmPlus package
+from Jef Poskanzer. But with the time he is taking (nearly three years now)
+I am not holding my breath.
+
+Thanks for your Attention.
+
+
+  Anthony Thyssen ( System Programmer )    http://www.cit.gu.edu.au/~anthony/
+-------------------------------------------------------------------------------
+    Brisbane (Australia) had been Terra's Capital city for hundreds of
+    years now, and its (space) port with long open approaches over the
+    continental center and open Pacific, was the planets busiest.
+                                     --- Dean Alan Foster, ``Orphan Star''
+-------------------------------------------------------------------------------
+     PGP Public Key available -- finger -l anthony@lyrch.cit.gu.edu.au

@@ -1,0 +1,11 @@
+#!/bin/sh -
+#
+#   This uses the pbmplus package to convert from ppm to gif
+#
+for i in "$@" ; do
+  if [ -f $i ]; then
+    echo "converting \"$i\""
+    j=`basename $i .ppm`.gif
+    ppmtogif $i > $j || rm $j
+  fi
+done

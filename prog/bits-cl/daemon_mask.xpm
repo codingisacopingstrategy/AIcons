@@ -1,0 +1,41 @@
+/* XPM */
+static char *daemon_mask_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 25 9 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c grey",
+"o c dark slate grey",
+"O c tomato",
+"+ c gold",
+"@ c slate grey",
+"# c orange",
+"$ c None",
+/* pixels */
+"$$$$$$$$$$$@@X$$$$$$$$$$",
+"$$$$X$$$X$$XX@$$X$$$X$$$",
+"$$$$X$$@XX@@@@ X@@$$X$$$",
+"$$$$X@ o@X@     ooX@ $$$",
+"$$$$oX@o@XX      o@ o$$$",
+"oo$$oooX@X@       ooo$$o",
+"oo$$oXXXX@@         o$$o",
+"oXXooXo@          o ooX@",
+"oX X oX@@@@    @@@ o X@ ",
+"$oX oXXXXX@   XXXX@@o@ o",
+"$oX XXooooX@ @@oooo@o  o",
+"$$oX  .OO. @@  .OO.   o$",
+"$$$o .O##OO@ .OO##O. o$$",
+"$$$oX .#+#O@ .O#+#.  o$$",
+"$$$$o@o   @@      o o$$$",
+"$$$$oXo@@@@@  .   o o$$$",
+"$$$oXX@X@@@@  .     @o$$",
+"$$$$X@@oo@X@   .oo  X$$$",
+"$$$$$oo$o@XX@   o$oo$$$$",
+"$$$$$$$$$oXX@  oo$$$$$$$",
+"$$$$$$$$$o@X@  o$$$$$$$$",
+"$$$$$$$$$$oX@ o$$$$$$$$$",
+"$$$$$$$$$$$@@ o$$$$$$$$$",
+"$$$$$$$$$$$o@o$$$$$$$$$$",
+"$$$$$$$$$$$o@o$$$$$$$$$$"
+};

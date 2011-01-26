@@ -1,0 +1,35 @@
+/* XPM */
+static char * bomb_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 7 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c gold",
+"O	c black",
+"+	c slate grey",
+"@	c grey",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XoXOXoXXXX XXX ....",
+" XXXoXXXXXX XXXX ...",
+" XOo oOXXXXO O O O..",
+" XXXo+XXXXXOOOOOOO..",
+" XoXO+oXXXXXX++++O..",
+" XXXX  OOXXXXX+++O..",
+" XXXX O+ OOO@XXX+O..",
+" XXXXO+  +++O@XX+O..",
+" XXXXOO +X++ O@X+O..",
+" XXXXXO+@X++  OX+O..",
+" XXXXXO++++   OX+O..",
+" XXXXXO+++   OOX+O..",
+" XXXXXO++   OOOX+O..",
+" XXXXX@O   O O@X+O..",
+" XXXXXX@O OOO@XX+O..",
+" XXXXXXX@OOO@XXX+O..",
+" XXXXXXXXXXXXXXX+O..",
+"  ++++++++++++++ O..",
+"..OOOOOOOOOOOOOOOO.."};

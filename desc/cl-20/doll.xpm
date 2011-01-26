@@ -1,0 +1,32 @@
+/* XPM */
+static char * doll_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"21 21 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c lemon chiffon",
+"o	c orange",
+"O	c sky blue",
+/* pixels */
+"                     ",
+"                     ",
+"       .....  ..     ",
+"      .XXXXX. .o.    ",
+"  ..  .X.X.X.  .o.   ",
+"  .X..XX.X.XX. ..o.  ",
+"  .XX..XXXXX...XX.o. ",
+"   .XX.XX.XX.XXX. .. ",
+"    .XX.XXX.XX..     ",
+"     .XXXXXXX.       ",
+"      .XXXXXX.       ",
+"      .XXXXX.        ",
+"      ..XXX..        ",
+"     .OO...O.        ",
+"     .OOOO.OO.       ",
+"     .OO.O.O.X..     ",
+"      ..X.X.XXXX.    ",
+"       .XXXX.XXX.    ",
+"        ..XXX....    ",
+"          ....       ",
+"                     "};

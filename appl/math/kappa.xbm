@@ -1,0 +1,4 @@
+#define kappa_width 7
+#define kappa_height 7
+static unsigned char kappa_bits[] = {
+ 0x62,0x53,0x0a,0x0e,0x1a,0x32,0x62};

@@ -1,0 +1,27 @@
+/* XPM */
+static char * balloon2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"22 18 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"                      ",
+"       .......        ",
+"     ..XXXXXXX..      ",
+"    .XXXXXXXXXXX.     ",
+"   .XXXXXXXXXXXXX.    ",
+"  .XXXXXXXXXXXXXXX.   ",
+" ..XXXXXXXXXXXXXXX.   ",
+" ..XXXXXXXXXXXXXXX.   ",
+" ..XXXXXXXXXXXXXXX.   ",
+" ..XXXXXXXXXXXXXXX.   ",
+" ...XXXXXXXXXXXXX.    ",
+"  ...XXXXXXXXXXXX.    ",
+"   ....XXXXXXXXXX.    ",
+"    ..........XXXX.   ",
+"      ..........XXX.  ",
+"             ........ ",
+"               .....  ",
+"                      "};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * torch_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 8 1",
+/* colors */
+" 	s None	c None",
+".	c orange",
+"X	c sienna",
+"o	c tomato",
+"O	c red",
+"+	c yellow",
+"@	c firebrick",
+"#	c black",
+/* pixels */
+"       . . . .      ",
+"    . .XXXXX.X.     ",
+"   .X.XXX.XXXXX.    ",
+"    .XXXXoXXXXXX.   ",
+"   .XXXXXoOXXXXXX.  ",
+"  .X.XXXX.OXXXXX.   ",
+"   .XXXXO.OXXXXXX.  ",
+"  .X.XXXo.oOXXXX.   ",
+"   .XXXXo.oOXXXX.   ",
+"    .XXX.+oOXXX.    ",
+"   . .XX@+.OXX.X.   ",
+"      ..@X@@.. .    ",
+"     .  #XX#        ",
+"        #X@#        ",
+"        #X@#        ",
+"        #X@#        ",
+"        #X#         ",
+"        #X#         ",
+"        #X#         ",
+"         #          "};

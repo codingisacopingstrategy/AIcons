@@ -1,0 +1,23 @@
+/* XPM */
+static char * earth_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"14 14 3 1",
+/* colors */
+" 	s None	c None",
+".	c green",
+"X	c blue",
+/* pixels */
+"              ",
+"     ....     ",
+"   ......XX   ",
+"  X.....XXXX  ",
+"  XX....XXXX  ",
+" XXXX.X..XXXX ",
+" XXXX.XXXXXX. ",
+" XXX.....XXX. ",
+" XXX.....XXX. ",
+"  XXX....XXX  ",
+"  XXX...XXXX  ",
+"   XXX.XXXX   ",
+"     XXXX     ",
+"              "};

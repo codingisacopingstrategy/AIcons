@@ -1,0 +1,32 @@
+/* XPM */
+static char * weight_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c gainsboro",
+"o	c white",
+"O	c grey",
+"+	c slate grey",
+/* pixels */
+"                    ",
+"        ....        ",
+"       .XooX.       ",
+"      .XooooX.      ",
+"       .XooX.       ",
+"        ....        ",
+"     ....oX....     ",
+"    .XX.X..X.XX.    ",
+"   .OXXo.oX.XXXO.   ",
+"   ..XXXo..XoXX..+  ",
+"   .O...XoXo...O.+  ",
+"   .OXXX....XXXO.+  ",
+"   .OXXoXooXoXXO.+  ",
+"   .OXXXooooXXXO.+  ",
+"   .OXXoXooXoXXO.+  ",
+"   .OXXXooooXXXO.+  ",
+"   ..XXoXooXoXX..+  ",
+"     ...oooo...+++  ",
+"        ....++++    ",
+"                    "};

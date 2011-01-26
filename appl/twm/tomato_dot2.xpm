@@ -1,0 +1,21 @@
+/* XPM */
+static char * tomato_dot2_xpm[] = {
+"13 13 5 1",
+" 	c Tomato",
+".	c Orange",
+"X	c Gold",
+"o	c Red",
+"O	c Firebrick",
+"             ",
+"    .XXX     ",
+"   XXXX.X.   ",
+"  XXX.. .    ",
+" .XX.. .  o  ",
+" XX..     oO ",
+" .X.     o O ",
+" .. .   o oO ",
+"  ..   oooOo ",
+"  .  oooooO  ",
+"   oooooOO   ",
+"     OOOo    ",
+"             "};

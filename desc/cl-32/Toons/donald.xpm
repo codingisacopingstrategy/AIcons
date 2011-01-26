@@ -1,0 +1,43 @@
+/* XPM */
+static char *donald_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c wheat",
+"X c DodgerBlue",
+"o c white",
+/* pixels */
+"oooooooo      oooooooooooooooooo",
+"ooooooo        ooooooooooooooooo",
+"ooooooo         oooooooooooooooo",
+"ooooooo         oooooooooooooooo",
+"oooooo        X oooooooooooooooo",
+"oooooo       XX oooooooooooooooo",
+"ooooo       XXX   oooooooooooooo",
+"oooo       XXX       ooooooooooo",
+"oo        XXX    oo   oooooooooo",
+"         XXX    oo oo oooooooooo",
+"        XXX   oooo     ooooooooo",
+"       XXX   oo  oo ooo oooooooo",
+"      XXX   ooooo o oooo ooooooo",
+"            o  o  oo o o ooooooo",
+" oooo oo  o  ooooo  o     oooooo",
+" oooo  oooo  oooooo o       oooo",
+" oooo  ooooo ooooooo o    . oooo",
+"ooooo  ooooo o  oooo o  . .  ooo",
+"oooooo ooooo     ooo  ... . . oo",
+"oooooo o  o      ooo ........ oo",
+"oooooo   o oo    ooo .......  oo",
+"ooooooo      o   oo  .......  oo",
+"oooooooo o         ........  ooo",
+"ooooooooo o  .............  oooo",
+"ooooooooooo    .........   ooooo",
+"oooooooooooo              oooooo",
+"oooooooooooooooo      oooooooooo",
+"ooooooooooooooooo oo ooooooooooo",
+"ooooooooooooooo      oo  ooooooo",
+"oooooooooooo         o   ooooooo",
+"oooooooooo oo          o ooooooo",
+"ooooooooo o               oooooo"
+};

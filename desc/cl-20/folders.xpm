@@ -1,0 +1,34 @@
+/* XPM */
+static char * folders_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 8 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c magenta",
+"o	c white",
+"O	c gainsboro",
+"+	c grey",
+"@	c blue",
+"#	c cyan",
+/* pixels */
+"                    ",
+" ....               ",
+".XXXX......         ",
+".....ooooO.         ",
+".ooooOOOO+.         ",
+".oOOO....+.         ",
+".oOO.@@@@.....      ",
+".oOO.....ooooO.     ",
+".O++.ooooOOOO+.     ",
+" ....oOOO....+.     ",
+"    .oOO.####o....  ",
+"    .oOO.....ooooO. ",
+"    .O++.ooooOOOO+. ",
+"     ....oOOOOOOO+. ",
+"        .oOOOOOOO+. ",
+"        .oOOOOOOO+. ",
+"        .O++++++++. ",
+"         .........  ",
+"                    ",
+"                    "};

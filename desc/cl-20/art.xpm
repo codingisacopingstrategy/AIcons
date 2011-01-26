@@ -1,0 +1,32 @@
+/* XPM */
+static char * art_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c yellow",
+"X	c gold",
+"o	c dark slate grey",
+"O	c grey",
+"+	c lavender",
+/* pixels */
+"   ...  ...  ..X    ",
+" oXXXXoXXXXXo.XXXoo ",
+" .ooXXXXXXXXXXXooXo ",
+"XXXXooooooooooo.XXXo",
+"..oXoOOOOOOOOO+.o.Xo",
+"X.XXoOOOOOOOOO+..XXo",
+" oXXoOOOOOOOOO+.Xoo ",
+" XoXoOOOOOOOOO+XoXo ",
+" .XXoOOOOOOOOO+XXXo ",
+"X.oXoOOOOOOOOO+.oXXo",
+" X.XoOOOOOOOOO+XXXo ",
+" .oXoOOOOOOOOO+XoXo ",
+" o.XoOOOOOOOOO+.Xoo ",
+"X.XXoOOOOOOOOO+.XXXo",
+".XoXoOOOOOOOOO+XoXXo",
+"..XXo++++++++++X..Xo",
+".XoXX.XX....XXXXoX.o",
+" oXX.XoXXXXXXo..XXo ",
+" ooXXXooXXXXooXXXoo ",
+"   ooo  oooo  ooo   "};

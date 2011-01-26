@@ -1,0 +1,43 @@
+/* XPM */
+static char *calvin_grin_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c cyan",
+"X c red",
+"o c white",
+/* pixels */
+"................................",
+"................................",
+"................................",
+"..................  ............",
+".........   ....   .............",
+"........ X ...  oX ...     .....",
+".... ..  o .  XoXo .  XoXo  ....",
+"....    oXo o oXoX   XoXo ......",
+". .. o oXoXoXoXoXoXoXoXo .......",
+".. . XoXoXo oXoXoXoXoXoX o      ",
+" .. XoXoXoXoX X X X XoXoX XoXo .",
+".  XoXoXooooooooooooo oXoXoX  ..",
+".. o   oooooooooooooooooooX ....",
+"   XoXoooooooooooooooooooooX   .",
+". Xo  oooooooo oooooooooooXoX . ",
+".. XoXooooooooo oo ooooooooXo ..",
+"... Xoooo    oo o oo    ooooX ..",
+"..   ooooo o         o oo oXo ..",
+". oooo   oo    ooo    oo  ooX  .",
+". ooooo ooooo ooooo oooooo o oo ",
+". ooooo ooooo ooooo oooooo oo  .",
+"..   oo oooooo     oooooo ooo ..",
+"..... oo  oooooooooooooo ooo ...",
+"...... ooo  oooooooooo  oo  ....",
+"....... oooo          ooo ......",
+"........  ooooooooooooo  .......",
+"..........   ooooooo   .........",
+"...........           ..........",
+"........... XXXXXXXXX ..........",
+"..........             .........",
+".......... XXXXXXXXXXX .........",
+"..........             ........."
+};

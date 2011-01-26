@@ -1,0 +1,31 @@
+/* XPM */
+static char * kite_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c sienna",
+"o	c sea green",
+"O	c red",
+/* pixels */
+"          ..        ",
+"         .Xo.       ",
+"        .OOoO.      ",
+"       XOOOoO.      ",
+"       .XooOOO.     ",
+"       .OOXoXo.     ",
+"       .OOoOO.      ",
+"       .OoOO. .     ",
+"       .oOO.  .     ",
+"       .oO.   .     ",
+"       XO.    .     ",
+"       .. .... .    ",
+"       .        .   ",
+"      o          .  ",
+"   . o            . ",
+"    .              .",
+"   o .              ",
+". o                 ",
+" .                  ",
+"o .                 "};

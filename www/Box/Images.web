@@ -1,0 +1,98 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Box</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Box
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+These images are a set of 17 bitmaps all of which are 24x24 pixels.
+Web browsers should allow these bitmaps to join together to form boxes,
+separators and 3d indentation lines. However having said this some web
+browsers are brain dead with regard to images, and should be upgraded.
+<P>
+
+This is experimental only and may or may not remain in the WWW Images
+Library. <P>
+
+These images are courtesy of the Crossfire Developers. More box, and wall
+style images can be found in
+<A HREF="http://www.cit.gu.edu.au/~anthony/icons/" TARGET="_top">
+Anthony's Icon Library </A>, under the section
+``<A HREF="http://www.cit.gu.edu.au/~anthony/icons/prog/walls"
+TARGET="_top">Programming, Walls</A>''. <P>
+
+<HR>
+<H2>Box Bitmaps</H2>
+
+ <IMG SRC=north_west.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=north.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=north_east.gif ALIGN=top WIDTH=24 HEIGHT=24
+><BR
+><IMG SRC=west.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=center.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=east.gif ALIGN=top WIDTH=24 HEIGHT=24
+>  &lt;-- This is made up of 9 separate bitmaps<BR
+><IMG SRC=south_west.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=south.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=south_east.gif ALIGN=top WIDTH=24 HEIGHT=24
+><BR
+><P>
+
+<IMG SRC=horz_left.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=horz.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=horz_right.gif ALIGN=top WIDTH=24 HEIGHT=24>
+&lt;-- Similarly this is a line of three bitmaps. Build it to any length.<BR>
+<P>
+
+<IMG SRC=vert_top.gif ALIGN=top WIDTH=24 HEIGHT=24
+> This is an example<BR>
+<IMG SRC=vert.gif ALIGN=top WIDTH=24 HEIGHT=24
+> of some fancy <BR>
+<IMG SRC=vert_bot.gif ALIGN=top WIDTH=24 HEIGHT=24
+> 3D indentation.<BR>
+<P>
+
+<IMG SRC=space.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=dot.gif ALIGN=top WIDTH=24 HEIGHT=24
+><IMG SRC=space.gif ALIGN=top WIDTH=24 HEIGHT=24>
+&lt;-- Space, Dot, Space<BR>
+<P>
+
+Total number of bitmaps above is 17, with only the `space' image being
+used twice! <P>
+
+You may also like to look at  <A
+HREF="http://www.cit.gu.edu.au/~anthony/wwwlab/htmlart/boxed_text.html" >
+Resizing Boxed Text</A> for an example of using this images on your web page.
+<P>
+
+As well aso DIY image designed specifically for <A HREF="../Table/Images.html"
+>Table Framing</A>.
+<P>
+
+<HR>
+<ADDRESS>
+Created: 11 December 1994 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

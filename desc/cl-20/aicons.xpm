@@ -1,0 +1,33 @@
+/* XPM */
+static char *aicons_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+"  c dodger blue",
+". c lavender",
+"X c grey",
+"o c dark slate grey",
+"O c navy blue",
+"+ c slate grey",
+/* pixels */
+"...................o",
+".XXXXXXXXXXXXXXXXXXo",
+".X++XXXXXX++XXOOXXXo",
+".X++XXXXXX++XXOOXXXo",
+".XXX++XX++XXOO  ++Xo",
+".XXX++XX++XXOO  ++Xo",
+".X++XXXXXX  XXOOXXXo",
+".X++XXXXXX  XXOOXXXo",
+".XXX++XXOOXXXX  XXXo",
+".XXX++XXOOXXXX  XXXo",
+".XXXXXOO  OO  OOXXXo",
+".XXXXXOO  OO  OOXXXo",
+".XXXOOXXXXXXXX  XXXo",
+".XXXOOXXXXXXXX  XXXo",
+".XOO  ++XX++  OO  Xo",
+".XOO  ++XX++  OO  Xo",
+".XXX++XX++XX++XXXXXo",
+".XXX++XX++XX++XXXXXo",
+".XXXXXXXXXXXXXXXXXXo",
+"oooooooooooooooooooo"
+};

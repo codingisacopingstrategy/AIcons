@@ -1,0 +1,31 @@
+/* XPM */
+static char *new_00_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 20 4 1",
+/* colors */
+"  c black",
+". c peru",
+"X c None",
+"o c yellow",
+/* pixels */
+"XXXXXXXoXXXXXXXXXXXXXooooXXXXXXX",
+"XXXXXXooo.XXXXXXXXXXoooo..XXXXXX",
+"oXXXXoooooooooooooooooooo.XXXXXX",
+"XoooooooooooooooooooooooooXXXXXX",
+"ooooooooooooooooooooooooooooXXXX",
+"oooooooooooooooooooooooooooooooX",
+"Xooo  o  ooo    oo  oo  oo  o..X",
+"Xooo   o  o  oo  o  oo  oo  o.XX",
+"Xooo  oo  o  oo  oo  o  o  oo.XX",
+"Xooo  oo  o      oo  o  o  oo.XX",
+"oooo  oo  o  oooooo  o  o  oooXX",
+"oooo  oo  o  oo  ooo  oo  oooooo",
+"X.oo  oo  oo    oooo  oo  oooooo",
+"XXooooooooooooooooooooooooooo...",
+"XXX.ooooooooooooooooooooooo...XX",
+"XXXXoooooooooooooooooooooo..XXXX",
+"XXXXoooooooooooo.......ooo.XXXXX",
+"XXXXoo.......ooo.XXXXXXXXo.XXXXX",
+"XXXX...XXXXXXXo..XXXXXXXXX.XXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

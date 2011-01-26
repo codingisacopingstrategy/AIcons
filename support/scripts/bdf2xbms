@@ -1,0 +1,66 @@
+#!/bin/nawk -f
+#
+#  bdf2xbm  bdf_file
+#
+#    Convert a bdf font into collection of bitmaps in the current
+# directory.  The bitmap files are named  <octal-char-code>:<char-name>.xbm
+#
+BEGIN { verbose = 1
+        a["0"] = "0";  a["1"] = "8";  a["2"] = "4";  a["3"] = "c";
+        a["4"] = "2";  a["5"] = "a";  a["6"] = "6";  a["7"] = "e";
+        a["8"] = "1";  a["9"] = "9";  a["a"] = "5";  a["b"] = "d";
+        a["c"] = "3";  a["d"] = "b";  a["e"] = "7";  a["f"] = "f";
+      }
+
+/^STARTFONT/ {
+    filename = substr( FILENAME, match(FILENAME, "/[^/]*$") ) # remove path 
+    match(filename, "^[^.]*")                  # find suffix start
+    filename = substr( filename, 1, RLENGTH )  # remove suffix
+    fontname = filename   # set default fontname (should be set later)
+    next
+  }
+/^FONT[ 	]/ {
+    fontname = $2
+    printf( "Decoding file \"%s\" containing font \"%s\"\n",
+            FILENAME, fontname )
+    next
+  }
+/^STARTCHAR/ { charname = $2; next }
+/^ENCODING/  { char = $3 + 0; next }
+/^BBX/ {
+    width = $2
+    height = $3
+    next
+  }
+/^BITMAP/ {
+    file = sprintf( "%03o:%s.xbm", char, charname )
+    if( verbose )
+      printf("Character %3d --> \"%s\"\n", char, file )
+    printf("#define %s_width %d\n", charname, width )    > file
+    printf("#define %s_height %d\n", charname, height )  > file
+    printf("static char %s_bits[] = {\n  ", charname )   > file
+    read = 1  # OK read bitmap lines that follow
+    n = 0     # number of chars output to the current line ( usually > 0 )
+    next
+  }
+/^ENDCHAR/ {
+    read = 0 
+    printf "};\n"   > file
+    close file
+    next
+  }
+read == 1 {
+    len = length($1)
+    $1 = $1 "0"   # in case it is an odd length
+    for( l = 1  ;  l <= len  ;  l+=2 ) {
+      if ( n > 0 ) 
+        printf( "," )    > file
+      if ( n >= 12 ) {
+        printf("\n  ") > file
+        n = 0
+      }
+      b = a[ substr( $1, l+1, 1 ) ] a[ substr( $1, l, 1 ) ]
+      printf( " 0x%s", b ) > file
+      n++
+    }
+  }

@@ -1,0 +1,27 @@
+/* XPM */
+static char * reminder_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c red",
+"o	c lemon chiffon",
+"O	c wheat",
+/* pixels */
+"        ..          ",
+"    XX .oo. XX      ",
+"   X  X.oo.X  X     ",
+"   XXX XXXX XXX     ",
+"      X.OO.X        ",
+"    XX .OO. XX      ",
+"       .OO.         ",
+"       .OO...       ",
+"   ... .OO.OO..     ",
+"   .OO..OOOOOOO..   ",
+"    .O..OOOOOOOOO.  ",
+"    .OO.OOOOOOOOO.  ",
+"     .OOOOOOOOOOO.  ",
+"     .OOOOOOOOOOO.  ",
+"      .OOOOOOOOO.   ",
+"       .OOOOOOOO.   "};

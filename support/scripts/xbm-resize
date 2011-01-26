@@ -1,0 +1,169 @@
+#!/bin/sh
+#
+# xbm-resize [-t] [ -# | -#x# | -c | -cc ] [ -W | -B | -T ] Ximage...
+#
+#    Using the pbmplus package resize all the given bitmaps or pixmaps 
+# to the size given on the command line. The default size is 64x54 pixels
+# This script will now also handle transparent color pixmaps and will handle
+# crop or continual crop methods with appropriate flags.
+#
+#  Anthony Thyssen         October 1995       anthony@cit.gu.edu.au
+#
+
+Width=64    # default width and height of icon to produce
+Height=54
+Margin=35   # margin to add to the icon ( must be >= 1/2 * max(Width,Height) )
+m_opts=     # other options to the margin (color of)
+crop=       # autocrop image instead of a specific size
+
+b="                                                                        "
+TRANS=
+
+Usage() {
+  echo >&2 "Usage: xbm-resize [-t] [-#|-#x#|-c|-cc] [-W|-B|-T] Ximage..."
+  echo >&2 "    -t     preserve transparenty in X pixmaps"
+  echo >&2 "    -#x#   resize to  # x # pixels"
+  echo >&2 "    -#     resize to # pixel in both X and Y"
+  echo >&2 "    -c     just crop the image"
+  echo >&2 "    -cc    continuous crop"
+  echo >&2 "    -W     add a white margin before resize"
+  echo >&2 "    -B     add a black margin before resize"
+  echo >&2 "    -T     add a transprent margin before resize (forces -t)"
+  exit 10
+}
+
+loop=true
+while [ "$loop" ]
+do
+  case "$1" in
+  --) loop=;  shift ;;
+  -t) TRANS="#BFBFBF"; shift ;;           # preserve transparent color 
+  -c) crop=true; shift ;;                 # just crop the image once
+  -cc) contcrop=true; crop=true; shift ;; # continously crop the image
+  -W) m_opts="-white"; shift ;;           # add a white margin
+  -B) m_opts="-black"; shift ;;           # add a black margin
+  -T) TRANS="#BFBFBF"; m_opts="-color $TRANS" shift ;; # trans margin
+  -*x*)           #  resize to fully specified size
+      Width=`expr "$1" : '-\([0-9]*\)'` 
+      Height=`expr "$1" : '-[0-9]*x\([0-9]*\)'`
+      [ "$Width" -eq 0 -o "$Height" -eq 0 ] && Usage
+      size=$Width
+      [ "$size" -lt "$Height" ] && size=$Height
+      Margin=`expr $size / 2 + 1`
+      shift ;;
+  -*)             #  resize to a square of this size
+      size=`expr "$1" : '-\([0-9]*\)'`
+      [ "$size" -eq 0 ] && Usage
+      Width=$size
+      Height=$size
+      Margin=`expr $size / 2 + 1`
+      shift ;;
+  *)  loop= ;;
+  esac
+done
+
+# ----- MAIN LOOP -----
+
+TMP1=/tmp/xbmresize$$.1
+TMP2=/tmp/xbmresize$$.2
+trap "rm -f $TMP1 $TMP2; exit 1" 1 2 3 15
+
+for i in "$@"; do
+  echo -n "${b}  resizing \"$i\""
+  # --- check out this file ---
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read icon \"$i\""
+    continue;
+  fi
+  if [ ! -w "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "xbm-cmd: Unable to write \"$i\""
+    continue;
+  fi
+
+  # --- convert it to PbmPlus ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"            # remove path from file
+  suffix="`expr "$name" : '.*\.\([^.]*\)$'`"       # extract last suffix
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"         # remove last suffix
+
+  case "$suffix" in
+    xbm)  sed 's/unsigned //' "$i" | xbmtopbm > $TMP1 ;;
+    xpm)
+      if [ "$TRANS" ] && grep 'c  *None' "$i" >/dev/null; then
+        # convert None to transparent color (above)
+        sed "s/c  *[Nn]one/c $TRANS/g" "$i" |
+           x2p.sed | xpmtoppm > "$TMP1"
+      else
+        x2p.sed "$i" | xpmtoppm  > $TMP1
+      fi ;;
+    pbm|pgm|ppm) 
+         cp "$i" $TMP1 ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         continue
+  esac
+  if [ ! -f $TMP1 -o ! -s $TMP1 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Convert \"$i\" to Pbmplus"
+    continue
+  fi
+
+  # --- find out if we need to make a backup first (on cropped size) ---
+  if [ "$crop" ]; then
+    pnmcrop $TMP1 2>/dev/null > $TMP2    # cropped copy of original
+    # --- Continous crop ---
+    if [ "$contcrop" ]; then
+      set - `pnmfile $TMP2 | sed 's/.*,//'`; W2=$1; H2=$3;
+      while [ "$W1" -ne "$W2" -o "$H1" -ne "$H2" ]; do
+	mv $TMP2 $TMP1;  W1=$W2; H1=$H2;          # prepare for another crop
+	pnmcrop $TMP1 2>/dev/null > $TMP2         # crop it again
+	set - `pnmfile $TMP2 | sed 's/.*,//'`; W2=$1; H2=$3;
+      done
+    fi
+  else
+    # Figure out if icon can shrink! in size and copy if not
+    set - `pnmfile $TMP1 | sed 's/.*,//'`; W=$1; H=$3;
+    if  [ $W -gt $Width -o $H -gt $Height ]; then
+      echo "${b}"
+      echo >&2 "Icon \"$i\" shrinks in size ... making copy"
+      echo -n "  resizing \"$i\""
+      merge -c $i $i
+    fi
+
+    # --- add margins and cut out to correct size ---
+    # Figure out X & Y position of cut to perform (after margins added)
+    X=`expr \( $W - $Width  \) / 2 + $Margin` 
+    Y=`expr \( $H - $Height \) / 2 + $Margin`
+    # Add margin and cut down to wanted size
+    # NOTE: for some reason pnmmargin outputs a "Broken Pipe" error
+    pnmmargin $m_opts $Margin $TMP1 |
+      pnmcut $X $Y $Width $Height > $TMP2
+  fi
+
+  if [ ! -f $TMP2 -o ! -s $TMP2 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Resize \"$i\""
+    continue
+  fi
+
+  # --- convert back ---
+  case "$suffix" in
+    xbm) pbmtoxbm $TMP2 |
+         sed 's/static  *char/static unsigned char/;
+              s/noname\([[_]\)/'"$name"'\1/' > "$i" ;;
+    xpm)
+      if [ "$TRANS" ]; then    # replace transparent color with "None"
+        ppmtoxpm $TMP2 2>/dev/null |
+          sed "/colors/,/pixels/s/ c $TRANS/ c None/" |
+          xpm-fix -o "$i"
+      else
+        ppmtoxpm $TMP2 2>/dev/null | xpm-fix -o "$i"
+      fi ;;
+    pbm|pgm|ppm) 
+      cp $TMP2 "$i" ;;
+  esac
+done
+echo "${b}done"
+
+rm -f $TMP1 $TMP2

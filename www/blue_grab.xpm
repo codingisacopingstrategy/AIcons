@@ -1,0 +1,35 @@
+/* XPM */
+static char * blue_grab_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 5 1",
+/* colors */
+" 	c blue",
+".	c navy",
+"X	c #001AC6",
+"o	c white",
+"O	c dodger blue",
+/* pixels */
+"                       .",
+"                      ..",
+"  XXXXXXXXXXXXXXXXXXXX..",
+"  XXXXXXXXXXXXXXXXXXXX..",
+"  XXXXXXXXX..XXXXXXXXX..",
+"  XXXXX..X.oo...XXXXXX..",
+"  XXXX.oo..oo.oo.X.XXX..",
+"  XXXX.oo..oo.oo..O.XX..",
+"  XXXXX.oo.oo.oo.oo.XX..",
+"  XXXXX.oo.oo.oo.oo.XX..",
+"  XXX..XOooooooo.oo.XX..",
+"  XX.oo..oooooooooo.XX..",
+"  XX.ooo.oooooooooOXXX..",
+"  XXX.oooooooooooo.XXX..",
+"  XXXX.ooooooooooo.XXX..",
+"  XXXX.OoooooooooOXXXX..",
+"  XXXXX.ooooooooo.XXXX..",
+"  XXXXXX.oooooooOXXXXX..",
+"  XXXXXXXOoooooo.XXXXX..",
+"  XXXXXXX.oooooo.XXXXX..",
+"  XXXXXXX.oooooo.XXXXX..",
+"  XXXXXXXXXXXXXXXXXXXX..",
+" .......................",
+"........................"};

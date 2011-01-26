@@ -1,0 +1,33 @@
+/* XPM */
+static char * color_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+" 	c red",
+".	c yellow",
+"X	c green",
+"o	c cyan",
+"O	c blue",
+"+	c magenta",
+"@	s None	c None",
+/* pixels */
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXooOO++@@@@@@@@",
+"  ..XXX@OO++@@@@@@@@",
+"  ..@XX@@OO+++@@@@@@",
+"  @..@@ooOO@++@@@@@@",
+"  @..@@oo@@@@@@++@@@",
+"  @@@@@@@@@OO@@++@++",
+"@@@@@@XX@ooOO@@@@@++",
+"@  ..@XX@oo@@@@@@@@@",
+"@  ..@@@@@@@@@@OO@@@",
+"@@@@@@@@XX@@oo@OO@@@",
+"@@  @@@@XX@@oo@@@@OO",
+"@@  @..@@@@@@@@@@@OO",
+"@@@@@..@@@@@@@@@@@@@"};

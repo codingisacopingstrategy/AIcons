@@ -1,0 +1,25 @@
+/* XPM */
+static char * heart_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"13 13 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c red",
+"o	c violet",
+"O	c dark slate grey",
+"+	c firebrick",
+/* pixels */
+"  ...   ...  ",
+" .XXX. .XXX. ",
+".XXoXX.XXXXX.",
+".XoXXXXXXXXX.",
+".XXXXXXXXXXX.",
+"OXXXXXXXXXX+O",
+" .XXXXXX+++. ",
+"  .XXXX+++.  ",
+"   .XXX++.   ",
+"    .XX+.    ",
+"     .+.     ",
+"      .      ",
+"      O      "};

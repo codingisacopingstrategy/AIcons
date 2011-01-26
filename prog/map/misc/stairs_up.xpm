@@ -1,0 +1,34 @@
+/* XPM */
+static char * stairs_up_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c lemon chiffon",
+"o	c wheat",
+/* pixels */
+"                        ",
+"                        ",
+"                        ",
+"    ....                ",
+"    .XX.                ",
+"   ..X.....             ",
+"   .XX..XX.             ",
+"  ..X..XX.....          ",
+"  .XX..XX..XX.          ",
+" ..X..XX..XX.....       ",
+" .XX..XX..XX..XX.       ",
+" ....XX..XX..XX.....    ",
+" .oo.XX..XX..XX..XX.    ",
+" .oo....XX..XX..XX..... ",
+" .oooo..XX..XX..XX..XX. ",
+" .oooo.....XX..XX..XX.. ",
+" .ooooooo..XX..XX..XX.. ",
+" .ooooooo.....XX..XX..  ",
+" .oooooooooo..XX..XX..  ",
+" ....ooooooo.....XX..   ",
+"     ....oooooo..XX..   ",
+"         ....ooo....    ",
+"             .......    ",
+"                        "};

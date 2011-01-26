@@ -1,0 +1,4 @@
+#define omicron_width 6
+#define omicron_height 7
+static unsigned char omicron_bits[] = {
+ 0x1e,0x33,0x21,0x21,0x21,0x33,0x1e};

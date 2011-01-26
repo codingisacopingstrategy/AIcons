@@ -1,0 +1,34 @@
+/* XPM */
+static char *tank_blue_8_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 7 1",
+/* colors */
+"  c black",
+". c grey",
+"X c navy blue",
+"o c white",
+"O c slate grey",
+"+ c None",
+"@ c blue",
+/* pixels */
+"++++++++++++++++++++",
+"++++++++++++++++++++",
+"++++++++++++++++++++",
+"++++++ +++++++ +++++",
+"+++++ o +   + o ++++",
+"++++ .oO OOO Oo. +++",
+"++++ .oOO@@@OOo. +++",
+"++++ .oO@XXX@Oo. +++",
+"++++ .oO@XXX@Oo. +++",
+"++++ .oO@X@X@Oo. +++",
+"++++ .oO@@@@@Oo. +++",
+"++++ .oO@ o @Oo. +++",
+"++++ .oO@ o @Oo. +++",
+"++++ .oO@ o @Oo. +++",
+"++++ .oO@ o @Oo. +++",
+"++++ .oO  o  Oo. +++",
+"++++ .oO  o  Oo. +++",
+"+++++ o + o + o ++++",
+"++++++ +++ +++ +++++",
+"++++++++++++++++++++"
+};

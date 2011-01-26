@@ -1,0 +1,43 @@
+/* XPM */
+static char *lable_copy_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c SlateGrey",
+/* pixels */
+"XXXXX........................XXX",
+"XXXXX.XXXXXXXXXXXXXXXXXXXXXX.XXX",
+"XXXX .XX...XXX..XX...XX.XX.X.XXX",
+"XXXX .X..XX.X..X.X..X.X.XX.X.o  ",
+"XXXX .X..XX.X..X.X..X.X.XX.X.o  ",
+"Xooo .X..XXXX..X.X...XX....X.o  ",
+"Xooo .X..XX.X..X.X..XXXX..XX.o  ",
+"Xooo .X..XX.X..X.X..XXXX..XX.o  ",
+"Xooo .XX...XXX..XX..XXXX..XX.ooX",
+"Xooo .XXXXXXXXXXXXXXXXXXXXXX.oXX",
+"Xooo ........................o  ",
+"Xooo   ooooooooooooooooooooooo  ",
+"Xooo                            ",
+"Xooo           ooooX            ",
+"Xooo          XXXXooX           ",
+"Xooo         XXXXXXooX          ",
+"Xooo         XXXXXXXoX          ",
+"Xooo         XXXXXXXoX          ",
+"Xooo          XXXXXoX           ",
+"Xooo           XXXoX            ",
+"Xooo                            ",
+"Xooo                            ",
+"Xooo             Xo             ",
+"Xooo             Xo             ",
+"Xooo             Xo             ",
+"Xooo             Xo             ",
+"Xooo                            ",
+"Xooo                            ",
+"Xooo           o    o           ",
+"XoooooooooooooooooooooooooooooXX",
+"XoooooooooooooooooooooooooooooXX",
+"XoooooooooooooooooooooooooooooXX"
+};

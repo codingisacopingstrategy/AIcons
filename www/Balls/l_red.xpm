@@ -1,0 +1,34 @@
+/* XPM */
+static char * l_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 8 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c tomato",
+"o	c firebrick",
+"O	c orange",
+"+	c gold",
+"@	c lemon chiffon",
+"#	c black",
+/* pixels */
+"                    ",
+"       ......       ",
+"     .X.X...o.o     ",
+"    .XXXXXX..o.o    ",
+"   .XXXOOXXX..o.o   ",
+"  ...XO++OXo..oooo  ",
+"  ..XXO+@OXX...ooo  ",
+" .o.XXXOOXXX..ooooo ",
+" o...XXXXXX.oo.ooo# ",
+" o.o..Xo.X....ooooo ",
+" oo..o....o.ooooo#o ",
+" ooooo....o.oooo#oo ",
+" ooo..oo.o.oooooo#o ",
+"  oooooooooooooo#o  ",
+"  ooooooooooo#oo#o  ",
+"   o#oooooo#ooo#o   ",
+"    oo#oo#ooo#o#    ",
+"     oo#oo#o#o#     ",
+"       o#o#o#       ",
+"                    "};

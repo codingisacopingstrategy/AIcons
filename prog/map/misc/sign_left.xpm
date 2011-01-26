@@ -1,0 +1,36 @@
+/* XPM */
+static char * sign_left_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 6 1",
+/* colors */
+" 	s None	c None",
+".	c sienna",
+"X	c tan",
+"o	c black",
+"O	c lemon chiffon",
+"+	c sea green",
+/* pixels */
+"             .          ",
+"            .X.         ",
+"    ooooooooooooooooooo ",
+"  ooOOOOOOOOOOOOOOOOOOo ",
+" oOOOOOOooOoOOooOoOoOo  ",
+"  ooOOOooOoooOoOooOoOOo ",
+"    ooOOOOOOOOOOOOOOOOo ",
+"      ooooooooooooooooo ",
+"            .X.         ",
+"            .X.         ",
+"            .X.         ",
+"            .X.         ",
+"            .X.         ",
+"            .XX.        ",
+"             .X.        ",
+"             .X.        ",
+"             .X.        ",
+"            .XX.        ",
+"            .X.         ",
+"            .X. +       ",
+"          + .X. +       ",
+"       +  ++ X. +       ",
+"        + + +X++ + +    ",
+"        +++++++++++     "};

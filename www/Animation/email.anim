@@ -1,0 +1,82 @@
+#
+# EMail Letter Animation
+# 
+-loop 20
+# letter appears and signed
+-dispose 2 -delay 7
+            email/email_00.xpm
+            email/email_01.xpm
+            email/email_02.xpm
+            email/email_03.xpm
+            email/email_04.xpm
+            email/email_05.xpm
+            email/email_06.xpm
+            email/email_07.xpm
+            email/email_08.xpm
+            email/email_09.xpm
+            email/email_10.xpm
+            email/email_11.xpm
+            email/email_12.xpm
+            email/email_13.xpm
+            email/email_14.xpm
+            email/email_15.xpm
+            email/email_16.xpm
+            email/email_17.xpm
+# folding up and insert in envelope
+-dispose 2 -delay 4
+            email/email_18.xpm
+            email/email_19.xpm
+            email/email_20.xpm
+            email/email_21.xpm
+            email/email_22.xpm
+            email/email_23.xpm
+            email/email_24.xpm
+            email/email_25.xpm
+            email/email_26.xpm
+            email/email_27.xpm
+            email/email_28.xpm
+            email/email_29.xpm
+            email/email_30.xpm
+            email/email_31.xpm
+            email/email_32.xpm
+            email/email_33.xpm
+            email/email_34.xpm
+            email/email_35.xpm
+            email/email_36.xpm
+            email/email_37.xpm
+            email/email_38.xpm
+            email/email_39.xpm
+            email/email_40.xpm
+            email/email_41.xpm
+            email/email_42.xpm
+            email/email_43.xpm
+            email/email_44.xpm
+            email/email_45.xpm
+            email/email_46.xpm
+            email/email_47.xpm
+# turn envelope around
+-dispose 2 -delay 12
+            email/email_48.xpm
+            email/email_49.xpm
+            email/email_50.xpm
+            email/email_51.xpm
+            email/email_52.xpm
+# pause
+-dispose 2 -delay 80
+            email/email_53.xpm
+# envelope zips off image
+-dispose 2 -delay 2
+            email/email_54.xpm
+            email/email_55.xpm
+            email/email_56.xpm
+            email/email_57.xpm
+            email/email_58.xpm
+            email/email_59.xpm
+            email/email_60.xpm
+            email/email_61.xpm
+            email/email_62.xpm
+            email/email_63.xpm
+            email/email_64.xpm
+# blank image pause
+-dispose 2 -delay 100
+            email/email_65.xpm

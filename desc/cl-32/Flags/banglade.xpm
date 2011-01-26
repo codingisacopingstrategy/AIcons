@@ -1,0 +1,43 @@
+/* XPM */
+static char *banglade_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c SeaGreen",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXX.....XXXXXXXXXXXXXX",
+"XXXXXXXXXXXX.......XXXXXXXXXXXXX",
+"XXXXXXXXXXX.........XXXXXXXXXXXX",
+"XXXXXXXXXX...........XXXXXXXXXXX",
+"XXXXXXXXXX...........XXXXXXXXXXX",
+"XXXXXXXXXX...........XXXXXXXXXXX",
+"XXXXXXXXXX...........XXXXXXXXXXX",
+"XXXXXXXXXXX.........XXXXXXXXXXXX",
+"XXXXXXXXXXXX.......XXXXXXXXXXXXX",
+"XXXXXXXXXXXXX.....XXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

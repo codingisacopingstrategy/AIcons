@@ -1,0 +1,29 @@
+/* XPM */
+static char * smileySad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c gold",
+/* pixels */
+"      .......       ",
+"    ..XXXXXXX..     ",
+"   .XXXXXXXXXXX.    ",
+"  .XXXXXXXXXXXXX.   ",
+" .XXXXXXXXXXXXXXX.  ",
+" .XXX..XXXXX..XXX.  ",
+".XXXX..XXXXX..XXXX. ",
+".XXXX..XXXXX..XXXX. ",
+".XXXXXXXXXXXXXXXXX. ",
+".XXXXXXXXXXXXXXXXX. ",
+".XXXXXXXXXXXXXXXXX. ",
+".XXXXXX.....XXXXXX. ",
+".XXXX..XXXXX..XXXX. ",
+" .XX.XXXXXXXXX.XX.  ",
+" .XXXXXXXXXXXXXXX.  ",
+"  .XXXXXXXXXXXXX.   ",
+"   .XXXXXXXXXXX.    ",
+"    ..XXXXXXX..     ",
+"      .......       ",
+"                    "};

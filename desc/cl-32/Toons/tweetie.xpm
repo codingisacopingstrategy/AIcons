@@ -1,0 +1,43 @@
+/* XPM */
+static char *tweetie_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+"o c yellow",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXX  XX XX XXXXXXXXXXXXXXXXXXXX",
+"XXX XX XX XX XXXXXXXXXXXXXXXXXXX",
+"XXXXXXX XX X XXXXXXXXXXXXXXXXXXX",
+"XXXXXXX          XXXXXXXXXXXXXXX",
+"XXXXXX oo ooooooo XXXXXXXXXXXXXX",
+"XXXX  oooooooooooo XXXXXXXXXXXXX",
+"XXX oo  oooo  ooooo XXXXXXXXXXXX",
+"XXX   oo ooooo oooo XXXXXXX   XX",
+"XX oooooooooooo  ooo XXXX  ooo X",
+"XX o    ooo   oooooo XXX ooooo X",
+"XX ooo X ooo X ooooo XX oooooo X",
+"XX o  XXX o XXX  ooo XX oooooo X",
+"XX o  XXX o XXX  ooo X ooooooo X",
+"XX o   XX o  XX  oo XX ooooooo X",
+"XXX       o      o  X ooooooo  X",
+"XX oooooo  ooooooooo  ooooooo XX",
+"XX ooooooo   ooooooo ooooooo XXX",
+"XXX oooooo   oooooo X oooooo XXX",
+"XXXX   ooo   oooo     ooooo XXXX",
+"XXXXXXX           oooo oo  XXXXX",
+"XXXXXXXXX  ooo oooooooo  XXXXXXX",
+"XXXXXXXXX oooo oooo ooo XXXXXXXX",
+"XXXXXXXX ooooo   ooo ooo XXXXXXX",
+"XXXXXXXX oooooo   oo ooo XXXXXXX",
+"XXXX      ooooooo           XXXX",
+"XXX   X.X. oooo  .X.X.X  .X. XXX",
+"XXX .o. .o.      o.o.o.o.  o XXX",
+"XXX X. .X.X. XXXX X.X.X.X  . XXX",
+"XXXX         XXXXX          XXXX"
+};

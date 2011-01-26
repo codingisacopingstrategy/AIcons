@@ -1,0 +1,461 @@
+
+                       Anthony's X Icon Library
+                     ----------------------------
+                  Contributors and Authorship of Icons
+               ------------------------------------------
+
+  Note, due to the difficulty in keeping comments details inside icons
+when processing them (especially in changing to and from the PbmPlus
+processing programs), authorship and contribution details for icons are
+listed in this file.  To correct any errors, additions, changes to this
+file please mail me.
+
+  My own contributions and creations include (many scanned and edited)
+  the following icons in the ``desc/std'' area :-
+    aborigine, atom, axe, ballet, calculator, catoblepus, dancer,
+    dinosaurs_[1-6], dragon, eagle, eagle2, eyeball, garfield, go,
+    (new)harpie, kraken, kurango, leonardo, lyrch, mandarin, network,
+    nude, oracle, shawnee, shuttle, shuttle2, sisyphus, (new)sphinx, swan,
+    syclla, triangle, vampire, witch.
+  I will not bother listing my own contributions in other areas, though 
+  they are many.
+    NOTE: I do often `cleanup' incoming icons to a small extent, "thing"
+  mail icon being a good example. All the color icons have been also
+  recolored so that all the xpm color icons share the same colortable of
+  about 30 colors.
+
+  Armaghan Hoveydai <armaghan@cit.gu.edu.au> -- System Administrator
+     for the original icons that started this collection. These include in
+     the `std' area :-
+        citadel, citadelroot, cornet, gucis, gucisroot, siren,
+        (the original) sphinx & harpie and   desc/bw-64/thorax.xbm.
+
+  Ashley Roll <aroll@dstc.edu.au>
+     the excellent xbmbrowser program - a must for looking through this
+     icon library, or any icon collection.  and a number of icons in the
+     std section.  The browser is what made this library a practical
+     reality.
+
+  Staff and Students of Griffith University
+     For their many creations and discoveries. Special thanks to
+        Ashley Roll <aroll@dstc.edu.au>
+        Corey Venour <cvenour@cit.gu.edu.au>
+        David Connors <dconnors@cit.gu.edu.au>     
+
+  Steve Kinzler <kinzler@cs.indiana.edu>
+     Steve has made an enormous number of contributions to this library
+     in the 48x48 pixel sizes. These include.
+       * Most of all the black and white 48x48 icons ``desc/bw-48'',
+       * A collection of monochrome 48x48  "Flags of the World"
+         ``desc/bw-48/Flags''
+       * The above set of flags colored in the libraries colors
+         ``desc/cl-48/Flags''
+       * A set of Olympic sports symbols from the 1984 Los Angeles Olympics
+         ``desc/bw-48/Olympic''
+       * A standard sized camel (from my wants list)  ``desc/std/camel.xbm''
+     Most of the above icons are actually part of his own `faces' bitmap
+     collection which is now known as picons. This library is too large
+     and dynamic to be included completely into this library, and is
+     basically designed for a different purpose. You can always download
+     the most recent of these collections from
+	  http://www.cs.indiana.edu/picons/ftp/index.html
+	  ftp://ftp.cs.indiana.edu/faces/picons
+     They include hundreds of logos for Internet domains and Usenet
+     newsgroups and thousands of faces of users.
+
+  Jef Poskanzer
+     the Poskanzer Bitmap Collection and the original pbmplus image
+     converters. After re-discovering the original location of the
+     collection I have included a set of playing cards from his collection
+     (section "appl/cards/" ).  This collection can be found
+         ftp.ee.lbl.gov : /poskbitmaps/
+     See the main README file for the latest PbmPlus filter release ftp site.
+
+  Oliver Trepte  <oliver@fysik4.kth.se>  (http://www.fysik4.kth.se/~oliver)
+     The adminsitrator for the NetPbm package, an update to Jef Poskanzer's
+     PBMPlus filter set. See the main README for lastest release.
+
+  Geoff Adams <gadams@avernus.com>   and
+  Stephen Krauth <phred@avernus.com>
+     Geoff has kindly allowed the inclusion of some of his ``Desktop
+     Textures'' into the library. These colourful background patterns can
+     be found in the sub-section ``desc/cl-bgnd/Textures''. The textures
+     are 128x128 color background images which are a bit large for this
+     collection but the ones included in the collection are ones various
+     users have contributed.
+       NOTE: these images are copyright and can not be included into any
+     package without first contacting Geoff before hand.  He has provided
+     a copyright notice which is included in that directory. The full
+     ``Desktop Textures'' can be downloaded from
+	     ftp.eng.umd.edu : /pub/avernus
+
+  Simon Marlow  <simonm@dcs.glasgow.ac.uk>   and
+  Albert Graef  <ag@muwiinfa.geschichte.uni-mainz.de>
+    A number of icons and ideas for icons from their X File Manager (xfm)
+    program. Almost all the icons take have since been heavy modified.
+
+  Edward Groenendaal <eddyg@cogs.sussex.ac.uk>  and
+  Ramon Santiago  <rjs@pencom.com>  and
+  Lionel Mallet  <Lionel.Mallet@sophia.inria.fr>
+     The authors of X Desktop Manager another file manager program for X
+     windows. A number of icons and ideas for icons in
+     ``appl/desktop/docs''.
+
+  XPaint Source -- David Koblas <koblas@netcom.com>
+     Some drawing icons ``prog/drawing'' from his excellent xpaint
+     program.  I have returned some additions/changes back to him for
+     inclusion into the next release.
+
+  Crossfire Bitmaps
+     for the 24x24 `planview' adventure icons throught the prog sections.
+
+  XTrek font
+    for the initial set of various `rotated' space ships, see prog/space
+    Author unknown.
+
+  Claude Lecommandeur <Claude.Lecommandeur@epfl.ch>   and
+  Ion Cionca <Ion.Cionca@epfl.ch>
+     The initial set of cl-misc icons in the ctwm (Claude Tab Window
+     Manager) sources. These required careful recoloring as the original
+     colors had no order to them.  The icon ``desc/cl-64x38/claude.xpm'',
+     is I assume a icon of the author.  Some of these were donated to ctwm
+     by Ion Cionca. (See mail README file for ftp site)
+       This sub-collection of icons -- converted to the standard color
+     table now form a new separate icon section of the library.
+     ``desc/cl-64x38''
+
+  Dan Reynolds <dan@chpc.utexas.edu>
+     Contributed some more xpm icons of the same odd size (64x38) as
+     Claude Lecommandeur above. The icons contributed have been added to
+     cl-64x38 are: term_convex.xpm, term_cray.xpm, term_ibm.xpm,
+     term_sun.xpm, clock.xpm, and x.xpm.
+
+  Rene (Kiwi) Mueller <kiwi@iis.ethz.ch>    (http://err.ethz.ch/~kiwi)
+     An extremely large contribution of 32x32 color icons. Most of these
+     were also converted for use in the B/W 32x32 collection. These icons
+     obviously came from a collection old msdos icons.
+       Rene also contributed a couple of Gif files containing a set of
+     three dimensional icons, presumably from an amiga. These icons have
+     been heavily edited to create the section ``appl/desktop/3d''. I have
+     done a lot of work on this set, particularly to add the X pixmap
+     transparent color into the icons.  NOTE: I have NOT finished sorting
+     this set.
+
+  Mark Rawling <Mark.Rawling@mel.dit.csiro.au>
+     A few self made icons from a comic strip: gary, robotman and spacecop
+     in both ``desc/bw-64'' and ``desc/cl-64'' sections.
+
+  Kevin Samborn <samborn@mtkgc.COM> 
+     A large collection of converted macintosh icons found in the R5
+     contrib area on ftp.x.org ``SunDesk.tar.Z'', which have been added to
+     the ``desc/cl-32'' section.
+
+  Rei Shinozuka  <rshino@pwcm.com>
+     A couple of nice 64x64 bitmaps: bomb, girders, nut-bolt, radioactive,
+     ribbon, and tabby.
+
+  Arnaud Lehors  <lehors@x.org>
+     The creator and coordinator for the de-facto standard color icon
+     format for X Pixmaps. This is the color format of the library and is
+     a must for any program with is to make use of the library. See the
+     main README file on where you can ftp this library from.
+
+  Xpm Icons Distribution
+     A small collection of xpm icons available almost everywhere.
+     basically this is the X11 core bitmap icons with a small amount
+     of coloring added.  Not very impressive.  Author Unknown.
+
+  Torsten Liermann  <lier@lier1>
+     Color icons for xfig, kermit, flight-sim, and suggestions on coloring
+     in the desk/document area. Specifically in the ``desc/cl-32''
+     section:  chess3, calendar, earth2, debug, cube, rolo, tetris2,
+     xmaze, mr_do, news, gnuinfo, and meter.
+
+  Thomas R. Corbin <tc@hal.xrxedds.com>
+     bw-bgnd/button64.xbm   cl-bgnd/button64.gif, and the color scheme
+     for cl-64/unicorn.xpm.  Thomas later contributed the following
+     cl-64 icons :   bart.xpm, bill_cat.xpm, cat_scratch.xpm,
+     clipboard.xpm, dontpanic.xpm, escherknot.xpm, fireplace.xpm,
+     flowers.xpm, hobbes.xpm, lightning.xpm, tuna.xpm, war.xpm, xmh.xpm
+
+  Xboing sources -- <jck@topcat.catt.citri.edu.au>
+     cl-misc/flag.xpm and posibly others in the future.
+
+  Ray Santiago  <rjs@pencom.com>
+     His collection of Window Icons in "Win3Icons.tar.gz" on ftp.x.org.
+     This represents approximatly a third of the icons in the cl-32 section.
+
+  Rick Richardson <rick@pcroe.digibd.com>
+     An icon collection converted from the Hobbes OS/2 archive at
+     hobbes.nmsu.edu.  These icons are mostly 32x32 and use the 16 colors
+     used by PC windows.  The 32x22 color flags ``desc/flags/cl'' are
+     from this collection.
+
+  WScrawl sources -- Brian Wilson <brianw@apple.com>
+     A couple of brushes and drawing tool symbols placed in prog/drawing
+
+  David Koontz  <dak@mosaic.uncc.edu>
+     A major expansion of the appl/desktop/docs section. Contributed
+     icons in this section are :-
+       MASK.xbm, autocad.xbm, chip.xbm, circuit.xbm, circuit2.xbm,
+       crontab.xbm, dead.xbm, dot_a2.xbm, dot_f.xbm, dot_p.xbm,
+       dot_so.xbm, drawing2.xbm, graph.xbm, html.xbm, matlab.xbm,
+       matrix.xbm, model.xbm, postscript2.xbm, program.xbm, signals.xbm,
+       solids.xbm, zip.xbm.
+     Also contributed :-
+       desc/bw-32/mag_tape.xbm, desc/bw-32/circuit.xbm,
+       desc/bw-64/floppy.xbm, desc/bw-32/documents.xbm
+
+  Karen Strom  <kstrom@hanksville.phast.umass.edu>
+            http://donald.phast.umass.edu/fac/karen.html
+    The greek and sub/super script images for use in mathematical
+    documents.
+
+  Bill Morris  <bmorris@borg24.jsc.nasa.gov>
+      Bill managed to solve one of my icon `wants' with his reference to
+    NASA WWW servers, which allowed me to create "desc/std/shuttle.xbm"
+    from one of the pictures present on that server. My sincere thanks.
+    With future discussion he donated a large contribution of assorted
+    pixmaps, of all types and sizes.  These (just to name a few :-)
+    include:
+    desc/cl-32:  acm.xpm, art.xpm, butterfly2.xpm, cards.xpm,
+      man_green.xpm, man_blue.xpm, chair.xpm, door_run.xpm, dungeon.xpm,
+      dynamite2.xpm, earth5.xpm, film_edit.xpm, film2.xpm,
+      face_graduate.xpm, ico2.xpm, checklist4.xpm, oclock.xpm,
+      penguin.xpm, printer2.xpm, puzzle.xpm, balloon_red.xpm,
+      face_dead.xpm, face_mon_dead.xpm, man.xpm, face_smiley.xpm,
+      snake.xpm, tetris7.xpm, chess2.xpm, clock.xpm, xterm.xpm.
+    desc/cl-48:  ariel.xpm, beauty.xpm, beer_mug.xpm, bill_cat.xpm,
+      bugs.xpm, calvin.xpm, checkbook.xpm, chicken_hawk.xpm,
+      daffy_duck.xpm, donald_duck.xpm, earth.xpm, eye_burning.xpm,
+      flier.xpm, foghorn_leghorn.xpm, handtoface.xpm, hobbes.xpm,
+      jurassic_park.xpm, letters.xpm, mail.xpm, marotr.xpm,
+      mouse_toon.xpm, nootbook.xpm, nootbook_empty.xpm, porky_pig.xpm,
+      portnoy.xpm, printer.xpm, printer_mail.xpm, sailboard.xpm,
+      sarge.xpm, shuttle.xpm, sign.xpm, simpsons_bart.xpm,
+      simpsons_homer.xpm, simpsons_homer_mad.xpm, snake.xpm, tools.xpm,
+      tools2.xpm, ursula.xpm, yield.xpm.
+    desc/cl-64:  iris.xpm.
+    desc/cl-64x38:  book.xpm, database.xpm, floppy.xpm, folders.xpm,
+      network.xpm, wordprocess.xpm, flier.xpm.
+    desc/cl-misc:  shuttle.xpm, bees.xpm, world_map.xpm, xv.xpm,
+      marvin_martian.xpm, pen.xpm, flying_banner.xpm, cheetah.xpm,
+      cheetah2.xpm, dino.xpm, eagle.xpm, earth.xpm, rude_bug.xpm.
+    desc/cl-bgnd:  bee_hive.gif, clouds.gif, bokhara.gif,
+      amstyle.gif, xenon.gif, plaid2.xpm, rainbow.gif, rainbow_rings.gif.
+    I particularly like "desc/cl-misc/shuttle.xpm" which is a colorized
+    version of my own shuttle icons in ``desc/std''
+
+  NCSA Http Daemon sources
+    A small collection of file symbols for use in creating index files.
+    These symbols are particularly useful for client and server programs
+    requiring the display of these indexes or to show directory listings.
+    Examples   Gopher and FTP Clients,  or  WWW servers.
+
+  Kevin Hughes <kevinh@eit.com>
+    A Set of colored file index icons in ``appl/desktop/file-color''
+    which were developed from the above NCSA file index icons.
+    The official distribution is at http://www.eit.com/web/www.icons/
+
+  Greg Bossert <bossert@maurolycus.rutgers.edu>
+      http://www-ns.rutgers.edu/doc-images/
+    The original 40x40 and 20x20 button icons in the ``appl/www'' area.
+    About half of these in this section are his icons including the
+    arrows, homes, gopher, images, etc. and also the basic style and
+    philosophy of these images.
+       I have added more to this set by editing various ``desc/cl-32''
+    icons into the appropriate button style. NOTE: all these icons have
+    been converted to the libraries standard color table.
+
+  Kevin Hughes  <kevinh@eit.com>
+    An expansion of the appl/desktop/file icon symbols. He has released
+    to the network in a shar file.
+
+  XV sources
+    A couple of other file symbols for the appl/desktop/file section.
+
+  XConq sources <????>
+    A number of small 16x16 icons from the bitmaps used within the game.
+
+  Kirk McKusick <mckusick@vangogh.CS.Berkeley.EDU>
+    Permission to have a copy of his copyright BSD daemon icon in the
+    library.  ``desc/cl-64/bsd_daemon.xpm''. Note, the daemon has been
+    recolored to the library color table.
+
+  Edward Groenendaal <eddyg@cogs.sussex.ac.uk>
+    Coordinator for the X desktop Manager (xdtm) program.
+
+  Ove Kalkan <kalkan@ramz.ing.tu-bs.de>
+    Coordinator for Xfilemanager program
+
+
+  Jeanette Foshee <JFoshee1@aol.com>
+    Some of her simpson icons are located in ``desc/cl-32/simpsons''. 
+    I only have a small set her simpson icons due to problems with
+    conversions from macintosh and PC computers.
+
+
+  CMU English Department
+    Which collected and made available to the network a set of clipart
+    files of images collected by students and faculty at this location
+    These images were for use in the Macintosh Hypercard Stack program
+    which contains the following notice.
+
+    "Copyright (c) 1993 by Geoffrey Sauer, with thanks to Bill Atkinson"
+
+
+  Peter Weighill <stuce@csv.warwick.ac.uk>
+    Contributions of the  appl/mail/dog icons and the www fancy lines
+    cross, and ship.  Also for pointing out a number of other WWW line
+    sources.
+
+
+  Clint Chamberlin <cac@mtmis1.mis.semi.harris.com>
+                   http://mtmis1.mis.semi.harris.com/
+    From his own set of WWW buttons ``appl/www/Buttons'' and ``desc/cl-32''
+       electronics, file_trans, runner, server
+
+
+  Zoso <wdconsta@teaching.cs.adelaide.edu.au>
+    Contributed a set of icons available in the above machine in the
+    directory  "/a/eeyore/merapi/users/csh/honours/Xicons" many of these
+    dating back to the old ``SunView'' window system used by Sun on their
+    Sun3s. These include...
+    desc/bw-64: chook, garfield_evil, girl, greed, hydra, nesse, owl,
+                spider, tree, vampire
+    desc/bw-misc: homer, shark
+    desc/bw-bgnd: charlie, charlie2, wave_mesh, wave_tiles, subliminal
+
+
+  Sachiko Oba <sachi@interport.net>    http://www.interport.net/~sachi/
+    furniture and some musical instruments in ``desc/cl-32'' originally
+    WWW buttons and easily converted back :-
+       bookcase, cello, chair_lounge, desk2, drawers, drawers2, easel,
+       flowers, girl_blond, girl_brunette, lamp, lamp2, piano, piano2,
+       showcase, table, table_small, treasure
+     And a couple of lines for WWW.
+       raised, em_spectrum, foot_steps
+     With a few extra
+       prog/cl-bits/foot_* desc/cl-misc/feet.xpm
+
+
+  Ron Kinion  <rkinion@eecs.wsu.edu> http://www.eecs.wsu.edu/~rkinion/
+     desc/cl-misc:  bulldog
+     appl/www/FancyLines:  bulldog, doom, lightbulb, ruler, startrek
+
+
+  Thomas Linder <e8826423@student.tuwien.ac.at>
+                http://stud1.tuwien.ac.at/~e8826423/
+    Creator of the various lemmings icons
+    appl/www/FancyLines:  lemming_*
+    desc/cl-misc:         lemmings_home, lemmings_beachboy
+
+
+  Detlef Schmier <detlef@mfr.dec.com>
+    Special thanks for adding the transparent color `None' where ever
+    possible in the color descriptive icon sections.
+
+
+  Rick Evans <rick@zycor.lgc.com>
+    A HUGE number of background icons he has created during his 5 years
+    as a GUI developer.
+      desc/bw-bgnd (.xbm):   alhambra, arabic_floor, arabic_rect, arabic_rug,
+		    arabic_star, bars, bed_weave, bubbles_orig, cane_fancy,
+		    cane_fancy2, cane_seat, cane_square, cane_true,
+		    cinder_block, moor_star, moor_star2, pakistan_star,
+		    pakistan_weave, prison_walls, scatter, sea_shells,
+	            spain_vine, spain_weave, squiggles, turkish_base,
+                    turkish_flowers, turkish_hex, turkish_weave
+      desc/bw-misc (.xbm):   batman, bicycle, candy_cane, insect, leaves,
+                    motorbike, panda, taj_mahal, weave, wine, wine_glass
+      desc/bw-64 (.xbm):   bugs, crosses, desktop, music, superman
+      desc/bw-32:   tick.xbm
+      appl/mail:    huge_new.xbm,  huge_none.xbm
+      prog/bw_bits (.xbm):   car_bug, car_corvette, car_mercedes,
+		    car_monster, car_mustang, helicopter, plane_B747,
+		    plane_F15, plane_F16, plane_F4skyhawk, plane_cessna,
+		    sea_angelfish, sea_carp, sea_clownfish, sea_dolphin,
+		    sea_jackfish, sea_lobster, sea_octopus, sea_shark,
+		    sea_stingray
+      prog/cl-bits:  resize.xpm
+
+
+  Holger Scheme  <aeglos@valinor.owl.de>
+    The bubble font in ``prog/fonts'' and the design for the gem ball
+    in ``appl/www/Balls'' come from his game XMirrorMagic on ftp.x.org
+
+
+  Other contributions
+    Joe Shelby <stu_jwshelby@vax1.acs.jmu.edu>   miscellaneous icons
+    Daryl Sayers <daryl@stone.oz.au>             miscellaneous icons
+    Keith Cassell <cassell@AUSTIN.LOCKHEED.COM>  Original thing! mail icon
+    Ian Spearing <spearing@sirius.UVic.CA>       prog/bw-bits/animal_bat.xbm
+    Tony Sanders <sanders@bsdi.com>              a couple misc icons
+    Anthony Hall <ahall@csu.edu.au>              the www roman numerals
+    Manolis Lourakis <lourakis@ics.forth.gr>     cl-32/Flags/greece.xpm
+    Zoso <wdconsta@teaching.cs.adelaide.edu.au>  bw-48/woman_evil.xbm
+
+
+  World-Wide-Web Sites around the world.
+    I have collected numerous icons from WWW sites (usually only a couple
+    from each site). This is a collective thanks to all these sites
+    which are just too numerous to be listed. But here are a few major
+    ones.
+      http://www-ns.rutgers.edu/~bossert/          Original `button' icons
+      ftp://ftp.cs.berkeley.edu/ucb/images/HTMLicons/  Collected Icons Unsorted
+      http://www.bsdi.com/icons/                   Includes AIcons ftp server
+      http://www.cis.upenn.edu/~mjd/icons/
+      http://wings.buffalo.edu/contest/            WWW best of Awards
+      http://acs2.bu.edu:3000/Mosaic.Liza/images/
+      http://www.tansu.com.au/Images/              Initial Fancy Lines Set
+      http://bazaar.com/Megadeth/megadeth.html     Barbed Wire line
+      http://www.ics.uci.edu/Icons/
+      http://www.nd.edu/~rkramari/balls%26stuff/
+      http://www.jsc.nasa.gov:80/~mccoy/Icons/
+      http://ion.le.ac.uk/~mar5/icons/
+      http://www.wpi.edu:8080/~trek/images/
+      http://lycos2.cs.cmu.edu/icons/              Spider Icon
+      http://www.charm.net/~cbabil/
+      http://info.cern.ch/hypertext/WWW/Icons/
+      http://white.nosc.mil/images.html
+      http://www.ncsa.uiuc.edu/General/Icons/
+      http://helix.rice.edu/Icons/                 Latex2Html buttons
+      http://www.hmc.edu/icons/
+      http://www.wwa.com/gif/                      earth ball
+      http://akebono.stanford.edu/yahoo/icons/     smiley ball
+      http://w3.eeb.ele.tue.nl/
+      http://melmac.corp.harris.com/images/        colored squares
+      http://colargol.edb.tih.no/~geirme/gizmos/   bits and pieces all over
+      http://reggie.riv.csu.edu.au/abyss/          roman numeral buttons
+      http://www.csu.edu.au/special/conference/graphic/  banner line - ideas
+      http://www.interport.net/~sachi/             bits of cl-32 furniture
+      http://www.cosy.sbg.ac.at/inc/
+      http://www.hal.com/~markg/HaLSoft/html-check/images/  valid_html symbol
+      http://kaos.erin.gov.au/icons/               cl-misc icons
+      http://www.georgetown.edu/acc/icons/         Large shaded balls
+      http://web.cs.city.ac.uk/                    a couple of buttons
+      http://landru.unx.com/SIGS/images/           Miscellaneous icons
+      http://zippy.sonoma.edu:80/~stownsen/        couple of cl-32 icons
+      http://www.eecs.wsu.edu/~rkinion/lines/lines.html     some www lines
+      http://stud1.tuwien.ac.at/~e8826423/Pictures/Rulers/  lemming lines
+      http://www.seed.net.tw/~jenwen/solon.htm     A HUGE collection of icons
+
+    The above sites were suggested to me by... (thanks!)
+      John Farrell <farrell@cs.jcu.edu.au>
+      Joe Orost <joe@sanskrit.ho.att.com>
+      Frerk Meyer <h0178yas@joker.rz.hu-berlin.de>
+      Rene Mueller <kiwi@stud.ee.ethz.ch>
+      Shane Watts <swatts@me.cit.gu.edu.au>
+      R Kramarik <rkramari@lithium.helios.nd.edu>
+      Christophe Babilotte <cbabil@charm.net>
+      Alan Richmond <arichmon@nyx10.cs.du.edu>
+      Kelly Black <black@vidalia.unh.edu>
+      Kim Ryan <kim@cit.gu.edu.au>
+      Greg Jenkins <G.Jenkins@cit.gu.edu.au>
+      Peter Weighill <stuce@csv.warwick.ac.uk>
+
+  Anthony Thyssen - (SysProg @ Griffith University)     anthony@cit.gu.edu.au
+------------------------------------------------------------------------------
+       "[A computer is] like an Old Testament god,
+            with a lot of rules and no mercy."   ---  Joseph Campbell
+------------------------------------------------------------------------------

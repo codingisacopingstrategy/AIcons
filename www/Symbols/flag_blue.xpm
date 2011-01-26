@@ -1,0 +1,26 @@
+/* XPM */
+static char * flag_navy_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c blue",
+"o	c navy",
+/* pixels */
+"                   .",
+"              XXoo..",
+"            XXXXo . ",
+"     XXXXXXXXXXXo . ",
+"  XXXXXXXXXXXXXoo . ",
+" XXXXXXXXXXXXXXo .  ",
+"XooooXXXXXXXXXXo .  ",
+"     ooXXXXXoooo .  ",
+"       oooooo  o .  ",
+"                .   ",
+"                .   ",
+"                .   ",
+"                .   ",
+"               .    ",
+"               .    ",
+"               .    "};

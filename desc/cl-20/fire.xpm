@@ -1,0 +1,36 @@
+/* XPM */
+static char * fire_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 10 1",
+/* colors */
+" 	s None	c None",
+".	c yellow",
+"X	c gold",
+"o	c red",
+"O	c orange",
+"+	c tomato",
+"@	c peru",
+"#	c sienna",
+"$	c firebrick",
+"%	c black",
+/* pixels */
+"          .         ",
+"       .   .        ",
+"       X   .X  o    ",
+"       O  X.X X.    ",
+"    .  +X .oX oX    ",
+"    X+ oOX.Oo+o     ",
+"    O.  OXOO+.X     ",
+"     X+XO.OoX.  .   ",
+"     X++X.XoXXo.X   ",
+"      XO+XX+.OoX    ",
+"      XO+o.+.o.     ",
+"       OO+.+.X      ",
+"      XXOOo+X.      ",
+"  @@   OO.O+o.   ## ",
+" ##o@@o#+.o+X  o#@@ ",
+" ######$OO++XXO#@%  ",
+" %%%%OOXX+$$XOo@@%% ",
+"  %%$o@#X$$OO%$$o## ",
+"  $$@@#$$%%%%%%%% # ",
+"  ##@%%%%    %%%    "};

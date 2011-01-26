@@ -1,0 +1,42 @@
+/* XPM */
+static char *turkey_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"  c black",
+". c red",
+"X c white",
+/* pixels */
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"                                ",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"......XXXX......................",
+".....XX...X.....................",
+"....XX.......X.XX...............",
+"....XX........XX................",
+"....XX........XXXX..............",
+"....XX.......XXX................",
+"....XX....X..X..X...............",
+".....XX..X......................",
+"......XXX.......................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"................................",
+"                                ",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+};

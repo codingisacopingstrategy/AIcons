@@ -1,0 +1,30 @@
+/* XPM */
+static char * gold_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 8 1",
+/* colors */
+" 	s None	c None",
+".	c tan",
+"X	c peru",
+"o	c wheat",
+"O	c lemon chiffon",
+"+	c sienna",
+"@	c white",
+"#	c dark slate grey",
+/* pixels */
+"                ",
+"     ......     ",
+"   ..........   ",
+"  ........XXX.  ",
+"  ...oOo..XX+X  ",
+" ...o@@@..XX++. ",
+" ....@@o.XX++++ ",
+" .......XX+++#+ ",
+" ....XXXX+++##+ ",
+" .XXXXXX+++###+ ",
+" .XXX+++++##### ",
+"  .++++++#####  ",
+"  .++++######.  ",
+"   .+#######.   ",
+"     .++++#     ",
+"                "};

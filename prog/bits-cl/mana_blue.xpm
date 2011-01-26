@@ -1,0 +1,29 @@
+/* XPM */
+static char * mana_blue_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"11 18 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c cyan",
+"o	c dodger blue",
+"O	c blue",
+/* pixels */
+"     ..    ",
+"    .X.    ",
+"   .XX.    ",
+"   .XX.    ",
+"  .oXoX.   ",
+"  .XoXo.   ",
+" .oooooo.  ",
+" .ooooooo. ",
+" .ooooo... ",
+" .ooooo..o.",
+" .oOoOoO.O.",
+".oOoOoOoOo.",
+".OoOOOoOOO.",
+".OOOOOOOOO.",
+" .OOOOOOOO.",
+" .OOOOOOO. ",
+"  ..OOO..  ",
+"    ...    "};

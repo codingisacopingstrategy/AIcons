@@ -1,0 +1,20 @@
+/* XPM */
+static char * owl_3_xpm[] = {
+"36 14 3 1",
+" 	s None	c None",
+".	c black",
+"X	c white",
+"    .............                   ",
+"   .XXXXXXXXXXXXX..........         ",
+"  .XXX.XXXXXXXXXXXXXXXXXXXX.....    ",
+"  .XXX.XXXXXXXXXXXXXXXXXXXXXXXXX..  ",
+"  .XXX...XXX..XXX..XXX..XXXXXXXXXX. ",
+"  .XXX.XX.X.XX.X.XX.X.XX.XXXXXXXXXX.",
+"  .XXX.XX.X.XX.X.XX.X.XX.XXXXXXXXXX.",
+"  .XXX.XX.XX..XXX..XXX..XX.X.X.X.XX.",
+"   .XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX. ",
+"    .XXXX.........................  ",
+"    .XXX.                           ",
+".  .XXX.                            ",
+" ..XX..                             ",
+"  ...                               "};

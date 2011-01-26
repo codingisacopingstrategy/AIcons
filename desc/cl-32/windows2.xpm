@@ -1,0 +1,43 @@
+/* XPM */
+static char *windows2_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c DodgerBlue",
+"X c tomato",
+"o c white",
+/* pixels */
+"                      oooooooooo",
+" XXXXXXXXXXXXXXXXXXXX oooooooooo",
+"                      oooooooooo",
+" oooooooooooooooooooo           ",
+" oooooooooooooooooooo XXXXXXXXX ",
+" ooo..oo.oo.oo..oo.oo           ",
+" oo.oo.o.oo.o.oo.o.oo ooooooooo ",
+" oo.oo.o.oo.o.oo.o.oo ooo.....o ",
+" ooo..oo.oo.oo..oo.oo ....ooo.o ",
+" oooooooooooooooooooo ooo.ooo.o ",
+" oooooooooooooooooooo ooo.....o ",
+" oo                     ooo.ooo ",
+" oo XXXXXXXXXXXXXXXXXXX ooo.ooo ",
+" oo                     ooo.ooo ",
+" oo ooooooooooooooooooo oo...oo ",
+" oo ooooooooooooooooooo o.ooo.o ",
+" oo oo...........oooooo o.ooo.o ",
+"    ooooooooooooooooooo o.ooo.o ",
+"ooo ooo..........oooooo oo...oo ",
+"ooo ooooooooooooooooooo ooooooo ",
+"ooo ooooo.........ooooo         ",
+"ooo ooooooooooooooooooo oooooooo",
+"ooo ooo..........oooooo oooooooo",
+"ooo ooooooooooooooooooo oooooooo",
+"ooo oooo..........ooooo oooooooo",
+"ooo ooooooooooooooooooo oooooooo",
+"ooo ooooooooooooooooooo oooooooo",
+"ooo ooooooooooooooooooo oooooooo",
+"ooo                     oooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

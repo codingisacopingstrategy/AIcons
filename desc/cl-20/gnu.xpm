@@ -1,0 +1,35 @@
+/* XPM */
+static char * gnu_recol_bad_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"21 21 8 1",
+/* colors */
+" 	s None	c None",
+".	c lavender",
+"X	c grey",
+"o	c slate grey",
+"O	c dark slate grey",
+"+	c gainsboro",
+"@	c black",
+"#	c white",
+/* pixels */
+"              .X     ",
+"               oO+   ",
+"   XX      XX   +@o  ",
+"  X@  .oooOooO   ooX ",
+" .@o .@@+#o##+O .OXX ",
+".oo..O@+oXXXoOOOO+O+ ",
+"+Xo.o@oXOoo+oOXooO@+ ",
+"+X+OXoXOOXXXXooooooO.",
+".OX+XoooOOoOoooO.++. ",
+" +oOoXoOOoooOooO+    ",
+"  Xo+oOXoo@oooo@X    ",
+" XOoOOooo+OooooOO    ",
+"   +OoooOXX.oooOO    ",
+"   o@oOooXo#.ooO@.   ",
+"   O@XoOoooooOOOXo   ",
+"   O@OOoOOOOXXooOo   ",
+"   +@@o@Oo@O@oXX@.   ",
+"    o@OoooOo@oooO    ",
+"     o@@OoOoOOO@+    ",
+"     .XO@@@O +X+     ",
+"       .XXX.         "};

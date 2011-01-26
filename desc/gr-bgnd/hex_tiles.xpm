@@ -1,0 +1,42 @@
+/* XPM */
+static char *hex_tiles_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c grey67",
+"a c #656565",
+"b c #868686",
+/* pixels */
+"bbbb``aaaa``bbb`bbbb``aaaa``bbb`",
+"bb``aabbbbaa``bbbb``aabbbbaa``bb",
+"``aabbbbabbbaa````aabbbbabbbaa``",
+"babbbbb`bbbbbbaababbbbb`bbbbbbaa",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbabbbbbbbbbaba`bbabbbbbbbbbaba",
+"`b`bbbbbbbbb`bba`b`bbbbbbbbb`bba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"`bbabbbbbbbbbaba`bbabbbbbbbbbaba",
+"`b`bbbbbbbbb`bba`b`bbbbbbbbb`bba",
+"`bbbbbbbbbbbbbba`bbbbbbbbbbbbbba",
+"``bbbbbbabbbbb`b``bbbbbbabbbbb`b",
+"aa``bbb`bbbb``aaaa``bbb`bbbb``aa",
+"bbaa``bbbb``aabbbbaa``bbbb``aabb",
+"abbbaa````aabbbbabbbaa````aabbbb",
+"bbbbbbaababbbbb`bbbbbbaababbbbb`",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbaba`bbabbbbbbbbbaba`bbabbbb",
+"bbbb`bba`b`bbbbbbbbb`bba`b`bbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"bbbbbaba`bbabbbbbbbbbaba`bbabbbb",
+"bbbb`bba`b`bbbbbbbbb`bba`b`bbbbb",
+"bbbbbbba`bbbbbbbbbbbbbba`bbbbbbb",
+"abbbbb`b``bbbbbbabbbbb`b``bbbbbb"
+};

@@ -1,0 +1,34 @@
+/* XPM */
+static char * previous_group_motif_gr_recol_bad[] = {
+/* width height ncolors chars_per_pixel */
+"107 24 4 1",
+/* colors */
+".	c gainsboro",
+"X	c dark slate grey",
+" 	c None",
+"o	c slate grey",
+/* pixels */
+"..........................................................................................................X",
+".........................................................................................................XX",
+"..                                                                                                       XX",
+"..                                                                                                       XX",
+"..                                                                                                       XX",
+"..                                                                                                       XX",
+"..   oooooo                       o                               ooooo                                  XX",
+"..   o    oo                                                     oo    o                                 XX",
+"..   o     o                                                     o      o                                XX",
+"..   o     o  o o   oooo  o     o o   oooo   o    o  oooo       o          o o   oooo   o    o  o ooo    XX",
+"..   o    oo  oo   o    o  o   o  o   o  o   o    o o    o      o          oo    o  o   o    o  oo  o    XX",
+"..   oooooo   o    o    o  o   o  o  o    o  o    o o           o    oooo  o    o    o  o    o  o    o   XX",
+"..   o        o    oooooo  o   o  o  o    o  o    o ooo         o       o  o    o    o  o    o  o    o   XX",
+"..   o        o    o        o o   o  o    o  o    o    ooo      o       o  o    o    o  o    o  o    o   XX",
+"..   o        o    o        o o   o  o    o  o    o      o       o     oo  o    o    o  o    o  o    o   XX",
+"..   o        o     o   o    o    o   o  o   o   oo o    o       oo   o o  o     o  o   o   oo  oo  o    XX",
+"..   o        o      ooo     o    o   oooo    ooo o  oooo         oooo  o  o     oooo    ooo o  o ooo    XX",
+"..                                                                                              o        XX",
+"..                                                                                              o        XX",
+"..                                                                                              o        XX",
+"..                                                                                                       XX",
+"..                                                                                                       XX",
+".XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"};

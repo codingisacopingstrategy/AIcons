@@ -1,0 +1,22 @@
+/* XPM */
+static char * hand_open_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"19 13 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"         ..        ",
+"        .X.        ",
+"      ..XX.        ",
+"    ..XXX.         ",
+"   .XXXX.........  ",
+"...XXXX.XXXXXXXXX. ",
+"XXXXXX.XX......... ",
+"XXXXXXXXXXXXXXXXXX.",
+"XXXXXXXXX......... ",
+"XXXXXXXXXXXXXXXXX. ",
+"...XXXXX.........  ",
+"   .XXXXXXXXXX.    ",
+"    ..........     "};

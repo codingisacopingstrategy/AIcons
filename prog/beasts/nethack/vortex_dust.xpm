@@ -1,0 +1,26 @@
+/* XPM */
+static char *x11tiles_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+"  c sienna",
+". c peru",
+"X c None s None",
+/* pixels */
+"XXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXX",
+"XXXX.XX....XXXXX",
+"XXX.XX..   .XXXX",
+"XX.XX.    XX.XXX",
+"X. X.  X ..XX.XX",
+"X.  . X    .XXXX",
+"X.    XXXX  .XXX",
+"X.. X XXX X ..XX",
+"XX.  XXXX    .XX",
+"XXX.    X .  .XX",
+"X.XX.. X  .X .XX",
+"XX.XX    .XX.XXX",
+"XXX.   ..XX.XXXX",
+"XXXX....XX.XXXXX",
+"XXXXXXXXXXXXXXXX"
+};

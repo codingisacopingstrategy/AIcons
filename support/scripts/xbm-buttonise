@@ -1,0 +1,109 @@
+#!/bin/sh
+#
+# xbm-buttonise Ximage...
+#
+#    Using the pbmplus package add a 4 pixel boarder as used within
+# my WWW Buttons sub-directories. This can be performed on amy image but
+# generally is done for 32x32 pixmaps to create 40x40 pixel buttons.
+# Any and all transparency (or bitmap white) is converted to grey.
+#
+#  Anthony Thyssen         December 1996       anthony@cit.gu.edu.au
+#
+
+b="                                                                        "
+
+# ----- MAIN LOOP -----
+
+TMP=/tmp/xbmbuttonise$$
+trap "rm -f $TMP $TMP.?; exit 1" 1 2 3 15
+
+# Make the border images
+ppmmake Grey     1 1      > $TMP.G    # grey  color
+ppmmake Lavender 1 1      > $TMP.L    # light color
+ppmmake DarkSlateGrey 1 1 > $TMP.D    # dark  color
+
+for i in "$@"; do
+  echo -n "${b}  buttonising \"$i\""
+  # --- check out this file ---
+  if [ ! -r "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to read icon \"$i\""
+    continue;
+  fi
+  if [ ! -w "$i" ]; then
+    echo -n "${b}"
+    echo >&2 "xbm-buttonise: Unable to write \"$i\""
+    continue;
+  fi
+
+  # --- convert it to PbmPlus ---
+  name="`expr "//$i" : '.*/\([^/]*\)'`"            # remove path from file
+  suffix="`expr "$name" : '.*\.\([^.]*\)$'`"       # extract last suffix
+  name="`expr "$name" : '\(.*\)\.[^.]*$'`"         # remove last suffix
+
+  rm -f $TMP.1
+  case "$suffix" in
+    xbm) # Make white (background) Grey
+        sed 's/unsigned //' "$i" | xbmtopbm |\
+          pnmdepth 255 2>/dev/null | pgmtoppm "grey" > $TMP.1 ;;
+    xpm)
+      if grep 'c  *None' "$i" >/dev/null; then
+        sed "s/c  *[Nn]one/c grey/g" "$i" |
+           x2p.sed | xpmtoppm > $TMP.1
+      else
+        x2p.sed "$i" | xpmtoppm  > $TMP.1
+      fi ;;
+    pbm|pgm|ppm) 
+         cp "$i" $TMP.1 ;;
+    *)   echo -n "${b}"
+         echo >&2 "Unknown suffix for \"$i\""
+         continue
+  esac
+  if [ ! -f $TMP.1 -o ! -s $TMP.1 ]; then
+    echo -n "${b}"
+    echo >&2 "Unable to Convert \"$i\" to Pbmplus"
+    continue
+  fi
+
+  # Add inner border
+  pnmcat -tb $TMP.D $TMP.1        > $TMP.2
+  pnmcat -lr $TMP.D $TMP.2 $TMP.L > $TMP.1
+  pnmcat -tb        $TMP.1 $TMP.L > $TMP.2
+  if [ ! -f $TMP.2 -o ! -s $TMP.2 ]; then
+    echo -n "${b}"
+    echo >&2 "Inner Boarder Add Failed for \"$i\""
+    continue
+  fi
+
+  # Add grey middle boarder
+  pnmcat -lr $TMP.G $TMP.2 $TMP.G > $TMP.1
+  pnmcat -tb $TMP.G $TMP.1 $TMP.G > $TMP.2
+  if [ ! -f $TMP.2 -o ! -s $TMP.2 ]; then
+    echo -n "${b}"
+    echo >&2 "Middle Boarder Add Failed for \"$i\""
+    continue
+  fi
+
+  # Add outer boarder
+  pnmcat -tb $TMP.L $TMP.2        > $TMP.1
+  pnmcat -lr $TMP.L $TMP.1 $TMP.D > $TMP.2
+  pnmcat -tb $TMP.L $TMP.2 $TMP.D > $TMP.1
+  pnmcat -lr $TMP.L $TMP.1 $TMP.D > $TMP.2
+  pnmcat -tb        $TMP.2 $TMP.D > $TMP.1
+  if [ ! -f $TMP.1 -o ! -s $TMP.1 ]; then
+    echo -n "${b}"
+    echo >&2 "Outer Boarder Add Failed for \"$i\""
+    continue
+  fi
+
+  # --- convert back ---
+  case "$suffix" in
+    xbm|xpm)
+      ppmtoxpm $TMP.1 2>/dev/null | xpm-fix -o "$name.xpm" ;;
+    pbm|pgm|ppm) 
+      cp $TMP.1 "$name.ppm" ;;
+  esac
+done
+echo "${b}done"
+
+rm -f $TMP $TMP.?

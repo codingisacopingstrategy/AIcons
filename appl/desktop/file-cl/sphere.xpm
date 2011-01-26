@@ -1,0 +1,36 @@
+/* XPM */
+static char * sphere_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 8 1",
+/* colors */
+" 	c dark slate grey",
+".	s None	c None",
+"X	c white",
+"o	c black",
+"O	c slate grey",
+"+	c tan",
+"@	c tomato",
+"#	c firebrick",
+/* pixels */
+"             .......",
+" XXXXXXXXXX X ......",
+" XXXXXXXXXX XX .....",
+" XXXXXXXXXX XXX ....",
+" XXXXXXXXXX XXXX ...",
+" XXXXXXXXXXo o o o..",
+" XXXXXXXXXXooooooo..",
+" XXXXXooooOOOOOOOo..",
+" XXXXo+++@oOOOOOOo..",
+" XXXo+X+@@#oOOOOOo..",
+" XXo++X++@@#oOOOOo..",
+" XXo@+@+@###oOOOOo..",
+" XXo+@+@@@#ooOOOOo..",
+" XXo@@@@###ooOOXOo..",
+" XXo@@#@##oooOXXOo..",
+" XXXo####o#oOXXXOo..",
+" XXXXo#ooooOXXXXOo..",
+" XXXXXooooOXXXXXOo..",
+" XXXXXXXXXXXXXXXOo..",
+" XXXXXXXXXXXXXXXOo..",
+"  OOOOOOOOOOOOOO o..",
+"..oooooooooooooooo.."};

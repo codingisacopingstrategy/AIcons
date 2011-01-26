@@ -1,0 +1,34 @@
+/* XPM */
+static char * earth_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 12 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c pale green",
+"o	c dodger blue",
+"O	c slate grey",
+"+	c sea green",
+"@	c grey",
+"#	c sky blue",
+"$	c black",
+"%	c green",
+"&	c peru",
+"*	c firebrick",
+/* pixels */
+"     ......     ",
+"   ...XoO++..   ",
+"  .O...@@O+...  ",
+" .+..#oX@@o+... ",
+" .O..X..Xo@.+.. ",
+".o....+..Xo.$...",
+".o....%+@ooo+.$.",
+".o....#@X@o.....",
+".o.o@#@#@o@o$...",
+".oo.o@o@o@o+O...",
+"..O....O@oOO....",
+" .@O.%.+OOOOo.. ",
+" ..%.+&.$OO+... ",
+"  ..&O.O.$O...  ",
+"   ...*$$$...   ",
+"     ......     "};

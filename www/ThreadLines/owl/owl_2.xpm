@@ -1,0 +1,12 @@
+/* XPM */
+static char * owl_2_xpm[] = {
+"11 5 4 1",
+" 	c black",
+".	c gainsboro",
+"X	c grey",
+"o	c slate grey",
+" .. X X .. ",
+".... X ....",
+"....   ....",
+"o..o   o..o",
+" oo  .  oo "};

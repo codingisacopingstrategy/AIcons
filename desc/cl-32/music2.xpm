@@ -1,0 +1,42 @@
+/* XPM */
+static char *music[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 3 1",
+/* colors */
+"` c black",
+"a c cyan",
+"b c white",
+/* pixels */
+"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+"abababababababababababababababab",
+"babababababababababababababababa",
+"abababababababababababababababab",
+"babababababababababababababababa",
+"abababababababababababababababab",
+"babababababababababababababababa",
+"ababababababab``abababababababab",
+"bababababababa```abababababababa",
+"abababa`ababab```bababababababab",
+"bababab`bababa`a``bababababababa",
+"abababa`ababab`ba`ababababababab",
+"bababab`bababa`ab`bababababababa",
+"a````````````````````````````bab",
+"bababab`bab````aba`ababababababa",
+"abababa`ab`````bab`babababababab",
+"b````````````````````````````aba",
+"abab````ab`````bab`babababababab",
+"bab`````bab```baba`ababababababa",
+"a````````````````````````````bab",
+"bab`````bababababa`ababababababa",
+"abab```bababababab`babababababab",
+"b````````````````````````````aba",
+"ababababababababab`ba``````babab",
+"bababababababababa`a````````baba",
+"a````````````````````````````bab",
+"babababababababababab``````ababa",
+"ababababababababababab````ababab",
+"babababababababababababababababa",
+"abababababababababababababababab",
+"babababababababababababababababa",
+"abababababababababababababababab"
+};

@@ -1,0 +1,31 @@
+/* XPM */
+static char * lift_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+"o	c orange",
+"O	c firebrick",
+/* pixels */
+"       ......       ",
+"     ..XXXXXX..     ",
+"   ..XXXXoOXXXX..   ",
+"  .XXXXXXO.XXXXXX.  ",
+"  .XoOXXXXXXXXoOX.  ",
+" .XXO.XXXXXXXXO.XX. ",
+" .XXXX.XXXXXXXXXXX. ",
+".XXXXXX.XXXXXXXXXXX.",
+".XXXXXXX.XXXXXXXXXX.",
+".XoOXXXXX..XXXXXoOX.",
+".XO.XXXXX..XXXXXO.X.",
+".XXXXXXXXXXXXXXXXXX.",
+".XXXXXXXXXXXXXXXXXX.",
+" .XX.XX.X...X...XX. ",
+" .XX.XX.X..XXX.XXX. ",
+"  .X..X.X.XXXX.XX.  ",
+"  .XXXXXXXXXXXXXX.  ",
+"   ..XXXXXXXXXX..   ",
+"     ..XXXXXX..     ",
+"       ......       "};

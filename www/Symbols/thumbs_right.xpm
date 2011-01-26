@@ -1,0 +1,26 @@
+/* XPM */
+static char * thumbs_right_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 4 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c wheat",
+"o	c dodger blue",
+/* pixels */
+"                    ",
+"    ........        ",
+"   .XX.XX.XX.       ",
+"   .XX.XX.XX.       ",
+"   .XX.XX.XX.       ",
+"   .XXXXXXXX.       ",
+"   .XXXXXXXX..      ",
+"   .XXXXXXXXX....   ",
+"   .XXXXXXXXXXXXX.  ",
+"   .XXXXXXXXXXXXX.  ",
+"   ..XXXXXX......   ",
+"    ........        ",
+"     .oooo.         ",
+"     .oooo.         ",
+"     ......         ",
+"                    "};

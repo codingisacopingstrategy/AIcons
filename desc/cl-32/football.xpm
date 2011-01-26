@@ -1,0 +1,43 @@
+/* XPM */
+static char *football_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c red",
+"o c SlateGrey",
+/* pixels */
+"................................",
+"................................",
+".............        ...........",
+"..........   XXXXXXXX   ........",
+"........  XXXXXXXXXXXXXX  ......",
+"....... XXXXXXXXXXXXXXXXXX .....",
+"...... XXXXXXXXXXXXXXXXXXXX ....",
+"..... XXXXXXXXXXXXXXXXXXXXXX ...",
+"..... XXXXXXXXXXXXXXXXXXXXXX ...",
+".... XXXXXXXXXXXXXXXXXXXXXXXX ..",
+".... XXXXXXXXXXXXXXXXXXXXXXXX ..",
+"..       XXXXXXXXXXXXXXXXXXXXX .",
+"..         XXXXXXXXXXXXXXXXXXX .",
+"... XXXX    XXXXXXXXXXXXXXXXXX .",
+"...     X    XXXXXXXXXXXXXXXXX .",
+"........ X   XXXXXXXXXXXXXXXXX .",
+".........     XXXXXXXXXXXXXXXX .",
+".........     XXXXXXXXXXXXXXXX .",
+".........  X    XXXXXXXXXXXXXX .",
+".........  X    XXXXXXXXXXXXXX .",
+"              XXXXXXXXXXXXXXXX .",
+"              XX  XXXXXXXXXXX ..",
+".  .....   X XX oo XXXXXXXXXX ..",
+".  .....   XXXX oo XXXXXXX    ..",
+".  ....  . XXXXX  XXXXXX  ......",
+".  ...   . XXXXXXXXXXXX ........",
+".  ..   ... XXXXXXXXXX .........",
+"       .... XXXXXXXXX ..........",
+"     .......  XXXXX  ...........",
+"..............     .............",
+"................................",
+"................................"
+};

@@ -1,0 +1,35 @@
+/* XPM */
+static char * transfer_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 7 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c white",
+"o	c black",
+"O	c slate grey",
+"+	c tomato",
+"@	c firebrick",
+/* pixels */
+"    .....           ",
+"    .XX.X.          ",
+"    .XX.XX.         ",
+"    .XX.XXX.        ",
+"    .XX.XXXX.       ",
+"    .XXo.o.o.o      ",
+"    .XXooooooo      ",
+"    .XXXXOOOOo      ",
+"    +@XXXXOO@+      ",
+"   ++@XXXXXX@++     ",
+"  +++@XXXXXX@+++    ",
+" ++++++++++++++++   ",
+"++++++++++++++++++  ",
+"@++++++++++++++++@  ",
+" @+++@@@@@@@@+++@   ",
+"  @++@XXXXXX@++@    ",
+"   @+@XXXXXX@+@     ",
+"    @@XXXXXX@@      ",
+"    .XXXXXXXOo      ",
+"    .XXXXXXXOo      ",
+"    ..OOOOOO.o      ",
+"      oooooooo      "};

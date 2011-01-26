@@ -1,0 +1,157 @@
+#!/usr/bin/perl
+#
+# readme2html
+# Convert raw text to something with a little HTML formatting
+#
+# Written by Seth Golub <seth@cs.wustl.edu>
+#            http://www.cs.wustl.edu/~seth/txt2html/
+#
+# Re-written for use within this library.
+#
+$index = "Icons.html";
+#$index = "index.html"  unless -f $index;
+
+die("ERROR: \"README\" not found -- aborting\n")
+    unless -f "README";
+die("ERROR: \"Icons.html\" not found to get logo from -- aborting\n")
+    unless -f $index;
+open(STDIN,  "<README") || die("Unable to write \"README.html\"\n");
+
+#die("ERROR: \"README.html\" already exists -- aborting\n")
+#    if -f "README.html";
+#open(STDOUT, ">README.html") || die("Unable to read \"README\"\n");
+
+$gifmap_dir = '/home/anthony/icons/support/gifmap';
+
+$prefix = `cat $gifmap_dir/readme.pre`;
+$append = `cat $gifmap_dir/readme.post`;
+
+# find first link on the page 
+# EG: the link to the top level directory
+# IE: the number of sets of ".." to perform, and this the directory depth
+open(ICONS, "<$index") || die("Unable to read \"$index\"\n");
+while ( <ICONS> ) {
+   next unless /HREF/;
+   s/^[^"]*"//;
+   s/"[^"]*$//;
+   $top_dir = $_;
+   last;
+}
+close(ICONS);
+
+# ------------------------------
+
+sub htmlise {    # convert special characters to HTML equivilents
+  s/\&/\&amp;/g;
+  s/\</\&lt;/g;
+  s/\>/\&gt;/g;
+}
+
+sub untabify {   # Remove tabs
+  1 while s/\t+/' ' x (length($&) * 8 - length($`) % 8)/e;
+}
+
+
+sub do_line {
+  &htmlise;
+  &untabify;
+  s/\s+$//;
+  if( /^$/ ) {
+    print "<P>\n"   unless $blanklines;
+    $blanklines++;
+  } else {
+    $blanklines=0;
+  }
+  if( /^[-=\s]+$/ ) {
+    print "<HR>\n";
+    $blanklines=0;
+    $_ = "";
+  }
+}
+
+# Read an Clean the top of README file
+$_ = "";
+while ( /^$/ ) {
+  $_ = <STDIN>;
+  s/\s+$//;
+}
+
+&htmlise;
+($directory, @description) = split;
+
+$prefix =~ s/__TOP__/$top_dir/g;
+$prefix =~ s/__TITLE__/AIcons - "$directory"/g;
+$prefix =~ s/__DIRECTORY__/$directory/g;
+$prefix =~ s/__DESCRIPTION__/@description/g;
+
+print $prefix;
+
+#
+# Main part of file
+#
+$blanklines =1;
+MAINLOOP:
+while( <STDIN> ) {
+  &do_line;
+  next  if /^Anthony Thyssen/;
+
+  if ( /^Specific Contribs/ ) {
+    print "<B>  Specific Contribs: </B>\n",
+          "<P>\n",
+          "<BLOCKQUOTE><DL>\n";
+    $descdone = 0;
+    CONTRIBS:
+    while ( <STDIN> ) {
+      &do_line;
+      last CONTRIBS if /^See Also/;
+      last CONTRIBS if /^Anthony Thyssen/;
+      last CONTRIBS if $blankline >= 2;  # abort on a double blank line
+      next CONTRIBS if /^$/;             # no blank lines in ouput block
+      if ( /^     / ) {
+        print $descdone ? '    ' : '<DD>';
+        $descdone = 1;
+      } elsif ( /^  / ) {
+        print "<DT>";
+        $descdone = 0;
+      } 
+      print $_, "\n";
+    };
+    print "</DL></BLOCKQUOTE><P>\n";
+    $blanklines=1;
+    redo MAINLOOP;
+  }
+
+  if ( /^See Also/ ) {
+    print "<B>  See Also: </B>\n",
+          "<BLOCKQUOTE><TABLE>\n";
+    SEEALSO:
+    while ( <STDIN> ) {
+      &do_line;
+      last SEEALSO if /^Specific Contribs/;
+      last SEEALSO if /^Anthony Thyssen/;
+      last SEEALSO if $blankline >= 2;  # abort on a double blank line
+      next SEEALSO if /^$/;             # no blank lines in ouput block
+      if ( /^      / ) {
+        print "$_<BR>\n";
+      } elsif ( /^  / ) {
+        s/^\s+//;
+        local($dir,@desc) = split;
+        print "<TR VALIGN=top><TD><A HREF=\"$top_dir$dir/Icons.html\">\n";
+        printf "%-25s <TD> %s<BR>\n", "    $dir</A>", "@desc";
+      } else {
+        print "<TR><TH COLSPAN=2>\n$_<BR>\n"
+      }
+    }
+    print "</TABLE></BLOCKQUOTE><P>\n";
+    $blanklines=1;
+    redo MAINLOOP;
+  } 
+
+  print $_, "\n";  # normal line
+}
+
+#
+# finish up
+#
+print $append;
+

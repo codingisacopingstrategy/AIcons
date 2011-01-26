@@ -1,0 +1,4 @@
+#define alpha_width 8
+#define alpha_height 7
+static unsigned char alpha_bits[] = {
+ 0x6e,0x2b,0x11,0x11,0x11,0xab,0x66};

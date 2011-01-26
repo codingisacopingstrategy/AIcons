@@ -1,0 +1,25 @@
+/* XPM */
+static char * paw_green_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c green",
+"X	c sea green",
+/* pixels */
+"          ..        ",
+"         ..XX       ",
+"     ..  XXX        ",
+"    ..XX      ..    ",
+"    XXX      ..XX   ",
+"        ...  XXX    ",
+"      ......        ",
+"     .......X  ..   ",
+"    ........X ...X  ",
+"   .........X XXX   ",
+"   .........X       ",
+"   .........X       ",
+"    .......XX       ",
+"     X....XX        ",
+"      XXXXX         ",
+"                    "};

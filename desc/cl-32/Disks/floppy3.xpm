@@ -1,0 +1,43 @@
+/* XPM */
+static char *floppy3_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c grey",
+"X c tomato",
+"o c white",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"ooo                            o",
+"ooo                            o",
+"...  XXXXXXXXXXXXXXXX          o",
+"...  XXXXXXXXXXXXXXXX          o",
+"...  oooooooooooooooo          o",
+"...  oooooooooooooooo        .oo",
+"...  oooooooooooooooo        ooo",
+"...                            o",
+"...                            o",
+"...                            o",
+"...           ....o            o",
+"...          oooo..o           o",
+"...         oooooo..o          o",
+"...         ooooooo.o          o",
+"...         ooooooo.o          o",
+"...          ooooo.o           o",
+"...           ooo.o            o",
+"...                            o",
+"...                            o",
+"...             o.             o",
+"...             o.             o",
+"...             o.             o",
+"...             o.             o",
+"...                            o",
+"...                            o",
+"...           .    .           o",
+".............................ooo",
+".............................ooo",
+".............................ooo",
+"oooooooooooooooooooooooooooooooo"
+};

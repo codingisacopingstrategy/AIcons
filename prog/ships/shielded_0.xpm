@@ -1,0 +1,32 @@
+/* XPM */
+static char * shielded_0_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c dark slate grey",
+"X	c sea green",
+"o	c lime green",
+"O	c red",
+"+	c firebrick",
+/* pixels */
+"                    ",
+"       .     .      ",
+"     .X       X.    ",
+"    ..X .XXX. X..   ",
+"    .oX X   X Xo.   ",
+"   ..oX.XXoXX.Xo..  ",
+"   .XoX .XoX. XoX.  ",
+"  ..XoX .XoX. XoX.. ",
+"  .XXoX .XoX. XoXX. ",
+"  .XXoX..XoX..XoXX. ",
+"  .XXoX.XoooX.XoXX. ",
+"  .XXoooXXXXXoooXX. ",
+"  .XXoXXX...XXXoXX. ",
+"  .XXoX.     .XoXX. ",
+"  ..XoXX.ooo.XXoX.. ",
+"   .XXoooXXXoooXX.  ",
+"   ..XXXXoooXXXX..  ",
+"    .. O+++++O ..   ",
+"      + +OOO+ +     ",
+"                    "};

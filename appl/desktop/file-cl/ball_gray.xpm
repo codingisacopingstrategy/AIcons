@@ -1,0 +1,34 @@
+/* XPM */
+static char * ball_gray_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 22 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c slate grey",
+"o	c white",
+"O	c grey",
+"+	c dark slate grey",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"        ....        ",
+"       .XXXX.       ",
+"      .XoOXX+.      ",
+"     .XOoOXX++.     ",
+"     .XXXXX+++.     ",
+"     .XXXXX++..     ",
+"     .XXXX+++..     ",
+"     .XX++++...     ",
+"      .++++.+.      ",
+"       .+....       ",
+"        ....        ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

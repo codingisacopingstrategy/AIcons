@@ -1,0 +1,28 @@
+/* XPM */
+static char * orange_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"17 17 5 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c sienna",
+"o	c peru",
+"O	c orange",
+/* pixels */
+"       ...       ",
+"      .XXX.      ",
+"     .XXoXX.     ",
+"    .XXoooXX.    ",
+"   .XXooOooXX.   ",
+"  .XXooOOOooXX.  ",
+" .XXooOOOOOooXX. ",
+".XXooOOOOOOOooXX.",
+".XooOOOOOOOOOooX.",
+".XXooOOOOOOOooXX.",
+" .XXooOOOOOooXX. ",
+"  .XXooOOOooXX.  ",
+"   .XXooOooXX.   ",
+"    .XXoooXX.    ",
+"     .XXoXX.     ",
+"      .XXX.      ",
+"       ...       "};

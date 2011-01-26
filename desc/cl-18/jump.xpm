@@ -1,0 +1,30 @@
+/* XPM */
+static char * tb_jump_xpm[] = {
+/* width height ncolors cpp [x_hot y_hot] */
+"18 18 6 1 0 0",
+/* colors */
+" 	s none	m none	c none",
+".	m black	c Sienna",
+"X	s bottomShadowColor	m black	c SlateGrey",
+"o	s iconColor6	m none	c Yellow",
+"O	s iconColor1	m black	c Black",
+"+	s topShadowColor	m none	c Gainsboro",
+/* pixels */
+"                  ",
+"                  ",
+"                  ",
+"                  ",
+"   .............. ",
+"  .XooooooooooooOX",
+" .XoooooooooooooOX",
+".Xo+X+ooooooooooOX",
+".ooXOXooooooooooOX",
+"Xoo+X+ooooooooooOX",
+"XOooooooooooooooOX",
+" XOoooooooooooooOX",
+"  XOOOOOOOOOOOOOOX",
+"   XXXXXXXXXXXXXXX",
+"                  ",
+"                  ",
+"                  ",
+"                  "};

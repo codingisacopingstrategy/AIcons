@@ -1,0 +1,26 @@
+/* XPM */
+static char *cross_red_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 16 3 1",
+/* colors */
+"  c firebrick",
+". c red",
+"X c None",
+/* pixels */
+"XXX..XXXXXXXXXXXXXXX",
+"XX....XXXXXXXXXX.. X",
+"X......XXXXXXX... XX",
+"XX .....XXX....  XXX",
+"XXXX  ........ XXXXX",
+"XXXXXX .....  XXXXXX",
+"XXXXXX...... XXXXXXX",
+"XXXXXX.......XXXXXXX",
+"XXXX.....  ...XXXXXX",
+"XXX..... XX ...XXXXX",
+"XXX.... XXXX  .XXXXX",
+"XX.... XXXXXXX..XXXX",
+"XX... XXXXXXXX ..XXX",
+"XX..  XXXXXXXXX .XXX",
+"XXX  XXXXXXXXXXX..XX",
+"XXXXXXXXXXXXXXXXX XX"
+};

@@ -1,0 +1,13 @@
+/* XPM */
+static char * square_lt_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"6 6 1 1",
+/* colors */
+" 	c dodger blue",
+/* pixels */
+"      ",
+"      ",
+"      ",
+"      ",
+"      ",
+"      "};

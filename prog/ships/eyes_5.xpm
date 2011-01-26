@@ -1,0 +1,28 @@
+/* XPM */
+static char *eyes_5_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 5 1",
+/* colors */
+"  c black",
+". c sienna",
+"X c red",
+"o c tomato",
+"O c None",
+/* pixels */
+"OOOOOOOOOOOOOOOO",
+"OOOOOOXX..OOOOOO",
+"OOOOOX......OOOO",
+"OOOOOX..oo...OOO",
+"OOOOOXoooooo.OOO",
+"OOOOOOooooo o.OO",
+"OOOOOOXoooo oooO",
+"OOOOOOX.ooo o.OO",
+"OOOXOOX..OOo.OOO",
+"OOX.oXoo.OOOOOOO",
+"OX.oooooooOOOOOO",
+"OOX.ooooo o.OOOO",
+"OOO...ooo  o.OOO",
+"OOX....oooooOOOO",
+"OOOOO..O.o.OOOOO",
+"OOOOOOOOO.OOOOOO"
+};

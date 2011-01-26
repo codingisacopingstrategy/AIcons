@@ -1,0 +1,25 @@
+/* XPM */
+static char * byzan_sm_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 3 1",
+/* colors */
+" 	c peru",
+".	c wheat",
+"X	c sienna",
+/* pixels */
+" ...............",
+"X.              ",
+"X. XXXXXXXXXXX  ",
+"X. X......... . ",
+"X. X.        X. ",
+"X. X. XXXXX  X. ",
+"X. X.  ... . X. ",
+"X. X.     X. X. ",
+"X. X XXX  X. X. ",
+"X.  ..... X. X. ",
+"X.        X. X. ",
+"X XXXXXXXXX. X. ",
+" ........... X. ",
+"             X. ",
+"XXXXXXXXXXXXXX X",
+"                "};

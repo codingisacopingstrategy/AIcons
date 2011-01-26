@@ -1,0 +1,21 @@
+# Sample .xloadimagerc file
+path = ~/icons/icons/cl-bgnd
+extension = .niff             # NIFF image
+            .jpg .jpeg        # JPEG image
+            .gif              # CompuServe GIF image
+            .sun .csun .msun  # sun rasterfile
+            .face             # faces project
+            .xwd              # X window dump
+            .xbm .bm          # X bitmap
+            .fax              # G3 FAX
+            .fbm              # fuzzy bitmap
+            .mac              # macpaint
+            .pbm .pgm .ppm    # PBMPLUS
+            .img              # GEM IMG
+            .pcx              # PCX image
+
+# filters to automatically convert from unknown types
+# filter = "uufilter -s" .uu .uue
+
+# allow loadimage to convert X pixmaps
+filter = "xpmtoppm" .xpm .pm .recol .recol_bad

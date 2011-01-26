@@ -1,0 +1,43 @@
+/* XPM */
+static char *plugin_recol_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 32 4 1",
+/* colors */
+"  c black",
+". c white",
+"X c SlateGrey",
+"o c None",
+/* pixels */
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo",
+"oooooooooooooooo               o",
+"ooooooooooooooo                 ",
+"oooooooooooooo ...............  ",
+"oooooooooooooo . . . . . . . .  ",
+"oooooooooooooo ............... o",
+"ooooooooooooooo               oo",
+"oooooooooooooooooooooooooooooooo",
+"ooooooooo             oooooooooo",
+"oooooooo XXXXXXXXXXXXX ooooooooo",
+"ooooooo XXXXXXXXXXX XX ooooooooo",
+"oooooo XXXXXXXXXXX XXX ooooooooo",
+"ooooo XXXXXXXXXXX XXX oooooooooo",
+"oooo XXXXXXXXXXX XXX ooooooooooo",
+"ooo XXXXXXXXXXX XXX oooooooooooo",
+"oo X          XXXX ooooooooooooo",
+"oo XXXXXXXXXXXXXX oooooooooooooo",
+"oo XXXX XX XXXXX ooooooooooooooo",
+"ooo XX XX  XXX  oooooooooooooooo",
+"oooo  XX      oooooooooooooooooo",
+"oooo XX oooooooooooooooooooooooo",
+"ooo XX ooooooooooooooooooooooooo",
+"oo XX oooooooooooooooooooooooooo",
+"oo X ooooooooooooooooooooooooooo",
+"o XX ooooooooooooooooooooooooooo",
+"o X oooooooooooooooooooooooooooo",
+"oo  oooooooooooooooooooooooooooo",
+"oooooooooooooooooooooooooooooooo"
+};

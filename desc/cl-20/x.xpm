@@ -1,0 +1,29 @@
+/* XPM */
+static char * x_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 3 1",
+/* colors */
+" 	s None	c None",
+".	c red",
+"X	c black",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+" .X         ......X ",
+"  .X       ......X  ",
+"   .X     ......X   ",
+"    .X   ......X    ",
+"     .X  .....X     ",
+"      .X  ...X      ",
+"      ..X  .X       ",
+"     ....X  .X      ",
+"    ......X  .X     ",
+"   ......X    .X    ",
+"  ......X      .X   ",
+" ......X        .X  ",
+"......X          .X ",
+"                    ",
+"                    ",
+"                    "};

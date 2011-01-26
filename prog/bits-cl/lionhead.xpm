@@ -1,0 +1,38 @@
+/* XPM */
+static char *lionhead_masked_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"24 24 7 1",
+/* colors */
+"  c black",
+". c firebrick",
+"X c peru",
+"o c sienna",
+"O c slate grey",
+"+ c orange",
+"@ c None",
+/* pixels */
+"@@@@@@@@@@@@@@@@@@@@@@@@",
+"@@@@XXXX@@@@@@@XXXXX@@@@",
+"@@XXXXXXXXXXXXXXXXXXX@@@",
+"@XXXXXXXXXXXXXXXXXXXXX@@",
+"@XXXXX+XXXXXXXXXX+XXXX@@",
+"@XXXX+++X++++++X+++XXX@@",
+"@@XXXX++++++++++++XXXX@@",
+"@@XXXX++++++++++++XXXX@@",
+"@@XXXX++  ++++  ++XXXX@@",
+"@XXXXX+++ ++++ +++XXXXX@",
+"@XXXXX++++++++++++XXXXX@",
+"@XXXXOOOOOooooOOOOOOXXX@",
+"@XXXXX+++O+oo+O+++XXXXX@",
+"@XXXXX+OO++++++OO+XXXXX@",
+"@XXXXXO++++++++++OXXXXX@",
+"@@XXXX+++.++++.+++XXXX@@",
+"@@@XXXX+++....+++XXXXX@@",
+"@@XXXXXX++++++++XXXXXX@@",
+"@@XXXXXXX++++++XXXXXXX@@",
+"@@XXXXXXXXXXXXXXXXXXXX@@",
+"@@@XXXXXXXXXXXXXXXXXX@@@",
+"@@@@XXXXXXXXXXXXXXXX@@@@",
+"@@@@@@@@@XXXXXX@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@@@@@"
+};

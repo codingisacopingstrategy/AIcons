@@ -1,0 +1,42 @@
+/* XPM */
+static char *homebutton_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"90 29 6 1",
+/* colors */
+"` c black",
+"a c green",
+"b c None",
+"c c dark slate grey",
+"d c white",
+"e c blue",
+/* pixels */
+"``````````````````````````````````````````````````````````````````````````````````````````",
+"dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+"ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd`",
+"ddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbbbbb`````bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbb``eeeeee```bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbb`c`eeeeeeee``bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbb`cae`eeeeeeeaa`bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbb``aa`aeee``e`aaa`bbbbbbbbbbeeeeebbbeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbb`e`aa````eaae``aa``bbbbbbbbbbeeebbbbbeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbb`eca`a`aaea`e`eaaa`bbbbbbbbbbeeebbbbbeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbb``aa``aaee`eee`a```bbbbbbbbbbeeebbbbbeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddb```aaaaa`eeeeeaaa````bbbbbbbbbeeebbbbbeeebbbbeeeebbbeeeebeeebbeeebbbbbeeeebbbbbbbbbbb``",
+"ddb`e`aaaaeeeeeee`a```a`bbbbbbbbbeeebbbbbeeebbbeebbeebbbeeeebeeeebeeebbbeeebeebbbbbbbbbb``",
+"ddb`ee``eaeeeeeeeee`aaa`bbbbbbbbbeeeeeeeeeeebbeeebbeeebbeeebbeeebbeeebbeeebbeebbbbbbbbbb``",
+"ddb`eee`e`eeeeeeeeaaaaa`bbbbbbbbbeeebbbbbeeebbeeebbeeebbeeebbeeebbeeebbeeeeeeebbbbbbbbbb``",
+"ddb`eee`eeeeeeeeeaaaaa``bbbbbbbbbeeebbbbbeeebbeeebbeeebbeeebbeeebbeeebbeeebbbbbbbbbbbbbb``",
+"ddbb`ee````eeeeeeaaaaa`bbbbbbbbbbeeebbbbbeeebbeeebbeeebbeeebbeeebbeeebbeeebbbbbbbbbbbbbb``",
+"ddbb`eeaaaa`eeeeeeaaaa`bbbbbbbbbbeeebbbbbeeebbeeebbeeebbeeebbeeebbeeebbeeebbbbbbbbbbbbbb``",
+"ddbb`eeaaaaa`eeeeee````bbbbbbbbbbeeebbbbbeeebbbeebbeebbbeeebbeeebbeeebbbeeebeebbbbbbbbbb``",
+"ddbbb`e`aaaaaaeeeee`a`bbbbbbbbbbeeeeebbeeeeeebbbeeeebbbeeeeebeeeebeeeebbbeeeebbbbbbbbbbb``",
+"ddbbbb`ecaaaa`eeee`a`bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbb``cc`eeeeee``bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbb```eeeeee``bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbbb`````````bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"ddbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb``",
+"dd````````````````````````````````````````````````````````````````````````````````````````",
+"d`````````````````````````````````````````````````````````````````````````````````````````"
+};

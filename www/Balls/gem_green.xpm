@@ -1,0 +1,29 @@
+/* XPM */
+static char * gem_ball_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"16 16 7 1",
+/* colors */
+" 	s None	c None",
+"X	c black",
+".	c dark slate grey",
+"o	c pale green",
+"@	c green",
+"+	c lime green",
+"O	c sea green",
+/* pixels */
+"      ....      ",
+"    ..XXXX..    ",
+"  ..XXXXXXXX..  ",
+"  .XXXXXXXXXX.  ",
+" .XXXXXXXXXoXX. ",
+" .XXXXXXXXXXXX. ",
+".XX..XXXXXXXXXX.",
+".X.OOO.XXXXXXXX.",
+"..O+++O.XXXXXXX.",
+".O++@++O.XXXXXX.",
+" O+@o@++OXXXXX. ",
+" .+@oo@+O.XXXX. ",
+"  O+@@++O.XXX.  ",
+"  .O+++O.XXX..  ",
+"    .OO.XX..    ",
+"      ....      "};

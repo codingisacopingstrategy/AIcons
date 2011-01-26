@@ -1,0 +1,37 @@
+/* XPM */
+static char * bookShelf_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 11 1",
+/* colors */
+" 	s None	c None",
+".	c tomato",
+"X	c orange",
+"o	c navy",
+"O	c blue",
+"+	c light sea green",
+"@	c sea green",
+"#	c cyan",
+"$	c lime green",
+"%	c firebrick",
+"&	c sienna",
+/* pixels */
+"          ....      ",
+"          .XX.      ",
+"          .XX.      ",
+"      oooo.XX.      ",
+"      oOOo.XX.      ",
+"  ++++oOOo.XX.@@@@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  +##+oOOo.XX.@$$@  ",
+"  ++++oooo....@@@@  ",
+"%%%%%%%%%%%%%%%%%%%%",
+"%&&&&&&&&&&&&&&&&&&%",
+"%%%%%%%%%%%%%%%%%%%%",
+"  %&%          %&%  ",
+"  %%%          %%%  "};

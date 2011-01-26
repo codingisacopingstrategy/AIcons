@@ -1,0 +1,18 @@
+#!/bin/sh -
+#
+#   This uses the pbmplus package to convert ilbm format to xbm
+#
+for i in "$@" ; do
+  if [ -f $i ]; then
+    echo "converting \"$i\""
+    j=`basename $i .ilbm`
+    j=`basename $j .iff`
+    ilbmtoppm $i 2>/dev/null |
+      ppmtopgm |   # pnmcrop |
+      pgmtopbm -threshold |
+      pbmtoxbm |
+        sed 's/static  *char/static unsigned char/;
+             s/noname\([[_]\)/'"$name"'\1/' > "$j".xbm ;;
+
+  fi
+done

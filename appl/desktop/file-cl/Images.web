@@ -1,0 +1,200 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- File Index Icons</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#66CDAA"
+      LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+<H1></NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- File Index Icons
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top"
+  ><IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0
+  >Back to Image Index</A><BR>
+<A HREF="./"
+  ><IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0
+  ><B>Directory Indexes</B></A> to download individual images. <BR>
+<A HREF="http://ftp.cit.gu.edu.au/pub/AIcons/WWW_Images_Icons.tar.gz"
+  ><IMG SRC="../blue_grab.gif" WIDTH=24 HEIGHT=24
+         ALIGN="absmiddle" ALT="" BORDER=0
+  ><B>Download a GZip'ed Tar Archive of these File Icons</B></A> <BR>
+<P>
+
+This directory contains a number of file symbols which can be used by
+applications for directory listings. The symbols can be used in many
+applications either directly or programmed in. <P>
+
+These symbols can be used directly by the NCSA or Apache WWW server.  For
+information on this look at <A HREF="HTTPD.srm.conf"
+><B>HTTPD.srm.conf</B></A> which contains an example `icon' configuration
+for the servers config file. <P>
+
+These images were developed from a set of icons for WWW servers by Kevin
+Hughes &lt;<A HREF="mailto:kevinh@eit.com">kevinh@eit.com</A>&gt; in his <A
+HREF="http://www.eit.com/goodies/www.icons/">Public Domain Icons</A>. This I
+believe are now distributed as part of the standard apache web server
+installation. <P>
+
+<HR>
+
+<H3>Special</H3>
+<IMG SRC="blank.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="blank.gif"         > Blank </A><BR>
+<IMG SRC="back.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="back.gif"          > Back </A><BR>
+<IMG SRC="forward.gif"       WIDTH=20 HEIGHT=22>
+<A  HREF="forward.gif"       > Forward </A><BR>
+
+<H3>Directory</H3>
+<IMG SRC="dir.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="dir.gif"           > Dir </A><BR>
+<IMG SRC="dirup.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="dirup.gif"         > Dir Up </A><BR>
+<IMG SRC="dir_sec.gif"       WIDTH=20 HEIGHT=22>
+<A  HREF="dir_sec.gif"       > Dir Secured </A><BR>
+<IMG SRC="dir_open.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="dir_open.gif"      > Dir Open </A><BR>
+
+<H3>File Symbols</H3>
+<IMG SRC="file.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="file.gif"          > File </A><BR>
+<IMG SRC="file_red.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="file_red.gif"      > File Red </A><BR>
+<IMG SRC="file_sec.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="file_sec.gif"      > File Secured </A><BR>
+<IMG SRC="a.gif"             WIDTH=20 HEIGHT=22>
+<A  HREF="a.gif"             > A </A><BR>
+<IMG SRC="alert.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="alert.gif"         > Alert </A><BR>
+<IMG SRC="alert_black.gif"   WIDTH=20 HEIGHT=22>
+<A  HREF="alert_black.gif"   > Alert Black </A><BR>
+<IMG SRC="binary.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="binary.gif"        > Binary </A><BR>
+<IMG SRC="binhex.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="binhex.gif"        > BinHex </A><BR>
+<IMG SRC="bomb.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="bomb.gif"          > Bomb </A>
+<IMG SRC="box.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="box.gif"           > Box </A>
+<IMG SRC="box2.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="box2.gif"          > Box 2 </A><BR>
+<IMG SRC="broken.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="broken.gif"        > Broken </A><BR>
+<IMG SRC="c.gif"             WIDTH=20 HEIGHT=22>
+<A  HREF="c.gif"             > C </A><BR>
+<IMG SRC="compressed.gif"    WIDTH=20 HEIGHT=22>
+<A  HREF="compressed.gif"    > Compressed </A><BR>
+<IMG SRC="dvi.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="dvi.gif"           > Dvi </A><BR>
+<IMG SRC="f.gif"             WIDTH=20 HEIGHT=22>
+<A  HREF="f.gif"             > F </A><BR>
+<IMG SRC="image.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="image.gif"         > Image </A>
+<IMG SRC="image2.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="image2.gif"        > Image2 </A>
+<IMG SRC="image_draw.gif"    WIDTH=20 HEIGHT=22>
+<A  HREF="image_draw.gif"    > Image Draw </A><BR>
+<IMG SRC="index.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="index.gif"         > Index </A><BR>
+<IMG SRC="layout.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="layout.gif"        > Layout </A><BR>
+<IMG SRC="p.gif"             WIDTH=20 HEIGHT=22>
+<A  HREF="p.gif"             > P </A><BR>
+<IMG SRC="patch.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="patch.gif"         > Patch </A><BR>
+<IMG SRC="pdf.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="pdf.gif"           > Pdf (Acroread) </A>
+<IMG SRC="pdf2.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="pdf2.gif"          > Pdf2 </A><BR>
+<IMG SRC="portal.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="portal.gif"        > Portal </A><BR>
+<IMG SRC="ps.gif"            WIDTH=20 HEIGHT=22>
+<A  HREF="ps.gif"            > Ps </A><BR>
+<IMG SRC="quill.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="quill.gif"         > Quill </A><BR>
+<IMG SRC="screw.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="screw.gif"         > Screw </A>
+<IMG SRC="screw2.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="screw2.gif"        > Screw2 </A><BR>
+<IMG SRC="script.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="script.gif"        > Script </A><BR>
+<IMG SRC="sphere.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="sphere.gif"        > Sphere </A>
+<IMG SRC="sphere2.gif"       WIDTH=20 HEIGHT=22>
+<A  HREF="sphere2.gif"       > Sphere 2 </A><BR>
+<IMG SRC="tar.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="tar.gif"           > Tar </A><BR>
+<IMG SRC="tex.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="tex.gif"           > Tex </A><BR>
+<IMG SRC="text.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="text.gif"          > Text </A><BR>
+<IMG SRC="transfer.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="transfer.gif"      > Transfer </A><BR>
+<IMG SRC="unknown.gif"       WIDTH=20 HEIGHT=22>
+<A  HREF="unknown.gif"       > Unknown </A><BR>
+<IMG SRC="uu.gif"            WIDTH=20 HEIGHT=22>
+<A  HREF="uu.gif"            > UU </A><BR>
+<IMG SRC="xbm.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="xbm.gif"           > X Bitmap </A><BR>
+<IMG SRC="xpm.gif"           WIDTH=20 HEIGHT=22>
+<A  HREF="xpm.gif"           > X Pixmap </A><BR>
+
+<H3>Applications</H3>
+<IMG SRC="computer.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="computer.gif"      > Computer </A>
+<IMG SRC="computer_blue.gif" WIDTH=20 HEIGHT=22>
+<A  HREF="computer_blue.gif" > Computer Blue </A><BR>
+<IMG SRC="movie.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="movie.gif"         > Movie </A><BR>
+<IMG SRC="sound.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="sound.gif"         > Sound </A>
+<IMG SRC="sound2.gif"        WIDTH=20 HEIGHT=22>
+<A  HREF="sound2.gif"        > Sound 2 </A><BR>
+
+<H3>Miscellaneous</H3>
+<IMG SRC="ball_gray.gif"     WIDTH=20 HEIGHT=22>
+<A  HREF="ball_gray.gif"     > Ball Gray </A><BR>
+<IMG SRC="ball_red.gif"      WIDTH=20 HEIGHT=22>
+<A  HREF="ball_red.gif"      > Ball Red </A><BR>
+<IMG SRC="burst.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="burst.gif"         > Burst </A><BR>
+<IMG SRC="continued.gif"     WIDTH=20 HEIGHT=22>
+<A  HREF="continued.gif"     > Continued </A><BR>
+<IMG SRC="down.gif"          WIDTH=20 HEIGHT=22>
+<A  HREF="down.gif"          > Down </A><BR>
+<IMG SRC="hand_right.gif"    WIDTH=20 HEIGHT=22>
+<A  HREF="hand_right.gif"    > Hand Right </A><BR>
+<IMG SRC="hand_up.gif"       WIDTH=20 HEIGHT=22>
+<A  HREF="hand_up.gif"       > Hand Up </A><BR>
+<IMG SRC="up.gif"            WIDTH=20 HEIGHT=22>
+<A  HREF="up.gif"            > Up </A><BR>
+<IMG SRC="world.gif"         WIDTH=20 HEIGHT=22>
+<A  HREF="world.gif"         > World </A><BR>
+
+<IMG SRC="timer_0.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_1.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_2.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_3.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_4.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_5.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_6.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_7.gif"       WIDTH=20 HEIGHT=22>
+<IMG SRC="timer_8.gif"       WIDTH=20 HEIGHT=22>  Timer 0 - 8 <BR>
+
+<P>
+<HR>
+<ADDRESS> 
+Dated: 5 July 1995 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html">Anthony Thyssen</A>,
+&lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml">
+anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY>

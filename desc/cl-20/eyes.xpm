@@ -1,0 +1,32 @@
+/* XPM */
+static char * eyes_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c green",
+"o	c lime green",
+"O	c slate grey",
+"+	c white",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"    ....            ",
+"   .XXXo.  ....     ",
+"  .XXXXoo..XXXo.    ",
+"  .XXXooo.XXXXoo.   ",
+"  .XXXXXOXXXXoooo.  ",
+"  .OOOOO.OOXXXXXo.  ",
+"  .++..+.++OOOOXX.  ",
+"   .++++.++..++OO.  ",
+"    .... .++++++.   ",
+"          .++++.    ",
+"           ....     ",
+"                    ",
+"                    ",
+"                    ",
+"                    ",
+"                    "};

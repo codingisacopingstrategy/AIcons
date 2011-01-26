@@ -1,0 +1,22 @@
+/* XPM */
+static char * b_orange_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"9 9 7 1",
+/* colors */
+" 	c black",
+".	c lemon chiffon",
+"X	c yellow",
+"o	c gold",
+"O	c orange",
+"+	c peru",
+"@	c sienna",
+/* pixels */
+"         ",
+" ..XXXXX ",
+" .XXXooo ",
+" XXooooO ",
+" XoooOOO ",
+" ooOOOO+ ",
+" OOOO++@ ",
+" OO++@@@ ",
+"         "};

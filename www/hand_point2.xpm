@@ -1,0 +1,25 @@
+/* XPM */
+static char * hand_point2_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"32 16 3 1",
+/* colors */
+" 	s None	c None",
+".	c black",
+"X	c white",
+/* pixels */
+"           ...........          ",
+"...      ..XXXXXXXXXXX.....     ",
+"...... ..XXXXXXXXXX.XXXXXXX.... ",
+"...XX..XXXXXXXXXXXXX..XXXXXXXXX.",
+"...XX.XXXXXXXXXXXXXXXX...XXXXXX.",
+"...XX.XXXXXXXX.XXXXXXXXX....... ",
+"...XX.XXXXXXXXX....XXXXX.       ",
+"...XX.XXXXXXXXX.XXX.....        ",
+"...XX.XXXXXXXXX.XXXXXXX.        ",
+"...XX.XXXXXXXX.X..XXXXX.        ",
+"...XX.XXXXXXXX.XXX.....         ",
+"...XX.XXXXXXX.X..XXXX.          ",
+"...XX.XXXXXXX.XXX....           ",
+"...XX..XXXXXXX..XXXX.           ",
+"...... ...XXXXXX....            ",
+"...       ......                "};

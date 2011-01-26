@@ -1,0 +1,77 @@
+<PRE><!-- vim:set filetype=html:    Set vim syntax highlighting -->
+WARNING: This file is designed for use in Anthony's WWW Images Library
+     http://www.cit.gu.edu.au/images/Images.html
+If you see this message then you are using it in the source for that library
+in  Anthony's Icon Library, in which case it will NOT work as expected.
+</PRE>
+<HTML><HEAD>
+<TITLE>Anthony's WWW Images -- Latex-to-Html</TITLE>
+</HEAD><BODY BGCOLOR="#66CDAA">
+<H1><NOBR>
+    <IMG SRC="../Animation/aicons_anim.gif" ALT="[AIcons Symbol]"
+         ALIGN="middle" WIDTH=56 HEIGHT=50>
+    Anthony's WWW Images -- Latex-to-Html
+</NOBR></H1>
+
+<A HREF="../Images.html" TARGET="_top">
+  <IMG SRC="../blue_up.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  Back to Image Index</A><BR>
+<A HREF="./">
+  <IMG SRC="../blue_dir.gif" WIDTH=24 HEIGHT=24
+       ALIGN="absmiddle" ALT="" BORDER=0>
+  <B>Directory Indexes</B></A> to download individual images. <BR>
+<P>
+
+These icons are used by the ``latex2html'' converter program. The image
+names are the same as required by the configuration file. All that is
+necessary to configure your latex2html is to modify the variable
+<CODE>$ICONSERVER</CODE> in the file <CODE>"latex2html.config"</CODE>
+with the URL of your own copy of this directory.  <P>
+
+For Example (change to your server, do not use this example as is):
+<BLOCKQUOTE><PRE>
+$ICONSERVER = 'http://www.cit.gu.edu.au/images/LatexHtml/';
+</PRE></BLOCKQUOTE>
+
+<HR>
+<H2>Latex-to-Html Buttons</H2>
+
+<IMG SRC=latex2html.gif  WIDTH=84 HEIGHT=17>
+<IMG SRC=contents.gif    WIDTH=63 HEIGHT=16>
+<BR>
+<IMG SRC=cross_ref_motif.gif  WIDTH=13 HEIGHT=13>
+<IMG SRC=foot_motif.gif       WIDTH=15 HEIGHT=15>
+<BR>
+<IMG SRC=contents_motif.gif  WIDTH=65 HEIGHT=24>
+<IMG SRC=image_motif.gif     WIDTH=48 HEIGHT=24>
+<IMG SRC=index_motif.gif     WIDTH=43 HEIGHT=24>
+<BR>
+<IMG SRC=next_group_motif.gif        WIDTH=81  HEIGHT=24>
+<IMG SRC=next_group_motif_gr.gif     WIDTH=81  HEIGHT=24>
+<IMG SRC=next_motif.gif              WIDTH=37  HEIGHT=24>
+<IMG SRC=next_motif_gr.gif           WIDTH=37  HEIGHT=24>
+<IMG SRC=previous_group_motif.gif    WIDTH=107 HEIGHT=24>
+<IMG SRC=previous_group_motif_gr.gif WIDTH=107 HEIGHT=24>
+<IMG SRC=previous_motif.gif          WIDTH=63  HEIGHT=24>
+<IMG SRC=previous_motif_gr.gif       WIDTH=63  HEIGHT=24>
+<IMG SRC=up_motif.gif                WIDTH=26  HEIGHT=24>
+<IMG SRC=up_motif_gr.gif             WIDTH=26  HEIGHT=24>
+<BR>
+<IMG SRC=change_begin.gif  WIDTH=104 HEIGHT=24><BR>
+<IMG SRC=change_delete.gif WIDTH=109 HEIGHT=24><BR>
+<IMG SRC=change_end.gif    WIDTH=104 HEIGHT=24><BR>
+<BR>
+--&gt;<IMG SRC=/images/LatexHtml/invis_anchor.gif WIDTH=1 HEIGHT=1>&lt;--
+ invis_anchor
+<BR>
+
+<P>
+<HR>
+<ADDRESS>
+Dated: 8 May 1995 <BR>
+<A HREF="http://www.cit.gu.edu.au/~anthony/anthony.html" TARGET="_top"
+    >Anthony Thyssen</A>,
+    &lt;<A HREF="http://www.cit.gu.edu.au/~anthony/mail.shtml" TARGET="_top"
+    >anthony@cit.gu.edu.au</A>&gt;
+</ADDRESS></BODY></HTML>

@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# Run gifmap to update the Aicons indexing
+#
+# Other options...
+#    --forcehtml     Force regeneration of html file
+#    --forcemontage  Force montage Image Map regeneration
+#
+# NOTE: the inital global "gifmaprc" is set internally in the gifmap
+# executable, this is currently located at the same location as that
+# executable.
+#
+cd /home/anthony
+exec icons/support/gifmap/gifmap \
+        -src icons -recurse ${1+"$@"}
+

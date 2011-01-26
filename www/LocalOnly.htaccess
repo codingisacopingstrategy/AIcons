@@ -1,0 +1,63 @@
+#
+#  .htaccess file for Apatche Servers (version 1.2 and greater)
+#
+# These configuration directives will allow local users to use the
+# Example Images Pages.  But will redirect non-local users to the
+# External (no preview) page "Images_Ext.html".
+# 
+# This allows you to let local users use the preview index pages showing
+# the images provided by this collection. However....
+# 
+# External users can still see the individual images (like when they are
+# using in documents all over your web server), and look at them one at
+# a time but are NOT allowed to use the preview page. They are
+# redirected instead to the "Images_Ext.html" file which allows them to
+# preview the images on some other server.
+#
+# INSTALLATION:
+#   1/ Copy this file as ".htaccess" in your images directory
+#   2/ Edit this file and replace ".your.domain"  below with the the
+#      domain of local users allowed to access your example images pages.
+#   3/ Create a Symbolic Link called "Images_Ext.html" in your top level
+#      document directory ("FollowSymLinks" Option must be enabled).
+#   OR Copy the "Images_Ext.html" to that directory
+#   OR Edit the last server directive in this file (See below).
+#
+#
+# WARNING: The Following htaccess options are only valid for
+#          apatche servers version 1.2 and greater.
+#
+# ---------------------------------------------------------------------
+# Allow Directory listings and Symbolic Links but no SSI or CGI
+Options Indexes FollowSymLinks
+
+# Images are avaliable to everyone in the world
+order allow,deny
+allow from all
+
+# But to non-domain users deny access to example image pages
+<Files /*/Images*.html>
+order deny,allow
+deny from all
+allow from  .your.domain
+allow from localhost
+</Files>
+
+# External (No Examples) Images file, must be accessable
+<Files /*/Images_Ext.html>
+order allow,deny
+allow from all
+</Files>
+
+# Direct ``access denied'' errors to this sub-directory.
+# The following command can either be..
+#   1/ Left as is, but creating a symbolic link in the web servers
+#      document root to this file in this directory.
+#      Requires the ``FollowSymLinks'' Option  to be allowed in the
+#      servers document root directory.
+#   2/ Set this to the URI of the real document in this directory.
+#      Which should be accable by the world due to the previous 
+#      server configuration directive.
+#
+ErrorDocument 403 /Images_Ext.html
+

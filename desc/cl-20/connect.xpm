@@ -1,0 +1,32 @@
+/* XPM */
+static char * connect_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c slate grey",
+"X	c white",
+"o	c dark slate grey",
+"O	c sienna",
+"+	c yellow",
+/* pixels */
+"              .Xo   ",
+"              .Xo   ",
+"              .Xo   ",
+"              .Xo   ",
+"              .Xo   ",
+"         ....OOOOo..",
+"        .XXXXOX+OoXX",
+"        .XoooOX+Oooo",
+"        .Xo  ooooo  ",
+"        .Xo         ",
+"        .Xo         ",
+"  ooooo .Xo         ",
+"..OX+Oo..Xo         ",
+"XXOX+OoXXXo         ",
+"ooOOOOoooo          ",
+"   .Xo              ",
+"   .Xo              ",
+"   .Xo              ",
+"   .Xo              ",
+"   .Xo              "};

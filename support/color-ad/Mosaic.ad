@@ -1,0 +1,38 @@
+
+# Foreground colors
+Mosaic*Foreground:		 	black
+Mosaic*XmScrollBar*Foreground:          wheat
+Mosaic*XmLabel*Foreground:              navy blue
+Mosaic*XmToggleButton*Foreground:       black
+Mosaic*XmPushButton*Foreground:         navy blue
+# not used
+Mosaic*logo*Foreground:                 tan
+
+# background colors
+Mosaic*Background:                      wheat
+Mosaic*XmList*Background:     		wheat
+Mosaic*XmText*Background:	        wheat
+Mosaic*XmSelectionBox*Background: 	wheat
+Mosaic*XmMessageBox*Background:	 	wheat
+Mosaic*XmTextField*Background: 		tan
+
+# hightlighted edge of widgets
+Mosaic*TopShadowColor:                  lemon chiffon
+Mosaic*XmList*TopShadowColor:           lemon chiffon
+Mosaic*XmText*TopShadowColor:           lemon chiffon
+Mosaic*XmSelectionBox*TopShadowColor:   lemon chiffon
+Mosaic*XmMessageBox*TopShadowColor:     lemon chiffon
+ 
+# trough of scrollbar (dark color)
+Mosaic*TroughColor:                     sienna
+# selection color (in forms) (dark color)
+Mosaic*SelectColor:			sea green
+# unknown ???? but should be wheat
+Mosaic*HighlightColor:		 	purple
+
+# Anchor colors
+Mosaic*visitedAnchorColor:              navy blue
+Mosaic*anchorColor:                     slate blue
+Mosaic*activeAnchorFG:                  red
+Mosaic*activeAnchorBG:                  wheat
+

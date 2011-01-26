@@ -1,0 +1,31 @@
+/* XPM */
+static char * docs_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 5 1",
+/* colors */
+" 	c black",
+".	s None	c None",
+"X	c cyan",
+"o	c light sea green",
+"O	c white",
+/* pixels */
+"      ..............",
+" XXXo  ..      .....",
+" Xooo O . XXXo  ....",
+" Xooo OO  Xooo O ...",
+" Xooo     Xooo OO ..",
+" Xooooooo Xooo     .",
+" Xoo      Xooooooo .",
+" Xoo XXXX  ooooooo .",
+" Xoo Xooo O oooooo .",
+" Xoo Xooo OO ooooo .",
+" Xoo Xooo     oooo .",
+" ooo Xooooooo oooo .",
+"     Xooooooo oooo .",
+".... Xooooooo      .",
+".... Xooooooo ......",
+".... Xooooooo ......",
+".... Xooooooo ......",
+".... oooooooo ......",
+"....          ......",
+"...................."};

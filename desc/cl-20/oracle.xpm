@@ -1,0 +1,32 @@
+/* XPM */
+static char * oracle_xpm[] = {
+/* width height ncolors chars_per_pixel */
+"20 20 6 1",
+/* colors */
+" 	s None	c None",
+".	c gainsboro",
+"X	c cyan",
+"o	c white",
+"O	c wheat",
+"+	c firebrick",
+/* pixels */
+"                    ",
+"                    ",
+"                    ",
+"        ....        ",
+"      ..XXXX..      ",
+"     .XXXXXXXX.     ",
+"    .XXooXXXXXX.    ",
+"   .XXXooXXXXXXX.   ",
+"   .XooooXXXXXXX.   ",
+"  .XXooooXXXXXXXX.  ",
+"  .XXXXooXXXXXXXX.  ",
+"  OXXXXXXXXXXXXXX.  ",
+"  OXXXXXXXXXXXXXX.  ",
+"  O.XXXXOOXXXXXX.   ",
+"  OOXXXXXOOOXXXX.   ",
+"   O.XXXXXOOOXX.    ",
+"   OOOXXXXXOOO.     ",
+"    OOOOXXXOOOO ++++",
+"     OOOOOOOOOOO++++",
+"       OOOOOOOOO++++"};
